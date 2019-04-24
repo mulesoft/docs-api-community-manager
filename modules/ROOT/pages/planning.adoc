@@ -1,7 +1,7 @@
-= Planning
+= Before Installing
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Planning before installation, including prerequisites.
+Prerequisites and planning before installation.
