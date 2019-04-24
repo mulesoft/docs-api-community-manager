@@ -1,0 +1,9 @@
+= Content Publication
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+News, Tutorials, Developer Blog posts, Events. Save draft, later Publish.
+
+Walkthrough of publication, then reference to Community Cloud docs with further info.

@@ -1,0 +1,68 @@
+= Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+////
+== 1.0
+
+*May 22, 2019*
+
+=== New Features
+
+* one
+* two
+
+=== Fixed in this Release
+
+* one
+* two
+
+=== Known Issues
+
+* one
+* two
+
+== Internal Beta
+
+*April 22, 2019*
+
+=== New Features
+
+* one
+* two
+
+=== Fixed in this Release
+
+* one
+* two
+
+=== Known Issues
+
+* one
+* two
+
+== Internal Alpha
+
+*April 8, 2019*
+
+=== New Features
+
+* one
+* two
+
+=== Fixed in this Release
+
+* one
+* two
+
+=== Known Issues
+
+* one
+* two
+////
+
+// == See Also
+
+// * xref:api-community-manager::index.adoc[API Community Manager Documentation]

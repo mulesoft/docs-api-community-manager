@@ -1,0 +1,11 @@
+= Support
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Audience: API Engineer persona handling support cases.
+
+Salesforce Service Console.
+
+Simple walkthrough, then link to full Salesforce documentation.
