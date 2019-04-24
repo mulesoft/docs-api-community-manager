@@ -4,6 +4,6 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Delete, approve for publication, other features such as frozen users.
+Delete, approve for publication, other features such as locking user accounts.
 
 Link to Salesforce documentation for further info.

@@ -1,7 +1,7 @@
 .xref:index.adoc[API Community Manager]
 * xref:index.adoc[API Community Manager]
 * xref:consumer-developer.adoc[The ACM Consumer Developer Experience]
-* xref:planning.adoc[Before Installing]
+* xref:before-installation.adoc[Before Installation]
 * xref:setup.adoc[Setup]
 * xref:branding-and-customization.adoc[Branding and Customization]
 * xref:content-publication.adoc[Content Publication]

@@ -4,4 +4,4 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Installed as Salesforce package.
+Installed as a Salesforce package.

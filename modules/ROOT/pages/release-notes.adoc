@@ -4,6 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+////
 == 1.0
 
 *May 22, 2019*
@@ -60,3 +61,8 @@ endif::[]
 
 * one
 * two
+////
+
+// == See Also
+
+// * xref:api-community-manager::index.adoc[API Community Manager Documentation]
