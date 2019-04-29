@@ -8,9 +8,7 @@ Many companies use Salesforce Community Cloud to build branded and customized on
 
 In the same way, your company can use API Community Manager to build branded and customized online portals to offer its APIs to the internal and external software developers who write code that uses and consumes those APIs.
 
-Just as a customer interacts with your company's site, these consumer developers will arrive at your company's ACM portal to search through the catalog of APIs your company offers and their documentation.
-
-Your portal may include news, events, tutorials, and posts on a developer blog.
+These consumer developers will arrive at your company's site, which may include news, events, tutorials, and posts on a developer blog. Developers can search through a catalog of available APIs and documentation.
 
 Developers can use the forums on the portal to collaborate, share ideas, and discuss any issues they find.
 
