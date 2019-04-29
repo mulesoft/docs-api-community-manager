@@ -4,7 +4,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Many companies use Salesforce Community Cloud to build branded and customized online portals to offer their products to their customers. In the same way, your company can use API Community Manager to build branded and customized online portals to offer their APIs to the internal and external software developers who write code that uses and consumes those APIs.
+Many companies use Salesforce Community Cloud to build branded and customized online portals to offer their products to their customers.
+
+In the same way, your company can use API Community Manager to build branded and customized online portals to offer its APIs to the internal and external software developers who write code that uses and consumes those APIs.
 
 Just as a customer interacts with your company's site, these consumer developers will arrive at your company's ACM portal to search through the catalog of APIs your company offers and their documentation.
 
