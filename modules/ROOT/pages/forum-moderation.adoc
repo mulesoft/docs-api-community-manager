@@ -4,6 +4,30 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Delete, approve for publication, other features such as locking user accounts.
+Developers can use the API Community Manager forums to share tips and advice on using the organization's APIs.
 
-Link to Salesforce documentation for further info.
+Your organization's community operator can moderate the forums to reply to new discussions and questions, freeze members, moderate flagged files, direct messages, and private messages, and review audit trails.
+
+To moderate forums, log in, select a community, and select *Moderation*.
+
+The *Home* tab shows these options:
+
+* *Pending Discussions*: Respond to and moderate new questions and discussions.
+* *Flagged Files*: Unflag or delete suspicious files.
+* *Flagged Direct Messages*: Unflag or delete direct messages flagged as suspicious.
+* *Flagged Private Messages*: Unflag or delete private messages flagged as suspicious.
+* *Frozen Members*: Freeze or unfreeze user accounts.
+
+The *Moderate* tab shows these options:
+
+* *Pending Discussions*: Respond to and moderate new questions and discussions.
+* *Flagged Files*: Unflag or delete suspicious files.
+* *Flagged Messages*: Unflag or delete messages flagged as suspicious.
+* *Frozen Members*: Freeze or unfreeze user accounts.
+* *Audit Trail*: Review an audit trail of all user activity on the forums.
+
+// The *Rules* tab...
+
+// Delete, approve for publication, other features such as locking user accounts.
+
+// Link to Salesforce documentation for further info.
