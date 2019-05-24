@@ -57,3 +57,4 @@ You can also reach the *Unanswered Questions* from the dashboard at the top of t
 // Delete, approve for publication, other features such as locking user accounts.
 
 // Link to Salesforce documentation for further info.
+// - https://help.salesforce.com/articleView?id=networks_moderation_overview.htm&type=5 Community Moderation Strategies and Tools
