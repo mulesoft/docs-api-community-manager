@@ -30,7 +30,7 @@ The *Moderate* tab shows these options:
 
 == Moderating with Community Workspaces
 
-Community administrators can use the same forum pages seen by external users to administer and post on the forums.
+Community administrators use the same forum pages that are seen by external users to administer and post on the forums.
 
 Administrators can also use pages in Salesforce to administer and post on the forums and to access many other options for monitoring and managing communities.
 
@@ -42,11 +42,11 @@ There is also a customizable dashboard at the top with default items showing *Me
 
 Choose *Dashboards*.
 
-The Dashboards display shows various information about your community, and the *Engagement* tab at the top of the screen.
+The dashboards display various information about your community, and the *Engagement* tab at the top of the screen.
 
-Select the *Engagement* tab to see several cateogories of information about your community's user activity and user engagement, so you can track user behavior in the community.
+Select the *Engagement* tab to see several categories of information about your community's user activity and user engagement, so you can track user behavior in the community.
 
-Choose *Self Service* and open the drop-down menu to see the options for viewing various forum questions and answers.
+Choose *Self Service* and open the drop-down menu to see the options for viewing forum questions and answers.
 
 Choose *Unanswered Questions* for a list of these questions.
 
