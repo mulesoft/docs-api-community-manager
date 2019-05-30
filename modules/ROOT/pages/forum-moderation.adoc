@@ -10,7 +10,9 @@ Your organization's community operator can moderate the forums. This includes re
 
 // Will the pre-made community in the workshop have various posts, including content that matches various criteria to be held for review, and users that were frozen for posting too often or similar criteria?
 
-To moderate forums, log in, select a community, and select *Moderation*.
+== Moderate Forums
+
+To moderate the forums, log in, select a community, and select *Moderation*.
 
 The *Home* tab shows these options:
 
@@ -36,7 +38,7 @@ The *Rules* tab shows these options:
 
 == Moderating with Community Workspaces
 
-Community administrators may either use the same forum pages that are seen by external users to administer and post on the forums, or use Community Workspaces pages in Salesforce to administer and post on the forums and to access many other options for monitoring and managing communities.
+Community administrators can either use the same forum pages that are seen by external users to administer and post on the forums, or use Community Workspaces pages in Salesforce to administer and post on the forums and to access many other options for monitoring and managing communities.
 
 To use Community Workspaces, go to your list of communities and choose the *Workspaces* link for the community.
 
