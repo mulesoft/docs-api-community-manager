@@ -4,6 +4,80 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Delete, approve for publication, other features such as locking user accounts.
+Developers can use the API Community Manager forums to share tips and advice on using the organization's APIs.
 
-Link to Salesforce documentation for further info.
+Your organization's community operator can moderate the forums. This includes replying to new discussions and questions, reviewing audit trails, and creating and managing forum rules. These rules can filter posts, other content, and members based on criteria defined by the operator. Members matching the criteria can be frozen, and posts and other content matching the criteria can be flagged, blocked, automatically edited to remove banned terms, or held for the operator to review them.
+
+// Will the pre-made community in the workshop have various posts, including content that matches various criteria to be held for review, and users that were frozen for posting too often or similar criteria?
+
+== Moderate Forums
+
+To moderate the forums, log in, select a community, and select *Moderation*.
+
+The *Home* tab shows these options:
+
+* *Pending Discussions*: Respond to and moderate new questions and discussions.
+* *Flagged Files*: Unflag or delete files flagged as suspicious.
+* *Flagged Direct Messages*: Unflag or delete direct messages flagged as suspicious.
+* *Flagged Private Messages*: Unflag or delete private messages flagged as suspicious.
+* *Frozen Members*: Unfreeze user accounts.
+
+The *Moderate* tab shows these options:
+
+* *Pending Discussions*: Respond to and moderate new questions and discussions.
+* *Flagged Files*: Unflag or delete files flagged as suspicious.
+* *Flagged Messages*: Unflag or delete messages flagged as suspicious.
+* *Frozen Members*: Unfreeze user accounts.
+* *Audit Trail*: Review an audit trail of all user activity on the forums.
+
+The *Rules* tab shows these options:
+
+* *Moderation Rules*: View, add, and edit rules to moderate member-generated content. For example, members who post or comment too frequently can be frozen, the first post or comment made by a new member can be held for moderator review, and posts or comments with banned keywords can be blocked, flagged, held for review, or edited so that the banned words are replaced with asterisks.
+* *Content Criteria*: Filter content with criteria such as lists of keywords to block. For example, you might have one list of terms found in financial scam posts, and another list of terms used as offensive insults.
+* *Member Criteria*: Filter members with criteria such as user creation date, whether the user has contributed to the community before, and user profiles such as customers and partners.
+
+== Moderating with Community Workspaces
+
+Community administrators can either use the same forum pages that are seen by external users to administer and post on the forums, or use Community Workspaces pages in Salesforce to administer and post on the forums and to access many other options for monitoring and managing communities.
+
+To use Community Workspaces, go to your list of communities and choose the *Workspaces* link for the community.
+
+This Community Workspaces interface for your community shows options to open the *Builder*, *Moderation*, *Content Management*, and *Dashboards*.
+
+There is also a customizable dashboard at the top with default items showing *Members*, *New Members*, *Unanswered Questions*, and *Flagged Discussions*.
+
+Choose *Dashboards*.
+
+The dashboards display various information about your community, and the *Engagement* tab at the top of the screen.
+
+Select the *Engagement* tab to see several categories of information about your community's user activity and user engagement, so you can track user behavior in the community.
+
+Choose *Self Service* and open the drop-down menu to see the options for viewing forum questions and answers.
+
+Choose *Unanswered Questions* for a list of these questions.
+
+Choose *Details* to see a specific post and options to administer or answer it.
+
+You can also reach the *Unanswered Questions* from the dashboard at the top of the Community Workspaces page.
+
+== Question Moderation Options
+
+Below each question are these options:
+
+* *Upvote*: Add a vote to the question to raise its visibility on the forums.
+* *Answer*: Open the input field to add an answer to the question.
+* *Share*: Copy a link to the question to your clipboard, share it with a group, or share it with your followers.
+
+Next to each question you will see a down arrow for a drop-down menu with these options:
+
+* *Escalate to Case*: Convert the forum question to a support case.
+* *Edit*: Edit the post.
+* *Delete*: Delete the post.
+* *Bookmark*: Bookmark a post. If the post is already bookmarked this option becomes *Remove Bookmark*.
+* *Edit Topics*: Add the topic tags such as *General Questions* on the post, or create a new topic tag and add it to the post.
+* *Downvote*: Reduce the question's vote count and its visibility.
+* *Close Question*: Mark the question is closed. Users cannot add answers to closed questions.
+
+== See Also
+
+* Salesforce documentation: https://help.salesforce.com/articleView?id=networks_moderation_overview.htm&type=5[Community Moderation Strategies and Tools]
