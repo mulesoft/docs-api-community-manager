@@ -4,4 +4,4 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Preview Community instructions.
+Builder, top right corner has *Preview* link. live preview has a *Back to Builder* link in top right. mention also how to view live site.
