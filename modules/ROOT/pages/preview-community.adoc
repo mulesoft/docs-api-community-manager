@@ -1,0 +1,7 @@
+= Preview Community
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Preview Community instructions.
