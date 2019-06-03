@@ -59,3 +59,18 @@ The API you just added is visible in API components such as the API carousel, an
 After previewing an API, you can make it visible to users by editing the API.
 
 // Missing so far: Grouping APIs into API Products
+
+//flesh out below this point
+
+== Publishing minor updates to a published API version
+
+If a new asset version is published to Exchange or if you make changes to the Exchange markdown pages, those are reflected immediately in your community.
+
+Small changes to API Spec are done in API Designer.
+
+probably move this up in the file:
+API major version (big) vs asset version (small)- ACM can have v1 and v2 with different API versions, but always grabs the latest asset version for each of those.
+On the API's page in Exchange, the API major version is shown in the dropdown next to the API name, and the API asset version is shown in the Asset versions list on the right.
+asset version changes are back-compatible and API version changes are not; this is a best practice but not enforced. discuss best practices for versioning elsewhere and here just discuss functionality.
+
+When developers make these asset version changes, they are picked up automatically in the case of an asset version, and in the case of an API version you'll need to publish it. [this page is for community admins, usually devs will be the ones making these changes.]
