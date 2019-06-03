@@ -1,4 +1,4 @@
-= Content Publication
+= Publish Content
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
