@@ -4,4 +4,58 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Publish from Exchange or unpublish. Grouping APIs into API Products. New interface.
+API Community Manager publishes APIs from your organization's instance of Exchange so they can be accessed by your organization's developer community.
+
+== List your community's APIs
+
+Log in to your community and in the App Launcher select API Community Manager.
+
+Select your organization and one of your communities.
+
+The name of your community is displayed in the top left. To switch communities, click the name.
+
+The *Manage API Publication* tab is open and displays lists of *APIs in this Community* and *APIs in Exchange*.
+
+Each of your Anypoint organization's APIs are shown in one of the lists.
+
+Each item in the list *APIs in this Community* shows an icon, name, visibility icon, description, and an *Edit* button.
+
+Public APIs show the visibility icon of a blue eye. APIs visible only to registered users show a black eye. An API in preview mode is only visible to the community administrator who added it and shows a black eye with a line through it.
+
+Each item in the list *APIs in Exchange* shows an icon, name, description, and *Add to Community* button.
+
+The lists are divided into pages and show page number links at the bottom. To change the number of items shown, use the menu icon with three horizontal lines in the top right corner.
+
+You can search the APIs by name with the *APIs Search* bar at the top.
+
+== Publish an API
+
+To publish an API from Exchange to your community, list your community's APIs, find the API in the list *APIs in Exchange*, and click the button *Add to Community*.
+
+The API is removed from the list *APIs in Exchange* and appears in the list *APIs in this Community* in preview mode, so it is only visible to the community administrator who added it. To change the visibility or other API information, edit the API.
+
+== Edit or remove an API
+
+To edit an API, list your community's APIs, find the API in the list *APIs in this Community*, and click the button *Edit*.
+
+The editing screen shows:
+
+* The API name: Edit the name here.
+* The button *View Asset in Exchange*: Open a new tab showing the API's page in Exchange.
+* The trash can icon: Unpublish the API and remove it from the ACM portal.
+* The API icon and the button *Replace Icon*: Open a dialog to select a new icon image.
+* The API description: Edit the description here.
+* The *Visbility on Community* selector: Publish the API in *Preview Mode* visible only to the community administrator who added it, or for *Registered users*, or for the *Public*. *Public* APIs can be seen by any user with access to a page that presents API components. APIs visible to *Registered users* can be seen only by logged in users, regardless of the page permissions.
+* The *Marketing Page* setting: Set this to *CMS/Custom Page* to provide a link to a page in the community or to *None*. If *CMS/Custom Page* is selected, the field *Marketing Page URL* is shown. If a marketing page link is set, it appears in the *API Details* page and as a button in the API's carousel tile with the title *Learn more*.
+* The button *Cancel*: Return to the list without making any changes.
+* The button *Apply*: Apply changes and return to the list.
+
+== Preview an API
+
+To preview an API, go to the *Community Administration* tab and click the *Builder* icon. Enter Preview mode by clicking the *Preview* button in the top right.
+
+The API you just added is visible in API components such as the API carousel, and you can check the API's information such as any business articles or technical documentation.
+
+After previewing an API, you can make it visible to users by editing the API.
+
+// Missing so far: Grouping APIs into API Products
