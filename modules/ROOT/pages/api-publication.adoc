@@ -1,7 +1,0 @@
-= API Publication
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-:imagesdir: ../assets/images/
-
-Publish from Exchange or unpublish. Grouping APIs into API Products. New interface.
