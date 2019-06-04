@@ -5,4 +5,3 @@
 * xref:publish-apis.adoc[Publish APIs]
 * xref:publish-content.adoc[Publish Content]
 * xref:moderate-forums.adoc[Moderate Forums]
-x
