@@ -12,11 +12,11 @@ Topics: News
 
 big warning: visibility of articles depends on Community Cloud configuration, including CMS Collection settings. with the default settings, creating a new article with no tags will not make that article visible anywhere. must add News tag.
 
-topics are case-sensitive. "news" vs "News". drop-down list will help.
+topics are case-sensitive. "news" vs "News". as you start to type, a drop-down list offers existing topics to choose from.
 
 Publish makes it visible in the collections where it matches the rules configured.
 
+News, Tutorials, Developer Blog posts, Events.
 
-News, Tutorials, Developer Blog posts, Events. Save draft, later Publish.
-
-Walkthrough of publication, then reference to Community Cloud docs with further info.
+Manage Your Community's Pages and Their Properties in Community Builder https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5
+CMS for Community Cloud (Beta) https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5
