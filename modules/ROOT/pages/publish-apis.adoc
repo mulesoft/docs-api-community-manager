@@ -8,13 +8,7 @@ API Community Manager publishes APIs from your organization's instance of Exchan
 
 == List your community's APIs
 
-Log in to your community and in the App Launcher select API Community Manager.
-
-Select your organization and one of your communities.
-
-The name of your community is displayed in the top left. To switch communities, click the name.
-
-The *Manage API Publication* tab is open and displays lists of *APIs in this Community* and *APIs in Exchange*.
+Open the *Manage API Publication*. This tab displays lists of *APIs in this Community* and *APIs in Exchange*.
 
 Each of your Anypoint organization's APIs are shown in one of the lists.
 
@@ -28,13 +22,13 @@ The lists are divided into pages and show page number links at the bottom. To ch
 
 You can search the APIs by name with the *APIs Search* bar at the top.
 
-== Publish an API
+== Add an API to your community
 
-To publish an API from Exchange to your community, list your community's APIs, find the API in the list *APIs in Exchange*, and click the button *Add to Community*.
+To add an API from Exchange to your community, list your community's APIs, find the API in the list *APIs in Exchange*, and click the button *Add to Community*.
 
-The API is removed from the list *APIs in Exchange* and appears in the list *APIs in this Community* in preview mode, so it is only visible to the community administrator who added it. To change the visibility or other API information, edit the API.
+The API is removed from the list *APIs in Exchange* and appears in the list *APIs in this Community* in preview mode, so it is only visible to the community administrator who added it. To complete additional API information (including its icon, description, and link to a community page with business details), and change its visibility, edit the API.
 
-== Edit or remove an API
+== Edit an API
 
 To edit an API, list your community's APIs, find the API in the list *APIs in this Community*, and click the button *Edit*.
 
@@ -50,11 +44,15 @@ The editing screen shows:
 * The button *Cancel*: Return to the list without making any changes.
 * The button *Apply*: Apply changes and return to the list.
 
+== Remove an API
+
+To remove an API, edit the API and click the trash can icon.
+
 == Preview an API
 
 To preview an API, go to the *Manage Communities* tab and click the *Builder* icon. Enter Preview mode by clicking the *Preview* button in the top right.
 
-The API you just added is visible in API components such as the API carousel, and you can check the API's information such as any business articles or technical documentation.
+In Preview mode, all the APIs in your community are shown in API components such as the API carousel, and you can check the API's information such as any business articles or technical documentation.
 
 After previewing an API, you can make it visible to users by editing the API.
 
