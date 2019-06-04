@@ -4,15 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-When you login to API Community Manager as an administrator, you see three tabs, *Manage API Publication*, *Manage Communities*, and *Manage Community Users*.
+The API Community Manager administrator interface shows three tabs: *Manage API Publication*, *Manage Communities*, and *Manage Community Users*.
 
-*Manage API Publication* shows the list of APIs and the interface to [Publish APIs].
+*Manage API Publication* shows the list of APIs and the interface to xref:publish-apis.adoc[publish APIs].
 
 *Manage Communities* shows:
 
-* Builder - [preview community], branding and customization
-* Workspace - access to [Salesforce Community Cloud Workspace], which offers all the functionality of your community, including [moderate forums], engagement dashboards, and configuring advanced features.
-* Content Management - [publish content]
-* Open community - [view the live community site]
+* *Builder* - Configure branding and customization, and xref:preview-community.adoc[preview your community].
+* *Workspace* - The Salesforce Community Cloud Workspace offers all the functionality of your community, including xref:moderate-forums.adoc[moderating forums], engagement dashboards, and configuring advanced features.
+* Content Management - xref:publish-content.adoc[Publish content].
+* Open Community - Open your community site.
 
-*Manage Community Users* shows the ability to control approval and activation for the community's user accounts.
+*Manage Community Users* shows the community's user accounts, with approval and activation options.
+
+== See Also
+
+* https://help.salesforce.com/articleView?id=networks_workspaces.htm&type=5[Salesforce Community Cloud Workspace]
