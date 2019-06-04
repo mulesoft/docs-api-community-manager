@@ -52,25 +52,20 @@ The editing screen shows:
 
 == Preview an API
 
-To preview an API, go to the *Community Administration* tab and click the *Builder* icon. Enter Preview mode by clicking the *Preview* button in the top right.
+To preview an API, go to the *Manage Communities* tab and click the *Builder* icon. Enter Preview mode by clicking the *Preview* button in the top right.
 
 The API you just added is visible in API components such as the API carousel, and you can check the API's information such as any business articles or technical documentation.
 
 After previewing an API, you can make it visible to users by editing the API.
 
+== API updates in Exchange and API Designer
+
+On an API's page in Exchange, the API major version is shown in the dropdown menu next to the API name, and the API asset version is shown in the *Asset versions* list on the right. Each API major version can have one or more asset versions.
+
+ACM imports API major versions and lists them independently of each other, so they can be published and unpublished independently in ACM. However, within each API major version, ACM always uses the latest API asset version, and no other API asset versions.
+
+If a developer publishes a new API asset version by updating the markdown pages in Exchange, or updating the API specification in API Designer, then ACM imports those changes automatically and immediately.
+
+If a developer publishes a new API major version, it will only be published on ACM when the ACM community administrator publishes it manually.
+
 // Missing so far: Grouping APIs into API Products
-
-//flesh out below this point
-
-== Publishing minor updates to a published API version
-
-If a new asset version is published to Exchange or if you make changes to the Exchange markdown pages, those are reflected immediately in your community.
-
-Small changes to API Spec are done in API Designer.
-
-probably move this up in the file:
-API major version (big) vs asset version (small)- ACM can have v1 and v2 with different API versions, but always grabs the latest asset version for each of those.
-On the API's page in Exchange, the API major version is shown in the dropdown next to the API name, and the API asset version is shown in the Asset versions list on the right.
-asset version changes are back-compatible and API version changes are not; this is a best practice but not enforced. discuss best practices for versioning elsewhere and here just discuss functionality.
-
-When developers make these asset version changes, they are picked up automatically in the case of an asset version, and in the case of an API version you'll need to publish it. [this page is for community admins, usually devs will be the ones making these changes.]
