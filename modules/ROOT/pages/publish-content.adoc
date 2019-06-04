@@ -4,6 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+Manage Communities, Content Management, Create Content, Title/Body/Featured Image/Excerpt, Topics, Save Draft, Publish.
+
+Excerpt- only way to get preview on carousel tile
+
+Topics: News
+
+big warning: visibility of articles depends on Community Cloud configuration, including CMS Collection settings. with the default settings, creating a new article with no tags will not make that article visible anywhere. must add News tag.
+
+topics are case-sensitive. "news" vs "News". drop-down list will help.
+
+Publish makes it visible in the collections where it matches the rules configured.
+
+
 News, Tutorials, Developer Blog posts, Events. Save draft, later Publish.
 
 Walkthrough of publication, then reference to Community Cloud docs with further info.
