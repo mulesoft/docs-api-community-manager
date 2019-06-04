@@ -8,7 +8,7 @@ API Community Manager (ACM) enables your company to build APIs, catalog them wit
 
 ACM relies on MuleSoft's Anypoint Exchange as the single source of truth about published APIs, and Salesforce Community Cloud's ability to add customization, branding, and marketing information to serve unique content to different audiences.
 
-ACM provides an array of features, such as chat, forums, and support integration. This enables your company to treat its APIs as product, and treat the developers using those APIs as customers.
+ACM provides an array of features, such as chat, forums, and support integration. This way the experience of developers using your company's APIs is as rich and polished as the experience of customers using your company's products.
 
 ACM also introduces API products. An API product is a group of APIs with marketing context. For example, a payments product might include three APIs for Apple pay, Android pay, and wire transfers.
 
