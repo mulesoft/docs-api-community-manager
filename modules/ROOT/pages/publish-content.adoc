@@ -6,7 +6,17 @@ endif::[]
 
 With ACM you can create and publish content articles including news, tutorials, developer blog posts, and events.
 
-Select the *Manage Communities* tab and click *Content Management*. Click the *Create Content* button in the top right. Fill in the article's *Title*, *Body*, *Featured Image*, and *Excerpt*. The *Excerpt* is the preview text on an article's carousel tile.
+Select the *Manage Communities* tab and click *Content Management*.
+
+image::content-management.png[Content Management page]
+
+The list shows all of your community's articles.
+
+Click the *Create Content* button in the top right.
+
+image::create-content.png[Create Content page]
+
+Fill in the article's *Title*, *Body*, *Featured Image*, and *Excerpt*. The *Excerpt* is the preview text on an article's carousel tile.
 
 Set the article's *Topics*. Topics are case-sensitive. As you start to type, a drop-down list shows existing topics you can choose.
 
