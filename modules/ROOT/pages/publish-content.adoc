@@ -18,5 +18,7 @@ Publish makes it visible in the collections where it matches the rules configure
 
 News, Tutorials, Developer Blog posts, Events.
 
-Manage Your Community's Pages and Their Properties in Community Builder https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5
-CMS for Community Cloud (Beta) https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5
+== See Also
+
+* Manage Your Community's Pages and Their Properties in Community Builder https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5
+* CMS for Community Cloud (Beta) https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5
