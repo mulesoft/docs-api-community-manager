@@ -4,21 +4,23 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Manage Communities, Content Management, Create Content, Title/Body/Featured Image/Excerpt, Topics, Save Draft, Publish.
+With ACM you can create and publish content articles including news, tutorials, developer blog posts, and events.
 
-Excerpt- only way to get preview on carousel tile
+Select the *Manage Communities* tab and click *Content Management*. Click the *Create Content* button in the top right. Fill in the article's *Title*, *Body*, *Featured Image*, and *Excerpt*. The *Excerpt* is the preview text on an article's carousel tile.
 
-Topics: News
+Set the article's *Topics*. Topics are case-sensitive. As you start to type, a drop-down list shows existing topics you can choose.
 
-big warning: visibility of articles depends on Community Cloud configuration, including CMS Collection settings. with the default settings, creating a new article with no tags will not make that article visible anywhere. must add News tag.
+NOTE: An article is only displayed if at least one CMS Collection rule matches the article.
 
-topics are case-sensitive. "news" vs "News". as you start to type, a drop-down list offers existing topics to choose from.
+Article visibility depends on Community Cloud configuration and CMS Collection rules. For example, a community could have a rule that articles tagged with the topic "News" will be displayed in the list of news articles.
 
-Publish makes it visible in the collections where it matches the rules configured.
+Click the *Save Draft* button in the top right corner.
 
-News, Tutorials, Developer Blog posts, Events.
+When the draft is saved the *Publish* button appears in the top right corner.
+
+Click the *Publish* button to make the article visible in the collections where it matches the rules configured.
 
 == See Also
 
-* Manage Your Community's Pages and Their Properties in Community Builder https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5
-* CMS for Community Cloud (Beta) https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5
+* https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder]
+* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[CMS for Community Cloud (Beta)]
