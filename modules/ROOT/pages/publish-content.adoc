@@ -4,6 +4,33 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-News, Tutorials, Developer Blog posts, Events. Save draft, later Publish.
+With ACM you can create and publish content articles including news, tutorials, developer blog posts, and events.
 
-Walkthrough of publication, then reference to Community Cloud docs with further info.
+Select the *Manage Communities* tab and click *Content Management*.
+
+image::content-management.png[Content Management page]
+
+The list shows all of your community's articles.
+
+Click the *Create Content* button in the top right.
+
+image::create-content.png[Create Content page]
+
+Fill in the article's *Title*, *Body*, *Featured Image*, and *Excerpt*. The *Excerpt* is the preview text on an article's carousel tile.
+
+Set the article's *Topics*. Topics are case-sensitive. As you start to type, a drop-down list shows existing topics you can choose.
+
+NOTE: An article is only displayed if at least one CMS Collection rule matches the article.
+
+Article visibility depends on Community Cloud configuration and CMS Collection rules. For example, a community could have a rule that articles tagged with the topic "News" will be displayed in the list of news articles.
+
+Click the *Save Draft* button in the top right corner.
+
+When the draft is saved the *Publish* button appears in the top right corner.
+
+Click the *Publish* button to make the article visible in the collections where it matches the rules configured.
+
+== See Also
+
+* https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder]
+* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[CMS for Community Cloud (Beta)]

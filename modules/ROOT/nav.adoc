@@ -1,6 +1,6 @@
 .xref:index.adoc[API Community Manager]
 * xref:index.adoc[API Community Manager]
-* xref:consumer-developer.adoc[The ACM Consumer Developer Experience]
+* xref:admin-interface.adoc[Administrator Interface]
 * xref:preview-community.adoc[Preview Community]
 * xref:publish-apis.adoc[Publish APIs]
 * xref:publish-content.adoc[Publish Content]

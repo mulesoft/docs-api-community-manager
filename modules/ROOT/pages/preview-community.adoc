@@ -4,4 +4,16 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Preview Community instructions.
+To show a live preview of the community's site, including APIs in *Preview Mode*, select the *Manage Communities* tab.
+
+image::manage-communities.png[Manage Communities screen]
+
+Open the site builder by clicking the *Builder* icon.
+
+image::builder.png[Site Builder]
+
+Click the *Preview* link in the top right corner.
+
+To return to the site builder, click the *Back to Builder* link in the top right.
+
+To view the live site, select the *Manage Communities* tab and click the *Open Community* icon.
