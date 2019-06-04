@@ -60,7 +60,11 @@ After previewing an API, you can make it visible to users by editing the API.
 
 == API updates in Exchange and API Designer
 
-On an API's page in Exchange, the API major version is shown in the dropdown menu next to the API name, and the API asset version is shown in the *Asset versions* list on the right. Each API major version can have one or more asset versions.
+On an API's page in Exchange, the API major version is shown in the dropdown menu next to the API name, and the API asset version is shown in the *Asset versions* list on the right.
+
+image::exchange-api-versions.png[Exchange API major version and asset versions]
+
+Each API major version can have one or more asset versions.
 
 ACM imports API major versions and lists them independently of each other, so they can be published and unpublished independently in ACM. However, within each API major version, ACM always uses the latest API asset version, and no other API asset versions.
 
