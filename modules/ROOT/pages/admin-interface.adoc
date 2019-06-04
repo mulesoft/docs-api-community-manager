@@ -6,7 +6,11 @@ endif::[]
 
 The API Community Manager administrator interface shows three tabs: *Manage API Publication*, *Manage Communities*, and *Manage Community Users*.
 
+image::manage-api-publication.png[Manage API Publication screen]
+
 *Manage API Publication* shows the list of APIs and the interface to xref:publish-apis.adoc[publish APIs].
+
+image::manage-communities.png[Manage Communities screen]
 
 *Manage Communities* shows:
 
@@ -14,6 +18,8 @@ The API Community Manager administrator interface shows three tabs: *Manage API 
 * *Workspace* - The Salesforce Community Cloud Workspace offers all the functionality of your community, including xref:moderate-forums.adoc[moderating forums], engagement dashboards, and configuring advanced features.
 * *Content Management* - xref:publish-content.adoc[Publish content].
 * *Open Community* - Open your community site.
+
+image::manage-community-users.png[Manage Community Users screen]
 
 *Manage Community Users* shows the community's user accounts, with approval and activation options.
 
