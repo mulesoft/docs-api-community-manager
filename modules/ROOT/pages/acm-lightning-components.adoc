@@ -1,0 +1,130 @@
+= ACM Lightning Components
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+To design your API Community Manager portal, open the Builder and add ACM Lightning Components. Each of the Lightning components adds functionality to the portal.
+
+== ACM API Console
+
+The interactive API console shows information about APIs and their methods, and allows users to test the methods by sending queries.
+
+* *API*: Choose the API to display.
+* *Show documentation pages*: Show the documentation pages for the API.
+* *Link hover color*: Set the color of links when the cursor hovers over them.
+* *Button text color (optional)*: Set the color of text on buttons.
+* *Button hover text color (optional)*: Set the color of text on buttons when the cursor hovers over them.
+* *Headline font family (optional)*: Set the font family of the API console headline.
+* *Error color (optional)*: Set the color of error messages.
+* *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
+* *Method Label Get Color*: Set the color of the labels of *GET* methods.
+* *Method Label Post Background Color*: Set the background color of the labels of *POST* methods.
+* *Method Label Post Color*: Set the color of the labels of *POST* methods.
+* *Method Label Put Background Color*: Set the background color of the labels of *PUT* methods.
+* *Method Label Put Color*: Set the color of the labels of *PUT* methods.
+* *Method Label Delete Background Color*: Set the background color of the labels of *DELETE* methods.
+* *Method Label Delete Color*: Set the color of the labels of *DELETE* methods.
+* *Method Label Patch Background Color*: Set the background color of the labels of *PATCH* methods.
+* *Method Label Patch Color*: Set the color of the labels of *PATCH* methods.
+* *Method Label Options Background Color*: Set the background color of the labels of *OPTIONS* methods.
+* *Method Label Options Color*: Set the color of the labels of *OPTIONS* methods.
+* *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
+* *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
+
+// Check descriptions: *Link hover color*, *Button hover text color (optional)*, *Headline font family (optional)*
+
+== ACM API Console Instances
+
+The API console instances component is used inside an *ACM API Console* component and shows the list of instances of an API.
+
+// check component description
+
+* *API*: Choose the API whose instances are displayed.
+
+== ACM API Console Navigation
+
+The API console navigation component is used inside an *ACM API Console* component and shows the navigation for the console.
+
+// check component description
+
+* *API*: Choose the API to display.
+* *Show documentation pages*: Show the documentation pages for the API.
+* *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
+* *Method Label Get Color*: Set the color of the labels of *GET* methods.
+* *Method Label Post Background Color*: Set the background color of the labels of *POST* methods.
+* *Method Label Post Color*: Set the color of the labels of *POST* methods.
+* *Method Label Put Background Color*: Set the background color of the labels of *PUT* methods.
+* *Method Label Put Color*: Set the color of the labels of *PUT* methods.
+* *Method Label Delete Background Color*: Set the background color of the labels of *DELETE* methods.
+* *Method Label Delete Color*: Set the color of the labels of *DELETE* methods.
+* *Method Label Patch Background Color*: Set the background color of the labels of *PATCH* methods.
+* *Method Label Patch Color*: Set the color of the labels of *PATCH* methods.
+* *Method Label Options Background Color*: Set the background color of the labels of *OPTIONS* methods.
+* *Method Label Options Color*: Set the color of the labels of *OPTIONS* methods.
+* *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
+* *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
+
+== ACM API Console Request Panel
+
+
+
+== ACM API Documentation Viewer
+
+The API documentation viewer shows the documentation of the selected API. The documentation may have multiple pages, and each page may have multiple sections.
+
+* *Section (optional)*: Set the section to open. If the *Selected page (optional)* setting is empty, the *Section (optional)* setting is ignored.
+* *Selected page (optional)*: Set the page to open.
+* *API*: Choose the API.
+
+== ACM API Version Card
+
+An API version card shows information about an API version.
+
+* *API*: Choose the API to show.
+* *Override URL*: When the user clicks the *API Details* button on the card, a URL opens. If this optional field is set, the URL in the field overrides the default URL. This could be used to direct users to a documentation or marketing page about the API, which would also have a link to the API's main page.
+* *Show buttons*: Show the *API Details* button. If the button is not shown, users can click anywhere on the card to show the API details.
+* *Card Height*: Set the card height.
+* *Card Margin*: Set the amount of margin space around the card.
+* *Card Border*: Set the thickness of the card borders.
+* *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
+* *Card Shadow*: Set the shadow beneath the card.
+
+== ACM API Version Carousel
+
+The API version carousel shows a horizontally scrollable set of cards for APIs.
+
+* *Show Buttons*: Show the *API Details* button on each card. If the button is not shown, users can click anywhere on the card to show the API details.
+* *Max Cards Display*: Set the maximum number of cards to show.
+* *Rows*: Set the number of rows of cards in the carousel.
+* *Show Arrows*: Show arrows on the right and left sides of the carousel. Clicking the arrows scrolls through the cards.
+* *Arrow Size*: Set the size of the arrows on the right and left sides.
+* *Show Dots*: Show dots below the cards. Clicking the dots scrolls through the cards.
+* *Card Height*: Set the card height.
+* *Card Margin*: Set the amount of margin space around each card.
+* *Card Border*: Set the thickness of the card borders.
+* *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
+* *Card Shadow*: Set the shadow beneath each card.
+* *Message if empty*: Show this message if the carousel has no APIs. Defaults to "There are no APIs available right now."
+// * *Filter condition (Advanced)*: Package name, field name such as "API name" or "API description", equal to or not equal to some string. [Will this be in GA version?]
+
+== ACM API Version Header
+== ACM Application Analytics ...
+== ACM Application Details
+
+== ACM Application Listing
+
+The application listing shows applications that use an API.
+
+* *New App URL*: 
+* *Card Margin*: Set the amount of margin space around the card.
+* *Card Border*: Set the thickness of the card borders.
+* *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
+* *Card Shadow*: Set the shadow beneath the card.
+
+// *New App URL*?
+
+== ACM Error Page
+== ACM Login Form
+== ACM Search Result List
+== ACM Self Register
