@@ -8,13 +8,13 @@ To design your API Community Manager portal, open the Builder and add ACM Lightn
 
 == ACM API Console
 
-The interactive API console shows information about APIs and their methods, and allows users to test the methods by sending queries.
+The interactive API console shows information about APIs and their methods, and allows users to test the methods by sending requests.
 
 * *API*: Choose the API to display.
 * *Show documentation pages*: Show the documentation pages for the API.
 * *Link hover color*: Set the color of links when the cursor hovers over them.
 * *Button text color (optional)*: Set the color of text on buttons.
-* *Button hover text color (optional)*: Set the color of text on buttons when the cursor hovers over them.
+* *Button hover text color (optional)*: Set the color of text on buttons when the cursor hovers over them. Default is the button text color.
 * *Headline font family (optional)*: Set the font family of the API console headline.
 * *Error color (optional)*: Set the color of error messages.
 * *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
@@ -32,11 +32,11 @@ The interactive API console shows information about APIs and their methods, and 
 * *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
 * *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
 
-// Check descriptions: *Link hover color*, *Button hover text color (optional)*, *Headline font family (optional)*
+// Check descriptions: *Headline font family (optional)*
 
 == ACM API Console Instances
 
-The API console instances component is used inside an *ACM API Console* component and shows the list of instances of an API.
+The API console instances component shows the list of instances of an API.
 
 // check component description
 
@@ -44,7 +44,7 @@ The API console instances component is used inside an *ACM API Console* componen
 
 == ACM API Console Navigation
 
-The API console navigation component is used inside an *ACM API Console* component and shows the navigation for the console.
+The API console navigation component shows the navigation for the console.
 
 // check component description
 
@@ -67,7 +67,29 @@ The API console navigation component is used inside an *ACM API Console* compone
 
 == ACM API Console Request Panel
 
+The API console request panel component shows the panel for testing an API by making requests.
 
+* *API*: Choose the API to display.
+* *Show documentation pages*: Show the documentation pages for the API.
+* *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
+* *Method Label Get Color*: Set the color of the labels of *GET* methods.
+* *Method Label Post Background Color*: Set the background color of the labels of *POST* methods.
+* *Method Label Post Color*: Set the color of the labels of *POST* methods.
+* *Method Label Put Background Color*: Set the background color of the labels of *PUT* methods.
+* *Method Label Put Color*: Set the color of the labels of *PUT* methods.
+* *Method Label Delete Background Color*: Set the background color of the labels of *DELETE* methods.
+* *Method Label Delete Color*: Set the color of the labels of *DELETE* methods.
+* *Method Label Patch Background Color*: Set the background color of the labels of *PATCH* methods.
+* *Method Label Patch Color*: Set the color of the labels of *PATCH* methods.
+* *Method Label Options Background Color*: Set the background color of the labels of *OPTIONS* methods.
+* *Method Label Options Color*: Set the color of the labels of *OPTIONS* methods.
+* *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
+* *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
+* *Link hover color*: Set the color of links when the cursor hovers over them.
+* *Button text color (optional)*: Set the color of text on buttons.
+* *Button hover text color (optional)*: Set the color of text on buttons when the cursor hovers over them. Default is the button text color.
+* *Headline font family (optional)*: Set the font family of the headline.
+* *Error color (optional)*: Set the color of error messages.
 
 == ACM API Documentation Viewer
 
@@ -79,7 +101,7 @@ The API documentation viewer shows the documentation of the selected API. The do
 
 == ACM API Version Card
 
-An API version card shows information about an API version.
+An API version card shows information about an API, including icon, name, and description.
 
 * *API*: Choose the API to show.
 * *Override URL*: When the user clicks the *API Details* button on the card, a URL opens. If this optional field is set, the URL in the field overrides the default URL. This could be used to direct users to a documentation or marketing page about the API, which would also have a link to the API's main page.
@@ -105,26 +127,105 @@ The API version carousel shows a horizontally scrollable set of cards for APIs.
 * *Card Border*: Set the thickness of the card borders.
 * *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
 * *Card Shadow*: Set the shadow beneath each card.
-* *Message if empty*: Show this message if the carousel has no APIs. Defaults to "There are no APIs available right now."
+* *Message if empty*: Show this message if the carousel has no APIs. Default is "There are no APIs available right now."
 // * *Filter condition (Advanced)*: Package name, field name such as "API name" or "API description", equal to or not equal to some string. [Will this be in GA version?]
 
 == ACM API Version Header
-== ACM Application Analytics ...
+
+The API version header displays the API Header including icon, name, and description.
+
+* *API*: Choose the API to show.
+
+== ACM Application Analytics Graph
+
+The application analytics graph displays statistics about the use of an application. It has no configuration settings.
+
 == ACM Application Details
+
+The application details component displays details about an application.
+
+// check component description
+
+* *API*: Choose the API to show.
 
 == ACM Application Listing
 
 The application listing shows applications that use an API.
 
-* *New App URL*: 
+* *New App URL*: Set a new URL for the application.
 * *Card Margin*: Set the amount of margin space around the card.
 * *Card Border*: Set the thickness of the card borders.
 * *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
 * *Card Shadow*: Set the shadow beneath the card.
 
-// *New App URL*?
+// check *New App URL* description
 
 == ACM Error Page
+
+The error page is shown when the site experiences an error such as a File Not Found error.
+
+* *Error Page Legend*: The message on the error page. Default is "The page you tried to reach is not available."
+
 == ACM Login Form
+
+The login form allows users to log in to the portal.
+
+* *StartUrl*: Set the URL users see after completing login. Default is the portal home page.
+* *usernameLabel*: Set the label for the username field. Default is `Email`.
+* *passwordLabel*: Set the label for the password field. Default is `Password`.
+* *loginButtonLabel*: Set the label for the login button. Default is `Log in`.
+* *forgotPasswordLabel*: Set the label for the forgotten password link. Default is `Forgot your password?`.
+* *forgotPasswordUrl*: Set the URL for the forgotten password link. Default is `/ForgotPassword`.
+* *selfRegisterLabel*: Set the label for the self registration link. Default is `Not a member?`.
+* *selfRegisterUrl*: Set the URL for the self registration link. Default is `/SelfRegister`.
+
+// check *StartUrl* description
+
 == ACM Search Result List
+
+The search result list shows a list of search results. It has no configuration settings.
+
 == ACM Self Register
+
+The self register component allows users to register for portal accounts.
+
+* *Account Id*: Set the account ID.
+* *Profile Id*: Set the profile ID.
+* *Start Url*: Set the start URL. Default is the portal home page.
+* *Confirm Url*: Set the confirmation URL. Default is `/CheckPasswordResetEmail`.
+* *First Name Label*: Set the label for the first name field. Default is `First Name`.
+* *Last Name Label*: Set the label for the last name field. Default is `Last Name`.
+* *Email Label*: Set the label for the email address field. Default is `Email`.
+* *Password Label*: Set the label for the password field. Default is `Create Password`.
+* *Confirm Password Label*: Set the label for the password confirmation field. Default is `Confirm Password`.
+* *Submit Button Label*: Set the label for the submit button. Default is `Sign Up`.
+* *Include Password Field*: Choose whether to show the password field.
+* *Extra Field Set*: Set extra fields.
+* *Approved Registration*: Choose whether registration requires approval.
+* *Approver Id*: Set the approver ID.
+
+// Check descriptions: *Account Id*, *Profile Id*, *Start Url*, *Confirm Url*, *Extra Field Set*, *Approver Id*
+
+== API Access Requester
+
+The API access requester button enables users to request access to an API for an application. Users can request access for an existing client application and API instance, or request to create a new client application by specifying the application name and description and choosing an API instance.
+
+* *API*: Choose the API.
+
+== API Documentation Sidebar
+
+The API documentation sidebar shows the sidebar for API documentation. It has no configuration settings.
+
+// check component description
+
+== Check Password
+
+The check password component shows the page a user sees after requesting a password reset. It has no configuration settings.
+
+== Custom Forgot Password
+
+The custom forgot password component enables users to request a password reset.
+
+* *checkEmailUrl*: Set the URL for the page the user sees after requesting a password reset. Default is `/CheckPasswordResetEmail`.
+* *usernameLabel*: Set the label for the username field. Default is `Username`.
+* *submitButtonLabel*: Set the label for the submit button. Default is `Send Password Reset Email`.
