@@ -1,0 +1,48 @@
+= Branding and Customization
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Use the Community Builder to customize your community and add branding, images and logos.
+
+Log in to ACM and select the *Community Builder* link.
+
+Top left icon for Settings:
+- General: Community Title, Public Access, Topics that define the structure of the site, such as Navigational Topics and Featured Topics
+- Theme: Manage, such as changing the theme. See Community Cloud docs.
+- Languages
+- SEO
+- CMS Connect?
+- Advanced: Google Analytics, Head Markup, Components Panel, Performance
+- Security?
+- Developer?
+- Updates?
+Top left icon for Theme:
+- Colors: General: Text Color, Detail Text Color, Action Color, Link Color, Overlay Text Color, Border Color, Page Background Color. Login Pages: Background Color, Card Background Color, Error Text Color.
+- Images: Company Logo, Login Page Background Image.
+- Fonts: Primary Font, Header Fonts, Text Case.
+- Theme Settings: Show header, Fix the header's position, Show hero, Start hero under header, Set max page width (with slider to set MPW in pixels)
+Menu configuration: Click on menu to open "Theme Navigation Menu" configuration options. Max Items to Display (2-15), Menu Item Alignment, button to edit Navigation Menu. Editing menu includes adding menu items, removing them, and dragging and dropping them to reorder them. Home is always present and always the first item. Clicking any other item in the menu shows the Menu Item options:
+- Name: Set the visible name of the menu item.
+- Type: Community Page, External URL, Global Action, Menu Label, Navigational Topic, or Salesforce Object.
+- Page: If the item's Type is Community Page, the item links to a page in the community, and you can choose which page on the Page drop-down menu.
+- Publicly available: Choose whether the item is visible to the public or only to users who are logged in.
+
+Pages are how content is rendered in the community. Top left has a Pages menu that displays the name of the current page, and lets you select any other page in the community to edit.
+Inside each Page are Components. Includes both ACM Components (such as the ACM API Version Carousel) and Salesforce Components (such as the CMS Collection).
+Pages menu has an option to create a New Page. Can choose either a Standard Page or an Object Page. Object Pages are for Salesforce objects. To create a custom community page, select Standard Page. Can choose preconfigured page or a New Blank Page. Select layout. Type in the new page's Name and URL. URL can be used to make links to the new page, including links in menus. You will see the new page, with placeholders for content based on the layout. Can add components, such as a Headline component in the page header, or an ACM Lightning component such as an API version card.
+The Pages menu also shows the editable configuration properties for each page. See Community Cloud documentation.
+
+You can organize the content in your community with Collections.
+
+Log in and click the link Manage CMS Content.
+
+// List includes Content, Collections, Topics, and Recommendations. Don't discuss these in much detail to avoid confusion. Do list them all with brief explanations.
+
+- Content: List of all content showing each article.
+- Collections
+
+Collections: Create New Collection, select the Content Source "CMS Content". Select to curate the collection "Manually". (Point to Salesforce Community Cloud docs for content source "Salesforce CRM" and curating "Conditionally".) Shows list of all articles. Select the ones you want to be part of the collection by clicking the `+` icon at the left of each one. Back in builder, in a CMS Collection component, you can now select your new collection. A CMS Collection component has its own configuration menu to set options such as layout.
+
+Configuring components (config and customization): Theme Navigation Menu, CMS Collection, Headline, Feed (for forums), all ACM Components
