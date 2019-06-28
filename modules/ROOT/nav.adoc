@@ -2,6 +2,7 @@
 * xref:index.adoc[API Community Manager]
 * xref:admin-interface.adoc[Administrator Interface]
 * xref:preview-community.adoc[Preview Community]
+* xref:branding-and-customization.adoc[Branding and Customization]
 * xref:acm-lightning-components.adoc[ACM Lightning Components]
 * xref:publish-apis.adoc[Publish APIs]
 * xref:publish-content.adoc[Publish Content]
