@@ -4,11 +4,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Developers can use the API Community Manager forums to share tips and advice on using the organization's APIs.
+Developers can use the API Community Manager forums to ask questions and collaborate with other members of the community and developers.
 
-Your organization's community operator can moderate the forums. This includes replying to new discussions and questions, reviewing audit trails, and creating and managing forum rules. These rules can filter posts, other content, and members based on criteria defined by the operator. Members matching the criteria can be frozen, and posts and other content matching the criteria can be flagged, blocked, automatically edited to remove banned terms, or held for the operator to review them.
-
-One simple and commonly used example of forum moderation is reviewing pending forum posts.
+When a developer posts a question or answer that's not visible automatically, a community operator must approve it.
 
 To approve or delete pending forum posts, select the *Manage Communities* tab. Click the *Workspace* icon. Select *Moderation*.
 
@@ -19,6 +17,12 @@ Click the *Pending Discussions* icon.
 image::pending-discussions.png[Pending Discussions page]
 
 The list of posts shows their authors and the options to *View Author Details*, *View Discussion*, *Approve*, and *Delete*.
+
+If the community operator chooses *Approve*, the post becomes visible to the public.
+
+If the community operator chooses *Delete*, the post is removed and not visible to anyone.
+
+A community operator can also reply to new discussions and questions, review audit trails, and create and manage forum rules. These rules can filter posts, other content, and members based on criteria defined by the operator. Members matching the criteria can be frozen, and posts and other content matching the criteria can be flagged, blocked, automatically edited to remove banned terms, or held for the operator to review them.
 
 For full information about the Salesforce Community Cloud forums and their moderation options, please see the Salesforce documentation.
 
