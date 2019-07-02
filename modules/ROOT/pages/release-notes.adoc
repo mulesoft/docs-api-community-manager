@@ -7,7 +7,7 @@ endif::[]
 ////
 == 1.0
 
-*May 22, 2019*
+*Month 31, 2019*
 
 === New Features
 
@@ -26,26 +26,7 @@ endif::[]
 
 == Internal Beta
 
-*April 22, 2019*
-
-=== New Features
-
-* one
-* two
-
-=== Fixed in this Release
-
-* one
-* two
-
-=== Known Issues
-
-* one
-* two
-
-== Internal Alpha
-
-*April 8, 2019*
+*Month 2, 2019*
 
 === New Features
 

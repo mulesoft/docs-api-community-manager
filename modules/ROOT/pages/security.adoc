@@ -1,7 +1,7 @@
-= User Management
+= Security
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Includes companies, permissions, and sharing.
+Full information on API Community Manager security safeguards.

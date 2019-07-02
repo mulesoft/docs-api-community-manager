@@ -1,0 +1,9 @@
+= Installation
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Install API Community Manager with these instructions.
+
+Installed as a Salesforce package.

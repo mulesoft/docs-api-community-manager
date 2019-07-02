@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+Before installing API Community Manager, review these requirements and preparation steps.
+
 API Community Manager requires a Salesforce Organization with Communities enabled.
 
 Supported browser: Chrome.

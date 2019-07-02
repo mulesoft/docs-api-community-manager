@@ -1,0 +1,9 @@
+= Branding and Customization
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Use the API Community Manager Builder to customize your community and add your branding.
+
+You can find further information in the Salesforce Community Cloud documentation.
