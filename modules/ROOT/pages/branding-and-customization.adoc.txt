@@ -1,9 +1,0 @@
-= Branding and Customization
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-:imagesdir: ../assets/images/
-
-Builder. ACM built-in template showcases customization and branding features.
-
-Walkthrough of customization, then reference to Community Cloud docs with further info.

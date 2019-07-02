@@ -1,0 +1,9 @@
+= Support
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+API engineers can handle support cases with API Community Manager's support system, which is based on the Salesforce Service Console.
+
+You can find further information in the Salesforce Community Cloud documentation.

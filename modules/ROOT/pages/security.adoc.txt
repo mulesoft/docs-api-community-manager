@@ -1,7 +1,0 @@
-= Security
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-:imagesdir: ../assets/images/
-
-Full info about security safeguards here.

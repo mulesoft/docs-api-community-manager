@@ -1,7 +1,7 @@
-= Setup
+= Manage Users
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Installed as a Salesforce package.
+Includes companies, permissions, and sharing.
