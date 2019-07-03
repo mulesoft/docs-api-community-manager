@@ -4,16 +4,10 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Includes companies, permissions, and sharing.
-
-== User registration and admin approval
+== User Registration and Admin Approval
 When browsing a community as an unregistered or guest user, you can only view limited information. To view all available community information, you must become a registered user, which requires admin approval.
 
-This topic describes:
-How to self-register in a community to obtain access to all community information.
-How a community admin reviews and approves consumer developer registration requests.
-
-=== User registration
+=== User Registration
 You must perform the following steps to register in a community:
 . Navigate to the community.
 . Select *Log in*.
@@ -23,7 +17,7 @@ You must perform the following steps to register in a community:
 
 After the community administrator approves the registration request, a welcome email is sent to you. To complete registration, you must select the link in the email and specify a new password. You can then log in to the community using the account icon in the community navigation. As a registered user, additional options are now available, such as *Forums* and *My Applications*.
 
-=== Admin approval
+=== Admin Approval
 Admins must perform the following steps to approve community registration requests:
 .  Navigate to the API community *ACM Administrator* interface.
 . Select *Manage Users*. This section provides the status of all developer registration requests.
