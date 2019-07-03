@@ -8,6 +8,7 @@ Users self-register for access to the API Community Manager (ACM). Admins then a
 ACM user experience.
 
 === User Registration
+
 When browsing a community as an unregistered or guest user, you can only view limited information.
 
 Perform the following steps to self-register in a community:
@@ -24,6 +25,7 @@ then log in to the community using the account icon in the community navigation.
 additional options are now available, such as *Forums* and *My Applications*.
 
 === Admin Approval
+
 Admins must perform the following steps to approve community registration requests:
 
 .  Navigate to the API community *ACM Administrator* interface.
