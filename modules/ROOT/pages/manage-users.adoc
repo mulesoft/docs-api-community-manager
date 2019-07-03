@@ -10,14 +10,17 @@ Consumer developers self-register for access to the API Community Manager (ACM).
 
 When consumer developers browse your community as unregistered users (guests), they can view only limited information.
 
-To give consumer developers access to your community, the following steps are performed:  
+Consumer developers follow these steps to self-register:  
 
-. Navigate to the community to which they want access.
-. Select *Log in*.
-. Select *Not a member?*
-. Enter their community username and password. 
-. Select *REGISTER* to submit the registration request. 
-. After a registration request is sent, navigate to the API community *ACM Administrator* interface.
+. Nvigates to the community to which they want access.
+. Selects *Log in*.
+. Selects *Not a member?*
+. Enters their community username and password. 
+. Selects *REGISTER* to submit the registration request. 
+
+== Approve and Activate Users
+
+. After a registration request is sent by the user, navigate to the API community *ACM Administrator* interface.
 . Select *Manage Users*. This section provides the status of all developer registration requests.
 . Select *Approve* to activate the user and trigger a welcome email.
 After you approve the registration request, a welcome email is sent to the consumer developer. 
