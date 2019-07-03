@@ -12,7 +12,7 @@ When consumer developers browse your community as unregistered users (guests), t
 
 Consumer developers follow these steps to self-register:  
 
-. Nvigates to the community to which they want access.
+. Navigates to the community to which they want access.
 . Selects *Log in*.
 . Selects *Not a member?*
 . Enters their community username and password. 
