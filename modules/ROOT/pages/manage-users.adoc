@@ -4,31 +4,22 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Users self-register for access to the API Community Manager (ACM). Admins then approve users to give them access to the 
-ACM user experience.
+Consumer developers self-register for access to the API Community Manager (ACM). You can then approve users to give them access to the ACM developer features. 
 
-=== User Registration
+== User Registration and Activation
 
-When browsing a community as an unregistered or guest user, you can only view limited information.
+When consumer developers browse your community as unregistered users (guests), they can view only limited information.
 
-Perform the following steps to self-register in a community:
+To give consumer developers access to your community, the following steps are performed:  
 
-. Navigate to the community.
+. Navigate to the community to which they want access.
 . Select *Log in*.
 . Select *Not a member?*
-. Enter your community username and password.
-. Select *REGISTER* to submit the registration request.
-
-After the community administrator approves the registration request, a welcome email is sent to you. 
-To complete registration, you must select the link in the email and specify a new password. You can 
-then log in to the community using the account icon in the community navigation. As a registered user, 
-additional options are now available, such as *Forums* and *My Applications*.
-
-=== Admin Approval
-
-Admins must perform the following steps to approve community registration requests:
-
-. Navigate to the API community *ACM Administrator* interface.
+. Enter their community username and password. 
+. Select *REGISTER* to submit the registration request. 
+. After a registration request is sent, navigate to the API community *ACM Administrator* interface.
 . Select *Manage Users*. This section provides the status of all developer registration requests.
-. Select *Approve* for a request to be approved. 
+. Select *Approve* to activate the user and trigger a welcome email.
+After you approve the registration request, a welcome email is sent to the consumer developer. 
+. To complete registration, the user must click the link in the email and specify a new password. The consumer developer can then log in to the community using the account icon in the community navigation. When the user's status is *Active*, additional options become available to the developer, such as *Forums* and *My Applications*.
 . (Optional) To deactivate a current registration, disable the *Active* setting for that user.
