@@ -4,70 +4,114 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager publishes APIs from your organization's instance of Exchange so they can be accessed by your organization's developer community.
+An ACM community administrator imports APIs, minor API updates, and major API updates from their Exchange organization to their community, reviews them, and publishes them.
 
-== List your community's APIs
+== Import APIs
 
-Open the *Manage API Publication*. This tab displays lists of *APIs in this Community* and *APIs in Exchange*.
+Open the ACM administrator interface and select the *Manage APIs* tab at the top left.
 
-Each of your Anypoint organization's APIs are shown in one of the lists.
+On this tab you can manage the APIs in your community, including their metadata and visibility.
 
-Each item in the list *APIs in this Community* shows an icon, name, visibility icon, description, and an *Edit* button.
+The section *APIs in this Community* shows the API versions that have been added to the community.
 
-Public APIs show the visibility icon of a blue eye. APIs visible only to registered users show a black eye. An API in preview mode is only visible to the community administrator who added it and shows a black eye with a line through it.
+The section *APIs in Exchange* shows the API versions that exist in your Exchange organization and have not been added to the community.
 
-Each item in the list *APIs in Exchange* shows an icon, name, description, and *Add to Community* button.
+To add an API version from Exchange to the community, click the *Add to Community* button to the right of the API version name.
 
-The lists are divided into pages and show page number links at the bottom. To change the number of items shown, use the menu icon with three horizontal lines in the top right corner.
+The API version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank.
 
-You can search the APIs by name with the *APIs Search* bar at the top.
+== Set API Information
 
-== Add an API to your community
+Click the *Edit* button to the right of the API version name.
 
-To add an API from Exchange to your community, list your community's APIs, find the API in the list *APIs in Exchange*, and click the button *Add to Community*.
+Keep the current *API Name*.
 
-The API is removed from the list *APIs in Exchange* and appears in the list *APIs in this Community* in preview mode, so it is only visible to the community administrator who added it. To complete additional API information (including its icon, description, and link to a community page with business details), and change its visibility, edit the API.
+Click *Replace Icon* to set the API version icon.
 
-== Edit an API
+Add a *Description* for the API version.
 
-To edit an API, list your community's APIs, find the API in the list *APIs in this Community*, and click the button *Edit*.
+For now, leave the *Visibility* as *Admin Only* while you preview the API version.
 
-The editing screen shows:
+By default, each API version on your community's page has a link (labeled "API Details") to a page showing information about the API. To preserve this default, set *Marketing Page* to *None*. To link to a different CMS content page in your community such as a marketing page, set the *Marketing Page* option to *CMS/Custom page* and fill in the URL of the CMS page.
 
-* The API name: Edit the name here.
-* The button *View Asset in Exchange*: Open a new tab showing the API's page in Exchange.
-* The trash can icon: Unpublish the API and remove it from the ACM portal.
-* The API icon and the button *Replace Icon*: Open a dialog to select a new icon image.
-* The API description: Edit the description here.
-* The *Visbility on Community* selector: Publish the API in *Preview Mode* visible only to the community administrator who added it, or for *Registered users*, or for the *Public*. *Public* APIs can be seen by any user with access to a page that presents API components. APIs visible to *Registered users* can be seen only by logged in users, regardless of the page permissions.
-* The *Marketing Page* setting: Set this to *CMS/Custom Page* to provide a link to a page in the community or to *None*. If *CMS/Custom Page* is selected, the field *Marketing Page URL* is shown. If a marketing page link is set, it appears in the *API Details* page and as a button in the API's carousel tile with the title *Learn more*.
-* The button *Cancel*: Return to the list without making any changes.
-* The button *Apply*: Apply changes and return to the list.
+Click the *Apply* button at the bottom right.
 
-== Remove an API
+== Preview APIs
 
-To remove an API, edit the API and click the trash can icon.
+In the ACM administrator interface, select *Community Builder* at the top.
 
-== Preview an API
+The community builder shows a preview of your community's site and options to edit the site.
 
-To preview an API, go to the *Manage Communities* tab and click the *Builder* icon. Enter Preview mode by clicking the *Preview* button in the top right.
+Click *Preview* at the top right to enter preview mode.
 
-In Preview mode, all the APIs in your community are shown in API components such as the API carousel, and you can check the API's information such as any business articles or technical documentation.
+Scroll down to the API carousel that shows a card for each API version in the community.
 
-After previewing an API, you can make it visible to users by editing the API.
+The new API version shows the message *This is only visible for you*, showing that the API version visibility is *Admin Only*. Consumer developers viewing the page do not see this API version.
 
-== API updates in Exchange and API Designer
+== Make API Versions Visible
 
-On an API's page in Exchange, the API major version is shown in the dropdown menu next to the API name, and the API asset version is shown in the *Asset versions* list on the right.
+In the ACM administrator interface, select *Manage APIs* at the top.
 
-image::exchange-api-versions.png[Exchange API major version and asset versions]
+Click the *Edit* button to the right of the API version name.
 
-Each API major version can have one or more asset versions.
+Set *Visibility* to *Public*.
 
-ACM imports API major versions and lists them independently of each other, so they can be published and unpublished independently in ACM. However, within each API major version, ACM always uses the latest API asset version, and no other API asset versions.
+Click the *Apply* button at the bottom right.
 
-If a developer publishes a new API asset version by updating the markdown pages in Exchange, or updating the API specification in API Designer, then ACM imports those changes automatically and immediately.
+Consumer developers now see this API version in the API carousel on the community site.
 
-If a developer publishes a new API major version, it will only be published on ACM when the ACM community administrator publishes it manually.
+== Minor API Updates
 
-// Missing so far: Grouping APIs into API Products
+When an API specification or its documentation need corrections such as changing the text, these non-breaking changes are given a minor version change, such as changing version `3.0.0` to version `3.0.1`. ACM automatically and immediately imports these updates to all communities where that API is published, without requiring any action from the ACM administrator.
+
+For example, suppose both the text in an API's documentation and the text in the API Specification description have spelling errors.
+
+To correct errors in the API specification, open Design Center, open the API project, and fix the spelling in the description.
+
+Click the *Publish to Exchange* button at the top right.
+
+In the dialog box *Publish API specification to Exchange*, leave the existing *Name*, *Main file*, and *API Version*, and increment the *Asset version* for a non-breaking change. For example, if the *Asset version* is `3.0.0`, change it to `3.0.1`.
+
+Click the *Publish* button at the bottom right.
+
+To correct errors in the API documentation, open Exchange, open the API, click the *Edit* button at the top right, and fix the errors.
+
+Click the *Save as draft* button at the bottom right.
+
+Click the *Publish* button at the top right.
+
+Consumer developers now see the corrected information on the community site.
+
+== Major API Updates
+
+When a new version of the API with breaking changes is created, the ACM community administrator controls when and how to publish the new version in the community, mark the old version as deprecated, and remove the old version.
+
+Suppose a developer on the API team adds a new resource to an API.
+
+In Design Center the developer opens the API project, adds the resource to the specification, and clicks the *Publish to Exchange* button at the top right.
+
+This is a breaking change, so in the dialog box *Publish API specification to Exchange* the developer changes the *API version*. For example, if the *API version* is `v3`, it becomes `v4`. If the *Asset version* is `3.0.1`, it becomes `4.0.0`. *Name* and *Main file* do not change.
+
+The developer clicks the *Publish* button at the bottom right.
+
+The previous API version v3 remains in all communities where it was published without any changes.
+
+In the ACM administrator interface, select *Manage APIs* at the top.
+
+The previous API version v3 remains unchanged in the section *APIs in this Community*.
+
+The new API version v4 is listed in the section *APIs in Exchange*.
+
+To add version v4 to the community, click the *Add to Community* button to the right of the API version name.
+
+The API version v4 is now listed in the section *APIs in this Community*.
+
+Click the *Edit* button to the right of the API version v4 name and set the *Icon*, *Description*, *Visibility*, and *Marketing Page* as you did for version v3.
+
+Preview the API, and then set *Visibility* to *Registered users* or *Public*.
+
+Consumer developers now see API version v4 in the API carousel on the community site.
+
+To mark version v3 as deprecated, click the *Edit* button to the right of the API version v3 name, add `[DEPRECATED]` to the end of the *API Name*, and click the *Apply* button in the bottom right.
+
+To remove version v3 from your community, click the *Remove* button to the right of the API version v3 name, and in the dialog box click *Remove* again to confirm. Consumer developers now do not see API version v3 in the API carousel on the community site.
