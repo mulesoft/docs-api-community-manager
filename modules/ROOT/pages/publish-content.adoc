@@ -4,33 +4,71 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-With ACM you can create and publish content articles including news, tutorials, developer blog posts, and events.
+With ACM you can create, organize, and publish content articles including news, tutorials, developer blog posts, and events.
 
-Select the *Manage Communities* tab and click *Content Management*.
+== Create a New Article
 
-image::content-management.png[Content Management page]
+In the ACM administrator interface, select *Manage CMS Content*.
 
-The list shows all of your community's articles.
+The Salesforce Community Cloud *Content Management* interface appears and shows a list of your community's articles.
 
-Click the *Create Content* button in the top right.
+Select the *Salesforce CMS* button at the top right.
 
-image::create-content.png[Create Content page]
+The *Salesforce CMS* interface shows the workspaces in your Salesforce organization. These workspaces contain the content articles.
+
+The *Salesforce CMS* interface enables a team such as marketing or business development to own the production and publication of content articles in a single place, and reuse the content across multiple communities.
+
+Click the name of the workspace where you want to create a new article.
+
+A tab for that workspace appears and shows a list of the workspace's content articles.
+
+Click the *Add Content* button at the top right.
 
 Fill in the article's *Title*, *Body*, *Featured Image*, and *Excerpt*. The *Excerpt* is the preview text on an article's carousel tile.
 
-Set the article's *Topics*. Topics are case-sensitive. As you start to type, a drop-down list shows existing topics you can choose.
+Click the *Save Draft* button at the top right.
 
-NOTE: An article is only displayed if at least one CMS Collection rule matches the article.
+You can make more edits and save the draft again any number of times. The article will not be presented in any collection because it is not published.
 
-Article visibility depends on Community Cloud configuration and CMS Collection rules. For example, a community could have a rule that articles tagged with the topic "News" will be displayed in the list of news articles.
+When you are ready, click the *Publish* button at the top right.
 
-Click the *Save Draft* button in the top right corner.
+== Add the Article to a Collection
 
-When the draft is saved the *Publish* button appears in the top right corner.
+Return to the ACM administrator interface and select *Manage CMS Content*.
 
-Click the *Publish* button to make the article visible in the collections where it matches the rules configured.
+The Salesforce Community Cloud *Content Management* interface appears and shows a list of your community's articles.
+
+Select the *Collections* tab. It shows a list of your collections.
+
+Select the *News* collection. It shows a list of articles in the collection.
+
+To edit the collection, click the *Edit* button at the top right.
+
+The *Edit this collection* dialog shows a list of articles. Articles selected to be part of the collection have green check marks to the left of their names.
+
+Click the plus sign (`+`) to the left of your new article to add it to the collection.
+
+Click the *Save* button at the bottom right.
+
+The *News* collection list of articles now shows your new article.
+
+The Salesforce Community Cloud documentation explains more ways to add articles to collections, including more advanced categorization capabilities using topics and rules.
+
+== Display the Collection in Your Community
+
+Return to the ACM administrator interface and select *Community Builder*.
+
+The community builder shows a preview of your community's site and options to edit the site.
+
+Scroll down to the news carousel and click it. The *CMS Collection* label is visible at the top, showing that the carousel is a *CMS Collection* component.
+
+The *CMS Collection* configuration box at the right shows that the *Selected Collection* is *News*.
+
+The new article is displayed in the carousel.
+
+To display articles anywhere on your community site, use one or more *CMS Collection* components.
 
 == See Also
 
 * https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder]
-* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[CMS for Community Cloud (Beta)]
+* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce Content Management System (CMS) (Beta)]
