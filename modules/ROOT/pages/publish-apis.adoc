@@ -4,19 +4,19 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-An ACM community administrator imports APIs, new API versions, and minor API updates from their Exchange organization to their community, reviews them, and publishes them.
+An ACM community administrator imports APIs, minor API updates, and major API updates from their Exchange organization to their community, reviews them, and publishes them.
 
 == Import APIs
 
 Open the ACM administrator interface and select the *Manage APIs* tab at the top left.
 
-On this tab you can manage what APIs from Exchange are presented in your community and their metadata and visibility.
+On this tab you can manage the APIs in your community, including their metadata and visibility.
 
 The section *APIs in this Community* shows the API versions that have been added to the community.
 
 The section *APIs in Exchange* shows the API versions that exist in your Exchange organization and have not been added to the community.
 
-To add an API version from Exchange to the Community, click the *Add to Community* button to the right of the API version name.
+To add an API version from Exchange to the community, click the *Add to Community* button to the right of the API version name.
 
 The API version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank.
 
@@ -32,7 +32,7 @@ Add a *Description* for the API version.
 
 For now, leave the *Visibility* as *Admin Only* while you preview the API version.
 
-By default each API version on your community's page has a link labeled "API Details" to a page showing information about the API. To preserve this default, set *Marketing Page* to *None*. To link to a different CMS content page in your community such as a marketing page, set the *Marketing Page* option to *CMS/Custom page* and fill in the URL of the CMS page.
+By default, each API version on your community's page has a link (labeled "API Details") to a page showing information about the API. To preserve this default, set *Marketing Page* to *None*. To link to a different CMS content page in your community such as a marketing page, set the *Marketing Page* option to *CMS/Custom page* and fill in the URL of the CMS page.
 
 Click the *Apply* button at the bottom right.
 
@@ -82,7 +82,7 @@ Click the *Publish* button at the top right.
 
 Consumer developers now see the corrected information on the community site.
 
-== New API Versions
+== Major API Updates
 
 When a new version of the API with breaking changes is created, the ACM community administrator controls when and how to publish the new version in the community, mark the old version as deprecated, and remove the old version.
 
@@ -94,24 +94,24 @@ This is a breaking change, so in the dialog box *Publish API specification to Ex
 
 The developer clicks the *Publish* button at the bottom right.
 
-The previous API version 3 remains in all communities where it was published without any changes.
+The previous API version v3 remains in all communities where it was published without any changes.
 
 In the ACM administrator interface, select *Manage APIs* at the top.
 
-The previous API version 3 remains unchanged in the section *APIs in this Community*.
+The previous API version v3 remains unchanged in the section *APIs in this Community*.
 
-The new API version 4 is listed in the section *APIs in Exchange*.
+The new API version v4 is listed in the section *APIs in Exchange*.
 
-To add version 4 to the community, click the *Add to Community* button to the right of the API version name.
+To add version v4 to the community, click the *Add to Community* button to the right of the API version name.
 
-The API version 4 is now listed in the section *APIs in this Community*.
+The API version v4 is now listed in the section *APIs in this Community*.
 
-Click the *Edit* button to the right of the API version 4 name and set the *Icon*, *Description*, *Visibility*, and *Marketing Page* as you did for version 3.
+Click the *Edit* button to the right of the API version v4 name and set the *Icon*, *Description*, *Visibility*, and *Marketing Page* as you did for version v3.
 
 Preview the API, and then set *Visibility* to *Registered users* or *Public*.
 
-Consumer developers now see API version 4 in the API carousel on the community site.
+Consumer developers now see API version v4 in the API carousel on the community site.
 
-To mark version 3 as deprecated, click the *Edit* button to the right of the API version 3 name, add `[DEPRECATED]` to the end of the *API Name*, and click the *Apply* button in the bottom right.
+To mark version v3 as deprecated, click the *Edit* button to the right of the API version v3 name, add `[DEPRECATED]` to the end of the *API Name*, and click the *Apply* button in the bottom right.
 
-To remove version 3 from your community, click the *Remove* button to the right of the API version 3 name, and in the dialog box click *Remove* again to confirm. Consumer developers now do not see API version 3 in the API carousel on the community site.
+To remove version v3 from your community, click the *Remove* button to the right of the API version v3 name, and in the dialog box click *Remove* again to confirm. Consumer developers now do not see API version v3 in the API carousel on the community site.
