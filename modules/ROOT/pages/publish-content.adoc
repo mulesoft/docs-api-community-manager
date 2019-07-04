@@ -6,7 +6,7 @@ endif::[]
 
 With ACM you can create, organize, and publish content articles including news, tutorials, developer blog posts, and events.
 
-== Create a new article
+== Create a New Article
 
 In the ACM administrator interface, select *Manage CMS Content*.
 
@@ -16,9 +16,9 @@ Select the *Salesforce CMS* button at the top right.
 
 The *Salesforce CMS* interface shows the workspaces in your Salesforce organization. These workspaces contain the content articles.
 
-The *Salesforce CMS* interface enables a team such as marketing or business development to own the production and publication of content articles in a single place, and re-use the content across multiple communities.
+The *Salesforce CMS* interface enables a team such as marketing or business development to own the production and publication of content articles in a single place, and reuse the content across multiple communities.
 
-Click the name of the workspace where you would like to create a new article.
+Click the name of the workspace where you want to create a new article.
 
 A tab for that workspace appears and shows a list of the workspace's content articles.
 
@@ -32,7 +32,7 @@ You can make more edits and save the draft again any number of times. The articl
 
 When you are ready, click the *Publish* button at the top right.
 
-== Add the article to a collection
+== Add the Article to a Collection
 
 Return to the ACM administrator interface and select *Manage CMS Content*.
 
@@ -54,7 +54,7 @@ The *News* collection list of articles now shows your new article.
 
 The Salesforce Community Cloud documentation explains more ways to add articles to collections, including more advanced categorization capabilities using topics and rules.
 
-== Display the collection in your community
+== Display the Collection in Your Community
 
 Return to the ACM administrator interface and select *Community Builder*.
 
