@@ -4,6 +4,102 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Use the API Community Manager Builder to customize your community and add your branding.
+Use the Community Builder to customize your community and add branding, images and logos.
 
-You can find further information in the Salesforce Community Cloud documentation.
+In the ACM administrator interface, select the *Community Builder* link.
+
+== Settings
+
+Click the gear icon at the top left to access Settings:
+
+* *General*: These settings include *Community Title*, *Public Access* to make the page public, and *Topics* that define the structure of the site, such as *Navigational Topics* and *Featured Topics*. Topics are a mechanism to organize content such as CMS articles and forum posts.
+* *Theme*: Here you can manage and configure the theme of your site.
+* *Languages*: Manage the languages for multilingual communities and configure translation options.
+* *SEO*: Search Engine Optimization (SEO) features define what information can be indexed by external services and discovered through online searches, and can increase traffic to your public community.
+* *CMS Connect*: Connect to an external Content Management System (CMS) so you can embed assets from the CMS in your community.
+* *Advanced*: Advanced settings include configuring Google Analytics, setting the `<head>` markup on each community page, configuring the components panel, and optimizing performance.
+* *Security*: Manage security of your community.
+* *Developer*: Developer options, including exporting a page, a community theme, or an entire community template.
+* *Updates*: Manage Community Cloud updates.
+
+== Themes
+
+Click the paintbrush icon at the top left to access Theme options:
+
+* *Colors*: The site's *General* color scheme includes *Text Color*, *Detail Text Color*, *Action Color*, *Link Color*, *Overlay Text Color*, *Border Color*, and *Page Background Color*. *Login Pages* have their own color scheme which includes *Background Color*, *Card Background Color*, and *Error Text Color*.
+* *Images*: Set the site's *Company Logo* and the login page's *Background Image*.
+* *Fonts*: The site's fonts include the *Primary Font* and *Header Fonts*. You can also set the site's *Text Case*.
+* *Theme Settings*: The site's theme settings include *Show header*, *Fix the header's position*, *Show hero* to enable the site's hero image, *Start hero under header*, and *Set max page width* in pixels.
+
+== Theme Navigation Menu
+
+Click on the page's top menu to open the *Theme Navigation Menu* configuration options.
+
+These include *Max Items to Display (2-15)*, *Menu Item Alignment*, and a button to edit the navigation menu.
+
+Editing the menu includes adding menu items, removing them, and dragging and dropping them to reorder them. *Home* is always present and always the first item.
+
+Clicking any other item in the menu shows the *Menu Item* options:
+
+* *Name*: Set the visible name of the menu item.
+* *Type*: Types include *Community Page*, *External URL*, *Global Action*, *Menu Label*, *Navigational Topic*, and *Salesforce Object*.
+* *Page*: If the item's *Type* is *Community Page*, the item links to a page in the community. Choose the page on the *Page* drop-down menu.
+* *Publicly available*: Choose whether the item is visible to the public or only to users who are logged in.
+
+== Pages
+
+Your community's content is rendered on pages. The *Pages* menu at the top left displays the name of the current page, and lets you select any other page in the community to view and edit.
+
+Inside each page are components. You can use both ACM components such as the *ACM API Version Carousel* and Salesforce components such as the *CMS Collection*.
+
+The *Pages* menu also offers the *New Page* option.
+
+A new page can be an *Object Page* or *Standard Page*. The *Object Page* is used only with Salesforce objects, so create your custom community pages by selecting *Standard Page*.
+
+You can start your standard page by choosing one of the preconfigured pages or making a *New Blank Page*.
+
+To make a new blank page, select the layout, then enter the new page's *Name* and *URL*. Use the URL to make links to the new page, including links in menus.
+
+The new page appears, with placeholders for content based on the layout.
+
+Add your components, such as a *Headline* component in the page header, or an ACM Lightning component such as an *ACM API Version Carousel*.
+
+The *Pages* menu also shows the editable configuration properties for each page, which are described in the Salesforce Community Cloud documentation.
+
+== Collections
+
+You can organize the content in your community with Collections.
+
+In the ACM administrator interface, select *Manage CMS Content*.
+
+The *Content Management* interface is organized into these panels:
+
+* *Content*: A list of each article in your community.
+* *Collections*: The collections in your community, such as *News* for news articles and *Blogs* for blog posts. Each collection is a list of articles.
+* *Topics*: Topics are similar to tags. Use topics to group articles.
+* *Recommendations*: Drive community engagement by recommending videos, trainings, events, and more for your users.
+
+To create a new collection, click the *New* button at the top right.
+
+Enter a name for your collection, select the source *CMS Content*, and choose to curate the collection *Manually*.
+
+This shows a list of all articles in your community. Select the ones you want to be part of the collection by clicking the plus sign (`+`) to the left of the article.
+
+Click the *Finish* button at the bottom right to save the new collection.
+
+To use your new collection on your community site, go to the ACM administrator interface and select the *Community Builder* link.
+
+Add a *CMS Collection* component to a page in your community.
+
+Click the component to open its configuration menu, and click the *Change Collection* button to select your new collection.
+
+The new collection of articles is now displayed on your community page.
+
+// Add info on configuration of these components: CMS Collection, Headline, Feed (for forums). Link to page discussing configuration of each ACM Lightning Component.
+
+== See Also
+
+You can find further information in the Salesforce Community Cloud documentation:
+
+* https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Communities with Community Builder]
+* https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview]
