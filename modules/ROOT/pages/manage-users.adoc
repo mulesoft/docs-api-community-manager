@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Consumer developers self-register for access to your API Community Manager. You can then approve user registrationss to give them access to the restricted sections of your community. 
+Consumer developers self-register for access to your API Community Manager. You can then approve user registrations to give them access to the restricted sections of your community. 
 
 == User Registration and Activation
 
