@@ -6,6 +6,16 @@ endif::[]
 
 With ACM you can create, organize, and publish content articles including news, tutorials, developer blog posts, and events.
 
+You can author ACM content in either of the following ways:
+
+. In https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[SalesforceCMS].
+. In https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through 
+CMS Connect].
+
+To display content in community pages, you must organize content in COLLECTIONS using the *Manage CMS content* section 
+of the ACM admin interface, as shown in https://drive.google.com/open?id=1ZxQ2lvivxnXDKB8qfJX3qZM-Szrzx4Dl[this 
+video with a similar talk track].
+
 == Create a New Article
 
 In the ACM administrator interface, select *Manage CMS Content*.
