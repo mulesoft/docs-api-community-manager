@@ -4,23 +4,47 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager (ACM) enables your company to build APIs, catalog them with Anypoint Exchange, and make them available to software developers inside and outside of your company.
+With API Community Manager (ACM) you can build and operate a community for software developers inside and outside of your organization who write applications that use your APIs.
 
-ACM relies on MuleSoft's Anypoint Exchange as the single source of truth about published APIs, and Salesforce Community Cloud's ability to add customization, branding, and marketing information to serve unique content to different audiences. This way the experience of developers using your company's APIs is as rich and polished as the experience of customers using your company's products.
+MuleSoft's Anypoint Exchange provides ACM with a single source of truth about published APIs, and Salesforce Community Cloud provides ACM with the ability to add customization, branding, and marketing information to serve unique content to different audiences.
 
-// ACM also introduces API products. An API product is a group of APIs with marketing context. For example, a payments product might include three APIs for Apple pay, Android pay, and wire transfers.
+This way the site providing your APIs to developers is as rich and polished as the site providing your products to customers.
 
-== The ACM Consumer Developer Experience
+== The ACM Partner Developer Experience
 
-Many companies use Salesforce Community Cloud to build branded and customized online portals to offer their products to their customers.
+To take full advantage of their APIs, an organization needs to help their partners discover the APIs effectively, in a personalized, branded experience, so the partners are excited to work with them. The organization also needs to engage with their partners at every step of their journey to make sure they are successful. Let's see how you can do this with API Community Manager.
 
-In the same way, your company can use API Community Manager to build branded and customized online portals to offer its APIs to the internal and external software developers who write code that uses and consumes those APIs.
+As the community administrator, you use ACM to create a visually compelling digital experience that looks like your product catalog and is wholly consistent with your organization's brand identity. This community showcases the APIs you select directly from Anypoint Exchange, plus relevant content to inspire and help the developers you want to reach.
 
-These consumer developers will arrive at your company's site, which may include news, events, tutorials, and posts on a developer blog. Developers can search through a catalog of available APIs and documentation.
+The community is much more than just a place for describing technology, and helps convince your partners' business audiences of the value of your APIs. Content created by your marketing and business development teams helps these business audiences understand the impact of your APIs so they can build a case for investment.
 
-Developers can use the forums on the portal to collaborate, share ideas, and discuss any issues they find.
+For developers, the community also delivers the technical documentation of the APIs, so developers can explore specific API features and learn how to use the APIs. Each API has a console where developers try out the API. This information is made available directly from the API designs in the Anypoint Platform.
 
-ACM also integrates with the Salesforce Service Console to help consumer developers file support cases and to help API engineers resolve the cases.
+Developers request access to an API for new or existing applications, and your organization approves these requests with the same process used in API Manager.
+
+Developers also manage their applications, manage application credentials including API keys and secrets, and get insights on their applications' performance as the applications use your APIs.
+
+Other ACM features enable your organization to engage with partners and ensure they are supported throughout their journey.
+
+Communities can include news, events, tutorials, and posts on a developer blog.
+
+Partner developers use the forums to engage with your organization and other members of the community. In these forums they post questions and answers, collaborate, share ideas, and discuss any issues they find.
+
+If they can't find the answer they are looking for, they submit a support case and see activity on the case, just as they would for any of your organization's products. This is a logical next step in treating APIs as products.
+
+ACM dashboards show you how the content in your community is being used so you understand the activity in your ecosystem. These out-of-the-box dashboards use more than ten years of Salesforce experience to reflect best practices in community engagement.
+
+You personalize the community with the Community Builder, a drag-and-drop editor that allows you to create and customize the experience down to the pixel.
+
+Suppose your organization hosts a hackathon, welcoming partners to experiment with your APIs and test innovative new product ideas. You can use Community Builder to set up a variation of your community for the hackathon. The variant uses some of the same content and APIs, includes additional tailored content, and organizes it in a purpose-specific visual layout.
+
+You target this variant to a specific audience using rules which can consider user location, group membership, domain, and other information, so it is presented to the right people at the right time.
+
+Community Builder makes it easy to publish a tailored experience using pre-existing components, and just clicks, not code.
+
+With API Community Manager you have a digital experience platform to build and nurture your API ecosystem, increase developer engagement, and personalize experiences with clicks and not code.
+
+With these capabilities, you have everything you need to drive your API program forward.
 
 == See Also
 
