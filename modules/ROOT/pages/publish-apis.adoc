@@ -18,13 +18,13 @@ The section *APIs in Exchange* shows the API versions that exist in your Exchang
 
 To add an API version from Exchange to the community, click the *Add to Community* button to the right of the API version name.
 
-The API version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank.
+The API version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank. The following sections describe how to update the visibility, icon, and description information.
 
 == Set API Information
 
 Click the *Edit* button to the right of the API version name.
 
-Keep the current *API Name*.
+Optionally, edit the *API Name*.
 
 Click *Replace Icon* to set the API version icon.
 
@@ -88,7 +88,7 @@ When a new version of the API with breaking changes is created, the ACM communit
 
 Suppose a developer on the API team adds a new resource to an API.
 
-In Design Center the developer opens the API project, adds the resource to the specification, and clicks the *Publish to Exchange* button at the top right.
+In Design Center, the developer opens the API project, adds the resource to the specification, and clicks the *Publish to Exchange* button at the top right.
 
 This is a breaking change, so in the dialog box *Publish API specification to Exchange* the developer changes the *API version*. For example, if the *API version* is `v3`, it becomes `v4`. If the *Asset version* is `3.0.1`, it becomes `4.0.0`. *Name* and *Main file* do not change.
 
