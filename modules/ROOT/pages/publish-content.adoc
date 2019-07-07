@@ -78,6 +78,35 @@ The new article is displayed in the carousel.
 
 To display articles anywhere on your community site, use one or more *CMS Collection* components.
 
+== Use Collections to Organize Content
+
+In the ACM administrator interface, select *Manage CMS Content*.
+
+The *Content Management* interface is organized into these panels:
+
+* *Content*: A list of each article in your community.
+* *Collections*: The collections in your community, such as *News* for news articles and *Blogs* for blog posts. Each collection is a list of articles.
+* *Topics*: Topics are similar to tags. Use topics to group articles.
+* *Recommendations*: Drive community engagement by recommending videos, trainings, events, and more for your users.
+
+To create a new collection, click the *New* button at the top right.
+
+Enter a name for your collection, select the source *CMS Content*, and choose to curate the collection *Manually*.
+
+This shows a list of all articles in your community. Select the ones you want to be part of the collection by clicking the plus sign (`+`) to the left of the article.
+
+Click the *Finish* button at the bottom right to save the new collection.
+
+To use your new collection on your community site, go to the ACM administrator interface and select the *Community Builder* link.
+
+Add a *CMS Collection* component to a page in your community.
+
+Click the component to open its configuration menu, and click the *Change Collection* button to select your new collection.
+
+The new collection of articles is now displayed on your community page.
+
+// Add info on configuration of these components: CMS Collection, Headline, Feed (for forums). Link to page discussing configuration of each ACM Lightning Component.
+
 == See Also
 
 * https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder]
