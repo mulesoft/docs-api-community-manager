@@ -18,7 +18,7 @@ The section *APIs in Exchange* shows the API versions that exist in your Exchang
 
 To add an API version from Exchange to the community, click the *Add to Community* button to the right of the API version name.
 
-The API version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank. The following sections describe how to update the visibility, icon, and description information.
+The API version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank. The following sections include information for updating the visibility, icon, and description information.
 
 == Set API Information
 
