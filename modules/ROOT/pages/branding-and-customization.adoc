@@ -19,7 +19,8 @@ The component palette includes Salesforce Community Cloud and ACM-specific compo
 Drag and drop the desired components from the component palette to the community page. Each 
 component has its own configuration options that you can then access by selecting the component on the page.
 
-For additional component information, refer to the Salesforce Community Cloud and ACM product documentation.
+For additional component information, refer to the https://help.salesforce.com/articleView?id=rss_component_koa_kokua_components.htm&type=5[Salesforce Community Cloud] 
+and xref:index.adoc[API Community Manager documentation].
 
 Components that are typically used in *Home* pages include:
 
@@ -85,7 +86,8 @@ The new page is displayed with placeholders for content based on the layout.
 Add your components, such as a *Headline* component in the page header, or an ACM Lightning component 
 such as an *ACM API Version Carousel*.
 
-The *Pages* menu also shows the editable configuration properties for each page, which are described in  https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community’s Pages and Their Properties in Community Builder].
+The *Pages* menu also shows the editable configuration properties for each page, which are described 
+in  https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community’s Pages and Their Properties in Community Builder].
 
 == Settings
 
