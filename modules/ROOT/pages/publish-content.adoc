@@ -7,7 +7,7 @@ endif::[]
 With ACM, you can create, organize, and publish content, including news, tutorials, developer 
 blog posts, and events, for your community.
 
-== Create a New Article in SalesforceCMS
+== Create a New Article in Salesforce CMS
 
 NOTE: You can also author ACM content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect]. 
 
@@ -43,7 +43,8 @@ The https://help.salesforce.com/articleView?id=rss_component_koa_kokua_component
 == Display the Collection in Your Community
 
 . Return to the ACM administrator interface and select *Community Builder*. A preview of your community's site is displayed.
-. Scroll to the carousel to which your new article was added and select it. The new article is displayed in the carousel.
+. If the collection containing your new article is already displayed in a *CMS Collection* component, then your new article will be visible there.
+. Your article will be visible in any new *CMS Collection* components displaying the collection containing the article.
 
 == Create Collections to Organize Content
 
