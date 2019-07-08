@@ -4,98 +4,100 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Use the Community Builder to customize your community and add branding, images and logos.
+Use the https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder] to customize the branding, look and feel, and site structure of your community pages to match your desired brand identity.
 
-In the ACM administrator interface, select the *Community Builder* link.
+Select *Community Builder* in the ACM administrator interface. By default, the Community Builder displays the *Home* page and the Pages drop-down list displays *Home*. You can select the Pages drop-down list to display a list of community pages and specify a different page for customization.
 
-== Settings
+The *Community Builder* interface contains the customization icons described here.
 
-Click the gear icon at the top left to access Settings:
+== Components
 
-* *General*: These settings include *Community Title*, *Public Access* to make the page public, and *Topics* that define the structure of the site, such as *Navigational Topics* and *Featured Topics*. Topics are a mechanism to organize content such as CMS articles and forum posts.
-* *Theme*: Here you can manage and configure the theme of your site.
-* *Languages*: Manage the languages for multilingual communities and configure translation options.
-* *SEO*: Search Engine Optimization (SEO) features define what information can be indexed by external services and discovered through online searches, and can increase traffic to your public community.
-* *CMS Connect*: Connect to an external Content Management System (CMS) so you can embed assets from the CMS in your community.
-* *Advanced*: Advanced settings include configuring Google Analytics, setting the `<head>` markup on each community page, configuring the components panel, and optimizing performance.
-* *Security*: Manage security of your community.
-* *Developer*: Developer options, including exporting a page, a community theme, or an entire community template.
-* *Updates*: Manage Community Cloud updates.
+Select the *Components* lightning bolt icon in the top left navigation to display the component palette. 
+The component palette includes Salesforce Community Cloud and ACM-specific components. 
+Drag and drop the desired components from the component palette to the community page. Each 
+component has its own configuration options that you can then access by selecting the component on the page.
 
-== Themes
+For additional component information, refer to xref:acm-lightning-components.adoc[ACM Lightning Components] and the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Components] documentation.
 
-Click the paintbrush icon at the top left to access Theme options:
+Components that are typically used in *Home* pages include:
 
-* *Colors*: The site's *General* color scheme includes *Text Color*, *Detail Text Color*, *Action Color*, *Link Color*, *Overlay Text Color*, *Border Color*, and *Page Background Color*. *Login Pages* have their own color scheme which includes *Background Color*, *Card Background Color*, and *Error Text Color*.
-* *Images*: Set the site's *Company Logo* and the login page's *Background Image*.
-* *Fonts*: The site's fonts include the *Primary Font* and *Header Fonts*. You can also set the site's *Text Case*.
-* *Theme Settings*: The site's theme settings include *Show header*, *Fix the header's position*, *Show hero* to enable the site's hero image, *Start hero under header*, and *Set max page width* in pixels.
+* *Headline*: Specifies title and banner text.
+* *Theme Navigation Menu* - Displays main menu bar options. You can update *Max Items to Display (2-15)*, 
+*Menu Item Alignment*, and use the *Navigation Menu* to display, add, remove, and customize options.  
+The following properties can be customized:
+** *Name*: The visible name of the menu item.
+** *Type*: The type of item. Types include *Community Page*, *External URL*, *Global Action*, *Menu Label*, 
+*Navigational Topic*, and *Salesforce Object*.
+** *Page*: If the item's *Type* is *Community Page*, this links to a page in the community. You can select a page 
+from the *Page* drop-down menu.
+** *Publicly available*: Specifies whether the item is visible to the public or only to users who are logged in.
+* *CMS Collection*: Displays content articles and allows you to organize them into Collections. Refer 
+to https://help.salesforce.com/articleView?id=community_managed_content_content_creation.htm&type=5[Create Content in Salesforce CMS] for additional information. 
+* *API Carousel*: Displays APIs and API versions that are available to the community from Anypoint Exchange.
+* *HTML editor*: Used to create and display advanced/complex HTML content.
 
-== Theme Navigation Menu
+Components that are typically used in *API details* pages include:
 
-Click on the page's top menu to open the *Theme Navigation Menu* configuration options.
+* *API Header*: Specifies the API name and description.
+* *Tabs*: Contains the following components: *API Documentation Viewer*, which displays API Exchange information, 
+*API Console*, which renders information from the API RAML specification, and *Feed*, which displays comments, 
+discussions, and questions.
+* *API Access Requestor*: Registers a client application and requests access to the API.
 
-These include *Max Items to Display (2-15)*, *Menu Item Alignment*, and a button to edit the navigation menu.
+Components that are typically used in *My Application* pages include:
 
-Editing the menu includes adding menu items, removing them, and dragging and dropping them to reorder them. *Home* is always present and always the first item.
+* *Application Listing*: Lists all client applications that the user has registered and can access.
 
-Clicking any other item in the menu shows the *Menu Item* options:
+To reorder items on a page, simply drag and drop them.
 
-* *Name*: Set the visible name of the menu item.
-* *Type*: Types include *Community Page*, *External URL*, *Global Action*, *Menu Label*, *Navigational Topic*, and *Salesforce Object*.
-* *Page*: If the item's *Type* is *Community Page*, the item links to a page in the community. Choose the page on the *Page* drop-down menu.
-* *Publicly available*: Choose whether the item is visible to the public or only to users who are logged in.
+== Theme
+
+Select the *Theme* paintbrush icon in the top left navigation to access the following general branding parameters:
+
+* *Colors*: These settings include the site's *General* color scheme used throughout the community, 
+including paragraph, heading, and button text.
+* *Images*: Specify the site's *Company Logo* and the login page's *Background Image*.
+* *Fonts*: Specify the site's fonts, which include a *Primary Font* and *Header Fonts*. You can also set the 
+site's *Text Case*.
+* *Theme Settings*: The site's theme settings include *Show header*, *Fix the header's position*, *Show hero* to 
+enable the site's hero image, *Start hero under header*, and *Set max page width* in pixels.
+
+You can also edit CSS rules to adjust your community styling by selecting the *Theme* drop-down list arrow located next to the *Theme* title and selecting *Edit CSS*. 
+
+Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme] 
+for additional information.
 
 == Pages
 
-Your community's content is rendered on pages. The *Pages* menu at the top left displays the name of the current page, and lets you select any other page in the community to view and edit.
+Select the *Pages* icon, which resembles a bulleted list, in the top left navigation to display the name of the current 
+page or select another page in the community to view and edit. The *Pages* menu also offers a *New Page* option.
 
-Inside each page are components. You can use both ACM components such as the *ACM API Version Carousel* and Salesforce components such as the *CMS Collection*.
+A new page can be an *Object Page* or *Standard Page*. An *Object Page* is only used with Salesforce objects, 
+so use *Standard Page* when creating your custom community pages. You can start your standard page by choosing one of the preconfigured pages or making a *New Blank Page*.
 
-The *Pages* menu also offers the *New Page* option.
+To make a new blank page, select the layout, then enter the new page's *Name* and *URL*. Use the URL to make 
+links to the new page, including links in menus.
 
-A new page can be an *Object Page* or *Standard Page*. The *Object Page* is used only with Salesforce objects, so create your custom community pages by selecting *Standard Page*.
+The new page is displayed with placeholders for content based on the layout.
 
-You can start your standard page by choosing one of the preconfigured pages or making a *New Blank Page*.
+Add your components, such as a *Headline* component in the page header, or an ACM Lightning component 
+such as an *ACM API Version Carousel*.
 
-To make a new blank page, select the layout, then enter the new page's *Name* and *URL*. Use the URL to make links to the new page, including links in menus.
+The *Pages* menu also shows the editable configuration properties for each page, which are described 
+in  https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community’s Pages and Their Properties in Community Builder].
 
-The new page appears, with placeholders for content based on the layout.
+== Settings
 
-Add your components, such as a *Headline* component in the page header, or an ACM Lightning component such as an *ACM API Version Carousel*.
+Select the *Settings* gear icon in the top left navigation to access the following parameters:
 
-The *Pages* menu also shows the editable configuration properties for each page, which are described in the Salesforce Community Cloud documentation.
+* *General*: These settings include *Community Title*, *Public Access* to make the page public, and *Topics* 
+that define the structure of the site, such as *Navigational Topics* and *Featured Topics*. Topics are a 
+mechanism to organize content such as CMS articles and forum posts.
+* *Theme*: Displays the *Theme* menu.
+* *SEO*: Search Engine Optimization (SEO) features define what information can be indexed by external services 
+and discovered through online searches, and can increase traffic to your public community.
 
-== Collections
-
-You can organize the content in your community with Collections.
-
-In the ACM administrator interface, select *Manage CMS Content*.
-
-The *Content Management* interface is organized into these panels:
-
-* *Content*: A list of each article in your community.
-* *Collections*: The collections in your community, such as *News* for news articles and *Blogs* for blog posts. Each collection is a list of articles.
-* *Topics*: Topics are similar to tags. Use topics to group articles.
-* *Recommendations*: Drive community engagement by recommending videos, trainings, events, and more for your users.
-
-To create a new collection, click the *New* button at the top right.
-
-Enter a name for your collection, select the source *CMS Content*, and choose to curate the collection *Manually*.
-
-This shows a list of all articles in your community. Select the ones you want to be part of the collection by clicking the plus sign (`+`) to the left of the article.
-
-Click the *Finish* button at the bottom right to save the new collection.
-
-To use your new collection on your community site, go to the ACM administrator interface and select the *Community Builder* link.
-
-Add a *CMS Collection* component to a page in your community.
-
-Click the component to open its configuration menu, and click the *Change Collection* button to select your new collection.
-
-The new collection of articles is now displayed on your community page.
-
-// Add info on configuration of these components: CMS Collection, Headline, Feed (for forums). Link to page discussing configuration of each ACM Lightning Component.
+Refer to the https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[Community Builder Settings] help topic for additional information.
 
 == See Also
 
