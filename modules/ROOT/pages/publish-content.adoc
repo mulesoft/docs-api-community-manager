@@ -4,104 +4,58 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-With ACM you can create, organize, and publish content articles including news, tutorials, developer blog posts, and events.
+With ACM, you can create, organize, and publish content, including news, tutorials, developer 
+blog posts, and events, for your community.
 
-You can author ACM content in either of the following ways:
+== Create a New Article in SalesforceCMS
 
-. In https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[SalesforceCMS].
-. In https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through 
-CMS Connect].
+NOTE: You can also author ACM content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect]. 
 
-To display content in community pages, you must organize content in COLLECTIONS using the *Manage CMS content* section 
-of the ACM admin interface, as shown in https://drive.google.com/open?id=1ZxQ2lvivxnXDKB8qfJX3qZM-Szrzx4Dl[this 
-video with a similar talk track].
+. In the ACM administrator interface, select *Manage CMS Content*. The Salesforce Community Cloud *Content Management* interface is displayed.
+The *Content Management* interface is organized into these panels:
 
-== Create a New Article
-
-In the ACM administrator interface, select *Manage CMS Content*.
-
-The Salesforce Community Cloud *Content Management* interface appears and shows a list of your community's articles.
-
-Select the *Salesforce CMS* button at the top right.
-
-The *Salesforce CMS* interface shows the workspaces in your Salesforce organization. These workspaces contain the content articles.
-
-The *Salesforce CMS* interface enables a team such as marketing or business development to own the production and publication of content articles in a single place, and reuse the content across multiple communities.
-
-Click the name of the workspace where you want to create a new article.
-
-A tab for that workspace appears and shows a list of the workspace's content articles.
-
-Click the *Add Content* button at the top right.
-
-Fill in the article's *Title*, *Body*, *Featured Image*, and *Excerpt*. The *Excerpt* is the preview text on an article's carousel tile.
-
-Click the *Save Draft* button at the top right.
-
-You can make more edits and save the draft again any number of times. The article will not be presented in any collection because it is not published.
-
-When you are ready, click the *Publish* button at the top right.
+* *Content*: Lists each article in your community.
+* *Collections*: Lists collections in your community, such as *News* for news articles and *Blogs* for blog posts. Each collection is a list of articles.
+* *Topics*: Lists article Topic groupings. Topics are similar to tags.
+* *Recommendations*: Drives community engagement by recommending videos, trainings, events, and more for your users.
+. Select *Salesforce CMS*. The *Salesforce CMS* interface displays the workspaces in your Salesforce organization. 
+TIP: The *Salesforce CMS* interface enables other teams, such as marketing or business development, to own the creation and publication of content articles in a single place, and reuse content across multiple communities.
+. Select the workspace in which you want to create the new article. A tab for that workspace is displayed 
+that contains a list of the workspace's content articles.
+. Select *Add Content*.
+. Fill in the article's *Title*, *Body*, *Featured Image*, and *Excerpt*. The *Excerpt* is the preview text on an article's carousel tile.
+. When finished with your changes, select *Save Draft*. You can edit and save the draft again any number of times. 
+. When you are ready to publish the article, select *Publish*.
 
 == Add the Article to a Collection
 
-Return to the ACM administrator interface and select *Manage CMS Content*.
+. Return to the ACM administrator interface and select *Manage CMS Content*. The Salesforce Community Cloud *Content Management* interface is displayed, which provides a list of your community's articles.
+. Select *Collections*.
+. Select the appropriate collection for your article.
+. Select *Edit*. Articles selected to be part of the collection have green check marks to the left of their names.
+. Select the plus sign (`+`) next to your new article to add it to the collection.
+. Select *Save*.
 
-The Salesforce Community Cloud *Content Management* interface appears and shows a list of your community's articles.
+The collection now lists your new article.
 
-Select the *Collections* tab. It shows a list of your collections.
-
-Select the *News* collection. It shows a list of articles in the collection.
-
-To edit the collection, click the *Edit* button at the top right.
-
-The *Edit this collection* dialog shows a list of articles. Articles selected to be part of the collection have green check marks to the left of their names.
-
-Click the plus sign (`+`) to the left of your new article to add it to the collection.
-
-Click the *Save* button at the bottom right.
-
-The *News* collection list of articles now shows your new article.
-
-The Salesforce Community Cloud documentation explains more ways to add articles to collections, including more advanced categorization capabilities using topics and rules.
+The https://help.salesforce.com/articleView?id=rss_component_koa_kokua_components.htm&type=5[Salesforce Community Cloud documentation] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
 
 == Display the Collection in Your Community
 
-Return to the ACM administrator interface and select *Community Builder*.
+. Return to the ACM administrator interface and select *Community Builder*. A preview of your community's site is displayed.
+. Scroll to the carousel to which your new article was added and select it. The new article is displayed in the carousel.
 
-The community builder shows a preview of your community's site and options to edit the site.
+== Create Collections to Organize Content
 
-Scroll down to the news carousel and click it. The *CMS Collection* label is visible at the top, showing that the carousel is a *CMS Collection* component.
-
-The *CMS Collection* configuration box at the right shows that the *Selected Collection* is *News*.
-
-The new article is displayed in the carousel.
-
-To display articles anywhere on your community site, use one or more *CMS Collection* components.
-
-== Use Collections to Organize Content
-
-In the ACM administrator interface, select *Manage CMS Content*.
-
-The *Content Management* interface is organized into these panels:
-
-* *Content*: A list of each article in your community.
-* *Collections*: The collections in your community, such as *News* for news articles and *Blogs* for blog posts. Each collection is a list of articles.
-* *Topics*: Topics are similar to tags. Use topics to group articles.
-* *Recommendations*: Drive community engagement by recommending videos, trainings, events, and more for your users.
-
-To create a new collection, click the *New* button at the top right.
-
-Enter a name for your collection, select the source *CMS Content*, and choose to curate the collection *Manually*.
-
-This shows a list of all articles in your community. Select the ones you want to be part of the collection by clicking the plus sign (`+`) to the left of the article.
-
-Click the *Finish* button at the bottom right to save the new collection.
-
-To use your new collection on your community site, go to the ACM administrator interface and select the *Community Builder* link.
-
-Add a *CMS Collection* component to a page in your community.
-
-Click the component to open its configuration menu, and click the *Change Collection* button to select your new collection.
+. In the ACM administrator interface, select *Manage CMS Content*.
+. Select *Collections*.
+. Select *New*.
+. Enter a name for your collection, select the source *CMS Content*, and choose to curate the collection *Manually*.
+. From the list of community articles, select the ones you want to include in the collection by selecting the plus sign (`+`) next to each article.
+. Select *Finish*.
+. To use your new collection on your community site, go to the ACM administrator interface and select the *Community Builder* link.
+. Add a *CMS Collection* component to a page in your community.
+. Select the component to open its configuration menu, and select *Change Collection* to select your new collection.
 
 The new collection of articles is now displayed on your community page.
 
