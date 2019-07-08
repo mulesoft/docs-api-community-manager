@@ -6,11 +6,9 @@ endif::[]
 
 Use the https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder] to customize the branding, look and feel, and site structure of your community pages to match your desired brand identity.
 
-Select *Community Builder* in the ACM administrator interface. By default, 
-the Community Builder displays the *Home* page. You can select the *Home* drop-down list arrow to display a list 
-of community pages and specify a different page for customization.
+Select *Community Builder* in the ACM administrator interface. By default, the Community Builder displays the *Home* page and the Pages drop-down list displays *Home*. You can select the Pages drop-down list to display a list of community pages and specify a different page for customization.
 
-The Community Builder interface contains customization icons as described in the following sections. 
+The *Community Builder* interface contains the customization icons described here.
 
 == Components
 
@@ -19,8 +17,7 @@ The component palette includes Salesforce Community Cloud and ACM-specific compo
 Drag and drop the desired components from the component palette to the community page. Each 
 component has its own configuration options that you can then access by selecting the component on the page.
 
-For additional component information, refer to the https://help.salesforce.com/articleView?id=rss_component_koa_kokua_components.htm&type=5[Salesforce Community Cloud] 
-and xref:index.adoc[API Community Manager documentation].
+For additional component information, refer to xref:acm-lightning-components.adoc[ACM Lightning Components] and the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Components] documentation.
 
 Components that are typically used in *Home* pages include:
 
@@ -42,10 +39,10 @@ to https://help.salesforce.com/articleView?id=community_managed_content_content_
 Components that are typically used in *API details* pages include:
 
 * *API Header*: Specifies the API name and description.
-* *Tabs* - Contains the following components: *API Documentation Viewer*, which displays API Exchange information, 
+* *Tabs*: Contains the following components: *API Documentation Viewer*, which displays API Exchange information, 
 *API Console*, which renders information from the API RAML specification, and *Feed*, which displays comments, 
 discussions, and questions.
-* *API Access Requestor* - Registers a client application and requests access to the API.
+* *API Access Requestor*: Registers a client application and requests access to the API.
 
 Components that are typically used in *My Application* pages include:
 
