@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-ACM community administrators import APIs, make minor and major API updates from the Exchange 
+ACM community administrators import APIs, import minor and major API updates from the Exchange 
 organization to a community, and review and publish the imported information.
 
 == Import APIs
@@ -16,9 +16,9 @@ community, including their metadata and visibility.
 * *APIs in Exchange* shows the API versions that exist in your Exchange organization but have not been 
 added to the community.
 . Select *Add to Community* next to the API version name. The API version is now listed in the *APIs in 
-this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank. 
+this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank.
 
-The following sections include information for updating the visibility, icon, and description information.
+Now set the API information, including visibility, icon, and description.
 
 == Set API Information
 
@@ -32,11 +32,11 @@ The following sections include information for updating the visibility, icon, an
 
 == Preview APIs
 
-. In the ACM administrator interface, select *Community Builder*. The Community Builder displayes a preview of 
+. In the ACM administrator interface, select *Community Builder*. The Community Builder displays a preview of 
 your community's site and edit options.
 . Select *Preview*.
 . Scroll to the API carousel that displays a card for each API version in the community. The new API version 
-hows the message *This is only visible for you*, indicating *Admin Only* visibility. Consumer developers cannot 
+shows the message *This is only visible for you*, indicating *Admin Only* visibility. Consumer developers cannot 
 see this API version preview.
 
 == Make API Versions Visible
