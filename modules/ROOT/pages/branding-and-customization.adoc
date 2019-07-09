@@ -33,7 +33,7 @@ from the *Page* drop-down menu.
 to https://help.salesforce.com/articleView?id=community_managed_content_content_creation.htm&type=5[Create Content in Salesforce CMS] for additional information. 
 * *API Carousel*: Displays APIs and API versions that are available to the community from Anypoint Exchange.
 * *Rich text editor*: Used to create and display fixed text. The content is authored with a WYSWYG editor.
-* *HTML editor*: Used to create and display advanced/complex HTML content. The content is written directly in HTML.
+* *HTML editor*: Used to create and display advanced or complex HTML content. The content is written directly in HTML.
 
 Components that are typically used in *API details* pages include:
 
