@@ -6,13 +6,11 @@ endif::[]
 
 With API Community Manager (ACM) you can build and operate a community for software developers inside and outside of your organization who write applications that use your APIs.
 
-MuleSoft's Anypoint Exchange provides ACM with a single source of truth about published APIs, and Salesforce Community Cloud provides ACM with the ability to add customization, branding, and marketing information to serve unique content to different audiences.
+APIs in MuleSoft's Anypoint Exchange can be surfaced in ACM. ACM is powered by Salesforce Community Cloud, providing the ability to add customization, branding, and marketing information to serve unique content targeted to the different needs of your developer audiences.
 
-This way the site providing your APIs to developers is as rich and polished as the site providing your products to customers.
+== The Consumer Developer Experience
 
-== The ACM Partner Developer Experience
-
-To take full advantage of their APIs, an organization needs to help their partners discover the APIs effectively, in a personalized, branded experience, so the partners are excited to work with them. The organization also needs to engage with their partners at every step of their journey to make sure they are successful. Let's see how you can do this with API Community Manager.
+To drive adoption of your APIs by developers, you need to help them discover and learn your APIs effectively, in a personalized, branded experience, so these developers become excited to work with you. You also need to engage with these developers at every step of their journey to make sure they are successful. API Community Manager combines the power of Salesforce Community Cloud and the Anypoint Platform to help you create this personalized, connected experience for your developers to interact with your APIs. 
 
 As the community administrator, you use ACM to create a visually compelling digital experience that looks like your product catalog and is wholly consistent with your organization's brand identity. This community showcases the APIs you select directly from Anypoint Exchange, plus relevant content to inspire and help the developers you want to reach.
 
@@ -30,11 +28,11 @@ Communities can include news, events, tutorials, and posts on a developer blog.
 
 Partner developers use the forums to engage with your organization and other members of the community. In these forums they post questions and answers, collaborate, share ideas, and discuss any issues they find.
 
-If they can't find the answer they are looking for, they submit a support case and see activity on the case, just as they would for any of your organization's products. This is a logical next step in treating APIs as products.
+If developers can't find the answer they are looking for, they submit a support case and see activity on the case, just as they would for any of your organization's products. This is a logical next step in treating APIs as products.
 
 ACM dashboards show you how the content in your community is being used so you understand the activity in your ecosystem. These out-of-the-box dashboards use more than ten years of Salesforce experience to reflect best practices in community engagement.
 
-You personalize the community with the Community Builder, a drag-and-drop editor that allows you to create and customize the experience down to the pixel.
+Personalize the community with the Community Builder, a drag-and-drop editor that allows you to create and customize the experience down to the pixel.
 
 Suppose your organization hosts a hackathon, welcoming partners to experiment with your APIs and test innovative new product ideas. You can use Community Builder to set up a variation of your community for the hackathon. The variant uses some of the same content and APIs, includes additional tailored content, and organizes it in a purpose-specific visual layout.
 
