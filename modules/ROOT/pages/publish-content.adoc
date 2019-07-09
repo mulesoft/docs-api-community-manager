@@ -38,7 +38,7 @@ that contains a list of the workspace's content articles.
 
 The collection now lists your new article.
 
-The https://help.salesforce.com/articleView?id=rss_component_koa_kokua_components.htm&type=5[Salesforce Community Cloud documentation] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
+The https://help.salesforce.com/articleView?id=community_managed_content_collections.htm&type=5[Salesforce Community Cloud documentation] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
 
 == Display the Collection in Your Community
 
@@ -59,8 +59,6 @@ The https://help.salesforce.com/articleView?id=rss_component_koa_kokua_component
 . Select the component to open its configuration menu, and select *Change Collection* to select your new collection.
 
 The new collection of articles is now displayed on your community page.
-
-// Add info on configuration of these components: CMS Collection, Headline, Feed (for forums). Link to page discussing configuration of each ACM Lightning Component.
 
 == See Also
 
