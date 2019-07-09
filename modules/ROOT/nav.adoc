@@ -1,7 +1,6 @@
 .xref:index.adoc[API Community Manager]
 * xref:index.adoc[API Community Manager]
  ** xref:security.adoc[Security]
-* xref:admin-interface.adoc[Administrator Interface]
 * xref:setup.adoc[Set Up Your API Community]
  ** xref:before-installation.adoc[Before Installation]
  ** xref:installation.adoc[Installation]
