@@ -4,4 +4,14 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Full information on API Community Manager security safeguards.
+API Community Manager (ACM) uses the same secure hardware, backup, disaster recovery, and business continuity systems as Salesforce and the Anypoint Platform.
+
+All connections between ACM and related systems such as Salesforce and Anypoint Exchange are encrypted with Transport Layer Security (TLS).
+
+During initial configuration ACM can be set to use a third party single sign-on (SSO) provider such as Okta for user connections to both the Anypoint Platform and Salesforce systems.
+
+ACM is part of Anypoint Platform, and each user has one Anypoint Platform account, which is also used as their ACM account.
+
+// Add more discussion of the process when a consumer developer requests access to an API for an application? Does the system include user impersonation in Anypoint Platform by a master user?
+
+// Is OAuth token exchange used anywhere?
