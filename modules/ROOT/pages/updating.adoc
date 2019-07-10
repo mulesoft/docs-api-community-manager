@@ -4,13 +4,16 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To take advantage of new and improved functionality in your community, ensure you keep your instance up to date.
+Keep your instance up to date to take advantage of new and improved functionality in your community.
 
 To update your API community:
-1. Go to ACM administration
-2. Open the *Package update installation link* on the same browser session (provided by your MuleSoft representative)
-3. Verify the version number and name of the release
-4. Select "Install for admins only" and click "Upgrade"
 
-This starts the installation process. Once the upgrade finishes, you'll receive an email. 
+. Open the ACM administrator interface.
+. Open the *package update installation link* provided by your MuleSoft representative in the same browser session.
+. Verify the version number and name of the release.
+. Select *Install for admins only*.
+. Select *Upgrade*.
 
+This starts the installation process.
+
+When the upgrade finishes, you receive a notification email.

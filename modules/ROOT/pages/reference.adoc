@@ -4,13 +4,33 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-== Auth. Provider configuration
+== Authentication Provider Configuration
 
-Provider Type: `Open ID Connect`
-Name: `Anypoint`
-URL Suffix: `Anypoint`
-Consumer Key: `[CONTACT MULESOFT SUPPORT]`
-Consumer Secret: `[CONTACT MULESOFT SUPPORT]`
-Authorize Endpoint URL: `https://anypoint.mulesoft.com/accounts/oauth2/authorize`
-Token Endpoint URL: `https://anypoint.mulesoft.com/accounts/oauth2/token`
-Default Scopes: `refresh_token
+.Authentication provider configuration
+|===
+|Property |Setting
+
+|Provider Type
+|`Open ID Connect`
+
+|Name
+|`Anypoint`
+
+|URL Suffix
+|`Anypoint`
+
+|Consumer Key
+|`[CONTACT MULESOFT SUPPORT]`
+
+|Consumer Secret
+|`[CONTACT MULESOFT SUPPORT]`
+
+|Authorize Endpoint URL
+|`https://anypoint.mulesoft.com/accounts/oauth2/authorize`
+
+|Token Endpoint URL
+|`https://anypoint.mulesoft.com/accounts/oauth2/token`
+
+|Default Scopes
+|`refresh_token`
+|===

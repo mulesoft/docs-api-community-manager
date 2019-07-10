@@ -4,7 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-* Invalid Page
+== Invalid Page Error
 
-When the community is public, you must change the permissions in the Guest User Profile and add read 
-checks to the external objects.
+When your community is public, prevent the "Invalid Page" error by changing the
+permissions in the Guest User Profile and adding read checks to the external
+objects.
