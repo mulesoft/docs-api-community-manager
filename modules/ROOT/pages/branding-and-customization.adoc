@@ -6,7 +6,9 @@ endif::[]
 
 Use the https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder] to customize the branding, look and feel, and site structure of your community pages to match your desired brand identity.
 
-Select *Community Builder* in the ACM administrator interface. By default, the Community Builder displays the *Home* page and the Pages drop-down list displays *Home*. You can select the Pages drop-down list to display a list of community pages and specify a different page for customization.
+Select *Community Builder* in the API Community Manager (ACM) administrator interface. By default, the 
+Community Builder displays the *Home* page and the Pages drop-down list displays *Home*. You can select 
+the Pages drop-down list to display a list of community pages and specify a different page for customization.
 
 The *Community Builder* interface contains the customization icons described here.
 
@@ -17,14 +19,15 @@ The component palette includes Salesforce Community Cloud and ACM-specific compo
 Drag and drop the desired components from the component palette to the community page. Each 
 component has its own configuration options that you can then access by selecting the component on the page.
 
-For additional component information, refer to xref:acm-lightning-components.adoc[ACM Lightning Components] and the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Components] documentation.
+For additional component information, refer to xref:acm-lightning-components.adoc[ACM Lightning Components] and 
+the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Components] documentation.
 
 Components that are typically used in *Home* pages include:
 
 * *Headline*: Specifies title and banner text.
-* *Theme Navigation Menu* - Displays main menu bar options. You can update *Max Items to Display (2-15)*, 
-*Menu Item Alignment*, and use the *Navigation Menu* to display, add, remove, and customize options.  
-The following properties can be customized:
+* *Navigation Menu*: Displays main menu bar options. You can update *Max Items to Display (2-15)*, 
+*Menu Item Alignment*, and use the *Navigation Menu* to display, add, remove, and customize options. *Home* 
+is always present and is always the first item. The following properties can be customized:
 ** *Name*: The visible name of the menu item.
 ** *Type*: The type of item. Types include *Community Page*, *External URL*, *Global Action*, *Menu Label*, 
 *Navigational Topic*, and *Salesforce Object*.
@@ -34,7 +37,8 @@ from the *Page* drop-down menu.
 * *CMS Collection*: Displays content articles and allows you to organize them into Collections. Refer 
 to https://help.salesforce.com/articleView?id=community_managed_content_content_creation.htm&type=5[Create Content in Salesforce CMS] for additional information. 
 * *API Carousel*: Displays APIs and API versions that are available to the community from Anypoint Exchange.
-* *HTML editor*: Used to create and display advanced/complex HTML content.
+* *Rich text editor*: Used to create and display fixed text. The content is authored with a WYSWYG editor.
+* *HTML editor*: Used to create and display advanced or complex HTML content. The content is written directly in HTML.
 
 Components that are typically used in *API details* pages include:
 
