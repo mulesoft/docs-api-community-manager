@@ -4,4 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-TBD
+* Invalid Page
+
+When the community is public, you must change the permissions in the Guest User Profile and add read 
+checks to the external objects.
