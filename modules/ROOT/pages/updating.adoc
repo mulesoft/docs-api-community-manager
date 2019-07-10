@@ -1,0 +1,16 @@
+= Keeping Your API Community Up to Date
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+To take advantage of new and improved functionality in your community, ensure you keep your instance up to date.
+
+To update your API community:
+1. Go to ACM administration
+2. Open the *Package update installation link* on the same browser session (provided by your MuleSoft representative)
+3. Verify the version number and name of the release
+4. Select "Install for admins only" and click "Upgrade"
+
+This starts the installation process. Once the upgrade finishes, you'll receive an email. 
+
