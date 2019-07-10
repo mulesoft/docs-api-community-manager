@@ -4,398 +4,406 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Install API Community Manager with these instructions.
+Put in "Before Installation" or "Installation":
 
-Installed as a Salesforce package.
 
-API Community Manager 
-Setup Guide
- (RC Version)
+---------
 
-Organization Installation Requirements - prereqs???
+`Before Installation` should contain:
+- Organization Installation Requirements
+
+
+the section `Installation` should have all the rest *except* Customizing login and registration pages
 Installing API Community Manager 
-Update API Community Manager - move this???
+Update API Community Manager
 Create a Community
 API Community Manager Components
-Publish API Community Manager
-Configure the Guest User Access
-Configure the Registered Users
-Configure Api Community Manager
+Publish API Community Manager???
+Configure Guest User Access
+Configure Registered Users
+Configure API Community Manager
 Set permissions for Unauthenticated users
 How to enable external users to register in your Community
 Define moderation rules for forums
 How to setup an Approval Process for new Community Users
+
+
 Customize Login and Registration Pages
 Troubleshooting
 Reference: Auth Provider details
 
 
+== Installation Requirements
 
-the section `Before Installation` should contain:
-- Organization Installation Requirements (except the sign-up step)
-the section `Installation` should have all the rest *except* Customizing login and registration pages
+API Community Manager is installed in an *independent* Salesforce organization so that the API community is isolated 
+from customer operational data in their Salesforce instance (ERP, CRM, etc).
 
-Put in "Before Installation" or "Installation":
+API Community Manager requires an ACM licenses. You cannot reuse an existing Salesforce license for ACM.
 
-Jesus: In a customer, ACM is to be installed in an *independent* salesforce org, so that API community is isolated from the customer operational data in their salesforce instance (ERP, CRM, etc); and because it requires ACM licenses - i.e. customers *can't* "reuse" their existing salesforce licenses for ACM
-Brett: So if I am Bridgestone and I have built out a highly customized ACM how do I update it to take advantage of new capabilities?
-Jesus:
-- brigestone build their highly customized ACM in their ACM-specific salesforce instance
-- They will install *package updates* to ACM components as product team releases them.
-- A package update is a link that the salesforce admin opens once logged in their salesforce instance and it updates all the components (making available the new features)
-- We aim to make package updates fully backwards-compatible, so that installing a package will not break existing functionality - except special cases that will be communicated and planned appropriately, if they happen (very unlikely)
-this process will be explained in the product documentation too (@will.warner FYI :pointup::skin-tone-4: )
-more info: to update the ACM org created a couple weeks ago with the latest updates, log in as salesforce admin in your org, then use the right link https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002ErbpQAC
-anyone using ACM will get a link like that when we update ACM
----------
+. Set up and register a domain:
 
+.. Log in into your https://login.salesforce.com/[Salesforce Organization].
+.. Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
+.. Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
+.. Select *Check Availability*. If the name is already taken, choose a different one.
+.. Select *Register Domain*. You will receive an email when your subdomain name is ready for testing. This process 
+can take a few minutes. 
+.. Follow the instructions in the email.
 
-Organization Installation Requirements
+. Enable Communities inside your organization (logged in with the new user created):
 
-. Log in into your https://login.salesforce.com/[Salesforce Organization].
-. Select *My Domain* in the *Quick Find* box.
-. Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
-. Select *Check Availability*. If your name is already taken, choose a different one.
-. Select *Register Domain*. You will receive an email when your subdomain name is ready for testing. This process can take a few minutes. 
-. Follow the instructions in the email.
+.. Enter `Communities Settings` in the *Quick Find* box and then select *Communities Settings*.
+.. Select *Enable Communities*.
+.. Select a domain name for your communities, and select *Check Availability*. If the name is already taken, 
+choose a different one.
+.. Select *Save*.
 
-Enable Communities inside your organization (logged in with the new user created):
+. Make your domain available to your users:
 
-. Enter `Communities Settings` in the *Quick Find* box and then select *Communities Settings*.
-. Select *Enable Communities*.????check caps????
-. Select a domain name for your communities, and select *Check Availability* to make sure that it’s not already in use.
-. Select *Save*.
+.. Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
+.. Click *Deploy to Users*.
 
-Enable your domain to be available to your users.
-. Search for *My Domain* in the *Quick Find* box and then select *My Domain*.
-. Click *Deploy to Users*.
+If you are using another type of Salesforce Organization, you need the following features available:???
 
-If you are using another type of Salesforce Organization, you need the following features available:??????another type????
+* Salesforce identity
 
-Salesforce identity
+== Install API Community Manager
 
+. Navigate to the https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002ErbpQAC[Package Installation Link]. 
 
-=== Install API Community Manager
-
-. Navigate to the https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002ErbpQAC[Package Installation Link]. Make sure to use the appropriate Release when updating the package.
-
-. On the *Install API Community Manager* page, select *Install*.
-. Select the *Yes, grant access to these third-party web sites* check box.
+. Select the appropriate release to install for your organization.
+. Select *Install*.
+. On the *Approve Third-Party Access* page, select the *Yes, grant access to these third-party web sites* check box.
 . Select *Continue*.
 . When installation completes, select *Done*. 
 
-NOTE: The installation process might take some time to install. In this case, you will receive an email when 
-the installation completes.
+NOTE: If you see a message indicating that the installation process is taking a long time to install, you will 
+receive an email when the installation completes.
 
-You can verify that API Community Manager was installed by reviewing *Installed Packages* information.
+You can verify that API Community Manager installation completed by reviewing the *Installed Packages* information 
+in *Setup*.
 
-. Authenticate the *External Data Source* called Exchange and the *Named Credentials*. ??????
-.. Search for External Data Source in the Quick Find box, then select *External Data Sources*. This external data source specifies how to access to Mulesoft Anypoint system.
-.. Select the name of the External Data Sources and press Edit to change the following fields:
-*** Modify *Identity Type* to *Named Principal*.
-*** Modify *Authentication Protocol* to *OAuth 2.0*.
-*** Modify *Authentication Provider* to *Anypoint*.
+=== Authenticate the *External Data Source*
+.. Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*. 
+This external data source specifies how to access to Mulesoft Anypoint system.
+.. Select *Exchange* and then select *Edit*.
+.. Update *Identity Type* to *Named Principal*.
+.. Update *Authentication Protocol* to *OAuth 2.0*.
+.. Update *Authentication Provider* to *Anypoint*.
 .. Select *Save*. The *Anypoint Login* page is shown.
-.. After you log in to the Anypoint Platform, the *External Data Sources* information for Exchange indicates that the *Authentication Status* is *Authenticated*. If you have problems with this configuration, check the Auth. Provider callback endpoint and your domain configuration. How????
-.. Enter *Named Credentials* in the *Quick Find* box and select *Named Credentials*.
+.. Log in to the Anypoint Platform.
+.. Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*. 
+The *External Data Sources* information for Exchange indicates that the *Authentication Status* is *Authenticated*. 
+If you have problems with this configuration, check the Auth. Provider callback endpoint and your domain 
+configuration. How????
+.. Search for *Named Credentials* in the *Quick Find* box and then select *Named Credentials*.
 .. Select *Edit*.
-.. Enter the Anypoint username and password in the *Username* and *Password* fields, respectively.
-.. Select *Save.*
+.. In the *Authentication* section, enter the Anypoint username and password in the *Username* and 
+*Password* fields, respectively.
+.. Select *Save*.
 
+=== Update API Community Manager
 
-Update API Community Manager
+To update to a later version of API Community Manager:
 
-. Navigate to the following link: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002ErbpQAC[Package Installation Link].
-. Follow the installation steps. The following example is based on the update from 1.11 to 1.13.
+. Navigate to the https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002ErbpQAC[Package Installation Link].
+. Select the appropriate release for your organization.
 . Select *Upgrade*.
 . When the upgrade is complete, select *Done*.
 
+If you have a highly customized ACM:
 
-== Create a Community
+. Install *package updates* to ACM components as they become available.
+. A package update is a link that a salesforce admin opens after logging in to their salesforce instance. Opening the 
+link updates all components with the new features.
+- Package updates are backwards-compatible, so that installing a package does not 
+break existing functionality - except special cases that will be communicated.
+
+=== Create a Community
 
 . If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Community Overview].
 . Navigate to *Setup*.
-. In the *Quick Find* box, enter *All Communities* and select *All Communities*.
+. In the *Quick Find* box, enter *All Communities* and then select *All Communities*.
 . Select *New Community*. All communities templates are listed. 
 . Choose *API Community Manager Template*.
-. In the *API Community Manager* screen, select *Get Started*.
-. When prompted, enter a *Name* and a *URL*. 
+. On the *API Community Manager* page, select *Get Started*.
+. Enter a *Name* and a *URL*. 
 . Select *Create*.
 . After the new community is created, select *Builder* to modify the community appearance and components if needed. 
-. Navigate to the *Administration* area and select *Activate Community*.
+. Navigate to *Administration* and select *Activate Community*.
 
 
-== API Community Manager Components
+=== Add API Community Manager Components
 
 . Navigate to the Community Builder to view the API Community Components. Drag components to your community pages as needed.
 
-== Publish API Community Manager (Manager or Community???)
+=== Publish Your Community
 
 . In the Community Builder, select *Publish*. 
 . In the *Publish Your Community* page, select *Publish*.
 . You will receive an email with the following information:
-<code>Congratulations! User was published successfully and is now live on the following domain(s):
-https://exampledomain-developer-edition.na91.force.com/mydomain/s</code>????
+`Congratulations! User was published successfully and is now live on the following domain(s):
+https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
 
-== Configure Guest User Access
-After the community is created, you must create the community profile, and add permissions.
+=== Configure Guest User Access
+After the community is created, you must create the community profile and add permissions.
 
 . Create the profile to be assigned to new Community Users.
 
 .. Navigate to *Setup*.
-.. In the quick search box??? enter *Users*.
+.. In the *Quick Find* box, enter *Users*.
 .. Select *Profiles*.
-.. In the Profiles window, select *Customer Community User* and select the ‘Clone’.
-.. in the profile name field  enter ‘ACM [ Community Name ] User’. 
+.. In the *Profiles* page, select *Clone* next to the *Customer Community User* profile.
+.. In the *Profiles* page, enter ‘ACM [ Community Name ] User’ for *Profile Name*. 
 .. Select *Save*.
-
 . Change permissions for *External Objects* and *Custom Objects*.
-. Navigate to *Field-Level Security* and in the *Custom Field-Level Security* section.
-. To change permissions, select *View* and then *Edit* for the following objects: ???? (page 20)- which fields need to be updated?????
+.. Navigate to *Field-Level Security*.
+.. In the *Custom Field-Level Security* section, repeat the following step for the *AnypointApiVersions*,
+*AnypointApplications*,
+*AnypointContracts*,
+*AnypointApiInstances*, and
+*CommunityApi items*:
+.. Select *View* and then *Edit* . ????which fields need to be updated?????
 
-.. AnypointApiVersions
-.. AnypointApplications
-.. AnypointContracts
-.. AnypointApiInstances 
-.. CommunityApi
+=== Create a Public Group
 
-
-== Create a public group.
-
-. Navigate to setup and Users -> Public Groups.
-. Select *New*.
-. Enter the following information:
-
-.. *Label*: <code>[Community Name] Public Group<code>.
-.. *Search*: enter *Users* and then add <code>User: [Community Name] Site Guest User</code> to the *Selected Members* column??????????.
+. Navigate to *Setup -> Users -> Public Groups*.
+. Select *Create New View*.
+. Enter `[Community Name] Public Group` for *Label*.
+. In the *Search* field, enter *Users*.
+. Enter `User: [Community Name] Site Guest User` in the *Selected Members* column.
 . Select *Save*.
 
+=== Create *Sharing Settings*
 
-== Create *Sharing Settings* that use the Public Group previously created.
+These settings use the Public Group that you previously created.
 
 . Navigate to *Setup -> Security -> Sharing Settings*.
 . Scroll to and select *CommunityApi Sharing Rules*.
 . Select *New*.
-. In the *Rule Name* section, update *Label* with ‘[Community Name] Guest’ and *Rule Name* with ?????*[Community Name]_Guest*.?????
-. In the *Select your rule type* section, select ‘Based on criteria’ for *Rule Type*.
+. In the *Rule Name* section, update *Label* with ‘[Community Name] Guest’.
+. In the *Select your rule type* section, select ‘Based on criteria’.
 . In the *Select which records to be shared* section, add the following criteria:
 
-.. *Field*: <code>Community Name</code> *Operator*: equals *Value*: ‘[Community Name]’
-.. *Field*: Visibility *Operator*: equals *Value*: Public
-. In *Select the users to share with*: select *Share with* `Public Groups` and select <code>‘Community Name’ Public Group</code>.
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: ‘[Community Name]’
+.. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
+. In *Select the users to share with*: enter *Share with*: `Public Groups` and `[Community Name] Public Group`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Select Save.
-
-
-. switch to salesforce classic (how????), select the plus button and in the *View* component, select ‘Content’ and then select *Libraries*.
+. Switch to salesforce classic (how????).
+. Select the plus (+) button.
+. In *View*, select *Content* and then select *Libraries*.
 . In the *Manage Libraries* section, select *Asset Library*.
-. In the *Members* section in??? the *Asset Library* page, select *Add Members*.
-. In the *Edit Library Membership Wizard* *Select Library Members* step, Select ‘Public Groups’ from the drop-down list??? and add the public group previously created. <code> [Community name] Public Group</code>.
-. In the *Assign a Library Permission to Members* step, Assign the "Viewer" Permission and click save.
+. In the *Members* section, select *Add Members*.
+. In the *Edit Library Membership Wizard*, select ‘Public Groups’ from the *Search* drop-down and add the 
+public group previously created.
+. Assign the *Viewer* Permission and select *Save*.
 
 
-== Configure the Registered Users
+=== Configure Registered Users
 
 . Navigate to *Setup* -> *Communities* -> *Communities Settings*.
 . Scroll to *Sharing Sets* and select *New*.
 . In the *Sharing Set Edit* section, update *Label* with ‘[Community Name] Sharing Set’ . Select *Save*.
-. Select the Profile from *Available Profiles*. (Screen shot shows "ACM Community User" - page 30.) Profiles follow this pattern: ‘ACM [Community name] User’
-
-?????? add screen shots????? - page 31.
-. Add the profile ‘ACM [Community name] User’.
-. Select *User*???? from  Available Objects. and the Object CommunityApi.
-. Select Set-Up and complete as the following example.
+. Select *ACM [Community name] User* from *Available Profiles* and add it to *Selected Profiles*.
+. Select *CommunityApi* from *Available Objects* and add it to *Selected Objects*.
+. In the *Action* column, select *Set Up*.
+. Enter the information required in the *Access Mapping for CommunityApi* page. More info needed????
 
 
-== Configure API Community Manager
-Uou only need to select which APIs to show in your Community.
+=== Configure API Community Manager
+You must select the APIs to show in your Community.
 
-. Select API Community Manager App, from the App Launcher. - screen cap???????
+. Select *API Community Manager App* from the *App Launcher*. The App Launcher icon is the first icon in the 
+main navigation bar.
 
+==== Give permissions to ACM Community Manager
 
-== Give permission to ACM Community Manager
+If you cannot view ACM Community Manager content in the *Lightning Experience App Manager*, you must 
+add the *ACM Administrator* tab from the App Manager in *Setup*:
 
-If you do not see the content of the ACM Community Manager in the *Lightning Experience App Manager*, you must add the ‘ACM Administrator’ tab from the App Manager 
-
-. In *Setup*, search for App Manager in the Quick Find box, then select API Community Manager and edit it. 
+. In *Setup*, search for App Manager in the *Quick Find* box and then select *API Community Manager* and edit it. 
 . Navigate to *Navigation Items*, highlight *ACM Administrator*, and move it to the *Selected Items* column. Select *Save*.
-. Log out and log back in to your Salesforce organization. You can then configure the API Community Manager.
-. In *ACM Administrator* (how do we get here????), select *Manage APIs*. You can select which API to show in the Community portal using *Add to Community*. 
-. As needed, change the description, icon, visibility and the marketing page of the APIs with the edit button in the *APIs in this Community* section.
+. Log out and log back in to your Salesforce organization. 
+. In the *ACM Administrator* tab, select *Manage APIs*. 
+. Select the APIs you want to show in the Community portal using *Add to Community*. 
+. As needed, change the description, icon, visibility and the marketing page of the APIs with the *Edit* button 
+in the *Community* section.
 
+=== Set permissions for Unauthenticated Users
 
-== Set permissions for Unauthenticated Users
-
-. In the builder?????? Navigate to *Settings* -> *General* and select the *Public can access the community* check box.
-. Change the external objects permissions and the Custom field AnypointApiVersion:
-. In the builder Navigate to *Settings* -> *SEO* - > *Guest User Profile*. Make the necessary changes to your profile.
-. navigate to the community builder go to Settings > General > click on the Guest User Profile link. Your Guest Community Profile detail page is displayed.
+. In the Community Builder, navigate to *Settings* -> *General* and select the *Public can access the community* check box.
+. Navigate to *Settings* -> *SEO* and select *Guest User Profile*. Make the necessary changes.
+. Navigate *Settings > General* and select *Guest User Profile*. 
 . Select *Edit*.
-. Give read/create/edit/delete permissions to the external objects lisetd in the *External Object Permissions* section (screen shot???).
-. Select *save*.
-. You must  change the permissions for the following objects in the *Custom Field-Level Security* section:
-AnypointApiInstances, AnypointApiTiers, AnypointApiVersions, AnypointApplications, AnypointContracts and CommunityApis. Which settings??????? page 38.
+. Enable *Read*, *Create*, *Edit*, and *Delete* permissions to the external objects listed in the 
+*External Object Permissions* section.
+. Select *Save*.
+. Change the permissions for the following objects in the *Custom Field-Level Security* section:
+*AnypointApiInstances*, *AnypointApiTiers*, *AnypointApiVersions*, *AnypointApplications*, 
+*AnypointContracts*, and *CommunityApis*. Which settings??????? Do we need these screen shots???
 
+=== Enable external users to register in your community
+==== Assign the Profile to new Community Members
 
-== Enable external users to register in your community
-You must assign the profile to new Community Members:
 . Navigate to *Community Administration* > *Members*.
-. Select *All* on Search drop-down.
-. Add ‘ACM [Community Name] User’ to Selected Profiles list section.
-. Seklect *Save*.
+. Select *All* from the Search drop-down.
+. Add *ACM [Community Name] User* to *Selected Profiles*.
+. Select *Save*.
 
-
-
-== Create the Account for your community
+==== Create the Account for your community
 
 . Navigate to *App Launcher -> Accounts*.
-Create New Account ‘ACM [ Community Name ] Account’. Enter `ACM Registered Users` in *Account Name*. Select *Save*.???? screen shot page 41.
+. Enter `ACM Registered Users` in *Account Name*.
+. Select *Save*.
 
-
-== Configure your Login and Registration Page
+==== Configure your Login and Registration Page
 
 . Navigate to *Community Administration > Login & Registration*.
 . As needed, update the *Login Icon* information in *Branding Options*.
+. On the *Registration Page Configuration* page:
 
+.. Select *Allow external users to self-register*. 
+.. Select *Community Builder Page* for *Registration Page Type* and select *Register*.
+.. Select *ACM Registered Users* in *Profile*.
+.. Select *ACM [ Community Name ] Account* in *Account*.
+.. Select *Save*.
 
-On Registration Page Configuration
-. Select *Allow external users to self-register*. 
-. Select *Community Builder Page* for registration page type and select *Register*.
-. Select  *ACM Registered Users* in Profile.
-. Select  ‘ACM [ Community Name ] Account’ in Account.
+==== Ensure that the Portal Account Owner has a role set.
+
+. Navigate to *Setup -> Users* and select your username.
+. Set the appropriate *Role*.
 . Select *Save*.
 
+==== Add Self Register custom component to Register page
 
-== Ensure that the Portal Account Owner has a role set.
+The self-register component allows your users to self-register in your community.
 
-. Navigate to your user detail page (Setup > Users > select your username).
-. Set a Role (example: CEO).
-. Save.
+NOTE: Follow these steps only if you created a Community NOT using the ACM Template. Self Register custom 
+component is automatically added to the Register page if you created a Community using the ACM Template.
 
-
-== Add Self Register custom component to Register page
-
-This is a custom component that allows your users to self-register in your community.
-
-Note: Follow these steps only if you created a Community NOT using the ACM Template. Self Register custom component is automatically added to the Register page if you created a Community using the ACM Template.
-
-In the Community Builder, go to the Register page.
-If you are not using the ACM template, remove the standard Self Registration component by clicking on the delete icon near it.
-
-Navigate to Components, search for *Self Register* and add it to the page.????
+. In the Community Builder, navigate to the *Register* page.
+. Remove the standard *Self Registration* component by selecting the delete 
+icon next to it.
+. Navigate to *Components*, search for *Self Register* and add it to the page.????More info needed????
 		
 
 == Define moderation rules for forums
 
-. Navigate to the Community Workspace > Moderation > Rules (top navigation bar) and create a rule. At a minimum, enter information for the *Name* and *Unique Name* fields in the *Details* section. MAKE SURE “Activate Rule” CHECKBOX IS ACTIVE and save the changes. Enter information for all fields in the *Rule Conditions* section.
+. Navigate to your Community Workspace.
+. In the main navigation bar, select *Moderation -> Rules*.
+. Create a rule. At a minimum, enter information for the *Name* and *Unique Name* fields in the *Details* section. 
 
+IMPORTANT: Verify the *Activate Rule* check box is active and save the changes. 
+. Enter information for all fields in the *Rule Conditions* section.
 
 == Set up an Approval Process for new Community Users
-To set an Approval process for self-registered users so the system does not create a user immediately, it goes first to an Admin for approval.
+Set up an approval process for self-registered users so that the system requires admin approval before creating a new user.
 
-. Navigate to *Setup*???? and enter `Approval Processes` in the quick search box????.
-. Select option *Self Register User Request* on dropdown *Manage Approval Processes For:*.
-. Select option *Use Standard Setup Wizard* in *Create New Approval Process* drop-down.
-. In the wizard:
-.. Enter a Name and Description:
-*** Name: Approve Registration.
-*** Unique Name: Approve_Registration (this is set automatically).
+. Search for `Approval Processes` in the *Quick Find* box and then select *Approval Processes*.
+. Select *Self Register User Request* in the *Manage Approval Processes For:* drop-down.
+. Select *Use Standard Setup Wizard* in the *Create New Approval Process* drop-down.
+. In the wizard, enter the following information:
 
-.. Specify Entry Criteria:
-In *Field* section: `SelfRegisterUserRequest: Approved`.
-*Operator*: `equals`
-*Value*: `False`.
+.. Name and Description
+
+*** *Process Name*: `Approve Registration`.
+*** *Description*: Enter informatio that applies to your process.
+
+.. Entry Criteria
+
+*** *Field*: `SelfRegisterUserRequest: Approved`.
+*** *Operator*: `equals`
+*** *Value*: `False`.
 
 .. *Self Register User Requests*: leave as default values
-Make sure that *Record Editability Properties* has *Administrators ONLY can edit records during the approval process* is selected.
+Make sure that *Record Editability Properties* shows *Administrators ONLY can edit records during the 
+approval process* selected.
 
 .. *Self Register User Requests*:
-*Approval Assignment Email Template* is set to  *Registration Request*. (select ACM folder on lookup window).
+Make sure that *Approval Assignment Email Template* is set to  *Registration Request*. (select ACM folder 
+on lookup window????).
 
-.. *Select Fields to Display on Approval Page Layout*:
-Add `Self Register User Request Name` and `Owner` to *Selected Fields*:
-*Approval Page Fields*: Check (true) option *Display approval history information in addition to the fields selected above* option.
+.. Enter *Select Fields to Display on Approval Page Layout* information
+
+*** Add `Self Register User Request Name` and `Owner` to *Selected Fields*:
+*** Select *Display approval history information in addition to the fields selected above.* check box.
 
 .. *Specify Initial Submitters*:
-Add `Self Register User Request Owner` to *Allowed Submitters* column.
 
+*** Add *Self Register User Request Owner* to *Allowed Submitters* column.
 
 
 == Create an Approval Step
-
 After you create the Approval Process:
 
 * If you are prompted to add an Approval Step:
 
-. Select option *Yes, I'd like to create an approval step now* option.
+. Select *Yes, I'd like to create an approval step now*.
 . Select *Go!*.
 
 * If you are not prompted to add an Approval step:
 
-., type  "Approval Processes" on the quick search box
-. Select Approve Registration (the approval that you created)
-. On Approval Steps section, click New Approval Step.
+. Search for *Approval Processes* in the *Quick Find* box. 
+. Select *Approve Registration* (the approval that you created).
+. In the *Approval Steps* section, select *New Approval Step*.
 
+Continue with the following steps:
 
-Step 1 - *Enter Name and Description* window
-Name: Step 1.
-Unique Name: Step_1 (autogenerated)
-Select *Next*.
+. In the *Step 1: Enter Name and Description* page:
 
-Step 2 - Specify Step Criteria, leave as it is (all records should enter this step). and select *Next*.
+.. Enter `Step 1` in *Name*.
+.. Select *Next*.
 
-Step 3 - Select Assigned Approver.
-Select option: *Let the submitter choose the approver manually*.
-Click Save.
+. In the *Step 2: Specify Step Criteria* page, select *Next*.
+. In the *Step 3 - Select Assigned Approver* page:
 
-Create a Final Approval Action
+.. Select *Let the submitter choose the approver manually*.
+. Select *Save*.
 
-On the *Self Rgister User Request: Approve Registration* detail page, go to *Final Approval Actions* section related list and click on button Add New and select *Field Update*.
+== Create a Final Approval Action
 
-On Field Updates page in *Field Update Edit* seciton,  enter the following values:
-Name: Create User
-Unique Name: Create_User (automatically)
-Field to update: Approved.
-Re-evaluate Workflow Rules after Field Change: True - check the box.
-Specify New Field Value section, *Checkbox Options*: True.
+. On the *Self Register User Request: Approve Registration* page, navigate to *Final Approval Actions* and select *Add New*.
+. Select *Field Update*.
+. In the *Field Update Edit* section, enter the following values:
 
- Select *Save*.
+** *Name*: `Create User`
+** *Field to update*: `Approved`
+** *Re-evaluate Workflow Rules after Field Change*: Select the check box.
+** **Checkbox Options*: `True`.
+ . Select *Save*.
 
 
 == Activate your Approval Process
 
-. On the Approve Registration detail page, click on Activate button and confirm.
-. In the Community Builder, go to the Register page, remove the default register component and select the ACM Self Register Component.
-. Check the Approved Registration and the set Approver Id with the User Id that you want to be the approver. 
-. To find an Id follow these steps:
-Go to Salesforce Setup and type Users on the Quick find box.
-Click on Users link.
-Click on the full name of the user that you want to be the approver
+. On the *Approve Registration* page, select *Activate* and confirm.
+. In the Community Builder, navigate to the *Register* page, remove the default register component, and 
+select ACM *Self Register*.
+. Verify the Approved Registration and set *Approver Id*.
 
-The Id is contained in the URL of the User detail page you are currently on and can be found in the browser address bar. For the url of the below image the unique ID is 2F0052D000001QpG1. Remove the first 2 characters (in this case 2F) and paste it on the Approver Id field. screen shot????
+.. Navigate to Salesforce Setup.
+.. Search for `Users` in the *Quick Find* box and then select *Users*.
+.. Select the full name of the user who you want to be the approver.
+.. The ID is contained in the URL of the User detail page you are currently viewing. In the following screen shot, 
+the unique ID is 2F0052D000001QpG1. Remove the first 2 characters, in this case *2F*, and paste the remaining 
+information in the *Approver Id* field. screen shot????
 
+== Customize *Login* and *Registration* pages.
 
+To change the background image and Company Logo displayed on Login and Register page, follow these steps:
 
-When a new user registers in the community, a new request will appear in Manage Users and the approving user will approve it or not. 
-
-
-Customizing Login and Registration pages.
-
-In order to change the background image and Company Logo displayed on Login and Register page, follow these steps:
-
-Go to your Community Builder.
-Select Register or Login Page in the top header (it's better to select one of those so you can see the changes immediately).
-Click on Theme icon in the sidebar.
-Upload a Company Logo.
-Upload a Background Image.
-You can see the changes applied immediately.
+. Navigate to *Community Builder*.
+. Select *Register* or *Login Page* so you can see changes immediately.
+. Select the *Theme* icon in the sidebar.
+. If desired, Uupload a Company Logo.
+. If desired, upload a Background Image.
 
 
 == Troubleshooting
 
-Invalid Page
-When the community is a public one, you need to change the permissions in the Guest User Profile, and add read checks to the external objects.
+. Invalid Page
+When the community is a public one, you must change the permissions in the Guest User Profile, and add read checks to the external objects.
 
 
 == Further Reading
