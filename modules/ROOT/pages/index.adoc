@@ -8,8 +8,8 @@ With API Community Manager (ACM), you can build and operate a community for deve
 inside and outside of your organization, who write applications that use your APIs.
 
 ACM is powered by Salesforce Community Cloud, and provides customization, branding, marketing, and 
-engagement capabilities to serve the different needs of your developer audiences. MuleSoft’s Anypoint 
-Exchange APIs can be surfaced in ACM.
+engagement capabilities to serve the different needs of your developer audiences. APIs stored in 
+MuleSoft's Anypoint Exchange can be surfaced in ACM.
 
 == What is an API Community?
 
@@ -20,11 +20,11 @@ experience for your developers when interacting with your APIs - APIs that you'v
 manage in the Anypoint Platform. 
 
 As a community administrator, you use ACM to create a visually compelling digital experience that is consistent 
-with your organization’s brand identity. Your community showcases APIs that you select directly from 
+with your organization's brand identity. Your community showcases APIs that you select directly from 
 Anypoint Exchange, plus other relevant content and self-service resources to inspire and help the developers 
 you want to reach.
 
-== A Connected and Personalized Digital Experience for your Consumer Developers
+== A Connected and Personalized Digital Experience for Your Consumer Developers
 
 A consumer developer accessing your API community finds news, events, tutorials, developer blog posts, and the 
 APIs you selected from Anypoint Exchange, in a branded, customized experience. This includes content 
@@ -44,13 +44,13 @@ they can post questions and answers, share ideas, and discuss issues they find.
 
 Other ACM features enable your organization to engage with partners and ensure they are supported throughout their journey.
 
-== Building your API Community
+== Building Your API Community
 
 Personalize your community look and feel, branding, and site-structure with the Community Builder, a 
 drag-and-drop editor that allows you to create and customize the experience down to the finest level of detail. 
 The Community Builder makes it easy to publish a tailored experience using pre-existing components, simple clicks, and code.
 
-== Manage the Anypoint Exchange APIs and Versions that are Presented to your Developers  
+== Manage the Anypoint Exchange APIs and Versions That are Presented to Your Developers  
 
 Pre-built dashboards show you how the content and assets in your community are being used, so you understand 
 the activity in your ecosystem. These out-of-the-box dashboards leverage more than ten years of Salesforce experience 
