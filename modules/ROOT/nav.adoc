@@ -9,7 +9,6 @@
  ** xref:preview-community.adoc[Preview your API Community]
  ** xref:css-styling.adoc[Advanced styling with CSS]
 * xref:operate.adoc[Operate Your API Community]
- ** xref:admin-interface.adoc[Administrator Interface]
  ** xref:publish-apis.adoc[Publish APIs]
  ** xref:publish-content.adoc[Publish Content and CMS Articles]
  ** xref:moderate-forums.adoc[Moderate Forums]

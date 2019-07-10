@@ -5,3 +5,15 @@ endif::[]
 :imagesdir: ../assets/images/
 
 These pages explain how to publish APIs and content to your community and how to manage forums, users, and support cases.
+
+* xref:publish-apis.adoc[Publish APIs]
+* xref:publish-content.adoc[Publish Content]
+* xref:moderate-forums.adoc[Moderate Forums]
+* xref:support.adoc[Support]
+* xref:manage-users.adoc[Manage Users]
+
+All of these actions are performed in the API Community Manager administrator interface:
+
+image::admin-interface.png[ACM administrator interface]
+
+To open the ACM administrator interface at any time, open the Salesforce *App Launcher* and select *API Community Manager*.
