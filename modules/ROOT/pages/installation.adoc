@@ -4,29 +4,23 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Put in "Before Installation" or "Installation":
-
-
----------
-
-`Before Installation` should contain:
+TOC Relative links - TBD
+Installation
 - Organization Installation Requirements
 
-
-the section `Installation` should have all the rest *except* Customizing login and registration pages
-Installing API Community Manager 
-Update API Community Manager
-Create a Community
-API Community Manager Components
-Publish API Community Manager???
-Configure Guest User Access
-Configure Registered Users
-Configure API Community Manager
-Set permissions for Unauthenticated users
-How to enable external users to register in your Community
-Define moderation rules for forums
-How to setup an Approval Process for new Community Users
-
+Installation Requirements
+- Installing API Community Manager 
+- Update API Community Manager
+- Create a Community
+- API Community Manager Components
+- Publish API Community Manager???
+- Configure Guest User Access
+- Configure Registered Users
+- Configure API Community Manager
+- Set permissions for Unauthenticated users
+- How to enable external users to register in your Community
+- Define moderation rules for forums
+- How to setup an Approval Process for new Community Users
 
 Customize Login and Registration Pages
 Troubleshooting
