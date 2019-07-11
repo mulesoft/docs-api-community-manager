@@ -11,39 +11,40 @@ endif::[]
 ** <<make-your-domain-available-to-your-users>>
 
 * <<install-api-community-manager>>
-* <<configure-api-commmunity-manager>>
+* <<configure-api-community-manager>>
 
 ** <<authenticate-the-external-data-source>>
 ** <<give-permissions-to-acm-community-manager>>
 ** <<verify-portal-account-owner-role-setting>>
 
-* Communities
+** Communities
 
-** <<create-a-community>>
-** <<customize-a-community>>
-** <<define-moderation-rules-for-forums>>
-** <<publish-a-community>>
+*** <<create-a-community>>
+*** <<customize-a-community>>
+*** <<define-moderation-rules-for-forums>>
+*** <<publish-a-community>>
 
-* Users
+** Users
 
-** <<configure-guest-user-access>>
-** <<configure-registered-users>>
-** <<set-permissions-for-unauthenticated-users>>
-** <<add-self-register-custom-component-to-register-page>>
-** <<enable-external-user-registration>>
+*** <<configure-guest-user-access>>
+*** <<configure-registered-users>>
+*** <<set-permissions-for-unauthenticated-users>>
+*** <<add-self-register-custom-component-to-register-page>>
+*** <<enable-external-user-registration>>
 
-*** <<assign-the-profile-to-new-community-members>>
-*** <<create-the-account-for-your-community>>
-*** <<configure-your-login-and-registration-page>>
+**** <<assign-the-profile-to-new-community-members>>
+**** <<create-the-account-for-your-community>>
+**** <<configure-your-login-and-registration-page>>
 
-** <<set-up-an-admin-approval-process-for-new-user-creation>>
+*** <<set-up-an-admin-approval-process-for-new-user-creation>>
 
-*** <<create-an-approval-step>>
-*** <<create-a-final-approval-action>>
-*** <<activate-the-approval-process>>
+**** <<specify-approval-process-parameters>>
+**** <<create-an-approval-step>>
+**** <<create-a-final-approval-action>>
+**** <<activate-the-approval-process>>
 
-** <<create-a-public-group>>
-** <<create-sharing-settings>>
+*** <<create-a-public-group>>
+*** <<create-sharing-settings>>
 
 == Installation Prerequisites [[installation-prerequisites]]
 
@@ -274,92 +275,93 @@ icon next to it.
 
 === Set Up an Admin Approval Process for New User Creation [[set-up-an-admin-approval-process-for-new-user-creation]]
 
-. Search for `Approval Processes` in the *Quick Find* box and then select *Approval Processes*.
-. Select *Self Register User Request* in the *Manage Approval Processes For:* drop-down.
-. Select *Use Standard Setup Wizard* in the *Create New Approval Process* drop-down.
-. In the wizard, enter the following information:
+. Specify Approval Process Parameters [[specify-approval-process-parameters]]
 
-.. Name and Description
+.. Search for `Approval Processes` in the *Quick Find* box and then select *Approval Processes*.
+.. Select *Self Register User Request* in the *Manage Approval Processes For:* drop-down.
+.. Select *Use Standard Setup Wizard* in the *Create New Approval Process* drop-down.
+.. In the wizard, enter the following information:
 
-*** *Process Name*: `Approve Registration`.
-*** *Description*: Enter information that applies to your process.
+... In *Step1. Enter Name and Description*, enter the following information:
 
-.. Entry Criteria
+**** *Process Name*: `Approve Registration`.
+**** *Description*: Enter information that applies to your process.
 
-*** *Field*: `SelfRegisterUserRequest: Approved`.
-*** *Operator*: `equals`
-*** *Value*: `False`.
+... In *Step 2. Specify Entry Criteria*, enter the following information:
 
-.. *Self Register User Requests*
-Leave the default values.
+**** In the *Field* section, set the following values for `SelfRegisterUserRequest: Approved`:
 
-Make sure that *Record Editability Properties* shows *Administrators ONLY can edit records during the
-approval process* selected.
+***** *Operator*: `equals`
+***** *Value*: `False`
+... In *Step 3. Specify Approver Field and Record Editability Properties*:
 
-Make sure that *Approval Assignment Email Template* is set to  *Registration Request*.
+**** Review the information in *Self Register User Requests*:
 
-// Select ACM folder on lookup window?
+***** Leave the default values.
+***** Verify *Record Editability Properties* shows *Administrators ONLY can edit records during the
+approval process* is selected.
+... In *Step 4. Select Notification Templates*:
 
-.. *Select Fields to Display on Approval Page Layout*
+**** Verify *Approval Assignment Email Template* is set to  *Registration Request*. 
+... In *Step 5. Select Fields to Display on Approval Page Layout*:
 
-*** Add `Self Register User Request Name` and `Owner` to *Selected Fields*.
-*** Select the *Display approval history information in addition to the fields selected above.* check box.
+**** Add `Self Register User Request Name` and `Owner` to *Selected Fields*.
+**** Select the *Display approval history information in addition to the fields selected above.* check box.
+... In *Step 6. Specify Initial Submitters*:
 
-.. *Specify Initial Submitters*
+**** Add *Self Register User Request Owner* to the *Allowed Submitters* column.
 
-*** Add *Self Register User Request Owner* to the *Allowed Submitters* column.
+. Create an Approval Step [[create-an-approval-step]]
 
-==== Create an Approval Step [[create-an-approval-step]]
+** After you create the Approval Process:
 
-After you create the Approval Process:
+*** If you are prompted to add an Approval Step:
 
-* If you are prompted to add an Approval Step:
+.... Select *Yes, I'd like to create an approval step now*.
+.... Select *Go!*.
 
-. Select *Yes, I'd like to create an approval step now*.
-. Select *Go!*.
+*** If you are not prompted to add an Approval step:
 
-* If you are not prompted to add an Approval step:
+.... Search for *Approval Processes* in the *Quick Find* box.
+.... Select *Approve Registration* (the approval that you created).
+.... In the *Approval Steps* section, select *New Approval Step*.
 
-. Search for *Approval Processes* in the *Quick Find* box.
-. Select *Approve Registration* (the approval that you created).
-. In the *Approval Steps* section, select *New Approval Step*.
+** Continue with the following steps:
 
-Continue with the following steps:
+... In the *Step 1: Enter Name and Description* section:
 
-. In the *Step 1: Enter Name and Description* page:
+.... Enter `Step 1` in *Name*.
+.... Select *Next*.
 
-.. Enter `Step 1` in *Name*.
-.. Select *Next*.
+... In the *Step 2: Specify Step Criteria* section, select *Next*.
+... In the *Step 3 - Select Assigned Approver* section:
 
-. In the *Step 2: Specify Step Criteria* page, select *Next*.
-. In the *Step 3 - Select Assigned Approver* page:
+.... Select *Let the submitter choose the approver manually*.
+.... Select *Save*.
 
-.. Select *Let the submitter choose the approver manually*.
+. Create a Final Approval Action [[create-a-final-approval-action]]
+
+.. On the *Self Register User Request: Approve Registration* page, navigate to *Final Approval Actions* and select *Add New*.
+.. Select *Field Update*.
+.. In the *Field Update Edit* section, enter the following values:
+
+*** *Name*: `Create User`
+*** *Field to update*: `Approved`
+*** *Re-evaluate Workflow Rules after Field Change*: Select the check box.
+*** *Checkbox Options*: `True`.
+
 .. Select *Save*.
 
-==== Create a Final Approval Action [[create-a-final-approval-action]]
+. Activate the Approval Process [[activate-the-approval-process]]
 
-. On the *Self Register User Request: Approve Registration* page, navigate to *Final Approval Actions* and select *Add New*.
-. Select *Field Update*.
-. In the *Field Update Edit* section, enter the following values:
-
-** *Name*: `Create User`
-** *Field to update*: `Approved`
-** *Re-evaluate Workflow Rules after Field Change*: Select the check box.
-** *Checkbox Options*: `True`.
-
-. Select *Save*.
-
-==== Activate the Approval Process [[activate-the-approval-process]]
-
-. On the *Approve Registration* page, select *Activate* and confirm.
-. In the Community Builder, navigate to the *Register* page, remove the default register component, and
+.. On the *Approve Registration* page, select *Activate* and confirm.
+.. In the Community Builder, navigate to the *Register* page, remove the default register component, and
 select ACM *Self Register*.
-. Verify the Approved Registration and set *Approver Id*.
-. Navigate to Salesforce Setup.
-. Search for `Users` in the *Quick Find* box and then select *Users*.
-. Select the full name of the user who you want to be the approver.
-. The ID is contained in the URL of the User detail page you are currently
+.. Verify the Approved Registration and set *Approver Id*.
+.. Navigate to Salesforce Setup.
+.. Search for `Users` in the *Quick Find* box and then select *Users*.
+.. Select the full name of the user who you want to be the approver.
+.. The ID is contained in the URL of the User detail page you are currently
 viewing. Remove the first 2 characters and paste the remaining information in
 the *Approver Id* field. For example, if the unique ID is `2F0052D000001QpG1`,
 paste `0052D000001QpG1` in the *Approver Id* field.
