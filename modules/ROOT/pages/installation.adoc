@@ -271,8 +271,6 @@ icon next to it.
 
 ==== Set Up an Admin Approval Process for New User Creation [[set-up-an-admin-approval-process-for-new-user-creation]]
 
-Follow these steps to set up an admin approval process for new user accounts.
-
 ===== 1. Specify Approval Process Parameters [[specify-approval-process-parameters]]
 
 . Search for `Approval Processes` in the *Quick Find* box and then select *Approval Processes*.
