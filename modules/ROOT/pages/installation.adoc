@@ -56,7 +56,7 @@ API Community Manager requires an ACM license. You cannot reuse an existing Sale
 === 1. Set Up and Register a Domain [[set-up-and-register-a-domain]]
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
-. Log in into your https://login.salesforce.com/[Salesforce Organization^].
+. Log in into your https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
 . Select *Check Availability*. If the name is already taken, choose a different one.
@@ -64,7 +64,7 @@ API Community Manager requires an ACM license. You cannot reuse an existing Sale
 can take a few minutes.
 . Follow the instructions in the email.
 
-=== 2. https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Communities Inside Your Organization^] [[enable-communities-inside-your-organization]]
+=== 2. https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Communities Inside Your Organization, role=external, window=blank] [[enable-communities-inside-your-organization]]
 
 === 3. Make Your Domain Available to Your Users [[make-your-domain-available-to-your-users]]
 
@@ -143,7 +143,7 @@ in the *Community* section.
 
 ==== Create a Community [[create-a-community]]
 
-. If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Community Overview^].
+. If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Community Overview, role=external, window=blank].
 . Navigate to *Setup*.
 . In the *Quick Find* box, enter *All Communities* and then select *All Communities*.
 . Select *New Community*. All communities templates are listed.
