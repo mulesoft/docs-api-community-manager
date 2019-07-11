@@ -62,5 +62,5 @@ increase developer engagement, and personalize experiences with clicks and code.
 == See Also
 
 // * xref:release-notes::acm/api-community-manager-release-notes.adoc[API Community Manager Release Notes]
-* https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
+* https://forums.mulesoft.com[MuleSoft Forum, role=external, window=blank]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles, role=external, window=blank]
