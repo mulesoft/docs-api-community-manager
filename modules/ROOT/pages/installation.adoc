@@ -53,7 +53,7 @@ from customer operational data in their Salesforce instance, for example, ERP or
 
 API Community Manager requires an ACM license. You cannot reuse an existing Salesforce license for ACM.
 
-=== Set Up and Register a Domain [[set-up-and-register-a-domain]]
+=== 1. Set Up and Register a Domain [[set-up-and-register-a-domain]]
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
 . Log in into your https://login.salesforce.com/[Salesforce Organization^].
@@ -64,9 +64,9 @@ API Community Manager requires an ACM license. You cannot reuse an existing Sale
 can take a few minutes.
 . Follow the instructions in the email.
 
-=== https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Communities Inside Your Organization^] [[enable-communities-inside-your-organization]]
+=== 2. https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Communities Inside Your Organization^] [[enable-communities-inside-your-organization]]
 
-=== Make Your Domain Available to Your Users [[make-your-domain-available-to-your-users]]
+=== 3. Make Your Domain Available to Your Users [[make-your-domain-available-to-your-users]]
 
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Select *Deploy to Users*.
