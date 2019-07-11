@@ -64,7 +64,9 @@ API Community Manager requires an ACM license. You cannot reuse an existing Sale
 can take a few minutes.
 . Follow the instructions in the email.
 
-=== 2. https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Communities Inside Your Organization, role=external, window=blank] [[enable-communities-inside-your-organization]]
+=== 2. Enable Communities Inside Your Organization [[enable-communities-inside-your-organization]]
+
+https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank].
 
 === 3. Make Your Domain Available to Your Users [[make-your-domain-available-to-your-users]]
 
