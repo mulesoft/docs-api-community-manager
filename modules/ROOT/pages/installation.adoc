@@ -145,9 +145,9 @@ in the *Community* section.
 . Set the appropriate *Role*.
 . Select *Save*.
 
-== Communities
+=== Communities
 
-=== Create a Community [[create-a-community]]
+==== Create a Community [[create-a-community]]
 
 . If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Community Overview].
 . Navigate to *Setup*.
@@ -160,11 +160,11 @@ in the *Community* section.
 . After the new community is created, select *Builder* to modify the community appearance and components if needed.
 . Navigate to *Administration* and select *Activate Community*.
 
-=== Customize a Community [[customize-a-community]]
+==== Customize a Community [[customize-a-community]]
 
 Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
-=== Define Moderation Rules for Forums [[define-moderation-rules-for-forums]]
+==== Define Moderation Rules for Forums [[define-moderation-rules-for-forums]]
 
 . Navigate to your Community Workspace.
 . In the main navigation bar, select *Moderation -> Rules*.
@@ -173,7 +173,7 @@ Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-=== Publish a Community [[publish-a-community]]
+==== Publish a Community [[publish-a-community]]
 
 . In the Community Builder, select *Publish*.
 . In the *Publish Your Community* page, select *Publish*.
@@ -181,9 +181,9 @@ IMPORTANT: Verify the *Activate Rule* check box is active when saving your chang
 `Congratulations! User was published successfully and is now live on the following domain(s):
 https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
-== Users
+=== Users
 
-=== Configure Guest User Access [[configure-guest-user-access]]
+==== Configure Guest User Access [[configure-guest-user-access]]
 
 . Create the profile to be assigned to new Community Users.
 
@@ -205,7 +205,7 @@ https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
 // Which fields need to be updated?
 
-=== Configure Registered Users [[configure-registered-users]]
+==== Configure Registered Users [[configure-registered-users]]
 
 . Navigate to *Setup* -> *Communities* -> *Communities Settings*.
 . Scroll to *Sharing Sets* and select *New*.
@@ -217,7 +217,7 @@ https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
 // More info needed?
 
-=== Set Permissions for Unauthenticated Users [[set-permissions-for-unauthenticated-users]]
+==== Set Permissions for Unauthenticated Users [[set-permissions-for-unauthenticated-users]]
 
 . In the Community Builder, navigate to *Settings* -> *General* and select the *Public can access the community* check box.
 . Navigate to *Settings* -> *SEO* and select *Guest User Profile*. Make the necessary changes.
@@ -232,7 +232,7 @@ https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
 // Which settings? Do we need these screen shots?
 
-=== Add Self Register Custom Component to Register Page [[add-self-register-custom-component-to-register-page]]
+==== Add Self Register Custom Component to Register Page [[add-self-register-custom-component-to-register-page]]
 
 The self-register component allows your users to self-register in your community.
 
@@ -246,22 +246,22 @@ icon next to it.
 
 // More info needed?
 
-=== Enable External User Registration [[enable-external-user-registration]]
+==== Enable External User Registration [[enable-external-user-registration]]
 
-==== Assign the Profile to New Community Members [[assign-the-profile-to-new-community-members]]
+===== Assign the Profile to New Community Members [[assign-the-profile-to-new-community-members]]
 
 . Navigate to *Community Administration* -> *Members*.
 . Select *All* from the Search drop-down.
 . Add *ACM [Community Name] User* to *Selected Profiles*.
 . Select *Save*.
 
-==== Create the Account for Your Community [[create-the-account-for-your-community]]
+===== Create the Account for Your Community [[create-the-account-for-your-community]]
 
 . Navigate to *App Launcher -> Accounts*.
 . Enter `ACM Registered Users` in *Account Name*.
 . Select *Save*.
 
-==== Configure Your Login and Registration Page [[configure-your-login-and-registration-page]]
+===== Configure Your Login and Registration Page [[configure-your-login-and-registration-page]]
 
 . Navigate to *Community Administration -> Login & Registration*.
 . As needed, update the *Login Icon* information in *Branding Options*.
@@ -273,7 +273,7 @@ icon next to it.
 .. Select *ACM [ Community Name ] Account* in *Account*.
 .. Select *Save*.
 
-=== Set Up an Admin Approval Process for New User Creation [[set-up-an-admin-approval-process-for-new-user-creation]]
+==== Set Up an Admin Approval Process for New User Creation [[set-up-an-admin-approval-process-for-new-user-creation]]
 
 . Specify Approval Process Parameters [[specify-approval-process-parameters]]
 
@@ -366,7 +366,7 @@ viewing. Remove the first 2 characters and paste the remaining information in
 the *Approver Id* field. For example, if the unique ID is `2F0052D000001QpG1`,
 paste `0052D000001QpG1` in the *Approver Id* field.
 
-=== Create a Public Group [[create-a-public-group]]
+==== Create a Public Group [[create-a-public-group]]
 
 . Navigate to *Setup -> Users -> Public Groups*.
 . Select *Create New View*.
@@ -375,7 +375,7 @@ paste `0052D000001QpG1` in the *Approver Id* field.
 . In the *Selected Members* column, enter `User: [Community Name] Site Guest User`.
 . Select *Save*.
 
-=== Create Sharing Settings [[create-sharing-settings]]
+==== Create Sharing Settings [[create-sharing-settings]]
 
 These settings use the Public Group that you previously created.
 
