@@ -21,5 +21,5 @@ for user connections to both the Anypoint Platform and Salesforce systems.
 
 == See Also
 
-* https://docs.mulesoft.com/anypoint-security/[Anypoint Security]
-* https://trust.salesforce.com/en/security/[Salesforce Security]
+* https://docs.mulesoft.com/anypoint-security/[Anypoint Security, role=external, window=blank]
+* https://trust.salesforce.com/en/security/[Salesforce Security, role=external, window=blank]

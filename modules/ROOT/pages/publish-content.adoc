@@ -9,7 +9,7 @@ blog posts, and events, for your community.
 
 == Create a New Article in Salesforce CMS
 
-NOTE: You can also author ACM content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect]. 
+NOTE: You can also author ACM content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect, role=external, window=blank]. 
 
 . In the ACM administrator interface, select *Manage CMS Content*. The Salesforce Community Cloud *Content Management* interface is displayed.
 The *Content Management* interface is organized into these panels:
@@ -38,7 +38,7 @@ that contains a list of the workspace's content articles.
 
 The collection now lists your new article.
 
-The https://help.salesforce.com/articleView?id=community_managed_content_collections.htm&type=5[Salesforce Community Cloud documentation] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
+The https://help.salesforce.com/articleView?id=community_managed_content_collections.htm&type=5[Salesforce Community Cloud documentation, role=external, window=blank] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
 
 == Display the Collection in Your Community
 
@@ -62,5 +62,5 @@ The new collection of articles is now displayed on your community page.
 
 == See Also
 
-* https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder]
-* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce Content Management System (CMS) (Beta)]
+* https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce Content Management System (CMS) (Beta), role=external, window=blank]
