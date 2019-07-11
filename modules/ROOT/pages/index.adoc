@@ -4,50 +4,63 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-With API Community Manager (ACM) you can build and operate a community for software developers inside and outside of your organization who write applications that use your APIs.
+With API Community Manager (ACM), you can build and operate a community for developers and partners, both 
+inside and outside of your organization, who write applications that use your APIs.
 
-MuleSoft's Anypoint Exchange provides ACM with a single source of truth about published APIs, and Salesforce Community Cloud provides ACM with the ability to add customization, branding, and marketing information to serve unique content to different audiences.
+ACM is powered by Salesforce Community Cloud, and provides customization, branding, marketing, and 
+engagement capabilities to serve the different needs of your developer audiences. APIs stored in 
+MuleSoft's Anypoint Exchange can be surfaced in ACM.
 
-This way the site providing your APIs to developers is as rich and polished as the site providing your products to customers.
+== What is an API Community?
 
-== The ACM Partner Developer Experience
+To drive developer adoption of your APIs, you must help them discover and learn how to use your APIs effectively, 
+and provide a personalized, branded experience to motivate them to work with you. You must also engage with these 
+developers during every step of their journey to ensure their success. ACM provides this personalized, connected 
+experience for your developers when interacting with your APIs - APIs that you've designed, catalogued, and now 
+manage in the Anypoint Platform. 
 
-To take full advantage of their APIs, an organization needs to help their partners discover the APIs effectively, in a personalized, branded experience, so the partners are excited to work with them. The organization also needs to engage with their partners at every step of their journey to make sure they are successful. Let's see how you can do this with API Community Manager.
+As a community administrator, you use ACM to create a visually compelling digital experience that is consistent 
+with your organization's brand identity. Your community showcases APIs that you select directly from 
+Anypoint Exchange, plus other relevant content and self-service resources to inspire and help the developers 
+you want to reach.
 
-As the community administrator, you use ACM to create a visually compelling digital experience that looks like your product catalog and is wholly consistent with your organization's brand identity. This community showcases the APIs you select directly from Anypoint Exchange, plus relevant content to inspire and help the developers you want to reach.
+== A Connected and Personalized Digital Experience for Your Consumer Developers
 
-The community is much more than just a place for describing technology, and helps convince your partners' business audiences of the value of your APIs. Content created by your marketing and business development teams helps these business audiences understand the impact of your APIs so they can build a case for investment.
+A consumer developer accessing your API community finds news, events, tutorials, developer blog posts, and the 
+APIs you selected from Anypoint Exchange, in a branded, customized experience. This includes content 
+created by your marketing and business development teams to help your audiences understand the impact of your APIs.
 
-For developers, the community also delivers the technical documentation of the APIs, so developers can explore specific API features and learn how to use the APIs. Each API has a console where developers try out the API. This information is made available directly from the API designs in the Anypoint Platform.
+The community also delivers technical API documentation so that developers can explore specific API features and 
+learn how to use the APIs. This information is made available directly from the API designs in Anypoint Platform. 
+Each API has a console in which developers can try out the API. 
 
-Developers request access to an API for new or existing applications, and your organization approves these requests with the same process used in API Manager.
+Developers request access to an API for new or existing applications, and your organization approves these 
+requests with the same process used in API Manager. Developers manage their applications, manage 
+application credentials, including API keys and secrets, and get insights on their applications' performance 
+as their applications use your APIs. 
 
-Developers also manage their applications, manage application credentials including API keys and secrets, and get insights on their applications' performance as the applications use your APIs.
+Developers use the forums to engage with your organization and other members of the community. In the forums, 
+they can post questions and answers, share ideas, and discuss issues they find. 
 
 Other ACM features enable your organization to engage with partners and ensure they are supported throughout their journey.
 
-Communities can include news, events, tutorials, and posts on a developer blog.
+== Building Your API Community
 
-Partner developers use the forums to engage with your organization and other members of the community. In these forums they post questions and answers, collaborate, share ideas, and discuss any issues they find.
+Personalize your community look and feel, branding, and site-structure with the Community Builder, a 
+drag-and-drop editor that allows you to create and customize the experience down to the finest level of detail. 
+The Community Builder makes it easy to publish a tailored experience using pre-existing components, simple clicks, and code.
 
-If they can't find the answer they are looking for, they submit a support case and see activity on the case, just as they would for any of your organization's products. This is a logical next step in treating APIs as products.
+== Manage the Anypoint Exchange APIs and Versions That are Presented to Your Developers  
 
-ACM dashboards show you how the content in your community is being used so you understand the activity in your ecosystem. These out-of-the-box dashboards use more than ten years of Salesforce experience to reflect best practices in community engagement.
+Pre-built dashboards show you how the content and assets in your community are being used, so you understand 
+the activity in your ecosystem. These out-of-the-box dashboards leverage more than ten years of Salesforce experience 
+to reflect best practices in community engagement.
 
-You personalize the community with the Community Builder, a drag-and-drop editor that allows you to create and customize the experience down to the pixel.
-
-Suppose your organization hosts a hackathon, welcoming partners to experiment with your APIs and test innovative new product ideas. You can use Community Builder to set up a variation of your community for the hackathon. The variant uses some of the same content and APIs, includes additional tailored content, and organizes it in a purpose-specific visual layout.
-
-You target this variant to a specific audience using rules which can consider user location, group membership, domain, and other information, so it is presented to the right people at the right time.
-
-Community Builder makes it easy to publish a tailored experience using pre-existing components, and just clicks, not code.
-
-With API Community Manager you have a digital experience platform to build and nurture your API ecosystem, increase developer engagement, and personalize experiences with clicks and not code.
-
-With these capabilities, you have everything you need to drive your API program forward.
+With ACM, you have a digital experience platform to build and nurture your API ecosystem, 
+increase developer engagement, and personalize experiences with clicks and code.
 
 == See Also
 
 // * xref:release-notes::acm/api-community-manager-release-notes.adoc[API Community Manager Release Notes]
-* https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
+* https://forums.mulesoft.com[MuleSoft Forum, role=external, window=blank]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles, role=external, window=blank]

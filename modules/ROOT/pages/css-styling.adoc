@@ -1,0 +1,7 @@
+= Advanced Styling with CSS
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+API Community Manager offers advanced styling functionality by editing the community site CSS directly.
