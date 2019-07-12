@@ -6,6 +6,7 @@ endif::[]
 
 The design of the developer experience in your community can include the capability for members to submit support cases. 
 
-Support cases can be forwarded to your issue tracking or support system through a custom integration. They can also be forwarded to your desired Salesforce organization if you have one and use it for support capability with Salesforce Service Cloud. Contact your MuleSoft representative to enable these capabilities. 
+Support cases can be forwarded to a third-party issue tracking or support system through a custom integration. 
+They can also be forwarded to an existing Salesforce organization with Service Cloud support capability.
 
-
+Contact your MuleSoft representative to enable these capabilities. 
