@@ -4,27 +4,25 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager offers advanced styling functionality by editing the community site CSS directly.
+API Community Manager offers advanced styling functionality with editable community site Cascading Style Sheets (CSS).
 
-This page summarizes the options, and you can find full information in the document https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_css.htm[Override Template Elements with Custom CSS, role=external, window=blank] in the Lightning Communities Developer Guide.
+The following sections summarize the available options. For detailed information, refer to https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_css.htm[Override Template Elements with Custom CSS, role=external, window=blank] in the Lightning Communities Developer Guide.
 
-== Editing CSS
-
-To edit CSS:
+== Edit the CSS
 
 . In the ACM administrator interface, select *Community Builder*.
-. Select the paintbrush icon to open the *Theme* menu.
-. Select the drop-down arrow in the corner and select *Edit CSS*.
+. Select the paintbrush icon in the sidebar navigation to open the *Theme* page.
+. Select the drop-down arrow in the corner of the page navigation bar and select *Edit CSS*.
 . Edit the CSS file in the *Edit CSS* dialog box.
 . When you are finished with your changes, select *Save*.
 
-== List of CSS Classes
+== CSS Classes
 
 === API Carousel
 
-.API Carousel CSS Classes
+.API Carousel CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`api-version-carousel-container`
 |Carousel container
@@ -42,11 +40,11 @@ To edit CSS:
 |Left and right arrows navigation
 |===
 
-=== API Version Card
+=== API Version Card 
 
-.API Version Card CSS Classes
+.API Version Card CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`api-version-card-container`
 |API card container
@@ -78,9 +76,9 @@ To edit CSS:
 
 === Search Bar
 
-.Search Bar CSS Classes
+.Search Bar CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`search-bar-container`
 |Search bar container
@@ -91,9 +89,9 @@ To edit CSS:
 
 === Application Listing
 
-.Application Listing CSS Classes
+.Application Listing CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`application-listing-header`
 |Container for button and search app input
@@ -110,9 +108,9 @@ To edit CSS:
 
 === Application Card
 
-.Application Card CSS Classes
+.Application Card CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`application-card-container`
 |Application card container (borders and shadow)
@@ -174,9 +172,9 @@ To edit CSS:
 
 === Application Register
 
-.Application Register CSS Classes
+.Application Register CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`application-register-container`
 |New application register wrapper
@@ -214,9 +212,9 @@ To edit CSS:
 
 === Application Detail
 
-.Application Detail CSS Classes
+.Application Detail CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`application-detail-name`
 |Application name
@@ -260,9 +258,9 @@ To edit CSS:
 
 === Instance Selector
 
-.Instance Selector CSS Classes
+.Instance Selector CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`instance-selector-container`
 |Instance selector container
@@ -282,9 +280,9 @@ To edit CSS:
 
 === Contracts Selector
 
-.Contracts Selector CSS Classes
+.Contracts Selector CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`contracts-selector-container`
 |Contracts selector container
@@ -310,9 +308,9 @@ To edit CSS:
 
 === Header
 
-.Header CSS Classes
+.Header CSS Classes and Descriptions
 |===
-|CSS Class |Description
+|Class |Description
 
 |`acm-header`
 |Main header of the community
