@@ -4,4 +4,317 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager offers advanced styling functionality by editing the community site CSS directly.
+API Community Manager offers advanced styling functionality with editable community site Cascading Style Sheets (CSS).
+
+The following sections summarize the available options. For detailed information, refer to https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_css.htm[Override Template Elements with Custom CSS, role=external, window=blank] in the Lightning Communities Developer Guide.
+
+== Edit the CSS
+
+. In the ACM administrator interface, select *Community Builder*.
+. Select the paintbrush icon in the sidebar navigation to open the *Theme* menu.
+. Select the drop-down arrow in the corner of the menu and select *Edit CSS*.
+. Edit the CSS file in the *Edit CSS* dialog box.
+. When you are finished with your changes, select *Save*.
+
+== CSS Classes
+
+=== API Carousel
+
+.API Carousel CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`api-version-carousel-container`
+|Carousel container
+
+|`api-version-carousel-empty-message`
+|Empty cards message
+
+|`api-version-carousel-slider`
+|Slick-slider component container
+
+|`api-version-carousel-dots`
+|Carousel bottom dots navigation
+
+|`api-version-carousel-arrow`
+|Left and right arrows navigation
+|===
+
+=== API Version Card 
+
+.API Version Card CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`api-version-card-container`
+|API card container
+
+|`api-version-card-border`
+|API card border and shadow
+
+|`api-version-card-header`
+|Container for icon and title
+
+|`api-version-card-icon`
+|Card icon
+
+|`api-version-card-title`
+|Card title
+
+|`api-version-card-description`
+|Card description
+
+|`api-version-card-buttons-container`
+|Container for "API Details" and "Learn more" buttons
+
+|`api-version-card-button-detail`
+|"API Details" button
+
+|`api-version-card-button-more`
+|"Learn more" button
+|===
+
+=== Search Bar
+
+.Search Bar CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`search-bar-container`
+|Search bar container
+
+|`#acm-search`
+|Search input
+|===
+
+=== Application Listing
+
+.Application Listing CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`application-listing-header`
+|Container for button and search app input
+
+|`application-listing-no-app-msg`
+|Message when there are no application cards
+
+|`application-listing-search-container`
+|Search input container
+
+|`application-listing-cards-container`
+|Application cards container
+|===
+
+=== Application Card
+
+.Application Card CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`application-card-container`
+|Application card container (borders and shadow)
+
+|`application-card-header-container`
+|Container for title and card buttons
+
+|`application-card-header-title`
+|Application card title
+
+|`application-card-action-buttons-container`
+|Buttons container
+
+|`application-card-edit-button`
+|Edit button
+
+|`application-card-delete-button`
+|Delete button
+
+|`application-card-info-container`
+|Information card container
+
+|`application-card-primary-divisor`
+|First line divider
+
+|`application-card-analytics-container`
+|Analytics info container
+
+|`application-card-requests-info`
+|Request label and value
+
+|`application-card-throughput-info`
+|Throughput label and value
+
+|`application-card-errors-info`
+|Errors label and value
+
+|`application-card-latency-info`
+|Latency label and value
+
+|`application-card-secondary-divisor`
+|Second line divider
+
+|`application-card-requests-container`
+|"Request Information" container
+
+|`application-card-api-access`
+|Access label
+
+|`application-card-requests-approved`
+|Approved requests label and value
+
+|`application-card-requests-rejected`
+|Rejected requests label and value
+
+|`application-card-requests-pending`
+|Pending requests label and value
+|===
+
+=== Application Register
+
+.Application Register CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`application-register-container`
+|New application register wrapper
+
+|`application-register-title`
+|Create an application title
+
+|`application-register-subtitle`
+|Application information sub title
+
+|`application-register-name`
+|Application name label
+
+|`application-register-name-input`
+|Application name input
+
+|`application-register-name-registered`
+|Message application name already registered
+
+|`application-register-description`
+|Description label
+
+|`application-register-description-input`
+|Description input
+
+|`application-register-callback`
+|Callback label
+
+|`application-register-callback-input`
+|Callback input
+
+|`application-register-button`
+|Create button
+|===
+
+=== Application Detail
+
+.Application Detail CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`application-detail-name`
+|Application name
+
+|`application-detail-line`
+|Line divider
+
+|`application-detail-client-credentials`
+|Client credentials label
+
+|`application-detail-client-id`
+|Client ID container
+
+|`application-detail-client-id-label`
+|Client ID label
+
+|`application-detail-client-id-value`
+|Client ID value
+
+|`application-detail-client-secret`
+|Client secret container
+
+|`application-detail-client-secret-label`
+|Client secret label
+
+|`application-detail-client-secret-input`
+|Client secret input
+
+|`application-detail-client-access-status`
+|API access status label
+
+|`application-detail-client-approved`
+|Approved label and value
+
+|`application-detail-client-rejected`
+|Rejected label and value
+
+|`application-detail-client-pending`
+|Pending approval label and value
+|===
+
+=== Instance Selector
+
+.Instance Selector CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`instance-selector-container`
+|Instance selector container
+
+|`instance-selector-add-api`
+|Add APIs label
+
+|`instance-selector-line`
+|Line separator
+
+|`instance-selector-box`
+|Instance selector borders
+
+|`instance-selector-list-container`
+|Instance selector list
+|===
+
+=== Contracts Selector
+
+.Contracts Selector CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`contracts-selector-container`
+|Contracts selector container
+
+|`contracts-selector-label`
+|Application name label
+
+|`contracts-selector-line`
+|Line separator
+
+|`contracts-selector-box`
+|Contracts selector borders
+
+|`contracts-selector-list`
+|Contracts selector list
+
+|`contracts-selector-api-name`
+|API name label
+
+|`contracts-manager-button`
+|Arrow button
+|===
+
+=== Header
+
+.Header CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`acm-header`
+|Main header of the community
+
+|`defaultLogo`
+|Logo of the community
+|===
