@@ -1,9 +1,12 @@
-= Support
+= Support cases
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API engineers can handle support cases with API Community Manager's support system, which is based on the Salesforce Service Console.
+The design of the developer experience in your community can include the capability for members to submit support cases. 
 
-You can find further information in the Salesforce Community Cloud documentation.
+Support cases can be forwarded to a third-party issue tracking or support system through a custom integration. 
+They can also be forwarded to an existing Salesforce organization with Service Cloud support capability.
+
+Contact your MuleSoft representative to enable these capabilities. 
