@@ -102,3 +102,20 @@ in the API carousel on the community site.
 . To remove the previous version from your community, select *Remove* next to the previous API version name.
 . Select *Remove* again to confirm. Consumer developers can no longer see the previous API version in 
 the API carousel on the community site.
+
+== Searching APIs
+
+In the ACM administrator interface, the *Manage APIs* tab shows a *Search APIs* field.
+
+Type one or more terms into the search field and the lists *APIs in This Community* and *APIs in Exchange* show only APIs matching all of the terms.
+
+You can also filter the search results with these filter attributes:
+
+* `name`
+* `version`
+* `description`
+* `businessGroup`
+
+To use a filter attribute, type the attribute name, a colon, and the value for that attribute. For example, to show only APIs whose name contains the substring "order", use the search term `name:order`. This shows APIs with names such as "Order Status API" or "Received Orders".
+
+Search terms without a filter attribute apply to all fields of the API that are not filtered. For example, the search `businessGroup:Sales banking` shows APIs that have the substring "Sales" in the "Business Group" field and the substring "banking" in any other field.
