@@ -120,5 +120,6 @@ To use a filter attribute, type the attribute name followed by a colon and the v
 For example: filtering with `name:order` only shows APIs with names that include "order", such 
 as "Order Status API" or "Received Orders".
 
-Search terms without a filter attribute apply to all API fields. For example, the search `businessGroup:Sales banking` 
-shows APIs that include "Sales" in the "Business Group" field and "banking" in any field.
+Search terms without a filter attribute only apply to API fields that are not filtered. For example, the
+search `businessGroup:Sales banking` shows APIs that include "Sales" in the "Business Group" field and
+"banking" in any field other than "Business Group".
