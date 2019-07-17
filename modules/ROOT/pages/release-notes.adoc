@@ -10,6 +10,11 @@ endif::[]
 
 Initial release of API Community Manager.
 
+=== Features
+
+* one
+* two
+
 === Known Issues
 
 * one
