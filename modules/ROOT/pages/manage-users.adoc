@@ -46,5 +46,6 @@ To use a filter attribute, type the attribute name followed by a colon and the v
 For example, filtering with `userName:Smith` only shows members with names that include "Smith", 
 such as `jsmith@company.com` and `sue.jones@ironsmith.com`.
 
-Search terms without a filter attribute apply to all member fields. For example, the 
-search `userName:com Jones` shows members that include "com" in the "Username" field and "Jones" in any field.
+Search terms without a filter attribute only apply to member fields that are not filtered. For example, the
+search `userName:com Jones` shows members that include "com" in the "Username" field and "Jones" in any field
+other than "Username".
