@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-== General Availability (GA) Release
+== 1.0
 
 *July 26, 2019*
 
