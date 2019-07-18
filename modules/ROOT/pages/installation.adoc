@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+The following sections guide you through ACM installation and configuration: 
+
 * <<installation-prerequisites>>
 
 ** <<set-up-and-register-a-domain>>
