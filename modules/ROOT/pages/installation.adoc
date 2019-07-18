@@ -19,14 +19,14 @@ The following sections guide you through ACM installation and configuration:
 ** <<give-permissions-to-acm-community-manager>>
 ** <<verify-portal-account-owner-role-setting>>
 
-** Communities
+** <<communities>>
 
 *** <<create-a-community>>
 *** <<customize-a-community>>
 *** <<define-moderation-rules-for-forums>>
 *** <<publish-a-community>>
 
-** Users
+** <<users>>
 
 *** <<configure-guest-user-access>>
 *** <<configure-registered-users>>
@@ -145,7 +145,7 @@ in the *Community* section.
 . Set the appropriate *Role*.
 . Select *Save*.
 
-=== Communities
+=== Communities [[communities]]
 
 ==== Create a Community [[create-a-community]]
 
@@ -181,7 +181,7 @@ IMPORTANT: Verify the *Activate Rule* check box is active when saving your chang
 `Congratulations! User was published successfully and is now live on the following domain(s):
 https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
-=== Users
+=== Users [[users]]
 
 After you create a community, you must create a profile to specify user permissions.
 
