@@ -65,7 +65,7 @@ site's *Text Case*.
 You can also edit CSS rules to adjust your community styling by selecting the *Theme* drop-down list arrow 
 located next to the *Theme* title and selecting *Edit CSS*. 
 
-Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme, role=external, window=blank] 
+Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme, role=external, window=blank].
 
 == Pages
 
@@ -103,3 +103,5 @@ You can find further information in the Salesforce Community Cloud documentation
 
 * https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Communities with Community Builder, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=blank]
+* Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/set-up-a-community/brand-the-community[Community Branding, role=external, window=blank]
+* Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/communities_theme_layout[Build a Custom Theme Layout Component for Lightning Communities, role=external, window=blank]
