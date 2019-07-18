@@ -229,10 +229,44 @@ After you create a community, you must create a profile to specify user permissi
 *External Object Permissions* section.
 . Select *Save*.
 . Change the permissions for the following objects in the *Custom Field-Level Security* section:
-*AnypointApiInstances*, *AnypointApiTiers*, *AnypointApiVersions*, *AnypointApplications*,
-*AnypointContracts*, and *CommunityApis*.
 
-// Which settings? Do we need these screen shots?
+** *AnypointApiInstances*
+
+*** All fields: *Read Access*
+*** *Display URL*: *Edit Access*
+*** *External ID*: *Edit Access*
+
+** *AnypointApiTiers*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *AnypointApiVersions*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *AnypointApplications*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *AnypointContracts*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *CommunityApi*
+
+*** *ApiID*: *Read Access* and *Edit Acccess*
+*** *AssetTYpe*: *Read Access* and *Edit Acccess*
+*** *AssetVersion*: *Read Access* and *Edit Acccess*
+*** *CommunityApi Name*: *Read Access* and *Edit Acccess*
+*** *Created By*: *Read Access*
+*** *Last Modified By*: *Read Access*
+*** *Name*: *Read Access* and *Edit Acccess* 
+*** *Owner*: *Read Access* and *Edit Acccess*
+*** *Visibility*: *Read Access* and *Edit Acccess*
 
 ==== Add Self Register Custom Component to Register Page [[add-self-register-custom-component-to-register-page]]
 
