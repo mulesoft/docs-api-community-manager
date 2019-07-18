@@ -56,7 +56,7 @@ API Community Manager requires an ACM license. You cannot reuse an existing Sale
 === 1. Set Up and Register a Domain [[set-up-and-register-a-domain]]
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
-. Log in into your https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
+. Log in into your ACM https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
 . Select *Check Availability*. If the name is already taken, choose a different one.
