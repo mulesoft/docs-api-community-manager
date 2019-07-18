@@ -325,31 +325,31 @@ icon next to it.
 
 .. In *Step 2. Specify Entry Criteria*, enter the following information:
 
-*** In the *Field* section, set the following values for `SelfRegisterUserRequest: Approved`:
+... In the *Field* section, set the following values for `SelfRegisterUserRequest: Approved`:
 
 **** *Operator*: `equals`
 **** *Value*: `False`
 .. In *Step 3. Specify Approver Field and Record Editability Properties*:
 
-*** Review the information in *Self Register User Requests*:
+... Review the information in *Self Register User Requests*:
 
 **** Leave the default values.
 **** Verify *Record Editability Properties* shows *Administrators ONLY can edit records during the
 approval process* is selected.
 .. In *Step 4. Select Notification Templates*:
 
-*** Verify *Approval Assignment Email Template* is set to  *Registration Request*.
+... Verify *Approval Assignment Email Template* is set to  *Registration Request*.
 .. In *Step 5. Select Fields to Display on Approval Page Layout*:
 
-*** Add `Self Register User Request Name` and `Owner` to *Selected Fields*.
-*** Select the *Display approval history information in addition to the fields selected above.* check box.
+... Add `Self Register User Request Name` and `Owner` to *Selected Fields*.
+... Select the *Display approval history information in addition to the fields selected above.* check box.
 .. In *Step 6. Specify Initial Submitters*:
 
-*** Add *Self Register User Request Owner* to the *Allowed Submitters* column.
+... Add *Self Register User Request Owner* to the *Allowed Submitters* column.
 
 ===== 2. Create an Approval Step [[create-an-approval-step]]
 
-* After you create the Approval Process:
+. After you create the Approval Process:
 
 ** If you are prompted to add an Approval Step:
 
@@ -362,18 +362,16 @@ approval process* is selected.
 ... Select *Approve Registration* (the approval that you created).
 ... In the *Approval Steps* section, select *New Approval Step*.
 
-* Continue with the following steps:
+. In the *Step 1: Enter Name and Description* section:
 
-.. In the *Step 1: Enter Name and Description* section:
+.. Enter `Step 1` in *Name*.
+.. Select *Next*.
 
-... Enter `Step 1` in *Name*.
-... Select *Next*.
+. In the *Step 2: Specify Step Criteria* section, select *Next*.
+. In the *Step 3 - Select Assigned Approver* section:
 
-.. In the *Step 2: Specify Step Criteria* section, select *Next*.
-.. In the *Step 3 - Select Assigned Approver* section:
-
-... Select *Let the submitter choose the approver manually*.
-... Select *Save*.
+.. Select *Let the submitter choose the approver manually*.
+.. Select *Save*.
 
 ===== 3. Create a Final Approval Action [[create-a-final-approval-action]]
 
