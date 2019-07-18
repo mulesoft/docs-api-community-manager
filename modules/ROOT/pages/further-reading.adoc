@@ -1,9 +1,0 @@
-= Further Reading
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-:imagesdir: ../assets/images/
-
-* Using Community Cloud to create good communities.
-* Guidelines on writing content.
-* Other relevant info.
