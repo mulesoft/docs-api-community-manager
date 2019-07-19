@@ -1,10 +1,10 @@
-= Set Up Impersonation
+= Set Up User Impersonation
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-// Needs intro sentence
+Set up user impersonation to connect ACM with the Anypoint Platform.
 
 . Create a Connected App
 
