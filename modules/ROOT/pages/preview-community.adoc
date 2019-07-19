@@ -1,4 +1,4 @@
-= Preview Community
+= Preview Your API Community
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
