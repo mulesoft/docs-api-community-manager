@@ -12,6 +12,8 @@ image::admin-interface.png[ACM administrator interface]
 
 To open the ACM administrator interface at any time, open the Salesforce *App Launcher* and select *API Community Manager*.
 
+== Community Operations
+
 * xref:publish-apis.adoc[Publish APIs]
 * xref:publish-content.adoc[Publish Content and CMS Articles]
 * xref:moderate-forums.adoc[Moderate Forums]
