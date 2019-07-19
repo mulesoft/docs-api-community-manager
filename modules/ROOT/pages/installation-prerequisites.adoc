@@ -9,7 +9,7 @@ from customer operational data in their Salesforce instance, such as ERP or CRM 
 
 API Community Manager requires an ACM license. You cannot reuse an existing Salesforce license for ACM.
 
-== Set Up and Register a Domain [[set-up-and-register-a-domain]]
+== Set Up and Register a Domain
 
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
