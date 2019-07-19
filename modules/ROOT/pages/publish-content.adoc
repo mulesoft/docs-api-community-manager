@@ -1,4 +1,4 @@
-= Publish Content
+= Publish Content and CMS Articles
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -59,6 +59,14 @@ The https://help.salesforce.com/articleView?id=community_managed_content_collect
 . Select the component to open its configuration menu, and select *Change Collection* to select your new collection.
 
 The new collection of articles is now displayed on your community page.
+
+== External CMS Systems
+
+You can also author ACM content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect, role=external, window=blank].
+
+External CMS systems can include Adobe Experience Manager, Drupal, Wordpress, and others.
+
+You can learn more about CMS Connect on Trailhead with the trail https://trailhead.salesforce.com/en/content/learn/modules/partner-relationship-management/deploy-fast-and-personalize-the-experience[Deploy Fast and Personalize the Experience, role=external, window=blank].
 
 == See Also
 

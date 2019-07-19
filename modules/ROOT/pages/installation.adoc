@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+The following sections guide you through ACM installation and configuration: 
+
 * <<installation-prerequisites>>
 
 ** <<set-up-and-register-a-domain>>
@@ -17,14 +19,14 @@ endif::[]
 ** <<give-permissions-to-acm-community-manager>>
 ** <<verify-portal-account-owner-role-setting>>
 
-** Communities
+** <<communities>>
 
 *** <<create-a-community>>
 *** <<customize-a-community>>
 *** <<define-moderation-rules-for-forums>>
 *** <<publish-a-community>>
 
-** Users
+** <<users>>
 
 *** <<configure-guest-user-access>>
 *** <<configure-registered-users>>
@@ -56,7 +58,7 @@ API Community Manager requires an ACM license. You cannot reuse an existing Sale
 === 1. Set Up and Register a Domain [[set-up-and-register-a-domain]]
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
-. Log in into your https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
+. Log in into your ACM https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
 . Select *Check Availability*. If the name is already taken, choose a different one.
@@ -66,7 +68,9 @@ can take a few minutes.
 
 === 2. Enable Communities Inside Your Organization [[enable-communities-inside-your-organization]]
 
-https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank].
+Follow the steps in 
+https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank] 
+to enable communities inside your organization.
 
 === 3. Make Your Domain Available to Your Users [[make-your-domain-available-to-your-users]]
 
@@ -141,7 +145,7 @@ in the *Community* section.
 . Set the appropriate *Role*.
 . Select *Save*.
 
-=== Communities
+=== Communities [[communities]]
 
 ==== Create a Community [[create-a-community]]
 
@@ -177,7 +181,9 @@ IMPORTANT: Verify the *Activate Rule* check box is active when saving your chang
 `Congratulations! User was published successfully and is now live on the following domain(s):
 https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
-=== Users
+=== Users [[users]]
+
+After you create a community, you must create a profile to specify user permissions.
 
 ==== Configure Guest User Access [[configure-guest-user-access]]
 
@@ -223,10 +229,44 @@ https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 *External Object Permissions* section.
 . Select *Save*.
 . Change the permissions for the following objects in the *Custom Field-Level Security* section:
-*AnypointApiInstances*, *AnypointApiTiers*, *AnypointApiVersions*, *AnypointApplications*,
-*AnypointContracts*, and *CommunityApis*.
 
-// Which settings? Do we need these screen shots?
+** *AnypointApiInstances*
+
+*** All fields: *Read Access*
+*** *Display URL*: *Edit Access*
+*** *External ID*: *Edit Access*
+
+** *AnypointApiTiers*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *AnypointApiVersions*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *AnypointApplications*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *AnypointContracts*
+
+*** *Display URL*: *Read Access* and *Edit Acccess*
+*** *External ID*: *Read Access* and *Edit Acccess*
+
+** *CommunityApi*
+
+*** *ApiID*: *Read Access* and *Edit Acccess*
+*** *AssetTYpe*: *Read Access* and *Edit Acccess*
+*** *AssetVersion*: *Read Access* and *Edit Acccess*
+*** *CommunityApi Name*: *Read Access* and *Edit Acccess*
+*** *Created By*: *Read Access*
+*** *Last Modified By*: *Read Access*
+*** *Name*: *Read Access* and *Edit Acccess* 
+*** *Owner*: *Read Access* and *Edit Acccess*
+*** *Visibility*: *Read Access* and *Edit Acccess*
 
 ==== Add Self Register Custom Component to Register Page [[add-self-register-custom-component-to-register-page]]
 
@@ -285,31 +325,31 @@ icon next to it.
 
 .. In *Step 2. Specify Entry Criteria*, enter the following information:
 
-*** In the *Field* section, set the following values for `SelfRegisterUserRequest: Approved`:
+... In the *Field* section, set the following values for `SelfRegisterUserRequest: Approved`:
 
 **** *Operator*: `equals`
 **** *Value*: `False`
 .. In *Step 3. Specify Approver Field and Record Editability Properties*:
 
-*** Review the information in *Self Register User Requests*:
+... Review the information in *Self Register User Requests*:
 
 **** Leave the default values.
 **** Verify *Record Editability Properties* shows *Administrators ONLY can edit records during the
 approval process* is selected.
 .. In *Step 4. Select Notification Templates*:
 
-*** Verify *Approval Assignment Email Template* is set to  *Registration Request*.
+... Verify *Approval Assignment Email Template* is set to  *Registration Request*.
 .. In *Step 5. Select Fields to Display on Approval Page Layout*:
 
-*** Add `Self Register User Request Name` and `Owner` to *Selected Fields*.
-*** Select the *Display approval history information in addition to the fields selected above.* check box.
+... Add `Self Register User Request Name` and `Owner` to *Selected Fields*.
+... Select the *Display approval history information in addition to the fields selected above.* check box.
 .. In *Step 6. Specify Initial Submitters*:
 
-*** Add *Self Register User Request Owner* to the *Allowed Submitters* column.
+... Add *Self Register User Request Owner* to the *Allowed Submitters* column.
 
 ===== 2. Create an Approval Step [[create-an-approval-step]]
 
-* After you create the Approval Process:
+. After you create the Approval Process:
 
 ** If you are prompted to add an Approval Step:
 
@@ -322,18 +362,16 @@ approval process* is selected.
 ... Select *Approve Registration* (the approval that you created).
 ... In the *Approval Steps* section, select *New Approval Step*.
 
-* Continue with the following steps:
+. In the *Step 1: Enter Name and Description* section:
 
-.. In the *Step 1: Enter Name and Description* section:
+.. Enter `Step 1` in *Name*.
+.. Select *Next*.
 
-... Enter `Step 1` in *Name*.
-... Select *Next*.
+. In the *Step 2: Specify Step Criteria* section, select *Next*.
+. In the *Step 3 - Select Assigned Approver* section:
 
-.. In the *Step 2: Specify Step Criteria* section, select *Next*.
-.. In the *Step 3 - Select Assigned Approver* section:
-
-... Select *Let the submitter choose the approver manually*.
-... Select *Save*.
+.. Select *Let the submitter choose the approver manually*.
+.. Select *Save*.
 
 ===== 3. Create a Final Approval Action [[create-a-final-approval-action]]
 

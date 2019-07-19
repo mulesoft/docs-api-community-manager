@@ -1,10 +1,10 @@
-= Keeping Your API Community Up to Date
+= Updating ACM
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Keep your instance up to date to take advantage of new and improved functionality in your community.
+Keep your ACM instance up to date to take advantage of new and improved functionality in your community.
 
 To update your API community:
 

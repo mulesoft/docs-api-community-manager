@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-* Using Community Cloud to create good communities.
-* Guidelines on writing content.
-* Other relevant info.
+These pages offer further information about API Community Manager.
+
+* xref:security.adoc[Security]
+* xref:troubleshooting.adoc[Troubleshooting]
+* xref:reference.adoc[Configuration Reference]

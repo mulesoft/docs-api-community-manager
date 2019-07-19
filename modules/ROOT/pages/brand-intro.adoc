@@ -1,4 +1,4 @@
-= Brand and Customize your API Community
+= Brand and Customize Your API Community
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -8,7 +8,7 @@ API Community Manager allows you to customize and adjust the branding, look and 
 
 Advanced HTML and CSS editing is also available for very precise web designs.
 
-* xref:branding-and-customization.adoc[Customize the Look and Feel of Your API Community]
+* xref:customization.adoc[Customize the Look and Feel of Your API Community]
 * xref:acm-lightning-components.adoc[ACM Lightning Components]
 * xref:preview-community.adoc[Preview your API Community]
 * xref:css-styling.adoc[Advanced styling with CSS]
