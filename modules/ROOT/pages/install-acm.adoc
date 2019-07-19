@@ -1,0 +1,22 @@
+= Install API Community Manager
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+To update an existing API Community Manager installation, refer to xref:updating.adoc[Updating ACM].
+
+To perform a new install of API Community Manager:
+
+. Navigate to the package installation link provided by your MuleSoft representative.
+. Select the appropriate release to install for your organization.
+. Select *Install*.
+. On the *Approve Third-Party Access* page, select the *Yes, grant access to these third-party web sites* check box.
+. Select *Continue*.
+. When installation completes, select *Done*.
+
+NOTE: If you see a message indicating that the installation process is taking a long time to install, you will
+receive an email when the installation completes.
+
+You can verify that API Community Manager installation completed by reviewing the *Installed Packages* information
+in *Setup*.
