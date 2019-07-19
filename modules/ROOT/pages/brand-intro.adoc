@@ -1,4 +1,4 @@
-= Brand and Customize your API Community
+= Brand and Customize Your API Community
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
