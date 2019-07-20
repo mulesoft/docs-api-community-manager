@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-The following sections guide you through ACM configuration:
+The following sections guide you through API Community Manager configuration:
 
 * <<authenticate-the-external-data-source>>
 * <<give-permissions-to-acm-community-manager>>
