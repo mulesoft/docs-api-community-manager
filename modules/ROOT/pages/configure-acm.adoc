@@ -197,7 +197,7 @@ After you create a community, you must create a profile to specify user permissi
 ** *CommunityApi*
 
 *** *ApiID*: *Read Access* and *Edit Acccess*
-*** *AssetTYpe*: *Read Access* and *Edit Acccess*
+*** *AssetType*: *Read Access* and *Edit Acccess*
 *** *AssetVersion*: *Read Access* and *Edit Acccess*
 *** *CommunityApi Name*: *Read Access* and *Edit Acccess*
 *** *Created By*: *Read Access*
