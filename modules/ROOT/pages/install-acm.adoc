@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To update an existing API Community Manager installation, refer to xref:updating.adoc[Updating ACM].
+To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update ACM].
 
 To perform a new install of API Community Manager:
 
