@@ -1,0 +1,11 @@
+= Install and Configure
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+The following sections guide you through installing and configuring API Community Manager:
+
+* xref:installation-prerequisites.adoc[Installation Prerequisites]
+* xref:install-acm.adoc[Install ACM]
+* xref:configure-acm.adoc[Configure ACM]
