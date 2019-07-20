@@ -6,7 +6,5 @@ endif::[]
 
 These pages offer further information about API Community Manager.
 
-* xref:updating.adoc[Updating ACM]
 * xref:security.adoc[Security]
-* xref:troubleshooting.adoc[Troubleshooting]
 * xref:reference.adoc[Configuration Reference]

@@ -1,0 +1,37 @@
+= Installation Prerequisites
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+API Community Manager is installed in an *independent* Salesforce organization so that the API community is isolated
+from customer operational data in their Salesforce instance, such as ERP or CRM data.
+
+API Community Manager requires an ACM license. You cannot reuse an existing Salesforce license for ACM.
+
+== Set Up and Register a Domain
+
+// Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
+
+. Log in into your ACM https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
+. Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
+. Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
+. Select *Check Availability*. If the name is already taken, choose a different one.
+. Select *Register Domain*. You will receive an email when your subdomain name is ready for testing. This process
+can take a few minutes.
+. Follow the instructions in the email.
+
+== Enable Communities Inside Your Organization
+
+Follow the steps in 
+https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank] 
+to enable communities inside your organization.
+
+== Make Your Domain Available to Your Users
+
+. Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
+. Select *Deploy to Users*.
+
+If you are using another type of Salesforce Organization, you need the following features available:
+
+* Salesforce identity
