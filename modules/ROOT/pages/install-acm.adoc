@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-NOTE: To install, update or configure API Community Manager you need to work with an user with *System Administrator* profile in the ACM Salesforce organization. 
+NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
 To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update ACM].
 
