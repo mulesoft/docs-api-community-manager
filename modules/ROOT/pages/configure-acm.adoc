@@ -89,7 +89,7 @@ in the *Community* section.
 == Configure EU account [[configure-eu-account]]
 
 If you have an EU account, which is 
-https://docs.mulesoft.com/eu-control-plan/platform-access-eu[hosted within the EU, role=external, window=_blank], 
+https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted within the EU, role=external, window=_blank], 
 you must authenticate, set up and configure your domain, and manage your APIs, applications, and related data 
 using the following URL: `eu1.anypoint.mulesoft.com`. This is because the EU control plane stores all MuleSoft data 
 within the EU, and you cannot access EU account data and information using the US Anypoint Platform control plane URL. 
@@ -100,7 +100,7 @@ External Data Source configuration URL to: `https://eu1.anypoint.mulesoft.com/od
 
 The following list contains the required updates:
 
-* Named Credentials URL when you authenticate the <<authenticate-the-external-data-source>>: Change `https://anypoint.mulesoft.com` to `https://eu1.anypoint.mulesoft.com`.
+* Named Credentials URL when you <<authenticate-the-external-data-source>>: Change `https://anypoint.mulesoft.com` to `https://eu1.anypoint.mulesoft.com`.
 * *Authorize Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>:
 Change
 `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize`.
