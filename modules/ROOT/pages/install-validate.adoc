@@ -1,16 +1,16 @@
-= Verify the installation
+= Verify the Installation
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To verify your installation and configuration is operational, verify that:
+To verify your installation and configuration:
 
 //THIS NEEDS SCREENSHOTS OF EACH OF THESE SECTIONS
 
-1. Your Anypoint organization has the ACM entitlement, by opening the profile URL in a browser where you've have an open session in the your Anypoint Platform organization and checking that "apiCommunityManager" value is "true" under the "entitlements" property.
-2. The Exchange External Data Source status is *Authenticated*.
-3. API versions are shown on ACM administration, by going to the Application Launcher, entering "API Community Manager", and checking that the list "APIs in Exchange" is not empty and it contains the APIs in your organization
-4. The API console is rendered correctly, by adding any of your exchange APIs to your community, navigating to the console in the Community Builder preview mode, and ensuring it is rendered correctly for your API. 
+1. Verify that your Anypoint organization has the ACM entitlement. Open a session in your Anypoint Platform organization. In the same browser, open the profile URL. Check that under the "entitlements" property the "apiCommunityManager" value is "true".
+2. Verify that the Exchange External Data Source status is *Authenticated*.
+3. Verify that API versions are shown in the ACM administration interface. Open the Application Launcher. Enter "API Community Manager". Check that the list "APIs in Exchange" is not empty and contains the APIs in your organization.
+4. Verify that the API console is rendered correctly. Add any of your Exchange APIs to your community. Navigate to the console in the Community Builder preview mode. Check that the console is rendered correctly for your API.
 
 If any of these checks are not successful, please check the xref:troubleshooting.adoc[Troubleshooting] section.
