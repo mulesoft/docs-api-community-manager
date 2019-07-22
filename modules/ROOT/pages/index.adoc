@@ -11,8 +11,7 @@ ACM is powered by *Salesforce Community Cloud*, and provides customization, bran
 engagement capabilities to serve the different needs of your developer audiences. APIs stored in 
 MuleSoft's Anypoint Exchange can be surfaced in ACM.
 
-See below useful resources to get up-to-speed with Salesforce Community Cloud:
-https://forums.mulesoft.com[MuleSoft Forum, role=external, window=blank]
+See these useful resources to get up-to-speed with Salesforce Community Cloud:
 
 * https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Community Cloud Product Documentation, role=external, window=blank]
 * https://trailhead.salesforce.com/en/content/learn/trails/communities[Community Cloud Trailhead, role=external, window=blank]
