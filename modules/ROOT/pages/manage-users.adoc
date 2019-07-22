@@ -6,6 +6,8 @@ endif::[]
 
 Consumer developers self-register for access to your API Community. You can then approve user registrations to give them access to the restricted sections of your community. 
 
+NOTE: Registered members require a license. No license is required when you create a Guest member.
+
 == User Registration and Activation
 
 When consumer developers browse your community as unregistered users (guests), they can view only limited information.
