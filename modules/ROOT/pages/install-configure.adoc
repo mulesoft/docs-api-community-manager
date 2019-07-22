@@ -11,3 +11,4 @@ The following sections guide you through installing and configuring API Communit
 * xref:installation-prerequisites.adoc[Installation Prerequisites]
 * xref:install-acm.adoc[Install ACM]
 * xref:configure-acm.adoc[Configure ACM]
+* xref:install-validate.adoc[Verify the installation]
