@@ -123,11 +123,11 @@ https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
 == Users [[users]]
 
-After you create a community, you must create a profile to specify user permissions.
+After you create a community, you must create the different user profiles for your community Guests and Members, so that you can control access and visibility to APIs and content. 
 
 === Configure Guest User Access [[configure-guest-user-access]]
 
-. Create the profile to be assigned to new Community Users.
+In this section, you will be creating the profile to be assigned to Guests Community Users (users that are not signed-in).
 
 .. Navigate to *Setup*.
 .. In the *Quick Find* box, enter *Users*.
@@ -148,6 +148,8 @@ After you create a community, you must create a profile to specify user permissi
 // Which fields need to be updated?
 
 === Configure Registered Users [[configure-registered-users]]
+
+In this section, you will be creating the profile to be assigned to Members of your Community (users that will sign-in your community).
 
 . Navigate to *Setup* -> *Communities* -> *Communities Settings*.
 . Scroll to *Sharing Sets* and select *New*.
