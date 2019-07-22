@@ -9,7 +9,7 @@ from customer operational data in their Salesforce instance, such as ERP or CRM 
 
 API Community Manager requires an ACM license. You cannot reuse an existing Salesforce license for ACM.
 
-NOTE: To install, update or configure API Community Manager you need to work with an user with *System Administrator* profile in the ACM Salesforce organization.  
+NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
 == Set Up and Register a Domain
 
