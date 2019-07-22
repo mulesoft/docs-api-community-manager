@@ -16,6 +16,7 @@ The following sections guide you through API Community Manager configuration:
 
 ** <<create-a-community>>
 ** <<customize-a-community>>
+** <<enable-forums>>
 ** <<define-moderation-rules-for-forums>>
 ** <<publish-a-community>>
 
@@ -103,6 +104,15 @@ in the *Community* section.
 === Customize a Community [[customize-a-community]]
 
 Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
+
+=== Enable Forums [[enable-forums]]
+
+. In the Salesforce *Settings*, select *Display additional fields*.
+. Enable forums.
+. In the ACM administrator interface, select *Manage CMS Content*.
+. Select the *Topics* tab.
+. Select *Navigational Topics*.
+. Create topics for your community forums.
 
 === Define Moderation Rules for Forums [[define-moderation-rules-for-forums]]
 
