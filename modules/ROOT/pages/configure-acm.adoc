@@ -11,6 +11,7 @@ The following sections guide you through API Community Manager configuration:
 * <<authenticate-the-external-data-source>>
 * <<give-permissions-to-acm-community-manager>>
 * <<verify-portal-account-owner-role-setting>>
+* <<configure-eu-account>>
 
 * <<communities>>
 
@@ -85,6 +86,34 @@ in the *Community* section.
 . Navigate to *Setup -> Users* and select your username.
 . Set the appropriate *Role*.
 . Select *Save*.
+
+== Configure EU account [[configure-eu-account]]
+
+If you have an EU account, which is 
+https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted within the EU, role=external, window=_blank], 
+you must authenticate, set up and configure your domain, and manage your APIs, applications, and related data 
+using the following URL: `eu1.anypoint.mulesoft.com`. This is because the EU control plane stores all MuleSoft data 
+within the EU, and you cannot access EU account data and information using the US Anypoint Platform control plane URL. 
+
+To use API Community Manager in an EU region, you must change all occurrences of `anypoint.mulesoft.com` 
+to include a `eu1` prefix. For example: you must update the `https://anypoint.mulesoft.com/odatabridge/odata.svc` 
+External Data Source configuration URL to: `https://eu1.anypoint.mulesoft.com/odatabridge/odata.svc`. 
+
+The following list contains the required updates:
+
+* Named Credentials URL when you <<authenticate-the-external-data-source>>: Change `https://anypoint.mulesoft.com` to `https://eu1.anypoint.mulesoft.com`.
+* *Authorize Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>:
+Change
+`https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize`.
+* *Token Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>: 
+Change `https://anypoint.mulesoft.com/accounts/oauth2/token` 
+to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token`.
+* Remote site settings : Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
+* CSP trusted sites: Add the following sites:
+
+** `https://eu1.anypoint.mulesoft.com` 
+** `https://exchange2-file-upload-service-kprod-eu.s3.eu-central-1.amazonaws.com`
+** `https://exchange2-asset-manager-kprod-eu.s3.amazonaws.com`
 
 == Communities [[communities]]
 
@@ -419,7 +448,8 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://OrgDomain.my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}`
 
-. Configure Auth Provider (Salesforce)
+
+. Configure Auth Provider
 
 .. From the Salesforce interface, navigate to *Setup* -> *Auth. Providers* -> *Anypoint* -> *Edit*.
 .. Provide the following information:
