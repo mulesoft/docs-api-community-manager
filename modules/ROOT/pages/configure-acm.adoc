@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
+
 The following sections guide you through API Community Manager configuration:
 
 * <<authenticate-the-external-data-source>>
@@ -121,11 +123,11 @@ https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
 == Users [[users]]
 
-After you create a community, you must create a profile to specify user permissions.
+After you create a community, you must create the different user profiles for your community Guests and Members, so that you can control access to and visibility of APIs and content.
 
 === Configure Guest User Access [[configure-guest-user-access]]
 
-. Create the profile to be assigned to new Community Users.
+In this section, you create the profile for Guest community users. Users that are not signed-in are Guest users.
 
 .. Navigate to *Setup*.
 .. In the *Quick Find* box, enter *Users*.
@@ -146,6 +148,8 @@ After you create a community, you must create a profile to specify user permissi
 // Which fields need to be updated?
 
 === Configure Registered Users [[configure-registered-users]]
+
+In this section, you create the profile for Members of your community. Users that are signed-in are Members.
 
 . Navigate to *Setup* -> *Communities* -> *Communities Settings*.
 . Scroll to *Sharing Sets* and select *New*.
