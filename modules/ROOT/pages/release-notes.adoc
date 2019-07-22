@@ -28,7 +28,7 @@ Initial release of API Community Manager.
 * API specification and console rendered from Exchange
 * API documentation rendered from Exchange
 * API selection from Exchange for publication
-* User onboarding and registration
+* Member onboarding and registration
 * Application onboarding and registration
 * Terms of use
 * API keys and application credentials management
