@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+NOTE: To install, update or configure API Community Manager you need to work with an user with *System Administrator* profile in the ACM Salesforce organization. 
+
 To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update ACM].
 
 To perform a new install of API Community Manager:
@@ -14,6 +16,7 @@ To perform a new install of API Community Manager:
 . On the *Approve Third-Party Access* page, select the *Yes, grant access to these third-party web sites* check box.
 . Select *Continue*.
 . When installation completes, select *Done*.
+
 
 NOTE: If you see a message indicating that the installation process is taking a long time to install, you will
 receive an email when the installation completes.
