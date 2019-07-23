@@ -2,7 +2,7 @@
 * xref:index.adoc[Overview]
 * xref:install-configure.adoc[Install and Configure]
  ** xref:installation-prerequisites.adoc[Installation Prerequisites]
- ** xref:install-acm.adoc[Install ACM]
+ ** xref:install-acm.adoc[Install ACM Package]
  ** xref:configure-acm.adoc[Configure ACM]
  ** xref:install-validate.adoc[Verify the Installation]
 * xref:brand-intro.adoc[Brand and Customize Your API Community]
