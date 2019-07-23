@@ -4,11 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
+Follow these steps to configure API Community Manager (ACM).
+
+NOTE: Installing, updating or configuring ACM must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
 NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurences of `anypoint.mulesoft.com` domain by `eu1.anypoint.mulesoft.com` in all the steps in this section.
-
-The following sections guide you through API Community Manager configuration:
 
 * <<authenticate-the-external-data-source>>
 * <<enable-acm-control-panel>>
