@@ -1,0 +1,88 @@
+= Release Notes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+== 1.0
+
+*July 26, 2019*
+
+Initial release of API Community Manager.
+
+=== Features
+
+* Build and operate a community for developers and partners, both inside and outside of your organization, who write applications that use your APIs.
+* Use customization, branding, marketing, and engagement capabilities to serve the different needs of your developer audiences.
+* APIs stored in MuleSoft's Anypoint Exchange can be surfaced in ACM, including API documentation and consoles.
+* Create and publish news, events, tutorials, and developer blog posts.
+* Engage developers with forums and support cases.
+* Manage applications, including requests for API access for client applications, credentials management, and performance analytics.
+
+////
+* Simple out-of-the-box portal and community template
+* Point-and-click branding and layout customization
+* CMS content authoring and publication (news, articles, and blog posts)
+* Content placing (showcase, promotion, banners)
+* Extensibility through custom components
+* API specification and console rendered from Exchange
+* API documentation rendered from Exchange
+* API selection from Exchange for publication
+* Member onboarding and registration
+* Application onboarding and registration
+* Terms of use
+* API keys and application credentials management
+* Client application analytics display
+* Multiple communities per Anypoint organization
+////
+
+////
+=== Known Issues
+
+* one
+* two
+////
+
+////
+== 1.0
+
+*Month 31, 2019*
+
+=== New Features
+
+* one
+* two
+
+=== Fixed in this Release
+
+* one
+* two
+
+=== Known Issues
+
+* one
+* two
+
+== Internal Beta
+
+*Month 2, 2019*
+
+=== New Features
+
+* one
+* two
+
+=== Fixed in this Release
+
+* one
+* two
+
+=== Known Issues
+
+* one
+* two
+////
+
+// == See Also
+
+// * xref:api-community-manager::index.adoc[API Community Manager Documentation]
