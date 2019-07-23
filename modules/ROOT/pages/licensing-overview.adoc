@@ -15,4 +15,4 @@ Community login-based license is calculated by the number of *daily unique login
 
 Forecasting the adequate number of daily unique logins is critical to ensure you have enough licenses to satisfy the demand your community will generate. Your MuleSoft account team will assist you in this analysis as part of the capacity planning and community design process before you roll out your community.
 
-You can find more information about *Salesforce Customer Community Plus Login License Unlimited Edition* in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=users_license_types_communities.htm&type=5[Communities User Licenses].
+You can find more information about *Salesforce Customer Community Plus Login License Unlimited Edition* in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=users_license_types_communities.htm&type=5[Communities User Licenses, role=external, window=blank].
