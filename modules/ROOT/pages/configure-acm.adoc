@@ -545,7 +545,8 @@ Alternatively, you can download metadata from the Salesforce app and extract the
 
 . Configure and Authorize ODATA Bridge to Perform Impersonation
 
-** This final step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate. Use the same certificate that Salesforce IDP uses.
+** This final step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate. 
+Use the same certificate that Salesforce IDP uses.
 
 .. In *Salesforce Setup*, search for *Certificate and Key Management* using the *Quick Find* box .
 .. Select *Export to Keystore*.
@@ -610,7 +611,8 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
-If your Anypoint Platform organization is hosted in the EU, perform the following additional configurations to enable access to the EU instance of the Anypoint Management Plane.
+If your Anypoint Platform organization is hosted in the EU, perform the following additional configuration 
+steps to enable access to the EU instance of the Anypoint Management Plane.
 
 * Remote site settings: Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
 * CSP trusted sites: Add the following sites:
