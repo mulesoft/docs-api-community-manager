@@ -16,7 +16,7 @@ will lead the CMS article release process.
 
 == Import APIs
 
-. Open the ACM administrator interface and select *Manage APIs*. From this tab, you can manage the APIs in your
+. Open the ACM Control Panel and select *Manage APIs*. From this tab, you can manage the APIs in your
 community, including their metadata and visibility.
 
 * *APIs in this Community* shows the API versions that have been added to the community.
@@ -39,7 +39,7 @@ Now set the API information, including visibility, icon, and description.
 
 == Preview APIs
 
-. In the ACM administrator interface, select *Community Builder*. The Community Builder displays a preview of
+. In the ACM Control Panel, select *Community Builder*. The Community Builder displays a preview of
 your community's site and edit options.
 . Select *Preview*.
 . Scroll to the API carousel that displays a card for each API version in the community. The new API version
@@ -48,7 +48,7 @@ see this API version preview.
 
 == Make API Versions Visible
 
-. In the ACM administrator interface, select *Manage APIs*.
+. In the ACM Control Panel, select *Manage APIs*.
 . Select *Edit* next to the API version name.
 . Set *Visibility* to *Public*.
 . Select *Apply*. Consumer developers can now see this API version in the API carousel on the community site.
@@ -95,7 +95,7 @@ without any changes.
 
 The ACM community administrator must then review and publish the changes:
 
-. In the ACM administrator interface, select *Manage APIs*. The previous API version remains unchanged in
+. In the ACM Control Panel, select *Manage APIs*. The previous API version remains unchanged in
 *APIs in this Community*. The new API version is listed in *APIs in Exchange*.
 . To add the new version to the community, select *Add to Community* next to the new API version name. The new API version
 is now listed in *APIs in this Community*.
@@ -112,7 +112,7 @@ the API carousel on the community site.
 
 == Searching APIs
 
-In the ACM administrator interface, the *Manage APIs* tab shows a *Search APIs* field.
+In the ACM Control Panel, the *Manage APIs* tab shows a *Search APIs* field.
 
 Enter one or more terms into the search field. Search results are listed in *APIs in This Community* and *APIs in Exchange*.
 

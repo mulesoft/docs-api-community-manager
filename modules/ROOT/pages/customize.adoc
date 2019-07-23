@@ -6,7 +6,7 @@ endif::[]
 
 Use the https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank] to customize the branding, look and feel, and site structure of your community pages to match your desired brand identity.
 
-Select *Community Builder* in the API Community Manager (ACM) administrator interface. By default, the
+Select *Community Builder* in the API Community Manager (ACM) Control Panel. By default, the
 Community Builder displays the *Home* page and the Pages drop-down list displays *Home*. You can select
 the Pages drop-down list to display a list of community pages and specify a different page for customization.
 

@@ -12,7 +12,7 @@ To verify your installation and configuration:
 
 image::validate-exchange-auth.png[Exchange Authenticated]
 
-3. Verify that API versions are shown in the ACM administrator interface. Open the Application Launcher. Enter *API Community Manager*. Check that the list *APIs in Exchange* is not empty and contains the APIs in your organization.
+3. Verify that API versions are shown in the ACM Control Panel. Open the Application Launcher. Enter *API Community Manager*. Check that the list *APIs in Exchange* is not empty and contains the APIs in your organization.
 
 image::apis-in-exchange.png[APIs in Exchange]
 

@@ -8,7 +8,7 @@ Developers can use the API Community Manager forums to ask questions and collabo
 
 When a developer posts a question or answer that's not visible automatically, a community operator must approve it.
 
-To approve or delete pending forum posts, open the ACM administrator interface and select *Manage Forums*.
+To approve or delete pending forum posts, open the ACM Control Panel and select *Manage Forums*.
 
 Select *Pending Discussions*.
 

@@ -8,7 +8,7 @@ Keep your API Community Manager instance up to date to take advantage of new and
 
 To update your API community:
 
-. Open the ACM administrator interface.
+. Open the ACM Control Panel.
 . In the same browser session, open the *package update installation link* provided by your MuleSoft representative.
 . Verify the version number and name of the release.
 . Select *Install for admins only*.
