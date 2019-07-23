@@ -1,0 +1,107 @@
+= Customize the Look and Feel of Your API Community
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Use the https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank] to customize the branding, look and feel, and site structure of your community pages to match your desired brand identity.
+
+Select *Community Builder* in the API Community Manager (ACM) administrator interface. By default, the
+Community Builder displays the *Home* page and the Pages drop-down list displays *Home*. You can select
+the Pages drop-down list to display a list of community pages and specify a different page for customization.
+
+The *Community Builder* interface contains the customization icons described here.
+
+== Components
+
+Select the *Components* lightning bolt icon in the top left navigation to display the component palette.
+The component palette includes Salesforce Community Cloud and ACM-specific components.
+Drag and drop the desired components from the component palette to the community page. Each
+component has its own configuration options that you can then access by selecting the component on the page.
+
+For detailed component information, refer to xref:acm-lightning-components.adoc[ACM Lightning Components] and
+the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Community Components, role=external, window=blank] documentation.
+
+Components that are typically used in *Home* pages include:
+
+* https://help.salesforce.com/articleView?id=rss_headline.htm&type=5[Headline, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=rss_setup_nav_menu.htm&type=5[Navigation Menu, role=external, window=blank]: You can update *Max Items to Display (2-15)*,
+*Menu Item Alignment*, and use the *Navigation Menu* to display, add, remove, and customize options. *Home*
+is always present and is always the first item. The following properties can be customized:
+** *Name*
+** *Type*
+** *Page*
+** *Publicly available*
+* https://help.salesforce.com/articleView?id=rss_cms_collection.htm&type=5[CMS Collection, role=external, window=blank]
+* *API Carousel*: Displays APIs and API versions that are available to the community from Anypoint Exchange.
+* https://help.salesforce.com/articleView?id=community_builder_rich_text_component.htm&type=5[Rich text editor, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=rss_html_editor.htm&type=5[HTML editor, role=external, window=blank]
+
+Components that are typically used in *API details* pages include:
+
+* *API Header*: Specifies the API name and description.
+* *Tabs*: Contains the following components: *API Documentation Viewer*, which displays API Exchange information,
+*API Console*, which renders information from the API RAML specification, and *Feed*, which displays comments,
+discussions, and questions.
+* *API Access Requestor*: Registers a client application and requests access to the API.
+
+Components that are typically used in *My Application* pages include:
+
+* *Application Listing*: Lists all client applications that the member has registered and can access.
+
+To reorder items on a page, simply drag and drop them.
+
+== Theme
+
+Select the *Theme* paintbrush icon in the top left navigation to access the following general branding parameters:
+
+* *Colors*: These settings include the site's *General* color scheme used throughout the community,
+including paragraph, heading, and button text.
+* *Images*: Specify the site's *Company Logo* and the login page's *Background Image*.
+* *Fonts*: Specify the site's fonts, which include a *Primary Font* and *Header Fonts*. You can also set the
+site's *Text Case*.
+* https://help.salesforce.com/articleView?id=community_builder_theme_adjust.htm&type=5[Theme Settings, role=external, window=blank]
+
+You can also edit CSS rules to adjust your community styling by selecting the *Theme* drop-down list arrow
+located next to the *Theme* title and selecting *Edit CSS*.
+
+Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme, role=external, window=blank].
+
+== Pages
+
+Select the *Pages* icon, which resembles a bulleted list, in the top left navigation to display the name of the current
+page or select another page in the community to view and edit. The *Pages* menu also offers a *New Page* option.
+
+A new page can be an *Object Page* or *Standard Page*. An *Object Page* is only used with Salesforce objects,
+so use *Standard Page* when creating your custom community pages. You can start your standard page by choosing one of the preconfigured pages or making a *New Blank Page*.
+
+To make a new blank page, select the layout, then enter the new page's *Name* and *URL*. Use the URL to make
+links to the new page, including links in menus.
+
+The new page is displayed with placeholders for content based on the layout.
+
+Add your components, such as a *Headline* component in the page header, or an ACM Lightning component
+such as an *ACM API Version Carousel*.
+
+The *Pages* menu also shows the editable configuration properties for each page, which are described
+in  https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community’s Pages and Their Properties in Community Builder, role=external, window=blank].
+
+== Settings
+
+Select the *Settings* gear icon in the top left navigation to access the following parameters:
+
+* https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[General, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=community_builder_theme.htm&type=5[Theme, role=external, window=blank]
+* *SEO*: Search Engine Optimization (SEO) features define what information can be indexed by external services
+and discovered through online searches, and can increase traffic to your public community.
+
+Refer to the https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[Community Builder Settings, role=external, window=blank] help topic for additional information.
+
+== See Also
+
+You can find further information in the Salesforce Community Cloud documentation:
+
+* https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Communities with Community Builder, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=blank]
+* Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/set-up-a-community/brand-the-community[Community Branding, role=external, window=blank]
+* Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/communities_theme_layout[Build a Custom Theme Layout Component for Lightning Communities, role=external, window=blank]
