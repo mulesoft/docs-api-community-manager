@@ -111,7 +111,7 @@ Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
 === Enable Forums [[enable-forums]]
 
-. In the ACM Control Panel, select *Community Workspace* -> *Administration* -> *Preferences*.
+. In the ACM Control Panel, select *Community Administration* -> *Preferences*.
 . Select *Show all settings in Workspaces*.
 . Select *Allow discussion threads*.
 . Select *Save*.
@@ -122,15 +122,15 @@ Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
 === Define Moderation Rules for Forums [[define-moderation-rules-for-forums]]
 
-. In the ACM Control Panel, select *Community Workspace*, then select *Moderation -> Rules*.
-. Create a rule. At a minimum, enter information for the *Name* and *Unique Name* fields in the *Details* section.
+. In the ACM Control Panel, select *Manage Forums* and select *Rules*.
+. Select *New* and create a *Content Rule*. At a minimum, enter information for the *Name* and *Unique Name* fields in the *Details* section.
 . Enter information for all fields in the *Rule Conditions* section.
 
 image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-You can find more information in the Salesforce Communtiy Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules].
+You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules].
 
 === Publish a Community [[publish-a-community]]
 
@@ -143,7 +143,7 @@ NOTE: To use a custom domain name (also known as a *Vanity Domain*) refer to the
 === Enable Salesforce CMS [[enable-cms]]
 
 . Go to *Setup* -> *Salesforce Files* -> *General Settings* and enable *Libraries*.
-. To tag CMS content with topics, in the ACM Control Panel, select *Community Workspace* -> *Content Management* -> *Topics*, and select the topic setting *Enable for content*.
+. To tag CMS content with topics, in the ACM Control Panel, select *Manage CMS Content* -> *Topics*, and select the topic setting *Enable for content*.
 
 === Enable Chatter Tracking for APIs [[enable-chatter-tracking]]
 
@@ -545,7 +545,7 @@ Alternatively, you can download metadata from the Salesforce app and extract the
 
 . Configure and Authorize ODATA Bridge to Perform Impersonation
 
-** This final step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate. 
+** This final step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate.
 Use the same certificate that Salesforce IDP uses.
 
 .. In *Salesforce Setup*, search for *Certificate and Key Management* using the *Quick Find* box .
@@ -611,7 +611,7 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
-If your Anypoint Platform organization is hosted in the EU, perform the following additional configuration 
+If your Anypoint Platform organization is hosted in the EU, perform the following additional configuration
 steps to enable access to the EU instance of the Anypoint Management Plane.
 
 * Remote site settings: Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
