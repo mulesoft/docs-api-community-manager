@@ -90,7 +90,7 @@ ACM Control Panel is the interface your community administrators and operators w
 . Set the *Role* for your account.
 . Select *Save*.
 
-== Communities Configuration[[communities]]
+== Communities Configuration [[communities]]
 
 === Create a Community [[create-a-community]]
 
@@ -140,12 +140,12 @@ You can find more information in the Salesforce Communtiy Cloud documentation ab
 
 NOTE: To use a custom domain name (also known as a *Vanity Domain*) refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain].
 
-=== Enable Salesforce CMS <<enable-cms>>
+=== Enable Salesforce CMS [[enable-cms]]
 
 . Go to *Setup* -> *Salesforce Files* -> *General Settings* and enable *Libraries*.
 . To tag CMS content with topics, in the ACM Control Panel, select *Community Workspace* -> *Content Management* -> *Topics*, and select the topic setting *Enable for content*.
 
-=== Enable Chatter Tracking for APIs <<enable-chatter-tracking>>
+=== Enable Chatter Tracking for APIs [[enable-chatter-tracking]]
 
 Chatter tracking allows creating discussions on specific objects like APIs. To use Chatter tracking for APIs:
 
@@ -157,6 +157,8 @@ Chatter tracking allows creating discussions on specific objects like APIs. To u
 == Users [[users]]
 
 After you create a community, you must create the different user profiles for your community guests and members, so that you can control access to and visibility of APIs and content.
+
+For licensing information, refer to the xref:licensing-overview.adoc[Licensing Overview].
 
 === Configure Guest User Access [[configure-guest-user-access]]
 
