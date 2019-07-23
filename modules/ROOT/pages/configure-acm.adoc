@@ -50,7 +50,7 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 
 == Authenticate the External Data Source [[authenticate-the-external-data-source]]
 
-The external data source specifies how ACM components and data objects interact securely with your MuleSoft Anypoint organization. 
+The external data source specifies how ACM components and data objects interact securely with your MuleSoft Anypoint organization.
 
 To authorize and authenticate your External Data Source:
 
@@ -59,9 +59,9 @@ To authorize and authenticate your External Data Source:
 . Update *Identity Type* to *Named Principal*.
 . Update *Authentication Protocol* to *OAuth 2.0*.
 . Update *Authentication Provider* to *Anypoint*.
-. Select *Save*. 
+. Select *Save*.
 . If you don't have an active session in your Anypoint Platform organization, the *Anypoint Login* page is shown. Log in to the Anypoint Platform to complete the authentication. If you already have an active session, authentication is performed without requiring a login.
-. Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*. 
+. Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*.
 . Verify the Exchange *External Data Sources* *Authentication Status* is *Authenticated*.
 
 After authenticating the External Data Source, provide the credentials of an Anypoint Platform system user with read-only access, for components like the API Console which retrieve data directly from the Anypoint Platform APIs:
@@ -76,7 +76,7 @@ NOTE: If your Anypoint Platform organization is hosted in the EU, change `https:
 
 == Enable ACM Control Panel [[enable-acm-control-panel]]
 
-ACM Control Panel is the interface your community administrators and operators will use to operate your communities. It is available from the *App Launcher* as the first icon displayed in the main navigation bar. To ensure it is available for admin users:
+The ACM Control Panel is the interface your community administrators and operators will use to operate your communities. It is available from the *App Launcher* as the first icon displayed in the main navigation bar. To ensure it is available for admin users:
 
 . In *Setup*, search for App Manager using the *Quick Find* box, select *API Community Manager*, and then edit it.
 . Navigate to *Navigation Items*, highlight *ACM Administrator*, and move it to the *Selected Items* column. Select *Save*.
@@ -206,7 +206,7 @@ image::access-mapping.png[Access Mapping for CommunityApi]
 === Open the Community for Guest User Access [[open-community-for-guest-access]]
 
 . In the ACM Control Panel, open *Community Builder*, select *Settings* -> *General*, and select the *Public can access the community* check box.
-. Navigate to *Settings* -> *SEO* and select *Guest User Profile*. 
+. Navigate to *Settings* -> *SEO* and select *Guest User Profile*.
 . Select *Edit*.
 . Select *Object Settings*.
 . Enable *Read*, *Create*, *Edit*, and *Delete* permissions to the external objects listed in the
@@ -545,7 +545,8 @@ Alternatively, you can download metadata from the Salesforce app and extract the
 
 . Configure and Authorize ODATA Bridge to Perform Impersonation
 
-** This final step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate. Use the same certificate that Salesforce IDP uses.
+** This final step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate. 
+Use the same certificate that Salesforce IDP uses.
 
 .. In *Salesforce Setup*, search for *Certificate and Key Management* using the *Quick Find* box .
 .. Select *Export to Keystore*.
@@ -610,7 +611,8 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
-If your Anypoint Platform organization is hosted in the EU, perform the following additional configurations to enable access to the EU instance of the Anypoint Management Plane. 
+If your Anypoint Platform organization is hosted in the EU, perform the following additional configuration 
+steps to enable access to the EU instance of the Anypoint Management Plane.
 
 * Remote site settings: Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
 * CSP trusted sites: Add the following sites:

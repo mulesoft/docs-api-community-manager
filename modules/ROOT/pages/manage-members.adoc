@@ -23,7 +23,7 @@ Consumer developers follow these steps to self-register:
 == Approve and Activate Members
 
 . After a registration request is sent by the member, you will receive a notification email. To review and
-approve the member registration, navigate to the API community *ACM Administrator* interface.
+approve the member registration, navigate to the ACM Control Panel.
 . Select *Manage Members*. This section provides the status of all consumer developer registration requests.
 . Select *Approve* to activate the member and trigger a welcome email.
 After you approve the registration request, a welcome email is sent to the consumer developer.
@@ -35,7 +35,7 @@ and *My Applications*.
 
 == Searching Members
 
-In the ACM administrator interface, the *Manage Members* tab shows a *Search Members* field.
+In the ACM Control Panel, the *Manage Members* tab shows a *Search Members* field.
 
 Enter one or more terms into the search field. Search results are listed in *Members* and *Pending Member Registration Requests*.
 

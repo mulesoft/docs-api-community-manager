@@ -18,11 +18,11 @@ Salesforce CMS articles include event, marketing, and vision information. These
 articles typically have their own release cycle and process, usually with close
 involvement from the marketing team.
 
-All of these actions are performed in the API Community Manager administrator interface:
+All of these actions are performed in the API Community Manager (ACM) Control Panel:
 
-image::admin-interface.png[ACM administrator interface]
+image::control-panel.png[ACM Control Panel]
 
-To open the ACM administrator interface at any time, open the Salesforce *App Launcher* and select *API Community Manager*.
+To open the ACM Control Panel at any time, open the Salesforce *App Launcher* and select *API Community Manager*.
 
 == Community Operations
 
