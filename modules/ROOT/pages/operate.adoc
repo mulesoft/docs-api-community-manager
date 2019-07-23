@@ -7,8 +7,7 @@ endif::[]
 These pages explain how to publish APIs and content to your community and how to
 manage forums, members, and support cases.
 
-API communities publish APIs and API documentation from Exchange, and articles
-from the Salesforce content management system (CMS).
+In an API Community, APIs and API documentation is published from Anypoint Exchange, and articles are published from the https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce content management system (CMS)].
 
 API documentation in Exchange includes detailed descriptions of each API version.
 This documentation is updated with the API release cycle, usually with close

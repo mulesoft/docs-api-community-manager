@@ -4,13 +4,13 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To show a live preview of the community's site, including APIs in *Preview Mode*, open the ACM Control Panel and select *Community Builder*.
+To see a live preview of your community's site, including APIs only visibile to the administrators, open the ACM Control Panel and select *Community Builder*.
 
 image::builder.png[Site Builder]
 
 Select *Preview*.
 
-To return to the site builder, select *Back to Builder*.
+To return to the builder, select *Back to Builder*.
 
 Use *Community Builder* to *Publish* the community.
 

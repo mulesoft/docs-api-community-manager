@@ -7,7 +7,7 @@ endif::[]
 With ACM, you can create, organize, and publish content, including news,
 tutorials, developer blog posts, and events, for your community.
 
-This content is stored in Salesforce content management system (CMS) articles.
+This content is stored in https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce content management system (CMS)] articles.
 These articles are separate from the API documentation stored in Exchange.
 The API release process includes API documentation updates, and the CMS article
 release process is usually separate. Often a development team will lead the API

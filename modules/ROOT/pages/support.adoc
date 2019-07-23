@@ -9,4 +9,4 @@ The design of the developer experience in your community can include the capabil
 Support cases can be forwarded to a third-party issue tracking or support system through a custom integration. 
 They can also be forwarded to an existing Salesforce organization with Service Cloud support capability.
 
-Contact your MuleSoft representative to enable these capabilities. 
+Contact your MuleSoft representative to design and configure these capabilities. 

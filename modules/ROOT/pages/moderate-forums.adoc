@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Developers can use the API Community Manager forums to ask questions and collaborate with other members of the community and developers.
+Consumer developers can use the API Community Manager forums to ask questions and collaborate with other members of the community.
 
 When a developer posts a question or answer that's not visible automatically, a community operator must approve it.
 
