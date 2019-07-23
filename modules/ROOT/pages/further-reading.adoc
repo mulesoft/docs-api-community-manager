@@ -6,5 +6,6 @@ endif::[]
 
 These pages offer further information about API Community Manager.
 
+* xref:licensing-overview.adoc[Licensing Overview]
 * xref:security.adoc[Security]
 * xref:reference.adoc[Configuration Reference]
