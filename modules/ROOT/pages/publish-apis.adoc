@@ -75,7 +75,7 @@ To make corrections in the API documentation:
 . Select *Save as draft*.
 . Select *Publish*.
 
-Consumer developers now see the corrected information on the community site immediately.
+Consumer developers see the corrected information on the community site immediately.
 
 == Major API Updates
 
