@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-As an ACM community administrator, you can add and publish APIs and minor and major  updates from Anypoint Exchange into your community. 
+As an ACM community administrator, you can add and publish APIs and minor and major updates from Anypoint Exchange into your community. 
 
 This information includes the API documentation stored with the APIs in Exchange.
 The API documentation is separate from the articles stored in the Salesforce
@@ -13,15 +13,16 @@ documentation updates, and the CMS article release process is usually separate.
 Often a development team will lead the API release process and a marketing team
 will lead the CMS article release process.
 
-== Add APIs from Exchange to your Community
+== Add APIs from Exchange to Your Community
 
 . Open the ACM Control Panel and select *Manage APIs*. From this tab, you can manage the APIs in your community, including their metadata and visibility.
 
 * *APIs in this Community* shows the API versions that have been added to the community.
 * *APIs in Exchange* shows the API versions that exist in your Exchange organization but have not been
 added to the community.
-. Select a version of the API and click *Add to Community* next to the API name. The API version is now listed in the *APIs in
-this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank.
+. Select a version of the API and click *Add to Community* next to the API name. The API version is now
+listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has
+no icon, and the *Description* is blank.
 
 Now set the API information, including visibility, icon, and description.
 
@@ -32,7 +33,7 @@ Now set the API information, including visibility, icon, and description.
 . Select *Replace Icon* to set the API version icon.
 . Enter a *Description* for the API version.
 . Leave the *Visibility* as *Admin Only* while you preview the API version as described in the next section.
-. Optionally, if you want your API to be linked to a business content page (through a "learn more" button when displayed in the API carousel component or in an API Card), select *Custom page* in the *Associated "Learn-more" Page* section, and indicate the URL of a page created in the *Community Builder*. If you select none, your API will only show a single "API details" button (default).
+. When your API is displayed on the community site in the API carousel component or in an API card, by default it has a single *API Details* button. It can also have an optional *Learn more* button that links to a business content page. In the *Associated "Learn-more" Page* section, select *None* to keep the default, or select *Custom page* and set the *Custom page URL* to a business content page created in the *Community Builder*.
 . Select *Apply*.
 
 == Preview APIs
@@ -95,8 +96,8 @@ The ACM community administrator must then review and publish the changes:
 
 . In the ACM Control Panel, select *Manage APIs*. The previous API version remains unchanged in
 *APIs in this Community*. The new API version is listed in *APIs in Exchange*.
-. To add the new version to the community, select the appropiate version from the drop-down and click *Add to Community* next to the API name. The new API version
-is now listed in *APIs in this Community*.
+. To add the new version to the community, select the version from the drop-down and select *Add to Community* next
+to the API name. The new API version is now listed in *APIs in this Community*.
 . Select *Edit* next to the new API version name and set the *Icon*, *Description*, *Visibility*, and *Marketing Page*
 as you did for the previous version.
 . Preview the API.
