@@ -1,0 +1,240 @@
+= ACM Lightning Components
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+To design your API Community Manager portal, open the Builder and add ACM Lightning Components as described in xref:customize.adoc[Customize the Look and Feel of Your API Community].
+
+This list explains each of the ACM Lightning Components, the functionality they add to the portal, and their configuration options.
+
+== API Access Requester
+
+The API access requester button component enables members to request access to an API for an application.
+
+Members can request access for an existing client application and API instance, or request to create a new client application by specifying the application name and description and choosing an API instance.
+
+* *API*: Choose the API.
+* *Button Border Radius*: Set the radius of the button border. A larger radius makes the button look more rounded.
+* *Button Align*: Set button alignment to left, right, or center.
+* *Show Modal Title Line*: Show the title line in the access request modal.
+// check description of Show Modal Title Line
+
+== API Card
+
+The API card component shows information about an API, including icon, name, and description.
+
+* *API*: Choose the API to show.
+* *Override URL*: When the user clicks the *API Details* button on the card, a URL opens. If this optional field is set, the URL in the field overrides the default URL. This could be used to direct users to a documentation or marketing page about the API, which would also have a link to the API's main page.
+* *Show Buttons*: Show the *API Details* button. If the button is not shown, users can click anywhere on the card to show the API details.
+* *Card Height*: Set the card height.
+* *Card Margin*: Set the amount of margin space around the card.
+* *Card Border*: Set the thickness of the card borders.
+* *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
+* *Card Shadow*: Set the shadow beneath the card.
+
+== API Carousel
+
+The API carousel component shows a horizontally scrollable set of API cards.
+
+* *Show Buttons*: Show the *API Details* button on each card. If the button is not shown, users can click anywhere on the card to show the API details.
+* *Max Cards Display*: Set the maximum number of cards to show.
+* *Rows*: Set the number of rows of cards in the carousel.
+* *Show Arrows*: Show arrows on the right and left sides of the carousel. Clicking the arrows scrolls through the cards.
+* *Arrow Size*: Set the size of the arrows on the right and left sides.
+* *Show Dots*: Show dots below the cards. Clicking the dots scrolls through the cards.
+* *Card Height*: Set the card height.
+* *Card Margin*: Set the amount of margin space around each card.
+* *Card Border*: Set the thickness of the card borders.
+* *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
+* *Card Shadow*: Set the shadow beneath each card.
+* *Message If Empty*: Show this message if the carousel has no APIs. Default is "There are no APIs available right now."
+* *Filter Condition (Advanced)*: Filter APIs using package names, field names such as "API name" or "API description", and comparison of strings to those fields.
+// need better info on using Filter condition
+
+== API Console
+
+The interactive API console component shows information about your APIs and their methods, and allows users to test the methods by sending requests.
+
+* *API*: Choose the API to display.
+* *Show Documentation Pages*: Show the documentation pages for the API.
+* *Link Hover Color*: Set the color of links when the cursor hovers over them.
+* *Button Text Color (Optional)*: Set the color of text on buttons.
+* *Button Hover Text Color (Optional)*: Set the color of text on buttons when the cursor hovers over them. Default is the button text color.
+* *Headline Font Family (Optional)*: Set the font family of the API console headline.
+* *Error Color (Optional)*: Set the color of error messages.
+* *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
+* *Method Label Get Color*: Set the color of the labels of *GET* methods.
+* *Method Label Post Background Color*: Set the background color of the labels of *POST* methods.
+* *Method Label Post Color*: Set the color of the labels of *POST* methods.
+* *Method Label Put Background Color*: Set the background color of the labels of *PUT* methods.
+* *Method Label Put Color*: Set the color of the labels of *PUT* methods.
+* *Method Label Delete Background Color*: Set the background color of the labels of *DELETE* methods.
+* *Method Label Delete Color*: Set the color of the labels of *DELETE* methods.
+* *Method Label Patch Background Color*: Set the background color of the labels of *PATCH* methods.
+* *Method Label Patch Color*: Set the color of the labels of *PATCH* methods.
+* *Method Label Options Background Color*: Set the background color of the labels of *OPTIONS* methods.
+* *Method Label Options Color*: Set the color of the labels of *OPTIONS* methods.
+* *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
+* *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
+
+// Check descriptions: *Headline font family (optional)*
+
+== API Console Documentation
+
+The API console documentation component shows an API's documentation in the API console.
+
+* *API*: Choose the API to display.
+* *Show Documentation Pages*: Show the documentation pages for the API.
+* *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
+* *Method Label Get Color*: Set the color of the labels of *GET* methods.
+* *Method Label Post Background Color*: Set the background color of the labels of *POST* methods.
+* *Method Label Post Color*: Set the color of the labels of *POST* methods.
+* *Method Label Put Background Color*: Set the background color of the labels of *PUT* methods.
+* *Method Label Put Color*: Set the color of the labels of *PUT* methods.
+* *Method Label Delete Background Color*: Set the background color of the labels of *DELETE* methods.
+* *Method Label Delete Color*: Set the color of the labels of *DELETE* methods.
+* *Method Label Patch Background Color*: Set the background color of the labels of *PATCH* methods.
+* *Method Label Patch Color*: Set the color of the labels of *PATCH* methods.
+* *Method Label Options Background Color*: Set the background color of the labels of *OPTIONS* methods.
+* *Method Label Options Color*: Set the color of the labels of *OPTIONS* methods.
+* *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
+* *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
+* *Headline Font Family (Optional)*: Set the font family of the API console headline.
+
+== API Console Instances
+
+The API console instances component shows the list of instances of an API.
+
+// check component description
+
+* *API*: Choose the API whose instances are displayed.
+
+== API Console Navigation
+
+The API console navigation component shows the navigation for the API console component.
+
+// check component description
+
+* *API*: Choose the API to display.
+* *Show Documentation Pages*: Show the documentation pages for the API.
+* *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
+* *Method Label Get Color*: Set the color of the labels of *GET* methods.
+* *Method Label Post Background Color*: Set the background color of the labels of *POST* methods.
+* *Method Label Post Color*: Set the color of the labels of *POST* methods.
+* *Method Label Put Background Color*: Set the background color of the labels of *PUT* methods.
+* *Method Label Put Color*: Set the color of the labels of *PUT* methods.
+* *Method Label Delete Background Color*: Set the background color of the labels of *DELETE* methods.
+* *Method Label Delete Color*: Set the color of the labels of *DELETE* methods.
+* *Method Label Patch Background Color*: Set the background color of the labels of *PATCH* methods.
+* *Method Label Patch Color*: Set the color of the labels of *PATCH* methods.
+* *Method Label Options Background Color*: Set the background color of the labels of *OPTIONS* methods.
+* *Method Label Options Color*: Set the color of the labels of *OPTIONS* methods.
+* *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
+* *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
+
+== API Console Request Panel
+
+The API console request panel component shows a panel where users can test an API by making requests to it.
+
+* *API*: Choose the API to display.
+* *Show Documentation Pages*: Show the documentation pages for the API.
+* *Method Label Get Background Color*: Set the background color of the labels of *GET* methods.
+* *Method Label Get Color*: Set the color of the labels of *GET* methods.
+* *Method Label Post Background Color*: Set the background color of the labels of *POST* methods.
+* *Method Label Post Color*: Set the color of the labels of *POST* methods.
+* *Method Label Put Background Color*: Set the background color of the labels of *PUT* methods.
+* *Method Label Put Color*: Set the color of the labels of *PUT* methods.
+* *Method Label Delete Background Color*: Set the background color of the labels of *DELETE* methods.
+* *Method Label Delete Color*: Set the color of the labels of *DELETE* methods.
+* *Method Label Patch Background Color*: Set the background color of the labels of *PATCH* methods.
+* *Method Label Patch Color*: Set the color of the labels of *PATCH* methods.
+* *Method Label Options Background Color*: Set the background color of the labels of *OPTIONS* methods.
+* *Method Label Options Color*: Set the color of the labels of *OPTIONS* methods.
+* *Method Label Head Background Color*: Set the background color of the labels of *HEAD* methods.
+* *Method Label Head Color*: Set the color of the labels of *HEAD* methods.
+* *Link Hover Color*: Set the color of links when the cursor hovers over them.
+* *Button Text Color (Optional)*: Set the color of text on buttons.
+* *Button Hover Text Color (Optional)*: Set the color of text on buttons when the cursor hovers over them. Default is the button text color.
+* *Headline Font Family (Optional)*: Set the font family of the headline.
+* *Error Color (Optional)*: Set the color of error messages.
+
+== API Documentation Viewer
+
+The API documentation viewer component shows an API's documentation. The documentation may have multiple pages, and each page may have multiple sections.
+
+* *API*: Choose the API.
+* *Section (Optional)*: Set the section to open. If the *Selected page (optional)* setting is empty, the *Section (optional)* setting is ignored.
+* *Selected Page (Optional)*: Set the page to open.
+
+== API Header
+
+The API header component displays the API Header including icon, name, and description.
+
+* *API*: Choose the API to show.
+
+== Application Analytics Graph
+
+The application analytics graph component displays statistics about the use of an application.
+
+* *Application*: Choose the application to show.
+
+== Application Details
+
+The application details component displays details about an application.
+
+// check component description
+
+* *Application*: Choose the API to show.
+
+== Application Listing
+
+The application listing component shows applications that use an API.
+
+* *New Application URL*: Set a new URL for the application.
+* *Card Margin*: Set the amount of margin space around the card.
+* *Card Border*: Set the thickness of the card borders.
+* *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
+* *Card Shadow*: Set the shadow beneath the card.
+* *Card Width*: Set the card width.
+* *Card Height*: Set the card height.
+
+// check *New Application URL* description
+
+== Login Form
+
+The login form component allows members to log in to the portal.
+
+* *Start URL*: Set the URL members see after completing login. Default is the portal home page.
+* *Username Label*: Set the label for the username field. Default is `Email`.
+* *Password Label*: Set the label for the password field. Default is `Password`.
+* *Login Button Label*: Set the label for the login button. Default is `Log in`.
+* *Forgot Password Label*: Set the label for the forgotten password link. Default is `Forgot your password?`.
+* *Forgot Password URL*: Set the URL for the forgotten password link. Default is `/ForgotPassword`.
+* *Self Register Label*: Set the label for the self registration link. Default is `Not a member?`.
+* *Self Register URL*: Set the URL for the self registration link. Default is `/SelfRegister`.
+
+// check *Start URL* description
+
+== Search Result List
+
+The search result list component shows a list of search results. It has no configuration settings.
+
+== Self Register
+
+The self register component allows users to register for portal accounts.
+
+* *Start URL*: Set the start URL. Default is the portal home page.
+* *Confirm URL*: Set the confirmation URL. Default is `/CheckPasswordResetEmail`.
+* *First Name Label*: Set the label for the first name field. Default is `First Name`.
+* *Last Name Label*: Set the label for the last name field. Default is `Last Name`.
+* *Email Label*: Set the label for the email address field. Default is `Email`.
+* *Password Label*: Set the label for the password field. Default is `Create Password`.
+* *Confirm Password Label*: Set the label for the password confirmation field. Default is `Confirm Password`.
+* *Submit Button Label*: Set the label for the submit button. Default is `Sign Up`.
+* *Include Password Field*: Choose whether to show the password field.
+* *Extra Field Set*: Set extra fields.
+* *Registrations Require Approval*: Choose whether registration requires approval.
+* *Approver ID*: Set the approver ID.
+
+// Check descriptions: *Start URL*, *Confirm URL*, *Extra Field Set*, *Approver Id*
