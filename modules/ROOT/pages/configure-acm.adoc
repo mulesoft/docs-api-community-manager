@@ -170,8 +170,7 @@ In this section, you create the profile for guest community users. Users that ar
 .. In the *Profiles* page, select *Clone* next to the *Customer Community User* profile.
 .. In the *Profiles* page, enter `ACM [ Community Name ] User` for *Profile Name*.
 .. Select *Save*.
-
-. Change permissions for *External Objects* and *Custom Objects*.
+.. Change permissions for *External Objects* and *Custom Objects*.
 .. Navigate to *Field-Level Security*.
 .. In the *Custom Field-Level Security* section, repeat the following step for the *AnypointApiVersions*,
 *AnypointApplications*,
