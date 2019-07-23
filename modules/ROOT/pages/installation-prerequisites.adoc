@@ -4,23 +4,22 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager is composed by a Salesforce organization with Community Cloud and a Managed Package that is installed in this org. The Managed package contains the components and data objects that interact with your Anypoint Platform organization. 
+API Community Manager (ACM) is composed of a Salesforce organization with Community Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
 
-In this section you will find the prepareation steps you need to perform in this Salesforce organization so that the API Community Manager managed package can be installed and configured. 
+The ACM package is installed in an *independent* Salesforce organization from any other Salesforce organizations your company may already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data.
 
-NOTE: The Salesforce organization with Community Cloud is provisioned through and included in MuleSoft API Community Manager license. You don't need to procure this Salesforce organization separatedly, and you cannot reuse existing Salesforce licenses for ACM. Find more information about ACM licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
+The Salesforce organization with Community Cloud is provisioned through and included in the MuleSoft ACM license. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for ACM. Find more information about ACM licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
 
-NOTE: API Community Manager package is installed in an *independent* Salesforce organization from any other Salesforce organizations your company may already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data. 
+Installing, updating or configuring ACM must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
-NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
-
+To install and configure the ACM managed package, use the following preparation steps in this Salesforce organization.
 
 == Set Up and Register a Domain
 
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
 . Log in into your ACM https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
-. Go to the *Salesforce Set-up* by using the gear menu on the top right of the page and selecting *Set-up*.
+. Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
 . Select *Check Availability*. If the name is already taken, choose a different one.
