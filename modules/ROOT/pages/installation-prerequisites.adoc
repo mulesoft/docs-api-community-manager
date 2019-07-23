@@ -4,19 +4,22 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager is installed in an *independent* Salesforce organization so that the API community is isolated
-from customer operational data in their Salesforce instance, such as ERP or CRM data.
+API Community Manager (ACM) is composed of a Salesforce organization with Community Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
 
-API Community Manager requires an ACM license. You cannot reuse an existing Salesforce license for ACM.
+The ACM package is installed in an *independent* Salesforce organization from any other Salesforce organizations your company may already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data.
 
-NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
+The Salesforce organization with Community Cloud is provisioned through and included in the MuleSoft ACM license. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for ACM. Find more information about ACM licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
+
+Installing, updating or configuring ACM must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
+
+To install and configure the ACM managed package, use the following preparation steps in this Salesforce organization.
 
 == Set Up and Register a Domain
 
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
-. If you don't already have an ACM Salesforce Organization account, https://developer.salesforce.com/signup[sign up for a Salesforce Developer Organization account, role=external, window=blank].
 . Log in into your ACM https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
+. Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
 . Select *Check Availability*. If the name is already taken, choose a different one.
@@ -28,9 +31,9 @@ can take a few minutes.
 
 Follow the steps in
 https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank]
-to enable communities inside your organization.
+to enable communities inside your Salesforce organization.
 
-== Make Your Domain Available to Your Users
+== Deploy Your Domain
 
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Select *Deploy to Users*.

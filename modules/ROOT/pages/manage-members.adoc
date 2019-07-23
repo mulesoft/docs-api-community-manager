@@ -6,7 +6,7 @@ endif::[]
 
 Consumer developers self-register for access to your API Community. You can then approve member registrations to give them access to the restricted sections of your community.
 
-NOTE: Registered members require a license. No license is required when you create a guest member.
+NOTE: Registered members require a license. No license is required for guest users. For full information about licenses refer to the xref:licensing-overview.adoc[Licensing Overview].
 
 == Member Registration and Activation
 
