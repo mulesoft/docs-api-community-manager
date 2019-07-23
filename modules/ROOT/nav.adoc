@@ -19,6 +19,7 @@
 * xref:update-acm.adoc[Update ACM]
 * xref:troubleshooting.adoc[Troubleshooting]
 * xref:further-reading.adoc[Further Reading]
+ ** xref:licensing-overview.adoc[Licensing Overview]
  ** xref:security.adoc[Security]
  ** xref:reference.adoc[Configuration Reference]
 * xref:release-notes.adoc[Release Notes]
