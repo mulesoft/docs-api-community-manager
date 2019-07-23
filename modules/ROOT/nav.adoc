@@ -15,7 +15,7 @@
  ** xref:publish-content.adoc[Publish Content and CMS Articles]
  ** xref:moderate-forums.adoc[Moderate Forums]
  ** xref:support.adoc[Support Cases]
- ** xref:manage-users.adoc[Manage Users]
+ ** xref:manage-members.adoc[Manage Members]
 * xref:update-acm.adoc[Update ACM]
 * xref:troubleshooting.adoc[Troubleshooting]
 * xref:further-reading.adoc[Further Reading]

@@ -10,9 +10,9 @@ This list explains each of the ACM Lightning Components, the functionality they 
 
 == API Access Requester
 
-The API access requester button component enables users to request access to an API for an application.
+The API access requester button component enables members to request access to an API for an application.
 
-Users can request access for an existing client application and API instance, or request to create a new client application by specifying the application name and description and choosing an API instance.
+Members can request access for an existing client application and API instance, or request to create a new client application by specifying the application name and description and choosing an API instance.
 
 * *API*: Choose the API.
 * *Button Border Radius*: Set the radius of the button border. A larger radius makes the button look more rounded.
@@ -203,9 +203,9 @@ The application listing component shows applications that use an API.
 
 == Login Form
 
-The login form component allows users to log in to the portal.
+The login form component allows members to log in to the portal.
 
-* *Start URL*: Set the URL users see after completing login. Default is the portal home page.
+* *Start URL*: Set the URL members see after completing login. Default is the portal home page.
 * *Username Label*: Set the label for the username field. Default is `Email`.
 * *Password Label*: Set the label for the password field. Default is `Password`.
 * *Login Button Label*: Set the label for the login button. Default is `Log in`.

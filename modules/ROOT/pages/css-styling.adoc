@@ -16,6 +16,17 @@ The following sections summarize the available options. For detailed information
 . Edit the CSS file in the *Edit CSS* dialog box.
 . When you are finished with your changes, select *Save*.
 
+== Example
+
+You can use CSS to change the colors of the ACM Theme:
+
+[source,css]
+----
+search-bar-container {
+  background: #342b4a!important;
+}
+----
+
 == CSS Classes
 
 === API Carousel
@@ -40,7 +51,7 @@ The following sections summarize the available options. For detailed information
 |Left and right arrows navigation
 |===
 
-=== API Version Card 
+=== API Version Card
 
 .API Version Card CSS Classes and Descriptions
 |===

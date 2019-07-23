@@ -11,13 +11,18 @@ The following sections guide you through API Community Manager configuration:
 * <<authenticate-the-external-data-source>>
 * <<give-permissions-to-acm-community-manager>>
 * <<verify-portal-account-owner-role-setting>>
+* <<configure-eu-account>>
 
 * <<communities>>
 
 ** <<create-a-community>>
 ** <<customize-a-community>>
+** <<enable-forums>>
 ** <<define-moderation-rules-for-forums>>
 ** <<publish-a-community>>
+** <<enable-cms>>
+** <<enable-crm>>
+** <<enable-chatter-tracking>>
 
 * <<users>>
 
@@ -85,6 +90,34 @@ in the *Community* section.
 . Set the appropriate *Role*.
 . Select *Save*.
 
+== Configure EU account [[configure-eu-account]]
+
+If you have an EU account, which is
+https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted within the EU, role=external, window=_blank],
+you must authenticate, set up and configure your domain, and manage your APIs, applications, and related data
+using the following URL: `eu1.anypoint.mulesoft.com`. This is because the EU control plane stores all MuleSoft data
+within the EU, and you cannot access EU account data and information using the US Anypoint Platform control plane URL.
+
+To use API Community Manager in an EU region, you must change all occurrences of `anypoint.mulesoft.com`
+to include a `eu1` prefix. For example: you must update the `https://anypoint.mulesoft.com/odatabridge/odata.svc`
+External Data Source configuration URL to: `https://eu1.anypoint.mulesoft.com/odatabridge/odata.svc`.
+
+The following list contains the required updates:
+
+* Named Credentials URL when you <<authenticate-the-external-data-source>>: Change `https://anypoint.mulesoft.com` to `https://eu1.anypoint.mulesoft.com`.
+* *Authorize Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>:
+Change
+`https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize`.
+* *Token Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>:
+Change `https://anypoint.mulesoft.com/accounts/oauth2/token`
+to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token`.
+* Remote site settings : Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
+* CSP trusted sites: Add the following sites:
+
+** `https://eu1.anypoint.mulesoft.com`
+** `https://exchange2-file-upload-service-kprod-eu.s3.eu-central-1.amazonaws.com`
+** `https://exchange2-asset-manager-kprod-eu.s3.amazonaws.com`
+
 == Communities [[communities]]
 
 === Create a Community [[create-a-community]]
@@ -104,12 +137,23 @@ in the *Community* section.
 
 Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
+=== Enable Forums [[enable-forums]]
+
+. In the Salesforce *Settings*, select *Display additional fields*.
+. Enable forums.
+. In the ACM administrator interface, select *Manage CMS Content*.
+. Select the *Topics* tab.
+. Select *Navigational Topics*.
+. Create topics for your community forums.
+
 === Define Moderation Rules for Forums [[define-moderation-rules-for-forums]]
 
 . Navigate to your Community Workspace.
 . In the main navigation bar, select *Moderation -> Rules*.
 . Create a rule. At a minimum, enter information for the *Name* and *Unique Name* fields in the *Details* section.
 . Enter information for all fields in the *Rule Conditions* section.
+
+image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
@@ -121,13 +165,37 @@ IMPORTANT: Verify the *Activate Rule* check box is active when saving your chang
 `Congratulations! User was published successfully and is now live on the following domain(s):
 https://exampledomain-developer-edition.na91.force.com/mydomain/s`
 
+=== Enable CMS in the organization <<enable-cms>>
+
+To use Salesforce CMS with your Lightning community:
+
+. Check that your community is based on the latest Lightning template.
+. Go to *Setup* -> *Salesforce Files* -> *General Settings* and enable *Libraries*.
+. To tag CMS content with a topic, open Community Workspaces, go to *Content Management* -> *Topics*, and select the topic setting *Enable for content*.
+
+=== Enable CRM Content in the organization <<enable-crm>>
+
+To use Salesforce CRM Content in the organization:
+
+. Go to *Setup* -> *Salesforce CRM Content*.
+. Select *Enable Salesforce CRM Content*.
+
+=== Enable Chatter tracking <<enable-chatter-tracking>>
+
+To use Chatter tracking in the organization:
+
+. Go to *Setup* -> *Chatter* -> *Feed Tracking*.
+. Select the *CommunityAPI* object.
+. Select *Enable feed tracking*. You do not need to select any fields.
+. Select *Save*.
+
 == Users [[users]]
 
-After you create a community, you must create the different user profiles for your community Guests and Members, so that you can control access to and visibility of APIs and content.
+After you create a community, you must create the different user profiles for your community guests and members, so that you can control access to and visibility of APIs and content.
 
 === Configure Guest User Access [[configure-guest-user-access]]
 
-In this section, you create the profile for Guest community users. Users that are not signed-in are Guest users.
+In this section, you create the profile for guest community users. Users that are not signed-in are guest users.
 
 .. Navigate to *Setup*.
 .. In the *Quick Find* box, enter *Users*.
@@ -141,15 +209,18 @@ In this section, you create the profile for Guest community users. Users that ar
 .. In the *Custom Field-Level Security* section, repeat the following step for the *AnypointApiVersions*,
 *AnypointApplications*,
 *AnypointContracts*,
-*AnypointApiInstances*, and
+*AnypointApiInstances*,
+*AnypointApiTiers*, and
 *CommunityApi* items:
 .. Select *View* and then *Edit* .
 
 // Which fields need to be updated?
 
+In *Object Settings*, select *Documents*, and enable the *Read* permission.
+
 === Configure Registered Users [[configure-registered-users]]
 
-In this section, you create the profile for Members of your community. Users that are signed-in are Members.
+In this section, you create the profile for members of your community. Users that are signed-in are members.
 
 . Navigate to *Setup* -> *Communities* -> *Communities Settings*.
 . Scroll to *Sharing Sets* and select *New*.
@@ -159,6 +230,8 @@ In this section, you create the profile for Members of your community. Users tha
 . In the *Action* column, select *Set Up*.
 . Enter the information required in the *Access Mapping for CommunityApi* page.
 
+image::access-mapping.png[Access Mapping for CommunityApi]
+
 // More info needed?
 
 === Set Permissions for Unauthenticated Users [[set-permissions-for-unauthenticated-users]]
@@ -167,6 +240,7 @@ In this section, you create the profile for Members of your community. Users tha
 . Navigate to *Settings* -> *SEO* and select *Guest User Profile*. Make the necessary changes.
 . Navigate *Settings -> General* and select *Guest User Profile*.
 . Select *Edit*.
+. Select *Object Settings*.
 . Enable *Read*, *Create*, *Edit*, and *Delete* permissions to the external objects listed in the
 *External Object Permissions* section.
 . Select *Save*.
@@ -180,35 +254,40 @@ In this section, you create the profile for Members of your community. Users tha
 
 ** *AnypointApiTiers*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
 
 ** *AnypointApiVersions*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
 
 ** *AnypointApplications*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
 
 ** *AnypointContracts*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
+
+** *Documents*
+
+*** *Read*: *Enabled*
 
 ** *CommunityApi*
 
-*** *ApiID*: *Read Access* and *Edit Acccess*
-*** *AssetType*: *Read Access* and *Edit Acccess*
-*** *AssetVersion*: *Read Access* and *Edit Acccess*
-*** *CommunityApi Name*: *Read Access* and *Edit Acccess*
+*** *ApiID*: *Read Access* and *Edit Access*
+*** *AssetType*: *Read Access* and *Edit Access*
+*** *AssetVersion*: *Read Access* and *Edit Access*
+*** *CommunityApi Name*: *Read Access* and *Edit Access*
 *** *Created By*: *Read Access*
 *** *Last Modified By*: *Read Access*
-*** *Name*: *Read Access* and *Edit Acccess* 
-*** *Owner*: *Read Access* and *Edit Acccess*
-*** *Visibility*: *Read Access* and *Edit Acccess*
+*** *Name*: *Read Access* and *Edit Access*
+*** *Owner*: *Read Access* and *Edit Access*
+*** *VersionGroup*: *Read Access* and *Edit Access*
+*** *Visibility*: *Read Access* and *Edit Access*
 
 === Add Self Register Custom Component to Register Page [[add-self-register-custom-component-to-register-page]]
 
@@ -220,7 +299,7 @@ component is automatically added to the Register page if you created a community
 . In the Community Builder, navigate to the *Register* page.
 . Remove the standard *Self Registration* component by selecting the delete
 icon next to it.
-. Navigate to *Components*, search for *Self Register* and add it to the page.
+. Navigate to *Components*, search for *Self Register* and add the component to the page.
 
 // More info needed?
 
@@ -251,7 +330,22 @@ icon next to it.
 .. Select *ACM [ Community Name ] Account* in *Account*.
 .. Select *Save*.
 
+To change the background image and company logo displayed on the Login and Registration pages:
+
+. Open *Community Builder*.
+. In the page menu select *Register* or *Login Page*.
+. In the sidebar select the *Theme* icon (paintbrush).
+. Upload a *Company Logo*.
+. Upload a *Background Image*.
+. The changes are visible immediately.
+
 === Set Up an Admin Approval Process for New User Creation [[set-up-an-admin-approval-process-for-new-user-creation]]
+
+Follow these steps to set an approval process for self-registered users. The system will then require administrator approval before creating new user accounts.
+
+After a guest completes the registration form, the user request message is displayed, and an approval request is created and sent to the approver.
+
+If the request is approved, the new user account is created, a welcome email is sent to the new user, and the user sets a password and logs in to the community.
 
 ==== 1. Specify Approval Process Parameters [[specify-approval-process-parameters]]
 
@@ -276,8 +370,7 @@ icon next to it.
 ... Review the information in *Self Register User Requests*:
 
 **** Leave the default values.
-**** Verify *Record Editability Properties* shows *Administrators ONLY can edit records during the
-approval process* is selected.
+**** Verify *Record Editability Properties* shows *Administrators ONLY can edit records during the approval process* is selected.
 .. In *Step 4. Select Notification Templates*:
 
 ... Verify *Approval Assignment Email Template* is set to  *Registration Request*.
@@ -333,9 +426,12 @@ approval process* is selected.
 . On the *Approve Registration* page, select *Activate* and confirm.
 . In the Community Builder, navigate to the *Register* page, remove the default register component, and
 select ACM *Self Register*.
-. Verify the Approved Registration and set *Approver Id*.
+. Verify the *Approved Registration* and set the *Approver Id* with the *User Id* of the user you want to approve the requests.
+
+To get the *User Id*:
+
 . Navigate to Salesforce Setup.
-. Search for `Users` in the *Quick Find* box and then select *Users*.
+. Search for `Users` in the *Quick Find* box and select *Users*.
 . Select the full name of the user who you want to be the approver.
 . The ID is contained in the URL of the User detail page you are currently
 viewing. Remove the first 2 characters and paste the remaining information in
@@ -345,7 +441,7 @@ paste `0052D000001QpG1` in the *Approver Id* field.
 === Create a Public Group [[create-a-public-group]]
 
 . Navigate to *Setup -> Users -> Public Groups*.
-. Select *Create New View*.
+. Select *New*.
 . In the *Label* field, enter `[Community Name] Public Group`.
 . In the *Search* field, enter *Users*.
 . In the *Selected Members* column, enter `User: [Community Name] Site Guest User`.
@@ -381,16 +477,18 @@ public group previously created.
 
 === Set Up User Impersonation [[set-up-user-impersonation]]
 
-Set up user impersonation to connect ACM with the Anypoint Platform.
+Impersonation links each community user to an Anypoint user. This connects the
+Anypoint and community users and the applications, so that applications are
+created under the correct user.
 
 . Create a Connected App
 
-.. In Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*. 
+.. In Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*.
 .. Provide the following information:
 
 *** *Application Name*: Enter a name.
-*** *Redirect URIs*: This URL can be found in the Authentication Provider configuration. Navigate 
-to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*. 
+*** *Redirect URIs*: This URL can be found in the Authentication Provider configuration. Navigate
+to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 *** *User Grant Types*
 **** *Authorization Code*: Checked.
 **** *Refresh Token*: Checked.
@@ -400,7 +498,7 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 .. Select *Create Application*.
 
 ... Curl example:
-    
+
     `curl -X POST \
       https://anypoint.mulesoft.com/accounts/api/connectedApplications \
       -H 'Accept: */*' \
@@ -409,7 +507,8 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://OrgDomain.my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}`
 
-. Configure Auth Provider (Salesforce)
+
+. Configure Auth Provider
 
 .. From the Salesforce interface, navigate to *Setup* -> *Auth. Providers* -> *Anypoint* -> *Edit*.
 .. Provide the following information:
@@ -438,11 +537,11 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 ***** Contact Email
 .... Under Web App Settings:
 
-..... Provide the *Start URL*: `https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>` or the location 
+..... Provide the *Start URL*: `https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>` or the location
 where you want users to be sent in the Anypoint Platform.
 ..... Select *Enable SAML*.
 .... Provide any string as *Entity Id*. This is also the Audience configuration in the Anypoint Platform.
-.... Provide the *ACS URL*. SAML assertions are sent to the ACS URL. For Anypoint: 
+.... Provide the *ACS URL*. SAML assertions are sent to the ACS URL. For Anypoint:
 `https://anypoint.mulesoft.com/accounts/login/receive-id`.
 .... Select *Enable Single Logout*.
 .... Provide *Single Logout URL*: `https://anypoint.mulesoft.com/accounts/logout/receive-id`.
@@ -464,15 +563,15 @@ where you want users to be sent in the Anypoint Platform.
 
 ... Configure Anypoint account with external identity with SAML:
 
-.... Navigate to your Salesforce app enabled for SAML and select *Manage* to see all the URIs to be used to set up 
+.... Navigate to your Salesforce app enabled for SAML and select *Manage* to see all the URIs to be used to set up
 external identity in Anypoint. Make a note of these URIs for quick reference.
-.... Switch to your Anypoint account. Navigate to 
+.... Switch to your Anypoint account. Navigate to
 *Access Management* -> *External Identity* -> *Identity Management* -> *SAML 2.0*.
 .... Set *Sign On URL* to *IdP-Initiated Login URL*.
 .... Set *Sign Off URL* to *Single Logout Endpoint*.
 .... Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
-.... To find your Public Key, find Identity Provider, select *Download certificate*, and 
-open the certificate in a text editor. Copy all of the content and paste it into the *Public Key* field. 
+.... To find your Public Key, find Identity Provider, select *Download certificate*, and
+open the certificate in a text editor. Copy all of the content and paste it into the *Public Key* field.
 Alternatively, you can download metadata from the Salesforce app and extract the certificate from it.
 .... Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 .... Select *Save*.
@@ -522,7 +621,7 @@ Alternatively, you can download metadata from the Salesforce app and extract the
 ... Select *Secret Groups*.
 ... Select *Finish* on the recently created secret group and confirm the operation.
 
-*** For detailed information about creating secret groups and adding certificates, refer to 
+*** For detailed information about creating secret groups and adding certificates, refer to
 https://docs.mulesoft.com/anypoint-security/asm-secret-group-creation-task#create-a-secret-group[Create a Secret Group (Anypoint Platform), role=external, window=_blank].
 
 .. Mapping Community User to Anypoint Role
@@ -530,10 +629,10 @@ https://docs.mulesoft.com/anypoint-security/asm-secret-group-creation-task#creat
 ... Navigate to *Access Management* and select *Roles*.
 ... In *Exchange Viewers*, set a new External group called `Community User` and save it.
 
-... *IMPORTANT*: If you choose to use another key or certificate for the impersonation feature, 
+... *IMPORTANT*: If you choose to use another key or certificate for the impersonation feature,
 you must add this key in the External Identity configuration on Anypoint, as shown in the following steps:
 
-.... In Anypoint, select *Access Management* -> *External Identity* -> *Edit*. 
+.... In Anypoint, select *Access Management* -> *External Identity* -> *Edit*.
 .... Add your key in *Public Key*:
 
 ..... Copy the key with no line breaks.
