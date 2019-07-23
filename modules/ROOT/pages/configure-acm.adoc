@@ -13,7 +13,6 @@ The following sections guide you through API Community Manager configuration:
 * <<authenticate-the-external-data-source>>
 * <<enable-acm-control-panel>>
 * <<verify-organization-user-role-setting>>
-
 * <<communities>>
 
 ** <<create-a-community>>
