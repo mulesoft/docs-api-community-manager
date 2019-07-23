@@ -20,6 +20,9 @@ The following sections guide you through API Community Manager configuration:
 ** <<enable-forums>>
 ** <<define-moderation-rules-for-forums>>
 ** <<publish-a-community>>
+** <<enable-cms>>
+** <<enable-crm>>
+** <<enable-chatter-tracking>>
 
 * <<users>>
 
@@ -89,15 +92,15 @@ in the *Community* section.
 
 == Configure EU account [[configure-eu-account]]
 
-If you have an EU account, which is 
-https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted within the EU, role=external, window=_blank], 
-you must authenticate, set up and configure your domain, and manage your APIs, applications, and related data 
-using the following URL: `eu1.anypoint.mulesoft.com`. This is because the EU control plane stores all MuleSoft data 
-within the EU, and you cannot access EU account data and information using the US Anypoint Platform control plane URL. 
+If you have an EU account, which is
+https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted within the EU, role=external, window=_blank],
+you must authenticate, set up and configure your domain, and manage your APIs, applications, and related data
+using the following URL: `eu1.anypoint.mulesoft.com`. This is because the EU control plane stores all MuleSoft data
+within the EU, and you cannot access EU account data and information using the US Anypoint Platform control plane URL.
 
-To use API Community Manager in an EU region, you must change all occurrences of `anypoint.mulesoft.com` 
-to include a `eu1` prefix. For example: you must update the `https://anypoint.mulesoft.com/odatabridge/odata.svc` 
-External Data Source configuration URL to: `https://eu1.anypoint.mulesoft.com/odatabridge/odata.svc`. 
+To use API Community Manager in an EU region, you must change all occurrences of `anypoint.mulesoft.com`
+to include a `eu1` prefix. For example: you must update the `https://anypoint.mulesoft.com/odatabridge/odata.svc`
+External Data Source configuration URL to: `https://eu1.anypoint.mulesoft.com/odatabridge/odata.svc`.
 
 The following list contains the required updates:
 
@@ -105,13 +108,13 @@ The following list contains the required updates:
 * *Authorize Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>:
 Change
 `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize`.
-* *Token Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>: 
-Change `https://anypoint.mulesoft.com/accounts/oauth2/token` 
+* *Token Endpoint URL* when you Configure the Auth Provider during <<set-up-user-impersonation>>:
+Change `https://anypoint.mulesoft.com/accounts/oauth2/token`
 to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token`.
 * Remote site settings : Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
 * CSP trusted sites: Add the following sites:
 
-** `https://eu1.anypoint.mulesoft.com` 
+** `https://eu1.anypoint.mulesoft.com`
 ** `https://exchange2-file-upload-service-kprod-eu.s3.eu-central-1.amazonaws.com`
 ** `https://exchange2-asset-manager-kprod-eu.s3.amazonaws.com`
 
@@ -150,6 +153,8 @@ Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 . Create a rule. At a minimum, enter information for the *Name* and *Unique Name* fields in the *Details* section.
 . Enter information for all fields in the *Rule Conditions* section.
 
+image::forum-moderation-rule.png[Forum Moderation Rule]
+
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
 === Publish a Community [[publish-a-community]]
@@ -159,6 +164,30 @@ IMPORTANT: Verify the *Activate Rule* check box is active when saving your chang
 . You will receive an email with this information:
 `Congratulations! User was published successfully and is now live on the following domain(s):
 https://exampledomain-developer-edition.na91.force.com/mydomain/s`
+
+=== Enable CMS in the organization <<enable-cms>>
+
+To use Salesforce CMS with your Lightning community:
+
+. Check that your community is based on the latest Lightning template.
+. Go to *Setup* -> *Salesforce Files* -> *General Settings* and enable *Libraries*.
+. To tag CMS content with a topic, open Community Workspaces, go to *Content Management* -> *Topics*, and select the topic setting *Enable for content*.
+
+=== Enable CRM Content in the organization <<enable-crm>>
+
+To use Salesforce CRM Content in the organization:
+
+. Go to *Setup* -> *Salesforce CRM Content*.
+. Select *Enable Salesforce CRM Content*.
+
+=== Enable Chatter tracking <<enable-chatter-tracking>>
+
+To use Chatter tracking in the organization:
+
+. Go to *Setup* -> *Chatter* -> *Feed Tracking*.
+. Select the *CommunityAPI* object.
+. Select *Enable feed tracking*. You do not need to select any fields.
+. Select *Save*.
 
 == Users [[users]]
 
@@ -180,11 +209,14 @@ In this section, you create the profile for guest community users. Users that ar
 .. In the *Custom Field-Level Security* section, repeat the following step for the *AnypointApiVersions*,
 *AnypointApplications*,
 *AnypointContracts*,
-*AnypointApiInstances*, and
+*AnypointApiInstances*,
+*AnypointApiTiers*, and
 *CommunityApi* items:
 .. Select *View* and then *Edit* .
 
 // Which fields need to be updated?
+
+In *Object Settings*, select *Documents*, and enable the *Read* permission.
 
 === Configure Registered Users [[configure-registered-users]]
 
@@ -198,6 +230,8 @@ In this section, you create the profile for members of your community. Users tha
 . In the *Action* column, select *Set Up*.
 . Enter the information required in the *Access Mapping for CommunityApi* page.
 
+image::access-mapping.png[Access Mapping for CommunityApi]
+
 // More info needed?
 
 === Set Permissions for Unauthenticated Users [[set-permissions-for-unauthenticated-users]]
@@ -206,6 +240,7 @@ In this section, you create the profile for members of your community. Users tha
 . Navigate to *Settings* -> *SEO* and select *Guest User Profile*. Make the necessary changes.
 . Navigate *Settings -> General* and select *Guest User Profile*.
 . Select *Edit*.
+. Select *Object Settings*.
 . Enable *Read*, *Create*, *Edit*, and *Delete* permissions to the external objects listed in the
 *External Object Permissions* section.
 . Select *Save*.
@@ -219,35 +254,40 @@ In this section, you create the profile for members of your community. Users tha
 
 ** *AnypointApiTiers*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
 
 ** *AnypointApiVersions*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
 
 ** *AnypointApplications*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
 
 ** *AnypointContracts*
 
-*** *Display URL*: *Read Access* and *Edit Acccess*
-*** *External ID*: *Read Access* and *Edit Acccess*
+*** *Display URL*: *Read Access* and *Edit Access*
+*** *External ID*: *Read Access* and *Edit Access*
+
+** *Documents*
+
+*** *Read*: *Enabled*
 
 ** *CommunityApi*
 
-*** *ApiID*: *Read Access* and *Edit Acccess*
-*** *AssetType*: *Read Access* and *Edit Acccess*
-*** *AssetVersion*: *Read Access* and *Edit Acccess*
-*** *CommunityApi Name*: *Read Access* and *Edit Acccess*
+*** *ApiID*: *Read Access* and *Edit Access*
+*** *AssetType*: *Read Access* and *Edit Access*
+*** *AssetVersion*: *Read Access* and *Edit Access*
+*** *CommunityApi Name*: *Read Access* and *Edit Access*
 *** *Created By*: *Read Access*
 *** *Last Modified By*: *Read Access*
-*** *Name*: *Read Access* and *Edit Acccess*
-*** *Owner*: *Read Access* and *Edit Acccess*
-*** *Visibility*: *Read Access* and *Edit Acccess*
+*** *Name*: *Read Access* and *Edit Access*
+*** *Owner*: *Read Access* and *Edit Access*
+*** *VersionGroup*: *Read Access* and *Edit Access*
+*** *Visibility*: *Read Access* and *Edit Access*
 
 === Add Self Register Custom Component to Register Page [[add-self-register-custom-component-to-register-page]]
 
@@ -259,7 +299,7 @@ component is automatically added to the Register page if you created a community
 . In the Community Builder, navigate to the *Register* page.
 . Remove the standard *Self Registration* component by selecting the delete
 icon next to it.
-. Navigate to *Components*, search for *Self Register* and add it to the page.
+. Navigate to *Components*, search for *Self Register* and add the component to the page.
 
 // More info needed?
 
@@ -290,7 +330,22 @@ icon next to it.
 .. Select *ACM [ Community Name ] Account* in *Account*.
 .. Select *Save*.
 
+To change the background image and company logo displayed on the Login and Registration pages:
+
+. Open *Community Builder*.
+. In the page menu select *Register* or *Login Page*.
+. In the sidebar select the *Theme* icon (paintbrush).
+. Upload a *Company Logo*.
+. Upload a *Background Image*.
+. The changes are visible immediately.
+
 === Set Up an Admin Approval Process for New User Creation [[set-up-an-admin-approval-process-for-new-user-creation]]
+
+Follow these steps to set an approval process for self-registered users. The system will then require administrator approval before creating new user accounts.
+
+After a guest completes the registration form, the user request message is displayed, and an approval request is created and sent to the approver.
+
+If the request is approved, the new user account is created, a welcome email is sent to the new user, and the user sets a password and logs in to the community.
 
 ==== 1. Specify Approval Process Parameters [[specify-approval-process-parameters]]
 
@@ -315,8 +370,7 @@ icon next to it.
 ... Review the information in *Self Register User Requests*:
 
 **** Leave the default values.
-**** Verify *Record Editability Properties* shows *Administrators ONLY can edit records during the
-approval process* is selected.
+**** Verify *Record Editability Properties* shows *Administrators ONLY can edit records during the approval process* is selected.
 .. In *Step 4. Select Notification Templates*:
 
 ... Verify *Approval Assignment Email Template* is set to  *Registration Request*.
@@ -372,9 +426,12 @@ approval process* is selected.
 . On the *Approve Registration* page, select *Activate* and confirm.
 . In the Community Builder, navigate to the *Register* page, remove the default register component, and
 select ACM *Self Register*.
-. Verify the Approved Registration and set *Approver Id*.
+. Verify the *Approved Registration* and set the *Approver Id* with the *User Id* of the user you want to approve the requests.
+
+To get the *User Id*:
+
 . Navigate to Salesforce Setup.
-. Search for `Users` in the *Quick Find* box and then select *Users*.
+. Search for `Users` in the *Quick Find* box and select *Users*.
 . Select the full name of the user who you want to be the approver.
 . The ID is contained in the URL of the User detail page you are currently
 viewing. Remove the first 2 characters and paste the remaining information in
@@ -384,7 +441,7 @@ paste `0052D000001QpG1` in the *Approver Id* field.
 === Create a Public Group [[create-a-public-group]]
 
 . Navigate to *Setup -> Users -> Public Groups*.
-. Select *Create New View*.
+. Select *New*.
 . In the *Label* field, enter `[Community Name] Public Group`.
 . In the *Search* field, enter *Users*.
 . In the *Selected Members* column, enter `User: [Community Name] Site Guest User`.
@@ -420,7 +477,9 @@ public group previously created.
 
 === Set Up User Impersonation [[set-up-user-impersonation]]
 
-Set up user impersonation to connect ACM with the Anypoint Platform.
+Impersonation links each community user to an Anypoint user. This connects the
+Anypoint and community users and the applications, so that applications are
+created under the correct user.
 
 . Create a Connected App
 
