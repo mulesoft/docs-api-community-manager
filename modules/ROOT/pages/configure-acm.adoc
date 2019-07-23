@@ -6,32 +6,29 @@ endif::[]
 
 NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
-NOTE: If you Anypoing Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurences of `anypoint.mulesoft.com` domain by `eu1.anypoint.mulesoft.com` in all the steps in this section.
-
+NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurences of `anypoint.mulesoft.com` domain by `eu1.anypoint.mulesoft.com` in all the steps in this section.
 
 The following sections guide you through API Community Manager configuration:
 
 * <<authenticate-the-external-data-source>>
-* <<give-permissions-to-acm-community-manager>>
-* <<verify-portal-account-owner-role-setting>>
-* <<configure-eu-account>>
+* <<enable-acm-control-panel>>
+* <<verify-organization-user-role-setting>>
 
 * <<communities>>
 
 ** <<create-a-community>>
-** <<customize-a-community>>
+** <<customize-your-community>>
 ** <<enable-forums>>
 ** <<define-moderation-rules-for-forums>>
 ** <<publish-a-community>>
 ** <<enable-cms>>
-** <<enable-crm>>
 ** <<enable-chatter-tracking>>
 
 * <<users>>
 
 ** <<configure-guest-user-access>>
-** <<configure-registered-users>>
-** <<set-permissions-for-unauthenticated-users>>
+** <<configure-members>>
+** <<open-community-for-guest-access>>
 ** <<add-self-register-custom-component-to-register-page>>
 ** <<enable-external-user-registration>>
 
@@ -50,49 +47,49 @@ The following sections guide you through API Community Manager configuration:
 ** <<create-sharing-settings>>
 ** <<set-up-user-impersonation>>
 
+* <<configure-eu-account>>
+
 == Authenticate the External Data Source [[authenticate-the-external-data-source]]
 
 The external data source specifies how ACM components and data objects interact securely with your MuleSoft Anypoint organization. 
 
 To authorize and authenticate your External Data Source:
+
 . Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*.
 . Select *Exchange* and then select *Edit*.
 . Update *Identity Type* to *Named Principal*.
 . Update *Authentication Protocol* to *OAuth 2.0*.
 . Update *Authentication Provider* to *Anypoint*.
 . Select *Save*. 
-. If you don't have an active session in your Anypoint Platform organization, the *Anypoint Login* page is shown. Log in to the Anypoint Platform to complete the authentication. If you already have an active session the Log in screen will not be presented, but the authentication process will be performed nonetheless. 
+. If you don't have an active session in your Anypoint Platform organization, the *Anypoint Login* page is shown. Log in to the Anypoint Platform to complete the authentication. If you already have an active session, authentication is performed without requiring a login.
 . Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*. 
 . Verify the Exchange *External Data Sources* *Authentication Status* is *Authenticated*.
 
-In addition to authenticating the External Data Source, you need to provide credentials of an Anypoint Platform "system" user with read-only access, for components like the API Console which retrieve data directly from the Anypoint Platform APIs:
+After authenticating the External Data Source, provide the credentials of an Anypoint Platform system user with read-only access, for components like the API Console which retrieve data directly from the Anypoint Platform APIs:
+
 . Search for *Named Credentials* in the *Quick Find* box and then select *Named Credentials*.
 . Select *Edit*.
 . In the *Authentication* section, enter the Anypoint username and password in the *Username* and
-*Password* fields, respectively, for a "system" user with read-only privileges in your Anypoint Platform organization
+*Password* fields, respectively, for a system user with read-only privileges in your Anypoint Platform organization.
 . Select *Save*.
 
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com` by `https://eu1.anypoint.mulesoft.com`.
+NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com` to `https://eu1.anypoint.mulesoft.com`.
 
+== Enable ACM Control Panel [[enable-acm-control-panel]]
 
-
-== Enable ACM Control Panel [[give-permissions-to-acm-community-manager]]
-
-ACM Control Panel is the interface your community administrators and operators will use to  operate your communities. It is available from the *App Launcher*: the first icon displayed in the main navigation bar. To ensure it is available for admin users:
+ACM Control Panel is the interface your community administrators and operators will use to operate your communities. It is available from the *App Launcher* as the first icon displayed in the main navigation bar. To ensure it is available for admin users:
 
 . In *Setup*, search for App Manager using the *Quick Find* box, select *API Community Manager*, and then edit it.
 . Navigate to *Navigation Items*, highlight *ACM Administrator*, and move it to the *Selected Items* column. Select *Save*.
 . Log out and log back in to your Salesforce organization.
-. Open the *App Launcher* and select *API Community Manager*
-. Verify ACM Control Panel is displayed correctly
+. Open the *App Launcher* and select *API Community Manager*.
+. Verify that the ACM Control Panel is displayed correctly.
 
-
-== Verify Organization User Role Setting [[verify-portal-account-owner-role-setting]]
+== Verify Organization User Role Setting [[verify-organization-user-role-setting]]
 
 . Navigate to *Setup -> Users* and select your username.
-. Set any *Role* or the appropriate *Role* for your case.
+. Set the *Role* for your account.
 . Select *Save*.
-
 
 == Communities Configuration[[communities]]
 
@@ -109,16 +106,16 @@ ACM Control Panel is the interface your community administrators and operators w
 . After the new community is created, select *Builder* to modify the community appearance and components if needed.
 . Navigate to *Administration* and select *Activate Community*.
 
-=== Customize Your Community [[customize-a-community]]
+=== Customize Your Community [[customize-your-community]]
 
 Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
 === Enable Forums [[enable-forums]]
 
-. In the ACM Control Panel, select *Community Workspace*, then select *Administration* and then select *Preferences*.
+. In the ACM Control Panel, select *Community Workspace* -> *Administration* -> *Preferences*.
 . Select *Show all settings in Workspaces*.
 . Select *Allow discussion threads*.
-. Click *Save*.
+. Select *Save*.
 . In the ACM Control Panel, select *Manage CMS Content*.
 . Select the *Topics* tab.
 . Select *Navigational Topics*.
@@ -134,22 +131,22 @@ image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-You can find more information about Forums moderation rules in https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[Communtiy Cloud documentation]
+You can find more information in the Salesforce Communtiy Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules].
 
 === Publish a Community [[publish-a-community]]
 
 . In the Community Builder, select *Publish*.
 . In the *Publish Your Community* page, select *Publish*.
-. You will receive an email in a few minutes once your community is live including the public URL of your community. 
+. In a few minutes your community will be live, and you will receive an email notification including your community's public URL.
 
-NOTE: If you want to use a custom domain name (also known as a *Vanity Domain*) refer to this https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[knowledge article].
+NOTE: To use a custom domain name (also known as a *Vanity Domain*) refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain].
 
 === Enable Salesforce CMS <<enable-cms>>
 
 . Go to *Setup* -> *Salesforce Files* -> *General Settings* and enable *Libraries*.
-. To tag CMS content with topics, in the ACM Control Panel, select *Community Workspace*, go to *Content Management* -> *Topics*, and select the topic setting *Enable for content*.
+. To tag CMS content with topics, in the ACM Control Panel, select *Community Workspace* -> *Content Management* -> *Topics*, and select the topic setting *Enable for content*.
 
-=== Enable Chatter Tracking for APIs<<enable-chatter-tracking>>
+=== Enable Chatter Tracking for APIs <<enable-chatter-tracking>>
 
 Chatter tracking allows creating discussions on specific objects like APIs. To use Chatter tracking for APIs:
 
@@ -187,7 +184,7 @@ In this section, you create the profile for guest community users. Users that ar
 
 In *Object Settings*, select *Documents*, and enable the *Read* permission.
 
-=== Configure Member Users [[configure-registered-users]]
+=== Configure Members [[configure-members]]
 
 In this section, you create the profile for members of your community. Users that are signed-in are *members*.
 
@@ -199,15 +196,15 @@ In this section, you create the profile for members of your community. Users tha
 . In the *Action* column, select *Set Up*.
 . Enter the information required in the *Access Mapping for CommunityApi* page.
 
-NOTE: if you ever change the name of your community make sure you update this setting. 
+NOTE: If you ever change the name of your community, be sure to update this setting.
 
 image::access-mapping.png[Access Mapping for CommunityApi]
 
 // More info needed?
 
-=== Open the Community for Guest User Access [[set-permissions-for-unauthenticated-users]]
+=== Open the Community for Guest User Access [[open-community-for-guest-access]]
 
-. In the ACM Control Panel, select *Community Builder*, and navigate to *Settings* -> *General* and select the *Public can access the community* check box.
+. In the ACM Control Panel, open *Community Builder*, select *Settings* -> *General*, and select the *Public can access the community* check box.
 . Navigate to *Settings* -> *SEO* and select *Guest User Profile*. 
 . Select *Edit*.
 . Select *Object Settings*.
@@ -446,7 +443,7 @@ public group previously created.
 
 Impersonation links each community member to an Anypoint user. This connects the
 Anypoint and community users and their client applications, so that applications are
-created under the correct user, and actions in audit logs are recorded against the correct user. 
+created under the correct user, and actions in audit logs are recorded against the correct user.
 
 . Create a Connected App
 
@@ -486,6 +483,8 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 ... *Default Scopes*: `full offline_access`.
 
     NOTE: Remember to associate the External Datasource with this Auth provider.
+
+    NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` in the Auth Provider configuration section.
 
 . Configure IDP
 
@@ -608,16 +607,11 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 
 // For more information about this feature, see the User Impersonation link section of the architecture documentation.
 
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token`
-to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` on the Auth Provider configuration section.
-
-
-
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
 If your Anypoint Platform organization is hosted in the EU, perform the following additional configurations to enable access to the EU instance of the Anypoint Management Plane. 
 
-* Remote site settings : Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
+* Remote site settings: Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
 * CSP trusted sites: Add the following sites:
 ** `https://eu1.anypoint.mulesoft.com`
 ** `https://exchange2-file-upload-service-kprod-eu.s3.eu-central-1.amazonaws.com`
