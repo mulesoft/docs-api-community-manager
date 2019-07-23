@@ -1,0 +1,13 @@
+= Pubish Your API Community
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+To make your community site live, open the ACM Control Panel and select *Community Builder*.
+
+image::builder.png[Site Builder]
+
+Select *Publish*.
+
+To view the live site when the community is published and active, open the ACM Control Panel and select *Open Community*.
