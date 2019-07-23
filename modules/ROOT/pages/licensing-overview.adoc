@@ -1,21 +1,18 @@
-= Licensing overview
+= Licensing Overview
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+API Community Manager (ACM) licenses are procured and provisoned by MuleSoft. A standard ACM License consists of a *Salesforce Customer Community Plus Login License Unlimited Edition*. It is based on the number of member logins per month, and includes as a base:
 
-API Community Manager license are procured and provisoned by MuleSoft. An standard API Community License consists on a *Salesforce Customer Community Plus Login License Unlimited Edition*. It is based on the number of member logins per month, and includes as a base: 
-
-. Unlimited number of communities
+. An unlimited number of communities
 . Five (5) admin users (community administrators or operators)
-. Connectivity to one (1) Anypoint Platform top-level organization 
+. Connectivity to one (1) Anypoint Platform top-level organization
 . Up to 10,000 member accounts across all communities
 
-Community login-based license is calculated by the number of *daily unique logins*: login actions that different members perform daily in your communities during a month. Members associated with your license consume one login each day they log into any of your communities - logging in multiple times during the same day still only consumes one login and, once logged in, switching between communities doesn’t consume extra logins.
+Community login-based license is calculated by the number of *daily unique logins*: login actions that different members perform daily in your communities during a month. Members associated with your license consume one login each day they log into any of your communities. Logging in multiple times during the same day only consumes one login. Once logged in, switching between communities doesn’t consume extra logins.
 
-Forecasting the adequate number of daily unique logins is critical to ensure you have enough licenses to cater for the demand your community will generate. Your MuleSoft account team will assist you in this analysis as part of the capacity planning and community design process before you roll-out your community. 
+Forecasting the adequate number of daily unique logins is critical to ensure you have enough licenses to satisfy the demand your community will generate. Your MuleSoft account team will assist you in this analysis as part of the capacity planning and community design process before you roll out your community.
 
-You can find more information about *Salesforce Customer Community Plus Login License Unlimited Edition* in https://help.salesforce.com/articleView?id=users_license_types_communities.htm&type=5[Community Cloud documentation page]
-
-
+You can find more information about *Salesforce Customer Community Plus Login License Unlimited Edition* in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=users_license_types_communities.htm&type=5[Communities User Licenses].
