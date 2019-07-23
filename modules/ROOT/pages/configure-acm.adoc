@@ -130,7 +130,7 @@ image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules].
+You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=blank].
 
 === Publish a Community [[publish-a-community]]
 
@@ -138,7 +138,7 @@ You can find more information in the Salesforce Community Cloud documentation ab
 . In the *Publish Your Community* page, select *Publish*.
 . In a few minutes your community will be live, and you will receive an email notification including your community's public URL.
 
-NOTE: To use a custom domain name (also known as a *Vanity Domain*) refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain].
+NOTE: To use a custom domain name (also known as a *Vanity Domain*) refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=blank].
 
 === Enable Salesforce CMS [[enable-cms]]
 
