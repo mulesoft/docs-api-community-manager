@@ -496,7 +496,7 @@ Alternatively, you can perform this step directly through an API call, as in the
 
 ==== Configure IDP
 
-Impersonation uses SAML, and it requires  an IdP to be configured in both Anypoint Platform and Salesforce organizations. You can use Salesforce as an IdP.
+Impersonation uses SAML, and it requires an IdP to be configured in both Anypoint Platform and Salesforce organizations. You can use Salesforce as an IdP.
 
 To set up SAML in your Salesforce org:
 
