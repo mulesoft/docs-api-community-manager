@@ -10,7 +10,7 @@ The ACM package is installed in an *independent* Salesforce organization from an
 
 The Salesforce organization with Community Cloud is provisioned through and included in the MuleSoft ACM license. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for ACM. Find more information about ACM licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
 
-Installing, updating or configuring ACM must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
+NOTE: Installing, updating or configuring ACM must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
 To install and configure the ACM managed package, use the following preparation steps in this Salesforce organization.
 
@@ -21,11 +21,17 @@ To install and configure the ACM managed package, use the following preparation 
 . Log in into your ACM https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
 . Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
-. Enter a name for *My Domain*. The name can include up to 34 letters, numbers, and hyphens.
+. Enter a domain name for your organization. The name can include up to 34 letters, numbers, and hyphens.
 . Select *Check Availability*. If the name is already taken, choose a different one.
-. Select *Register Domain*. You will receive an email when your subdomain name is ready for testing. This process
-can take a few minutes.
-. Follow the instructions in the email.
+. Select *Register Domain*.
+
+You will receive a notification email when your domain is registered and your
+subdomain name is ready for testing. This process can take a few minutes.
+You can continue with the next steps while you wait for the email.
+
+NOTE: After you complete ACM installation and configuration, you can configure a full custom domain
+name, also known as a vanity domain. When you're ready, refer to the Salesforce knowledge article
+https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=blank].
 
 == Enable Communities Inside Your Organization
 
@@ -35,5 +41,8 @@ to enable communities inside your Salesforce organization.
 
 == Deploy Your Domain
 
+Wait to receive the notification email that your domain is registered, and then continue with these steps.
+
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
+. If the screen indicates your domain is ready, select *Log in*.
 . Select *Deploy to Users*.

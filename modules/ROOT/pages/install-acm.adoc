@@ -6,12 +6,12 @@ endif::[]
 
 NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
-To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update ACM Package].
-
-To perform a new install of API Community Manager package in your ACM Salesforce Organization:
+To perform a new install of the API Community Manager package in your ACM Salesforce Organization, follow the steps below. To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update ACM].
 
 . Navigate in your browser to the package installation link provided by your MuleSoft representative.
 . Select *Install for Admin users only*.
+. Select *I acknowledge that I’m installing a Non-Salesforce Application that is not authorized for distribution as part of Salesforce’s AppExchange Partner Program*.
+. Select *Install*.
 . On the *Approve Third-Party Access* page, select the *Yes, grant access to these third-party web sites* check box.
 . Select *Continue*.
 . When installation completes, select *Done*.
