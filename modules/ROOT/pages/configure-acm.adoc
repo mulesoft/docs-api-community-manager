@@ -482,9 +482,9 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 ... *Token Endpoint URL*: `https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token`
 ... *Default Scopes*: `full offline_access`.
 
-    NOTE: Remember to associate the External Datasource with this Auth provider.
+  NOTE: Remember to associate the External Datasource with this Auth provider.
 
-    NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` in the Auth Provider configuration section.
+  NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` in the Auth Provider configuration section.
 
 . Configure IDP
 
