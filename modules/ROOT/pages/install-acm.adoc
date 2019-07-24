@@ -11,7 +11,7 @@ To perform a new install of the API Community Manager package in your ACM Salesf
 . Navigate in your browser to the package installation link provided by your MuleSoft representative.
 . Select *Install for Admin users only*.
 . Select *I acknowledge that I’m installing a Non-Salesforce Application that is not authorized for distribution as part of Salesforce’s AppExchange Partner Program*.
-. Click *Install*.
+. Select *Install*.
 . On the *Approve Third-Party Access* page, select the *Yes, grant access to these third-party web sites* check box.
 . Select *Continue*.
 . When installation completes, select *Done*.
