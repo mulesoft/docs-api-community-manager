@@ -8,34 +8,35 @@ Follow these steps to configure API Community Manager (ACM).
 
 NOTE: Installing, updating or configuring ACM must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
 
-NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurences of `anypoint.mulesoft.com` domain by `eu1.anypoint.mulesoft.com` in all the steps in this section.
+NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurrences of `anypoint.mulesoft.com` domain by `eu1.anypoint.mulesoft.com` in all the steps in this section.
 
 * <<authenticate-the-external-data-source>>
 * <<enable-acm-control-panel>>
-* <<verify-organization-user-role-setting>>
+* <<update-your-user-role-and-permissions>>
 * <<communities>>
 
 ** <<create-a-community>>
 ** <<customize-your-community>>
 ** <<enable-forums>>
 ** <<define-moderation-rules-for-forums>>
-** <<publish-a-community>>
 ** <<enable-cms>>
 ** <<enable-crm-content>>
 ** <<enable-chatter-tracking>>
+** <<publish-your-community>>
 
 * <<users>>
 
 ** <<configure-member-user-access>>
-** <<create-sharing-settings>>
-** <<open-community-for-guest-access>>
-** <<enable-external-user-registration>>
+** <<configure-sharing-settings>>
+** <<configure-members>>
+** <<configure-guest-user-access>>
+** <<enable-guest-user-registration-as-members>>
 *** <<add-self-register-custom-component-to-register-page>>
-*** <<assign-the-profile-to-new-community-members>>
-*** <<create-the-account-for-your-community>>
-*** <<configure-your-login-and-registration-page>>
+*** <<assign-a-profile-for-your-community-members>>
+*** <<create-an-account-for-your-community>>
+*** <<configure-your-login-and-registration-pages>>
 *** <<set-up-an-admin-approval-process-for-new-user-creation>>
-**** <<specify-approval-process-parameters>>
+**** <<create-the-approval-process>>
 **** <<create-an-approval-step>>
 **** <<create-a-final-approval-action>>
 **** <<activate-the-approval-process>>
@@ -72,28 +73,23 @@ NOTE: If your Anypoint Platform organization is hosted in the EU, change `https:
 
 == Enable *ACM Control Panel* [[enable-acm-control-panel]]
 
-The *ACM Control Panel* is the interface your community administrators and operators will use to operate your communities. It is available from the *App Launcher* (the first icon displayed in the main navigation bar(. To ensure it is available for admin users:
+The *ACM Control Panel* is the interface your community administrators and operators will use to operate your communities. It is available in the *App Launcher* where it is the first icon displayed in the main navigation bar. To ensure it is available for admin users:
 
 . In *Setup*, search for *App Manager* using the *Quick Find* box and select *App Manager*. 
 . Locate the *API Community Manager* item, open the drop down menu on the right end of the row and select *Edit*.
-. Select *Navigation Items* on the left panel, highlight *ACM Administrator* item under *Available Items* box, and use the arrow buttons to move it to the *Selected Items* box. Select *Save*.
-. Click *Back* on the top right corner of the screen.
+. Select *Navigation Items* on the left panel, highlight the *ACM Administrator* item under the *Available Items* box, and use the arrow buttons to move it to the *Selected Items* box. Select *Save*.
+. Select *Back* at the top right.
 . Log out and log back in to your Salesforce organization.
 . Open the *App Launcher* and select *API Community Manager*.
-. Verify that the *ACM Control Panel* is displayed correctly. Observe that you'll see a message indicating you have not created a community. If you are able to see and open *ACM Administrator* in the *Application Launcher* and you see this message, it means the actions in this step were done correctly.
+. Verify that the *ACM Control Panel* is displayed correctly. In the *Application Launcher*, open *ACM Administrator*. If you see a message that you have not created a community, the actions in this step were done correctly.
 
-//ADD SCREENSHOT TO SHOW HOW THE *ACM Control Panel* SHOULD LOOK LIKE IF ITS ENABLED CORRECTLY
-
-
-== Update Your User Role and Permissions [[verify-organization-user-role-setting]]
+== Update Your User Role and Permissions [[update-your-user-role-and-permissions]]
 
 . In *Setup*, search for *Users* using the *Quick Find* box and select *Users*. 
 . Locate your username and select *Edit*.
-. Set the *Role* for your account. This can be any role from the list, but cannot be none. If you don't see any roles in the dropdown list, refer to https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[this knowledge article, role=external, window=_blank] that describes how to create a role in your organziation
+. Set the *Role* for your account. This can be any role from the list, but cannot be none. If you don't see any roles in the dropdown list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
 . Select *Salesforce CRM Content User*.
 . Select *Save*.
-
-
 
 == Communities Configuration [[communities]]
 
@@ -103,12 +99,12 @@ The *ACM Control Panel* is the interface your community administrators and opera
 . Navigate to *Setup*.
 . In the *Quick Find* box, enter *All Communities* and then select *All Communities*.
 . Select *New Community*. All communities templates are listed.
-. Choose any of *API Community Manager Templates* if you want to get started from an example, any of the other available templates, or *Build your own* if you want to design your community from scratch with full control of the structure and look&feel. 
+. Choose any of the *API Community Manager Templates* if you want to get started from an example, any of the other available templates, or *Build your own* if you want to design your community from scratch with full control of the structure and look and feel.
 . On the desired template page, select *Get Started*.
 . Enter a *Name* and an *optional URL suffix* for your community.
-. Select *Create*. The configuration process will take a few minutes. 
-. Once the configuration process finishes, you'll be in your new community workspace. Select *Install AppExchange Package* on the top banner to install the pre-defined metrics and dashboards, and follow the instructions of the installation wizard. Make sure you install this package in your production org when prompted by the wizard. Also, observe you may need to re-enter your login credentials to complete the installation of this package.
-. Navigate to *ACM Administrator* in the *Application Launcher*, select *Community Administration*, go to the *Settings* section in the left panel, and select *Activate Community*.
+. Select *Create*. The configuration process will take a few minutes.
+. When the configuration process finishes, you'll see your new community workspace. Select *Install AppExchange Package* on the top banner to install the pre-defined metrics and dashboards, and follow the installation wizard instructions. Be sure to install this package in your production organization when prompted by the wizard. You may need to re-enter your login credentials to complete the installation of this package.
+. In the *Application Launcher* navigate to *ACM Administrator*, select *Community Administration*, select the *Settings* section, and select *Activate Community*.
 
 === Customize Your Community [[customize-your-community]]
 
@@ -116,44 +112,44 @@ Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
 === Enable Forums [[enable-forums]]
 
-. Navigate to *ACM Administrator* in the *Application Launcher*, select *Community Administration*, and select *Preferences* in the left panel.
+. In the *Application Launcher* navigate to *ACM Administrator*, select *Community Administration*, and select *Preferences* in the left panel.
 . Select *Show all settings in Workspaces*.
-. Select *Save* so that this setting is reflected. 
+. Select *Save* so this setting is reflected.
 . Select *Allow discussion threads*.
 . Select *Save*.
 . Go back to the *ACM Control Panel*, and select *Manage CMS Content*.
 . Select the *Topics* tab.
 . Select *Navigational Topics*.
-. Create as many topics as you need for your community forums and make sure you select *Save*.
+. Create as many topics as you need for your community forums and select *Save*.
 
 === Define Moderation Rules for Forums [[define-moderation-rules-for-forums]]
 
-Discussion Forums are by default not moderated, which means any member can create posts with any content and they become visible for other members right away. If you want to define a basic "review/approve-all" moderation model, follow the steps below:
+By default discussion forums are not moderated, so any member can create posts with any content and the posts become visible for other members immediately. If you want to define a basic "review/approve-all" moderation model, follow the steps below:
 
 . In the *ACM Control Panel*, select *Manage Forums* and select *Rules*.
-. Select *New* and create a *Content Rule*. 
+. Select *New* and create a *Content Rule*.
 . Enter a *Name* and a *Unique Name* in the *Details* section and select *Activate Rule*.
-. In the *Rule Conditions* section, seletc *Post* and *Comment*, and select *Review* in *Moderation Action*. 
-. In the *Criteria* section, move all items in *Member Criteria* from *Available Criteria* box to *Selected Criteria* box.
+. In the *Rule Conditions* section, select *Post* and *Comment*, and select *Review* in *Moderation Action*.
+. In the *Criteria* section, move all items in *Member Criteria* from the *Available Criteria* box to the *Selected Criteria* box.
 . Select *Save*.
 
 image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-You can define much more advanced moderation and review rulewsa. You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
+You can define much more advanced moderation and review rules. You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
 
 === Enable Salesforce CMS [[enable-cms]]
 
-. In *Setup*, search for *Salesforce Files* using the *Quick Find* box and select *General Settings*
-. Select *Edit*
+. In *Setup*, search for *Salesforce Files* using the *Quick Find* box and select *General Settings*.
+. Select *Edit*.
 . Select *Libraries in Salesforce Files*.
 . Select *Save*.
-. In *Setup*, search for *App Manager* using the *Quick Find* box and select *App Manager*. 
+. In *Setup*, search for *App Manager* using the *Quick Find* box and select *App Manager*.
 . Locate the *Salesforce CMS* item, open the drop down menu on the right end of the row and select *Edit*.
-. Select *User Profiles* on the left panel, highlight *System Administrator* item under *Available Profiles* box, and use the arrow buttons to move it to the *Selected Profiles* box. 
+. Select *User Profiles* on the left panel, highlight the *System Administrator* item under the *Available Profiles* box, and use the arrow buttons to move it to the *Selected Profiles* box.
 . Select *Save*.
-. Click *Back* on the top right corner of the screen.
+. Click *Back* at the top right.
 . Open the *App Launcher* and select *Salesforce CMS*.
 . Select *Create Your First Workspace*.
 . In the *Name and Describe Your Workspace* step enter a *Name* for your workspace and select *Next*.
@@ -161,35 +157,32 @@ You can define much more advanced moderation and review rulewsa. You can find mo
 . In the *Add Contributors* step select *Next*.
 . Confirm the information and select *Done*.
 
-
 If you want to organize CMS content using Topics:
-. Go to *ACM Control Panel*, select *Manage CMS Content*, and select *Topics*. 
+. Go to *ACM Control Panel*, select *Manage CMS Content*, and select *Topics*.
 . Select the topics you want to enable to organize CMS content and select *Enable for content* in the top right.
 
 === Enable Salesforce CRM Content [[enable-crm-content]]
 
-. In *Setup*, search for *Salesforce CRM* using the *Quick Find* box and select *Salesforce CRM Content*
+. In *Setup*, search for *Salesforce CRM* using the *Quick Find* box and select *Salesforce CRM Content*.
 . Select *Enable Salesforce CRM Content*.
 . Select *Save*.
-
 
 === Enable Chatter Tracking for APIs [[enable-chatter-tracking]]
 
 Chatter tracking allows creating discussions on specific objects like APIs. To use Chatter tracking for APIs:
 
-. In *Setup*, search for *Chatter* using the *Quick Find* box and select *Feed Tracking*
+. In *Setup*, search for *Chatter* using the *Quick Find* box and select *Feed Tracking*.
 . Select the *CommunityAPI* object.
 . Select *Enable feed tracking*. You do not need to select any fields.
 . Select *Save*.
 
-=== Publish your Community [[publish-a-community]]
+=== Publish Your Community [[publish-your-community]]
 
 . In the *ACM Control Panel*, select *Community Builder*.
-. Select *Publish* on the top right corner, and select *Publish* in the *Publish YUour Community* dialog.
-. In a few minutes your community will be live, and you will receive an email notification including your community's public URL. You'll also find your community live URL in the *ACM Control Panel*, by selecting *Open Community*. 
+. Select *Publish* on the top right corner, and select *Publish* in the *Publish Your Community* dialog.
+. In a few minutes your community will be published, and you will receive an email notification including your community's public URL. You can also find your community live URL by opening the *ACM Control Panel* and selecting *Open Community*.
 
-NOTE: To use a custom domain name (also known as a *Vanity Domain*) refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=_blank].
-
+NOTE: To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=_blank].
 
 == Configure Profiles and Permissions [[users]]
 
@@ -200,49 +193,46 @@ After you create a community, you must create the different user profiles for yo
 In this section, you create the profile for members of your community. Users that are signed-in are *members*.
 
 . In *Setup*, search for *Users* using the *Quick Find* box and select *Profiles*.
-. Select the *Customer Community Plus Login User* profile 
+. Select the *Customer Community Plus Login User* profile.
 . Select *Clone*.
-. Enter `ACM Member User` for *Profile Name*. 
+. Enter `ACM Member User` for *Profile Name*.
 . Select *Save*.
 
-Next you need to give permissions to your members profile so that they can access APIs, create client applications and manage their details. To do this: 
+Next you need to give permissions to your members' profile so that they can access APIs, create client applications and manage their details. To do this:
 
-. Select *Edit* in the *ACM Member User* profile page
-. In the *Standard Object Permissions* section
-.. enable *Read* permissions for:
+. Select *Edit* in the *ACM Member User* profile page.
+. In the *Standard Object Permissions* section:
+.. Enable *Read* permissions for:
 ... *Documents*
-. In the *Custom Object Permissions* section 
-.. enable *Read* permissions for:
+. In the *Custom Object Permissions* section:
+.. Enable *Read* permissions for:
 ... *CommunityApi*
-.. enable *Read*, *Edit*, *Create* and *Delete* permissions for:
+.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for:
 ... *SelfRegisterUserRequests*
-. In the *External Object Permissions* section 
-.. enable *Read* permissions for:
+. In the *External Object Permissions* section:
+.. Enable *Read* permissions for:
 ... *AnypointApiInstances*
 ... *AnypointApiTiers*
 ... *AnypointApiVersionQueries*
 ... *AnypointApiVersions*
-.. enable *Read*, *Edit*, *Create* and *Delete* permissions for:
+.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for:
 ... *AnypointApplications*
 ... *AnypointContracts*
-. Select *Save*
-. Go to the *Field-Level Security* section in the *ACM Member User* profile page
+. Select *Save*.
+. Go to the *Field-Level Security* section in the *ACM Member User* profile page.
 . In the *Custom Field-Level Security* section, for each of the following objects, select *View*, then *Edit*, enable the corresponding permissions as follows, and select *Save* on each:
-.. enable *Read* permissions for all fields of the objects:
+.. Enable *Read* permissions for all fields of the objects:
 ... *AnypointApiInstances*
 ... *AnypointApiTiers*
 ... *AnypointApiVersionQueries*
 ... *AnypointApiVersion*
 ... *CommunityApi*
-.. enable *Read* and *Edit* permissions for:
+.. Enable *Read* and *Edit* permissions for:
 ... *AnypointApplications*
 ... *AnypointContracts*
 ... *SelfRegisterUserRequests*
 
-
-
-
-=== Configure Sharing Settings [[create-sharing-settings]]
+=== Configure Sharing Settings [[configure-sharing-settings]]
 
 . In *Setup*, search for *Users* using the *Quick Find* box and select *Public Groups*.
 . Select *New*.
@@ -251,7 +241,7 @@ Next you need to give permissions to your members profile so that they can acces
 . Use the *Add* button to move `User: [Your Community Name] Site Guest User` from the *Available Members* box to the *Selected Members* box.
 . Select *Save*.
 
-In the following steps you will use the Public Group that you've just created.
+In the following steps you will use the public group that you've just created.
 
 . In *Setup*, search for *Security* using the *Quick Find* box and select *Sharing Settings*.
 . Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and select *New*.
@@ -263,21 +253,19 @@ In the following steps you will use the Public Group that you've just created.
 . In *Select the users to share with*: enter *Share with*: `Public Groups` and `[Community Name] Public Group`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Select Save.
-. Switch to Salesforce Classic by selecting *Switch to Salesforce Classic* under the user profile menu on the top right of the screen.
-. Select the plus (+) button at the end of the navigation menu bar
-. In *View* dropdown, select *Content* and then select *Libraries*.
+. Switch to Salesforce Classic. Select the user profile menu at top right and select *Switch to Salesforce Classic*.
+. Select the plus (`+`) button at the end of the navigation menu bar.
+. In the *View* dropdown, select *Content* and then select *Libraries*.
 . In the *Manage Library* dropdown on the right, select *Asset Library*.
 . In the *Members* section, select *Add Members*.
 . In the *Edit Library Membership Wizard*, select `Public Groups` from the *Search* drop-down and add the
 public group previously created with the *Add* button. Select *Next*.
 . Assign the *Viewer* Permission and select *Save*.
-. Switch back to the lightning Experience by selecting *Switch to Lightnign Experience*.
-
+. Switch back to the lightning Experience by selecting *Switch to Lightning Experience*.
 
 NOTE: If you ever change the name of your community, be sure to update this setting.
 
-
-=== Configure Members in your Community [[configure-members]]
+=== Configure Members in Your Community [[configure-members]]
 
 . In *Setup*, search for *Communities* using the *Quick Find* box and select *Communities Settings*.
 . Scroll to *Sharing Sets* and select *New*.
@@ -289,40 +277,37 @@ NOTE: If you ever change the name of your community, be sure to update this sett
 .. *Account* in the *User* dropdown.
 .. *acm_pkg__Account_c* in the *Target CommunityApi* dropdown.
 .. *Read Only* in the *Access Level* dropdown.
-. Select *Update*
-. Select *Save*
-
+. Select *Update*.
+. Select *Save*.
 
 image::access-mapping.png[Access Mapping for CommunityApi]
 
+=== Configure Guest User Access [[configure-guest-user-access]]
 
-=== Configure Guest User Access [[open-community-for-guest-access]]
-
-. In the *ACM Control Panel*, open *Community Builder*, select *Settings* -> *General* 
+. In the *ACM Control Panel*, open *Community Builder*, and select *Settings* -> *General*.
 . Select the *Public can access the community* check box.
-. Navigate to the guest user profile link under *Guest user profile* section, named *[Community Name] Profile*.
+. Navigate to the guest user profile link under the *Guest user profile* section, named *[Community Name] Profile*.
 . Select *Edit*.
-
-. In the *Standard Object Permissions* section
-.. enable *Read* permissions for:
+. In the *Standard Object Permissions* section:
+.. Enable *Read* permissions for:
 ... *Documents*
-. In the *Custom Object Permissions* section 
-.. enable *Read* permissions for:
+. In the *Custom Object Permissions* section:
+.. Enable *Read* permissions for:
 ... *CommunityApi*
-.. enable *Read*, *Edit*, *Create* and *Delete* permissions for:
+.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for:
 ... *SelfRegisterUserRequests*
-. In the *External Object Permissions* section 
-.. enable *Read* permissions for:
+. In the *External Object Permissions* section:
+.. Enable *Read* permissions for:
 ... *AnypointApiInstances*
 ... *AnypointApiTiers*
 ... *AnypointApiVersionQueries*
 ... *AnypointApiVersions*
 ... *AnypointApplications*
 ... *AnypointContracts*
-. Select *Save*
-. Go to the *Field-Level Security* section in the *ACM Member User* profile page
+. Select *Save*.
+. Go to the *Field-Level Security* section in the *ACM Member User* profile page.
 . In the *Custom Field-Level Security* section, for each of the following objects, select *View*, then *Edit*, enable the corresponding permissions as follows, and select *Save* on each:
-.. enable *Read* permissions for all fields of the objects:
+.. Enable *Read* permissions for all fields of the objects:
 ... *AnypointApiInstances*
 ... *AnypointApiTiers*
 ... *AnypointApiVersionQueries*
@@ -330,40 +315,39 @@ image::access-mapping.png[Access Mapping for CommunityApi]
 ... *CommunityApi*
 ... *AnypointApplications*
 ... *AnypointContracts*
-.. enable *Read* and *Edit* permissions for:
+.. Enable *Read* and *Edit* permissions for:
 ... *SelfRegisterUserRequests*
 
 
-=== Enable Guest User Registration as Members [[enable-external-user-registration]]
+=== Enable Guest User Registration as Members [[enable-guest-user-registration-as-members]]
 
 ==== Add Self Register Component to Registration Page [[add-self-register-custom-component-to-register-page]]
 
-The self-register component allows guest users to self-register in your community to become members. If you're not using any of the ACM out-of-the-box templates, follow these steps to use ACM-specific self-registration component.
+The self-register component allows guest users to self-register in your community to become members. If you're not using any of the ACM out-of-the-box templates, follow these steps to use the ACM-specific self-registration component.
 
 . In the *ACM Control Panel*, open *Community Builder* and navigate to the *Register* page in the Pages menu on the top left.
-. Remove the standard *Self Registration* component by selecting the delete
-icon next to it.
+. Remove the standard *Self Registration* component by selecting the delete icon next to it.
 . Navigate to *Components*, search for *Self Register* and add the component to the page.
 
-==== Assign a Profile for your Community Members [[assign-the-profile-to-new-community-members]]
+==== Assign a Profile for Your Community Members [[assign-a-profile-for-your-community-members]]
 
 . In the *ACM Control Panel*, open *Community Administration* and navigate to the *Members* section on the left panel.
 . In the *Select Profiles* section, Select *All* in the *Search* drop-down.
 . Use the *Add* button to add *ACM Member User* to the *Selected Profiles* box.
 . Select *Save*.
 
-IMPORTANT: Do not *Remove* the *System Administrator* profile from the *Selected Profiles* section. If you do you will lose all acceess to your community.
+IMPORTANT: Do not *Remove* the *System Administrator* profile from the *Selected Profiles* section. If you remove the *System Administrator* profile you will lose all access to your community.
 
-==== Create an Account for Your Community [[create-the-account-for-your-community]]
+==== Create an Account for Your Community [[create-an-account-for-your-community]]
 
 . Navigate to *App Launcher* and select *Accounts*.
 . Select *New* to create a new account.
 . Enter `ACM Registered Users` in *Account Name*.
 . Select *Save*.
 
-==== Configure Your Login and Registration Pages [[configure-your-login-and-registration-page]]
+==== Configure Your Login and Registration Pages [[configure-your-login-and-registration-pages]]
 
-NOTE: Refer to xref:brand-intro.adoc[Brand and Customize Your API Community] to understand how to configure the look and feel of your login and registration pages. 
+NOTE: Refer to xref:brand-intro.adoc[Brand and Customize Your API Community] to understand how to configure the look and feel of your login and registration pages.
 
 . In the *ACM Control Panel*, open *Community Administration* and navigate to the *Login & Registration* section on the left panel.
 . Scroll down to the *Registration Page Configuration* section near the bottom of the page:
@@ -379,10 +363,9 @@ Follow these steps to set an optional approval process for self-registered users
 
 If you don't configure an approval process, self-registered users will become members automatically when they register.
 
+===== Create the Approval Process [[create-the-approval-process]]
 
-===== Create the Approval Process  [[specify-approval-process-parameters]]
-
-. In the *Setup*, search for *Approval Processes* in the *Quick Find* box and then select *Approval Processes*.
+. In *Setup*, search for *Approval Processes* in the *Quick Find* box and select *Approval Processes*.
 . Select *Self Register User Request* in the *Manage Approval Processes For:* drop-down.
 . Select *Use Standard Setup Wizard* in the *Create New Approval Process* drop-down.
 . In the wizard, enter the following information:
@@ -392,7 +375,7 @@ If you don't configure an approval process, self-registered users will become me
 .. Select *Next*.
 
 .. In *Step 2. Specify Entry Criteria*, enter the following information:
-... *Field*: `SelfRegisterUserRequest: Approved`:
+... *Field*: `SelfRegisterUserRequest: Approved`
 ... *Operator*: `equals`
 ... *Value*: `False`
 .. Select *Next*.
@@ -402,7 +385,7 @@ If you don't configure an approval process, self-registered users will become me
 .. Select *Next*.
 
 .. In *Step 4. Select Notification Templates*:
-... Select *Registration Request* in *Approval Assignment Email Template* section, under the *ACM* category in the look-up dialog.
+... Select *Registration Request* in the *Approval Assignment Email Template* section, under the *ACM* category in the look-up dialog.
 .. Select *Next*.
 
 .. In *Step 5. Select Fields to Display on Approval Page Layout*:
@@ -416,9 +399,9 @@ If you don't configure an approval process, self-registered users will become me
 
 ===== Create an Approval Step [[create-an-approval-step]]
 
-. After you create the Approval Process in the previous section:
-.. If you are prompted to add an Approval Step, select *Yes, I'd like to create an approval step now* and select *Go!*.
-.. If you are not prompted to add an Approval step:
+. After you create the approval process in the previous section:
+.. If you are prompted to add an approval step, select *Yes, I'd like to create an approval step now* and select *Go!*.
+.. If you are not prompted to add an approval step:
 ... In *Setup*, search for *Approval Processes* in the *Quick Find* box and select *Approval Processes*.
 ... Select *Approve Registration* (the approval that you created in the previous section).
 ... In the *Approval Steps* section, select *New Approval Step*.
@@ -452,7 +435,7 @@ If you don't configure an approval process, self-registered users will become me
 ===== Activate the Approval Process [[activate-the-approval-process]]
 
 . On the *Approve Registration* page, select *Activate* and confirm.
-. In the *ACM Control Panel*, open *Community Builder*, select *Settings* -> *General* 
+. In the *ACM Control Panel*, open *Community Builder*, and select *Settings* -> *General*.
 . In the *Community Builder*, navigate to the *Register* page in the pages menu and select the ACM *Self Register* component.
 . Verify the *Approved Registration* and set the *Approver Id* with the *User Id* of the user you want to approve the registration requests.
 
@@ -460,7 +443,7 @@ To get the *User Id*:
 
 . Navigate to Salesforce Setup.
 . Search for `Users` in the *Quick Find* box and select *Users*.
-. Select the user who you want to be the approver to open it.
+. Select the user who you want to be the approver.
 . The ID is contained in the URL of the User detail page you are currently
 viewing. Remove the first 2 characters and paste the remaining information in
 the *Approver Id* field. For example, if the unique ID is `2F0052D000001QpG1`,
