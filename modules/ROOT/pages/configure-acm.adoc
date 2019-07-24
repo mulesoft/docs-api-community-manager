@@ -42,6 +42,13 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 **** <<activate-the-approval-process>>
 
 ** <<set-up-user-impersonation>>
+*** <<create-a-connected-app>>
+*** <<configure-authentication-provider>>
+*** <<configure-idp>>
+*** <<set-up-custom-attributes>>
+*** <<configure-anypoint-account-with-external-identity-with-saml>>
+*** <<configure-and-authorize-the-odata-bridge-to-perform-impersonation>>
+*** <<mapping-community-user-to-anypoint-role>>
 
 * <<configure-eu-account>>
 
@@ -449,17 +456,17 @@ viewing. Remove the first 2 characters and paste the remaining information in
 the *Approver Id* field. For example, if the unique ID is `2F0052D000001QpG1`,
 paste `0052D000001QpG1` in the *Approver Id* field.
 
-
-
 === Set Up User Impersonation [[set-up-user-impersonation]]
 
 Impersonation links each community member to an Anypoint user. This connects the
 Anypoint and community users and their client applications, so that applications are
 created under the correct user, and actions in audit logs are recorded against the correct user.
 
-==== Create a Connected App
+==== Create a Connected App [[create-a-connected-app]]
 
-To do this through the UI: in Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*, and provide the following information:
+You can perform this step either with the user interface or with an API call.
+
+To create a connected app with the user interface, in Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*, and provide the following information:
 . *Application Name*: Enter a name.
 . *Redirect URIs*: This URL can be found in the Authentication Provider configuration. Navigate
 to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
@@ -470,7 +477,7 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 .. *Background Access*: Checked.
 . Select *Create Application*.
 
-Alternatively, you can perform this step directly through an API call, as in the example below using `cURL`. Remember to retrieve an authorization token from the platform:
+To create a connected app with an API call, follow this example using `cURL`. Remember to retrieve an authorization token from the platform:
     `curl -X POST \
       https://anypoint.mulesoft.com/accounts/api/connectedApplications \
       -H 'Accept: */*' \
@@ -479,8 +486,7 @@ Alternatively, you can perform this step directly through an API call, as in the
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}`
 
-
-==== Configure Auth Provider
+==== Configure Authentication Provider [[configure-authentication-provider]]
 
 . In *Setup*, search for *Auth. Providers* using the *Quick Find* box and select *Auth. Providers*.
 . Locate the *Anypoint* item and select *Edit*.
@@ -492,70 +498,69 @@ Alternatively, you can perform this step directly through an API call, as in the
 .. *Default Scopes*: `full offline_access`.
 . Select *Save*.
 
-  NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` in the Auth Provider configuration section.
+NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` in the Auth Provider configuration section.
 
-==== Configure IDP
+==== Configure IDP [[configure-idp]]
 
 Impersonation uses SAML, and it requires an IdP to be configured in both Anypoint Platform and Salesforce organizations. You can use Salesforce as an IdP.
 
-To set up SAML in your Salesforce org:
+To set up SAML in your Salesforce organization:
 
 . In *Setup*, search for *App Manager* using the *Quick Find* box and select *App Manager*.
 . Select *New Connected App* in the top right.
 . Provide the following information in the *Basic Information* section:
 .. *Connected App Name*: `Anypoint`.
-.. *Contact Email*: enter your email
-. Provice the following information in the *Web App Settings* section:
+.. *Contact Email*: Enter your email address.
+. Provide the following information in the *Web App Settings* section:
 .. Provide the *Start URL*: `https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>` or the location
-where you want users to be sent in the Anypoint Platform. You can find your Anypoint organization domain name under *Access Management* -> *Organization* and selecting the root organization.
+where you want users to be sent in the Anypoint Platform. You can find your Anypoint organization domain name by selecting *Access Management* -> *Organization* and then selecting the root organization.
 .. Select *Enable SAML*.
-.. Provide any string as *Entity Id*. This is also the Audience configuration in the Anypoint Platform.
+.. Provide any string as *Entity Id*. This is also the *Audience* configuration in the Anypoint Platform.
 .. Provide `https://anypoint.mulesoft.com/accounts/login/receive-id` in the *ACS URL*. SAML assertions are sent to this ACS URL.
 .. Select *Enable Single Logout*.
 .. Provide *Single Logout URL*: `https://anypoint.mulesoft.com/accounts/logout/receive-id`.
 .. Set *Single Logout Binding* to *HTTP Post*.
 .. Set *Subject Type* to *Username*.
 .. Set *Name ID* Format to *unspecified nameID format*.
-.. Set *Issuer* to *salesforce_org_domainname* (like `https://[YourOrgDomain].my.salesforce.com`.
+.. Set *Issuer* to *salesforce_org_domainname* (such as `https://[YourOrgDomain].my.salesforce.com`).
 .. Set *IdP Certificate* to *Default IdP Certificate*.
 .. Select *Save*.
 
-==== Set Up Custom Attributes
+==== Set Up Custom Attributes [[set-up-custom-attributes]]
 
 By default, Salesforce does not send first name and last name attributes of users, so you must add them explicitly. To do this:
 
 . In your connected app screen, select *Manage*.
-. Scroll to *Custom Attributes* 
-. Add the first name attribute
-.. select *New*. 
+. Scroll to *Custom Attributes*.
+. Add the first name attribute:
+.. Select *New*.
 .. Type `firstname` in the *Attribute key* field.
-.. Click *Insert Field*. 
+.. Select *Insert Field*.
 .. Select *$User >* -> *First Name* -> *Insert* -> *Save*.
-. Add the last name attribute
-.. select *New*. 
+. Add the last name attribute:
+.. Select *New*.
 .. Type `lastname` in the *Attribute key* field.
-.. Click *Insert Field*. 
+.. Click *Insert Field*.
 .. Select *$User >* -> *Last Name* -> *Insert* -> *Save*.
 
+==== Configure Anypoint Account with External Identity with SAML [[configure-anypoint-account-with-external-identity-with-saml]]
 
-==== Configure Anypoint account with external identity with SAML
+In your connected app screen, select *Manage*. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in the following steps.
 
-In your connected app screen, select *Manage*. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in the following steps. 
+Also, select *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
 
-Also, select *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file. 
-
-. Log-in to your Anypoint organization. 
+. Log-in to your Anypoint organization.
 . Navigate to *Access Management* -> *External Identity* -> *Identity Management* -> *SAML 2.0*.
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
 . Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
-. Set the *Public Key* to the public key extracted from the Metadata XML you downloaded in the `<ds:X509Certificate>` tag.
+. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 . Select *Save*.
 
-==== Configure and Authorize the ODATA Bridge to Perform Impersonation
+==== Configure and Authorize the ODATA Bridge to Perform Impersonation [[configure-and-authorize-the-odata-bridge-to-perform-impersonation]]
 
-This final step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate.
+This step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate.
 Use the same certificate that Salesforce IDP uses.
 
 . In *Salesforce Setup*, search for *Certificate and Key Management* using the *Quick Find* box and select *Certificate and Key Management*.
@@ -563,7 +568,7 @@ Use the same certificate that Salesforce IDP uses.
 . Enter a new Password.
 . Select *Export*.
 
-. Log-in to your Anypoint organization
+. Log in to your Anypoint organization
 . Go to *Access Management* -> *Environments*, select *Add Environment* and provide the following information:
 .. Set *Environment Name* to `ACM`.
 .. Select *Production*.
@@ -595,7 +600,7 @@ Use the same certificate that Salesforce IDP uses.
 For detailed information about creating secret groups and adding certificates, refer to
 https://docs.mulesoft.com/anypoint-security/asm-secret-group-creation-task#create-a-secret-group[Create a Secret Group (Anypoint Platform), role=external, window=_blank].
 
-==== Mapping Community User to Anypoint Role
+==== Mapping Community User to Anypoint Role [[mapping-community-user-to-anypoint-role]]
 
 . In your Anypoint Platform organization, navigate to *Access Management* and select *Roles*.
 . In *Exchange Viewers*, set a new External group called `Community User` and save it.
@@ -606,9 +611,8 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 . In Anypoint, select *Access Management* -> *External Identity* -> *Edit*.
 . Add your key in *Public Key*:
 .. Copy the key with no line breaks.
-.. After the key displayed in the *Public Key* field, add a comma (,) and then paste in the new key.
+.. After the key displayed in the *Public Key* field, add a comma (`,`) and then paste in the new key.
 .. Select *Save*.
-
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
