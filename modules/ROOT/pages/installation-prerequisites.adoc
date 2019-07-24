@@ -23,12 +23,15 @@ To install and configure the ACM managed package, use the following preparation 
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Enter a domain name for your organization. The name can include up to 34 letters, numbers, and hyphens.
 . Select *Check Availability*. If the name is already taken, choose a different one.
-. Select *Register Domain*. You will receive an email when your subdomain name is ready for testing. This process
-can take a few minutes.
+. Select *Register Domain*.
 
-You'll receive an email notification once your domain is registered. You can continue with the rest of the steps in the meantime.
+You will receive a notification email when your domain is registered and your
+subdomain name is ready for testing. This process can take a few minutes.
+You can continue with the next steps while you wait for the email.
 
-NOTE: A full custom domain name (also known as a *Vanity Domain*) can be configured too after you complete ACM installation and configuration. Refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=blank] when you're ready.
+NOTE: After you complete ACM installation and configuration, you can configure a full custom domain
+name, also known as a vanity domain. When you're ready, refer to the Salesforce knowledge article
+https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=blank].
 
 == Enable Communities Inside Your Organization
 
@@ -38,7 +41,7 @@ to enable communities inside your Salesforce organization.
 
 == Deploy Your Domain
 
-If you've received a notification email indicating your domain has been registered from the "Set Up and Register a Domain" step, continue with these steps. If you haven't please wait before continuing.
+Wait to receive the notification email that your domain is registered, and then continue with these steps.
 
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . If the screen indicates your domain is ready, select *Log in*.
