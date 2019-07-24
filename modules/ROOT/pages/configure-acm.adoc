@@ -549,7 +549,7 @@ In your connected app screen, select *Manage*. Make a note of the URIs under the
 
 Also, select *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
 
-. Log-in to your Anypoint organization.
+. Log in to your Anypoint organization.
 . Navigate to *Access Management* -> *External Identity* -> *Identity Management* -> *SAML 2.0*.
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
