@@ -170,19 +170,19 @@ In this section, you create the profile for guest community users. Users that ar
 .. In the *Profiles* page, select *Clone* next to the *Customer Community User* profile.
 .. In the *Profiles* page, enter `ACM [ Community Name ] User` for *Profile Name*.
 .. Select *Save*.
-.. Change permissions for *External Objects* and *Custom Objects*.
-.. Navigate to *Field-Level Security*.
-.. In the *Custom Field-Level Security* section, repeat the following step for the *AnypointApiVersions*,
+.. Change permissions for *External Objects* and *Custom Objects*:
+
+... Navigate to *Field-Level Security*.
+... In the *Custom Field-Level Security* section, repeat the following step for the *AnypointApiVersions*,
 *AnypointApplications*,
 *AnypointContracts*,
 *AnypointApiInstances*,
 *AnypointApiTiers*, and
-*CommunityApi* items:
-.. Select *View* and then *Edit* .
+*CommunityApi* items: 
 
+.... Select *View* and then *Edit* .
 // Which fields need to be updated?
-
-In *Object Settings*, select *Documents*, and enable the *Read* permission.
+.... In *Object Settings*, select *Documents*, and enable the *Read* permission.
 
 === Configure Members [[configure-members]]
 
