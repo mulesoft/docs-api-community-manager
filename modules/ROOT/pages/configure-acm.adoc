@@ -544,7 +544,7 @@ By default, Salesforce does not send first name and last name attributes of user
 .. Click *Insert Field*.
 .. Select *$User >* -> *Last Name* -> *Insert* -> *Save*.
 
-=== Configure External Identity in Your Anypoint Organization[[configure-external-identity-in-your-anypoint-organization]]
+=== Configure External Identity in Your Anypoint Organization [[configure-external-identity-in-your-anypoint-organization]]
 
 In your connected app screen, select *Manage*. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in the following steps.
 
