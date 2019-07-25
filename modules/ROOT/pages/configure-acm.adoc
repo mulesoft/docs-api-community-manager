@@ -103,7 +103,7 @@ The *ACM Control Panel* is the interface your community administrators and opera
 
 === Create a Community [[create-a-community]]
 
-. If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Community Overview, role=external, window=_blank].
+. If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=_blank].
 . Navigate to *Setup*.
 . In the *Quick Find* box, enter *All Communities* and then select *All Communities*.
 . Select *New Community*. All communities templates are listed.
@@ -166,6 +166,7 @@ You can define much more advanced moderation and review rules. You can find more
 . Confirm the information and select *Done*.
 
 If you want to organize CMS content using Topics:
+
 . Go to *ACM Control Panel*, select *Manage CMS Content*, and select *Topics*.
 . Select the topics you want to enable to organize CMS content and select *Enable for content* in the top right.
 
@@ -470,6 +471,7 @@ Impersonation uses SAML, and it requires an Identity Provider (IdP) to be config
 You can perform this step either with the user interface or with an API call.
 
 To create a connected app with the user interface, in Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*, and provide the following information:
+
 . *Application Name*: Enter a name.
 . *Redirect URIs*: This URL can be found in the Authentication Provider configuration. Navigate
 to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
@@ -544,7 +546,7 @@ By default, Salesforce does not send first name and last name attributes of user
 .. Click *Insert Field*.
 .. Select *$User >* -> *Last Name* -> *Insert* -> *Save*.
 
-=== Configure External Identity in Your Anypoint Organization[[configure-external-identity-in-your-anypoint-organization]]
+=== Configure External Identity in Your Anypoint Organization [[configure-external-identity-in-your-anypoint-organization]]
 
 In your connected app screen, select *Manage*. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in the following steps.
 

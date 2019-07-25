@@ -9,6 +9,6 @@ NOTE: Installing, updating or configuring API Community Manager must be done by 
 The following sections guide you through installing and configuring API Community Manager:
 
 * xref:installation-prerequisites.adoc[Installation Prerequisites]
-* xref:install-acm.adoc[Install ACM]
+* xref:install-acm.adoc[Install ACM Package]
 * xref:configure-acm.adoc[Configure ACM]
 * xref:install-validate.adoc[Verify the Installation]
