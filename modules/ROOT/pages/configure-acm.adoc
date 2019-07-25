@@ -76,13 +76,13 @@ After authenticating the External Data Source, provide the credentials of an Any
 *Password* fields, respectively, for a system user with read-only privileges in your Anypoint Platform organization.
 . Select *Save*.
 
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com` to `https://eu1.anypoint.mulesoft.com`.
+NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com+` to `+https://eu1.anypoint.mulesoft.com+`.
 
 == Enable *ACM Control Panel* [[enable-acm-control-panel]]
 
 The *ACM Control Panel* is the interface your community administrators and operators will use to operate your communities. It is available in the *App Launcher* where it is the first icon displayed in the main navigation bar. To ensure it is available for admin users:
 
-. In *Setup*, search for *App Manager* using the *Quick Find* box and select *App Manager*. 
+. In *Setup*, search for *App Manager* using the *Quick Find* box and select *App Manager*.
 . Locate the *API Community Manager* item, open the drop down menu on the right end of the row and select *Edit*.
 . Select *Navigation Items* on the left panel, highlight the *ACM Administrator* item under the *Available Items* box, and use the arrow buttons to move it to the *Selected Items* box. Select *Save*.
 . Select *Back* at the top right.
@@ -92,7 +92,7 @@ The *ACM Control Panel* is the interface your community administrators and opera
 
 == Update Your User Role and Permissions [[update-your-user-role-and-permissions]]
 
-. In *Setup*, search for *Users* using the *Quick Find* box and select *Users*. 
+. In *Setup*, search for *Users* using the *Quick Find* box and select *Users*.
 . Locate your username and select *Edit*.
 . Set the *Role* for your account. This can be any role from the list, but cannot be none. If you don't see any roles in the dropdown list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
 . Select *Salesforce CRM Content User*.
@@ -495,12 +495,12 @@ To create a connected app with an API call, follow this example using `cURL`. Re
 . Provide the following information:
 .. *Consumer Key*: The application ID of the Connect App created in Anypoint.
 .. *Consumer Secret*: The application secret of the Connect App created in Anypoint.
-.. *Authorize Endpoint URL*: `https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize`
-.. *Token Endpoint URL*: `https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token`
+.. *Authorize Endpoint URL*: `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+`
+.. *Token Endpoint URL*: `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`
 .. *Default Scopes*: `full offline_access`.
 . Select *Save*.
 
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` in the Auth Provider configuration section.
+NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com/accounts/oauth2/authorize+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize+` and `+https://anypoint.mulesoft.com/accounts/oauth2/token+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/token+` in the Auth Provider configuration section.
 
 === Configure Salesforce as a SAML Identity Provider [[configure-idp]]
 
@@ -512,17 +512,17 @@ To set up SAML in your Salesforce organization:
 .. *Connected App Name*: `Anypoint`.
 .. *Contact Email*: Enter your email address.
 . Provide the following information in the *Web App Settings* section:
-.. Provide the *Start URL*: `https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>` or the location
+.. Provide the *Start URL*: `+https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>+` or the location
 where you want users to be sent in the Anypoint Platform. You can find your Anypoint organization domain name by selecting *Access Management* -> *Organization* and then selecting the root organization.
 .. Select *Enable SAML*.
 .. Provide any string as *Entity Id*. This is also the *Audience* configuration in the Anypoint Platform.
-.. Provide `https://anypoint.mulesoft.com/accounts/login/receive-id` in the *ACS URL*. SAML assertions are sent to this ACS URL.
+.. Provide `+https://anypoint.mulesoft.com/accounts/login/receive-id+` in the *ACS URL*. SAML assertions are sent to this ACS URL.
 .. Select *Enable Single Logout*.
-.. Provide *Single Logout URL*: `https://anypoint.mulesoft.com/accounts/logout/receive-id`.
+.. Provide *Single Logout URL*: `+https://anypoint.mulesoft.com/accounts/logout/receive-id+`.
 .. Set *Single Logout Binding* to *HTTP Post*.
 .. Set *Subject Type* to *Username*.
 .. Set *Name ID* Format to *unspecified nameID format*.
-.. Set *Issuer* to *salesforce_org_domainname* (such as `https://[YourOrgDomain].my.salesforce.com`).
+.. Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
 .. Set *IdP Certificate* to *Default IdP Certificate*.
 .. Select *Save*.
 
@@ -624,8 +624,8 @@ After you finish all the configuration, make sure you re-authenticate the Exerna
 If your Anypoint Platform organization is hosted in the EU, perform the following additional configuration
 steps to enable access to the EU instance of the Anypoint Management Plane.
 
-* Remote site settings: Add the new site `AnypointEu` with the URL `https://eu1.anypoint.mulesoft.com`.
+* Remote site settings: Add the new site `AnypointEu` with the URL `+https://eu1.anypoint.mulesoft.com+`.
 * CSP trusted sites: Add the following sites:
-** `https://eu1.anypoint.mulesoft.com`
-** `https://exchange2-file-upload-service-kprod-eu.s3.eu-central-1.amazonaws.com`
-** `https://exchange2-asset-manager-kprod-eu.s3.amazonaws.com`
+** `+https://eu1.anypoint.mulesoft.com+`
+** `+https://exchange2-file-upload-service-kprod-eu.s3.eu-central-1.amazonaws.com+`
+** `+https://exchange2-asset-manager-kprod-eu.s3.amazonaws.com+`

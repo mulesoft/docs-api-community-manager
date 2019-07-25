@@ -4,8 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Refer to this information if you experience problems with the steps in 
-xref:configure-acm.adoc#authenticate-the-external-data-source[Authenticate the External Data Source]. 
+Refer to this information if you experience problems with the steps in
+xref:configure-acm.adoc#authenticate-the-external-data-source[Authenticate the External Data Source].
 The external data source specifies how to access the MuleSoft Anypoint system.
 
 == Authentication Provider Configuration
@@ -30,10 +30,10 @@ The external data source specifies how to access the MuleSoft Anypoint system.
 |`[CONTACT MULESOFT SUPPORT]`
 
 |Authorize Endpoint URL
-|`https://anypoint.mulesoft.com/accounts/oauth2/authorize`
+|`+https://anypoint.mulesoft.com/accounts/oauth2/authorize+`
 
 |Token Endpoint URL
-|`https://anypoint.mulesoft.com/accounts/oauth2/token`
+|`+https://anypoint.mulesoft.com/accounts/oauth2/token+`
 
 |Default Scopes
 |`refresh_token`
