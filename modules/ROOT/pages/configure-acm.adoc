@@ -44,9 +44,9 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 * <<set-up-user-impersonation>>
 ** <<create-a-connected-app>>
 ** <<configure-authentication-provider>>
-** <<configure-idp>>
+** <<configure-salesforce-as-a-saml-identity-provider>>
 ** <<set-up-custom-attributes>>
-** <<configure-anypoint-account-with-external-identity-with-saml>>
+** <<configure-external-identity-in-your-anypoint-organization>>
 ** <<configure-and-authorize-the-odata-bridge-to-perform-impersonation>>
 ** <<mapping-community-user-to-anypoint-role>>
 ** <<re-authenticate-the-external-data-source>>
@@ -503,7 +503,7 @@ To create a connected app with an API call, follow this example using `cURL`. Re
 
 NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com/accounts/oauth2/authorize+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize+` and `+https://anypoint.mulesoft.com/accounts/oauth2/token+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/token+` in the Auth Provider configuration section.
 
-=== Configure Salesforce as a SAML Identity Provider [[configure-idp]]
+=== Configure Salesforce as a SAML Identity Provider [[configure-salesforce-as-a-saml-identity-provider]]
 
 To set up SAML in your Salesforce organization:
 
@@ -544,7 +544,7 @@ By default, Salesforce does not send first name and last name attributes of user
 .. Click *Insert Field*.
 .. Select *$User >* -> *Last Name* -> *Insert* -> *Save*.
 
-=== Configure External Identity in Your Anypoint Organization[[configure-anypoint-account-with-external-identity-with-saml]]
+=== Configure External Identity in Your Anypoint Organization[[configure-external-identity-in-your-anypoint-organization]]
 
 In your connected app screen, select *Manage*. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in the following steps.
 
