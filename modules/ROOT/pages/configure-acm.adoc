@@ -617,7 +617,7 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 
 === Re-authenticate the External Data Source [[re-authenticate-the-external-data-source]]
 
-Re-authenticate the Exernal Data Source as described in <<authenticate-the-external-data-source>>.
+Re-authenticate the External Data Source as described in <<authenticate-the-external-data-source>>.
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
