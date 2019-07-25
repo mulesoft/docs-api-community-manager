@@ -41,14 +41,15 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 **** <<create-a-final-approval-action>>
 **** <<activate-the-approval-process>>
 
-** <<set-up-user-impersonation>>
-*** <<create-a-connected-app>>
-*** <<configure-authentication-provider>>
-*** <<configure-idp>>
-*** <<set-up-custom-attributes>>
-*** <<configure-anypoint-account-with-external-identity-with-saml>>
-*** <<configure-and-authorize-the-odata-bridge-to-perform-impersonation>>
-*** <<mapping-community-user-to-anypoint-role>>
+* <<set-up-user-impersonation>>
+** <<create-a-connected-app>>
+** <<configure-authentication-provider>>
+** <<configure-idp>>
+** <<set-up-custom-attributes>>
+** <<configure-anypoint-account-with-external-identity-with-saml>>
+** <<configure-and-authorize-the-odata-bridge-to-perform-impersonation>>
+** <<mapping-community-user-to-anypoint-role>>
+** <<re-authenticate-the-external-data-source>>
 
 * <<configure-eu-account>>
 
@@ -543,7 +544,7 @@ By default, Salesforce does not send first name and last name attributes of user
 .. Click *Insert Field*.
 .. Select *$User >* -> *Last Name* -> *Insert* -> *Save*.
 
-=== Configure External Identity in your Anypoint Organization[[configure-anypoint-account-with-external-identity-with-saml]]
+=== Configure External Identity in Your Anypoint Organization[[configure-anypoint-account-with-external-identity-with-saml]]
 
 In your connected app screen, select *Manage*. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in the following steps.
 
@@ -614,10 +615,9 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 .. After the key displayed in the *Public Key* field, add a comma (`,`) and then paste in the new key.
 .. Select *Save*.
 
-=== Re-authenticate the External Data Source
+=== Re-authenticate the External Data Source [[re-authenticate-the-external-data-source]]
 
-After you finish all the configuration, make sure you re-authenticate the Exernal Data Source as described in <<authenticate-the-external-data-source>>.
-
+Re-authenticate the Exernal Data Source as described in <<authenticate-the-external-data-source>>.
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
