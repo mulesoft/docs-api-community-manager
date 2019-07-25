@@ -23,4 +23,3 @@
  ** xref:licensing-overview.adoc[Licensing Overview]
  ** xref:security.adoc[Security]
  ** xref:reference.adoc[Configuration Reference]
-* xref:release-notes.adoc[Release Notes]
