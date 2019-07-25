@@ -456,13 +456,15 @@ viewing. Remove the first 2 characters and paste the remaining information in
 the *Approver Id* field. For example, if the unique ID is `2F0052D000001QpG1`,
 paste `0052D000001QpG1` in the *Approver Id* field.
 
-=== Set Up User Impersonation [[set-up-user-impersonation]]
+== Set Up User Impersonation [[set-up-user-impersonation]]
 
 Impersonation links each community member to an Anypoint user. This connects the
 Anypoint and community users and their client applications, so that applications are
-created under the correct user, and actions in audit logs are recorded against the correct user.
+created under the correct user, and actions in audit logs are recorded accurately.
 
-==== Create a Connected App [[create-a-connected-app]]
+Impersonation uses SAML, and it requires an Identity Provider (IdP) to be configured in both Anypoint Platform and Salesforce organizations. You can use Salesforce as an IdP, as described in the following sections.
+
+=== Create a Connected App [[create-a-connected-app]]
 
 You can perform this step either with the user interface or with an API call.
 
@@ -486,7 +488,7 @@ To create a connected app with an API call, follow this example using `cURL`. Re
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}`
 
-==== Configure Authentication Provider [[configure-authentication-provider]]
+=== Configure Authentication Provider [[configure-authentication-provider]]
 
 . In *Setup*, search for *Auth. Providers* using the *Quick Find* box and select *Auth. Providers*.
 . Locate the *Anypoint* item and select *Edit*.
@@ -500,9 +502,7 @@ To create a connected app with an API call, follow this example using `cURL`. Re
 
 NOTE: If your Anypoint Platform organization is hosted in the EU, change `https://anypoint.mulesoft.com/accounts/oauth2/authorize` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize` and `https://anypoint.mulesoft.com/accounts/oauth2/token` to `https://eu1.anypoint.mulesoft.com/accounts/oauth2/token` in the Auth Provider configuration section.
 
-==== Configure IDP [[configure-idp]]
-
-Impersonation uses SAML, and it requires an IdP to be configured in both Anypoint Platform and Salesforce organizations. You can use Salesforce as an IdP.
+=== Configure Salesforce as a SAML Identity Provider [[configure-idp]]
 
 To set up SAML in your Salesforce organization:
 
@@ -526,7 +526,7 @@ where you want users to be sent in the Anypoint Platform. You can find your Anyp
 .. Set *IdP Certificate* to *Default IdP Certificate*.
 .. Select *Save*.
 
-==== Set Up Custom Attributes [[set-up-custom-attributes]]
+=== Set Up Custom Attributes [[set-up-custom-attributes]]
 
 By default, Salesforce does not send first name and last name attributes of users, so you must add them explicitly. To do this:
 
@@ -543,7 +543,7 @@ By default, Salesforce does not send first name and last name attributes of user
 .. Click *Insert Field*.
 .. Select *$User >* -> *Last Name* -> *Insert* -> *Save*.
 
-==== Configure Anypoint Account with External Identity with SAML [[configure-anypoint-account-with-external-identity-with-saml]]
+=== Configure External Identity in your Anypoint Organization[[configure-anypoint-account-with-external-identity-with-saml]]
 
 In your connected app screen, select *Manage*. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in the following steps.
 
@@ -558,7 +558,7 @@ Also, select *Download metadata* and retrieve the public key in the `<ds:X509Cer
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 . Select *Save*.
 
-==== Configure and Authorize the ODATA Bridge to Perform Impersonation [[configure-and-authorize-the-odata-bridge-to-perform-impersonation]]
+=== Configure and Authorize the ODATA Bridge to Perform Impersonation [[configure-and-authorize-the-odata-bridge-to-perform-impersonation]]
 
 This step requires a private key or a certificate, and a keystore (JKS) containing that key or certificate.
 Use the same certificate that Salesforce IDP uses.
@@ -600,7 +600,7 @@ Use the same certificate that Salesforce IDP uses.
 For detailed information about creating secret groups and adding certificates, refer to
 https://docs.mulesoft.com/anypoint-security/asm-secret-group-creation-task#create-a-secret-group[Create a Secret Group (Anypoint Platform), role=external, window=_blank].
 
-==== Mapping Community User to Anypoint Role [[mapping-community-user-to-anypoint-role]]
+=== Mapping Community User to Anypoint Role [[mapping-community-user-to-anypoint-role]]
 
 . In your Anypoint Platform organization, navigate to *Access Management* and select *Roles*.
 . In *Exchange Viewers*, set a new External group called `Community User` and save it.
@@ -613,6 +613,11 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 .. Copy the key with no line breaks.
 .. After the key displayed in the *Public Key* field, add a comma (`,`) and then paste in the new key.
 .. Select *Save*.
+
+=== Re-authenticate the External Data Source
+
+After you finish all the configuration, make sure you re-authenticate the Exernal Data Source as described in <<authenticate-the-external-data-source>>.
+
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
