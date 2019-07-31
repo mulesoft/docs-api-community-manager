@@ -483,6 +483,7 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 . Select *Create Application*.
 
 To create a connected app with an API call, follow this example using `cURL`. Remember to retrieve an authorization token from the platform:
+----
     `curl -X POST \
       https://anypoint.mulesoft.com/accounts/api/connectedApplications \
       -H 'Accept: */*' \
@@ -490,6 +491,7 @@ To create a connected app with an API call, follow this example using `cURL`. Re
       -H 'Authorization: Bearer ***token***' \
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'`
+----
 
 === Configure Authentication Provider [[configure-authentication-provider]]
 
