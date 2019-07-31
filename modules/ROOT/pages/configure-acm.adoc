@@ -489,7 +489,7 @@ To create a connected app with an API call, follow this example using `cURL`. Re
       -H 'Accept-Encoding: gzip, deflate' \
       -H 'Authorization: Bearer ***token***' \
       -H 'Host:anypoint.mulesoft.com' \
-      -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}`
+      -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'`
 
 === Configure Authentication Provider [[configure-authentication-provider]]
 
