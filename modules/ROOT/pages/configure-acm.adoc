@@ -506,7 +506,7 @@ To create a connected app with an API call, follow this example using `cURL`. Re
 .. *Default Scopes*: `full offline_access`.
 . Select *Save*.
 
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com/accounts/oauth2/authorize+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize+` and `+https://anypoint.mulesoft.com/accounts/oauth2/token+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/token+` in the Auth Provider configuration section.
+NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` to `+https://eu1.anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` and `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` to `+https://eu1.anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` in the Auth Provider configuration section.
 
 === Configure Salesforce as a SAML Identity Provider [[configure-salesforce-as-a-saml-identity-provider]]
 
