@@ -43,6 +43,8 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 
 * <<set-up-user-impersonation>>
 ** <<create-a-connected-app>>
+*** <<create-a-connected-app-with-the-user-interface>>
+*** <<create-a-connected-app-with-an-api-call>>
 ** <<configure-authentication-provider>>
 ** <<configure-salesforce-as-a-saml-identity-provider>>
 ** <<set-up-custom-attributes>>
@@ -470,6 +472,8 @@ Impersonation uses SAML, and it requires an Identity Provider (IdP) to be config
 
 You can perform this step either with the user interface or with an API call.
 
+==== Create a Connected App with the User Interface [[create-a-connected-app-with-the-user-interface]]
+
 To create a connected app with the user interface, in Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*, and provide the following information:
 
 . *Application Name*: Enter a name.
@@ -482,17 +486,71 @@ to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
 .. *Background Access*: Checked.
 . Select *Create Application*.
 
-To create a connected app with an API call, follow this example using `cURL`. Remember to retrieve an authorization token from the platform:
+==== Create a Connected App with an API Call [[create-a-connected-app-with-an-api-call]]
+
+To create a connected app with an API call, follow this example using `cURL`.
+
+Get an authorization token from the platform:
+
+----
+    curl --silent https://anypoint.mulesoft.com/accounts/login -XPOST \
+      -d 'username=<anypoint username>&password=<anypoint password>'
+----
+
+This returns a response like this:
+
+----
+    {
+      "access_token": "5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7",
+      "token_type": "bearer",
+      "redirectUrl": "/home/"
+    }
+----
+
+Note the `access_token` value.
+
+Use the next `cURL` example to register an external client in Anypoint for OpenID authentication.
+
+Replace the access token in the authorization header with the `access_token` value.
+
+Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find the domain name by logging in to your Salesforce organization, selecting *Setup*, and selecting the section *My Domain*.
 
 ----
     curl -X POST \
       https://anypoint.mulesoft.com/accounts/api/connectedApplications \
       -H 'Accept: */*' \
       -H 'Accept-Encoding: gzip, deflate' \
-      -H 'Authorization: Bearer ***token***' \
+      -H 'Authorization: Bearer 5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7' \
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
 ----
+
+The `cURL` command will return a response like this:
+
+----
+    {
+      "client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
+      "client_secret": "9509XXXXXXXXXXXXXXXXXXXXXXXXC10E",
+      "client_name": "ACM Integration Client",
+      "redirect_uris": [
+        "https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"
+      ],
+      "grant_types": [
+        "authorization_code",
+        "refresh_token"
+      ],
+      "public_keys": [],
+      "scopes": [
+        "offline_access",
+        "full"
+      ],
+      "enabled": true,
+      "owner_org_id": "f377XXXX-XXXX-XXXX-XXXX-XXXXXXXX9d08",
+      "as_id": "anypoint"
+    }
+----
+
+Note the `client_id` and `client_secret` values.
 
 === Configure Authentication Provider [[configure-authentication-provider]]
 
