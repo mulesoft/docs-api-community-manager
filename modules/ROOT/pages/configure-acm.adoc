@@ -10,7 +10,9 @@ NOTE: Installing, updating or configuring ACM must be done by a user account wit
 
 NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurrences of `anypoint.mulesoft.com` domain by `eu1.anypoint.mulesoft.com` in all the steps in this section.
 
-* <<authenticate-the-external-data-source>>
+* <<create-and-authenticate-the-external-data-source>>
+** <<create-your-authentication-provider>>
+** <<authorize-and-authenticate-your-external-data-source>>
 * <<enable-acm-control-panel>>
 * <<update-your-user-role-and-permissions>>
 * <<communities>>
@@ -56,11 +58,26 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 * <<configure-eu-account>>
 
 
-== Authenticate the External Data Source [[authenticate-the-external-data-source]]
+== Create and Authenticate the External Data Source [[create-and-authenticate-the-external-data-source]]
 
 The external data source specifies how ACM components and data objects interact securely with your MuleSoft Anypoint organization.
 
-To authorize and authenticate your External Data Source:
+=== Create Your Authentication Provider [[create-your-authentication-provider]]
+
+NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com+` to `+https://eu1.anypoint.mulesoft.com+`.
+
+. In *Setup*, select *Auth. Providers* -> *New*.
+. In *Provider type* select *Open ID Connect*.
+. Set the *Name* to `Anypoint`.
+. Set the *Consumer Key* to the application ID of the Connect App created in Anypoint.
+. Set the *Consumer Secret* to the application secret of the Connect App created in Anypoint.
+. Set the *Authorize Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` .
+. Set the *Token Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` .
+. Set the *Default Scopes* to `full offline_access`.
+
+Note: Remember to associate the external data source with this authentication provider.
+
+=== Authorize and Authenticate Your External Data Source [[authorize-and-authenticate-your-external-data-source]]
 
 . Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*.
 . Locate the *Exchange* item and then select *Edit*.
@@ -78,8 +95,6 @@ After authenticating the External Data Source, provide the credentials of an Any
 . In the *Authentication* section, enter the Anypoint username and password in the *Username* and
 *Password* fields, respectively, for a system user with read-only privileges in your Anypoint Platform organization.
 . Select *Save*.
-
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com+` to `+https://eu1.anypoint.mulesoft.com+`.
 
 == Enable *ACM Control Panel* [[enable-acm-control-panel]]
 
@@ -680,7 +695,7 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 
 === Re-authenticate the External Data Source [[re-authenticate-the-external-data-source]]
 
-Re-authenticate the External Data Source as described in <<authenticate-the-external-data-source>>.
+Re-authenticate the External Data Source as described in <<create-and-authenticate-the-external-data-source>>.
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
