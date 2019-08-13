@@ -4,4 +4,4 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-If you experience problems with the steps in xref:configure-acm.adoc#authenticate-the-external-data-source[Authenticate the External Data Source], please contact MuleSoft Support. The external data source specifies how to access the MuleSoft Anypoint system.
+If you experience problems with the steps in xref:configure-acm.adoc#create-and-authenticate-the-external-data-source[Create and Authenticate the External Data Source], please contact MuleSoft Support. The external data source specifies how to access the MuleSoft Anypoint system.
