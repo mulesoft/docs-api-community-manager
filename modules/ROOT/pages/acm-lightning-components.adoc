@@ -211,6 +211,16 @@ The application listing component shows applications that use an API.
 
 // check *New Application URL* description
 
+== Learn More Button
+
+The learn more button enables users to access a CMS page with additional information about an API.
+
+* *API*: Choose the API to show.
+* *Button Label*: Set the button label. Default is `Learn more about this API`.
+* *Button Align*: Set button alignment to left, right, or center.
+* *API Name*: Choose the API name to show.
+* *API Version*: Choose the API version to show.
+
 == Login Form
 
 The login form component allows members to log in to the portal.
