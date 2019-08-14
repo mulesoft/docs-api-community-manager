@@ -10,7 +10,12 @@ NOTE: Installing, updating or configuring ACM must be done by a user account wit
 
 NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurrences of `anypoint.mulesoft.com` domain by `eu1.anypoint.mulesoft.com` in all the steps in this section.
 
-* <<authenticate-the-external-data-source>>
+* <<create-and-authenticate-the-external-data-source>>
+** <<create-a-connected-app>>
+*** <<create-a-connected-app-with-the-user-interface>>
+*** <<create-a-connected-app-with-an-api-call>>
+** <<create-your-authentication-provider>>
+** <<authorize-and-authenticate-your-external-data-source>>
 * <<enable-acm-control-panel>>
 * <<update-your-user-role-and-permissions>>
 * <<communities>>
@@ -42,8 +47,6 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 **** <<activate-the-approval-process>>
 
 * <<set-up-user-impersonation>>
-** <<create-a-connected-app>>
-** <<configure-authentication-provider>>
 ** <<configure-salesforce-as-a-saml-identity-provider>>
 ** <<set-up-custom-attributes>>
 ** <<configure-external-identity-in-your-anypoint-organization>>
@@ -54,11 +57,111 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 * <<configure-eu-account>>
 
 
-== Authenticate the External Data Source [[authenticate-the-external-data-source]]
+== Create and Authenticate the External Data Source [[create-and-authenticate-the-external-data-source]]
 
 The external data source specifies how ACM components and data objects interact securely with your MuleSoft Anypoint organization.
 
-To authorize and authenticate your External Data Source:
+=== Create a Connected App [[create-a-connected-app]]
+
+You can perform this step either with the user interface or with an API call.
+
+==== Create a Connected App with the User Interface [[create-a-connected-app-with-the-user-interface]]
+
+To create a connected app with the user interface, in Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*, and provide the following information:
+
+. *Application Name*: Enter a name.
+. *Redirect URIs*: This URL can be found in the Authentication Provider configuration. Navigate
+to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
+. *User Grant Types*
+.. *Authorization Code*: Checked.
+.. *Refresh Token*: Checked.
+.. *Full Access*: Checked
+.. *Background Access*: Checked.
+. Select *Create Application*.
+
+==== Create a Connected App with an API Call [[create-a-connected-app-with-an-api-call]]
+
+To create a connected app with an API call, follow this example using `cURL`.
+
+Get an authorization token from the platform:
+
+----
+    curl --silent https://anypoint.mulesoft.com/accounts/login -XPOST \
+      -d 'username=<anypoint username>&password=<anypoint password>'
+----
+
+This returns a response like this:
+
+----
+    {
+      "access_token": "5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7",
+      "token_type": "bearer",
+      "redirectUrl": "/home/"
+    }
+----
+
+Note the `access_token` value.
+
+Use the next `cURL` example to register an external client in Anypoint for OpenID authentication.
+
+Replace the access token in the authorization header with the `access_token` value.
+
+Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find the domain name by logging in to your Salesforce organization, selecting *Setup*, and selecting the section *My Domain*.
+
+----
+    curl -X POST \
+      https://anypoint.mulesoft.com/accounts/api/connectedApplications \
+      -H 'Accept: */*' \
+      -H 'Accept-Encoding: gzip, deflate' \
+      -H 'Authorization: Bearer 5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7' \
+      -H 'Host:anypoint.mulesoft.com' \
+      -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
+----
+
+The `cURL` command will return a response like this:
+
+----
+    {
+      "client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
+      "client_secret": "9509XXXXXXXXXXXXXXXXXXXXXXXXC10E",
+      "client_name": "ACM Integration Client",
+      "redirect_uris": [
+        "https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"
+      ],
+      "grant_types": [
+        "authorization_code",
+        "refresh_token"
+      ],
+      "public_keys": [],
+      "scopes": [
+        "offline_access",
+        "full"
+      ],
+      "enabled": true,
+      "owner_org_id": "f377XXXX-XXXX-XXXX-XXXX-XXXXXXXX9d08",
+      "as_id": "anypoint"
+    }
+----
+
+Note the `client_id` and `client_secret` values.
+
+=== Create Your Authentication Provider [[create-your-authentication-provider]]
+
+NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com+` to `+https://eu1.anypoint.mulesoft.com+`.
+
+. In *Setup*, search for *Auth. Providers* using the *Quick Find* box and select *Auth. Providers* -> *New*.
+. In *Provider type* select *Open ID Connect*.
+. Set the *Name* to `Anypoint`.
+. Set the *Consumer Key* to the application ID of the Connect App created in Anypoint.
+. Set the *Consumer Secret* to the application secret of the Connect App created in Anypoint.
+. Set the *Authorize Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` .
+. Set the *Token Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` .
+. Set the *Default Scopes* to `full offline_access`.
+. Select *Save*.
+
+Note: Remember to associate the external data source with this authentication provider.
+
+=== Authorize and Authenticate Your External Data Source [[authorize-and-authenticate-your-external-data-source]]
 
 . Search for *External Data Source* in the *Quick Find* box and then select *External Data Sources*.
 . Locate the *Exchange* item and then select *Edit*.
@@ -76,8 +179,6 @@ After authenticating the External Data Source, provide the credentials of an Any
 . In the *Authentication* section, enter the Anypoint username and password in the *Username* and
 *Password* fields, respectively, for a system user with read-only privileges in your Anypoint Platform organization.
 . Select *Save*.
-
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com+` to `+https://eu1.anypoint.mulesoft.com+`.
 
 == Enable *ACM Control Panel* [[enable-acm-control-panel]]
 
@@ -466,45 +567,6 @@ created under the correct user, and actions in audit logs are recorded accuratel
 
 Impersonation uses SAML, and it requires an Identity Provider (IdP) to be configured in both Anypoint Platform and Salesforce organizations. You can use Salesforce as an IdP, as described in the following sections.
 
-=== Create a Connected App [[create-a-connected-app]]
-
-You can perform this step either with the user interface or with an API call.
-
-To create a connected app with the user interface, in Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*, and provide the following information:
-
-. *Application Name*: Enter a name.
-. *Redirect URIs*: This URL can be found in the Authentication Provider configuration. Navigate
-to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
-. *User Grant Types*
-.. *Authorization Code*: Checked.
-.. *Refresh Token*: Checked.
-.. *Full Access*: Checked
-.. *Background Access*: Checked.
-. Select *Create Application*.
-
-To create a connected app with an API call, follow this example using `cURL`. Remember to retrieve an authorization token from the platform:
-    `curl -X POST \
-      https://anypoint.mulesoft.com/accounts/api/connectedApplications \
-      -H 'Accept: */*' \
-      -H 'Accept-Encoding: gzip, deflate' \
-      -H 'Authorization: Bearer ***token***' \
-      -H 'Host:anypoint.mulesoft.com' \
-      -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}`
-
-=== Configure Authentication Provider [[configure-authentication-provider]]
-
-. In *Setup*, search for *Auth. Providers* using the *Quick Find* box and select *Auth. Providers*.
-. Locate the *Anypoint* item and select *Edit*.
-. Provide the following information:
-.. *Consumer Key*: The application ID of the Connect App created in Anypoint.
-.. *Consumer Secret*: The application secret of the Connect App created in Anypoint.
-.. *Authorize Endpoint URL*: `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+`
-.. *Token Endpoint URL*: `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`
-.. *Default Scopes*: `full offline_access`.
-. Select *Save*.
-
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com/accounts/oauth2/authorize+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/authorize+` and `+https://anypoint.mulesoft.com/accounts/oauth2/token+` to `+https://eu1.anypoint.mulesoft.com/accounts/oauth2/token+` in the Auth Provider configuration section.
-
 === Configure Salesforce as a SAML Identity Provider [[configure-salesforce-as-a-saml-identity-provider]]
 
 To set up SAML in your Salesforce organization:
@@ -619,7 +681,7 @@ you must add this key in the External Identity configuration on Anypoint, as sho
 
 === Re-authenticate the External Data Source [[re-authenticate-the-external-data-source]]
 
-Re-authenticate the External Data Source as described in <<authenticate-the-external-data-source>>.
+Re-authenticate the External Data Source as described in <<create-and-authenticate-the-external-data-source>>.
 
 == Additional Configuration for EU Hosted Organizations [[configure-eu-account]]
 
