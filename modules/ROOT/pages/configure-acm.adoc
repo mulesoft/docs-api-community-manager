@@ -159,7 +159,7 @@ NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https
 . Set the *Default Scopes* to `full offline_access`.
 . Select *Save*.
 
-Note: Remember to associate the external data source with this authentication provider.
+NOTE: Remember to associate the external data source with this authentication provider.
 
 === Authorize and Authenticate Your External Data Source [[authorize-and-authenticate-your-external-data-source]]
 
