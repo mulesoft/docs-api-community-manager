@@ -58,6 +58,8 @@ The interactive API console component shows information about your APIs and thei
 
 Endpoints are displayed in alphabetical order, even when the original API specification listed them in a different order.
 
+The console components are the *API Console*, *API Console Documentation*, *API Console Instances*, *API Console Navigation*, and *API Console Request Panel*. In the Builder you can add multiple console components to the same page. If you do this, any change in one console component will also be visible in the other console components on the same page that show the same API. For example, selecting the *Summary* tab in one API Console will select the *Summary* tab in other API Consoles on the same page that show the same API.
+
 * *API*: Choose the API to display.
 * *Show Documentation Pages*: Show the documentation pages for the API.
 * *Link Hover Color*: Set the color of links when the cursor hovers over them.
