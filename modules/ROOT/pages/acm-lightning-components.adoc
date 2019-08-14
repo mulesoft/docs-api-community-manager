@@ -56,6 +56,8 @@ The API carousel component shows a horizontally scrollable set of API cards.
 
 The interactive API console component shows information about your APIs and their methods, and allows users to test the methods by sending requests.
 
+Endpoints are displayed in alphabetical order, even when the original API specification listed them in a different order.
+
 * *API*: Choose the API to display.
 * *Show Documentation Pages*: Show the documentation pages for the API.
 * *Link Hover Color*: Set the color of links when the cursor hovers over them.
