@@ -25,6 +25,7 @@ Consumer developers follow these steps to self-register:
 . After a registration request is sent by the member, you will receive a notification email. To review and
 approve the member registration, navigate to the ACM Control Panel.
 . Select *Manage Members*. This section provides the status of all consumer developer registration requests.
+Use the filter option to show or hide the rejected registration requests.
 . Select *Approve* and confirm the change to activate the member and trigger a welcome email.
 After you approve the registration request, a welcome email is sent to the consumer developer.
 . To complete registration, the member must click an email verification link in the email and specify a new
@@ -51,3 +52,9 @@ such as `jsmith@company.com` and `sue.jones@ironsmith.com`.
 Search terms without a filter attribute only apply to member fields that are not filtered. For example, the
 search `userName:com Jones` shows members that include "com" in the "Username" field and "Jones" in any field
 other than "Username".
+
+== Refresh Member List
+
+In the ACM Control Panel, the *Manage Members* tab shows a *Refresh* button.
+
+Use the *Refresh* button to refresh the member list without navigating away from the *Manage Members* tab.
