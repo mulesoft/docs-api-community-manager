@@ -159,6 +159,16 @@ The API console request panel component shows a panel where users can test an AP
 * *Headline Font Family (Optional)*: Set the font family of the headline.
 * *Error Color (Optional)*: Set the color of error messages.
 
+== API Details Button
+
+The API details button enables users to access details about an API.
+
+* *API*: Choose the API to show.
+* *Button Label*: Set the button label. Default is `API Details`.
+* *Button Align*: Set button alignment to left, right, or center.
+* *API Name*: Choose the API name to show.
+* *API Version*: Choose the API version to show.
+
 == API Documentation Viewer
 
 The API documentation viewer component shows an API's documentation. The documentation may have multiple pages, and each page may have multiple sections.
