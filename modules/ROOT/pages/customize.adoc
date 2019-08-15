@@ -34,6 +34,7 @@ is always present and is always the first item. The following properties can be 
 ** *Publicly available*
 * https://help.salesforce.com/articleView?id=rss_cms_collection.htm&type=5[CMS Collection, role=external, window=blank]
 * *API Carousel*: Displays APIs and API versions that are available to the community from Anypoint Exchange.
+* *API Details Button*: Enables users to access details about an API.
 * https://help.salesforce.com/articleView?id=community_builder_rich_text_component.htm&type=5[Rich text editor, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=rss_html_editor.htm&type=5[HTML editor, role=external, window=blank]
 
@@ -44,6 +45,7 @@ Components that are typically used in *API details* pages include:
 *API Console*, which renders information from the API RAML specification, and *Feed*, which displays comments,
 discussions, and questions.
 * *API Access Requestor*: Registers a client application and requests access to the API.
+* *Learn More Button*: Enables users to access a custom page with additional information about the API.
 
 Components that are typically used in *My Application* pages include:
 
