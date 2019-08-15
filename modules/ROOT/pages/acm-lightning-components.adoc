@@ -217,7 +217,7 @@ The application listing component shows applications that use an API.
 
 == Learn More Button
 
-The learn more button enables users to access a CMS page with additional information about an API.
+The learn more button enables users to access a custom page with additional information about the API.
 
 * *API*: Choose the API to show.
 * *Button Label*: Set the button label. Default is `Learn more about this API`.
