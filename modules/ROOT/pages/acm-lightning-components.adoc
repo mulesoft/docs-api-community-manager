@@ -170,8 +170,8 @@ The API details button enables users to access details about an API.
 * *API*: Choose the API to show.
 * *Button Label*: Set the button label. Default is `API Details`.
 * *Button Align*: Set button alignment to left, right, or center.
-* *API Name*: Choose the API name to show.
-* *API Version*: Choose the API version to show.
+* *API Name*: Choose "Append", "Prepend", or "None" to add the API name to the button label.
+* *API Version*: Choose "Append", "Prepend", or "None" to add the API version to the button label.
 
 == API Documentation Viewer
 
@@ -222,8 +222,8 @@ The learn more button enables users to access a custom page with additional info
 * *API*: Choose the API to show.
 * *Button Label*: Set the button label. Default is `Learn more about this API`.
 * *Button Align*: Set button alignment to left, right, or center.
-* *API Name*: Choose the API name to show.
-* *API Version*: Choose the API version to show.
+* *API Name*: Choose "Append", "Prepend", or "None" to add the API name to the button label.
+* *API Version*: Choose "Append", "Prepend", or "None" to add the API version to the button label.
 
 == Login Form
 
