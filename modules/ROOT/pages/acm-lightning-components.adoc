@@ -56,9 +56,9 @@ The API carousel component shows a horizontally scrollable set of API cards.
 
 The interactive API console component shows information about your APIs and their methods, and allows users to test the methods by sending requests.
 
-Endpoints are displayed in alphabetical order, even when the original API specification listed them in a different order.
+Endpoints are displayed in alphabetical order.
 
-The console components are the *API Console*, *API Console Documentation*, *API Console Instances*, *API Console Navigation*, and *API Console Request Panel*. In the Builder you can add multiple console components to the same page. If you do this, any change in one console component will also be visible in the other console components on the same page that show the same API. For example, selecting the *Summary* tab in one API Console will select the *Summary* tab in other API Consoles on the same page that show the same API.
+Console components include *API Console*, *API Console Documentation*, *API Console Instances*, *API Console Navigation*, and *API Console Request Panel*. In the Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
 * *API*: Choose the API to display.
 * *Show Documentation Pages*: Show the documentation pages for the API.
@@ -165,13 +165,13 @@ The API console request panel component shows a panel where users can test an AP
 
 == API Details Button
 
-The API details button enables users to access details about an API.
+The API details button component provides portal users with details about an API.
 
-* *API*: Choose the API to show.
+* *API*: Choose the API to display.
 * *Button Label*: Set the button label. Default is `API Details`.
-* *Button Align*: Set button alignment to left, right, or center.
-* *API Name*: Choose "Append", "Prepend", or "None" to add the API name to the button label.
-* *API Version*: Choose "Append", "Prepend", or "None" to add the API version to the button label.
+* *Button Align*: Set button alignment to left, right, or center of the UI field.
+* *API Name*: Add the API name to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
+* *API Version*: Add the API version to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 
 == API Documentation Viewer
 
@@ -217,13 +217,13 @@ The application listing component shows applications that use an API.
 
 == Learn More Button
 
-The learn more button enables users to access a custom page with additional information about the API.
+The learn more button component provides portal users with a custom page with additional information about the API.
 
-* *API*: Choose the API to show.
+* *API*: Choose the API to display.
 * *Button Label*: Set the button label. Default is `Learn more about this API`.
-* *Button Align*: Set button alignment to left, right, or center.
-* *API Name*: Choose "Append", "Prepend", or "None" to add the API name to the button label.
-* *API Version*: Choose "Append", "Prepend", or "None" to add the API version to the button label.
+* *Button Align*: Set button alignment to left, right, or center of the UI field.
+* *API Name*: Add the API name to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
+* *API Version*: Add the API version to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 
 == Login Form
 
