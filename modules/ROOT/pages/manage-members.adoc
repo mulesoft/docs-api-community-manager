@@ -34,7 +34,7 @@ When the member's status is *Active*, additional options become available to the
 and *My Applications*.
 . (Optional) To deactivate a member, disable the *Active* setting for that member and confirm the change.
 
-Select the options menu to choose how many registration requests to show on each page, and to *Show rejected users* or *Hide rejected users*.
+Select the options menu to specify the number of registration requests to display on each page, and to *Show rejected users* or *Hide rejected users*.
 
 == Searching Members
 
