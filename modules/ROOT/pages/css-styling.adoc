@@ -51,6 +51,16 @@ search-bar-container {
 |Left and right arrows navigation
 |===
 
+=== API Details Button
+
+.API Details Button CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`api-details-button`
+|API Details button
+|===
+
 === API Version Card
 
 .API Version Card CSS Classes and Descriptions
@@ -328,4 +338,14 @@ search-bar-container {
 
 |`defaultLogo`
 |Logo of the community
+|===
+
+=== Learn More Button
+
+.Learn More Button CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`learn-more-button`
+|Learn More button
 |===
