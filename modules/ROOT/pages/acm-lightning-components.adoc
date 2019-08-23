@@ -32,6 +32,8 @@ The API card component shows information about an API, including icon, name, and
 * *Card Border*: Set the thickness of the card borders.
 * *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
 * *Card Shadow*: Set the shadow beneath the card.
+* *API Details Button Label*: Set the label of the *API Details* button. Default is `API Details`.
+* *Learn More Button Label*: Set the label of the *Learn More* button. Default is `Learn More`.
 
 == API Carousel
 
@@ -48,9 +50,11 @@ The API carousel component shows a horizontally scrollable set of API cards.
 * *Card Border*: Set the thickness of the card borders.
 * *Card Border Radius*: Set the radius of the card borders. A larger radius makes the cards look more rounded.
 * *Card Shadow*: Set the shadow beneath each card.
-* *Message If Empty*: Show this message if the carousel has no APIs. Default is "There are no APIs available right now."
-* *Filter Condition (Advanced)*: Filter APIs using package names, field names such as "API name" or "API description", and comparison of strings to those fields.
+* *Message If Empty*: Show a message if the carousel has no APIs. Default is `There are no APIs available right now.`
+* *Filter Condition (Advanced)*: Filter APIs using package names, field names such as "API name" or "API description," and comparison of strings to those fields.
 // need better info on using Filter condition
+* *API Details Button Label*: Set the label of the *API Details* button. Default is `API Details`.
+* *Learn More Button Label*: Set the label of the *Learn More* button. Default is `Learn More`.
 
 == API Console
 
