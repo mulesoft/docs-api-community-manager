@@ -202,6 +202,8 @@ The *ACM Control Panel* is the interface your community administrators and opera
 
 == Communities Configuration [[communities]]
 
+Create, configure, and publish your Salesforce Community with branding, forums and moderation rules, Salesforce CMS, Salesforce CRM Content, and Chatter tracking for APIs.
+
 === Create a Community [[create-a-community]]
 
 . If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=_blank].
@@ -311,14 +313,10 @@ In this section, you create the profile for members of your community. Users tha
 Next you need to give permissions to your members' profile so that they can access APIs, create client applications and manage their details. To do this:
 
 . Select *Edit* in the *ACM Member User* profile page.
-. In the *Standard Object Permissions* section:
-.. Enable *Read* permissions for:
-... *Documents*
+. In the *Standard Object Permissions* section, enable *Read* permissions for: *Documents*
 . In the *Custom Object Permissions* section:
-.. Enable *Read* permissions for:
-... *CommunityApi*
-.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for:
-... *SelfRegisterUserRequests*
+.. Enable *Read* permissions for: *CommunityApi*
+.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for: *SelfRegisterUserRequests*
 . In the *External Object Permissions* section:
 .. Enable *Read* permissions for:
 ... *AnypointApiInstances*
@@ -329,7 +327,7 @@ Next you need to give permissions to your members' profile so that they can acce
 ... *AnypointApplications*
 ... *AnypointContracts*
 . Select *Save*.
-. Go to the *Field-Level Security* section in the *ACM Member User* profile page.
+. In the *ACM Member User* profile page go to the *Field-Level Security* section.
 . In the *Custom Field-Level Security* section, for each of the following objects, select *View*, then *Edit*, enable the corresponding permissions as follows, and select *Save* on each:
 .. Enable *Read* permissions for all fields of the objects:
 ... *AnypointApiInstances*
@@ -398,16 +396,11 @@ image::access-mapping.png[Access Mapping for CommunityApi]
 . Select the *Public can access the community* check box.
 . Navigate to the guest user profile link under the *Guest user profile* section, named *[Community Name] Profile*.
 . Select *Edit*.
-. In the *Standard Object Permissions* section:
-.. Enable *Read* permissions for:
-... *Documents*
+. In the *Standard Object Permissions* section, enable *Read* permissions for: *Documents*
 . In the *Custom Object Permissions* section:
-.. Enable *Read* permissions for:
-... *CommunityApi*
-.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for:
-... *SelfRegisterUserRequests*
-. In the *External Object Permissions* section:
-.. Enable *Read* permissions for:
+.. Enable *Read* permissions for: *CommunityApi*
+.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for: *SelfRegisterUserRequests*
+. In the *External Object Permissions* section, enable *Read* permissions for:
 ... *AnypointApiInstances*
 ... *AnypointApiTiers*
 ... *AnypointApiVersionQueries*
@@ -427,9 +420,11 @@ image::access-mapping.png[Access Mapping for CommunityApi]
 ... *AnypointContracts*
 .. Enable *Read* and *Edit* permissions for:
 ... *SelfRegisterUserRequests*
-
+. Select *Save*.
 
 === Enable Guest User Registration as Members [[enable-guest-user-registration-as-members]]
+
+These steps enable guests to register as members in your ACM portal.
 
 ==== Add Self Register Component to Registration Page [[add-self-register-custom-component-to-register-page]]
 
@@ -480,8 +475,7 @@ If you don't configure an approval process, self-registered users will become me
 . Select *Use Standard Setup Wizard* in the *Create New Approval Process* drop-down.
 . In the wizard, enter the following information:
 
-.. In *Step 1. Enter Name and Description*, enter the following information:
-... *Process Name*: `Approve Registration`.
+.. In *Step 1. Enter Name and Description*, enter the following information: *Process Name*: `Approve Registration`.
 .. Select *Next*.
 
 .. In *Step 2. Specify Entry Criteria*, enter the following information:
@@ -490,12 +484,10 @@ If you don't configure an approval process, self-registered users will become me
 ... *Value*: `False`
 .. Select *Next*.
 
-.. In *Step 3. Specify Approver Field and Record Editability Properties*:
-... In the *Record Editability Properties* section select *Administrators ONLY can edit records during the approval process*.
+.. In *Step 3. Specify Approver Field and Record Editability Properties*, in the *Record Editability Properties* section select *Administrators ONLY can edit records during the approval process*.
 .. Select *Next*.
 
-.. In *Step 4. Select Notification Templates*:
-... Select *Registration Request* in the *Approval Assignment Email Template* section, under the *ACM* category in the look-up dialog.
+.. In *Step 4. Select Notification Templates*, select *Registration Request* in the *Approval Assignment Email Template* section, under the *ACM* category in the look-up dialog.
 .. Select *Next*.
 
 .. In *Step 5. Select Fields to Display on Approval Page Layout*:
@@ -503,8 +495,7 @@ If you don't configure an approval process, self-registered users will become me
 ... Select the *Display approval history information in addition to the fields selected above* check box.
 .. Select *Next*.
 
-.. In *Step 6. Specify Initial Submitters*:
-... Add *Self Register User Request Owner* to the *Allowed Submitters* column.
+.. In *Step 6. Specify Initial Submitters*, add *Self Register User Request Owner* to the *Allowed Submitters* column.
 .. Select *Save* and continue to the next section.
 
 ===== Create an Approval Step [[create-an-approval-step]]
@@ -516,13 +507,11 @@ If you don't configure an approval process, self-registered users will become me
 ... Select *Approve Registration* (the approval that you created in the previous section).
 ... In the *Approval Steps* section, select *New Approval Step*.
 
-. In the *Step 1. Enter Name and Description* section:
-.. Enter `Step 1` in *Name*.
+. In the *Step 1. Enter Name and Description* section, enter `Step 1` in *Name*.
 . Select *Next*.
 
 . In the *Step 2. Specify Step Criteria* section, select *Next*.
-. In the *Step 3.  Select Assigned Approver* section:
-.. Select *Let the submitter choose the approver manually*.
+. In the *Step 3. Select Assigned Approver* section, select *Let the submitter choose the approver manually*.
 . Select *Save*.
 
 ===== Create a Final Approval Action [[create-a-final-approval-action]]
@@ -659,8 +648,7 @@ Use the same certificate that Salesforce IDP uses.
 ... *Alias*: Choose the corresponding alias to your key or certificate.
 ... *Key Passphrase*: Create a new Passphrase.
 ... Select *Save*.
-.. Select *Secret Groups*.
-... Select *Finish* on the recently created secret group and confirm the operation.
+.. Select *Secret Groups*, select *Finish* on the recently created secret group, and confirm the operation.
 
 For detailed information about creating secret groups and adding certificates, refer to
 https://docs.mulesoft.com/anypoint-security/asm-secret-group-creation-task#create-a-secret-group[Create a Secret Group (Anypoint Platform), role=external, window=_blank].

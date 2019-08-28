@@ -4,11 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To make your community site live, open the ACM Control Panel and select *Community Builder*.
-
-image::builder.png[Site Builder]
-
-Select *Publish*.
+To make your community site live, open the ACM Control Panel, select *Community Builder*, and select *Publish*.
 
 To make your community active, open the ACM Control Panel, select *Community Administration* and *Settings*, and select *Activate*.
 
