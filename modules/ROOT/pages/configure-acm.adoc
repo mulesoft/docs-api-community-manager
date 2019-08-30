@@ -61,6 +61,7 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 ** <<add-custom-object-search>>
 ** <<customize-search-layouts>>
 
+
 == Create and Authenticate the External Data Source [[create-and-authenticate-the-external-data-source]]
 
 The external data source specifies how ACM components and data objects interact securely with your MuleSoft Anypoint organization.
@@ -700,7 +701,13 @@ steps to enable access to the EU instance of the Anypoint Management Plane.
 
 == Configure Search [[configure-search]]
 
-You can choose which objects are returned by your ACM portal's search feature. Objects can include APIs published in ACM, knowledge articles, support cases, pages, and applications.
+You can choose which objects are returned by your ACM portal's search feature.
+
+By default, only APIs published in ACM are returned.
+
+Other objects you can add include knowledge articles, support cases, pages, and applications.
+
+Follow these steps to add each new searchable custom object.
 
 === Create a Custom Object Tab [[create-custom-object-tab]]
 
