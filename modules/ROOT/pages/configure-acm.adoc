@@ -712,42 +712,42 @@ Follow these steps to add each new searchable custom object.
 === Create a Custom Object Tab [[create-custom-object-tab]]
 
 . In *Setup*, search for *Tab* using the *Quick Find* box and select *Custom Object Tab*.
-. Select *New*.
+. Click *New*.
 . In the *Object* field, select the custom object you want to appear in search results, such as knowledge articles or support cases.
 . Set the *Tab Style*. You can add a custom icon that will show in autocomplete search results.
-. Select *Next*.
+. Click *Next*.
 . Choose the user profiles that will be able to see the new custom tab.
-. Select *Next*.
+. Click *Next*.
 . To make the new custom tab available to ACM, check the box next to *API Community Manager*.
-. Select *Done*.
+. Click *Done*.
 
 // Is *Done* correct? Check UI.
 
 === Enable Global Search [[enable-global-search]]
 
-. In the *ACM Control Panel*, select *Community Builder*.
-. Select the paintbrush icon to open the *Theme* menu.
-. Select *Theme Settings*.
+. In the *ACM Control Panel*, click *Community Builder*.
+. Click the paintbrush icon to open the *Theme* menu.
+. Click *Theme Settings*.
 . Set *Search Component* to *Global Search Box*.
 
 === Add Custom Object to Search [[add-custom-object-search]]
 
-. In the *ACM Control Panel*, select *Community Builder*.
+. In the *ACM Control Panel*, click *Community Builder*.
 . Navigate to a page that includes a *Global Search Box* component.
-. Select the *Global Search Box* component to open the *Global Search Box* configuration menu.
-. Select *Add*.
+. Click the *Global Search Box* component to open the *Global Search Box* configuration menu.
+. Click *Add*.
 . Set *Object* to the custom object you want to appear in search results.
-. Select *Save*.
+. Click *Save*.
 . (Optional) Set *Maximum Autocomplete Results*. No more than this number of autocomplete results will be visible.
 . Hover over the section of the page with search results to show the blue border and *Global Search Results* component name.
-. Select this *Global Search Results* component to open the *Global Search Results* configuration menu.
-. Select *Add*.
+. Click this *Global Search Results* component to open the *Global Search Results* configuration menu.
+. Click *Add*.
 . Select the custom object you want to appear in search results.
-. Select *Save*.
+. Click *Save*.
 
 === Customize Search Layouts [[customize-search-layouts]]
 
-. In *Setup*, search for *Object Manager* using the *Quick Find* box and select *Object Manager*.
+. In *Setup*, search for *Object Manager* using the *Quick Find* box and click *Object Manager*.
 . Select the custom object you want to appear in search results.
-. Select *Search Layouts*.
+. Click *Search Layouts*.
 . Set the *Search Layouts* options to customize the layout of the search results for this custom object on your portal.
