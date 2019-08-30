@@ -1,98 +1,100 @@
-= ACM Lightning Components
+= Description of ACM Lightning Components
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To design your API Community Manager portal, open the Builder and add ACM Lightning Components as described in xref:customize.adoc[Customize the Look and Feel of Your API Community].
+The pages of your API Community Manager (ACM) portal are designed by adding and configuring Lightning Components in the Builder.
 
-This list explains each of the ACM Lightning Components, the functionality they add to the portal, and their configuration options.
+These Lightning Components include both the components available in all Salesforce Communities, and the ACM Lightning Components only available in ACM.
+
+Each of the ACM Lightning Components has different configuration options and adds different functionality to the portal.
 
 == API Access Requester
 
-The API access requester button component enables members to request access to an API for an application.
+The *API Access Requester* component enables community members to request access to an API for either a new or existing application.
 
-Members can request access for an existing client application and API instance, or request to create a new client application by specifying the application name and description and choosing an API instance.
+Community members can either request access for an existing client application and API instance, or request to create a new client application with access to the API by specifying the application name and description and choosing an API instance.
 
-API:: Choose the API.
-Button Border Radius:: Set the radius of the button border. A larger radius makes the button look more rounded.
-Button Align:: Set button alignment to left, right, or center.
-Show Modal Title Line:: Show the title line in the access request modal.
+API:: Specifies the API.
+Button Border Radius:: Selects the radius of the button border. A larger radius makes the button look more rounded.
+Button Align:: Specifies left, right, or center button alignment.
+Show Modal Title Line:: Shows the title line in the access request modal.
 
 // check description of Show Modal Title Line
 
 == API Card
 
-The API card component shows information about an API, including icon, name, and description.
+The *API Card* component shows information about an API, including icon, name, and description.
 
-API:: Choose the API to show.
+API:: Specifies the API shown.
 Override URL:: When the user clicks the *API Details* button on the card, a URL opens. If this optional field is set, the URL in the field overrides the default URL. This could be used to direct users to a documentation or marketing page about the API, which would also have a link to the API's main page.
-Show Buttons:: Show the *API Details* button. If the button is not shown, users can click anywhere on the card to show the API details.
-Card Height:: Set the card height.
-Card Margin:: Set the amount of margin space around the card.
-Card Border:: Set the thickness of the card borders.
-Card Border Radius:: Set the radius of the card borders. A larger radius makes the cards look more rounded.
-Card Shadow:: Set the shadow beneath the card.
-API Details Button Label:: Set the label of the *API Details* button. Default is `API Details`.
-Learn More Button Label:: Set the label of the *Learn More* button. Default is `Learn More`.
+Show Buttons:: Shows the *API Details* button. If the button is not shown, users can click anywhere on the card to show the API details.
+Card Height:: Specifies the card height.
+Card Margin:: Specifies the amount of margin space around the card.
+Card Border:: Specifies the thickness of the card borders.
+Card Border Radius:: Specifies the radius of the card borders. A larger radius makes the cards look more rounded.
+Card Shadow:: Specifies the shadow beneath the card.
+API Details Button Label:: Enables you to set the label of the *API Details* button. Default is `API Details`.
+Learn More Button Label:: Enables you to set the label of the *Learn More* button. Default is `Learn More`.
 
 == API Carousel
 
-The API carousel component shows a horizontally scrollable set of API cards.
+The *API Carousel* component shows a horizontally scrollable set of API cards.
 
-Show Buttons:: Show the *API Details* button on each card. If the button is not shown, users can click anywhere on the card to show the API details.
-Max Cards Display:: Set the maximum number of cards to show.
-Rows:: Set the number of rows of cards in the carousel.
-Show Arrows:: Show arrows on the right and left sides of the carousel. Clicking the arrows scrolls through the cards.
-Arrow Size:: Set the size of the arrows on the right and left sides.
-Show Dots:: Show dots below the cards. Clicking the dots scrolls through the cards.
-Card Height:: Set the card height.
-Card Margin:: Set the amount of margin space around each card.
-Card Border:: Set the thickness of the card borders.
-Card Border Radius:: Set the radius of the card borders. A larger radius makes the cards look more rounded.
-Card Shadow:: Set the shadow beneath each card.
-Message If Empty:: Show a message if the carousel has no APIs. Default is `There are no APIs available right now.`
-Filter Condition (Advanced):: Filter APIs using package names, field names such as "API name" or "API description," and comparison of strings to those fields.
-API Details Button Label:: Set the label of the *API Details* button. Default is `API Details`.
-Learn More Button Label:: Set the label of the *Learn More* button. Default is `Learn More`.
+Show Buttons:: Shows the *API Details* button on each card. If the button is not shown, users can click anywhere on the card to show the API details.
+Max Cards Display:: Specifies the maximum number of cards to show.
+Rows:: Specifies the number of rows of cards in the carousel.
+Show Arrows:: Shows arrows on the right and left sides of the carousel. Clicking the arrows scrolls through the cards.
+Arrow Size:: Specifies the size of the arrows on the right and left sides.
+Show Dots:: Shows dots below the cards. Clicking the dots scrolls through the cards.
+Card Height:: Specifies the card height.
+Card Margin:: Specifies the amount of margin space around each card.
+Card Border:: Specifies the thickness of the card borders.
+Card Border Radius:: Specifies the radius of the card borders. A larger radius makes the cards look more rounded.
+Card Shadow:: Specifies the shadow beneath each card.
+Message If Empty:: Shows a message if the carousel has no APIs. Default is `There are no APIs available right now.`
+Filter Condition (Advanced):: Filters APIs using package names, field names such as "API name" or "API description," and comparison of strings to those fields.
+API Details Button Label:: Enables you to set the label of the *API Details* button. Default is `API Details`.
+Learn More Button Label:: Enables you to set the label of the *Learn More* button. Default is `Learn More`.
 
 // need better info on using Filter condition
 
 == API Console
 
-The interactive API console component shows information about your APIs and their methods, and allows users to test the methods by sending requests.
+The interactive *API Console* component shows information about your APIs and their methods, and allows users to test the methods by sending requests.
 
 Endpoints are displayed in alphabetical order.
 
 Console components include *API Console*, *API Console Documentation*, *API Console Instances*, *API Console Navigation*, and *API Console Request Panel*. In the Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
-API:: Choose the API to display.
-Show Documentation Pages:: Show the documentation pages for the API.
-Link Hover Color:: Set the color of links when the cursor hovers over them.
-Button Text Color (Optional):: Set the color of text on buttons.
-Button Hover Text Color (Optional):: Set the color of text on buttons when the cursor hovers over them. Default is the button text color.
-Headline Font Family (Optional):: Set the font family of the API console headline.
-Error Color (Optional):: Set the color of error messages.
-Method Label Get Background Color:: Set the background color of the labels of *GET* methods.
-Method Label Get Color:: Set the color of the labels of *GET* methods.
-Method Label Post Background Color:: Set the background color of the labels of *POST* methods.
-Method Label Post Color:: Set the color of the labels of *POST* methods.
-Method Label Put Background Color:: Set the background color of the labels of *PUT* methods.
-Method Label Put Color:: Set the color of the labels of *PUT* methods.
-Method Label Delete Background Color:: Set the background color of the labels of *DELETE* methods.
-Method Label Delete Color:: Set the color of the labels of *DELETE* methods.
-Method Label Patch Background Color:: Set the background color of the labels of *PATCH* methods.
-Method Label Patch Color:: Set the color of the labels of *PATCH* methods.
-Method Label Options Background Color:: Set the background color of the labels of *OPTIONS* methods.
-Method Label Options Color:: Set the color of the labels of *OPTIONS* methods.
-Method Label Head Background Color:: Set the background color of the labels of *HEAD* methods.
-Method Label Head Color:: Set the color of the labels of *HEAD* methods.
+API:: Specifies the API to display.
+Show Documentation Pages:: Shows the documentation pages for the API.
+Link Hover Color:: Specifies the color of links when the cursor hovers over them.
+Button Text Color (Optional):: Specifies the color of text on buttons.
+Button Hover Text Color (Optional):: Specifies the color of text on buttons when the cursor hovers over them. Default is the button text color.
+Headline Font Family (Optional):: Specifies the font family of the API console headline.
+Error Color (Optional):: Specifies the color of error messages.
+Method Label Get Background Color:: Specifies the background color of the labels of *GET* methods.
+Method Label Get Color:: Specifies the color of the labels of *GET* methods.
+Method Label Post Background Color:: Specifies the background color of the labels of *POST* methods.
+Method Label Post Color:: Specifies the color of the labels of *POST* methods.
+Method Label Put Background Color:: Specifies the background color of the labels of *PUT* methods.
+Method Label Put Color:: Specifies the color of the labels of *PUT* methods.
+Method Label Delete Background Color:: Specifies the background color of the labels of *DELETE* methods.
+Method Label Delete Color:: Specifies the color of the labels of *DELETE* methods.
+Method Label Patch Background Color:: Specifies the background color of the labels of *PATCH* methods.
+Method Label Patch Color:: Specifies the color of the labels of *PATCH* methods.
+Method Label Options Background Color:: Specifies the background color of the labels of *OPTIONS* methods.
+Method Label Options Color:: Specifies the color of the labels of *OPTIONS* methods.
+Method Label Head Background Color:: Specifies the background color of the labels of *HEAD* methods.
+Method Label Head Color:: Specifies the color of the labels of *HEAD* methods.
 
 // Check descriptions: *Headline font family (optional)*
 
 == API Console Documentation
 
-The API console documentation component shows an API's documentation in the API console.
+The *API Console Documentation* component shows an API's documentation in the API console.
 
 API:: Choose the API to display.
 Show Documentation Pages:: Show the documentation pages for the API.
@@ -114,7 +116,7 @@ Headline Font Family (Optional):: Set the font family of the API console headlin
 
 == API Console Instances
 
-The API console instances component shows the list of instances of an API.
+The *API Console Instances* component shows the list of instances of an API.
 
 // check component description
 
@@ -122,7 +124,7 @@ API:: Choose the API whose instances are displayed.
 
 == API Console Navigation
 
-The API console navigation component shows the navigation for the API console component.
+The *API Console Navigation* component shows the navigation for the API console component.
 
 // check component description
 
@@ -145,7 +147,7 @@ Method Label Head Color:: Set the color of the labels of *HEAD* methods.
 
 == API Console Request Panel
 
-The API console request panel component shows a panel where users can test an API by making requests to it.
+The *API Console Request Panel* component shows a panel where users can test an API by making requests to it.
 
 API:: Choose the API to display.
 Show Documentation Pages:: Show the documentation pages for the API.
@@ -171,7 +173,7 @@ Error Color (Optional):: Set the color of error messages.
 
 == API Details Button
 
-The API details button component provides portal users with details about an API.
+The *API Details Button* component provides portal users with details about an API.
 
 API:: Choose the API to display.
 Button Label:: Set the button label. Default is `API Details`.
@@ -181,7 +183,7 @@ API Version:: Add the API version to the button label. Values are *Append*, *Pre
 
 == API Documentation Viewer
 
-The API documentation viewer component shows an API's documentation. The documentation may have multiple pages, and each page may have multiple sections.
+The *API Documentation Viewer* component shows an API's documentation. The documentation may have multiple pages, and each page may have multiple sections.
 
 API:: Choose the API.
 Section (Optional):: Set the section to open. If the *Selected page (optional)* setting is empty, the *Section (optional)* setting is ignored.
@@ -189,19 +191,19 @@ Selected Page (Optional):: Set the page to open.
 
 == API Header
 
-The API header component displays the API Header including icon, name, and description.
+The *API Header* component displays the API Header including icon, name, and description.
 
 API:: Choose the API to show.
 
 == Application Analytics Graph
 
-The application analytics graph component displays statistics about the use of an application.
+The *Application Analytics Graph* component displays statistics about the use of an application.
 
 Application:: Choose the application to show.
 
 == Application Details
 
-The application details component displays details about an application.
+The *Application Details* component displays details about an application.
 
 // check component description
 
@@ -209,7 +211,7 @@ Application:: Choose the API to show.
 
 == Application Listing
 
-The application listing component shows applications that use an API.
+The *Application Listing* component shows applications that use an API.
 
 New Application URL:: Set a new URL for the application.
 Card Margin:: Set the amount of margin space around the card.
@@ -223,7 +225,7 @@ Card Height:: Set the card height.
 
 == Learn More Button
 
-The learn more button component provides portal users with a custom page with additional information about the API.
+The *Learn More Button* component provides portal users with a custom page with additional information about the API.
 
 API:: Choose the API to display.
 Button Label:: Set the button label. Default is `Learn more about this API`.
@@ -233,7 +235,7 @@ API Version:: Add the API version to the button label. Values are *Append*, *Pre
 
 == Login Form
 
-The login form component allows members to log in to the portal.
+The *Login Form* component allows members to log in to the portal.
 
 Start URL:: Set the URL members see after completing login. Default is the portal home page.
 Username Label:: Set the label for the username field. Default is `Email`.
@@ -248,11 +250,11 @@ Self Register URL:: Set the URL for the self registration link. Default is `/Sel
 
 == Search Result List
 
-The search result list component shows a list of search results. It has no configuration settings.
+The *Search Result List* component shows a list of search results. It has no configuration settings.
 
 == Self Register
 
-The self register component allows users to register for portal accounts.
+The *Self Register* component allows users to register for portal accounts.
 
 Start URL:: Set the start URL. Default is the portal home page.
 Confirm URL:: Set the confirmation URL. Default is `/CheckPasswordResetEmail`.
