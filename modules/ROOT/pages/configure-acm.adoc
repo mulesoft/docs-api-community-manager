@@ -55,7 +55,11 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 ** <<re-authenticate-the-external-data-source>>
 
 * <<configure-eu-account>>
-
+* <<configure-search>>
+** <<create-custom-object-tab>>
+** <<enable-global-search>>
+** <<add-custom-object-search>>
+** <<customize-search-layouts>>
 
 == Create and Authenticate the External Data Source [[create-and-authenticate-the-external-data-source]]
 
@@ -693,3 +697,50 @@ steps to enable access to the EU instance of the Anypoint Management Plane.
 ** `+https://eu1.anypoint.mulesoft.com+`
 ** `+https://exchange2-file-upload-service-kprod-eu.s3.eu-central-1.amazonaws.com+`
 ** `+https://exchange2-asset-manager-kprod-eu.s3.amazonaws.com+`
+
+== Configure Search [[configure-search]]
+
+You can choose which objects are returned by your ACM portal's search feature. Objects can include APIs published in ACM, knowledge articles, support cases, pages, and applications.
+
+=== Create a Custom Object Tab [[create-custom-object-tab]]
+
+. In *Setup*, search for *Tab* using the *Quick Find* box and select *Custom Object Tab*.
+. Select *New*.
+. In the *Object* field, select the custom object you want to appear in search results, such as knowledge articles or support cases.
+. Set the *Tab Style*. You can add a custom icon that will show in autocomplete search results.
+. Select *Next*.
+. Choose the user profiles that will be able to see the new custom tab.
+. Select *Next*.
+. To make the new custom tab available to ACM, check the box next to *API Community Manager*.
+. Select *Done*.
+
+// Is *Done* correct? Check UI.
+
+=== Enable Global Search [[enable-global-search]]
+
+. In the *ACM Control Panel*, select *Community Builder*.
+. Select the paintbrush icon to open the *Theme* menu.
+. Select *Theme Settings*.
+. Set *Search Component* to *Global Search Box*.
+
+=== Add Custom Object to Search [[add-custom-object-search]]
+
+. In the *ACM Control Panel*, select *Community Builder*.
+. Navigate to a page that includes a *Global Search Box* component.
+. Select the *Global Search Box* component to open the *Global Search Box* configuration menu.
+. Select *Add*.
+. Set *Object* to the custom object you want to appear in search results.
+. Select *Save*.
+. (Optional) Set *Maximum Autocomplete Results*. No more than this number of autocomplete results will be visible.
+. Hover over the section of the page with search results to show the blue border and *Global Search Results* component name.
+. Select this *Global Search Results* component to open the *Global Search Results* configuration menu.
+. Select *Add*.
+. Select the custom object you want to appear in search results.
+. Select *Save*.
+
+=== Customize Search Layouts [[customize-search-layouts]]
+
+. In *Setup*, search for *Object Manager* using the *Quick Find* box and select *Object Manager*.
+. Select the custom object you want to appear in search results.
+. Select *Search Layouts*.
+. Set the *Search Layouts* options to customize the layout of the search results for this custom object on your portal.
