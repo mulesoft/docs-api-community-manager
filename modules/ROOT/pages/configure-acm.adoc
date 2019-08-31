@@ -738,7 +738,7 @@ Follow these steps to add each new searchable custom object.
 . Click *Add*.
 . Set *Object* to the custom object you want to appear in search results.
 . Click *Save*.
-. (Optional) Set *Maximum Autocomplete Results*. No more than this number of autocomplete results will be visible.
+. If you wish to change the default, set the *Maximum Autocomplete Results*. No more than this number of autocomplete results will be visible.
 . Hover over the section of the page with search results to show the blue border and *Global Search Results* component name.
 . Click this *Global Search Results* component to open the *Global Search Results* configuration menu.
 . Click *Add*.
