@@ -718,7 +718,7 @@ Follow these steps to add each new searchable custom object.
 . Click *Next*.
 . Choose the user profiles that will be able to see the new custom tab.
 . Click *Next*.
-. To make the new custom tab available to ACM, check the box next to *API Community Manager*.
+. To make the new custom tab available to ACM, select *API Community Manager*.
 . Click *Done*.
 
 // Is *Done* correct? Check UI.
