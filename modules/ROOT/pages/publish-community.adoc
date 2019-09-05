@@ -4,12 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To make your community site live, open the ACM Control Panel and select *Community Builder*.
+After you have edited and previewed your community site, you can publish the new version for your community users:
 
-image::builder.png[Site Builder]
+. From the API Community Manager (ACM) Control Panel, click *Community Builder*.
+. Click *Publish*.
 
-Select *Publish*.
+If your community is not already active, activate it:
 
-To make your community active, open the ACM Control Panel, select *Community Administration* and *Settings*, and select *Activate*.
+. From the API Community Manager (ACM) Control Panel, click *Community Administration*.
+. Click *Settings*.
+. Click *Activate*.
 
-To view the live site when the community is published and active, open the ACM Control Panel and select *Open Community*.
+After your community is published and active, view the live site:
+
+. Open the API Community Manager (ACM) Control Panel.
+. Click *Open Community*.
