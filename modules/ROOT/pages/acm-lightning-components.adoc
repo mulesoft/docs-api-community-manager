@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To design your API Community Manager portal, open the Builder and add ACM Lightning Components as described in xref:customize.adoc[Customize the Look and Feel of Your API Community].
+To design your API Community Manager portal, open the Builder and add ACM Lightning Components as described in xref:customize.adoc[API Community Look and Feel Customization].
 
 This list explains each of the ACM Lightning Components, the functionality they add to the portal, and their configuration options.
 
