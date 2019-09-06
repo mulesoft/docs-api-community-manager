@@ -137,7 +137,7 @@ Clicking the *Theme* paintbrush icon offers these general branding parameters:
 
 * *Colors*
 +
-Sets the site's *General* color scheme, including paragraph, heading, and button text.
+Sets the site's general color scheme, including paragraph, heading, and button text.
 +
 * *Images*
 +
