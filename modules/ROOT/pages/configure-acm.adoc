@@ -486,7 +486,7 @@ If you don't configure an approval process, self-registered users will become me
 ... *Value*: `False`
 .. Select *Next*.
 
-.. In *Step 3. Specify Approver Field and Record Editability Properties*, in the *Record Editability Properties* section select *Administrators ONLY can edit records during the approval process*.
+.. In *Step 3. Specify Approver Field and Record Editability Properties*, in the *Record Editability Properties* section, select *Administrators ONLY can edit records during the approval process*.
 .. Select *Next*.
 
 .. In *Step 4. Select Notification Templates*, select *Registration Request* in the *Approval Assignment Email Template* section, under the *ACM* category in the look-up dialog.
