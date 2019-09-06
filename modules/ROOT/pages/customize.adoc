@@ -9,7 +9,7 @@ you to create a community with your desired brand identity, look and feel, and
 site structure by providing control over the community's components, themes,
 and pages, and its general theme and SEO settings.
 
-In the API Community Manager (ACM) Control Panel, the *Community Builder* shows
+In the API Community Manager (ACM) control panel, the *Community Builder* [panel? screen? page?] shows
 your site for editing. The builder is where you edit each page in your
 community, create new pages, and add and edit the components in each page.
 
