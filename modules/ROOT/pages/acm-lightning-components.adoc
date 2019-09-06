@@ -6,7 +6,7 @@ endif::[]
 
 The pages of your API Community Manager (ACM) portal are designed by adding and configuring Lightning Components in the Builder.
 
-These Lightning Components include both the components available in all Salesforce Communities, and the ACM Lightning Components only available in ACM.
+These Lightning components include both the components available in all Salesforce Communities, and the ACM Lightning components available only in ACM.
 
 Each ACM Lightning Component has different configuration options and adds different functionality to the portal.
 
