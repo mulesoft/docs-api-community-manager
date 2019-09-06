@@ -316,7 +316,7 @@ Next you need to give permissions to your members' profile so that they can acce
 . In the *Standard Object Permissions* section, enable *Read* permissions for *Documents*.
 . In the *Custom Object Permissions* section:
 .. Enable *Read* permissions for: *CommunityApi*
-.. Enable *Read*, *Edit*, *Create* and *Delete* permissions for: *SelfRegisterUserRequests*
+.. Enable *Read*, *Edit*, *Create*, and *Delete* permissions for *SelfRegisterUserRequests*.
 . In the *External Object Permissions* section:
 .. Enable *Read* permissions for:
 ... *AnypointApiInstances*
