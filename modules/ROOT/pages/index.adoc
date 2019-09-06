@@ -13,9 +13,9 @@ See these useful resources to get up-to-speed with the capabilities of Salesforc
 * https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Community Cloud Product Documentation, role=external, window=blank]
 * https://trailhead.salesforce.com/en/content/learn/trails/communities[Community Cloud Trailhead, role=external, window=blank]
 
-== What is an API Community?
+== What Is an API Community?
 
-To drive developer adoption of your APIs, you must help them discover and learn how to use your APIs effectively, and provide a personalized, branded experience to motivate them to work with you. You must also engage with these developers during every step of their journey to ensure their success. ACM enables you to create this personalized, connected experience for your developers to allow them to interact with your APIs - APIs designed, catalogued, and managed in the Anypoint Platform.
+To drive developer adoption of your APIs, you must help them discover and learn how to use your APIs effectively, and provide a personalized, branded experience to motivate them to work with you. You must also engage with these developers during every step of their journey to ensure their success. ACM enables you to create this personalized, connected experience for your developers so they can interact with your APIs: APIs designed, cataloged, and managed in Anypoint Platform.
 
 As a community administrator, you use ACM to create a visually compelling digital experience that is consistent with your organization's brand identity. Your community showcases APIs that you select directly from https://docs.mulesoft.com/exchange/[Anypoint Exchange], plus other relevant content and self-service resources to inspire and help the developers you want to reach.
 
@@ -33,7 +33,7 @@ Other ACM features enable your organization to engage with partners and ensure t
 
 == Building Your API Community
 
-Personalize your community look and feel, branding, and site structure with the https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank], a drag-and-drop editor that allows you to create and customize the experience down to the finest level of detail. The Community Builder makes it easy to create a tailored experience using pre-existing components and simple clicks, or using the full flexibility of HTML and CSS for precise pixel-perfect experiences.
+Personalize your community look and feel, branding, and site structure by using  https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank], a drag-and-drop editor that enables you to create and customize the user experience at every level of detail. Community Builder makes it easy to create a tailored experience using pre-existing components and simple clicks, or using the full flexibility of HTML and CSS for precise pixel-perfect experiences.
 
 == Understand How Your Developers Engage in Your Community
 

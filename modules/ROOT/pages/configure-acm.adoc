@@ -281,7 +281,7 @@ If you want to organize CMS content using Topics, use these steps.
 
 === Enable Chatter Tracking for APIs [[enable-chatter-tracking]]
 
-Chatter tracking allows creating discussions on specific objects like APIs. To enable Chatter tracking for APIs, use these steps.
+Chatter tracking enables your community to create discussions on specific objects like APIs.
 
 . In *Setup*, search for *Chatter* using the *Quick Find* box and click *Feed Tracking*.
 . Click the *CommunityAPI* object.
@@ -427,7 +427,7 @@ These steps enable guests to register as members in your ACM portal.
 
 ==== Add Self Register Component to Registration Page [[add-self-register-custom-component-to-register-page]]
 
-The self-register component allows guest users to self-register in your community to become members. If you're not using any of the ACM out-of-the-box templates, use these steps to add the ACM-specific self-registration component.
+The self-register component enables guest users to register themselves as members of your community. If you're not using any of the ACM out-of-the-box templates, use these steps to add the ACM-specific self-registration component.
 
 . In the *ACM Control Panel*, open *Community Builder* and navigate to the *Register* page in the Pages menu on the top left.
 . Remove the standard *Self Registration* component by clicking the delete icon next to it.
