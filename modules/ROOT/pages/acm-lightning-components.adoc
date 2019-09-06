@@ -102,7 +102,7 @@ Method Label Head Color:: Specifies the *HEAD* method label color.
 
 == API Console Documentation
 
-The *API Console Documentation* component shows the documentation from Anypoint Exchange about an API.
+The *API Console Documentation* component shows the Anypoint Exchange documentation about an API.
 
 You can specify values for the following parameters of the *API Console Documentation*:
 
