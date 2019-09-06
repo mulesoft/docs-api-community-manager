@@ -7,7 +7,7 @@ endif::[]
 https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank] enables
 you to create a community with your desired brand identity, look and feel, and
 site structure by providing control over the community's components, themes,
-pages, and its general, theme, and SEO settings.
+and pages, and its general theme and SEO settings.
 
 In the API Community Manager (ACM) Control Panel, the *Community Builder* shows
 your site for editing. The builder is where you edit each page in your
