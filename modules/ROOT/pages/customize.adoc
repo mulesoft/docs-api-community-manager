@@ -93,7 +93,7 @@ Specifies community page links from a list of all community pages.
 Sets whether the link is available to all page viewers or only logged in
 community members.
 
-Components typically used in *API details* pages include:
+Components typically used in API details pages include:
 
 * *API Header*
 +
