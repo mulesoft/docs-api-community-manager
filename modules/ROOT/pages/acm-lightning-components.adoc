@@ -4,51 +4,49 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-The pages of your API Community Manager (ACM) portal are designed by adding and configuring Lightning Components in the Builder.
+You design the pages of your API Community Manager (ACM) portal by adding and configuring Lightning components in the Community Builder.
 
-These Lightning components include both the components available in all Salesforce Communities, and the ACM Lightning components available only in ACM.
+These Lightning Components include both the components available in all Salesforce Communities, and the ACM Lightning components only available in ACM.
 
 Each ACM Lightning component has different configuration options and adds different functionality to the portal.
 
 == API Access Requester
 
-The *API Access Requester* component enables community members to request access to an API for either a new or existing application.
+The API Access Requester component enables community members to request access to an API for either a new or existing application.
 
 Community members can either request access for an existing client application and API instance, or request to create a new client application with access to the API by specifying the application name and description and choosing an API instance.
 
-You can specify values for the following parameters of the *API Access Requester*:
+You can specify values for the following parameters of the API Access Requester:
 
 API:: Specifies the API.
 Button Border Radius:: Selects the button border radius. A larger radius makes the button look more rounded.
 Button Align:: Specifies left, right, or center button alignment.
 Show Modal Title Line:: Shows the title line in the access request modal.
 
-// check description of Show Modal Title Line
-
 == API Card
 
-The *API Card* component shows information about an API, including icon, name, and description.
+The API Card component shows information about an API, including icon, name, and description.
 
-You can specify values for the following parameters of the *API Card*:
+You can specify values for the following parameters of the API Card:
 
 API:: Specifies the API shown.
-Override URL:: If set, overrides the default *API Details* button URL to the API main page in favor of linking to other information that you want the user to see first, such as documentation or marketing collateral.
-Show Buttons:: Shows the *API Details* button. If the button is not shown, users can click anywhere on the card to show the API details.
+Override URL:: By default the API Details button links to the API main page. You can optionally set the Override URL to direct users to other information such as documentation or marketing collateral.
+Show Buttons:: Shows the API Details button. If the button is not shown, users can click anywhere on the card to show the API details.
 Card Height:: Specifies the card height.
 Card Margin:: Specifies the amount of margin space around the card.
 Card Border:: Specifies the card border thickness.
 Card Border Radius:: Specifies the card border radius. A larger radius makes the cards look more rounded.
 Card Shadow:: Specifies the shadow beneath the card.
-API Details Button Label:: Enables you to set the *API Details* button label. Default is *API Details*.
-Learn More Button Label:: Enables you to set the *Learn More* button label. Default is `Learn More`.
+API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
+Learn More Button Label:: Enables you to set the Learn More button label. Default is *Learn More*.
 
 == API Carousel
 
-The *API Carousel* component shows a horizontally scrollable set of API cards.
+The API Carousel component shows a horizontally scrollable set of API cards.
 
-You can specify values for the following parameters of the *API Carousel*:
+You can specify values for the following parameters of the API Carousel:
 
-Show Buttons:: Shows the *API Details* button on each card. Users can see API details by clicking the button if it is present or by clicking anywhere on the card if it is not.
+Show Buttons:: Shows the API Details button on each card. Users can see API details by clicking the button if it is present or by clicking anywhere on the card if it is not.
 Max Cards Display:: Specifies the maximum number of cards to show.
 Rows:: Specifies the number of rows of cards in the carousel.
 Show Arrows:: Shows arrows on the carousel's right and left sides. Clicking the arrows scrolls through the cards in the direction of the arrow clicked.
@@ -61,20 +59,18 @@ Card Border Radius:: Specifies the card border radius. A larger radius makes the
 Card Shadow:: Specifies the shadow beneath each card.
 Message If Empty:: Shows a message if the carousel has no APIs. Default is `There are no APIs available right now.`
 Filter Condition (Advanced):: Limits the APIs shown in the carousel to those matching a standard Salesforce Object Query Language (SOQL) search. SOQL searches use package names, field names such as "API name" or "API description," and comparison of strings to the values of those fields.
-API Details Button Label:: Enables you to set the *API Details* button label. Default is `API Details`.
-Learn More Button Label:: Enables you to set the *Learn More* button label. Default is `Learn More`.
-
-// need better info on using Filter condition
+API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
+Learn More Button Label:: Enables you to set the Learn More button label. Default is *Learn More*.
 
 == API Console
 
-The interactive *API Console* component shows information about your APIs and their methods, and enables users to test the methods by sending requests.
+The interactive API Console component shows information about your APIs and their methods, and enables users to test the methods by sending requests.
 
 Endpoints are displayed in alphabetical order.
 
-Console components include *API Console*, *API Console Documentation*, *API Console Instances*, *API Console Navigation*, and *API Console Request Panel*. In the Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
+Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In the Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
-You can specify values for the following parameters of the *API Console*:
+You can specify values for the following parameters of the API Console:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
@@ -83,104 +79,98 @@ Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
 Headline Font Family (Optional):: Specifies the API console headline font family.
 Error Color (Optional):: Specifies the color of error messages.
-Method Label Get Background Color:: Specifies the *GET* method label background color.
-Method Label Get Color:: Specifies the *GET* method label color.
-Method Label Post Background Color:: Specifies the *POST* method label background color.
-Method Label Post Color:: Specifies the *POST* method label color.
-Method Label Put Background Color:: Specifies the *PUT* method label background color.
-Method Label Put Color:: Specifies the *PUT* method label color.
-Method Label Delete Background Color:: Specifies the *DELETE* method label background color.
-Method Label Delete Color:: Specifies the *DELETE* method label color.
-Method Label Patch Background Color:: Specifies the *PATCH* method label background color.
-Method Label Patch Color:: Specifies the *PATCH* method label color.
-Method Label Options Background Color:: Specifies the *OPTIONS* method label background color.
-Method Label Options Color:: Specifies the *OPTIONS* method label color.
-Method Label Head Background Color:: Specifies the *HEAD* method label background color.
-Method Label Head Color:: Specifies the *HEAD* method label color.
-
-// Check descriptions: *Headline font family (optional)*
+Method Label Get Background Color:: Specifies the GET method label background color.
+Method Label Get Color:: Specifies the GET method label color.
+Method Label Post Background Color:: Specifies the POST method label background color.
+Method Label Post Color:: Specifies the POST method label color.
+Method Label Put Background Color:: Specifies the PUT method label background color.
+Method Label Put Color:: Specifies the PUT method label color.
+Method Label Delete Background Color:: Specifies the DELETE method label background color.
+Method Label Delete Color:: Specifies the DELETE method label color.
+Method Label Patch Background Color:: Specifies the PATCH method label background color.
+Method Label Patch Color:: Specifies the PATCH method label color.
+Method Label Options Background Color:: Specifies the OPTIONS method label background color.
+Method Label Options Color:: Specifies the OPTIONS method label color.
+Method Label Head Background Color:: Specifies the HEAD method label background color.
+Method Label Head Color:: Specifies the HEAD method label color.
 
 == API Console Documentation
 
-The *API Console Documentation* component shows the Anypoint Exchange documentation about an API.
+The API Console Documentation component shows the documentation from Anypoint Exchange about an API.
 
-You can specify values for the following parameters of the *API Console Documentation*:
+You can specify values for the following parameters of the API Console Documentation:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API documentation pages.
-Method Label Get Background Color:: Specifies the *GET* method label background color.
-Method Label Get Color:: Specifies the *GET* method label color.
-Method Label Post Background Color:: Specifies the *POST* method label background color.
-Method Label Post Color:: Specifies the *POST* method label color.
-Method Label Put Background Color:: Specifies the *PUT* method label background color.
-Method Label Put Color:: Specifies the *PUT* method label color.
-Method Label Delete Background Color:: Specifies the *DELETE* method label background color.
-Method Label Delete Color:: Specifies the *DELETE* method label color.
-Method Label Patch Background Color:: Specifies the *PATCH* method label background color.
-Method Label Patch Color:: Specifies the *PATCH* method label color.
-Method Label Options Background Color:: Specifies the *OPTIONS* method label background color.
-Method Label Options Color:: Specifies the *OPTIONS* method label color.
-Method Label Head Background Color:: Specifies the *HEAD* method label background color.
-Method Label Head Color:: Specifies the *HEAD* method label color.
+Method Label Get Background Color:: Specifies the GET method label background color.
+Method Label Get Color:: Specifies the GET method label color.
+Method Label Post Background Color:: Specifies the POST method label background color.
+Method Label Post Color:: Specifies the POST method label color.
+Method Label Put Background Color:: Specifies the PUT method label background color.
+Method Label Put Color:: Specifies the PUT method label color.
+Method Label Delete Background Color:: Specifies the DELETE method label background color.
+Method Label Delete Color:: Specifies the DELETE method label color.
+Method Label Patch Background Color:: Specifies the PATCH method label background color.
+Method Label Patch Color:: Specifies the PATCH method label color.
+Method Label Options Background Color:: Specifies the OPTIONS method label background color.
+Method Label Options Color:: Specifies the OPTIONS method label color.
+Method Label Head Background Color:: Specifies the HEAD method label background color.
+Method Label Head Color:: Specifies the HEAD method label color.
 Headline Font Family (Optional):: Specifies the API console headline font family.
 
 == API Console Instances
 
-The *API Console Instances* component shows the list of instances of an API.
+The API Console Instances component shows the list of instances of an API.
 
-// check component description
-
-You can specify values for the following parameters of the *API Console Instances*:
+You can specify values for the following parameters of the API Console Instances:
 
 API:: Specifies the API whose instances are displayed.
 
 == API Console Navigation
 
-The *API Console Navigation* component shows the API console component's navigation.
+The API Console Navigation component shows the API console component's navigation.
 
-// check component description
-
-You can specify values for the following parameters of the *API Console Navigation*:
+You can specify values for the following parameters of the API Console Navigation:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
-Method Label Get Background Color:: Specifies the *GET* method label background color.
-Method Label Get Color:: Specifies the *GET* method label color.
-Method Label Post Background Color:: Specifies the *POST* method label background color.
-Method Label Post Color:: Specifies the *POST* method label color.
-Method Label Put Background Color:: Specifies the *PUT* method label background color.
-Method Label Put Color:: Specifies the *PUT* method label color.
-Method Label Delete Background Color:: Specifies the *DELETE* method label background color.
-Method Label Delete Color:: Specifies the *DELETE* method label color.
-Method Label Patch Background Color:: Specifies the *PATCH* method label background color.
-Method Label Patch Color:: Specifies the *PATCH* method label color.
-Method Label Options Background Color:: Specifies the *OPTIONS* method label background color.
-Method Label Options Color:: Specifies the *OPTIONS* method label color.
-Method Label Head Background Color:: Specifies the *HEAD* method label background color.
-Method Label Head Color:: Specifies the *HEAD* method label color.
+Method Label Get Background Color:: Specifies the GET method label background color.
+Method Label Get Color:: Specifies the GET method label color.
+Method Label Post Background Color:: Specifies the POST method label background color.
+Method Label Post Color:: Specifies the POST method label color.
+Method Label Put Background Color:: Specifies the PUT method label background color.
+Method Label Put Color:: Specifies the PUT method label color.
+Method Label Delete Background Color:: Specifies the DELETE method label background color.
+Method Label Delete Color:: Specifies the DELETE method label color.
+Method Label Patch Background Color:: Specifies the PATCH method label background color.
+Method Label Patch Color:: Specifies the PATCH method label color.
+Method Label Options Background Color:: Specifies the OPTIONS method label background color.
+Method Label Options Color:: Specifies the OPTIONS method label color.
+Method Label Head Background Color:: Specifies the HEAD method label background color.
+Method Label Head Color:: Specifies the HEAD method label color.
 
 == API Console Request Panel
 
-The *API Console Request Panel* component shows a panel where users can test an API by making requests to it.
+The API Console Request Panel component shows a panel where users can test an API by making requests to it.
 
-You can specify values for the following parameters of the *API Console Request Panel*:
+You can specify values for the following parameters of the API Console Request Panel:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
-Method Label Get Background Color:: Specifies the *GET* method label background color.
-Method Label Get Color:: Specifies the *GET* method label color.
-Method Label Post Background Color:: Specifies the *POST* method label background color.
-Method Label Post Color:: Specifies the *POST* method label color.
-Method Label Put Background Color:: Specifies the *PUT* method label background color.
-Method Label Put Color:: Specifies the *PUT* method label color.
-Method Label Delete Background Color:: Specifies the *DELETE* method label background color.
-Method Label Delete Color:: Specifies the *DELETE* method label color.
-Method Label Patch Background Color:: Specifies the *PATCH* method label background color.
-Method Label Patch Color:: Specifies the *PATCH* method label color.
-Method Label Options Background Color:: Specifies the *OPTIONS* method label background color.
-Method Label Options Color:: Specifies the *OPTIONS* method label color.
-Method Label Head Background Color:: Specifies the *HEAD* method label background color.
-Method Label Head Color:: Specifies the *HEAD* method label color.
+Method Label Get Background Color:: Specifies the GET method label background color.
+Method Label Get Color:: Specifies the GET method label color.
+Method Label Post Background Color:: Specifies the POST method label background color.
+Method Label Post Color:: Specifies the POST method label color.
+Method Label Put Background Color:: Specifies the PUT method label background color.
+Method Label Put Color:: Specifies the PUT method label color.
+Method Label Delete Background Color:: Specifies the DELETE method label background color.
+Method Label Delete Color:: Specifies the DELETE method label color.
+Method Label Patch Background Color:: Specifies the PATCH method label background color.
+Method Label Patch Color:: Specifies the PATCH method label color.
+Method Label Options Background Color:: Specifies the OPTIONS method label background color.
+Method Label Options Color:: Specifies the OPTIONS method label color.
+Method Label Head Background Color:: Specifies the HEAD method label background color.
+Method Label Head Color:: Specifies the HEAD method label color.
 Link Hover Color:: Specifies the color of links when the cursor hovers over them.
 Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
@@ -189,21 +179,21 @@ Error Color (Optional):: Specifies the color of error messages.
 
 == API Details Button
 
-The *API Details Button* component provides portal users with details about an API.
+The API Details Button component provides portal users with details about an API.
 
-You can specify values for the following parameters of the *API Details Button*:
+You can specify values for the following parameters of the API Details Button:
 
 API:: Specifies the API to display.
-Button Label:: Specifies the button label. Default is `API Details`.
+Button Label:: Specifies the button label. Default is *API Details*.
 Button Align:: Specifies button alignment as left, right, or center of the UI field.
 API Name:: Adds the API name to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 API Version:: Adds the API version to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 
 == API Documentation Viewer
 
-The *API Documentation Viewer* component shows an API's documentation. The documentation may have multiple pages, and each page may have multiple sections.
+The API Documentation Viewer component shows an API's documentation. The documentation can have multiple pages, and each page can have multiple sections.
 
-You can specify values for the following parameters of the *API Documentation Viewer*:
+You can specify values for the following parameters of the API Documentation Viewer:
 
 API:: Specifies the API.
 Section (Optional):: Selects the section to open. If the *Selected page (optional)* setting is empty, the *Section (optional)* setting is ignored.
@@ -211,35 +201,33 @@ Selected Page (Optional):: Selects the page to open.
 
 == API Header
 
-The *API Header* component displays the API header, including icon, name, and description.
+The API Header component displays the API header, including icon, name, and description.
 
-You can specify values for the following parameters of the *API Header*:
+You can specify values for the following parameters of the API Header:
 
 API:: Specifies the API to show.
 
 == Application Analytics Graph
 
-The *Application Analytics Graph* component displays statistics about the use of an application, such as traffic, response time, and application health.
+The Application Analytics Graph component displays statistics about the use of an application, such as traffic, response time, and application health.
 
-You can specify values for the following parameters of the *Application Analytics Graph*:
+You can specify values for the following parameters of the Application Analytics Graph:
 
 Application:: Specifies the application to show.
 
 == Application Details
 
-The *Application Details* component displays details about an application.
+The Application Details component displays details about an application.
 
-// check component description
-
-You can specify values for the following parameters of the *Application Details*:
+You can specify values for the following parameters of the Application Details:
 
 Application:: Specifies the API to show.
 
 == Application Listing
 
-The *Application Listing* component shows applications that use an API.
+The Application Listing component shows applications that use an API.
 
-You can specify values for the following parameters of the *Application Listing*:
+You can specify values for the following parameters of the Application Listing:
 
 New Application URL:: Specifies a new application URL.
 Card Margin:: Specifies the amount of margin space around the card.
@@ -249,13 +237,11 @@ Card Shadow:: Specifies the shadow beneath the card.
 Card Width:: Specifies the card width.
 Card Height:: Specifies the card height.
 
-// check *New Application URL* description
-
 == Learn More Button
 
-The *Learn More Button* component provides portal users with a custom page with additional information about the API.
+The Learn More Button component provides portal users with a custom page with additional information about the API.
 
-You can specify values for the following parameters of the *Learn More Button*:
+You can specify values for the following parameters of the Learn More Button:
 
 API:: Specifies the API to display.
 Button Label:: Specifies the button label. Default is `Learn more about this API`.
@@ -265,9 +251,9 @@ API Version:: Adds the API version to the button label. Values are *Append*, *Pr
 
 == Login Form
 
-The *Login Form* component enables community members to log in to the portal.
+The Login Form component enables community members to log in to the portal.
 
-You can specify values for the following parameters of the *Login Form*:
+You can specify values for the following parameters of the Login Form:
 
 Start URL:: Specifies the URL that members see after they log in. The default value is the portal home page.
 Username Label:: Specifies the username field label. Default is `Email`.
@@ -278,17 +264,15 @@ Forgot Password URL:: Specifies the forgotten password link URL. Default is `/Fo
 Self Register Label:: Specifies the self-registration link label. Default is `Not a member?`.
 Self Register URL:: Specifies the self-registration link URL. Default is `/SelfRegister`.
 
-// check *Start URL* description
-
 == Search Result List
 
-The *Search Result List* component shows a list of search results. It has no configuration settings.
+The Search Result List component shows a list of search results. It has no configuration settings.
 
 == Self Register
 
-The *Self Register* component enables users to register for portal accounts.
+The Self Register component enables users to register for portal accounts.
 
-You can specify values for the following parameters of the *Self Register* component:
+You can specify values for the following parameters of the Self Register component:
 
 Start URL:: Specifies the start URL. Default is the portal home page.
 Confirm URL:: Specifies the confirmation URL. Default is `/CheckPasswordResetEmail`.
@@ -302,5 +286,3 @@ Include Password Field:: Shows the password field.
 Extra Field Set:: Specifies extra fields.
 Registrations Require Approval:: Select whether registration requires approval.
 Approver ID:: Specifies the approver ID.
-
-// Check descriptions: *Start URL*, *Confirm URL*, *Extra Field Set*, *Approver Id*
