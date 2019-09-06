@@ -6,7 +6,7 @@
  ** xref:configure-acm.adoc[Configure ACM]
  ** xref:install-validate.adoc[Verify the Installation]
 * xref:brand-intro.adoc[Brand and Customize Your API Community]
- ** xref:customize.adoc[API Community Look and Feel Customization]
+ ** xref:customize.adoc[API Community Look-and-Feel Customization]
  ** xref:acm-lightning-components.adoc[ACM Lightning Components]
  ** xref:preview-community.adoc[Preview Your API Community]
  ** xref:publish-community.adoc[Publish Your API Community]
