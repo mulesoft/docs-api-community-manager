@@ -327,7 +327,7 @@ Next you need to give permissions to your members' profile so that they can acce
 ... *AnypointApplications*
 ... *AnypointContracts*
 . Select *Save*.
-. In the *ACM Member User* profile page go to the *Field-Level Security* section.
+. In the *ACM Member User* profile page, go to the *Field-Level Security* section.
 . In the *Custom Field-Level Security* section, for each of the following objects, select *View*, then *Edit*, enable the corresponding permissions as follows, and select *Save* on each:
 .. Enable *Read* permissions for all fields of the objects:
 ... *AnypointApiInstances*
