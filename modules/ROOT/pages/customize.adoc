@@ -151,7 +151,7 @@ and specifies the site's *Text Case*.
 * https://help.salesforce.com/articleView?id=community_builder_theme_adjust.htm&type=5[Theme Settings, role=external, window=blank]
 
 Community styling can be adjusted by editing the CSS rules. Next to the *Theme*
-title is the *Theme* list which offers the option *Edit CSS*.
+title is the *Theme* list, which offers the option *Edit CSS*.
 
 Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme, role=external, window=blank].
 
