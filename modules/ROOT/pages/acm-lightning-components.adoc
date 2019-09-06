@@ -39,7 +39,7 @@ Card Margin:: Specifies the amount of margin space around the card.
 Card Border:: Specifies the card border thickness.
 Card Border Radius:: Specifies the card border radius. A larger radius makes the cards look more rounded.
 Card Shadow:: Specifies the shadow beneath the card.
-API Details Button Label:: Enables you to set the *API Details* button label. Default is `API Details`.
+API Details Button Label:: Enables you to set the *API Details* button label. Default is *API Details*.
 Learn More Button Label:: Enables you to set the *Learn More* button label. Default is `Learn More`.
 
 == API Carousel
