@@ -8,7 +8,7 @@ API Community Manager allows you to customize and adjust the branding, look and 
 
 Advanced HTML and CSS editing is also available for very precise web designs.
 
-* xref:customize.adoc[API Community Look and Feel Customization]
+* xref:customize.adoc[API Community Look-and-Feel Customization]
 * xref:acm-lightning-components.adoc[ACM Lightning Components]
 * xref:preview-community.adoc[Preview Your API Community]
 * xref:publish-community.adoc[Publish Your API Community]
