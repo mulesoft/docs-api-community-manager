@@ -157,7 +157,7 @@ Refer to https://help.salesforce.com/articleView?id=community_builder_theme_cust
 
 == Page Structure
 
-The *Page Structure* icon, which resembles a bulleted list, shows the components
+Clicking the *Page Structure* icon, which resembles a bulleted list, shows the components
 in the current page and enables you to select and remove them. Selecting a
 component displays its configuration menu.
 
