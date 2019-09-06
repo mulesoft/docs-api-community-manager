@@ -13,7 +13,7 @@ In the API Community Manager (ACM) control panel, the *Community Builder* [panel
 your site for editing. The builder is where you edit each page in your
 community, create new pages, and add and edit the components in each page.
 
-The *Community Builder* interface contains the elements described here.
+The Community Builder interface contains the elements described here.
 
 == Pages List
 
