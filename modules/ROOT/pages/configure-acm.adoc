@@ -313,7 +313,7 @@ In this section, you create the profile for members of your community. Users tha
 Next you need to give permissions to your members' profile so that they can access APIs, create client applications and manage their details. To do this:
 
 . Select *Edit* in the *ACM Member User* profile page.
-. In the *Standard Object Permissions* section, enable *Read* permissions for: *Documents*
+. In the *Standard Object Permissions* section, enable *Read* permissions for *Documents*.
 . In the *Custom Object Permissions* section:
 .. Enable *Read* permissions for: *CommunityApi*
 .. Enable *Read*, *Edit*, *Create* and *Delete* permissions for: *SelfRegisterUserRequests*
