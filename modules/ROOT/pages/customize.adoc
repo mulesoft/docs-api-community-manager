@@ -53,7 +53,7 @@ configuration options.
 Detailed component information is available from the page xref:acm-lightning-components.adoc[Description of ACM Lightning Components] and
 the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Community Components, role=external, window=blank] documentation.
 
-Components typically used in *Home* pages include:
+Components typically used in home pages include:
 
 * https://help.salesforce.com/articleView?id=rss_headline.htm&type=5[Headline, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=rss_cms_collection.htm&type=5[CMS Collection, role=external, window=blank]
