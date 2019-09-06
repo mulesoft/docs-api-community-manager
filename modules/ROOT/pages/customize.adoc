@@ -21,7 +21,7 @@ The *Pages* list shows the pages included with ACM and the pages you have added,
 and enables you to select and edit each page. The included page *Home* is
 selected by default.
 
-The *Pages* list enables you to create new pages with the *New Page* option.
+The *Pages* list enables you to create new pages by using the *New Page* option.
 
 A new page can be an *Object Page* or *Standard Page*. An *Object Page* is used
 only with Salesforce objects, so a custom community page starts as a
