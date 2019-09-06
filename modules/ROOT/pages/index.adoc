@@ -13,7 +13,7 @@ See these useful resources to get up-to-speed with the capabilities of Salesforc
 * https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Community Cloud Product Documentation, role=external, window=blank]
 * https://trailhead.salesforce.com/en/content/learn/trails/communities[Community Cloud Trailhead, role=external, window=blank]
 
-== What is an API Community?
+== What Is an API Community?
 
 To drive developer adoption of your APIs, you must help them discover and learn how to use your APIs effectively, and provide a personalized, branded experience to motivate them to work with you. You must also engage with these developers during every step of their journey to ensure their success. ACM enables you to create this personalized, connected experience for your developers so they can interact with your APIs - APIs designed, catalogued, and managed in the Anypoint Platform.
 
