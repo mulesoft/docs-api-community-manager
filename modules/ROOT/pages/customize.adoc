@@ -1,4 +1,4 @@
-= API Community Look and Feel Customization
+= API Community Look-and-Feel Customization
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
