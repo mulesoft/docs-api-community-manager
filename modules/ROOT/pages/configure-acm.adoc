@@ -475,7 +475,9 @@ If you don't configure an approval process, self-registered users will become me
 . Select *Use Standard Setup Wizard* in the *Create New Approval Process* drop-down.
 . In the wizard, enter the following information:
 
-.. In *Step 1. Enter Name and Description*, enter the following information: *Process Name*: `Approve Registration`.
+.. In *Step 1. Enter Name and Description*, enter the following information: 
+
+   *Process Name*: `Approve Registration`
 .. Select *Next*.
 
 .. In *Step 2. Specify Entry Criteria*, enter the following information:
