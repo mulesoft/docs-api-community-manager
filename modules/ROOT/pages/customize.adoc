@@ -141,7 +141,7 @@ Sets the site's general color scheme, including paragraph, heading, and button t
 +
 * *Images*
 +
-Specifies the site's *Company Logo* and the login page's *Background Image*.
+Specifies the site's company logo and the login page's background Image.
 +
 * *Fonts*
 +
