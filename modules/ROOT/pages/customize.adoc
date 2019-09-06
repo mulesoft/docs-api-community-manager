@@ -29,7 +29,7 @@ standard page. A standard page can start from one of the preconfigured pages
 or as a new blank page.
 
 A new blank page is made by selecting the layout and then entering the new
-page's *Name* and *URL*. The URL is used to make links to the new page,
+page's name and URL. The URL is used to make links to the new page,
 including links in menus.
 
 The new page is displayed with placeholders for content based on the layout.
