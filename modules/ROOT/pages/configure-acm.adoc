@@ -279,7 +279,7 @@ If you want to organize CMS content using Topics:
 
 === Enable Chatter Tracking for APIs [[enable-chatter-tracking]]
 
-Chatter tracking enables creating discussions on specific objects like APIs. To use Chatter tracking for APIs:
+Chatter tracking enables your community to create discussions on specific objects like APIs. To use Chatter tracking for APIs:
 
 . In *Setup*, search for *Chatter* using the *Quick Find* box and select *Feed Tracking*.
 . Select the *CommunityAPI* object.
