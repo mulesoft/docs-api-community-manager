@@ -23,7 +23,7 @@ selected by default.
 
 The *Pages* list enables you to create new pages by using the *New Page* option.
 
-A new page can be an *Object Page* or *Standard Page*. An *Object Page* is used
+A new page can be an object page or a standard page. An object page is used
 only with Salesforce objects, so a custom community page starts as a
 *Standard Page*. A standard page can start from one of the preconfigured pages
 or as a *New Blank Page*.
