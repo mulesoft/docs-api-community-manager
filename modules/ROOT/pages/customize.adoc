@@ -133,7 +133,7 @@ Items on a page can be dragged into any order.
 
 == Theme
 
-The *Theme* paintbrush icon offers these general branding parameters:
+Clicking the *Theme* paintbrush icon offers these general branding parameters:
 
 * *Colors*
 +
