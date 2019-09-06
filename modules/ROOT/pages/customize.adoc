@@ -163,7 +163,7 @@ component displays its configuration menu.
 
 == Settings
 
-The *Settings* gear icon offers these parameters:
+<span class="x x-first x-last">Clicking the</span> *Settings* gear icon offers these parameters:
 
 * https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[General, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=community_builder_theme.htm&type=5[Theme, role=external, window=blank]
