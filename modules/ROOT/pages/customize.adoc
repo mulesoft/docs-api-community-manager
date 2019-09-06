@@ -43,7 +43,7 @@ which are described in https://help.salesforce.com/articleView?id=community_buil
 
 == Components
 
-The *Components* lightning bolt icon displays the component palette, which
+Clicking the *Components* lightning bolt icon displays the component palette, which
 includes Salesforce Community Cloud components, such as *Headline* or
 *Featured Topics*, and ACM-specific components, such as *API Carousel* or
 *API Console*. Each component can be dragged from the component palette to the
