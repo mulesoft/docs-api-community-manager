@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-After you have edited your community site, you can preview the new version of the site to ensure that it meets your expectations:
+After you edit your community site, you can preview the new version to ensure that it meets your expectations:
 
 . From the API Community Manager (ACM) Control Panel, click *Community Builder*.
 . Click *Preview*.
