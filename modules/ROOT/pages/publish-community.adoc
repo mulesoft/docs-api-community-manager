@@ -17,5 +17,5 @@ If your community is not already active, activate it:
 
 After your community is published and active, view the live site:
 
-. Open the API Community Manager (ACM) Control Panel.
+. Open the API Community Manager (ACM) control panel.
 . Click *Open Community*.
