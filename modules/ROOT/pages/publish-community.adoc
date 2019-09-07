@@ -11,7 +11,7 @@ After you edit and preview your updated community site, you can publish the new 
 
 If your community is not already active, activate it:
 
-. From the API Community Manager (ACM) Control Panel, click *Community Administration*.
+. From the API Community Manager (ACM) control panel, click *Community Administration*.
 . Click *Settings*.
 . Click *Activate*.
 
