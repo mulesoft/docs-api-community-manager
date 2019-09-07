@@ -6,7 +6,7 @@ endif::[]
 
 After you edit your community site, you can preview the new version to ensure that it meets your expectations:
 
-. From the API Community Manager (ACM) Control Panel, click *Community Builder*.
+. From the API Community Manager (ACM) control panel, click *Community Builder*.
 . Click *Preview*.
 . Examine your changes and verify that they appear correctly. APIs that are only visible to administrators will appear in this preview.
 . Click *Back to Builder*.
