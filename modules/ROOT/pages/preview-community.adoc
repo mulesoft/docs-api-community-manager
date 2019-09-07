@@ -8,5 +8,5 @@ After you edit your community site, you can preview the new version to ensure th
 
 . From the API Community Manager (ACM) control panel, click *Community Builder*.
 . Click *Preview*.
-. Examine your changes and verify that they appear correctly. APIs that are only visible to administrators will appear in this preview.
+. Verify that your changes are applied and display correctly. APIs that are visible only to administrators appear in this preview.
 . Click *Back to Builder*.
