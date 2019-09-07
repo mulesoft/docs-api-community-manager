@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-After you have edited and previewed your community site, you can publish the new version for your community users:
+After you edit and preview your updated community site, you can publish the new version for your users:
 
 . From the API Community Manager (ACM) Control Panel, click *Community Builder*.
 . Click *Publish*.
