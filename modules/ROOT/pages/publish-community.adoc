@@ -6,7 +6,7 @@ endif::[]
 
 After you edit and preview your updated community site, you can publish the new version for your users:
 
-. From the API Community Manager (ACM) Control Panel, click *Community Builder*.
+. From the API Community Manager (ACM) control panel, click *Community Builder*.
 . Click *Publish*.
 
 If your community is not already active, activate it:
