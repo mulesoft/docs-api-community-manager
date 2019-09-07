@@ -4,11 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager allows you to customize and adjust the branding, look and feel, and site structure of your API community to the finest level of detail, using a simple point-and-click approach.
+API Community Manager enables you to customize and adjust the exact details of branding, look and feel, and site structure of your API community, using a simple point-and-click approach.
 
-Advanced HTML and CSS editing is also available for very precise web designs.
+Advanced HTML and CSS editing is also available for precise web designs.
 
-* xref:customize.adoc[Customize the Look and Feel of Your API Community]
+* xref:customize.adoc[API Community Look-and-Feel Customization]
 * xref:acm-lightning-components.adoc[ACM Lightning Components]
 * xref:preview-community.adoc[Preview Your API Community]
 * xref:publish-community.adoc[Publish Your API Community]
