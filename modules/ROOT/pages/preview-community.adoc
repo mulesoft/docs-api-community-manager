@@ -4,10 +4,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To see a live preview of your community's site, including APIs only visible to the administrators, open the ACM Control Panel and select *Community Builder*.
+After you edit your community site, you can preview the new version to ensure that it meets your expectations:
 
-image::builder.png[Site Builder]
-
-Select *Preview*.
-
-To return to the builder, select *Back to Builder*.
+. From the API Community Manager (ACM) control panel, click *Community Builder*.
+. Click *Preview*.
+. Verify that your changes are applied and display correctly. APIs that are visible only to administrators appear in this preview.
+. Click *Back to Builder*.
