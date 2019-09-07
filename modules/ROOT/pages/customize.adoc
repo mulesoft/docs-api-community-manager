@@ -7,13 +7,14 @@ endif::[]
 https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank] enables
 you to create a community with your desired brand identity, look and feel, and
 site structure by providing control over the community's components, themes,
-and pages, and its general theme and SEO settings.
+and pages, and its settings for general properties, themes, and SEO.
 
-In the API Community Manager (ACM) control panel, the *Community Builder* [panel? screen? page?] shows
-your site for editing. The builder is where you edit each page in your
-community, create new pages, and add and edit the components in each page.
+In the API Community Manager (ACM) control panel, the *Community Builder* link
+opens your site for editing. With Community Builder you can edit each page in
+your community, create new pages, and add and edit the components in each page.
 
-The Community Builder interface contains the elements described here.
+Community Builder's interface contains the pages list, component palette,
+theme menu, page structure menu, and settings menu.
 
 == Pages List
 
@@ -23,32 +24,32 @@ selected by default.
 
 The *Pages* list enables you to create new pages by using the *New Page* option.
 
-A new page can be an object page or a standard page. An object page is used
+A new page can be an object page or a standard page. Object pages are used
 only with Salesforce objects, so a custom community page starts as a
 standard page. A standard page can start from one of the preconfigured pages
 or as a new blank page.
 
-A new blank page is made by selecting the layout and then entering the new
-page's name and URL. The URL is used to make links to the new page,
-including links in menus.
+Make a new blank page by selecting the layout and then entering the new page's
+name and URL. Use that URL to make links to the new page, including links in
+menus.
 
-The new page is displayed with placeholders for content based on the layout.
+The new page displays with placeholders for content based on the layout.
 
-A new page is filled in by adding components from the *Components* menu, such
-as a *Headline* component in the page header, or an ACM Lightning component
-such as an *API Version Carousel*.
+Fill in a new page by adding components from the *Components* menu, such
+as a Headline component in the page header, or an ACM Lightning component
+such as an API Version Carousel.
 
 The *Pages* list shows the editable configuration properties for each page,
 which are described in https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community’s Pages and Their Properties in Community Builder, role=external, window=blank].
 
 == Components
 
-Clicking the *Components* lightning bolt icon displays the component palette, which
-includes Salesforce Community Cloud components, such as *Headline* or
-*Featured Topics*, and ACM-specific components, such as *API Carousel* or
-*API Console*. Each component can be dragged from the component palette to the
-current page. Selecting the component on the page shows the component's
-configuration options.
+Clicking the *Components* lightning bolt icon displays the component palette,
+which includes Salesforce Community Cloud components, such as Headline or
+Featured Topics, and ACM-specific components, such as API Carousel or API
+Console. You can drag any component from the component palette to the current
+page. Select the component on the page to show the component's configuration
+options.
 
 Detailed component information is available from the page xref:acm-lightning-components.adoc[Description of ACM Lightning Components] and
 the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Community Components, role=external, window=blank] documentation.
@@ -57,11 +58,11 @@ Components typically used in home pages include:
 
 * https://help.salesforce.com/articleView?id=rss_headline.htm&type=5[Headline, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=rss_cms_collection.htm&type=5[CMS Collection, role=external, window=blank]
-* *API Carousel*
+* API Carousel
 +
 Displays APIs and API versions that are available to the community from Anypoint Exchange.
 +
-* *API Details Button*
+* API Details Button
 +
 Provides details about an API.
 +
@@ -69,12 +70,11 @@ Provides details about an API.
 * https://help.salesforce.com/articleView?id=rss_html_editor.htm&type=5[HTML editor, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=rss_setup_nav_menu.htm&type=5[Navigation Menu, role=external, window=blank]
 
-The *Navigation Menu* component provides the menu for navigating the site, with
-settings for *Max Items to Display (2-15)* and *Menu Item Alignment*, and a
-*Navigation Menu* button to edit the links on the navigation menu. The *Home*
-link is always present and is always the first item. Other links can be added,
-removed, and reordered. Each link other than *Home* can be customized with these
-options:
+The Navigation Menu component provides the menu for navigating the site, with
+settings for Max Items to Display (2-15) and Menu Item Alignment, and a
+*Navigation Menu* button to edit the links on the navigation menu. The menu
+always starts with the *Home* link. Other links can be added, removed, and
+reordered. Each link other than *Home* can be customized with these options:
 
 * *Name*
 +
@@ -125,11 +125,11 @@ Provides additional information about the API.
 
 Components typically used in *My Application* pages include:
 
-* *Application Listing*
+* Application Listing
 +
 Lists all client applications that the member has registered and can access.
 
-Items on a page can be dragged into any order.
+You can drag items on a page to reorder them.
 
 == Theme
 
@@ -145,13 +145,13 @@ Specifies the site's company logo and the login page's background Image.
 +
 * *Fonts*
 +
-Specifies the site's fonts, which include a *Primary Font* and *Header Fonts*,
-and specifies the site's *Text Case*.
+Specifies the site's fonts, which include a primary font and header fonts,
+and specifies the site's text case.
 +
 * https://help.salesforce.com/articleView?id=community_builder_theme_adjust.htm&type=5[Theme Settings, role=external, window=blank]
 
-Community styling can be adjusted by editing the CSS rules. Next to the *Theme*
-title is the *Theme* list, which offers the option *Edit CSS*.
+You can adjust community styling by editing the CSS rules. Next to the *Theme*
+title, click the *Theme* list, and click *Edit CSS*.
 
 Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme, role=external, window=blank].
 
@@ -163,7 +163,7 @@ component displays its configuration menu.
 
 == Settings
 
-<span class="x x-first x-last">Clicking the</span> *Settings* gear icon offers these parameters:
+Clicking the *Settings* gear icon offers these parameters:
 
 * https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[General, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=community_builder_theme.htm&type=5[Theme, role=external, window=blank]
