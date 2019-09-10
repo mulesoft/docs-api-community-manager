@@ -19,7 +19,7 @@ involvement from the marketing team.
 
 All of these actions are performed in the API Community Manager (ACM) control panel:
 
-image::control-panel.png[]
+image::control-panel.png[ACM control panel]
 
 To open the ACM control panel at any time, open the Salesforce *App Launcher* and select *API Community Manager*.
 
