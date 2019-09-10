@@ -4,11 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Consumer developers can use the API Community Manager forums to ask questions and collaborate with other members of the community.
+Consumer developers can use the API Community Manager (ACM) forums to ask questions and collaborate with other members of the community.
 
 When a developer posts a question or answer that's not visible automatically, a community operator must approve it.
 
-To approve or delete pending forum posts, open the ACM Control Panel and select *Manage Forums*.
+To approve or delete pending forum posts, open the ACM control panel and select *Manage Forums*.
 
 Select *Pending Discussions*.
 

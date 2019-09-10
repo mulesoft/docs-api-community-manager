@@ -6,16 +6,18 @@ endif::[]
 
 After you edit and preview your updated community site, you can publish the new version for your users:
 
-. From the API Community Manager (ACM) control panel, click *Community Builder*.
+. Open the API Community Manager (ACM) control panel.
+. Click *Community Builder*.
 . Click *Publish*.
 
 If your community is not already active, activate it:
 
-. From the API Community Manager (ACM) control panel, click *Community Administration*.
+. Open the ACM control panel.
+. Click *Community Administration*.
 . Click *Settings*.
 . Click *Activate*.
 
 After your community is published and active, view the live site:
 
-. Open the API Community Manager (ACM) control panel.
+. Open the ACM control panel.
 . Click *Open Community*.
