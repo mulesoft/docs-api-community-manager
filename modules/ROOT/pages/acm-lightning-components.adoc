@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-You design the pages of your API Community Manager (ACM) portal by adding and configuring Lightning components in the Community Builder.
+You design the pages of your API Community Manager (ACM) portal by adding and configuring Lightning components in Community Builder.
 
 These Lightning Components include both the components available in all Salesforce Communities, and the ACM Lightning components only available in ACM.
 
@@ -68,7 +68,7 @@ The interactive API Console component shows information about your APIs and thei
 
 Endpoints are displayed in alphabetical order.
 
-Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In the Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
+Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
 You can specify values for the following parameters of the API Console:
 

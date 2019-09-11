@@ -51,7 +51,7 @@ The https://help.salesforce.com/articleView?id=community_managed_content_collect
 == Display the Collection in Your Community
 
 . Open the ACM control panel.
-. Select *Community Builder*. A preview of your community's site is displayed.
+. Click *Community Builder*. A preview of your community's site is displayed.
 . If the collection containing your new article is already displayed in a *CMS Collection* component, then your new article will be visible there.
 . Your article will be visible in any new *CMS Collection* components displaying the collection containing the article.
 
