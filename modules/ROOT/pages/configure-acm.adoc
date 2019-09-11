@@ -534,7 +534,7 @@ If you don't configure an approval process, self-registered users will become me
 
 . On the *Approve Registration* page, click *Activate* and confirm.
 . In the ACM control panel, open *Community Builder*, and click *Settings* -> *General*.
-. In the *Community Builder*, navigate to the *Register* page in the pages menu and select the ACM *Self Register* component.
+. In Community Builder, navigate to the *Register* page in the pages menu and select the ACM *Self Register* component.
 . Verify the *Approved Registration* and set the *Approver Id* with the *User Id* of the user you want to approve the registration requests.
 
 To get the *User Id*:
