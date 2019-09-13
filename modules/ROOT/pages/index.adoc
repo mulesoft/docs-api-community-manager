@@ -33,7 +33,7 @@ Other ACM features enable your organization to engage with partners and ensure t
 
 == Building Your API Community
 
-Personalize your community look and feel, branding, and site structure by using  https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank], a drag-and-drop editor that enables you to create and customize the user experience at every level of detail. Community Builder makes it easy to create a tailored experience using pre-existing components and simple clicks, or using the full flexibility of HTML and CSS for precise pixel-perfect experiences.
+Personalize your community look and feel, branding, and site structure by using  https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank], a drag-and-drop editor that enables you to create and customize the user experience at every level of detail. Community Builder makes it easy to create a tailored experience using pre-existing Lightning components and simple clicks, or using the full flexibility of HTML and CSS for precise pixel-perfect experiences.
 
 == Understand How Your Developers Engage in Your Community
 

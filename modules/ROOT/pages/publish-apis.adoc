@@ -33,7 +33,7 @@ Now set the API information, including visibility, icon, and description.
 . Select *Replace Icon* to set the API version icon.
 . Enter a *Description* for the API version.
 . Leave the *Visibility* as *Admin Only* while you preview the API version as described in the next section.
-. When your API is displayed on the community site in the API carousel component or in an API card, by default it has a single *API Details* button. It can also have an optional *Learn more* button that links to a business content page. In the *Associated "Learn-more" Page* section, select *None* to keep the default, or select *Custom page* and set the *Custom page URL* to a business content page created in Community Builder.
+. When your API is displayed on the community site in the API Carousel component or in an API card, by default it has a single *API Details* button. It can also have an optional *Learn more* button that links to a business content page. In the *Associated "Learn-more" Page* section, select *None* to keep the default, or select *Custom page* and set the *Custom page URL* to a business content page created in Community Builder.
 . Select *Apply*.
 
 == Preview APIs

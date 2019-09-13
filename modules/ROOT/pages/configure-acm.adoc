@@ -172,7 +172,7 @@ NOTE: Remember to associate the external data source with this authentication pr
 . If you don't have an active session in your Anypoint Platform organization, the *Anypoint Login* page is shown. Log in to the Anypoint Platform to complete the authentication. If you already have an active session, authentication is performed without requiring a login.
 . Verify the Exchange *External Data Sources* *Authentication Status* is *Authenticated*.
 
-After authenticating the External Data Source, provide the credentials of an Anypoint Platform system user with read-only access, for components like the API Console which retrieve data directly from the Anypoint Platform APIs.
+After authenticating the External Data Source, provide the credentials of an Anypoint Platform system user with read-only access, for Lightning components like the API Console which retrieve data directly from the Anypoint Platform APIs.
 
 . Search for *Named Credentials* in the *Quick Find* box and then click *Named Credentials*.
 . Locate the *anypoint.mulesoft* item and then click *Edit*.
@@ -427,11 +427,11 @@ These steps enable guests to register as members in your ACM portal.
 
 ==== Add Self Register Component to Registration Page [[add-self-register-custom-component-to-register-page]]
 
-The self-register component enables guest users to register themselves as members of your community. If you're not using any of the ACM out-of-the-box templates, use these steps to add the ACM-specific self-registration component.
+The self-registration Lightning component enables guest users to register themselves as members of your community. If you're not using any of the ACM out-of-the-box templates, use these steps to add the ACM-specific self-registration Lightning component.
 
 . In the ACM control panel, open *Community Builder* and navigate to the *Register* page in the Pages menu on the top left.
-. Remove the standard *Self Registration* component by clicking the delete icon next to it.
-. Navigate to *Components*, search for *Self Register* and add the component to the page.
+. Remove the standard *Self Registration* Lightning component by clicking the delete icon next to it.
+. Navigate to *Components*, search for *Self Register* and add the Lightning component to the page.
 
 ==== Assign a Profile for Your Community Members [[assign-a-profile-for-your-community-members]]
 
@@ -534,7 +534,7 @@ If you don't configure an approval process, self-registered users will become me
 
 . On the *Approve Registration* page, click *Activate* and confirm.
 . In the ACM control panel, open *Community Builder*, and click *Settings* -> *General*.
-. In Community Builder, navigate to the *Register* page in the pages menu and select the ACM *Self Register* component.
+. In Community Builder, navigate to the *Register* page in the pages menu and select the ACM *Self Register* Lightning component.
 . Verify the *Approved Registration* and set the *Approver Id* with the *User Id* of the user you want to approve the registration requests.
 
 To get the *User Id*:
