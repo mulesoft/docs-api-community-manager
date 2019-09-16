@@ -58,9 +58,34 @@ Card Border:: Specifies the card border thickness.
 Card Border Radius:: Specifies the card border radius. A larger radius makes the cards look more rounded.
 Card Shadow:: Specifies the shadow beneath each card.
 Message If Empty:: Shows a message if the carousel has no APIs. Default is `There are no APIs available right now.`
-Filter Condition (Advanced):: Limits the APIs shown in the carousel to those matching a standard Salesforce Object Query Language (SOQL) search. SOQL searches use package names, field names such as "API name" or "API description," and comparison of strings to the values of those fields.
+Filter Condition (Advanced):: Causes the carousel to show only APIs that match the given search.
 API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
 Learn More Button Label:: Enables you to set the Learn More button label. Default is *Learn More*.
+
+=== Filter Conditions
+
+The API Carousel component parameter *Filter Condition (Advanced)* causes the carousel to filter out the APIs that do not match the condition and show only the APIs that match. A condition is a standard search in Salesforce Object Query Language (SOQL).
+
+You can search these fields:
+
+* `acm_pkg_dev__Icon__c`
+* `acm_pkg_dev__Name__c`
+* `acm_pkg_dev__NavigateUrl__c`
+* `acm_pkg_dev__VersionGroup__c`
+
+These examples demonstrate filter conditions.
+
+* The API name is exactly equal to `My API`: `acm_pkg_dev__Name__c = 'My API'`
+* The API name contains the text `My API`: `acm_pkg_dev__Name__c like '%My API%'`
+* The API has an icon: `acm_pkg_dev__Icon__c != ''`
+* The API has a Learn More button that links to a custom page with more information: `acm_pkg_dev__NavigateUrl__c != ''`
+* The API version group is exactly equal to `v2`: `acm_pkg_dev__VersionGroup__c = 'v2'`
+* The API version group is later than `v1`: `acm_pkg_dev__VersionGroup__c > 'v1'`
+* The API version group is earlier than `v1`: `acm_pkg_dev__VersionGroup__c < 'v1'`
+* The API version group is later than or equal to `v2`: `acm_pkg_dev__VersionGroup__c >= 'v2'`
+* The API version group is earlier than or equal to `v2`: `acm_pkg_dev__VersionGroup__c <= 'v2'`
+
+You can learn more about SOQL from the Salesforce https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/[SOQL and SOSL Reference, role=external, window=blank].
 
 == API Console
 
