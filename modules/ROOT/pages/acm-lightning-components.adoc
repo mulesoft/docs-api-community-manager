@@ -10,6 +10,8 @@ These Lightning components include both the Lightning components available in al
 
 Each ACM Lightning component has different configuration options and adds different functionality to the portal.
 
+Many ACM Lightning components show data from Anypoint Platform. ACM admins can change some of these data fields, such as API names, descriptions, and icons. ACM saves these changes but does not push the changes back to Anypoint Platform.
+
 == API Access Requester
 
 The API Access Requester component enables community members to request access to an API for either a new or existing application.
@@ -27,6 +29,8 @@ Show Modal Title Line:: Shows the title line in the access request modal.
 
 The API Card component shows information about an API, including icon, name, and description.
 
+Data shown from Anypoint Platform: API icon, name, and description from Anypoint Exchange.
+
 You can specify values for the following parameters of the API Card:
 
 API:: Specifies the API shown.
@@ -43,6 +47,8 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 == API Carousel
 
 The API Carousel component shows a horizontally scrollable set of API cards.
+
+Data shown from Anypoint Platform: API icon, name, and description from Anypoint Exchange.
 
 You can specify values for the following parameters of the API Carousel:
 
@@ -70,6 +76,8 @@ Endpoints are displayed in alphabetical order.
 
 Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
+Data shown from Anypoint Platform: API instances and documentation from MuleSoft API Modeling Framework.
+
 You can specify values for the following parameters of the API Console:
 
 API:: Specifies the API to display.
@@ -96,7 +104,9 @@ Method Label Head Color:: Specifies the HEAD method label color.
 
 == API Console Documentation
 
-The API Console Documentation component shows the documentation from Anypoint Exchange about an API.
+The API Console Documentation component shows the documentation about an API.
+
+Data shown from Anypoint Platform: API documentation from Anypoint Exchange.
 
 You can specify values for the following parameters of the API Console Documentation:
 
@@ -120,7 +130,9 @@ Headline Font Family (Optional):: Specifies the API console headline font family
 
 == API Console Instances
 
-The API Console Instances component shows the list of instances of an API.
+The API Console Instances component shows the list of instances of an API, also known as endpoints.
+
+Data shown from Anypoint Platform: API instances from Anypoint API Manager.
 
 You can specify values for the following parameters of the API Console Instances:
 
@@ -129,6 +141,8 @@ API:: Specifies the API whose instances are displayed.
 == API Console Navigation
 
 The API Console Navigation component shows the API console component's navigation.
+
+Data shown from Anypoint Platform: API instances and documentation from MuleSoft API Modeling Framework.
 
 You can specify values for the following parameters of the API Console Navigation:
 
@@ -152,6 +166,8 @@ Method Label Head Color:: Specifies the HEAD method label color.
 == API Console Request Panel
 
 The API Console Request Panel component shows a panel where users can test an API by making requests to it.
+
+Data shown from Anypoint Platform: API instances from Anypoint API Manager.
 
 You can specify values for the following parameters of the API Console Request Panel:
 
@@ -193,6 +209,8 @@ API Version:: Adds the API version to the button label. Values are *Append*, *Pr
 
 The API Documentation Viewer component shows an API's documentation. The documentation can have multiple pages, and each page can have multiple sections.
 
+Data shown from Anypoint Platform: API documentation from Anypoint Exchange.
+
 You can specify values for the following parameters of the API Documentation Viewer:
 
 API:: Specifies the API.
@@ -203,6 +221,8 @@ Selected Page (Optional):: Selects the page to open.
 
 The API Header component displays the API header, including icon, name, and description.
 
+Data shown from Anypoint Platform: API icon, name, and description from Anypoint Exchange.
+
 You can specify values for the following parameters of the API Header:
 
 API:: Specifies the API to show.
@@ -210,6 +230,8 @@ API:: Specifies the API to show.
 == Application Analytics Graph
 
 The Application Analytics Graph component displays statistics about the use of an application, such as traffic, response time, and application health.
+
+Data shown from Anypoint Platform: Application statistics from Anypoint API Manager.
 
 You can specify values for the following parameters of the Application Analytics Graph:
 
@@ -219,6 +241,8 @@ Application:: Specifies the application to show.
 
 The Application Details component displays details about an application.
 
+Data shown from Anypoint Platform: Application description, application URL, redirect URIs, client ID, and client secret from Anypoint Exchange.
+
 You can specify values for the following parameters of the Application Details:
 
 Application:: Specifies the API to show.
@@ -226,6 +250,8 @@ Application:: Specifies the API to show.
 == Application Listing
 
 The Application Listing component shows applications that use an API.
+
+Data shown from Anypoint Platform: Application name, client ID, and client secret from Anypoint Exchange.
 
 You can specify values for the following parameters of the Application Listing:
 
