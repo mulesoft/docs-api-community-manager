@@ -76,7 +76,7 @@ Endpoints are displayed in alphabetical order.
 
 Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
-Data shown from Anypoint Platform: API instances and documentation from  AML Modeling Framework (AMF). AML is the Anything Modeling Language.
+Data shown from Anypoint Platform: API instances and documentation from the AML Modeling Framework (AMF). AML is the Anything Modeling Language.
 
 You can specify values for the following parameters of the API Console:
 
@@ -142,7 +142,7 @@ API:: Specifies the API whose instances are displayed.
 
 The API Console Navigation component shows the API console component's navigation.
 
-Data shown from Anypoint Platform: API instances and documentation from MuleSoft AML Modeling Framework (AMF). AML is the Anything Modeling Language.
+Data shown from Anypoint Platform: API instances and documentation from the AML Modeling Framework (AMF). AML is the Anything Modeling Language.
 
 You can specify values for the following parameters of the API Console Navigation:
 
