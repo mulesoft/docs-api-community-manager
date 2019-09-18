@@ -66,27 +66,29 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 The API Carousel component parameter *Filter Condition (Advanced)* causes the carousel to filter out the APIs that do not match the condition and show only the APIs that match. A condition is a standard search in Salesforce Object Query Language (SOQL).
 
-You can search these fields:
+You can search these fields.
 
-* `+acm_pkg_dev__Icon__c+`
-* `+acm_pkg_dev__Name__c+`
-* `+acm_pkg_dev__NavigateUrl__c+`
-* `+acm_pkg_dev__VersionGroup__c+`
+* `+acm_pkg__Icon__c+`
+* `+acm_pkg__Name__c+`
+* `+acm_pkg__NavigateUrl__c+`
+* `+acm_pkg__VersionGroup__c+`
 
-These examples demonstrate filter conditions. Queries using `OR` or `AND` must enclose the whole condition in parentheses.
+These examples demonstrate filter conditions.
 
-* The API name is exactly equal to `My API`: `+acm_pkg_dev__Name__c = 'My API'+`
-* The API name contains the text `My API`: `+acm_pkg_dev__Name__c LIKE '%My API%'+`
-* The API name is `API Alpha` or `API Bravo`: `+(acm_pkg_dev__Name__c = 'API Alpha' OR acm_pkg_dev__Name__c = 'API Bravo')+`
-* The API name is `My API` and the API version group is `v1`: `+(acm_pkg_dev__Name__c = 'My API' AND acm_pkg_dev__VersionGroup__c = 'v1')+`
-* The API name begins with `Product`, `Shipping`, or `Order`: `+(acm_pkg_dev__Name__c LIKE 'Product%' OR acm_pkg_dev__Name__c LIKE 'Shipping%' OR acm_pkg_dev__Name__c LIKE 'Order%')+`
-* The API has an icon: `+acm_pkg_dev__Icon__c != ''+`
-* The API has a Learn More button that links to a custom page with more information: `+acm_pkg_dev__NavigateUrl__c != ''+`
-* The API version group is exactly equal to `v2`: `+acm_pkg_dev__VersionGroup__c = 'v2'+`
-* The API version group is later than `v1`: `+acm_pkg_dev__VersionGroup__c > 'v1'+`
-* The API version group is earlier than `v1`: `+acm_pkg_dev__VersionGroup__c < 'v1'+`
-* The API version group is later than or equal to `v2`: `+acm_pkg_dev__VersionGroup__c >= 'v2'+`
-* The API version group is earlier than or equal to `v2`: `+acm_pkg_dev__VersionGroup__c <= 'v2'+`
+* The API name is exactly equal to `My API`: `+acm_pkg__Name__c = 'My API'+`
+* The API name contains the text `My API`: `+acm_pkg__Name__c LIKE '%My API%'+`
+* The API name is `API Alpha` or `API Bravo`: `+(acm_pkg__Name__c = 'API Alpha' OR acm_pkg__Name__c = 'API Bravo')+`
+* The API name is `My API` and the API version group is `v1`: `+(acm_pkg__Name__c = 'My API' AND acm_pkg__VersionGroup__c = 'v1')+`
+* The API name begins with `Product`, `Shipping`, or `Order`: `+(acm_pkg__Name__c LIKE 'Product%' OR acm_pkg__Name__c LIKE 'Shipping%' OR acm_pkg__Name__c LIKE 'Order%')+`
+* The API has an icon: `+acm_pkg__Icon__c != ''+`
+* The API has a Learn More button that links to a custom page with more information: `+acm_pkg__NavigateUrl__c != ''+`
+* The API version group is exactly equal to `v2`: `+acm_pkg__VersionGroup__c = 'v2'+`
+* The API version group is later than `v1`: `+acm_pkg__VersionGroup__c > 'v1'+`
+* The API version group is earlier than `v1`: `+acm_pkg__VersionGroup__c < 'v1'+`
+* The API version group is later than or equal to `v2`: `+acm_pkg__VersionGroup__c >= 'v2'+`
+* The API version group is earlier than or equal to `v2`: `+acm_pkg__VersionGroup__c <= 'v2'+`
+
+Queries using `OR` or `AND` must enclose the whole condition in parentheses.
 
 ACM compares version groups using normal string comparison.
 
