@@ -64,7 +64,7 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 === Filter Conditions
 
-The API Carousel component parameter *Filter Condition (Advanced)* causes the carousel to filter out the APIs that do not match the condition and show only the APIs that match. A condition is a standard search in Salesforce Object Query Language (SOQL).
+The API Carousel component parameter *Filter Condition (Advanced)* causes the carousel to show only the APIs that meet the condition. A condition is a standard search in Salesforce Object Query Language (SOQL).
 
 You can search these fields.
 
