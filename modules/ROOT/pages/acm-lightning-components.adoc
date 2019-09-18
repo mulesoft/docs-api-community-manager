@@ -29,7 +29,7 @@ Show Modal Title Line:: Shows the title line in the access request modal.
 
 The API Card component shows information about an API, including icon, name, and description.
 
-Data shown from Anypoint Platform: API icon, name, and description from Anypoint Exchange.
+Data shown from Anypoint Platform: API icon, name, and description from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Card:
 
@@ -48,7 +48,7 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 The API Carousel component shows a horizontally scrollable set of API cards.
 
-Data shown from Anypoint Platform: API icon, name, and description from Anypoint Exchange.
+Data shown from Anypoint Platform: API icon, name, and description from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Carousel:
 
@@ -106,7 +106,7 @@ Method Label Head Color:: Specifies the HEAD method label color.
 
 The API Console Documentation component shows the documentation about an API.
 
-Data shown from Anypoint Platform: API documentation from Anypoint Exchange.
+Data shown from Anypoint Platform: API documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Console Documentation:
 
@@ -132,7 +132,7 @@ Headline Font Family (Optional):: Specifies the API console headline font family
 
 The API Console Instances component shows the list of instances of an API, also known as endpoints.
 
-Data shown from Anypoint Platform: API instances from Anypoint API Manager.
+Data shown from Anypoint Platform: API instances from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the API Console Instances:
 
@@ -167,7 +167,7 @@ Method Label Head Color:: Specifies the HEAD method label color.
 
 The API Console Request Panel component shows a panel where users can test an API by making requests to it.
 
-Data shown from Anypoint Platform: API instances from Anypoint API Manager.
+Data shown from Anypoint Platform: API instances from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the API Console Request Panel:
 
@@ -209,7 +209,7 @@ API Version:: Adds the API version to the button label. Values are *Append*, *Pr
 
 The API Documentation Viewer component shows an API's documentation. The documentation can have multiple pages, and each page can have multiple sections.
 
-Data shown from Anypoint Platform: API documentation from Anypoint Exchange.
+Data shown from Anypoint Platform: API documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Documentation Viewer:
 
@@ -221,7 +221,7 @@ Selected Page (Optional):: Selects the page to open.
 
 The API Header component displays the API header, including icon, name, and description.
 
-Data shown from Anypoint Platform: API icon, name, and description from Anypoint Exchange.
+Data shown from Anypoint Platform: API icon, name, and description from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Header:
 
@@ -231,7 +231,7 @@ API:: Specifies the API to show.
 
 The Application Analytics Graph component displays statistics about the use of an application, such as traffic, response time, and application health.
 
-Data shown from Anypoint Platform: Application statistics from Anypoint API Manager.
+Data shown from Anypoint Platform: Application statistics from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the Application Analytics Graph:
 
@@ -241,7 +241,7 @@ Application:: Specifies the application to show.
 
 The Application Details component displays details about an application.
 
-Data shown from Anypoint Platform: Application description, application URL, redirect URIs, client ID, and client secret from Anypoint Exchange.
+Data shown from Anypoint Platform: Application description, application URL, redirect URIs, client ID, and client secret from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the Application Details:
 
