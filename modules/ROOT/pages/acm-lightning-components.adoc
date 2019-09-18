@@ -88,6 +88,8 @@ These examples demonstrate filter conditions. Queries using `OR` or `AND` must e
 * The API version group is later than or equal to `v2`: `+acm_pkg_dev__VersionGroup__c >= 'v2'+`
 * The API version group is earlier than or equal to `v2`: `+acm_pkg_dev__VersionGroup__c <= 'v2'+`
 
+ACM compares version groups using normal string comparison.
+
 You can learn more about SOQL from the Salesforce https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/[SOQL and SOSL Reference, role=external, window=blank].
 
 == API Console
