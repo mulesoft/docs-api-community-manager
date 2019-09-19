@@ -269,6 +269,43 @@ Card Shadow:: Specifies the shadow beneath the card.
 Card Width:: Specifies the card width.
 Card Height:: Specifies the card height.
 
+== Integrated Search Input
+
+The Integrated Search Input component enables users to search data integrated from both Community Cloud and Anypoint Platform.
+
+You can specify values for the following parameters of the Integrated Search Input:
+
+Component Title:: Specifies the title for the search input field.
+Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
+Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Pages, and Forums.
+Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
+
+=== Search Configuration
+
+Search is a basic expected feature in any developer portal, and becomes important as the number of APIs grows to around 50 and beyond.
+
+The example portals and defaults have one Integrated Search Input and one Integrated Search Response Page. This is the best practice to minimize the chance of misconfigurations.
+
+The Integrated Search Input parameter Linked Result Page specifies the search results page. That page must have an Integrated Search Response Page component to display the search results.
+
+The Integrated Search Response Page component shows only results of the content types specified in the Search Areas parameters of the Integrated Search Input component. If a content type is not selected then the search results page does not display any search results of that content type.
+
+The current version of the integrated search does not include CMS articles in the search results.
+
+Search results are sorted by relevance. The current relevance ranking uses the date that the APIs and other results were most recently modified.
+
+To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[Preview Your API Community] and run a search.
+
+== Integrated Search Response Page
+
+The Integrated Search Response Page shows results after a user enters a search.
+
+You can specify values for the following parameters of the Integrated Search Response Page:
+
+Component Title:: Specifies the title for the search response page.
+Border:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
+Show Search Input:: Shows the search input on the results page.
+
 == Learn More Button
 
 The Learn More Button component provides portal users with a custom page with additional information about the API.
