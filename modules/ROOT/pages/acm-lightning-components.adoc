@@ -290,7 +290,7 @@ The Integrated Search Input parameter Linked Result Page specifies the search re
 
 The Integrated Search Response Page component shows only results of the content types specified in the Search Areas parameters of the Integrated Search Input component. If a content type is not selected then the search results page does not display any search results of that content type.
 
-The current version of the integrated search does not include CMS articles in the search results.
+IMPORTANT: The current version of the integrated search does not include CMS articles in the search results.
 
 Search results are sorted by relevance. The current relevance ranking uses the date that the APIs and other results were most recently modified.
 
