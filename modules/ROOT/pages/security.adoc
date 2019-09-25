@@ -15,7 +15,7 @@ Transport Layer Security (TLS).
 During initial configuration, you can set ACM to use a third party single sign-on (SSO) provider, such as Okta,
 for member connections to both the Anypoint Platform and Salesforce systems.
 
-Anypoint Access Management configures xref:access-management::external-identity.adoc[Identity Management] for single sign-on (SSO) in Mulesoft, and supports xref:access-management::ldap-configuration-index.adoc[LDAP] and other standards.
+Anypoint Access Management configures xref:access-management::external-identity.adoc[Identity Management] for single sign-on (SSO) in MuleSoft, and supports xref:access-management::ldap-configuration-index.adoc[LDAP] and other standards.
 
 Anypoint API Manager applies xref:api-manager::policies-mule4.adoc[policies] to APIs for security, and supports xref:api-manager::mule-oauth-provider-landing-page.adoc[OAuth 2.0] and other standards.
 
