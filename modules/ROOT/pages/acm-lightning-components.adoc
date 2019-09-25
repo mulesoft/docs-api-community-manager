@@ -292,7 +292,7 @@ The Integrated Search Response Page component shows only results of the content 
 
 IMPORTANT: The current version of the integrated search does not include CMS articles in the search results.
 
-Search results are sorted by relevance. The current relevance ranking uses the date that the APIs and other results were most recently modified.
+Search results are sorted by the date they were most recently modified, from the most recent date to the oldest.
 
 To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[Preview Your API Community] and run a search.
 
