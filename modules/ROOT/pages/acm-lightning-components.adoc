@@ -76,7 +76,7 @@ Endpoints are displayed in alphabetical order.
 
 Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
-Data shown from Anypoint Platform: API instances and documentation from the AML Modeling Framework (AMF). AML is the Anything Modeling Language.
+Data shown from Anypoint Platform: API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Console:
 
@@ -142,7 +142,7 @@ API:: Specifies the API whose instances are displayed.
 
 The API Console Navigation component shows the API console component's navigation.
 
-Data shown from Anypoint Platform: API instances and documentation from the AML Modeling Framework (AMF). AML is the Anything Modeling Language.
+Data shown from Anypoint Platform: API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Console Navigation:
 
@@ -251,7 +251,7 @@ Application:: Specifies the API to show.
 
 The Application Listing component shows applications that use an API.
 
-Data shown from Anypoint Platform: Application name, client ID, and client secret from Anypoint Exchange.
+Data shown from Anypoint Platform: Application name, client ID, and client secret from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the Application Listing:
 
