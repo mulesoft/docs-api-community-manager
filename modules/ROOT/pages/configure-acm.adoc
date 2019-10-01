@@ -111,6 +111,7 @@ Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find th
 ----
     curl -X POST \
       https://anypoint.mulesoft.com/accounts/api/connectedApplications \
+      -H 'Content-Type: application/json'
       -H 'Accept: */*' \
       -H 'Accept-Encoding: gzip, deflate' \
       -H 'Authorization: Bearer 5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7' \
