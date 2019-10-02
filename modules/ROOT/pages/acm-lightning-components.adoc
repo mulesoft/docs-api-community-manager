@@ -10,6 +10,43 @@ These Lightning components include both the Lightning components available in al
 
 Each ACM Lightning component has different configuration options and adds different functionality to the portal.
 
+== ACM Search Box [[acm-search-box]]
+
+The ACM Search Box component enables users to search both for content that exists in Community Cloud, such as articles, announcements, and forum posts, and content that exists in Anypoint Platform, such as APIs and client applications. Results from the search are presented in the <<acm-search-results>> component.
+
+You can specify values for the following parameters of the ACM Search Box:
+
+Component Title:: Specifies the title for the search input field.
+Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
+Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Pages, and Forums.
+Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
+
+=== Search Configuration
+
+Search is a basic expected feature in any developer portal, and becomes important as the number of APIs grows to around 50 and beyond.
+
+The example portals and default pages have one ACM Search Box and one ACM Search Results component. This is the best practice to minimize the chance of misconfigurations.
+
+The ACM Search Box parameter Linked Result Page specifies the search results page. That page must have an ACM Search Results component to display the search results.
+
+The ACM Search Results component shows only results of the content types specified in the Search Areas parameters of the ACM Search Box component. If a content type is not selected then the search results do not include any results of that content type.
+
+IMPORTANT: The current version of the integrated search does not include CMS articles in the search results.
+
+Search results are sorted by the date they were most recently modified, from the most recent date to the oldest.
+
+To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[Preview Your API Community] and run a search.
+
+== ACM Search Results [[acm-search-results]]
+
+The ACM Search Results component shows results after a user enters a search in the <<acm-search-box>> component.
+
+You can specify values for the following parameters of the ACM Search Results:
+
+Component Title:: Specifies the title for the results.
+Border:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
+Show Search Input:: Shows the search input on the results page.
+
 == API Access Requester
 
 The API Access Requester component enables community members to request access to an API for either a new or existing application.
@@ -268,43 +305,6 @@ Card Border Radius:: Specifies the card border radius. Cards with a larger radiu
 Card Shadow:: Specifies the shadow beneath the card.
 Card Width:: Specifies the card width.
 Card Height:: Specifies the card height.
-
-== ACM Search Box
-
-The ACM Search Box component enables users to search data integrated from both Community Cloud and Anypoint Platform.
-
-You can specify values for the following parameters of the ACM Search Box:
-
-Component Title:: Specifies the title for the search input field.
-Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
-Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Pages, and Forums.
-Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
-
-=== Search Configuration
-
-Search is a basic expected feature in any developer portal, and becomes important as the number of APIs grows to around 50 and beyond.
-
-The example portals and default pages have one ACM Search Box and one ACM Search Results component. This is the best practice to minimize the chance of misconfigurations.
-
-The ACM Search Box parameter Linked Result Page specifies the search results page. That page must have an ACM Search Results component to display the search results.
-
-The ACM Search Results component shows only results of the content types specified in the Search Areas parameters of the ACM Search Box component. If a content type is not selected then the search results do not include any results of that content type.
-
-IMPORTANT: The current version of the integrated search does not include CMS articles in the search results.
-
-Search results are sorted by the date they were most recently modified, from the most recent date to the oldest.
-
-To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[Preview Your API Community] and run a search.
-
-== ACM Search Results
-
-The ACM Search Results component shows results after a user enters a search.
-
-You can specify values for the following parameters of the ACM Search Results:
-
-Component Title:: Specifies the title for the results.
-Border:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
-Show Search Input:: Shows the search input on the results page.
 
 == Learn More Button
 
