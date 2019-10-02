@@ -152,12 +152,18 @@ NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https
 
 . In *Setup*, search for *Auth. Providers* using the *Quick Find* box and click *Auth. Providers* -> *New*.
 . In *Provider type* select *Open ID Connect*.
-. Set the *Name* to `Anypoint`.
-. Set the *Consumer Key* to the application ID of the connected app created in Anypoint. This ID was returned by the UI at the end of the step <<create-a-connected-app-with-the-user-interface>> or returned by the API call at the end of the step <<create-a-connected-app-with-an-api-call>>.
-. Set the *Consumer Secret* to the application secret of the connected app created in Anypoint. This secret was returned by the UI at the end of the step <<create-a-connected-app-with-the-user-interface>> or returned by the API call at the end of the step <<create-a-connected-app-with-an-api-call>>.
-. Set the *Authorize Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` .
-. Set the *Token Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` .
-. Set the *Default Scopes* to `full offline_access`.
+. Set *Name* to `Anypoint`.
+. Set *Consumer Key* to the application ID of the connected app created in Anypoint.
++
+This ID was returned by the Anypoint UI at the end of the task <<create-a-connected-app-with-the-user-interface>> or returned by the Anypoint API call at the end of the task <<create-a-connected-app-with-an-api-call>>.
++
+. Set *Consumer Secret* to the application secret of the connected app created in Anypoint.
++
+This secret was returned by the Anypoint UI at the end of the task <<create-a-connected-app-with-the-user-interface>> or returned by the Anypoint API call at the end of the task <<create-a-connected-app-with-an-api-call>>.
++
+. Set *Authorize Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` .
+. Set *Token Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` .
+. Set *Default Scopes* to `full offline_access`.
 . Click *Save*.
 
 NOTE: Remember to associate the external data source with this authentication provider.
