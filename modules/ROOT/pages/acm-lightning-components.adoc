@@ -333,10 +333,6 @@ Forgot Password URL:: Specifies the forgotten password link URL. Default is `/Fo
 Self Register Label:: Specifies the self-registration link label. Default is `Not a member?`.
 Self Register URL:: Specifies the self-registration link URL. Default is `/SelfRegister`.
 
-== Search Result List
-
-The Search Result List component shows a list of search results. It has no configuration settings.
-
 == Self Register
 
 The Self Register component enables users to register for portal accounts.
