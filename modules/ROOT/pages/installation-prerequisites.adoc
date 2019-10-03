@@ -51,7 +51,7 @@ Wait to receive the notification email that your domain is registered, and then 
 
 == Supported Browsers
 
-Community admins, community members, and guest users can access an ACM community with the latest versions of these browsers:
+Community admins, community members, and guest users can access an ACM community by using the latest versions of these browsers:
 
 * Google Chrome
 * Mozilla Firefox
