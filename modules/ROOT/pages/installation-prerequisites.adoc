@@ -48,3 +48,11 @@ Wait to receive the notification email that your domain is registered, and then 
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . If the screen indicates your domain is ready, select *Log in*.
 . Select *Deploy to Users*.
+
+== Supported Browsers
+
+Community admins, community members, and guest users can access an ACM community by using the latest versions of these browsers:
+
+* Google Chrome
+* Mozilla Firefox
+* Apple Safari
