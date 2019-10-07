@@ -12,6 +12,8 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 
 * <<create-and-authenticate-the-external-data-source>>
 ** <<create-a-connected-app>>
+*** <<create-a-connected-app-with-the-user-interface>>
+*** <<create-a-connected-app-with-an-api-call>>
 ** <<create-your-authentication-provider>>
 ** <<authorize-and-authenticate-your-external-data-source>>
 * <<enable-acm-control-panel>>
@@ -61,9 +63,27 @@ The external data source specifies how ACM components and data objects interact 
 
 === Create a Connected App [[create-a-connected-app]]
 
-To create a connected app with an API call, follow this example using `cURL`.
+You can perform this step either with the user interface or with an API call.
 
 Your account must have the Org Admin permission.
+
+==== Create a Connected App with the User Interface [[create-a-connected-app-with-the-user-interface]]
+
+To create a connected app with the user interface, in Anypoint Platform, navigate to *Access Management* -> *Applications* -> *Create New Application*, and provide this information.
+
+. *Application Name*: Enter a name.
+. *Redirect URIs*: This URL can be found in the Authentication Provider configuration. Navigate
+to *Salesforce Setup* -> *Auth. Providers* -> *Anypoint* -> *Callback URL*.
+. *User Grant Types*
+.. *Authorization Code*: Checked.
+.. *Refresh Token*: Checked.
+.. *Full Access*: Checked.
+.. *Background Access*: Checked.
+. Click *Create Application*.
+
+==== Create a Connected App with an API Call [[create-a-connected-app-with-an-api-call]]
+
+To create a connected app with an API call, follow this example using `cURL`.
 
 Get an authorization token from the platform:
 
