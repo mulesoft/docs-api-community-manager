@@ -10,6 +10,8 @@ These Lightning components include both the Lightning components available in al
 
 Each ACM Lightning component has different configuration options and adds different functionality to the portal.
 
+Many ACM Lightning components show data from Anypoint Platform. ACM admins can change some of these data fields, such as API names, descriptions, and icons. ACM saves these changes but does not push the changes back to Anypoint Platform.
+
 == ACM Search Box [[acm-search-box]]
 
 The ACM Search Box component enables users to search both for content that exists in Community Cloud, such as articles, announcements, and forum posts, and content that exists in Anypoint Platform, such as APIs and client applications. Results from the search are presented in the <<acm-search-results>> component.
@@ -64,6 +66,8 @@ Show Modal Title Line:: Shows the title line in the access request modal.
 
 The API Card component shows information about an API, including icon, name, and description.
 
+The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
+
 You can specify values for the following parameters of the API Card:
 
 API:: Specifies the API shown.
@@ -80,6 +84,8 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 == API Carousel
 
 The API Carousel component shows a horizontally scrollable set of API cards.
+
+The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
 
 You can specify values for the following parameters of the API Carousel:
 
@@ -139,6 +145,8 @@ Endpoints are displayed in alphabetical order.
 
 Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
+The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
+
 You can specify values for the following parameters of the API Console:
 
 API:: Specifies the API to display.
@@ -165,7 +173,7 @@ Method Label Head Color:: Specifies the HEAD method label color.
 
 == API Console Documentation
 
-The API Console Documentation component shows the documentation from Anypoint Exchange about an API.
+The API Console Documentation component shows the documentation about an API from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Console Documentation:
 
@@ -189,7 +197,9 @@ Headline Font Family (Optional):: Specifies the API console headline font family
 
 == API Console Instances
 
-The API Console Instances component shows the list of instances of an API.
+The API Console Instances component shows the list of instances of an API, also known as endpoints.
+
+The component shows the API instances from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the API Console Instances:
 
@@ -198,6 +208,8 @@ API:: Specifies the API whose instances are displayed.
 == API Console Navigation
 
 The API Console Navigation component shows the API console component's navigation.
+
+The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Console Navigation:
 
@@ -221,6 +233,8 @@ Method Label Head Color:: Specifies the HEAD method label color.
 == API Console Request Panel
 
 The API Console Request Panel component shows a panel where users can test an API by making requests to it.
+
+The component shows the API instances from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the API Console Request Panel:
 
@@ -260,7 +274,7 @@ API Version:: Adds the API version to the button label. Values are *Append*, *Pr
 
 == API Documentation Viewer
 
-The API Documentation Viewer component shows an API's documentation. The documentation can have multiple pages, and each page can have multiple sections.
+The API Documentation Viewer component shows an API's documentation from xref:exchange::index.adoc[Anypoint Exchange]. The documentation can have multiple pages, and each page can have multiple sections.
 
 You can specify values for the following parameters of the API Documentation Viewer:
 
@@ -272,6 +286,8 @@ Selected Page (Optional):: Selects the page to open.
 
 The API Header component displays the API header, including icon, name, and description.
 
+The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
+
 You can specify values for the following parameters of the API Header:
 
 API:: Specifies the API to show.
@@ -279,6 +295,8 @@ API:: Specifies the API to show.
 == Application Analytics Graph
 
 The Application Analytics Graph component displays statistics about the use of an application, such as traffic, response time, and application health.
+
+The component shows the application statistics from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the Application Analytics Graph:
 
@@ -288,6 +306,8 @@ Application:: Specifies the application to show.
 
 The Application Details component displays details about an application.
 
+The component shows the application description, application URL, redirect URIs, client ID, and client secret from xref:api-manager::index.adoc[Anypoint API Manager].
+
 You can specify values for the following parameters of the Application Details:
 
 Application:: Specifies the API to show.
@@ -295,6 +315,8 @@ Application:: Specifies the API to show.
 == Application Listing
 
 The Application Listing component shows applications that use an API.
+
+The component shows the application name, client ID, and client secret from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the Application Listing:
 
