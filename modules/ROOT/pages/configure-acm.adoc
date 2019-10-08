@@ -63,7 +63,7 @@ The external data source specifies how ACM components and data objects interact 
 
 === Create a Connected App [[create-a-connected-app]]
 
-You can perform this step either with the user interface or with an API call.
+You can perform this step by using either the user interface or an API call.
 
 Your account must have the Org Admin permission.
 
