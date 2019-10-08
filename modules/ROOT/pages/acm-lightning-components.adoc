@@ -68,37 +68,22 @@ Filter Condition (Advanced):: Causes the carousel to show only APIs that match t
 API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
 Learn More Button Label:: Enables you to set the Learn More button label. Default is *Learn More*.
 
-=== Filter Conditions [[filter-conditions]]
+== API Catalog
 
-The API Carousel component parameter *Filter Condition (Advanced)* causes the carousel to show only the APIs that meet the condition. A condition is a standard search in Salesforce Object Query Language (SOQL).
+The API Catalog component shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
 
-You can search these fields:
+The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
 
-* `+acm_pkg__Icon__c+`
-* `+acm_pkg__Name__c+`
-* `+acm_pkg__NavigateUrl__c+`
-* `+acm_pkg__VersionGroup__c+`
+You can specify values for the following parameters of the API Carousel:
 
-These examples demonstrate filter conditions:
-
-* The API name is exactly equal to `My API`: `+acm_pkg__Name__c = 'My API'+`
-* The API name contains the text `My API`: `+acm_pkg__Name__c LIKE '%My API%'+`
-* The API name is `API Alpha` or `API Bravo`: `+(acm_pkg__Name__c = 'API Alpha' OR acm_pkg__Name__c = 'API Bravo')+`
-* The API name is `My API` and the API version group is `v1`: `+(acm_pkg__Name__c = 'My API' AND acm_pkg__VersionGroup__c = 'v1')+`
-* The API name begins with `Product`, `Shipping`, or `Order`: `+(acm_pkg__Name__c LIKE 'Product%' OR acm_pkg__Name__c LIKE 'Shipping%' OR acm_pkg__Name__c LIKE 'Order%')+`
-* The API has an icon: `+acm_pkg__Icon__c != ''+`
-* The API has a Learn More button that links to a custom page with more information: `+acm_pkg__NavigateUrl__c != ''+`
-* The API version group is exactly equal to `v2`: `+acm_pkg__VersionGroup__c = 'v2'+`
-* The API version group is later than `v1`: `+acm_pkg__VersionGroup__c > 'v1'+`
-* The API version group is earlier than `v1`: `+acm_pkg__VersionGroup__c < 'v1'+`
-* The API version group is later than or equal to `v2`: `+acm_pkg__VersionGroup__c >= 'v2'+`
-* The API version group is earlier than or equal to `v2`: `+acm_pkg__VersionGroup__c <= 'v2'+`
-
-Queries using `OR` or `AND` must enclose the whole condition in parentheses.
-
-ACM compares version groups using normal string comparison.
-
-You can learn more about SOQL from the Salesforce https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/[SOQL and SOSL Reference, role=external, window=blank].
+Component Title:: Specifies the catalog title. Default is *API Catalog*.
+Show API Counter:: Enables you to show the API counter, which shows the number of APIs that match the current search and filters.
+APIs Per Page:: Specifies the number of APIs shown on each page of the catalog. Default is 12.
+Category Filter 1 through Category Filter 5:: Specifies the categories with which community members and guest users can filter the APIs. Default is *None*.
+Category Color 1 through Category Color 5:: Specifies the color for each category.
+Search Input Position:: Specifies whether the search box will be next to the filters or below the filters and above the cards.
+Category Card Badge 1 through Category Card Badge 3::
+Filter Condition (Advanced):: Causes the catalog to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
 
 == API Console
 
@@ -340,3 +325,35 @@ Include Password Field:: Shows the password field.
 Extra Field Set:: Specifies extra fields.
 Registrations Require Approval:: Select whether registration requires approval.
 Approver ID:: Specifies the approver ID.
+
+== Filter Conditions [[filter-conditions]]
+
+The API Carousel component and the API Catalog component use the parameter *Filter Condition (Advanced)* to show only the APIs that meet the condition. A condition is a standard search in Salesforce Object Query Language (SOQL).
+
+You can search these fields:
+
+* `+acm_pkg__Icon__c+`
+* `+acm_pkg__Name__c+`
+* `+acm_pkg__NavigateUrl__c+`
+* `+acm_pkg__VersionGroup__c+`
+
+These examples demonstrate filter conditions:
+
+* The API name is exactly equal to `My API`: `+acm_pkg__Name__c = 'My API'+`
+* The API name contains the text `My API`: `+acm_pkg__Name__c LIKE '%My API%'+`
+* The API name is `API Alpha` or `API Bravo`: `+(acm_pkg__Name__c = 'API Alpha' OR acm_pkg__Name__c = 'API Bravo')+`
+* The API name is `My API` and the API version group is `v1`: `+(acm_pkg__Name__c = 'My API' AND acm_pkg__VersionGroup__c = 'v1')+`
+* The API name begins with `Product`, `Shipping`, or `Order`: `+(acm_pkg__Name__c LIKE 'Product%' OR acm_pkg__Name__c LIKE 'Shipping%' OR acm_pkg__Name__c LIKE 'Order%')+`
+* The API has an icon: `+acm_pkg__Icon__c != ''+`
+* The API has a Learn More button that links to a custom page with more information: `+acm_pkg__NavigateUrl__c != ''+`
+* The API version group is exactly equal to `v2`: `+acm_pkg__VersionGroup__c = 'v2'+`
+* The API version group is later than `v1`: `+acm_pkg__VersionGroup__c > 'v1'+`
+* The API version group is earlier than `v1`: `+acm_pkg__VersionGroup__c < 'v1'+`
+* The API version group is later than or equal to `v2`: `+acm_pkg__VersionGroup__c >= 'v2'+`
+* The API version group is earlier than or equal to `v2`: `+acm_pkg__VersionGroup__c <= 'v2'+`
+
+Queries using `OR` or `AND` must enclose the whole condition in parentheses.
+
+ACM compares version groups using normal string comparison.
+
+You can learn more about SOQL from the Salesforce https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/[SOQL and SOSL Reference, role=external, window=blank].
