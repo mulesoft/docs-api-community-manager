@@ -71,7 +71,7 @@ Your account must have the Org Admin permission.
 
 To create a connected app by using the user interface, in Anypoint Platform, navigate to *Access Management* > *Applications* > *Create New Application*, and provide this information:
 
-. Enter the *Application Name*.
+. Enter a value for *Application Name*.
 . Set *Redirect URIs* to the URL from the Authentication Provider configuration.
 +
 Find this URL in *Salesforce Setup* > *Auth. Providers* > *Anypoint* > *Callback URL*.
