@@ -82,7 +82,7 @@ Select *Authorization Code*, *Refresh Token*, *Full Access*, and *Background Acc
 +
 . Click *Create Application*.
 
-==== Create a Connected App with an API Call [[create-a-connected-app-with-an-api-call]]
+==== Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
 
 To create a connected app with an API call, follow this example using `cURL`.
 
