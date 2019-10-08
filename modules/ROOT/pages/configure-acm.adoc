@@ -86,15 +86,15 @@ Select *Authorization Code*, *Refresh Token*, *Full Access*, and *Background Acc
 
 To create a connected app by using an API call, follow this example using the `cURL` command.
 
-Get an authorization token from the platform:
-
+. Get an authorization token from the platform:
++
 ----
     curl --silent https://anypoint.mulesoft.com/accounts/login -XPOST \
       -d 'username=<anypoint username>&password=<anypoint password>'
 ----
-
-This returns a response like this:
-
++
+. The command returns a response like this:
++
 ----
     {
       "access_token": "5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7",
@@ -102,15 +102,15 @@ This returns a response like this:
       "redirectUrl": "/home/"
     }
 ----
-
-Note the `access_token` value.
-
-Use the next `cURL` example to register an external client in Anypoint for OpenID authentication.
-
++
+. Note the `access_token` value.
++
+. Use the next `cURL` example to register an external client in Anypoint for OpenID authentication.
++
 Replace the access token in the authorization header with the `access_token` value.
-
++
 Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find the domain name by logging in to your Salesforce organization, clicking *Setup*, and clicking the section *My Domain*.
-
++
 ----
     curl -X POST \
       https://anypoint.mulesoft.com/accounts/api/connectedApplications \
@@ -121,9 +121,9 @@ Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find th
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
 ----
-
-The `cURL` command will return a response like this:
-
++
+. The `cURL` command returns a response like this:
++
 ----
     {
       "client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
@@ -146,8 +146,8 @@ The `cURL` command will return a response like this:
       "as_id": "anypoint"
     }
 ----
-
-Note the `client_id` and `client_secret` values.
++
+. Note the `client_id` and `client_secret` values.
 
 === Create Your Authentication Provider [[create-your-authentication-provider]]
 
