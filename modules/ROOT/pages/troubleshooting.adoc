@@ -77,6 +77,8 @@ If a published API version is not showing the *Request access* button:
 . Label the endpoint. This label displays in your community.
 . Ensure at least one of the API version's endpoints is configured as public in Exchange.
 
+In the community builder, check the audience targeting settings of the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component. To make the *API Access Requester* appear to all members, ensure it is not assigned to any audience. To make it appear only to a specific audience, ensure it is assigned to the correct audience, and verify it by viewing the page while logged in to a member account that is a member of this audience.
+
 == Broken Images on Documentation Pages
 
 If your community shows a broken image on an API documentation page, and the image displays correctly on the API documentation page in Exchange, follow these steps.
@@ -135,9 +137,3 @@ If guest users do not see published API versions that have been set to be visibl
 . Open Salesforce setup.
 . Open the sharing rules.
 . Ensure the sharing rule for the object `CommunityApi` matches your community name, including spaces and which letters are upper case.
-
-== Invalid Page Error
-
-When your community is public, prevent the "Invalid Page" error by changing the
-permissions in the Guest User Profile and adding read checks to the external
-objects.
