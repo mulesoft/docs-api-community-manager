@@ -51,6 +51,106 @@ search-bar-container {
 |Left and right arrows navigation
 |===
 
+=== API Catalog
+
+.API Catalog CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`api-catalog-container`
+|Catalog container
+
+|`api-catalog-header`
+|Catalog header
+
+|`api-catalog-categories-container`
+|Categories container
+
+|`api-catalog-mini-search`
+|Mini search
+
+|`api-catalog-mini-search-input`
+|Mini search input
+
+|`api-catalog-multiselect-container`
+|Multiple selection container
+
+|`api-catalog-multiselect-label`
+|Multiple selection label
+
+|`api-catalog-multiselect`
+|Multiple selection
+
+|`api-catalog-chips-container`
+|Chips container
+
+|`api-catalog-chips-label`
+|Chips label
+
+|`api-catalog-clear-all-button`
+|Clear All button
+
+|`chips-container`
+|Chips container
+
+|`chip-container`
+|Container for one chip with label and close icon
+
+|`chip-label`
+|Chip label
+
+|`chip-icon`
+|Chip close icon
+
+|`api-catalog-separator`
+|Separator
+
+|`api-catalog-search-container`
+|Search container
+
+|`api-catalog-search`
+|Search
+
+|`api-catalog-apis-container`
+|APIs container
+
+|`api-catalog-page-indicator`
+|Page indicator
+
+|`api-catalog-empty-message`
+|Empty cards message
+
+|`api-catalog-card-container`
+|Card container
+
+|`api-catalog-card-badges-container`
+|Card badges container
+
+|`api-catalog-card-badge`
+|Card badge
+
+|`api-catalog-card-icon`
+|Card icon
+
+|`api-catalog-card-name`
+|Card name
+
+|`api-catalog-card-description`
+|Card description
+
+|`api-catalog-card-buttons-container`
+|Card buttons container
+
+|`api-catalog-card-details-button`
+|Card Details button
+
+|`api-catalog-card-learn-more-button`
+|Card Learn More button
+
+|`api-catalog-paginator-container`
+|Paginator container
+|===
+
 === API Details Button
 
 .API Details Button CSS Classes and Descriptions
