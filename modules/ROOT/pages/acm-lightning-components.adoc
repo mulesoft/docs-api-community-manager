@@ -84,7 +84,7 @@ If you do not specify category colors, your community theme is used as the defau
 
 You can use URL parameters to pass filters to the catalog. For example, the URL of the page with the catalog component can end with `?catalogFilters=Country:Argentina,USA;Payment:Cash,Credit`.
 
-The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
+The API icon, name, and description shown are set in the API Community Manager control panel when you  xref:publish-apis.adoc[add an API version to your community].
 
 You can specify values for the following parameters of the API Carousel:
 
