@@ -14,7 +14,7 @@ Many ACM Lightning components show data from Anypoint Platform. ACM admins can c
 
 == ACM Search Box [[acm-search-box]]
 
-The ACM Search Box component enables users to search both for content that exists in Community Cloud, such as articles, announcements, and forum posts, and content that exists in Anypoint Platform, such as APIs and client applications. Results from the search are presented in the <<acm-search-results>> component.
+The ACM Search Box component enables users to search both for content that exists in Community Cloud, such as knowledge articles, support cases, and announcements, and content that exists in Anypoint Platform, such as APIs and client applications. Results from the search are presented in the <<acm-search-results>> component.
 
 You can specify values for the following parameters of the ACM Search Box:
 
