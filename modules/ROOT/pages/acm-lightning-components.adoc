@@ -82,7 +82,7 @@ A card can have multiple badges from one category. It can display up to three ba
 
 If you do not specify category colors, your community theme is used as the default. Colors can be hexadecimal values such as `#FF0000` or `#0000FF` or standard CSS color names such as `red` and `blue`.
 
-URL parameters can be used to pass filters to the catalog. For example, the URL of the page with the catalog component can end with `?catalogFilters=Country:Argentina,USA;Payment:Cash,Credit`.
+You can use URL parameters to pass filters to the catalog. For example, the URL of the page with the catalog component can end with `?catalogFilters=Country:Argentina,USA;Payment:Cash,Credit`.
 
 The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
 
