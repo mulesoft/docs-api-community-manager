@@ -41,7 +41,7 @@ To test and preview the search configuration and the presentation of the results
 
 == ACM Search Results [[acm-search-results]]
 
-The ACM Search Results component shows results after a user enters a search in the <<acm-search-box>> component.
+The API Community Manager Search Results component shows results after a user enters a search in the <<acm-search-box>> component.
 
 You can specify values for the following parameters of the Search Results:
 
