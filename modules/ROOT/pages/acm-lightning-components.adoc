@@ -78,7 +78,7 @@ In the template community, the API catalog link appears below the API carousel. 
 
 To prevent confusion, the API catalog is designed to use a maximum of five managed categories, and not tags.
 
-A card may have multiple badges from one category. A card displays up to three badges, and if there are more, offers a tooltip to display them.
+A card can have multiple badges from one category. It can display up to three badges and, if it has more, it offers a tooltip to display them.
 
 If category colors are not specified, the community theme is used for defaults. Colors can be hexadecimal values such as `#FF0000` or `#0000FF`, or standard CSS color names such as `red` and `blue`.
 
