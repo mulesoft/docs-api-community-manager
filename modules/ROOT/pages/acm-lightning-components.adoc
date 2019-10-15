@@ -43,7 +43,7 @@ To test and preview the search configuration and the presentation of the results
 
 The ACM Search Results component shows results after a user enters a search in the <<acm-search-box>> component.
 
-You can specify values for the following parameters of the ACM Search Results:
+You can specify values for the following parameters of the Search Results:
 
 Component Title:: Specifies the title for the results.
 Border:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
