@@ -35,7 +35,7 @@ The ACM Search Results component shows only results of the content types specifi
 
 IMPORTANT: The current version of the integrated search does not include CMS articles in the search results.
 
-Search results are sorted by the date they were most recently modified, from the most recent date to the oldest.
+Search results are sorted by the date they were most recently modified, from newest to oldest.
 
 To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[Preview Your API Community] and run a search.
 
