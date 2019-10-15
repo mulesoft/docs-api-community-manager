@@ -37,7 +37,7 @@ IMPORTANT: The current version of the integrated search does not include CMS art
 
 Search results are sorted by the date they were most recently modified, from newest to oldest.
 
-To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[Preview Your API Community] and run a search.
+To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[preview your API community] and run a search.
 
 == ACM Search Results [[acm-search-results]]
 
