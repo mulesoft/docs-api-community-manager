@@ -16,7 +16,7 @@ Many ACM Lightning components show data from Anypoint Platform. ACM admins can c
 
 The Anypoint API Community Manager Search Box component enables users to search for both content that exists in Community Cloud (such as knowledge articles, support cases, and announcements) and content that exists in Anypoint Platform (such as APIs and client applications). Results from the search are presented in the <<acm-search-results>> component.
 
-You can specify values for the following parameters of the ACM Search Box:
+You can specify values for the following parameters of the API Community Manager Search Box:
 
 Component Title:: Specifies the title for the search input field.
 Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
