@@ -80,7 +80,7 @@ To prevent confusion, the API catalog is designed to use a maximum of five manag
 
 A card can have multiple badges from one category. It can display up to three badges and, if it has more, it offers a tooltip to display them.
 
-If category colors are not specified, the community theme is used for defaults. Colors can be hexadecimal values such as `#FF0000` or `#0000FF`, or standard CSS color names such as `red` and `blue`.
+If you do not specify category colors, your community theme is used as the default. Colors can be hexadecimal values such as `#FF0000` or `#0000FF` or standard CSS color names such as `red` and `blue`.
 
 URL parameters can be used to pass filters to the catalog. For example, the URL of the page with the catalog component can end with `?catalogFilters=Country:Argentina,USA;Payment:Cash,Credit`.
 
