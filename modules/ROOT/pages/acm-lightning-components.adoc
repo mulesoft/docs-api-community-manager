@@ -70,7 +70,19 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 == API Catalog
 
+The API Catalog offers API consumers an interactive way to explore all the available APIs in an API community.
+
 The API Catalog component shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
+
+In the template community, the API catalog link appears below the API carousel. If a community has multiple API catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
+
+To prevent confusion, the API catalog is designed to use managed categories and not tags, and limit the number of categories to five.
+
+A card may have multiple badges from one category. A card displays up to three badges, and if there are more, offers a tooltip to display them.
+
+If category colors are not specified, the community theme is used for defaults. Colors can be hexadecimal values such as `#FF0000` or `#0000FF`, or standard CSS color names such as `red` and `blue`.
+
+URL parameters can be used to pass filters to the catalog. For example, the URL of the page with the catalog component can end with `?catalogFilters=Country:Argentina,USA;Payment:Cash,Credit`.
 
 The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
 
@@ -79,10 +91,10 @@ You can specify values for the following parameters of the API Carousel:
 Component Title:: Specifies the catalog title. Default is *API Catalog*.
 Show API Counter:: Enables you to show the API counter, which shows the number of APIs that match the current search and filters.
 APIs Per Page:: Specifies the number of APIs shown on each page of the catalog. Default is 12.
-Category Filter 1 through Category Filter 5:: Specifies the categories with which community members and guest users can filter the APIs. Default is *None*.
+Category Filter 1 through Category Filter 5:: Specifies the categories community members and guest users can use to filter the APIs. Default is *None*.
 Category Color 1 through Category Color 5:: Specifies the color for each category.
 Search Input Position:: Specifies whether the search box will be next to the filters or below the filters and above the cards.
-Category Card Badge 1 through Category Card Badge 3::
+Category Card Badge 1 through Category Card Badge 3:: Specifies the categories that appear at the top of the cards as badges with colors matching the category colors.
 Filter Condition (Advanced):: Causes the catalog to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
 
 == API Console
