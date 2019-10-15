@@ -70,7 +70,7 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 == API Catalog
 
-The API Catalog offers API consumers an interactive way to explore all the available APIs in an API community.
+The API Catalog offers API consumers an interactive way to explore all the available APIs in an API community. It shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
 
 The API Catalog component shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
 
