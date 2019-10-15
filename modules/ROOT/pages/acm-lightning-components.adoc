@@ -23,17 +23,13 @@ Number of Results - Instant Incremental Response:: Specifies the number of resul
 Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Pages, and Forums.
 Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
 
-=== Search Configuration
+The Linked Result Page parameter specifies the URL of a search results page, and the search results page must include an ACM Search Results component to display the search results. If the page does not include an ACM Search Results component, members and guest users who enter a search will go to the page and see no results.
 
-Search is a basic expected feature in any developer portal, and becomes important as the number of APIs grows to around 50 and beyond.
+If a content type is not selected in the Search Areas parameter, then the linked ACM Search Results component omits results of that content type.
 
-The example portals and default pages have one ACM Search Box and one ACM Search Results component. This is the best practice to minimize the chance of misconfigurations.
+Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
 
-The ACM Search Box parameter Linked Result Page specifies the search results page. That page must have an ACM Search Results component to display the search results.
-
-The ACM Search Results component shows only results of the content types specified in the Search Areas parameters of the ACM Search Box component. If a content type is not selected then the search results do not include any results of that content type.
-
-IMPORTANT: The current version of the integrated search does not include CMS articles in the search results.
+IMPORTANT: The search does not include CMS articles in the search results.
 
 Search results are sorted by the date they were most recently modified, from newest to oldest.
 
