@@ -366,6 +366,6 @@ These examples demonstrate filter conditions:
 
 Queries using `OR` or `AND` must enclose the whole condition in parentheses.
 
-ACM compares version groups using normal string comparison.
+API Community Manager compares version groups using normal string comparison.
 
 You can learn more about SOQL from the Salesforce https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/[SOQL and SOSL Reference, role=external, window=blank].
