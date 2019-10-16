@@ -67,10 +67,10 @@ search-bar-container {
 |Categories container
 
 |`api-catalog-mini-search`
-|Mini search
+|Small search used when the search bar is beside the categories
 
 |`api-catalog-mini-search-input`
-|Mini search input
+|Small search input
 
 |`api-catalog-multiselect-container`
 |Multiple selection container
@@ -79,10 +79,10 @@ search-bar-container {
 |Multiple selection label
 
 |`api-catalog-multiselect`
-|Multiple selection
+|Multiple selection component for categories
 
 |`api-catalog-chips-container`
-|Chips container
+|Container for chips, selected categories label, and clear all button
 
 |`api-catalog-chips-label`
 |Chips label
@@ -109,7 +109,7 @@ search-bar-container {
 |Search container
 
 |`api-catalog-search`
-|Search
+|Standard size search used when the search bar is below the categories
 
 |`api-catalog-apis-container`
 |APIs container
