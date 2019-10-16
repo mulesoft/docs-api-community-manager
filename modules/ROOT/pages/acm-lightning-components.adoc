@@ -70,13 +70,11 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 == API Catalog
 
-The API Catalog offers API consumers an interactive way to explore all the available APIs in an API community. It shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
+The API Catalog component offers API consumers an interactive way to explore all the available APIs in an API community. It shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
 
-The API Catalog component shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
+In the template community, the link to the API Catalog component appears below the API Carousel component. If a community has multiple API Catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
 
-In the template community, the API catalog link appears below the API carousel. If a community has multiple API catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
-
-To prevent confusion, the API catalog is designed to use a maximum of five managed categories, and not tags.
+To prevent confusion, the API Catalog component is designed to use a maximum of five managed categories, and not tags.
 
 A card can have multiple badges from one category. It can display up to three badges and, if it has more, it offers a tooltip to display them.
 
@@ -84,9 +82,9 @@ If you do not specify category colors, your community theme is used as the defau
 
 You can use URL parameters to pass filters to the catalog. For example, the URL of the page with the catalog component can end with `?catalogFilters=Country:Argentina,USA;Payment:Cash,Credit`.
 
-The API icon, name, and description shown are set in the API Community Manager control panel when you  xref:publish-apis.adoc[add an API version to your community].
+The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community].
 
-You can specify values for the following parameters of the API Carousel:
+You can specify values for the following parameters of the API Catalog component:
 
 Component Title:: Specifies the catalog title. Default is *API Catalog*.
 Show API Counter:: Enables you to show the API counter, which displays the number of APIs that match the current search and filters.
@@ -342,7 +340,7 @@ Approver ID:: Specifies the approver ID.
 
 The API Carousel component and the API Catalog component use the parameter *Filter Condition (Advanced)* to show only the APIs that meet the _condition_ (a standard search in Salesforce Object Query Language (SOQL)).
 
-You can search these fields:
+Conditions can use these fields:
 
 * `+acm_pkg__Icon__c+`
 * `+acm_pkg__Name__c+`
@@ -351,21 +349,21 @@ You can search these fields:
 
 These examples demonstrate filter conditions:
 
-* The API name is exactly equal to `My API`: `+acm_pkg__Name__c = 'My API'+`
-* The API name contains the text `My API`: `+acm_pkg__Name__c LIKE '%My API%'+`
-* The API name is `API Alpha` or `API Bravo`: `+(acm_pkg__Name__c = 'API Alpha' OR acm_pkg__Name__c = 'API Bravo')+`
-* The API name is `My API` and the API version group is `v1`: `+(acm_pkg__Name__c = 'My API' AND acm_pkg__VersionGroup__c = 'v1')+`
-* The API name begins with `Product`, `Shipping`, or `Order`: `+(acm_pkg__Name__c LIKE 'Product%' OR acm_pkg__Name__c LIKE 'Shipping%' OR acm_pkg__Name__c LIKE 'Order%')+`
-* The API has an icon: `+acm_pkg__Icon__c != ''+`
-* The API has a Learn More button that links to a custom page with more information: `+acm_pkg__NavigateUrl__c != ''+`
-* The API version group is exactly equal to `v2`: `+acm_pkg__VersionGroup__c = 'v2'+`
-* The API version group is later than `v1`: `+acm_pkg__VersionGroup__c > 'v1'+`
-* The API version group is earlier than `v1`: `+acm_pkg__VersionGroup__c < 'v1'+`
-* The API version group is later than or equal to `v2`: `+acm_pkg__VersionGroup__c >= 'v2'+`
-* The API version group is earlier than or equal to `v2`: `+acm_pkg__VersionGroup__c <= 'v2'+`
+* `+acm_pkg__Name__c = 'My API'+`: The API name is exactly equal to `My API`.
+* `+acm_pkg__Name__c LIKE '%My API%'+`: The API name contains the text `My API`.
+* `+(acm_pkg__Name__c = 'API Alpha' OR acm_pkg__Name__c = 'API Bravo')+`: The API name is `API Alpha` or `API Bravo`.
+* `+(acm_pkg__Name__c = 'My API' AND acm_pkg__VersionGroup__c = 'v1')+`: The API name is `My API` and the API version group is `v1`.
+* `+(acm_pkg__Name__c LIKE 'Product%' OR acm_pkg__Name__c LIKE 'Shipping%' OR acm_pkg__Name__c LIKE 'Order%')+`: The API name begins with `Product`, `Shipping`, or `Order`.
+* `+acm_pkg__Icon__c != ''+`: The API has an icon.
+* `+acm_pkg__NavigateUrl__c != ''+`: The API has a Learn More button that links to a custom page with more information.
+* `+acm_pkg__VersionGroup__c = 'v2'+`: The API version group is exactly equal to `v2`.
+* `+acm_pkg__VersionGroup__c > 'v1'+`: The API version group is later than `v1`.
+* `+acm_pkg__VersionGroup__c < 'v1'+`: The API version group is earlier than `v1`.
+* `+acm_pkg__VersionGroup__c >= 'v2'+`: The API version group is later than or equal to `v2`.
+* `+acm_pkg__VersionGroup__c <= 'v2'+`: The API version group is earlier than or equal to `v2`.
 
 Queries using `OR` or `AND` must enclose the whole condition in parentheses.
 
 API Community Manager compares version groups using normal string comparison.
 
-You can learn more about SOQL from the Salesforce https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/[SOQL and SOSL Reference, role=external, window=blank].
+You can learn more about SOQL from the Salesforce SOQL and SOSL Reference.
