@@ -340,7 +340,7 @@ Approver ID:: Specifies the approver ID.
 
 == Filter Conditions [[filter-conditions]]
 
-The API Carousel component and the API Catalog component use the parameter *Filter Condition (Advanced)* to show only the APIs that meet the condition. A condition is a standard search in Salesforce Object Query Language (SOQL).
+The API Carousel component and the API Catalog component use the parameter *Filter Condition (Advanced)* to show only the APIs that meet the _condition_ (a standard search in Salesforce Object Query Language (SOQL)).
 
 You can search these fields:
 
