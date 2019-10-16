@@ -93,7 +93,7 @@ Show API Counter:: Enables you to show the API counter, which displays the numbe
 APIs Per Page:: Specifies the number of APIs shown on each page of the catalog. Default is 12.
 Category Filter 1 through Category Filter 5:: Specifies the categories that community members and guest users can use to filter the APIs. Default is *None*.
 Category Color 1 through Category Color 5:: Specifies the color for each category.
-Search Input Position:: Specifies whether the search box will be next to the filters or below the filters and above the cards.
+Search Input Position:: Specifies whether the search box is next to the filters or below the filters and above the cards.
 Category Card Badge 1 through Category Card Badge 3:: Specifies the categories that appear at the top of the cards as badges with colors matching the category colors.
 Filter Condition (Advanced):: Causes the catalog to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
 
