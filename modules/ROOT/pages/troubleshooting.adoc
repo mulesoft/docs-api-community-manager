@@ -4,15 +4,15 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-If you encounter errors while you are using API Community Manager (ACM), refer to these explanations and instructions for recovery.
+If you encounter errors while you are using Anypoint API Community Manager, refer to these explanations and instructions for recovery.
 
 == Approved Members Not Created or Emailed
 
-If your Winter '20 Salesforce organization has the member approval workflow active, and approving a member and refreshing the screen removes the member from the list without creating the new user or sending the new user email, follow one of these two troubleshooting options:
+If your Winter '20 Salesforce organization has the member approval workflow active, and approving a member and refreshing the screen removes the member from the list without creating the new user or sending the new user email, troubleshoot by either setting the approver's language to English or adding the approver's language.
 
-. Ensure the locale of the approver user configured in the `SelfRegister` component is set to English.
+To set the approver's language to English, configure the approver user in the `SelfRegister` component and set the locale to English.
 
-Or:
+To add the approver's language:
 
 . Open Salesforce setup.
 . Open company settings.
@@ -24,14 +24,14 @@ Or:
 
 If saving the external data source configuration shows one of the errors "Not authorized" or "Problem Logging In - No_Oauth_State: State was not sent back":
 
-. Ensure the connected app domain is the right domain of the Salesforce organization.
+. Ensure that the connected app domain is the right domain of the Salesforce organization.
 . Open Salesforce setup.
 . Open the authentication providers configuration.
-. Click the name of the Anypoint authentication provider and ensure it has these settings from the correct connected app in Anypoint.
-  . Ensure the consumer key and consumer secret match the connected app in Anypoint.
-  . Ensure the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in the section xref:configure-acm.adoc#create-your-authentication-provider[Create Your Authentication Provider] on the page Configure ACM.
-  . Ensure the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
-  . Ensure your connected app in Anypoint has the correct domain of your Salesforce organization in the `redirect_uri` setting, client ID and client secret that match those in Salesforce, and correct scopes.
+. Click the name of the Anypoint Platform authentication provider and ensure that it has these settings from the correct connected app in Anypoint Platform.
+  . Ensure that the consumer key and consumer secret match the connected app in Anypoint Platform.
+  . Ensure that the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in the section xref:configure-acm.adoc#create-your-authentication-provider[Create Your Authentication Provider] on the page Configure ACM.
+  . Ensure that the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
+  . Ensure that your connected app in Anypoint Platform has the correct domain of your Salesforce organization in the `redirect_uri` setting, client ID and client secret that match those in Salesforce, and correct scopes.
 
 To find details of the connected app, check the UI or make this API call:
 
@@ -72,12 +72,12 @@ This call returns a response like this:
 
 If a published API version is not showing the *Request access* button:
 
-. Ensure the API version is managed in API Manager. If it is not, click *Import from Exchange*.
-. Ensure the API version has at least one endpoint defined.
+. Ensure that the API version is managed in API Manager. If it is not, click *Import from Exchange*.
+. Ensure that the API version has at least one endpoint defined.
 . Label the endpoint. This label displays in your community.
-. Ensure at least one of the API version's endpoints is configured as public in Exchange.
+. Ensure that at least one of the API version's endpoints is configured as public in Exchange.
 
-In the community builder, check the audience targeting settings of the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component. To make the *API Access Requester* appear to all members, ensure it is not assigned to any audience. To make it appear only to a specific audience, ensure it is assigned to the correct audience, and verify it by viewing the page while logged in to a member account that is a member of this audience.
+In the community builder, check the audience targeting settings of the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component. To make the *API Access Requester* appear to all members, ensure that it is not assigned to any audience. To make it appear only to a specific audience, ensure that it is assigned to the correct audience, and verify it by viewing the page while logged in to a member account that is a member of this audience.
 
 == Broken Images on Documentation Pages
 
@@ -89,12 +89,12 @@ If the image is stored on a web location outside Exchange such as S3 or Dropbox:
 
 . Open Salesforce setup.
 . Open your community's content security policy (CSP) trusted sites list.
-. Ensure the list includes the image site domain.
-. Some file sharing services resolve URLs through multiple redirects. Ensure the list includes the domain of the final URL.
+. Ensure that the list includes the image site domain.
+. Some file sharing services resolve URLs through multiple redirects. Ensure that the list includes the domain of the final URL.
 
 To learn if any content in any component or page of the community is blocked by the content security policy:
 
-. Open the ACM control panel.
+. Open the API Community Manager control panel.
 . Click *Community Builder*.
 . Click *Preview*.
 . Open the page that contains the content.
@@ -107,8 +107,8 @@ If the console shows a spinning icon and never loads the mocking service:
 
 . Open Salesforce setup.
 . Open *Named Credentials* configuration.
-. Ensure the Anypoint credentials are configured as described in the section xref:configure-acm.adoc#authorize-and-authenticate-your-external-data-source[Authorize and Authenticate Your External Data Source] on the page Configure ACM.
-. Ensure the mocking service uses HTTPS.
+. Ensure that the Anypoint Platform credentials are configured as described in the section xref:configure-acm.adoc#authorize-and-authenticate-your-external-data-source[Authorize and Authenticate Your External Data Source] on the page Configure ACM.
+. Ensure that the mocking service uses HTTPS.
 
 == Unauthorized Endpoint Error
 
@@ -116,7 +116,7 @@ If calling a real endpoint from the console shows an *Unauthorized Endpoint* err
 
 . Open Salesforce setup.
 . Open your community's content security policy (CSP) trusted sites list.
-. Ensure the list includes the endpoint site domain.
+. Ensure that the list includes the endpoint site domain.
 
 The console works in the user's browser and can only call trusted endpoint sites.
 
@@ -124,11 +124,11 @@ The console works in the user's browser and can only call trusted endpoint sites
 
 If a single API version has documentation or console components with incorrect or missing data:
 
-. Open the ACM control panel.
+. Open the API Community Manager control panel.
 . Edit the API version.
 . Click the button *View asset in Exchange*.
-. Ensure the API version in ACM points to the correct API version in Exchange.
-. Ensure the API version in Exchange is published and not in draft mode.
+. Ensure that the API version in API Community Manager points to the correct API version in Exchange.
+. Ensure that the API version in Exchange is published and not in draft mode.
 
 == Guest Users Not Seeing Published API Versions
 
@@ -136,4 +136,4 @@ If guest users do not see published API versions that have been set to be visibl
 
 . Open Salesforce setup.
 . Open the sharing rules.
-. Ensure the sharing rule for the object `CommunityApi` matches your community name, including spaces and which letters are upper case.
+. Ensure that the sharing rule for the object `CommunityApi` matches your community name, including spaces and which letters are upper case.

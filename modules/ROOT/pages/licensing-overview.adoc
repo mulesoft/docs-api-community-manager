@@ -13,6 +13,6 @@ API Community Manager (ACM) licenses are procured and provisioned by MuleSoft. A
 
 Community login-based license is calculated by the number of *daily unique logins*: login actions that different members perform daily in your communities during a month. Members associated with your license consume one login each day they log into any of your communities. Logging in multiple times during the same day only consumes one login. Once logged in, switching between communities doesn’t consume extra logins.
 
-Forecasting the adequate number of daily unique logins is critical to ensure you have enough licenses to satisfy the demand your community will generate. Your MuleSoft account team will assist you in this analysis as part of the capacity planning and community design process before you roll out your community.
+Forecasting the adequate number of daily unique logins is critical to ensure that you have enough licenses to satisfy the demand your community will generate. Your MuleSoft account team will assist you in this analysis as part of the capacity planning and community design process before you roll out your community.
 
 You can find more information about *Salesforce Customer Community Plus Login License Unlimited Edition* in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=users_license_types_communities.htm&type=5[Communities User Licenses, role=external, window=blank].
