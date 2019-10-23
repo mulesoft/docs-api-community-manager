@@ -33,7 +33,7 @@ If saving the external data source configuration shows one of the errors "Not au
   . Ensure the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
   . Ensure your connected app in Anypoint Platform has the same domain as your Salesforce organization in its `redirect_uri` setting, a client ID and client secret that match those in Salesforce, and correct scopes.
 
-To find details of the connected app, check the UI or make this API call:
+To view details of the connected app, examine the UI or make this API call:
 
 ----
 curl -X GET 'https://anypoint.mulesoft.com/accounts/api/connectedApplications/' \
