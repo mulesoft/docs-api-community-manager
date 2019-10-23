@@ -120,7 +120,7 @@ If calling a real endpoint from the console shows an *Unauthorized Endpoint* err
 . Open your community's content security policy (CSP) trusted sites list.
 . Ensure the list includes the endpoint site domain.
 
-The console works in the user's browser and can only call trusted endpoint sites.
+The console works in the user's browser and can call only trusted endpoint sites.
 
 == Incorrect or Missing Data for One API Version
 
