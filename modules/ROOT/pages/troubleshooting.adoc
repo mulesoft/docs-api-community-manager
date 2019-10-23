@@ -83,7 +83,7 @@ In the community builder, check the audience targeting settings of the xref:acm-
 
 == Broken Images on Documentation Pages
 
-If your community shows a broken image on an API documentation page, and the image displays correctly on the API documentation page in Exchange, follow these steps.
+If your community shows a broken image on an API documentation page, and the image displays correctly on the API documentation page in Exchange, follow these steps:
 
 If the image was uploaded to Exchange with the markdown editor, then the image is stored in Exchange. Make the Exchange API version asset public so the image can be rendered in your community.
 
