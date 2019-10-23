@@ -128,7 +128,7 @@ If a single API version has documentation or console components with incorrect o
 
 . Open the ACM control panel.
 . Edit the API version.
-. Click the button *View asset in Exchange*.
+. Click *View asset in Exchange*.
 . Ensure the API version in ACM points to the correct API version in Exchange.
 . Ensure the API version in Exchange is published and not in draft mode.
 
