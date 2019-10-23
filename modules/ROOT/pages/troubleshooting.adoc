@@ -75,7 +75,8 @@ If a published API version is not showing the *Request access* button:
 . Ensure the API version is managed in API Manager.
 If it is not, click *Import from Exchange*.
 . Ensure the API version has at least one endpoint defined.
-. Label the endpoint. This label displays in your community.
+. Label the endpoint.
+This label displays in your community.
 . Ensure at least one of the API version's endpoints is configured as public in Exchange.
 
 In the community builder, check the audience targeting settings of the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component. To make the *API Access Requester* appear to all members, ensure it is not assigned to any audience. To make it appear only to a specific audience, ensure it is assigned to the correct audience, and verify it by viewing the page while logged in to a member account that is a member of this audience.
