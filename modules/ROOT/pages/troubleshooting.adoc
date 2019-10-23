@@ -22,7 +22,7 @@ Or:
 
 == Not Authorized or Problem Logging In Error When Saving External Data Source Configuration
 
-If saving the external data source configuration shows one of the errors "Not authorized" or "Problem Logging In - No_Oauth_State: State was not sent back":
+If saving the external data source configuration shows one of the errors "Not authorized" or "Problem Logging In - No_Oauth_State: State was not sent back", follow these steps:
 
 . Ensure the connected app domain is the right domain of the Salesforce organization.
 . Open Salesforce setup.
