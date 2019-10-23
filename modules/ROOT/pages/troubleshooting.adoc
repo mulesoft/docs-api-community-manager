@@ -87,7 +87,7 @@ If your community shows a broken image on an API documentation page, and the ima
 
 . If the image was uploaded to Exchange by using the markdown editor, make the Exchange API version asset public so the image can be rendered in your community.
 
-If the image is stored on a web location outside Exchange such as S3 or Dropbox:
+. If the image is stored on a web location outside Exchange, such as S3 or Dropbox, then:
 
 . Open Salesforce setup.
 . Open your community's content security policy (CSP) trusted sites list.
