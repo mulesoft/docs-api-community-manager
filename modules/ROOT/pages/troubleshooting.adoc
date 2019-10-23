@@ -138,4 +138,4 @@ If guest users do not see published API versions that have been set to be visibl
 
 . Open Salesforce setup.
 . Open the sharing rules.
-. Ensure the sharing rule for the object `CommunityApi` matches your community name, including spaces and which letters are upper case.
+. Ensure the sharing rule for the object `CommunityApi` matches your community name exactly, including spacing and lettercasing.
