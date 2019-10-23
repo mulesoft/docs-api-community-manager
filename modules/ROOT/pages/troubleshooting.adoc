@@ -108,7 +108,7 @@ To inspect the URLs the browser loads when rendering a community page, use the b
 If the console shows a spinning icon and never loads the mocking service:
 
 . Open Salesforce setup.
-. Open *Named Credentials* configuration.
+. Open the *Named Credentials* configuration.
 . Ensure the Anypoint credentials are configured as described in the section xref:configure-acm.adoc#authorize-and-authenticate-your-external-data-source[Authorize and Authenticate Your External Data Source] on the page Configure ACM.
 . Ensure the mocking service uses HTTPS.
 
