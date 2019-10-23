@@ -92,7 +92,7 @@ If your community shows a broken image on an API documentation page, and the ima
 . Open Salesforce setup.
 . Open your community's content security policy (CSP) trusted sites list.
 . Ensure the list includes the image site domain.
-. Some file sharing services resolve URLs through multiple redirects. Ensure the list includes the domain of the final URL.
+. Because some file-sharing services resolve URLs through multiple redirects, ensure the list includes the domain of the final URL.
 
 To learn if any content in any component or page of the community is blocked by the content security policy:
 
