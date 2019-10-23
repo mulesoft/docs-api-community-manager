@@ -72,7 +72,8 @@ This call returns a response like this:
 
 If a published API version is not showing the *Request access* button:
 
-. Ensure the API version is managed in API Manager. If it is not, click *Import from Exchange*.
+. Ensure the API version is managed in API Manager.
+If it is not, click *Import from Exchange*.
 . Ensure the API version has at least one endpoint defined.
 . Label the endpoint. This label displays in your community.
 . Ensure at least one of the API version's endpoints is configured as public in Exchange.
