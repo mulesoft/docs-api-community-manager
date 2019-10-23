@@ -22,18 +22,18 @@ To add the approver's language:
 
 == Not Authorized or Problem Logging In Error When Saving External Data Source Configuration
 
-If saving the external data source configuration shows one of the errors "Not authorized" or "Problem Logging In - No_Oauth_State: State was not sent back":
+If saving the external data source configuration shows one of the errors "Not authorized" or "Problem Logging In - No_Oauth_State: State was not sent back", follow these steps:
 
 . Ensure that the connected app domain is the right domain of the Salesforce organization.
 . Open Salesforce setup.
 . Open the authentication providers configuration.
-. Click the name of the Anypoint Platform authentication provider and ensure that it has these settings from the correct connected app in Anypoint Platform.
+. Click the name of the Anypoint Platform authentication provider and ensure that it has these settings from the correct connected app in Anypoint Platform:
   . Ensure that the consumer key and consumer secret match the connected app in Anypoint Platform.
-  . Ensure that the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in the section xref:configure-acm.adoc#create-your-authentication-provider[Create Your Authentication Provider] on the page Configure ACM.
+  . Ensure that the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in xref:configure-acm.adoc#create-your-authentication-provider[Create Your Authentication Provider].
   . Ensure that the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
-  . Ensure that your connected app in Anypoint Platform has the correct domain of your Salesforce organization in the `redirect_uri` setting, client ID and client secret that match those in Salesforce, and correct scopes.
+  . Ensure that your connected app in Anypoint Platform has the same domain as your Salesforce organization in its `redirect_uri` setting, a client ID and client secret that match those in Salesforce, and correct scopes.
 
-To find details of the connected app, check the UI or make this API call:
+To view details of the connected app, examine the UI or make this API call:
 
 ----
 curl -X GET 'https://anypoint.mulesoft.com/accounts/api/connectedApplications/' \
@@ -72,25 +72,27 @@ This call returns a response like this:
 
 If a published API version is not showing the *Request access* button:
 
-. Ensure that the API version is managed in API Manager. If it is not, click *Import from Exchange*.
+. Ensure that the API version is managed in API Manager.
+. If it is not, click *Import from Exchange*.
 . Ensure that the API version has at least one endpoint defined.
-. Label the endpoint. This label displays in your community.
+. Label the endpoint.
+. This label displays in your community.
 . Ensure that at least one of the API version's endpoints is configured as public in Exchange.
 
-In the community builder, check the audience targeting settings of the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component. To make the *API Access Requester* appear to all members, ensure that it is not assigned to any audience. To make it appear only to a specific audience, ensure that it is assigned to the correct audience, and verify it by viewing the page while logged in to a member account that is a member of this audience.
+In the community builder, check the audience targeting settings of the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component. To make the API Access Requester appear to all members, ensure that it is not assigned to any audience. To make it appear only to a specific audience, ensure that it is assigned to the correct audience, and verify it by viewing the page while logged in to an account that is a member of this audience.
 
 == Broken Images on Documentation Pages
 
-If your community shows a broken image on an API documentation page, and the image displays correctly on the API documentation page in Exchange, follow these steps.
+If your community shows a broken image on an API documentation page, and the image displays correctly on the API documentation page in Exchange, follow these steps:
 
-If the image was uploaded to Exchange with the markdown editor, then the image is stored in Exchange. Make the Exchange API version asset public so the image can be rendered in your community.
+. If the image was uploaded to Exchange by using the markdown editor, make the Exchange API version asset public so the image can be rendered in your community.
 
-If the image is stored on a web location outside Exchange such as S3 or Dropbox:
+. If the image is stored on a web location outside Exchange, such as S3 or Dropbox, then:
 
 . Open Salesforce setup.
 . Open your community's content security policy (CSP) trusted sites list.
 . Ensure that the list includes the image site domain.
-. Some file sharing services resolve URLs through multiple redirects. Ensure that the list includes the domain of the final URL.
+. Because some file-sharing services resolve URLs through multiple redirects, ensure that the list includes the domain of the final URL.
 
 To learn if any content in any component or page of the community is blocked by the content security policy:
 
@@ -106,8 +108,8 @@ To inspect the URLs the browser loads when rendering a community page, use the b
 If the console shows a spinning icon and never loads the mocking service:
 
 . Open Salesforce setup.
-. Open *Named Credentials* configuration.
-. Ensure that the Anypoint Platform credentials are configured as described in the section xref:configure-acm.adoc#authorize-and-authenticate-your-external-data-source[Authorize and Authenticate Your External Data Source] on the page Configure ACM.
+. Open the *Named Credentials* configuration.
+. Ensure that the Anypoint Platform credentials are configured as described in xref:configure-acm.adoc#authorize-and-authenticate-your-external-data-source[Authorize and Authenticate Your External Data Source].
 . Ensure that the mocking service uses HTTPS.
 
 == Unauthorized Endpoint Error
@@ -118,7 +120,7 @@ If calling a real endpoint from the console shows an *Unauthorized Endpoint* err
 . Open your community's content security policy (CSP) trusted sites list.
 . Ensure that the list includes the endpoint site domain.
 
-The console works in the user's browser and can only call trusted endpoint sites.
+The console works in the user's browser and can call only trusted endpoint sites.
 
 == Incorrect or Missing Data for One API Version
 
@@ -126,7 +128,7 @@ If a single API version has documentation or console components with incorrect o
 
 . Open the API Community Manager control panel.
 . Edit the API version.
-. Click the button *View asset in Exchange*.
+. Click *View asset in Exchange*.
 . Ensure that the API version in API Community Manager points to the correct API version in Exchange.
 . Ensure that the API version in Exchange is published and not in draft mode.
 
@@ -136,4 +138,4 @@ If guest users do not see published API versions that have been set to be visibl
 
 . Open Salesforce setup.
 . Open the sharing rules.
-. Ensure that the sharing rule for the object `CommunityApi` matches your community name, including spaces and which letters are upper case.
+. Ensure that the sharing rule for the object `CommunityApi` matches your community name exactly, including spacing and letter case.
