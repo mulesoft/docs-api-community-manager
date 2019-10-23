@@ -109,7 +109,7 @@ If the console shows a spinning icon and never loads the mocking service:
 
 . Open Salesforce setup.
 . Open the *Named Credentials* configuration.
-. Ensure the Anypoint credentials are configured as described in the section xref:configure-acm.adoc#authorize-and-authenticate-your-external-data-source[Authorize and Authenticate Your External Data Source] on the page Configure ACM.
+. Ensure the Anypoint Platform credentials are configured as described in xref:configure-acm.adoc#authorize-and-authenticate-your-external-data-source[Authorize and Authenticate Your External Data Source].
 . Ensure the mocking service uses HTTPS.
 
 == Unauthorized Endpoint Error
