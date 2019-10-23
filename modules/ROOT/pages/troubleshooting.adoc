@@ -28,7 +28,7 @@ If saving the external data source configuration shows one of the errors "Not au
 . Open Salesforce setup.
 . Open the authentication providers configuration.
 . Click the name of the Anypoint Platform authentication provider and ensure that it has these settings from the correct connected app in Anypoint Platform:
-  . Ensure the consumer key and consumer secret match the connected app in Anypoint.
+  . Ensure the consumer key and consumer secret match the connected app in Anypoint Platform.
   . Ensure the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in the section xref:configure-acm.adoc#create-your-authentication-provider[Create Your Authentication Provider] on the page Configure ACM.
   . Ensure the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
   . Ensure your connected app in Anypoint has the correct domain of your Salesforce organization in the `redirect_uri` setting, client ID and client secret that match those in Salesforce, and correct scopes.
