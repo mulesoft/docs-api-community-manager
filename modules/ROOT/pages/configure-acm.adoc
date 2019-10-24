@@ -78,7 +78,11 @@ Find this URL in *Salesforce Setup* > *Auth. Providers* > *Anypoint* > *Callback
 +
 . Set *Grant Types*.
 +
-Select *Authorization Code*, *Refresh Token*, *Full Access*, and *Background Access*.
+Select *Authorization Code* and *Refresh Token*.
++
+. Click *Add Scopes*.
++
+Select *Full Access* and *Background Access*.
 +
 . Click *Create Application*.
 
