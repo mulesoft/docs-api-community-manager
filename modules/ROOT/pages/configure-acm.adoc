@@ -69,14 +69,14 @@ Your account must have the Org Admin permission.
 
 ==== Create a Connected App by Using the User Interface [[create-a-connected-app-with-the-user-interface]]
 
-To create a connected app by using the user interface, in Anypoint Platform, navigate to *Access Management* > *Applications* > *Create New Application*, and provide this information:
+To create a connected app by using the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and provide this information:
 
-. Enter a value for *Application Name*.
+. Enter a value for the app *Name*.
 . Set *Redirect URIs* to the URL from the Authentication Provider configuration.
 +
 Find this URL in *Salesforce Setup* > *Auth. Providers* > *Anypoint* > *Callback URL*.
 +
-. Set *User Grant Types*.
+. Set *Grant Types*.
 +
 Select *Authorization Code*, *Refresh Token*, *Full Access*, and *Background Access*.
 +
