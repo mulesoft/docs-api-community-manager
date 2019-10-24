@@ -12,6 +12,8 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 
 * <<create-and-authenticate-the-external-data-source>>
 ** <<create-a-connected-app>>
+*** <<create-a-connected-app-with-the-user-interface>>
+*** <<create-a-connected-app-with-an-api-call>>
 ** <<create-your-authentication-provider>>
 ** <<authorize-and-authenticate-your-external-data-source>>
 * <<enable-acm-control-panel>>
@@ -61,19 +63,42 @@ The external data source specifies how ACM components and data objects interact 
 
 === Create a Connected App [[create-a-connected-app]]
 
-To create a connected app with an API call, follow this example using `cURL`.
+You can perform this step by using either the user interface or an API call.
 
 Your account must have the Org Admin permission.
 
-Get an authorization token from the platform:
+==== Create a Connected App by Using the User Interface [[create-a-connected-app-with-the-user-interface]]
 
+To create a connected app by using the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and provide this information:
+
+. Enter a value for the app *Name*.
+. Set *Redirect URIs* to the URL from the Authentication Provider configuration.
++
+Find this URL in *Salesforce Setup* > *Auth. Providers* > *Anypoint* > *Callback URL*.
++
+. Set *Grant Types*.
++
+Select *Authorization Code* and *Refresh Token*.
++
+. Click *Add Scopes*.
++
+Select *Full Access* and *Background Access*.
++
+. Click *Create Application*.
+
+==== Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
+
+To create a connected app by using an API call, follow this example using the `cURL` command.
+
+. Get an authorization token from the platform:
++
 ----
     curl --silent https://anypoint.mulesoft.com/accounts/login -XPOST \
       -d 'username=<anypoint username>&password=<anypoint password>'
 ----
-
-This returns a response like this:
-
++
+. The command returns a response like this:
++
 ----
     {
       "access_token": "5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7",
@@ -81,15 +106,15 @@ This returns a response like this:
       "redirectUrl": "/home/"
     }
 ----
-
-Note the `access_token` value.
-
-Use the next `cURL` example to register an external client in Anypoint for OpenID authentication.
-
++
+. Note the `access_token` value.
++
+. Use the next `cURL` example to register an external client in Anypoint for OpenID authentication.
++
 Replace the access token in the authorization header with the `access_token` value.
-
++
 Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find the domain name by logging in to your Salesforce organization, clicking *Setup*, and clicking the section *My Domain*.
-
++
 ----
     curl -X POST \
       https://anypoint.mulesoft.com/accounts/api/connectedApplications \
@@ -100,9 +125,9 @@ Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find th
       -H 'Host:anypoint.mulesoft.com' \
       -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
 ----
-
-The `cURL` command will return a response like this:
-
++
+. The `cURL` command returns a response like this:
++
 ----
     {
       "client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
@@ -125,8 +150,8 @@ The `cURL` command will return a response like this:
       "as_id": "anypoint"
     }
 ----
-
-Note the `client_id` and `client_secret` values.
++
+. Note the `client_id` and `client_secret` values.
 
 === Create Your Authentication Provider [[create-your-authentication-provider]]
 
