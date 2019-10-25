@@ -4,9 +4,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-With API Community Manager (ACM), you can build and operate communities around your APIs for developers and partners, both inside and outside of your organization, who write applications that use your APIs.
+With Anypoint API Community Manager, you can build and operate communities around your APIs for developers and partners, both inside and outside of your organization, who write applications that use your APIs.
 
-Anypoint Community Manager is powered by *https://www.salesforce.com/products/community-cloud/overview/[Salesforce Community Cloud, role=external, window=blank]* and provides customization, branding, marketing, and engagement capabilities to serve the different needs of your developer audiences. APIs cataloged in https://docs.mulesoft.com/exchange/[Anypoint Exchange] can be surfaced in Anypoint Community Manager for developers to discover them and use them to manage client applications, API access credentials, and consumption metrics.
+API Community Manager is powered by *https://www.salesforce.com/products/community-cloud/overview/[Salesforce Community Cloud, role=external, window=blank]* and provides customization, branding, marketing, and engagement capabilities to serve the different needs of your developer audiences. APIs cataloged in https://docs.mulesoft.com/exchange/[Anypoint Exchange] can be surfaced in API Community Manager for developers to discover them and use them to manage client applications, API access credentials, and consumption metrics.
 
 See these useful resources to get up to speed with the capabilities of Salesforce Community Cloud:
 
