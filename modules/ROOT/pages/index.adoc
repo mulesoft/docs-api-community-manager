@@ -43,4 +43,4 @@ https://help.salesforce.com/articleView?id=networks_appexchange_overview_dashboa
 
 * xref:release-notes::api-community-manager/api-community-manager-release-notes.adoc[API Community Manager Release Notes]
 * https://forums.mulesoft.com[MuleSoft Forum, role=external, window=blank]
-* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles, role=external, window=blank]
+* https://help.mulesoft.com/s/knowledge[Knowledge Base Articles, role=external, window=blank]
