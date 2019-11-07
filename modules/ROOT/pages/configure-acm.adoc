@@ -98,7 +98,7 @@ Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find th
       -H 'Accept-Encoding: gzip, deflate' \
       -H 'Authorization: Bearer 5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7' \
       -H 'Host:anypoint.mulesoft.com' \
-      -d '{"client_name":"SalesforceApp","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
+      -d '{"client_name":"ACM Integration App","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
 ----
 
 The `cURL` command will return a response like this:
@@ -107,7 +107,7 @@ The `cURL` command will return a response like this:
     {
       "client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
       "client_secret": "9509XXXXXXXXXXXXXXXXXXXXXXXXC10E",
-      "client_name": "ACM Integration Client",
+      "client_name": "ACM Integration App",
       "redirect_uris": [
         "https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"
       ],
