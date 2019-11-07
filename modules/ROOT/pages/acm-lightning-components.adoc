@@ -351,6 +351,7 @@ These examples demonstrate filter conditions:
 
 * `+acm_pkg__Name__c = 'My API'+`: The API name is exactly equal to `My API`.
 * `+acm_pkg__Name__c LIKE '%My API%'+`: The API name contains the text `My API`.
+* `+(NOT acm_pkg__Name__c LIKE '%BETA%')+`: The API name does not contain the text `BETA`.
 * `+(acm_pkg__Name__c = 'API Alpha' OR acm_pkg__Name__c = 'API Bravo')+`: The API name is `API Alpha` or `API Bravo`.
 * `+(acm_pkg__Name__c = 'My API' AND acm_pkg__VersionGroup__c = 'v1')+`: The API name is `My API` and the API version group is `v1`.
 * `+(acm_pkg__Name__c LIKE 'Product%' OR acm_pkg__Name__c LIKE 'Shipping%' OR acm_pkg__Name__c LIKE 'Order%')+`: The API name begins with `Product`, `Shipping`, or `Order`.
