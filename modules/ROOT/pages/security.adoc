@@ -5,7 +5,7 @@ endif::[]
 :imagesdir: ../assets/images/
 
 API Community Manager (ACM) uses the same secure hardware, backup, disaster recovery, and business continuity
-systems as Salesforce and the Anypoint Platform.
+systems as Salesforce and Anypoint Platform.
 
 ACM is part of Anypoint Platform, and each member has one Anypoint Platform account, which is also used as their ACM account.
 
@@ -13,7 +13,7 @@ All connections between ACM and related systems, such as Salesforce and Anypoint
 Transport Layer Security (TLS).
 
 During initial configuration, you can set ACM to use a third party single sign-on (SSO) provider, such as Okta,
-for member connections to both the Anypoint Platform and Salesforce systems.
+for member connections to both Anypoint Platform and Salesforce systems.
 
 Anypoint Access Management configures xref:access-management::external-identity.adoc[Identity Management] for single sign-on (SSO) in MuleSoft, and supports xref:access-management::ldap-configuration-index.adoc[LDAP] and other standards.
 

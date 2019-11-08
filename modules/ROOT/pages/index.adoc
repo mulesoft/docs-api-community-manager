@@ -25,11 +25,11 @@ A consumer developer accessing your API community finds news, events, tutorials,
 
 Information in your community includes content created by your marketing and business development teams to help your audiences understand the value proposition of your APIs, in addition to the technical API documentation and self-service API console that helps developers explore API features and learn how to use them. The API technical information is made available directly from the API designs in Anypoint Platform.
 
-Consumer developers can request access to your API for new or existing client applications, following the regular governance model of the API lifecycle provided by the Anypoint Platform and https://docs.mulesoft.com/api-manager/2.x/latest-overview-concept[API Manager]. Developers can manage their client applications, their access credentials (API keys and secrets), and get insights on their applications' performance as their applications use your APIs.
+Consumer developers can request access to your API for new or existing client applications, following the regular governance model of the API lifecycle provided by Anypoint Platform and https://docs.mulesoft.com/api-manager/2.x/latest-overview-concept[API Manager]. Developers can manage their client applications, their access credentials (API keys and secrets), and get insights on their applications' performance as their applications use your APIs.
 
 Developers use discussion forums to engage with your organization and other members of the community, by posting questions and answers, sharing ideas, and discussing issues they find.
 
-Other ACM features enable your organization to engage with partners and ensure they are supported throughout their journey.
+Other ACM features enable your organization to engage with partners and ensure that they are supported throughout their journey.
 
 == Building Your API Community
 
