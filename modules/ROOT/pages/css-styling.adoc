@@ -29,6 +29,68 @@ search-bar-container {
 
 == CSS Classes
 
+=== ACM Search Box
+
+.ACM Search Box CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`search-box-container`
+|Container
+
+|`search-box-result`
+|Result
+
+|`search-box-results`
+|Results
+
+|`search-result-group`
+|Result group
+|===
+
+=== ACM Search Result
+
+.ACM Search Result CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`search-result`
+|Search result
+
+|`search-result-name`
+|Name
+
+|`search-result-description`
+|Description
+
+|`search-result-api-detail`
+|API Detail
+
+|`search-result-api-learn-more`
+|API Learn More
+
+|`search-results-all-page`
+|All page
+
+|`search-result-page`
+|Page
+
+|`search-results-container`
+|Container
+
+|`search-result-tab-menu-container`
+|Tab menu container
+
+|`search-results-info`
+|Info
+
+|`search-result-empty-main-text-message`
+|Empty main text message
+
+|`search-result-empty-header-message`
+|Empty header message
+|===
+
 === API Carousel
 
 .API Carousel CSS Classes and Descriptions
@@ -49,6 +111,106 @@ search-bar-container {
 
 |`api-version-carousel-arrow`
 |Left and right arrows navigation
+|===
+
+=== API Catalog
+
+.API Catalog CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`api-catalog-container`
+|Catalog container
+
+|`api-catalog-header`
+|Catalog header
+
+|`api-catalog-categories-container`
+|Categories container
+
+|`api-catalog-mini-search`
+|Small search used when the search bar is beside the categories
+
+|`api-catalog-mini-search-input`
+|Small search input
+
+|`api-catalog-multiselect-container`
+|Multiple selection container
+
+|`api-catalog-multiselect-label`
+|Multiple selection label
+
+|`api-catalog-multiselect`
+|Multiple selection component for categories
+
+|`api-catalog-chips-container`
+|Container for chips, selected categories label, and clear all button
+
+|`api-catalog-chips-label`
+|Chips label
+
+|`api-catalog-clear-all-button`
+|Clear All button
+
+|`chips-container`
+|Chips container
+
+|`chip-container`
+|Container for one chip with label and close icon
+
+|`chip-label`
+|Chip label
+
+|`chip-icon`
+|Chip close icon
+
+|`api-catalog-separator`
+|Separator
+
+|`api-catalog-search-container`
+|Search container
+
+|`api-catalog-search`
+|Standard size search used when the search bar is below the categories
+
+|`api-catalog-apis-container`
+|APIs container
+
+|`api-catalog-page-indicator`
+|Page indicator
+
+|`api-catalog-empty-message`
+|Empty cards message
+
+|`api-catalog-card-container`
+|Card container
+
+|`api-catalog-card-badges-container`
+|Card badges container
+
+|`api-catalog-card-badge`
+|Card badge
+
+|`api-catalog-card-icon`
+|Card icon
+
+|`api-catalog-card-name`
+|Card name
+
+|`api-catalog-card-description`
+|Card description
+
+|`api-catalog-card-buttons-container`
+|Card buttons container
+
+|`api-catalog-card-details-button`
+|Card Details button
+
+|`api-catalog-card-learn-more-button`
+|Card Learn More button
+
+|`api-catalog-paginator-container`
+|Paginator container
 |===
 
 === API Details Button
