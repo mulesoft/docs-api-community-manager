@@ -12,7 +12,7 @@ To update your API community:
 . In the same browser session, open the *package update installation link* provided by your MuleSoft representative.
 . Verify the version number and name of the release.
 . If you are upgrading to package version 1.26, follow these steps:
-.. Go to Salesforce Workbench: https://workbench.salesforce.com
+.. Go to Salesforce Workbench: https://workbench.developerforce.com/
 .. Select Standard.
 .. Enter your username and password.
 .. Click the Login button.
