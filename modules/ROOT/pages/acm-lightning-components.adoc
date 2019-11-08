@@ -12,6 +12,39 @@ Each ACM Lightning component has different configuration options and adds differ
 
 Many ACM Lightning components show data from Anypoint Platform. ACM admins can change some of these data fields, such as API names, descriptions, and icons. ACM saves these changes but does not push the changes back to Anypoint Platform.
 
+== ACM Search Box [[acm-search-box]]
+
+The Anypoint API Community Manager Search Box component enables users to search for both content that exists in Community Cloud (such as knowledge articles, support cases, and announcements) and content that exists in Anypoint Platform (such as APIs and client applications). Results from the search are presented in the <<acm-search-results>> component.
+
+You can specify values for the following parameters of the API Community Manager Search Box:
+
+Component Title:: Specifies the title for the search input field.
+Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
+Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Pages, and Forums.
+Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
+
+The Linked Result Page parameter specifies the URL of a search results page, and the search results page must include an ACM Search Results component to display the search results. If the page does not include an ACM Search Results component, members and guest users who enter a search will go to the page and see no results.
+
+If a content type is not selected in the Search Areas parameter, then the linked ACM Search Results component omits results of that content type.
+
+Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
+
+IMPORTANT: The search does not include CMS articles in the search results.
+
+Search results are sorted by the date they were most recently modified, from newest to oldest.
+
+To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[preview your API community] and run a search.
+
+== ACM Search Results [[acm-search-results]]
+
+The API Community Manager Search Results component shows results after a user enters a search in the <<acm-search-box>> component.
+
+You can specify values for the following parameters of the Search Results:
+
+Component Title:: Specifies the title for the results.
+Border:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
+Show Search Input:: Shows the search input on the results page.
+
 == API Access Requester
 
 The API Access Requester component enables community members to request access to an API for either a new or existing application.
@@ -317,10 +350,6 @@ Forgot Password Label:: Specifies the forgotten password link label. Default is 
 Forgot Password URL:: Specifies the forgotten password link URL. Default is `/ForgotPassword`.
 Self Register Label:: Specifies the self-registration link label. Default is `Not a member?`.
 Self Register URL:: Specifies the self-registration link URL. Default is `/SelfRegister`.
-
-== Search Result List
-
-The Search Result List component shows a list of search results. It has no configuration settings.
 
 == Self Register
 
