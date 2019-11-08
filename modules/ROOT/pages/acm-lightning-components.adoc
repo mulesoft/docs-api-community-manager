@@ -65,6 +65,7 @@ Card Border Radius:: Specifies the card border radius. A larger radius makes the
 Card Shadow:: Specifies the shadow beneath each card.
 Message If Empty:: Shows a message if the carousel has no APIs. Default is `There are no APIs available right now.`
 Filter Condition (Advanced):: Causes the carousel to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
+Categories Filter (Advanced):: Causes the carousel to show only APIs that match the given categories, using the syntax described in <<categories-filter>>.
 API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
 Learn More Button Label:: Enables you to set the Learn More button label. Default is *Learn More*.
 
@@ -75,6 +76,12 @@ The API Catalog component offers API consumers an interactive way to explore all
 In the template community, the link to the API Catalog component appears below the API Carousel component. If a community has multiple API Catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
 
 To prevent confusion, the API Catalog component is designed to use a maximum of five managed categories, and not tags.
+
+After you add a new category in Anypoint Exchange, it appears in the API Catalog configuration within five minutes when the cache refreshes automatically.
+
+The API Catalog configuration shows a category only if at least one API has a value for that category.
+
+If a category is removed or modified in Exchange, all API Catalog instances automatically reflect the change.
 
 A card can have multiple badges from one category. It can display up to three badges and, if it has more, it offers a tooltip to display them.
 
@@ -94,6 +101,7 @@ Category Color 1 through Category Color 5:: Specifies the color for each categor
 Search Input Position:: Specifies whether the search box is next to the filters or below the filters and above the cards.
 Category Card Badge 1 through Category Card Badge 3:: Specifies the categories that appear at the top of the cards as badges, with colors matching the category colors.
 Filter Condition (Advanced):: Causes the catalog to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
+Categories Filter (Advanced):: Causes the catalog to show only APIs that match the given categories, using the syntax described in <<categories-filter>>.
 
 == API Console
 
@@ -368,3 +376,11 @@ Queries using `OR` or `AND` must enclose the whole condition in parentheses.
 API Community Manager compares version groups using normal string comparison.
 
 You can learn more about SOQL from the Salesforce SOQL and SOSL Reference.
+
+== Categories Filter [[categories-filter]]
+
+The API Carousel component and the API Catalog component use the parameter *Categories Filter (Advanced)* to show only the APIs that have categories in Anypoint Exchange with the specified values.
+
+These categories and values are written as comma-separated pairs such as `Country=Argentina,Payment=Credit`.
+
+The API Carousel or API Catalog will show only APIs that match all of the category-value pairs in the categories filter and all of the filter conditions.
