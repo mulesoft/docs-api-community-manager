@@ -72,19 +72,17 @@ Your account must have the Org Admin permission.
 To create a connected app by using the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and provide this information:
 
 . Enter a value for the app *Name*.
-. Set *Redirect URIs* to the URL from the Authentication Provider configuration.
-+
-Find this URL in *Salesforce Setup* > *Auth. Providers* > *Anypoint* > *Callback URL*.
-+
-. Set *Grant Types*.
-+
-Select *Authorization Code* and *Refresh Token*.
-+
+. Set *Type* to *App acts on behalf of a user*.
+. Set *Grant types* to *Authorization Code* and *Refresh Token*.
+. Set the mandatory *Website URL* to a URL of your choice.
+. Set *Redirect URIs* to `https://<domain>.my.salesforce.com/services/authcallback/Anypoint` and replace `<domain>` with your domain.
+. Set *Who can use this application?* to *Members of this organization only*.
 . Click *Add Scopes*.
 +
 Select *Full Access* and *Background Access*.
 +
 . Click *Create Application*.
+. Note the client ID and client secret.
 
 ==== Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
 
