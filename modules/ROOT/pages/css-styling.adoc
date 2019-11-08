@@ -29,6 +29,68 @@ search-bar-container {
 
 == CSS Classes
 
+=== ACM Search Box
+
+.ACM Search Box CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`search-box-container`
+|Container
+
+|`search-box-result`
+|Result
+
+|`search-box-results`
+|Results
+
+|`search-result-group`
+|Result group
+|===
+
+=== ACM Search Result
+
+.ACM Search Result CSS Classes and Descriptions
+|===
+|Class |Description
+
+|`search-result`
+|Search result
+
+|`search-result-name`
+|Name
+
+|`search-result-description`
+|Description
+
+|`search-result-api-detail`
+|API Detail
+
+|`search-result-api-learn-more`
+|API Learn More
+
+|`search-results-all-page`
+|All page
+
+|`search-result-page`
+|Page
+
+|`search-results-container`
+|Container
+
+|`search-result-tab-menu-container`
+|Tab menu container
+
+|`search-results-info`
+|Info
+
+|`search-result-empty-main-text-message`
+|Empty main text message
+
+|`search-result-empty-header-message`
+|Empty header message
+|===
+
 === API Carousel
 
 .API Carousel CSS Classes and Descriptions
