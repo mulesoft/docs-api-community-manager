@@ -28,10 +28,10 @@ If saving the external data source configuration shows one of the errors "Not au
 . Open Salesforce setup.
 . Open the authentication providers configuration.
 . Click the name of the Anypoint Platform authentication provider and ensure that it has these settings from the correct connected app in Anypoint Platform:
-  . Ensure that the consumer key and consumer secret match the connected app in Anypoint Platform.
-  . Ensure that the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in xref:configure-acm.adoc#create-your-authentication-provider[Create Your Authentication Provider].
-  . Ensure that the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
-  . Ensure that your connected app in Anypoint Platform has the same domain as your Salesforce organization in its `redirect_uri` setting, a client ID and client secret that match those in Salesforce, and correct scopes.
+.. Ensure that the consumer key and consumer secret match the connected app in Anypoint Platform.
+.. Ensure that the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in xref:configure-acm.adoc#create-your-authentication-provider[Create Your Authentication Provider].
+.. Ensure that the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
+.. Ensure that your connected app in Anypoint Platform has the same domain as your Salesforce organization in its `redirect_uri` setting, a client ID and client secret that match those in Salesforce, and correct scopes.
 
 To view details of the connected app, examine the UI or make this API call:
 
@@ -88,10 +88,10 @@ If your community shows a broken image on an API documentation page, and the ima
 . Images uploaded to Exchange with the markdown editor are stored in Exchange.
 . If the image is stored in Exchange, make the Exchange API version asset public so the image can be rendered in your community.
 . If the image is stored on a web location outside Exchange, such as S3 or Dropbox:
-  . Open Salesforce setup.
-  . Open your community's content security policy (CSP) trusted sites list.
-  . Ensure that the list includes the image site domain.
-  . Because some file-sharing services resolve URLs through multiple redirects, ensure that the list includes the domain of the final URL.
+.. Open Salesforce setup.
+.. Open your community's content security policy (CSP) trusted sites list.
+.. Ensure that the list includes the image site domain.
+.. Because some file-sharing services resolve URLs through multiple redirects, ensure that the list includes the domain of the final URL.
 
 To learn if any content in any component or page of the community is blocked by the content security policy:
 
