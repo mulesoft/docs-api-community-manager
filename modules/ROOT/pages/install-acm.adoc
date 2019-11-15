@@ -20,5 +20,5 @@ To perform a new install of the API Community Manager package in your API Commun
 NOTE: If you see a message indicating that the installation process is taking a long time to install, you will
 receive an email when the installation completes.
 
-You can verify that API Community Manager installation completed by reviewing the *Installed Packages* information
+You can verify that API Community Manager installation is successful by reviewing the *Installed Packages* information
 in *Setup*.
