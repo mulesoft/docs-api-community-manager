@@ -12,11 +12,9 @@ The Salesforce organization with Community Cloud is provisioned through and incl
 
 NOTE: Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
 
-To install and configure the API Community Manager managed package, use the following preparation steps in this Salesforce organization.
+To install and configure the API Community Manager managed package in this Salesforce organization, set up and register a domain, enable communities, and deploy your domain.
 
 == Set Up and Register a Domain
-
-// Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
 . Log in to your API Community Manager https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
 . Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
