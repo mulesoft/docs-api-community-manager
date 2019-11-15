@@ -4,13 +4,13 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager (ACM) offers advanced styling functionality with editable community site Cascading Style Sheets (CSS).
+Anypoint API Community Manager offers advanced styling functionality with editable community site Cascading Style Sheets (CSS).
 
 The following sections summarize the available options. For detailed information, refer to https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_css.htm[Override Template Elements with Custom CSS, role=external, window=blank] in the Lightning Communities Developer Guide.
 
 == Edit the CSS
 
-. In the ACM control panel, click *Community Builder*.
+. In the API Community Manager control panel, click *Community Builder*.
 . Select the paintbrush icon in the sidebar navigation to open the *Theme* menu.
 . Select the drop-down arrow in the corner of the menu and select *Edit CSS*.
 . Edit the CSS file in the *Edit CSS* dialog box.
@@ -18,7 +18,7 @@ The following sections summarize the available options. For detailed information
 
 == Example
 
-You can use CSS to change the colors of the ACM Theme:
+You can use CSS to change the colors of the API Community Manager Theme:
 
 [source,css]
 ----

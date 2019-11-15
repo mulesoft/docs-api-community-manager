@@ -4,11 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-NOTE: Installing, updating or configuring API Community Manager (ACM) must be done by a user account with the *System Administrator* profile in the ACM Salesforce organization.
+NOTE: Installing, updating or configuring Anypoint API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
 
-The following sections guide you through installing and configuring ACM:
+The following sections guide you through installing and configuring API Community Manager:
 
 * xref:installation-prerequisites.adoc[Installation Prerequisites]
-* xref:install-acm.adoc[Install ACM Package]
-* xref:configure-acm.adoc[Configure ACM]
+* xref:install-acm.adoc[Install API Community Manager Package]
+* xref:configure-acm.adoc[Configure API Community Manager]
 * xref:install-validate.adoc[Verify the Installation]

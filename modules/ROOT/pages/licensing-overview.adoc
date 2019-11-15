@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager (ACM) licenses are procured and provisioned by MuleSoft. A standard ACM License consists of a *Salesforce Customer Community Plus Login License Unlimited Edition*. It is based on the number of member logins per month, and includes as a base:
+Anypoint API Community Manager licenses are procured and provisioned by MuleSoft. A standard API Community Manager License consists of a *Salesforce Customer Community Plus Login License Unlimited Edition*. It is based on the number of member logins per month, and includes as a base:
 
 . Up to 100 communities
 . Five (5) admin users (community administrators or operators)

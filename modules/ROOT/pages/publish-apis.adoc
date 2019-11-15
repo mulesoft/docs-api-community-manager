@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-As an API Community Manager (ACM) community administrator, you can add and publish APIs and minor and major updates from Anypoint Exchange into your community. 
+As an Anypoint API Community Manager community administrator, you can add and publish APIs and minor and major updates from Anypoint Exchange into your community. 
 
 This information includes the API documentation stored with the APIs in Exchange.
 The API documentation is separate from the articles stored in the Salesforce
@@ -15,7 +15,7 @@ will lead the CMS article release process.
 
 == Add APIs from Exchange to Your Community
 
-. Open the ACM control panel and select *Manage APIs*. From this tab, you can manage the APIs in your community, including their metadata and visibility.
+. Open the API Community Manager control panel and select *Manage APIs*. From this tab, you can manage the APIs in your community, including their metadata and visibility.
 
 * *APIs in this Community* shows the API versions that have been added to the community.
 * *APIs in Exchange* shows the API versions that exist in your Exchange organization but have not been
@@ -38,7 +38,7 @@ Now set the API information, including visibility, icon, and description.
 
 == Preview APIs
 
-. In the ACM control panel, click *Community Builder*. Community Builder displays a preview of
+. In the API Community Manager control panel, click *Community Builder*. Community Builder displays a preview of
 your community's site and edit options.
 . Select *Preview*.
 . Scroll to the API carousel that displays a card for each API version in the community. The new API version
@@ -47,14 +47,14 @@ see this API version preview.
 
 == Make API Versions Visible
 
-. In the ACM control panel, select *Manage APIs*.
+. In the API Community Manager control panel, select *Manage APIs*.
 . Select *Edit* next to the API version name.
 . Set *Visibility* to *Everyone* if you want it to be publicly available, or *Members only* if you want it to be seen only by logged-in members.
 . Select *Apply*. Consumer developers can now see this API version in the API carousel on the community site.
 
 == Minor API Updates
 
-When an API specification or documentation requires non-breaking corrections, such as changing the text, these changes are given a minor version change, such as `3.0.0` to version `3.0.1`. ACM automatically and immediately imports these updates to all communities in which the API is published, without requiring any action from the ACM administrator.
+When an API specification or documentation requires non-breaking corrections, such as changing the text, these changes are given a minor version change, such as `3.0.0` to version `3.0.1`. API Community Manager automatically and immediately imports these updates to all communities in which the API is published, without requiring any action from the API Community Manager administrator.
 
 For example, suppose both the text in an API's documentation and the text in the API Specification description have spelling errors.
 
@@ -79,7 +79,7 @@ Consumer developers see the corrected information on the community site immediat
 
 == Major API Updates
 
-When a new version of the API with breaking changes is created, the ACM community administrator controls
+When a new version of the API with breaking changes is created, the API Community Manager community administrator controls
 when and how to publish the new version in the community, mark the old version as deprecated, and remove the old version.
 
 For example, suppose a developer on the API team adds a new resource to an API.
@@ -92,9 +92,9 @@ becomes `4.0.0`. *Name* and *Main file* do not change.
 . The developer selects *Publish*. The previous API version remains in all communities where it was published
 without any changes.
 
-The ACM community administrator must then review and publish the changes:
+The API Community Manager community administrator must then review and publish the changes:
 
-. In the ACM control panel, select *Manage APIs*. The previous API version remains unchanged in
+. In the API Community Manager control panel, select *Manage APIs*. The previous API version remains unchanged in
 *APIs in this Community*. The new API version is listed in *APIs in Exchange*.
 . To add the new version to the community, select the version from the drop-down and select *Add to Community* next
 to the API name. The new API version is now listed in *APIs in this Community*.
@@ -111,7 +111,7 @@ the API carousel on the community site.
 
 == Searching APIs
 
-In the ACM control panel, the *Manage APIs* tab shows a *Search APIs* field.
+In the API Community Manager control panel, the *Manage APIs* tab shows a *Search APIs* field.
 
 Enter one or more terms into the search field. Search results are listed in *APIs in This Community* and *APIs in Exchange*.
 

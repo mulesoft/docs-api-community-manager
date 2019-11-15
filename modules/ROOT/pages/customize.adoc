@@ -9,7 +9,7 @@ you to create a community with your desired brand identity, look and feel, and
 site structure by providing control over the community's components, themes,
 and pages, and its settings for general properties, themes, and SEO.
 
-In the API Community Manager (ACM) control panel, the *Community Builder* link
+In the Anypoint API Community Manager control panel, the *Community Builder* link
 opens your site for editing. With Community Builder you can edit each page in
 your community, create new pages, and add and edit the components in each page.
 
@@ -18,7 +18,7 @@ theme menu, page structure menu, and settings menu.
 
 == Pages List
 
-The *Pages* list shows the pages included with ACM and the pages you have added,
+The *Pages* list shows the pages included with API Community Manager and the pages you have added,
 and enables you to select and edit each page. The included page *Home* is
 selected by default.
 
@@ -36,7 +36,7 @@ menus.
 The new page displays with placeholders for content based on the layout.
 
 Fill in a new page by adding components from the *Components* menu, such
-as a Headline component in the page header, or an ACM Lightning component
+as a Headline component in the page header, or an API Community Manager Lightning component
 such as an API Version Carousel.
 
 The *Pages* list shows the editable configuration properties for each page,
@@ -46,12 +46,12 @@ which are described in https://help.salesforce.com/articleView?id=community_buil
 
 Clicking the *Components* lightning bolt icon displays the component palette,
 which includes Salesforce Community Cloud components, such as Headline or
-Featured Topics, and ACM-specific components, such as API Carousel or API
+Featured Topics, and components specific to API Community Manager, such as API Carousel or API
 Console. You can drag any component from the component palette to the current
 page. Select the component on the page to show the component's configuration
 options.
 
-Detailed component information is available from the page xref:acm-lightning-components.adoc[Description of ACM Lightning Components] and
+Detailed component information is available from the page xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components] and
 the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Community Components, role=external, window=blank] documentation.
 
 Components typically used in home pages include:

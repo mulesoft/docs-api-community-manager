@@ -6,18 +6,18 @@ endif::[]
 
 After you edit and preview your updated community site, you can publish the new version for your users:
 
-. Open the API Community Manager (ACM) control panel.
+. Open the Anypoint API Community Manager control panel.
 . Click *Community Builder*.
 . Click *Publish*.
 
 If your community is not already active, activate it:
 
-. Open the ACM control panel.
+. Open the API Community Manager control panel.
 . Click *Community Administration*.
 . Click *Settings*.
 . Click *Activate*.
 
 After your community is published and active, view the live site:
 
-. Open the ACM control panel.
+. Open the API Community Manager control panel.
 . Click *Open Community*.

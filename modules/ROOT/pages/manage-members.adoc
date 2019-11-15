@@ -4,13 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Consumer developers self-register for access to your API Community. You can then approve member registrations to give them access to the restricted sections of your community.
+Consumer developers self-register for access to your Anypoint API Community
+Manager community. You can then approve member registrations to give them
+access to the restricted sections of your community.
 
-NOTE: Registered members require a license. No license is required for guest users. For full information about licenses refer to the xref:licensing-overview.adoc[Licensing Overview].
+NOTE: Registered members require a license. No license is required for guest
+users. For full information about licenses refer to
+the xref:licensing-overview.adoc[Licensing Overview].
 
 == Member Registration and Activation
 
-When consumer developers browse your community as unregistered users (guests), they can view only limited information.
+When consumer developers browse your community as unregistered users (guests),
+they can view only limited information.
 
 Consumer developers follow these steps to self-register:
 
@@ -23,7 +28,7 @@ Consumer developers follow these steps to self-register:
 == Approve and Activate Members
 
 . After a registration request is sent by the member, you will receive a notification email. To review and
-approve the member registration, navigate to the API Community Manager (ACM) control panel.
+approve the member registration, navigate to the API Community Manager control panel.
 . Select *Manage Members*. This section provides the status of all consumer developer registration requests.
 . To activate the member and trigger a welcome email, select *Approve* and confirm the change.
 . To reject a registration request, select *Reject* and confirm the change.
@@ -38,7 +43,7 @@ Select the options menu to specify the number of registration requests to displa
 
 == Searching Members
 
-In the ACM control panel, the *Manage Members* tab shows a *Search Members* field.
+In the API Community Manager control panel, the *Manage Members* tab shows a *Search Members* field.
 
 Enter one or more terms into the search field. Search results are listed in *Members* and *Pending Member Registration Requests*.
 
@@ -57,6 +62,6 @@ other than "Username".
 
 == Refresh Member List
 
-In the ACM control panel, the *Manage Members* tab shows a *Refresh* button.
+In the API Community Manager control panel, the *Manage Members* tab shows a *Refresh* button.
 
 Use the *Refresh* button to refresh the member list without navigating away from the *Manage Members* tab.
