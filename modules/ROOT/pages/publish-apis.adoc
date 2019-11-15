@@ -90,28 +90,35 @@ For example, suppose a developer on the API team adds a new resource to an API.
 . In *Design Center*, the developer opens the API project, adds the resource to the specification, and selects
 *Publish to Exchange*.
 . Because this is a breaking change, the developer changes the *API version* information in *Publish API specification
-to Exchange*. For example, if the *API version* is `v3`, it becomes `v4`. If the *Asset version* is `3.0.1`, it
+to Exchange*.
++
+For example, if the *API version* is `v3`, it becomes `v4`. If the *Asset version* is `3.0.1`, it
 becomes `4.0.0`. *Name* and *Main file* do not change.
-. The developer selects *Publish*. The previous API version remains in all communities where it was published
-without any changes.
+. The developer selects *Publish*.
++
+The previous API version remains in all communities where it was published without any changes.
 
 The API Community Manager community administrator must then review and publish the changes:
 
-. In the API Community Manager control panel, select *Manage APIs*. 
-The previous API version remains unchanged in
-*APIs in this Community*. The new API version is listed in *APIs in Exchange*.
+. In the API Community Manager control panel, select *Manage APIs*.
++
+The previous API version remains unchanged in *APIs in this Community*. The new API version is listed in *APIs in Exchange*.
 . To add the new version to the community, select the version from the drop-down and select *Add to Community* next
-to the API name. The new API version is now listed in *APIs in this Community*.
+to the API name.
++
+The new API version is now listed in *APIs in this Community*.
 . Select *Edit* next to the new API version name and set the *Icon*, *Description*, *Visibility*, and *Marketing Page*
 as you did for the previous version.
 . Preview the API.
-. Set *Visibility* to *Registered users* or *Public*. Consumer developers can now see the new API version
-in the API carousel on the community site.
+. Set *Visibility* to *Registered users* or *Public*.
++
+Consumer developers can now see the new API version in the API carousel on the community site.
 . To mark the previous version as deprecated, select *Edit* next to the previous API version name.
 . Append `[DEPRECATED]` to the *API Name*, and select *Apply*.
 . To remove the previous version from your community, select *Remove* next to the previous API version name.
-. Select *Remove* again to confirm. Consumer developers can no longer see the previous API version in
-the API carousel on the community site.
+. Select *Remove* again to confirm.
++
+Consumer developers can no longer see the previous API version in the API carousel on the community site.
 
 == Searching APIs
 
