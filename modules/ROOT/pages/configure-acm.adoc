@@ -652,7 +652,8 @@ Use the same certificate that Salesforce IDP uses.
 .. Click the plus button.
 . To apply these changes, log out and then log back in.
 
-. Go to *Secrets Manager* and select the `ACM` environment using the environment switcher. Click *Create Secret Group* and enter this information.
+. Go to *Secrets Manager* and select the `ACM` environment using the environment switcher. 
+. Click *Create Secret Group* and enter this information.
 .. Set *Name* to *Certificates*.
 .. Click *Secret Group Downloadable*.
 .. Click *Save*.
