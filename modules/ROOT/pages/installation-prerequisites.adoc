@@ -18,7 +18,7 @@ To install and configure the API Community Manager managed package, use the foll
 
 // Is this the right site for an inline link: https://help.salesforce.com/articleView?id=sites_creating_subdomain.htm&type=5?
 
-. Log in into your API Community Manager https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
+. Log in to your API Community Manager https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
 . Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
 . Enter a domain name for your organization. The name can include up to 34 letters, numbers, and hyphens.
