@@ -411,7 +411,7 @@ image::access-mapping.png[Access Mapping for CommunityApi]
 
 === Configure Guest User Access [[configure-guest-user-access]]
 
-. In the API Community Manager control panel, open *Community Builder*, and click *Settings* -> *General*.
+. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . Select the *Public can access the community* check box.
 . Navigate to the guest user profile link under the *Guest user profile* section, named *[Community Name] Profile*.
 . Click *Edit*.
