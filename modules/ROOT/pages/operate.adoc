@@ -17,7 +17,7 @@ Salesforce CMS articles include event, marketing, and vision information. These
 articles typically have their own release cycle and process, usually with close
 involvement from the marketing team.
 
-All of these actions are performed in the Anypoint API Community Manager control panel:
+All of these actions are performed in the API Community Manager control panel:
 
 image::control-panel.png[API Community Manager control panel]
 
