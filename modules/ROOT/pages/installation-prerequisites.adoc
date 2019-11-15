@@ -6,7 +6,7 @@ endif::[]
 
 Anypoint API Community Manager is composed of a Salesforce organization with Community Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
 
-The API Community Manager package is installed in an *independent* Salesforce organization from any other Salesforce organizations your company may already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data.
+The API Community Manager package is installed in a Salesforce organization that is _independent_ of any other Salesforce organizations that your company might already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data.
 
 The Salesforce organization with Community Cloud is provisioned through and included in the MuleSoft API Community Manager license. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for API Community Manager. Find more information about API Community Manager licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
 
