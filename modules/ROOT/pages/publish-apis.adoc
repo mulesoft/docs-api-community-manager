@@ -15,17 +15,16 @@ will lead the CMS article release process.
 
 == Add APIs from Exchange to Your Community
 
-. Open the API Community Manager control panel and select *Manage APIs*. 
+. Open the API Community Manager control panel and select *Manage APIs*.
++
 From this tab, you can manage the APIs in your community, including their metadata and visibility.
-
++
 * *APIs in this Community* shows the API versions that have been added to the community.
-* *APIs in Exchange* shows the API versions that exist in your Exchange organization but have not been
-added to the community.
-. Select a version of the API and click *Add to Community* next to the API name. The API version is now
-listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has
-no icon, and the *Description* is blank.
-
-Now set the API information, including visibility, icon, and description.
+* *APIs in Exchange* shows the API versions that exist in your Exchange organization but have not been added to the community.
+. Select a version of the API and click *Add to Community* next to the API name.
++
+The API version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API version has no icon, and the *Description* is blank.
+. Set the API information, including visibility, icon, and description.
 
 == Set API Information
 
