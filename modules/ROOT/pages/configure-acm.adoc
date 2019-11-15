@@ -59,7 +59,7 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 
 == Create and Authenticate the External Data Source [[create-and-authenticate-the-external-data-source]]
 
-The external data source specifies how API Community Manager components and data objects interact securely with your MuleSoft Anypoint organization.
+The external data source specifies how API Community Manager components and data objects interact securely with your Anypoint Platform organization.
 
 === Create a Connected App [[create-a-connected-app]]
 
