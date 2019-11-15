@@ -97,7 +97,8 @@ without any changes.
 
 The API Community Manager community administrator must then review and publish the changes:
 
-. In the API Community Manager control panel, select *Manage APIs*. The previous API version remains unchanged in
+. In the API Community Manager control panel, select *Manage APIs*. 
+The previous API version remains unchanged in
 *APIs in this Community*. The new API version is listed in *APIs in Exchange*.
 . To add the new version to the community, select the version from the drop-down and select *Add to Community* next
 to the API name. The new API version is now listed in *APIs in this Community*.
