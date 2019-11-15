@@ -4,8 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-With Anypoint API Community Manager, you can create, organize, and publish content, including news,
-tutorials, developer blog posts, and events for your community.
+With Anypoint API Community Manager, you can create, organize, and publish content for your community, including news,
+tutorials, developer blog posts, and events.
 
 This content is stored in https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce content management system (CMS), role=external, window=blank] articles.
 These articles are separate from the API documentation stored in Exchange.
