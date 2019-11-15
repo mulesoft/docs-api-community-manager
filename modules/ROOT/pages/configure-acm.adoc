@@ -552,7 +552,7 @@ If you don't configure an approval process, self-registered users will become me
 ===== Activate the Approval Process [[activate-the-approval-process]]
 
 . On the *Approve Registration* page, click *Activate* and confirm.
-. In the API Community Manager control panel, open *Community Builder*, and click *Settings* -> *General*.
+. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In Community Builder, navigate to the *Register* page in the pages menu and select the API Community Manager *Self Register* Lightning component.
 . Verify the *Approved Registration* and set the *Approver Id* with the *User Id* of the user you want to approve the registration requests.
 
