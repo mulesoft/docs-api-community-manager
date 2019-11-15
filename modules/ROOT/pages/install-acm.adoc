@@ -6,7 +6,7 @@ endif::[]
 
 NOTE: Installing, updating, or configuring Anypoint API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
 
-To perform a new install of the API Community Manager package in your API Community Manager Salesforce Organization, follow the steps below. To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update API Community Manager].
+To perform a new install of the API Community Manager package in your API Community Manager Salesforce Organization, perform the following steps. To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update API Community Manager].
 
 . Navigate in your browser to the package installation link provided by your MuleSoft representative.
 . Select *Install for Admin users only*.
