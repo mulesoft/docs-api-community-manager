@@ -446,7 +446,7 @@ These steps enable guests to register as members in your API Community Manager p
 
 ==== Add Self Register Component to Registration Page [[add-self-register-custom-component-to-register-page]]
 
-The self-registration Lightning component enables guest users to register themselves as members of your community. If you're not using any of the API Community Manager out-of-the-box templates, use these steps to add the self-registration Lightning component specific to API Community Manager.
+The self-registration Lightning component enables guest users to register themselves as members of your community. If you're not using any of the templates supplied with API Community Manager, use these steps to add the self-registration Lightning component specific to API Community Manager.
 
 . In the API Community Manager control panel, open *Community Builder* and navigate to the *Register* page in the Pages menu on the top left.
 . Remove the standard *Self Registration* Lightning component by clicking the delete icon next to it.
