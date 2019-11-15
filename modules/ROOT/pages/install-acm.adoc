@@ -8,7 +8,7 @@ NOTE: Installing, updating, or configuring Anypoint API Community Manager must b
 
 To perform a new install of the API Community Manager package in your API Community Manager Salesforce Organization, perform the following steps. To update an existing API Community Manager installation, refer to xref:update-acm.adoc[Update API Community Manager].
 
-. Navigate in your browser to the package installation link provided by your MuleSoft representative.
+. In your browser, navigate to the package installation link provided by your MuleSoft representative.
 . Select *Install for Admin users only*.
 . Select *I acknowledge that I’m installing a Non-Salesforce Application that is not authorized for distribution as part of Salesforce’s AppExchange Partner Program*.
 . Select *Install*.
