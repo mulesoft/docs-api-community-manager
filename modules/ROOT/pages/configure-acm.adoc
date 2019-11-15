@@ -306,8 +306,12 @@ Chatter tracking enables your community to create discussions on specific object
 === Publish Your Community [[publish-your-community]]
 
 . In the API Community Manager control panel, click *Community Builder*.
-. Click *Publish* on the top right corner, and click *Publish* in the *Publish Your Community* dialog.
-. In a few minutes your community will be published, and you will receive an email notification including your community's public URL. You can also find your community live URL by opening the API Community Manager control panel and clicking *Open Community*.
+. Click *Publish* in the top right corner.
+. In the *Publish Your Community* dialog, click *Publish*.
++
+In a few minutes your community will be published.
+. Look for an email notification including your community's public URL.
+. You can also find your community live URL by opening the API Community Manager control panel and clicking *Open Community*.
 
 NOTE: To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=_blank].
 
