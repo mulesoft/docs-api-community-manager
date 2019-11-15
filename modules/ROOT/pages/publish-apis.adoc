@@ -57,7 +57,7 @@ Consumer developers can now see this API version in the API carousel on the comm
 
 == Minor API Updates
 
-When an API specification or documentation requires non-breaking corrections, such as changing the text, these changes are given a minor version change, such as `3.0.0` to version `3.0.1`. API Community Manager automatically and immediately imports these updates to all communities in which the API is published, without requiring any action from the API Community Manager administrator.
+When an API specification or documentation requires nonbreaking corrections, such as changing the text, these changes are given a minor version change, such as from `3.0.0` to `3.0.1`. API Community Manager automatically and immediately imports these updates to all communities in which the API is published, without requiring any action from the API Community Manager administrator.
 
 For example, suppose both the text in an API's documentation and the text in the API Specification description have spelling errors.
 
