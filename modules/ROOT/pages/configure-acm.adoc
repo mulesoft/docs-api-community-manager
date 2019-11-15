@@ -240,7 +240,8 @@ Refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 . Click *Save* so this setting is reflected.
 . Click *Allow discussion threads*.
 . Click *Save*.
-. Go back to the API Community Manager control panel, and click *Manage CMS Content*.
+. Return to the API Community Manager control panel, and click *Manage CMS Content*.
+``
 . Click the *Topics* tab.
 . Click *Navigational Topics*.
 . Create as many topics as you need for your community forums and click *Save*.
