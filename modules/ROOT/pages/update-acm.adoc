@@ -1,10 +1,10 @@
-= Update ACM
+= Update API Community Manager
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Keep your API Community Manager instance up to date to take advantage of new and improved functionality in your community.
+Keep your Anypoint API Community Manager instance up to date to take advantage of new and improved functionality in your community.
 
 To update your API community:
 

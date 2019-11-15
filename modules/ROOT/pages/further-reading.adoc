@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-These pages offer further information about API Community Manager.
+These pages offer further information about Anypoint API Community Manager.
 
 * xref:licensing-overview.adoc[Licensing Overview]
 * xref:security.adoc[Security]

@@ -15,9 +15,9 @@ See these useful resources to get up to speed with the capabilities of Salesforc
 
 == What Is an API Community?
 
-To drive developer adoption of your APIs, you must help them discover and learn how to use your APIs effectively, and provide a personalized, branded experience to motivate them to work with you. You must also engage with these developers during every step of their journey to ensure their success. ACM enables you to create this personalized, connected experience for your developers so they can interact with your APIs: APIs designed, cataloged, and managed in Anypoint Platform.
+To drive developer adoption of your APIs, you must help them discover and learn how to use your APIs effectively, and provide a personalized, branded experience to motivate them to work with you. You must also engage with these developers during every step of their journey to ensure their success. Anypoint API Community Manager enables you to create this personalized, connected experience for your developers so they can interact with your APIs: APIs designed, cataloged, and managed in Anypoint Platform.
 
-As a community administrator, you use ACM to create a visually compelling digital experience that is consistent with your organization's brand identity. Your community showcases APIs that you select directly from https://docs.mulesoft.com/exchange/[Anypoint Exchange], plus other relevant content and self-service resources to inspire and help the developers you want to reach.
+As a community administrator, you use API Community Manager to create a visually compelling digital experience that is consistent with your organization's brand identity. Your community showcases APIs that you select directly from https://docs.mulesoft.com/exchange/[Anypoint Exchange], plus other relevant content and self-service resources to inspire and help the developers you want to reach.
 
 == A Connected and Personalized Digital Experience for Your Consumer Developers
 
@@ -29,7 +29,7 @@ Consumer developers can request access to your API for new or existing client ap
 
 Developers use discussion forums to engage with your organization and other members of the community, by posting questions and answers, sharing ideas, and discussing issues they find.
 
-Other ACM features enable your organization to engage with partners and ensure that they are supported throughout their journey.
+Other API Community Manager features enable your organization to engage with partners and ensure that they are supported throughout their journey.
 
 == Building Your API Community
 

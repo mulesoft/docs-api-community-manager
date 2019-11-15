@@ -6,17 +6,31 @@ endif::[]
 
 To verify your installation and configuration:
 
-1. Verify that your Anypoint organization has the API Community Manager (ACM) entitlement. Log in to your Anypoint Platform organization and navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`. Check that under the *Entitlements* property the `apiCommunityManager` value is `true`.
-+
-2. Verify that the Exchange External Data Source status is *Authenticated*. Open the Application Launcher. Enter *API Community Manager*. Open *Setup*. Search for *External Data Sources*. On the list select *Exchange*. Check that the *Authentication Status* is *Authenticated*.
+. Verify that your Anypoint organization has the Anypoint API Community Manager entitlement.
+.. Log in to your Anypoint Platform organization.
+.. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
+.. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
+. Verify that the Exchange External Data Source status is *Authenticated*.
+.. Open the Application Launcher.
+.. Enter *API Community Manager*.
+.. Open *Setup*.
+.. Search for *External Data Sources*.
+.. In the list select *Exchange*.
+.. Verify that the *Authentication Status* is *Authenticated*.
 +
 image::validate-exchange-auth.png[Exchange Authenticated]
 +
-3. Verify that API versions are shown in the ACM control panel. Open the Application Launcher. Enter *API Community Manager*. Check that the list *APIs in Exchange* is not empty and contains the APIs in your organization.
+. Verify that API versions are shown in the API Community Manager control panel. 
+.. Open the Application Launcher.
+.. Enter *API Community Manager*.
+.. Verify that the list *APIs in Exchange* is not empty and contains the APIs in your organization.
 +
 image::apis-in-exchange.png[APIs in Exchange]
 +
-4. Verify that the API console is rendered correctly. Add any of your Exchange APIs to your community. Navigate to the console in the Community Builder preview mode. Check that the console is rendered correctly for your API.
+. Verify that the API console is rendered correctly.
+.. Add any of your Exchange APIs to your community.
+.. Navigate to the console in the Community Builder preview mode.
+.. Verify that the console is rendered correctly for your API.
 +
 image::api-console.png[API console]
 

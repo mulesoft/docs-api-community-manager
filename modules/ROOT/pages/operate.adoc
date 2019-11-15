@@ -4,8 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-These pages explain how to publish APIs and content to your community and how to
-manage forums, members, and support cases.
+These pages explain how to publish APIs and content to your Anypoint API
+Community Manager community and how to manage forums, members, and support cases.
 
 In an API Community, APIs and API documentation are published from Anypoint Exchange, and articles are published from the https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce content management system (CMS), role=external, window=blank].
 
@@ -17,11 +17,11 @@ Salesforce CMS articles include event, marketing, and vision information. These
 articles typically have their own release cycle and process, usually with close
 involvement from the marketing team.
 
-All of these actions are performed in the API Community Manager (ACM) control panel:
+All of these actions are performed in the API Community Manager control panel:
 
-image::control-panel.png[ACM control panel]
+image::control-panel.png[API Community Manager control panel]
 
-To open the ACM control panel at any time, open the Salesforce *App Launcher* and select *API Community Manager*.
+To open the API Community Manager control panel at any time, open the Salesforce *App Launcher* and select *API Community Manager*.
 
 == Community Operations
 

@@ -1,16 +1,16 @@
-= Description of ACM Lightning Components
+= Description of API Community Manager Lightning Components
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-You design the pages of your API Community Manager (ACM) portal by adding and configuring Lightning components in Community Builder.
+You design the pages of your Anypoint API Community Manager portal by adding and configuring Lightning components in Community Builder.
 
-These Lightning components include both the Lightning components available in all Salesforce Communities, and the ACM Lightning components only available in ACM.
+These Lightning components include both the Lightning components available in all Salesforce Communities, and the API Community Manager Lightning components available only in API Community Manager.
 
-Each ACM Lightning component has different configuration options and adds different functionality to the portal.
+Each API Community Manager Lightning component has different configuration options and adds different functionality to the portal.
 
-Many ACM Lightning components show data from Anypoint Platform. ACM admins can change some of these data fields, such as API names, descriptions, and icons. ACM saves these changes but does not push the changes back to Anypoint Platform.
+Many API Community Manager Lightning components show data from Anypoint Platform. Community admins can change some of these data fields, such as API names, descriptions, and icons. API Community Manager saves these changes but does not push the changes back to Anypoint Platform.
 
 == ACM Search Box [[acm-search-box]]
 
@@ -62,7 +62,7 @@ Show Modal Title Line:: Shows the title line in the access request modal.
 
 The API Card component shows information about an API, including icon, name, and description.
 
-The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
+The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community].
 
 You can specify values for the following parameters of the API Card:
 
@@ -81,7 +81,7 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 The API Carousel component shows a horizontally scrollable set of API cards.
 
-The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
+The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community].
 
 You can specify values for the following parameters of the API Carousel:
 
@@ -285,7 +285,7 @@ Selected Page (Optional):: Selects the page to open.
 
 The API Header component displays the API header, including icon, name, and description.
 
-The API icon, name, and description shown are set in the ACM control panel when you xref:publish-apis.adoc[add an API version to your community].
+The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community].
 
 You can specify values for the following parameters of the API Header:
 
