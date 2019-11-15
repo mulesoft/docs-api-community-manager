@@ -10,7 +10,7 @@ The API Community Manager package is installed in a Salesforce organization that
 
 The Salesforce organization with Community Cloud is provisioned through and included in the Anypoint API Community Manager license from MuleSoft. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for API Community Manager. Find more information about API Community Manager licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
 
-NOTE: Installing, updating or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
+NOTE: Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
 
 To install and configure the API Community Manager managed package, use the following preparation steps in this Salesforce organization.
 
