@@ -1,0 +1,11 @@
+= Browser Support
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Community admins, community members, and guest users can access an API Community Manager community by using the latest versions of these browsers:
+
+* Google Chrome
+* Mozilla Firefox
+* Apple Safari

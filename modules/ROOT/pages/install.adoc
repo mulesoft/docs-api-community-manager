@@ -1,0 +1,28 @@
+= Install and Configure
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Anypoint API Community Manager is composed of a Salesforce organization with Community Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
+
+The API Community Manager package is installed in a Salesforce organization that is independent of any other Salesforce organizations that your company might already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data.
+
+The Salesforce organization with Community Cloud is provisioned through and included in the Anypoint API Community Manager license from MuleSoft. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for API Community Manager. Find more information about API Community Manager licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
+
+NOTE: Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
+
+NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-control-plane/platform-access-eu[hosted in the EU region, role=external, window=_blank] you must replace all occurrences of the `anypoint.mulesoft.com` domain with `eu1.anypoint.mulesoft.com` in all the steps in this section.
+
+The following sections guide you through installing and configuring API Community Manager:
+
+* xref:installation-prerequisites.adoc[Installation Prerequisites]
+* xref:set-up-domain.adoc[Set Up and Register a Domain]
+* xref:enable-communities.adoc[Enable Communities Inside Your Organization]
+* xref:deploy-domain.adoc[Deploy Your Domain]
+* xref:install-acm.adoc[Install API Community Manager Package]
+* xref:eu-config.adoc[Additional Configuration for EU Hosted Organizations]
+* xref:control-panel.adoc[Enable API Community Manager Control Panel]
+* xref:data-bridge.adoc[Set Up the Data Bridge]
+* xref:create-community.adoc[Create a Community]
+* xref:install-validate.adoc[Verify the Installation]

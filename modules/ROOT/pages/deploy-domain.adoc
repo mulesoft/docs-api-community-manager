@@ -1,0 +1,13 @@
+= Deploy Your Domain
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Wait to receive the notification email that your domain is registered, and then deploy your domain:
+
+. Log in to your API Community Manager https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
+. Go to *Salesforce Set-up* by clicking the gear icon and selecting *Set-up*.
+. Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
+. If the screen indicates your domain is ready, select *Log in*.
+. Select *Deploy to Users*.
