@@ -9,3 +9,4 @@ Community admins, community members, and guest users can access an API Community
 * Google Chrome
 * Mozilla Firefox
 * Apple Safari
+* Microsoft Edge
