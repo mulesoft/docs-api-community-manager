@@ -132,7 +132,7 @@ Users that are signed in are *members*, and other users are *guests*.
 
 ==== Guest User Profile Permissions
 
-These are the permissions for the guest user:
+These are the permissions for the guest users:
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |======================
