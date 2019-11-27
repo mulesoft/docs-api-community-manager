@@ -10,3 +10,5 @@ Community admins, community members, and guest users can access an API Community
 * Mozilla Firefox
 * Apple Safari
 * Microsoft Edge
+
+Microsoft Internet Explorer 11 has limited compatibility, and will display content-only, non-interactive components, including the API Carousel, API Catalog, and API Documentation Viewer. The components API Console, API Access Requester, and My Applications are not supported in Microsoft Internet Explorer 11, and will render in a disabled state with a message to the user explaining the compatibility limitations.

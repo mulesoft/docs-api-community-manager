@@ -130,13 +130,19 @@ After you create a community, you must create the different user profiles for yo
 
 Users that are signed in are *members*, and other users are *guests*.
 
-Guest user profile permissions:
+==== Guest User Profile Permissions
+
+These are the permissions for the guest user:
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |======================
 |Object
 |Required object permissions
 |Required field-level permissions
+
+|AnypointApiCategories
+|Read
+|All fields Read Access
 
 |AnypointApiInstances
 |Read
@@ -150,27 +156,31 @@ Guest user profile permissions:
 |Read
 |All fields Read Access
 
-|AnypointApiVersion
-|Read
-|All fields Read Access
-
 |AnypointApiVersions
 |Read
 |All fields Read Access
 
-|AnypointApplication
-|Read
-|All fields Read Access
-
 |AnypointApplications
+|Read, Create, Edit, Delete
+|All fields Read Access, Edit Access
+
+|AnypointCategories
 |Read
 |All fields Read Access
 
 |AnypointContracts
+|Read, Create, Edit, Delete
+|All fields Read Access, Edit Access
+
+|AnypointEnvironments
 |Read
 |All fields Read Access
 
-|CommunityApi
+|AnypointOrganizations
+|Read
+|All fields Read Access
+
+|CommunityApis
 |Read
 |All fields Read Access
 
@@ -191,7 +201,9 @@ To configure permissions for the guest user profile:
 . Edit the permissions to match the table.
 . Click *Save*.
 
-Member user profile permissions:
+==== Member User Profile Permissions
+
+These are the permissions for the member users:
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |======================
@@ -199,7 +211,7 @@ Member user profile permissions:
 |Required object permissions
 |Required field-level permissions
 
-|AnypointAPICategories
+|AnypointApiCategories
 |Read
 |All fields Read Access
 
@@ -215,27 +227,35 @@ Member user profile permissions:
 |Read
 |All fields Read Access
 
-|AnypointApiVersion
-|Read
-|All fields Read Access
-
 |AnypointApiVersions
 |Read
 |All fields Read Access
-
-|AnypointApplication
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
 
 |AnypointApplications
 |Read, Create, Edit, Delete
 |All fields Read Access, Edit Access
 
+|AnypointCategories
+|Read
+|All fields Read Access
+
 |AnypointContracts
 |Read, Create, Edit, Delete
 |All fields Read Access, Edit Access
 
-|CommunityApi
+|AnypointEnvironments
+|Read
+|All fields Read Access
+
+|AnypointOrganizations
+|Read
+|All fields Read Access
+
+|Cases
+|Read, Create, Edit
+|All fields Read Access, Edit Access
+
+|CommunityApis
 |Read
 |All fields Read Access
 
@@ -243,8 +263,28 @@ Member user profile permissions:
 |Read
 |All fields Read Access
 
+|Orders
+|Read, Create, Edit, Delete
+|All fields Read Access, Edit Access
+
+|Price Books
+|Read
+|All fields Read Access
+
+|Products
+|Read
+|All fields Read Access
+
 |SelfRegisterUserRequests
 |Read, Create, Edit, Delete
+|All fields Read Access, Edit Access
+
+|Solutions
+|Read
+|All fields Read Access
+
+|Work Orders
+|Read, Create, Edit
 |All fields Read Access, Edit Access
 
 |======================

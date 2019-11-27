@@ -21,7 +21,6 @@ The following sections guide you through installing and configuring API Communit
 * xref:enable-communities.adoc[Enable Communities Inside Your Organization]
 * xref:deploy-domain.adoc[Deploy Your Domain]
 * xref:install-acm.adoc[Install API Community Manager Package]
-* xref:eu-config.adoc[Additional Configuration for EU Hosted Organizations]
 * xref:control-panel.adoc[Enable API Community Manager Control Panel]
 * xref:data-bridge.adoc[Set Up the Data Bridge]
 * xref:create-community.adoc[Create a Community]
