@@ -164,6 +164,10 @@ These are the permissions for the guest users:
 |Read
 |All fields Read Access
 
+|Cases
+|Read
+|All fields Read Access
+
 |CommunityApis
 |Read
 |All fields Read Access
@@ -182,7 +186,8 @@ To configure permissions for the guest user profile:
 
 . In *Setup*, navigate to the guest user profile link under the *Guest user profile* section, named *[Community Name] Profile*.
 . Click *Edit*.
-. Edit the permissions to match the table.
+. Select *Enable Apex Class Access* and enable access to all classes on the list.
+. Edit the other permissions to match the table.
 . Click *Save*.
 
 === Member User Profile Permissions
@@ -235,6 +240,10 @@ These are the permissions for the member users:
 |Read
 |All fields Read Access
 
+|Cases
+|Read
+|All fields Read Access
+
 |CommunityApis
 |Read
 |All fields Read Access
@@ -257,7 +266,8 @@ To configure permissions for the member user profile so your members can access 
 . For *Profile Name* enter `ACM Member User`.
 . Click *Save*.
 . In the *ACM Member User* profile page, click *Edit*.
-. Edit the permissions to match the table.
+. Select *Enable Apex Class Access* and enable access to all classes on the list.
+. Edit the other permissions to match the table.
 . Click *Save*.
 
 == Configure Sharing Settings
