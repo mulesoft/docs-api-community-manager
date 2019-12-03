@@ -164,10 +164,6 @@ These are the permissions for the guest users:
 |Read
 |All fields Read Access
 
-|Cases
-|Read
-|All fields Read Access
-
 |CommunityApis
 |Read
 |All fields Read Access
