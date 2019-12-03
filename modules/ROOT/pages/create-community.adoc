@@ -122,15 +122,11 @@ Enable Salesforce CRM Content:
 
 == Configure Profiles and Permissions
 
-Configuring profiles and permissions includes configuring user profiles for guests and members, sharing settings, member registration, and user impersonation.
-
-=== Required Profiles and Permissions
-
 After you create a community, you must create the different user profiles for your community guests and members, so that you can control access to and visibility of APIs and content.
 
 Users that are signed in are *members*, and other users are *guests*.
 
-==== Guest User Profile Permissions
+=== Guest User Profile Permissions
 
 These are the permissions for the guest users:
 
@@ -148,10 +144,6 @@ These are the permissions for the guest users:
 |Read
 |All fields Read Access
 
-|AnypointApiTiers
-|Read
-|All fields Read Access
-
 |AnypointApiVersionQueries
 |Read
 |All fields Read Access
@@ -160,17 +152,9 @@ These are the permissions for the guest users:
 |Read
 |All fields Read Access
 
-|AnypointApplications
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
-
 |AnypointCategories
 |Read
 |All fields Read Access
-
-|AnypointContracts
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
 
 |AnypointEnvironments
 |Read
@@ -201,7 +185,7 @@ To configure permissions for the guest user profile:
 . Edit the permissions to match the table.
 . Click *Save*.
 
-==== Member User Profile Permissions
+=== Member User Profile Permissions
 
 These are the permissions for the member users:
 
@@ -251,10 +235,6 @@ These are the permissions for the member users:
 |Read
 |All fields Read Access
 
-|Cases
-|Read, Create, Edit
-|All fields Read Access, Edit Access
-
 |CommunityApis
 |Read
 |All fields Read Access
@@ -263,28 +243,8 @@ These are the permissions for the member users:
 |Read
 |All fields Read Access
 
-|Orders
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
-
-|Price Books
-|Read
-|All fields Read Access
-
-|Products
-|Read
-|All fields Read Access
-
 |SelfRegisterUserRequests
 |Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
-
-|Solutions
-|Read
-|All fields Read Access
-
-|Work Orders
-|Read, Create, Edit
 |All fields Read Access, Edit Access
 
 |======================
@@ -300,7 +260,7 @@ To configure permissions for the member user profile so your members can access 
 . Edit the permissions to match the table.
 . Click *Save*.
 
-=== Configure Sharing Settings
+== Configure Sharing Settings
 
 Configure sharing settings for guests:
 
@@ -350,7 +310,7 @@ Configure sharing settings for members:
 . Click *Update*.
 . Click *Save*.
 
-=== Enable Guest User Registration as Members
+== Enable Guest User Registration as Members
 
 These steps enable guests to register as members in your API Community Manager portal.
 
@@ -389,7 +349,7 @@ Configure a login page:
 
 NOTE: Refer to xref:brand-intro.adoc[Brand and Customize Your API Community] to understand how to configure the look and feel of your login and registration pages.
 
-==== Set Up an Admin Approval Process for New User Creation (Optional)
+== Set Up an Admin Approval Process for New User Creation (Optional)
 
 Use these steps to set an optional approval process for self-registered users. The system will then require administrator approval before creating member accounts. If the request is approved, the new user account is created, a welcome email is sent to the new user, and the user sets a password and logs in to the community.
 
@@ -472,7 +432,7 @@ viewing. Remove the first 2 characters and paste the remaining information in
 the *Approver Id* field. For example, if the unique ID is `2F0052D000001QpG1`,
 paste `0052D000001QpG1` in the *Approver Id* field.
 
-=== Configure Impersonation
+== Configure Impersonation
 
 Impersonation links each community member to an Anypoint user. This connects the
 Anypoint and community users and their client applications, so that applications are

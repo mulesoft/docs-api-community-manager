@@ -35,7 +35,7 @@ Select *Full Access* and *Background Access*.
 
 To create a connected app by using an API call, follow this example using the `cURL` command.
 
-. Get an authorization token from the platform:
+. Get an authorization token from Anypoint Platform:
 +
 ----
     curl --silent https://anypoint.mulesoft.com/accounts/login -XPOST \
