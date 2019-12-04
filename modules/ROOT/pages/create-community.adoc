@@ -182,8 +182,11 @@ To configure permissions for the guest user profile:
 
 . In *Setup*, navigate to the guest user profile link under the *Guest user profile* section, named *[Community Name] Profile*.
 . Click *Edit*.
-. Select *Enable Apex Class Access* and enable access to all classes on the list.
-. Edit the other permissions to match the table.
+. Edit the object permissions to match the table.
+. Click *Save*.
+. Click the link for *Enabled Apex Class Access*.
+. Click *Edit*.
+. Select all classes on the list and click *Add* to make them accessible.
 . Click *Save*.
 
 === Member User Profile Permissions
@@ -262,8 +265,11 @@ To configure permissions for the member user profile so your members can access 
 . For *Profile Name* enter `ACM Member User`.
 . Click *Save*.
 . In the *ACM Member User* profile page, click *Edit*.
-. Select *Enable Apex Class Access* and enable access to all classes on the list.
-. Edit the other permissions to match the table.
+. Edit the object permissions to match the table.
+. Click *Save*.
+. Click the link for *Enabled Apex Class Access*.
+. Click *Edit*.
+. Select all classes on the list and click *Add* to make them accessible.
 . Click *Save*.
 
 == Configure Sharing Settings
