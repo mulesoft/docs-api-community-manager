@@ -22,7 +22,7 @@ If you don't see any roles in the list, refer to the Salesforce knowledge articl
 
 .. Select *Salesforce CRM Content User*.
 .. Click *Save*.
-. The correct Anypoint API Community Manager entitlement for your Anypoint organization.
+. The Anypoint API Community Manager entitlement for your Anypoint organization.
 +
 To check the entitlement:
 
@@ -30,4 +30,4 @@ To check the entitlement:
 .. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
 .. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
 
-After you have confirmed that you have these prerequisites, continue to the installation steps.
+After you have confirmed that you have these prerequisites, continue to the xref:set-up-domain.adoc[installation steps].

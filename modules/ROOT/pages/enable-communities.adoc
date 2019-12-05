@@ -1,9 +1,0 @@
-= Enable Communities Inside Your Organization
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-:imagesdir: ../assets/images/
-
-Using the domain name you selected in the previous step, follow the steps in
-https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank]
-to enable communities inside your Salesforce organization.

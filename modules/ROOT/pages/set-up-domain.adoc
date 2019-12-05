@@ -1,4 +1,4 @@
-= Set Up and Register a Domain
+= Set Up and Register a Domain and Enable Communities
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -20,3 +20,7 @@ You can continue with the next steps while you wait for the email.
 NOTE: After you complete API Community Manager installation and configuration, you can configure a full custom domain
 name, also known as a vanity domain. When you're ready, refer to the Salesforce knowledge article
 https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=blank].
+
+Using the domain name you selected in the previous step, follow the steps in
+https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank]
+to enable communities inside your Salesforce organization.
