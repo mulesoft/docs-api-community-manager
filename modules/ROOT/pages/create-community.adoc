@@ -560,4 +560,4 @@ you must add this key in the External Identity configuration on Anypoint Platfor
 .. After the key displayed in the *Public Key* field, add a comma (`,`) and then paste in the new key.
 .. Click *Save*.
 
-Re-authenticate the data bridge as described in <<authenticate-data-bridge>>.
+Re-authenticate the data bridge as described in xref:data-bridge.adoc#authenticate-data-bridge[Authenticate the Data Bridge].
