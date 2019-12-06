@@ -133,7 +133,7 @@ These are the permissions for the guest users:
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |======================
 |Object
-|Required object permissions
+|Required Object Permissions
 |Required field-level permissions
 
 |AnypointApiCategories
