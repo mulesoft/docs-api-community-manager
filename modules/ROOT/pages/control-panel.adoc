@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-The API Community Manager control panel is the interface your community administrators and operators use to operate your communities. It is available in the *App Launcher* page, where it is the first icon displayed in the main navigation bar. To ensure that it is available for admin users:
+The API Community Manager control panel is the interface your community administrators and operators use to operate your communities. It is available in the *App Launcher* page, where it is the first icon displayed in the main navigation bar. To ensure that the control panel is available for admin users:
 
 . In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
 . Locate the *API Community Manager* item, and in the menu on the right end of the row, click *Edit*.
