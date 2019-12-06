@@ -106,7 +106,7 @@ In the following task steps, if your Anypoint Platform organization is hosted in
 . Click *Auth. Providers* -> *New*.
 . In *Provider type*, select *Open ID Connect*.
 . Set *Name* to `Anypoint`.
-. Set *Consumer Key* to the application ID of the connected app created in Anypoint Platform.
+. Set *Consumer Key* to the application ID of the connected app (which you took note of when you created the app in Anypoint Platform).
 +
 This ID was returned by the Anypoint UI at the end of the task <<create-a-connected-app-with-the-user-interface>> or returned by the Anypoint API call at the end of the task <<create-a-connected-app-with-an-api-call>>.
 +
