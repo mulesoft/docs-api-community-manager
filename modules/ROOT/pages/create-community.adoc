@@ -26,7 +26,7 @@ All communities templates are listed.
 +
 The configuration process will take a few minutes.
 +
-When the configuration process finishes, you'll see your new community workspace.
+. When the configuration process finishes and you see your new community workspace, click *Install AppExchange Package* in the top banner and follow the installation wizard instructions.
 . Click *Install AppExchange Package* on the top banner to install the pre-defined metrics and dashboards, and follow the installation wizard instructions.
 +
 Be sure to install this package in your production organization when prompted by the wizard.
