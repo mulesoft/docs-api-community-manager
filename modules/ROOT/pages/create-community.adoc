@@ -269,7 +269,7 @@ To configure permissions for the member user profile so your members can access 
 . Click *Save*.
 . Click the link for *Enabled Apex Class Access*.
 . Click *Edit*.
-. Select all classes on the list and click *Add* to make them accessible.
+. Select all classes in the list and click *Add* to make them accessible.
 . Click *Save*.
 
 == Configure Sharing Settings
