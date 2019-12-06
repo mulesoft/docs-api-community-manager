@@ -257,7 +257,7 @@ These are the permissions for the member users:
 
 |======================
 
-To configure permissions for the member user profile so your members can access APIs, create client applications and manage their details:
+To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
 
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
 . Click the *Customer Community Plus Login User* profile.
