@@ -189,7 +189,7 @@ To configure permissions for the guest user profile:
 . Select all classes on the list and click *Add* to make them accessible.
 . Click *Save*.
 
-=== Member User Profile Permissions
+=== Member User Profile Permissions and Configuration
 
 These are the permissions for the member users:
 
