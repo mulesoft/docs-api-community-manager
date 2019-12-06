@@ -33,7 +33,7 @@ Select *Full Access* and *Background Access*.
 
 === Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
 
-To create a connected app by using an API call, follow this example using the `cURL` command.
+To create a connected app by using an API call, follow this example using the `cURL` command:
 
 . Get an authorization token from Anypoint Platform:
 +
