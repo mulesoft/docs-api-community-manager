@@ -186,7 +186,7 @@ To configure permissions for the guest user profile:
 . Click *Save*.
 . Click the link for *Enabled Apex Class Access*.
 . Click *Edit*.
-. Select all classes on the list and click *Add* to make them accessible.
+. Select all classes in the list and click *Add* to make them accessible.
 . Click *Save*.
 
 === Member User Profile Permissions and Configuration
