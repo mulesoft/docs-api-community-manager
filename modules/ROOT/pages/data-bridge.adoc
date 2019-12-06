@@ -124,7 +124,7 @@ NOTE: Remember to associate the external data source with this authentication pr
 == Authenticate the Data Bridge [[authenticate-data-bridge]]
 
 . Search for *External Data Source* in the *Quick Find* box and then click *External Data Sources*.
-. Locate the *Exchange* item and then click *Edit*.
+. Locate *Exchange*  and click *Edit*.
 . Update *Identity Type* to *Named Principal*.
 . Update *Authentication Protocol* to *OAuth 2.0*.
 . Update *Authentication Provider* to *Anypoint*.
