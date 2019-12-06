@@ -29,7 +29,7 @@ To create a connected app through the user interface, in Anypoint Platform, navi
 Select *Full Access* and *Background Access*.
 +
 . Click *Create Application*.
-. Note the client ID and client secret.
+. Take note of the client ID and client secret for future use.
 
 === Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
 
