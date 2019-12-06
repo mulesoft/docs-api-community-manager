@@ -138,5 +138,4 @@ After authenticating the External Data Source, provide the credentials of an Any
 . Search for *Named Credentials* in the *Quick Find* box and then click *Named Credentials*.
 . Locate *anypoint.mulesoft* and click *Edit*.
 . In the *Authentication* section, enter the Anypoint Platform username and password for the read-only system user in the *Username* and *Password* fields.
-*Password* fields.
 . Click *Save*.
