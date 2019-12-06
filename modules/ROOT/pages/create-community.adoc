@@ -21,7 +21,7 @@ All communities templates are listed.
 . If you want help designing your community, choose any of the *API Community Manager Templates* or any of the other available templates.
 . If you don't need help designing your community, choose *Build your own*. 
 . Click *Get Started*.
-. Enter a *Name* and an *optional URL suffix* for your community.
+. Enter values for *Name* and *optional URL suffix* for your community.
 . Click *Create*.
 +
 The configuration process will take a few minutes.
