@@ -126,7 +126,7 @@ After you create a community, you must create different user profiles for your c
 
 Users that are signed in are *members*, and other users are *guests*.
 
-=== Guest User Profile Permissions
+=== Guest User Profile Permissions and Configuration
 
 These are the permissions for the guest users:
 
