@@ -265,7 +265,7 @@ To configure permissions for the member user profile so your members can access 
 . For *Profile Name* enter `ACM Member User`.
 . Click *Save*.
 . In the *ACM Member User* profile page, click *Edit*.
-. Edit the object permissions to match the table.
+. Edit the object permissions to match those shown in the previous table.
 . Click *Save*.
 . Click the link for *Enabled Apex Class Access*.
 . Click *Edit*.
