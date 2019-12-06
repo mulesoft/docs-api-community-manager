@@ -83,7 +83,7 @@ Chatter tracking enables your community to create discussions on specific object
 
 . In *Setup*, search for *Chatter* using the *Quick Find* box and click *Feed Tracking*.
 . Click the *CommunityAPI* object.
-. Click *Enable feed tracking*. You do not need to select any fields.
+. Without selecting any fields, click *Enable feed tracking*. 
 . Click *Save*.
 
 === Enable CMS Content
