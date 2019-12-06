@@ -18,7 +18,7 @@ Your account must have the Org Admin permission.
 
 To create a connected app through the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and take these actions:
 
-. Enter a value for the app *Name*.
+. Enter a value for *Name*.
 . Set *Type* to *App acts on behalf of a user*.
 . Set *Grant types* to *Authorization Code* and *Refresh Token*.
 . Set the mandatory *Website URL* to a URL of your choice.
