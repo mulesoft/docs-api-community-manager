@@ -39,7 +39,7 @@ To enable the admin panels, publish your community for the first time:
 . Click *Publish* in the top right corner.
 . In the *Publish Your Community* dialog, click *Publish*.
 +
-In a few minutes your community will be published.
+In a few minutes, your community is published.
 . Look for an email notification including your community's public URL.
 . You can also find your community live URL by opening the API Community Manager control panel and clicking *Open Community*.
 
