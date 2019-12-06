@@ -361,7 +361,7 @@ Configure a login page:
 
 NOTE: Refer to xref:brand-intro.adoc[Brand and Customize Your API Community] to understand how to configure the look and feel of your login and registration pages.
 
-== Set Up an Admin Approval Process for New User Creation (Optional)
+== Optionally Set Up an Admin Approval Process for Creating New Users
 
 Use these steps to set an optional approval process for self-registered users. The system will then require administrator approval before creating member accounts. If the request is approved, the new user account is created, a welcome email is sent to the new user, and the user sets a password and logs in to the community.
 
