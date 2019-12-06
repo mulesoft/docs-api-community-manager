@@ -18,7 +18,8 @@ NOTE: Installing, updating, or configuring API Community Manager must be done by
 . Click *New Community*.
 +
 All communities templates are listed.
-. Choose any of the *API Community Manager Templates* if you want to get started from an example, any of the other available templates, or *Build your own* if you want to design your community from scratch with full control of the structure and look and feel.
+. If you want help designing your community, choose any of the *API Community Manager Templates* or any of the other available templates.
+. If you don't need help designing your community, choose *Build your own*. 
 . On the desired template page, click *Get Started*.
 . Enter a *Name* and an *optional URL suffix* for your community.
 . Click *Create*.
