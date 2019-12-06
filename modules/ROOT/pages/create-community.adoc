@@ -197,7 +197,7 @@ These are the permissions for the member users:
 |======================
 |Object
 |Required Object Permissions
-|Required field-level permissions
+|Required Field-Level Permissions
 
 |AnypointApiCategories
 |Read
