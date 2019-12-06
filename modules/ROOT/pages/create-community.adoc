@@ -64,7 +64,7 @@ Your community's content configuration controls the forums, moderation rules, Ch
 . Click *Navigational Topics*.
 . Create as many topics as you need for your community forums and click *Save*.
 
-By default discussion forums are not moderated, so any member can create posts with any content and the posts become visible for other members immediately. If you want to define a basic "review/approve-all" moderation model, use these steps:
+By default, discussion forums are not moderated, so any member can create posts with any content and the posts become visible for other members immediately. If you want to define a basic "review/approve-all" moderation model, follow these steps:
 
 . In the API Community Manager control panel, click *Manage Forums* > *Rules*.
 . Click *New* and create a *Content Rule*.
