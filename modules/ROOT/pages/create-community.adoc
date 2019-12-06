@@ -49,7 +49,7 @@ To customize the look, feel, and branding of your community, refer to xref:brand
 
 == Configure Content
 
-Your community's content configuration controls the forums, moderation rules, Chatter tracking for APIs, Salesforce CMS, and Salesforce CRM Content.
+Your community's content configuration controls the forums, moderation rules, Chatter tracking for APIs, Salesforce CMS, and Salesforce CRM content of your published community.
 
 === Configure Forums
 
