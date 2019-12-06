@@ -102,7 +102,8 @@ Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find th
 
 In the following task steps, if your Anypoint Platform organization is hosted in the EU, replace all instances of `+https://anypoint.mulesoft.com+` with `+https://eu1.anypoint.mulesoft.com+`.
 
-. In *Setup*, search for *Auth. Providers* using the *Quick Find* box and click *Auth. Providers* -> *New*.
+. In *Setup*, search for *Auth. Providers* using the *Quick Find* box.
+. Click *Auth. Providers* -> *New*.
 . In *Provider type* select *Open ID Connect*.
 . Set *Name* to `Anypoint`.
 . Set *Consumer Key* to the application ID of the connected app created in Anypoint Platform.
