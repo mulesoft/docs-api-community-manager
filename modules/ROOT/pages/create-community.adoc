@@ -14,7 +14,7 @@ NOTE: Installing, updating, or configuring API Community Manager must be done by
 
 . If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=_blank].
 . Navigate to *Setup*.
-. In the *Quick Find* box, enter *All Communities* and then click *All Communities*.
+. In the *Quick Find* box, enter *`All Communities`* and then click *All Communities*.
 . Click *New Community*.
 +
 All communities templates are listed.
