@@ -8,7 +8,8 @@ The API Community Manager control panel is the interface your community administ
 
 . In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
 . Locate *API Community Manager* and, in the menu on the right end of the row, click *Edit*.
-. Click *Navigation Items* on the left panel, highlight the *ACM Administrator* item under the *Available Items* box, and use the arrow buttons to move it to the *Selected Items* box. Click *Save*.
+. Click *Navigation Items* in the left panel, highlight *ACM Administrator* under the *Available Items* box, and use the arrow buttons to move it to the *Selected Items* box. 
+. Click *Save*.
 . Click *Back* at the top right.
 . Log out and log back in to your Salesforce organization.
 . Open the *App Launcher* and click *API Community Manager*.
