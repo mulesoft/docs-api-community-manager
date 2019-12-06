@@ -109,7 +109,7 @@ Enable Salesforce CMS:
 . In *Tab Settings*, set *CMS Workspaces* to *Default On*.
 . Click *Save*.
 
-If you want to organize CMS content using Topics, use these steps:
+If you want to organize CMS content using Topics, follow these steps:
 
 . Go to the API Community Manager control panel, click *Manage CMS Content*, and click *Topics*.
 . Select the topics you want to enable to organize CMS content and click *Enable for content* in the top right.
