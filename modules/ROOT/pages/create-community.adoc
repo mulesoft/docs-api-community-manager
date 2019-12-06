@@ -180,7 +180,7 @@ These are the permissions for the guest users:
 
 To configure permissions for the guest user profile:
 
-. In *Setup*, navigate to the guest user profile link under the *Guest user profile* section, named *[Community Name] Profile*.
+. In *Setup*, navigate to the guest user profile link in the *Guest user profile* section, named *[Community Name] Profile*.
 . Click *Edit*.
 . Edit the object permissions to match the table.
 . Click *Save*.
