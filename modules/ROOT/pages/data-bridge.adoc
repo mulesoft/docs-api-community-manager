@@ -100,7 +100,7 @@ Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find th
 
 == Create an Authentication Provider in Your Salesforce Organization [[create-auth-provider]]
 
-NOTE: If your Anypoint Platform organization is hosted in the EU, change `+https://anypoint.mulesoft.com+` to `+https://eu1.anypoint.mulesoft.com+`.
+In the following task steps, if your Anypoint Platform organization is hosted in the EU, replace all instances of `+https://anypoint.mulesoft.com+` with `+https://eu1.anypoint.mulesoft.com+`.
 
 . In *Setup*, search for *Auth. Providers* using the *Quick Find* box and click *Auth. Providers* -> *New*.
 . In *Provider type* select *Open ID Connect*.
