@@ -504,7 +504,7 @@ Also, click *Download metadata* and retrieve the public key in the `<ds:X509Cert
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 . Click *Save*.
 
-Configure and authorize the ODATA bridge to perform impersonation.
+Configure and authorize the OData bridge to perform impersonation.
 
 This requires a private key or a certificate, and a keystore (JKS) containing that key or certificate.
 Use the same certificate that Salesforce IdP uses.
