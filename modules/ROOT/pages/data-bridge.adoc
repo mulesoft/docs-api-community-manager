@@ -129,7 +129,7 @@ NOTE: Remember to associate the external data source with this authentication pr
 . Update *Authentication Protocol* to *OAuth 2.0*.
 . Update *Authentication Provider* to *Anypoint*.
 . Click *Save*.
-. If you don't have an active session in your Anypoint Platform organization, the *Anypoint Login* page is shown. Log in to Anypoint Platform to complete the authentication. If you already have an active session, authentication is performed without requiring a login.
+. If you don't have an active session in your Anypoint Platform organization, log in.
 . Verify the Exchange *External Data Sources* *Authentication Status* is *Authenticated*.
 
 After authenticating the External Data Source, provide the credentials of an Anypoint Platform system user with read-only access, for Lightning components like the API Console which retrieve data directly from the Anypoint Platform APIs.
