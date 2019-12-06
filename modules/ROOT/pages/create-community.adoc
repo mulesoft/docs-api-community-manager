@@ -31,7 +31,7 @@ The configuration process will take a few minutes.
 Be sure to install this package in your production organization when prompted by the wizard.
 +
 You might need to reenter your login credentials to complete the installation of this package.
-. In the *Application Launcher* navigate to *ACM Administrator*, click *Community Administration*, go to the *Settings* section, and click *Activate Community*.
+. In *Application Launcher*, navigate to *ACM Administrator*, click *Community Administration*, go to the *Settings* section, and click *Activate Community*.
 
 To enable the admin panels, publish your community for the first time:
 
