@@ -12,7 +12,7 @@ The API Community Manager control panel is the interface your community administ
 . Click *Save*.
 . Click *Back* at the top right.
 . Log out and log back in to your Salesforce organization.
-. Open the *App Launcher* and click *API Community Manager*.
+. Open *App Launcher* and click *API Community Manager*.
 . Verify that the API Community Manager control panel is displayed correctly by navigating to *Application Launcher* > *ACM Administrator*.
 +
 If you see a message that you have not created a community, then the actions in this step were performed correctly.
