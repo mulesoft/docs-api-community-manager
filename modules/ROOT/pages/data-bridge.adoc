@@ -16,7 +16,7 @@ Your account must have the Org Admin permission.
 
 === Create a Connected App by Using the User Interface [[create-a-connected-app-with-the-user-interface]]
 
-To create a connected app through the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and take these actions:
+To create a connected app through the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and follow these steps:
 
 . Enter a value for *Name*.
 . Set *Type* to *App acts on behalf of a user*.

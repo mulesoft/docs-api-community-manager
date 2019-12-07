@@ -4,12 +4,12 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Community admins, community members, and guest users can access an API Community Manager community by using the latest versions of these browsers:
+Community administrators, community members, and guest users can access an API Community Manager community by using the latest versions of these browsers:
 
-* Google Chrome
-* Mozilla Firefox
 * Apple Safari
+* Google Chrome
 * Microsoft Edge
 * Microsoft Internet Explorer 11 (limited)
 +
-Microsoft Internet Explorer 11 compatibility is limited to diplaying content-only, non-interactive components, including API Carousel, API Catalog, and API Documentation Viewer. The components API Console, API Access Requester, and My Applications are not supported in Microsoft Internet Explorer 11, and render in a disabled state with a message to the user explaining the compatibility limitations.
+Microsoft Internet Explorer 11 compatibility is limited to displaying content-only, non-interactive components, including API Carousel, API Catalog, and API Documentation Viewer. The components API Console, API Access Requester, and My Applications are not supported in Microsoft Internet Explorer 11, and render in a disabled state with a message to the user explaining the compatibility limitations.
+* Mozilla Firefox

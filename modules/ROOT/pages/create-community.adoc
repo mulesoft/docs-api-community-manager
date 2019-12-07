@@ -4,33 +4,32 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Use these steps to create, configure, and publish your community with branding, forums and moderation rules, Salesforce CMS, Salesforce CRM Content, and Chatter tracking for APIs.
+Creating and configuring a community includes setting branding, forums and moderation rules, Salesforce CMS, Salesforce CRM content, Chatter tracking for APIs, profiles and permissions, sharing, member registration and approval, and user impersonation.
 
 You can create any number of communities. All communities are in the same Salesforce organization. The default Anypoint API Community Manager license covers up to 100 communities.
 
-NOTE: Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
+Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
+
+If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=_blank].
 
 == Create a New Community
 
-. If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=_blank].
 . Navigate to *Setup*.
 . In the *Quick Find* box, enter *`All Communities`* and then click *All Communities*.
 . Click *New Community*.
 +
 All communities templates are listed.
-. If you want help designing your community, choose any of the *API Community Manager Templates* or any of the other available templates.
-. If you don't need help designing your community, choose *Build your own*. 
+. If you want to get started from an example, choose any of the *API Community Manager Templates* or any of the other available templates.
+. If you want to design your community from scratch with full control of the structure and look and feel, choose *Build your own*.
 . Click *Get Started*.
 . Enter values for *Name* and *optional URL suffix* for your community.
 . Click *Create*.
 +
 The configuration process will take a few minutes.
 +
-. When the configuration process finishes and you see your new community workspace, click *Install AppExchange Package* in the top banner and follow the installation wizard instructions.
+. When the configuration process finishes and you see your new community workspace, click *Install AppExchange Package* in the top banner and follow the installation wizard instructions to install the pre-defined metrics and dashboards.
 +
 Be sure to install this package in your production organization when prompted by the wizard.
-+
-You might need to reenter your login credentials to complete the installation of this package.
 . In *Application Launcher*, navigate to *ACM Administrator*, click *Community Administration*, go to the *Settings* section, and click *Activate Community*.
 
 To enable the admin panels, publish your community for the first time:
@@ -49,7 +48,7 @@ To customize the look, feel, and branding of your community, refer to xref:brand
 
 == Configure Content
 
-Your community's content configuration controls the forums, moderation rules, Chatter tracking for APIs, Salesforce CMS, and Salesforce CRM content of your published community.
+Your community's content configuration controls the forums, moderation rules, Chatter tracking for APIs, Salesforce CMS, and Salesforce CRM content.
 
 === Configure Forums
 
@@ -124,72 +123,7 @@ Enable Salesforce CRM Content:
 
 After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, so that you can control access to and visibility of APIs and content.
 
-Users that are signed in are *members*, and other users are *guests*.
-
-=== Guest User Profile Permissions and Configuration
-
-These are the permissions for the guest users:
-
-[cols="2,3,3",options=header,width="100%",frame="topbot"]
-|======================
-|Object
-|Required Object Permissions
-|Required Field-Level Permissions
-
-|AnypointApiCategories
-|Read
-|All fields Read Access
-
-|AnypointApiInstances
-|Read
-|All fields Read Access
-
-|AnypointApiVersionQueries
-|Read
-|All fields Read Access
-
-|AnypointApiVersions
-|Read
-|All fields Read Access
-
-|AnypointCategories
-|Read
-|All fields Read Access
-
-|AnypointEnvironments
-|Read
-|All fields Read Access
-
-|AnypointOrganizations
-|Read
-|All fields Read Access
-
-|CommunityApis
-|Read
-|All fields Read Access
-
-|Documents
-|Read
-|All fields Read Access
-
-|SelfRegisterUserRequests
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
-
-|======================
-
-To configure permissions for the guest user profile:
-
-. In *Setup*, navigate to the guest user profile link in the *Guest user profile* section, named *[Community Name] Profile*.
-. Click *Edit*.
-. Edit the object permissions to match those shown in the previous table.
-. Click *Save*.
-. Click the link for *Enabled Apex Class Access*.
-. Click *Edit*.
-. Select all classes in the list and click *Add* to make them accessible.
-. Click *Save*.
-
-=== Member User Profile Permissions and Configuration
+=== Configure Member User Profile Permissions
 
 These are the permissions for the member users:
 
@@ -265,6 +199,69 @@ To configure permissions for the member user profile so your members can access 
 . For *Profile Name* enter `ACM Member User`.
 . Click *Save*.
 . In the *ACM Member User* profile page, click *Edit*.
+. Edit the object permissions to match those shown in the previous table.
+. Click *Save*.
+. Click the link for *Enabled Apex Class Access*.
+. Click *Edit*.
+. Select all classes in the list and click *Add* to make them accessible.
+. Click *Save*.
+
+=== Configure Guest User Profile Permissions
+
+These are the permissions for the guest users:
+
+[cols="2,3,3",options=header,width="100%",frame="topbot"]
+|======================
+|Object
+|Required Object Permissions
+|Required Field-Level Permissions
+
+|AnypointApiCategories
+|Read
+|All fields Read Access
+
+|AnypointApiInstances
+|Read
+|All fields Read Access
+
+|AnypointApiVersionQueries
+|Read
+|All fields Read Access
+
+|AnypointApiVersions
+|Read
+|All fields Read Access
+
+|AnypointCategories
+|Read
+|All fields Read Access
+
+|AnypointEnvironments
+|Read
+|All fields Read Access
+
+|AnypointOrganizations
+|Read
+|All fields Read Access
+
+|CommunityApis
+|Read
+|All fields Read Access
+
+|Documents
+|Read
+|All fields Read Access
+
+|SelfRegisterUserRequests
+|Read, Create, Edit, Delete
+|All fields Read Access, Edit Access
+
+|======================
+
+To configure permissions for the guest user profile:
+
+. In *Setup*, navigate to the guest user profile link in the *Guest user profile* section, named *[Community Name] Profile*.
+. Click *Edit*.
 . Edit the object permissions to match those shown in the previous table.
 . Click *Save*.
 . Click the link for *Enabled Apex Class Access*.
