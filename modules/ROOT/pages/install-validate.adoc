@@ -6,10 +6,6 @@ endif::[]
 
 To verify your installation and configuration:
 
-. Verify that your Anypoint organization has the Anypoint API Community Manager entitlement.
-.. Log in to your Anypoint Platform organization.
-.. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
-.. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
 . Verify that the Exchange External Data Source status is *Authenticated*.
 .. Open the Application Launcher.
 .. Enter *API Community Manager*.

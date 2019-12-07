@@ -8,6 +8,9 @@ After you edit and preview your updated community site, you can publish the new 
 
 . Open the Anypoint API Community Manager control panel.
 . Click *Community Builder*.
+. Click *Settings* > *General*.
+. Select the *Public can access the community* check box.
+. Return to *Community Builder*.
 . Click *Publish*.
 
 If your community is not already active, activate it:

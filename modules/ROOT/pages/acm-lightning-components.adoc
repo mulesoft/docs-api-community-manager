@@ -45,7 +45,7 @@ Component Title:: Specifies the title for the results.
 Border:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
 Show Search Input:: Shows the search input on the results page.
 
-== API Access Requester
+== API Access Requester [[api-access-requester]]
 
 The API Access Requester component enables community members to request access to an API for either a new or existing application.
 

@@ -1,0 +1,12 @@
+= Data Sheets
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+:page-aliases: further-reading.adoc, reference.adoc
+
+These data sheets offer further information about Anypoint API Community Manager.
+
+* xref:licensing-overview.adoc[Licensing Overview]
+* xref:browser-support.adoc[Browser Support]
+* xref:security.adoc[Security]

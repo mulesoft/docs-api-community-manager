@@ -1,0 +1,18 @@
+= Enable API Community Manager Control Panel
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+The API Community Manager control panel is the interface your community administrators and operators use to operate your communities. It is available in the *App Launcher* page, where it is the first icon displayed in the main navigation bar. To ensure that the control panel is available for admin users:
+
+. In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
+. Locate *API Community Manager* and, in the menu on the right end of the row, click *Edit*.
+. Click *Navigation Items* in the left panel, select *ACM Administrator* under the *Available Items* box, and use the arrow buttons to move it to the *Selected Items* box. 
+. Click *Save*.
+. Click *Back* at the top right.
+. Log out and log back in to your Salesforce organization.
+. Open *App Launcher* and click *API Community Manager*.
+. Verify that the API Community Manager control panel is displayed correctly by navigating to *Application Launcher* > *ACM Administrator*.
++
+If you see a message that you have not created a community, then the steps in this task were performed correctly.

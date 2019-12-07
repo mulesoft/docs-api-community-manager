@@ -1,0 +1,141 @@
+= Set Up the Data Bridge
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+The data bridge is the secure connection from Anypoint API Community Manager to your Anypoint Platform organization.
+
+API Community Manager components and data objects use Anypoint Platform as their external data source.
+
+== Create a Connected App
+
+You can perform this step by using either the user interface or an API call.
+
+Your account must have the Org Admin permission.
+
+=== Create a Connected App by Using the User Interface [[create-a-connected-app-with-the-user-interface]]
+
+To create a connected app through the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and follow these steps:
+
+. Enter a value for *Name*.
+. Set *Type* to *App acts on behalf of a user*.
+. Set *Grant types* to *Authorization Code* and *Refresh Token*.
+. Set the mandatory *Website URL* to a URL of your choice.
+. Set *Redirect URIs* to `+https://<domain>.my.salesforce.com/services/authcallback/Anypoint+` and replace `<domain>` with your domain name.
+. Set *Who can use this application?* to *Members of this organization only*.
+. Click *Add Scopes*.
++
+Select *Full Access* and *Background Access*.
++
+. Click *Create Application*.
+. Take note of the client ID and client secret for future use.
+
+=== Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
+
+To create a connected app by using an API call, follow this example using the `cURL` command:
+
+. Get an authorization token from Anypoint Platform:
++
+----
+    curl --silent https://anypoint.mulesoft.com/accounts/login -XPOST \
+      -d 'username=<anypoint username>&password=<anypoint password>'
+----
++
+. The command returns a response like this:
++
+----
+    {
+      "access_token": "5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7",
+      "token_type": "bearer",
+      "redirectUrl": "/home/"
+    }
+----
++
+. Note the `access_token` value.
++
+. Use the next `cURL` example to register an external client in Anypoint Platform for OpenID authentication.
++
+Replace the access token in the authorization header with the `access_token` value.
++
+Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find the domain name by logging in to your Salesforce organization, clicking *Setup*, and clicking the section *My Domain*.
++
+----
+    curl -X POST \
+      https://anypoint.mulesoft.com/accounts/api/connectedApplications \
+      -H 'Content-Type: application/json' \
+      -H 'Accept: */*' \
+      -H 'Accept-Encoding: gzip, deflate' \
+      -H 'Authorization: Bearer 5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7' \
+      -H 'Host:anypoint.mulesoft.com' \
+      -d '{"client_name":"ACM Integration App","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
+----
++
+. The `cURL` command returns a response like this:
++
+----
+    {
+      "client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
+      "client_secret": "9509XXXXXXXXXXXXXXXXXXXXXXXXC10E",
+      "client_name": "ACM Integration App",
+      "redirect_uris": [
+        "https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"
+      ],
+      "grant_types": [
+        "authorization_code",
+        "refresh_token"
+      ],
+      "public_keys": [],
+      "scopes": [
+        "offline_access",
+        "full"
+      ],
+      "enabled": true,
+      "owner_org_id": "f377XXXX-XXXX-XXXX-XXXX-XXXXXXXX9d08",
+      "as_id": "anypoint"
+    }
+----
++
+. Note the `client_id` and `client_secret` values.
+
+== Create an Authentication Provider in Your Salesforce Organization [[create-auth-provider]]
+
+In the following task steps, if your Anypoint Platform organization is hosted in the EU, replace all instances of `+https://anypoint.mulesoft.com+` with `+https://eu1.anypoint.mulesoft.com+`.
+
+. In *Setup*, search for *Auth. Providers* using the *Quick Find* box.
+. Click *Auth. Providers* -> *New*.
+. In *Provider type*, select *Open ID Connect*.
+. Set *Name* to `Anypoint`.
+. Set *Consumer Key* to the application ID of the connected app (which you took note of when you created the app in Anypoint Platform).
++
+This ID was returned by the Anypoint UI at the end of the task <<create-a-connected-app-with-the-user-interface>> or returned by the Anypoint API call at the end of the task <<create-a-connected-app-with-an-api-call>>.
++
+. Set *Consumer Secret* to the application secret of the connected app created in Anypoint Platform.
++
+This secret was returned by the Anypoint UI at the end of the task <<create-a-connected-app-with-the-user-interface>> or returned by the Anypoint API call at the end of the task <<create-a-connected-app-with-an-api-call>>.
++
+. Set *Authorize Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` .
+. Set *Token Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` .
+. Set *Default Scopes* to `full offline_access`.
+. Click *Save*.
+
+NOTE: Remember to associate the external data source with this authentication provider.
+
+== Authenticate the Data Bridge [[authenticate-data-bridge]]
+
+. Search for *External Data Source* in the *Quick Find* box and then click *External Data Sources*.
+. Locate *Exchange*  and click *Edit*.
+. Update *Identity Type* to *Named Principal*.
+. Update *Authentication Protocol* to *OAuth 2.0*.
+. Update *Authentication Provider* to *Anypoint*.
+. Click *Save*.
+. If you don't have an active session in your Anypoint Platform organization, log in.
+. Verify the Exchange *External Data Sources* *Authentication Status* is *Authenticated*.
+
+After authenticating the External Data Source, provide the credentials of an Anypoint Platform system user with read-only access, for Lightning components like the API Console which retrieve data directly from the Anypoint Platform APIs.
+
+. Obtain the username and password for the system user with read-only privileges in your Anypoint Platform organization.
+. Search for *Named Credentials* in the *Quick Find* box and then click *Named Credentials*.
+. Locate *anypoint.mulesoft* and click *Edit*.
+. In the *Authentication* section, enter the Anypoint Platform username and password for the read-only system user in the *Username* and *Password* fields.
+. Click *Save*.
