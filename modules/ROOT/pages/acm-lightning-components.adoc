@@ -410,6 +410,6 @@ You can learn more about SOQL from the Salesforce SOQL and SOSL Reference.
 
 The API Carousel component and the API Catalog component use the parameter *Categories Filter (Advanced)* to show only the APIs that have categories in Anypoint Exchange with the specified values.
 
-These categories and values are written as comma-separated pairs such as `Country=Argentina,Payment=Credit`.
+These categories and values are written as comma-separated pairs such as `Country=Argentina;Payment=Credit`.
 
 The API Carousel or API Catalog will show only APIs that match all of the category-value pairs in the categories filter and all of the filter conditions.
