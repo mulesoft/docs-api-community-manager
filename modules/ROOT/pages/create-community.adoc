@@ -40,9 +40,9 @@ To enable the admin panels, publish your community for the first time:
 +
 In a few minutes, your community is published.
 . Look for an email notification including your community's public URL.
-. You can also find your community live URL by opening the API Community Manager control panel and clicking *Open Community*.
+. You can also always find your community's live URL by opening the API Community Manager control panel and clicking *Open Community*.
 
-NOTE: To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=_blank].
+To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=_blank].
 
 To customize the look, feel, and branding of your community, refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
@@ -78,14 +78,16 @@ IMPORTANT: Verify the *Activate Rule* check box is active when saving your chang
 
 You can define much more advanced moderation and review rules. You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
 
-Chatter tracking enables your community to create discussions on specific objects like APIs. To enable Chatter tracking:
+Chatter tracking enables your community to create discussions about specific objects such as APIs. To enable Chatter tracking:
 
 . In *Setup*, search for *Chatter* using the *Quick Find* box and click *Feed Tracking*.
-. Click the *CommunityAPI* object.
+. Click *CommunityAPI*.
 . Without selecting any fields, click *Enable feed tracking*. 
 . Click *Save*.
 
 === Enable CMS Content
+
+You can enable the Salesforce CMS content manager, provide topics to organize the content, and enable Salesforce CRM content.
 
 Enable Salesforce CMS:
 
@@ -134,60 +136,60 @@ These are the permissions for the member users:
 |Required Field-Level Permissions
 
 |AnypointApiCategories
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApiInstances
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApiTiers
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApiVersionQueries
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApiVersions
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApplications
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
+|*Read*, *Create*, *Edit*, *Delete*
+|All fields *Read Access*, *Edit Access*
 
 |AnypointCategories
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointContracts
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
+|*Read*, *Create*, *Edit*, *Delete*
+|All fields *Read Access*, *Edit Access*
 
 |AnypointEnvironments
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointOrganizations
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |Cases
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |CommunityApis
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |Documents
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |SelfRegisterUserRequests
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
+|*Read*, *Create*, *Edit*, *Delete*
+|All fields *Read Access*, *Edit Access*
 
 |======================
 
@@ -217,44 +219,44 @@ These are the permissions for the guest users:
 |Required Field-Level Permissions
 
 |AnypointApiCategories
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApiInstances
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApiVersionQueries
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointApiVersions
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointCategories
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointEnvironments
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |AnypointOrganizations
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |CommunityApis
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |Documents
-|Read
-|All fields Read Access
+|*Read*
+|All fields *Read Access*
 
 |SelfRegisterUserRequests
-|Read, Create, Edit, Delete
-|All fields Read Access, Edit Access
+|*Read*, *Create*, *Edit*, *Delete*
+|All fields *Read Access*, *Edit Access*
 
 |======================
 
