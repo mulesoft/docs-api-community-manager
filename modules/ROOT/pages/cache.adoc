@@ -1,0 +1,25 @@
+= Optionally Configure the Cache
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Anypoint API Community Manager can improve performance with a platform cache.
+
+The platform cache has two parts: a session cache that holds data specific to one user and their session, and an organization cache that holds data that will be accessed by multiple users in the organization.
+
+If you wish to change the default configuration for the caches:
+
+. Log in to your Salesforce organization.
+. In *Setup*, click *Custom Metadata Types*.
+. Next to the label *ACM Platform Cache Metadata*, click *Manage Records*.
+. Next to the label *ACM Configuration*, click *Edit*.
+. Use the *OrgCacheEnabled* and *SessionCacheEnabled* checkboxes to enable or disable the caches.
+. Set the number of seconds that cached data remains in the cache for the API documentation, API instance, and API query entities with the *ApiDocumentationLifetime*, *ApiInstancesLifetime*, and *ApiQueryLifetime* fields.
+. Hover the mouse cursor over the question mark next to each field name to see the minimum and maximum number of seconds for each entity.
+. Set a field to zero seconds to disable caching of that entity.
+
+== See Also
+
+https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_cache_namespace_overview.htm[Salesforce Platform Cache documentation, role=external, window=blank]
+https://trailhead.salesforce.com/content/learn/modules/platform_cache[Platform Cache Basics module on Trailhead, role=external, window=blank]

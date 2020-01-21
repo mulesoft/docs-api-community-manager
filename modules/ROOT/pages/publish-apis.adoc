@@ -46,6 +46,8 @@ Community Builder displays a preview of your community's site and edit options.
 
 The new API version shows the message *This is only visible for you*, indicating *Admin Only* visibility. Consumer developers cannot see this API version preview.
 
+If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
+
 == Make API Versions Visible
 
 . In the API Community Manager control panel, select *Manage APIs*.
@@ -79,6 +81,8 @@ To make corrections in the API documentation:
 . Select *Publish*.
 
 Consumer developers see the corrected information on the community site immediately.
+
+If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
 
 == Major API Updates
 
@@ -119,6 +123,8 @@ Consumer developers can now see the new API version in the API carousel on the c
 . Select *Remove* again to confirm.
 +
 Consumer developers can no longer see the previous API version in the API carousel on the community site.
+
+If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
 
 == Searching APIs
 

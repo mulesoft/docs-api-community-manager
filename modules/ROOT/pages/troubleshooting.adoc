@@ -138,3 +138,7 @@ If guest users do not see published API versions that have been set to be visibl
 . Open Salesforce setup.
 . Open the sharing rules.
 . Ensure that the sharing rule for the object `CommunityApi` matches your community name exactly, including spacing and letter case.
+
+== Refresh the Cache
+
+If changes made to APIs are not yet visible, you can refresh the cache to see them.

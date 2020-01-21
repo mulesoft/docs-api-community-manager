@@ -25,3 +25,4 @@ The following sections guide you through installing and configuring API Communit
 * xref:data-bridge.adoc[Set Up the Data Bridge]
 * xref:create-community.adoc[Create a Community]
 * xref:install-validate.adoc[Verify the Installation]
+* xref:cache.adoc[Optionally Configure the Cache]
