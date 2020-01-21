@@ -6,6 +6,8 @@ endif::[]
 
 Keep your Anypoint API Community Manager instance up to date to take advantage of new and improved functionality in your community.
 
+For information about update release announcements, please see xref:notifications.adoc[Important Notifications].
+
 To update your API community:
 
 . Open the API Community Manager control panel.

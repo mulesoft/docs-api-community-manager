@@ -1,0 +1,15 @@
+= Important Notifications
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+== Release Announcements
+
+New releases are announced at http://trust.mulesoft.com .
+
+For further information, please contact your MuleSoft customer success representative.
+
+== Downtime
+
+Any downtime of the MuleSoft or Salesforce platforms will be announced at http://trust.mulesoft.com and http://trust.salesforce.com .
