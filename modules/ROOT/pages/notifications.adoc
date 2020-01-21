@@ -12,4 +12,4 @@ For further information, please contact your MuleSoft customer success represent
 
 == Downtime
 
-Any downtime of the MuleSoft or Salesforce platforms will be announced at http://trust.mulesoft.com and http://trust.salesforce.com .
+Any downtime of the MuleSoft or Salesforce platforms is tracked and monitored at http://trust.mulesoft.com and http://trust.salesforce.com .
