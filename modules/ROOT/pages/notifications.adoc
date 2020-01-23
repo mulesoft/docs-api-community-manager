@@ -4,9 +4,13 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+Use these sources to stay informed about new releases and downtime for Anypoint API Community Manager.
+
 == Release Announcements
 
-New releases are announced at http://trust.mulesoft.com .
+Keeping the API Community Manager components updated is critical to keep your API community operating smoothly and optimally. Watch for new releases in these channels so you can plan to xref:update-acm.adoc[update your installation] at your convenience.
+
+New releases are announced at http://trust.mulesoft.com in the "Scheduled Maintenance" section and in xref:release-notes::api-community-manager/api-community-manager-release-notes.adoc[the API Community Manager release notes].
 
 For further information, please contact your MuleSoft customer success representative.
 
