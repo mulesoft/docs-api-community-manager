@@ -11,14 +11,13 @@ Anypoint API Community Manager licenses are procured and provisioned by MuleSoft
 . Connectivity to one (1) Anypoint Platform top-level organization
 . Up to 10,000 member accounts across all communities
 . Salesforce Standard Objects, Features, Capability, and Custom Objects in Customer Community Plus 
-. 1Mb storage per user for all Communities
-. 10Mb storage for organization and session caches
-. 1MM page views per month across all Communities
-. 40Gb network bandwidth in production for all communities and 1Gb network bandwidth for all sandboxes
-. 100 Developer sandboxes, 5 Developer Pro sandboxes, 1 Partial Copy sandbox, 1 Full Copy sandbox
+. One (1) megabyte storage per user for all communities
+. 10 megabyte storage for organization and session caches
+. 1,000,000 page views per month across all communities
+. 40 gigabit network bandwidth in production for all communities and 1 gigabit network bandwidth for all sandboxes
+. 100 Developer sandboxes, 5 Developer Pro sandboxes, 1 Partial Copy sandbox, and 1 Full Copy sandbox
 . 10 Custom Objects
-. 10 API Calls per day to the Salesforce Community
-
+. 10 API calls per day to the Salesforce Community
 
 Community login-based license is calculated by the number of *daily unique logins*: login actions that different members perform daily in your communities during a month. Members associated with your license consume one login each day they log into any of your communities. Logging in multiple times during the same day only consumes one login. Once logged in, switching between communities doesn’t consume extra logins.
 
@@ -26,4 +25,4 @@ Forecasting the adequate number of daily unique logins is critical to ensure tha
 
 You can find more information about *Salesforce Customer Community Plus Login License Unlimited Edition* in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=users_license_types_communities.htm&type=5[Communities User Licenses, role=external, window=blank].
 
-NOTE: Additional capacity can be provisioned to your org if required. Please reach out to your MuleSoft representative for more information. 
+Additional capacity can be provisioned to your organization if required. For more information, please reach out to your MuleSoft representative.
