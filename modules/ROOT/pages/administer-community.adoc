@@ -8,4 +8,4 @@ Administering your Anypoint API Community Manager community includes staying up 
 
 * xref:notifications.adoc[Important Notifications]
 * xref:update-acm.adoc[Update API Community Manager]
-* xref:anypoint-support.adoc[Anypoint Support]
+* xref:mulesoft-support.adoc[Contact MuleSoft Support]
