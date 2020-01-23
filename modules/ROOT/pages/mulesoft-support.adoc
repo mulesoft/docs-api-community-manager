@@ -1,10 +1,12 @@
-= Anypoint Support
+= Contact MuleSoft Support
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Please submit all support cases for Anypoint API Community Manager through the MuleSoft support portal, available at https://help.mulesoft.com .
+For assistance, guidance, professional services customizations, and enhancement requests, please reach out to your MuleSoft Customer Success representative.
+
+To report issues or defects in Anypoint API Community Manager, please submit a support case through the MuleSoft support portal, available at https://help.mulesoft.com .
 
 The MuleSoft support team works closely with the Salesforce support team and will coordinate work on any support tickets involving Salesforce technology.
 
