@@ -12,7 +12,7 @@ Keeping the API Community Manager components updated is critical to keep your AP
 
 New releases are announced at http://trust.mulesoft.com in the "Scheduled Maintenance" section and in xref:release-notes::api-community-manager/api-community-manager-release-notes.adoc[the API Community Manager release notes].
 
-For further information, please contact your MuleSoft customer success representative.
+For further information, contact your MuleSoft customer success representative.
 
 == Downtime
 
