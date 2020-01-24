@@ -6,7 +6,7 @@ endif::[]
 
 For professional services customizations, enhancement requests, and other assistance, contact your MuleSoft Customer Success representative.
 
-To report issues or defects in Anypoint API Community Manager, please submit a support case through the MuleSoft support portal, available at https://help.mulesoft.com .
+To report issues or defects in Anypoint API Community Manager, submit a support case through the MuleSoft support portal, available at https://help.mulesoft.com.
 
 The MuleSoft support team works closely with the Salesforce support team and will coordinate work on any support tickets involving Salesforce technology.
 
