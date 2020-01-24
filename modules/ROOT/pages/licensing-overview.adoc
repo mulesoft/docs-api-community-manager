@@ -13,8 +13,8 @@ Anypoint API Community Manager licenses are procured and provisioned by MuleSoft
 . Salesforce Standard Objects, Features, Capability, and Custom Objects in Customer Community Plus 
 . One (1) megabyte storage per user for all communities
 . 10 megabyte storage for organization and session caches
-. 1,000,000 page views per month across all communities
-. 40 gigabit network bandwidth in production for all communities and 1 gigabit network bandwidth for all sandboxes
+. One (1) million page views per month across all communities
+. 40 gigabit network bandwidth in production environments for all communities and 1 gigabit network bandwidth for all sandbox environments
 . 100 Developer sandboxes, 5 Developer Pro sandboxes, 1 Partial Copy sandbox, and 1 Full Copy sandbox
 . 10 Custom Objects
 . 10 API calls per day to the Salesforce Community
