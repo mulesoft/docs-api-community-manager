@@ -10,4 +10,4 @@ To report issues or defects in Anypoint API Community Manager, submit a support 
 
 The MuleSoft support team works closely with the Salesforce support team to coordinate work on any support tickets involving Salesforce technology.
 
-Service level agreements (SLAs) for support are available at the MuleSoft https://www.mulesoft.com/legal/support-maintenance-terms[Product Support and Maintenance Terms] page.
+Service-level agreements (SLAs) for support are available at the MuleSoft https://www.mulesoft.com/legal/support-maintenance-terms[Product Support and Maintenance Terms] page.
