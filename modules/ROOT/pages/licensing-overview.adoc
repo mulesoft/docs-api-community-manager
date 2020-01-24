@@ -25,4 +25,4 @@ Forecasting the adequate number of daily unique logins is critical to ensure tha
 
 You can find more information about *Salesforce Customer Community Plus Login License Unlimited Edition* in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=users_license_types_communities.htm&type=5[Communities User Licenses, role=external, window=blank].
 
-Additional capacity can be provisioned to your organization if required. For more information, please reach out to your MuleSoft representative.
+Additional capacity can be provisioned to your organization if required. For more information, contact your MuleSoft representative.
