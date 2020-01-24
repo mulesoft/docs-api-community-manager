@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Administering your Anypoint API Community Manager community includes staying up to date with important notifications such as new releases and downtime, upgrading API Community Manager, and getting support from MuleSoft.
+Administering your Anypoint API Community Manager community requires monitoring important notifications such as new releases and downtime, upgrading API Community Manager, and getting support from MuleSoft.
 
 * xref:notifications.adoc[Important Notifications]
 * xref:update-acm.adoc[Update API Community Manager]
