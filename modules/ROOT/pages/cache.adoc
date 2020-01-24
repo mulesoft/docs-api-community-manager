@@ -1,10 +1,10 @@
-= Optionally Configure the Cache
+= Optionally Configure the Platform Cache
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Anypoint API Community Manager can improve performance with a platform cache.
+You can improve the performance of pages and components in your API community by using the https://help.salesforce.com/articleView?id=data_platform_cache.htm&type=5[Platform Cache, role=external, window=blank].
 
 The platform cache has two parts: a session cache that holds data specific to one user and their session, and an organization cache that holds data that will be accessed by multiple users in the organization.
 
@@ -14,12 +14,36 @@ If you wish to change the default configuration for the caches:
 . In *Setup*, click *Custom Metadata Types*.
 . Next to the label *ACM Platform Cache Metadata*, click *Manage Records*.
 . Next to the label *ACM Configuration*, click *Edit*.
-. Use the *OrgCacheEnabled* and *SessionCacheEnabled* checkboxes to enable or disable the caches.
-. Set the number of seconds that cached data remains in the cache for the API documentation, API instance, and API query entities with the *ApiDocumentationLifetime*, *ApiInstancesLifetime*, and *ApiQueryLifetime* fields.
+. Use the *Session Cache Enabled* and *Organization Cache Enabled* checkboxes to enable or disable the corresponding cache.
+. Set the number of seconds that cached data remains in the cache for Applications, API versions, documentation content, instances, and queries with the *Applications*, *API Versions Lifetime*, *API Documentation Lifetime*, *API Instances Lifetime*, and *API Query Lifetime* fields.
 . Hover the mouse cursor over the question mark next to each field name to see the minimum and maximum number of seconds for each entity.
 . Set a field to zero seconds to disable caching of that entity.
+. Click *Save*.
+
+Cache size defaults to zero. To finish configuring the caches, set the cache size:
+
+. Log in to your Salesforce organization.
+. In *Setup*, click *Platform Cache*.
+. Open the `ACMCache` partition.
+. Click *Edit*.
+. Set the size of each cache in megabytes using the "Organization" field.
++
+The sum of the sizes of the session cache and the organization cache cannot be more than your organization's cache capacity, as determined by your xref:licensing-overview.adoc[license].
+. Click *Save*.
+
+The new configuration is effective immediately.
+
+Click *Recalculate* to see how much of each cache is in use.
+
+Cached objects include:
+
+Applications:: Details of the client applications of the users.
+API Versions:: Basic details of API versions from Exchange.
+API Documentation:: API version information and documentation pages.
+API Instances:: Available instances of each published API version.
+API Query:: Responses of the "Try It" operation in the API Console.
 
 == See Also
 
-https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_cache_namespace_overview.htm[Salesforce Platform Cache documentation, role=external, window=blank]
-https://trailhead.salesforce.com/content/learn/modules/platform_cache[Platform Cache Basics module on Trailhead, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=data_platform_cache.htm&type=5[Salesforce Platform Cache documentation, role=external, window=blank]
+* https://trailhead.salesforce.com/content/learn/modules/platform_cache[Platform Cache Basics module on Trailhead, role=external, window=blank]
