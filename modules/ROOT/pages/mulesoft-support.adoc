@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-For assistance, guidance, professional services customizations, and enhancement requests, please reach out to your MuleSoft Customer Success representative.
+For professional services customizations, enhancement requests, and other assistance, contact your MuleSoft Customer Success representative.
 
 To report issues or defects in Anypoint API Community Manager, please submit a support case through the MuleSoft support portal, available at https://help.mulesoft.com .
 
