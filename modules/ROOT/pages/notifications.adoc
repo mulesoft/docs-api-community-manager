@@ -1,0 +1,19 @@
+= Important Notifications
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Use these sources to stay informed about new releases and downtime for Anypoint API Community Manager.
+
+== Release Announcements
+
+Updating API Community Manager components is critical to keeping your API community operating smoothly and optimally.
+
+Watch for new releases at http://trust.mulesoft.com in the "Scheduled Maintenance" section and in xref:release-notes::api-community-manager/api-community-manager-release-notes.adoc[the API Community Manager release notes] and xref:update-acm.adoc[update your installation].
+
+For further information, contact your MuleSoft customer success representative.
+
+== Downtime
+
+MuleSoft and Salesforce report and monitor platform downtime at http://trust.mulesoft.com and http://trust.salesforce.com.

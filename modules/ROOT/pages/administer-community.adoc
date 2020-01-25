@@ -1,0 +1,11 @@
+= Administer Your API Community
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Administering your Anypoint API Community Manager community requires monitoring important notifications about new releases and downtime, upgrading API Community Manager, and if necessary, getting support from MuleSoft.
+
+* xref:notifications.adoc[Important Notifications]
+* xref:update-acm.adoc[Update API Community Manager]
+* xref:mulesoft-support.adoc[Contact MuleSoft Support]
