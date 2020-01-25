@@ -26,7 +26,7 @@ Cache size defaults to zero. To finish configuring the caches, set the cache siz
 . In *Setup*, click *Platform Cache*.
 . Open the `ACMCache` partition.
 . Click *Edit*.
-. Set the size of each cache in megabytes in the "Organization" field.
+. Set the size of each cache (in megabytes) in the *Organization* field.
 +
 The sum of the sizes of the session cache and the organization cache cannot be more than your organization's cache capacity, as determined by your xref:licensing-overview.adoc[license].
 . Click *Save*.
