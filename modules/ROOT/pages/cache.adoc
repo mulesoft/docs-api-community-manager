@@ -8,7 +8,7 @@ You can improve the performance of pages and components in your API community by
 
 The platform cache has two parts: a session cache that holds data specific to one user and their session, and an organization cache that holds data accessed by multiple users in the organization.
 
-If you wish to change the default configuration for the caches:
+If you want to change the default configuration for either part of the cache:
 
 . Log in to your Salesforce organization.
 . In *Setup*, click *Custom Metadata Types*.
