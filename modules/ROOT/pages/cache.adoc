@@ -16,7 +16,7 @@ If you want to change the default configuration for either part of the cache:
 . Next to the label *ACM Configuration*, click *Edit*.
 . Use the *Session Cache Enabled* and *Organization Cache Enabled* checkboxes to enable or disable the corresponding cache.
 . Set the number of seconds that cached data remains in the cache for applications, API versions, documentation content, instances, and queries by completing the associated fields.
-. Hover the mouse cursor over the question mark next to each field name to see the minimum and maximum number of seconds for each entity.
+. Hover over the question mark (?) next to each field name to see the minimum and maximum number of seconds for each entity.
 . Set a field to zero seconds to disable caching of that entity.
 . Click *Save*.
 
