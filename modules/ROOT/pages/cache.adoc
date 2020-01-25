@@ -8,23 +8,31 @@ You can improve the performance of pages and components in your API community by
 
 The platform cache has two parts: a session cache that holds data specific to one user and their session, and an organization cache that holds data accessed by multiple users in the organization.
 
-If you want to change the default configuration for either part of the cache:
+Cached objects include:
+
+Applications:: Details of the client applications of the users
+API Versions:: Basic details of API versions from Exchange
+API Documentation:: API version information and documentation pages
+API Instances:: Available instances of each published API version
+API Query:: Responses of the "Try It" operation in the API Console
+
+Set which parts are enabled and the amount of time the cache keeps each type of data:
 
 . Log in to your Salesforce organization.
 . In *Setup*, click *Custom Metadata Types*.
 . Next to the label *ACM Platform Cache Metadata*, click *Manage Records*.
 . Next to the label *ACM Configuration*, click *Edit*.
 . Use the *Session Cache Enabled* and *Organization Cache Enabled* checkboxes to enable or disable the corresponding cache.
-. Set the number of seconds that cached data remains in the cache for applications, API versions, documentation content, instances, and queries by completing the associated fields.
-. Hover over the question mark (?) next to each field name to see the minimum and maximum number of seconds for each entity.
-. Set a field to zero seconds to disable caching of that entity.
+. Set the number of seconds that cached data remains in the cache for applications, API versions, documentation content, instances, and queries.
+. If you want to see the minimum and maximum number of seconds for each entity, hover over the question mark (?) next to each field name.
+. If you want to disable caching of an entity, set that field to zero seconds.
 . Click *Save*.
 
 Cache size defaults to zero. To finish configuring the caches, set the cache size:
 
 . Log in to your Salesforce organization.
 . In *Setup*, click *Platform Cache*.
-. Open the `ACMCache` partition.
+. Click the `ACMCache` partition.
 . Click *Edit*.
 . Set the size of each cache (in megabytes) in the *Organization* field.
 +
@@ -34,14 +42,6 @@ The sum of the sizes of the session cache and the organization cache cannot be m
 The new configuration is effective immediately.
 
 To see how much of each cache is in use, you can click *Recalculate*.
-
-Cached objects include:
-
-Applications:: Details of the client applications of the users.
-API Versions:: Basic details of API versions from Exchange.
-API Documentation:: API version information and documentation pages.
-API Instances:: Available instances of each published API version.
-API Query:: Responses of the "Try It" operation in the API Console.
 
 == See Also
 
