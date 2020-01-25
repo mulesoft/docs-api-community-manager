@@ -33,7 +33,7 @@ The sum of the sizes of the session cache and the organization cache cannot be m
 
 The new configuration is effective immediately.
 
-Click *Recalculate* to see how much of each cache is in use.
+To see how much of each cache is in use, you can click *Recalculate*.
 
 Cached objects include:
 
