@@ -6,6 +6,8 @@ endif::[]
 
 If you encounter errors while you are using Anypoint API Community Manager, refer to these explanations and instructions for recovery.
 
+(This line is a test edit.)
+
 == Approved Members Not Created or Emailed
 
 If your Winter '20 Salesforce organization has the member approval workflow active, and approving a member and refreshing the screen removes the member from the list without creating the new user or sending the new user email, troubleshoot by either setting the approver's language to English or adding the approver's language.
