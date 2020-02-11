@@ -30,4 +30,4 @@ image::apis-in-exchange.png[APIs in Exchange]
 +
 image::api-console.png[API console]
 
-If any of these checks are not successful, refer to the xref:troubleshooting.adoc[Troubleshooting] section.
+If any of these checks is not successful, refer to the xref:troubleshooting.adoc[Troubleshooting] section.
