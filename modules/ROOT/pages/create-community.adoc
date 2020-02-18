@@ -293,7 +293,6 @@ In these steps, use the public group you just created.
 .. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
 . In *Select the users to share with*, enter *Share with* `Public Groups` and `[Community Name] Public Group`.
 . In *Select the level of access for the users*, select *Read Only*.
-. In *Other Settings*, ensure that *Secure guest user record access* is disabled.
 . Click Save.
 . Switch to Salesforce Classic by clicking the user profile menu at top right and clicking *Switch to Salesforce Classic*.
 . Click the plus (`+`) button at the end of the navigation menu bar.
