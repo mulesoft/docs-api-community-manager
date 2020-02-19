@@ -14,6 +14,9 @@ Applications:: Details of the client applications of the users
 API Versions:: Basic details of API versions from Exchange
 API Documentation:: API version information and documentation pages
 API Instances:: Available instances of each published API version
+Categories:: Categories defined in Exchange for organizing APIs
+API Categories:: Category values that have been applied to APIs in Exchange
+API Tier Limits:: Service Level Access (SLA) tier limits, such as the number of requests an API can make
 API Query:: Responses of the "Try It" operation in the API Console
 
 Set which parts are enabled and the amount of time the cache keeps each type of data:
@@ -23,7 +26,7 @@ Set which parts are enabled and the amount of time the cache keeps each type of 
 . Next to the label *ACM Platform Cache Metadata*, click *Manage Records*.
 . Next to the label *ACM Configuration*, click *Edit*.
 . Use the *Session Cache Enabled* and *Organization Cache Enabled* checkboxes to enable or disable the corresponding cache.
-. Set the number of seconds that cached data remains in the cache for applications, API versions, documentation content, instances, and queries.
+. Set the number of seconds that cached data remains in the cache for applications, API versions, documentation content, instances, categories and category values, tier limits, and queries.
 . If you want to see the minimum and maximum number of seconds for each entity, hover over the question mark (?) next to each field name.
 . If you want to disable caching of an entity, set that field to zero seconds.
 . Click *Save*.
