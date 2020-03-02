@@ -262,7 +262,8 @@ These are the permissions for the guest users:
 
 To configure permissions for the guest user profile:
 
-. In *Setup*, navigate to the guest user profile link in the *Guest user profile* section, named *[Community Name] Profile*.
+. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
+. In the *Guest user profile* section, click *[Community Name] Profile*.
 . Click *Edit*.
 . In Object Settings, edit the object permissions to match those shown in the previous table.
 . Click *Save*.
