@@ -503,6 +503,7 @@ Also, click *Download metadata* and retrieve the public key in the `<ds:X509Cert
 . Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
 . Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
+. Check the *Enable new non-SSO users* checkbox
 . Click *Save*.
 
 Configure and authorize the OData bridge to perform impersonation.
