@@ -10,8 +10,13 @@ For information about updates, see xref:notifications.adoc[Important Notificatio
 
 To update your API community:
 
-. Open the API Community Manager control panel.
-. In the same browser session, open the *package update installation link* provided by your MuleSoft representative.
+. Log-in your API Community Manager Salesforce org (production org or any of your sanboxes)
+. Take the *package update installation link* provided by your MuleSoft Customer Success representative, replace the "[YOUR-ORG-DOMAIN]" placeholder with the domain of your org from the previous step, open it in the samew browser. If you're upgrading a sandbox environment, ensure you use the appropriate suffix in your domain, for example:
+- If the package link is "https://[YOUR-DOMAIN].my.salesforce.com/packaging/installPackage.apexp?p0=ABC123ABC123"...
+- If your org domain is "mycompany" and you want to upgrade your main production environment, your installation link should look like "https://mycompany.my.salesforce.com/packaging/installPackage.apexp?p0=ABC123ABC123"
+- If your org domain is "mycompany" and you want to upgrade your "dev" sandbox environment, your installation link should look like "https://mycompany--dev.my.salesforce.com/packaging/installPackage.apexp?p0=ABC123ABC123
+- If your org domain is "mycompany" and you want to upgrade your "qa" sandbox environment, your installation link should look like "https://mycompany--qa.my.salesforce.com/packaging/installPackage.apexp?p0=ABC123ABC123
+
 . Verify the version number and name of the release.
 . If you are upgrading from a package version before 1.26, follow these steps:
 .. Go to Salesforce Workbench: https://workbench.developerforce.com/
