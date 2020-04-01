@@ -24,6 +24,7 @@
  ** xref:publish-apis.adoc[Publish APIs]
  ** xref:publish-content.adoc[Publish Content and CMS Articles]
  ** xref:moderate-forums.adoc[Moderate Forums]
+ ** xref:client-apps-contracts.adoc[Manage Client Applications and Contracts]
  ** xref:manage-members.adoc[Manage Members]
 * xref:administer-community.adoc[Administer Your API Community]
  ** xref:notifications.adoc[Important Notifications]
