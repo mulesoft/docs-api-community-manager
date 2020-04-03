@@ -1,0 +1,41 @@
+= Manage Client Applications and Contracts
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+You can enable your consumer developers to request access to APIs in your community and to manage their client applications and contracts.
+
+== API Access
+
+Use the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component on an API details page to enable consumer developers to request a contract with the corresponding API.
+
+The component allows a developer to select:
+
+* An instance of the API, from the available instances in Anypoint API Manager that have public visibility in Anypoint Exchange
+* A service-level agreement (SLA) tier, if the selected API instance has SLA tiers defined in API Manager
+* A client application, either existing or new
+
+The community displays only API instances with xref:exchange::to-configure-api-settings.adoc[visibility set to public in Exchange].
+
+When a consumer developer creates a new application, they can provide an additional description. If the API uses the OAuth 2.0 authentication mechanism, the consumer developer can provide an OAuth 2.0 redirect URI.
+
+If the Anypoint organization is configured to use external identity for client applications, then new client applications are created in the corresponding identity provider xref:api-manager::configure-multiple-credential-providers.adoc[according to the environment of the selected API instance]. When a consumer developer selects an existing client application for a contract, only client applications with the same identity provider as the selected API instance are available to select.
+
+When a consumer developer selects an existing client application, the consumer developer sees all the client applications that their user account has permissions to see in the Anypoint Platform. This includes the client applications created by this user, and also any other client applications that are visible to this user through roles, permissions, or client application ownership assignment in API Manager.
+
+Client applications and contracts requested through Anypoint API Community Manager are created in API Manager. Depending on the SLA tier configuration, they are approved automatically or they require approval by the API owner. To review and approve contracts, refer to xref:api-manager::manage-client-apps-latest-task.adoc[the API Manager documentation].
+
+You can define a custom process or workflow to create client applications and contracts with the Salesforce Approval Process, Salesforce Lightning Flow, or custom Lightning components and Apex code. These approaches use the API Community Manager external objects to interact with the Anypoint Platform through the data bridge, so the same principles and operation apply.
+
+== Managing Client Apps and Contracts
+
+If a consumer developer has access to a client application or contract in your API Community, then the *Application Listing*, *Application Details* and *Application Analytics Graph* Lightning components display detailed information to them about the client application or contract.
+
+The xref:acm-lightning-components.adoc#application-listing[Application Listing] component shows a consumer developer a list of all the applications that their user account in the Anypoint Platform can access. The list includes the client applications created by this user through your community, and also any other client application that this user can access, including client applications where this user has been assigned as owner in API Manager, and other client applications visible through user roles and permissions.
+
+Each item in the application listing component has a *Delete* option, and a *View* option which shows an application details page for the application.
+
+The application details page uses the xref:acm-lightning-components.adoc#application-details[Application Details] component to show the application's credentials, an option to reset the credentials, the application's contracts, and an option to change the SLA tier of each contract.
+
+The application details page can include the xref:acm-lightning-components.adoc#application-analytics-graph[Application Analytics Graph] component, which shows an activity chart with an individual client application's throughput and response time metrics.

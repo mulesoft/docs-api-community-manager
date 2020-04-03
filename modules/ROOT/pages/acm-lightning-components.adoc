@@ -291,7 +291,7 @@ You can specify values for the following parameters of the API Header:
 
 API:: Specifies the API to show.
 
-== Application Analytics Graph
+== Application Analytics Graph [[application-analytics-graph]]
 
 The Application Analytics Graph component displays statistics about the use of an application, such as traffic, response time, and application health.
 
@@ -301,7 +301,7 @@ You can specify values for the following parameters of the Application Analytics
 
 Application:: Specifies the application to show.
 
-== Application Details
+== Application Details [[application-details]]
 
 The Application Details component displays details about an application.
 
@@ -311,7 +311,7 @@ You can specify values for the following parameters of the Application Details:
 
 Application:: Specifies the API to show.
 
-== Application Listing
+== Application Listing [[application-listing]]
 
 The Application Listing component shows applications that use an API.
 

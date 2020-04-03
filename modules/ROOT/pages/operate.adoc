@@ -3,6 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
+:page-aliases: support.adoc
 
 These pages explain how to publish APIs and content to your Anypoint API
 Community Manager community and how to manage forums, members, and support cases.
@@ -28,5 +29,5 @@ To open the API Community Manager control panel at any time, open the Salesforce
 * xref:publish-apis.adoc[Publish APIs]
 * xref:publish-content.adoc[Publish Content and CMS Articles]
 * xref:moderate-forums.adoc[Moderate Forums]
-* xref:support.adoc[Support Cases]
+* xref:client-apps-contracts.adoc[Manage Client Applications and Contracts]
 * xref:manage-members.adoc[Manage Members]

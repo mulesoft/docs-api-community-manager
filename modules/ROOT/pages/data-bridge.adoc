@@ -124,18 +124,17 @@ NOTE: Remember to associate the external data source with this authentication pr
 == Authenticate the Data Bridge [[authenticate-data-bridge]]
 
 . Search for *External Data Source* in the *Quick Find* box and then click *External Data Sources*.
-. Locate *Exchange*  and click *Edit*.
+. Locate *Exchange* and click *Edit*.
 . Update *Identity Type* to *Named Principal*.
 . Update *Authentication Protocol* to *OAuth 2.0*.
 . Update *Authentication Provider* to *Anypoint*.
 . Click *Save*.
 . If you don't have an active session in your Anypoint Platform organization, log in.
 . Verify the Exchange *External Data Sources* *Authentication Status* is *Authenticated*.
-
-After authenticating the External Data Source, provide the credentials of an Anypoint Platform system user with read-only access, for Lightning components like the API Console which retrieve data directly from the Anypoint Platform APIs.
-
-. Obtain the username and password for the system user with read-only privileges in your Anypoint Platform organization.
 . Search for *Named Credentials* in the *Quick Find* box and then click *Named Credentials*.
 . Locate *anypoint.mulesoft* and click *Edit*.
-. In the *Authentication* section, enter the Anypoint Platform username and password for the read-only system user in the *Username* and *Password* fields.
+. Update *Identity Type* to *Named Principal*.
+. Update *Authentication Protocol* to *OAuth 2.0*.
+. For *Authentication Provider*, select your newly created *Anypoint* authentication provider.
+. Enable *Start Authentication Flow on Save*.
 . Click *Save*.
