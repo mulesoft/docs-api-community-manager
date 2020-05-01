@@ -1,0 +1,66 @@
+= Optionally Configure Branded Emails
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Anypoint API Community Manager sends notification emails when an API contract
+is approved or revoked. By default these emails use Anypoint addresses and
+branding. If you wish to configure them to use your own addresses and branding
+instead, use these steps.
+
+. Navigate to *Setup* > *Home* > *Integrations* > *External Data Sources* and ensure *Eligible for External Data Change Capture* is enabled.
+. Set *Polling Interval for External Change Data Capture (seconds)*.
++
+The default is 1800 and the minimum is 300.
+. Navigate to *Setup*, use *Quick Find* to go to *Change Data Capture*, navigate to *Entities* > *Change Manually* > *Available Entities*, and move *AnypointContracts* to the *Selected Entities* list.
+. Navigate to *Setup*, use *Quick Find* to go to *Apex Triggers*, and click the *Developer Console* button.
+. Click *File* > *New* > *Apex Trigger*, set *Name* to `AnypointEmailNotificationsTrigger`, and set *sObject* to `acm_pkg__AnypointContracts__ChangeEvent`.
+. Enter this code block:
++
+----
+    trigger AnypointEmailNotificationsTrigger on acm_pkg__AnypointContracts__ChangeEvent (after insert) {
+        List<acm_pkg__AnypointContracts__ChangeEvent> events = Trigger.new;
+        acm_pkg__.AnypointEmailNotifications.notifyOnContractUpdates(events);
+    }
+----
++
+. Grant the *Organization Admin* role to the Anypoint user named *Automated Process*.
++
+The impersonation configuration you performed created this Anypoint user automatically. It works with the Salesforce user named *Automated Process* to process triggers. The Anypoint user needs the *Organization Admin* role to process the API contract events when API contracts are approved or revoked.
+. Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
+. Set *Display Name* to `EventEmailSender`.
+. Set *Email Address* to the email address at your organization that will send the API contract event notification emails.
++
+Ensure you can read confirmation emails sent to this address.
+. Set *Profiles* to `System Administrator`.
+. Click *Save*.
+. Open the confirmation email sent to the notification sender email address and click the link to confirm the address.
+. Navigate to *Setup* and use *Quick Find* to go to *Custom Metadata Types*.
+. Click *ACM Community Config Metadata* to add a record.
+. Set *Label* to your API community's name.
+. Set *ACM Community Config Metadata Name* to your API community's name.
+. Open the *Developer Console* and open the *Query Editor*.
+. Enter `SELECT Id, Name FROM Network` and click *Execute*.
+. In the list of IDs and communities, choose the row with *Name* equal to your community's name, double click the ID, and copy it.
+. In the *ACM Community Config Metadata* field *NetworkId*, paste the ID.
+. In the *Query Editor*, enter `SELECT Id, Name FROM EmailTemplate` and click *Execute*.
+. In the list of IDs and email templates, choose the row with *Name* equal to *API Community Manager: Contract Approved*, double click the ID, and copy it.
+. In the *ACM Community Config Metadata* field *ContractApprovedEmailTemplateId*, paste the ID.
+. In the list of IDs and email templates, choose the row with *Name* equal to *API Community Manager: Contract Revoked*, double click the ID, and copy it.
+. In the *ACM Community Config Metadata* field *ContractRevokedEmailTemplateId*, paste the ID.
+. In the *Query Editor*, enter `SELECT Id, Address FROM OrgWideEmailAddress` and click *Execute*.
+. In the list of IDs and email addresses, choose the row with *Address* equal to the organization wide email address you set, double click the ID, and copy it.
+. In the *ACM Community Config Metadata* field *OrgWideEmailAddressId*, paste the ID.
+. Click *Save*.
+. Repeat this process for all additional communities, creating one record for each community.
++
+*NetworkId* is different for each community. *ContractApprovedEmailTemplateId*, *ContractRevokedEmailTemplateId*, and *OrgWideEmailAddressId* may be the same for multiple communities.
+. Navigate to *Setup*, use *Quick Find* to go to *Classic Email Templates*, and navigate to *Folder* > *ACM*.
+. Customize the *API Community Manager: Contract Approved* and *API Community Manager: Contract Revoked* templates, or create your own templates and configure the *ACM Community Config Metadata* to use them.
+. Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/articleView?id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
++
+If the relay is not configured, notification emails will be sent from a Salesforce domain with a sender email address in your organization's domain. The actual sender domain and sender email address domain will not match, and many email providers will mark the notification emails as spam.
+. Modify the headers of the external data source so the default notification emails with Anypoint branding are no longer sent.
++
+Add a suffix to the email address, such as `.donotsend`, so that an email address such as `name@domain.com` becomes `name@domain.com.donotsend` and is not valid.
