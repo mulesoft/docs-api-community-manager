@@ -27,7 +27,7 @@ The default is 1800 and the minimum is 300.
 +
 . Grant the *Organization Administrator* role to the Anypoint user named *Automated Process*.
 +
-The impersonation configuration you performed created this Anypoint user automatically. It works with the Salesforce user named *Automated Process* to process triggers. The Anypoint user needs the *Organization Admin* role to process the API contract events when API contracts are approved or revoked.
+The impersonation configuration you performed created this Anypoint user automatically. It works with the Salesforce user named *Automated Process* to process triggers. The Anypoint user needs the *Organization Administrator* role to process the API contract events when API contracts are approved or revoked.
 . Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
 . Set *Display Name* to `EventEmailSender`.
 . Set *Email Address* to the email address at your organization that will send the API contract event notification emails.
