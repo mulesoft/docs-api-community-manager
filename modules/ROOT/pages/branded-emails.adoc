@@ -5,7 +5,7 @@ endif::[]
 :imagesdir: ../assets/images/
 
 Anypoint API Community Manager sends notification emails when an API contract
-is approved or revoked. By default these emails use Anypoint addresses and
+is approved or revoked. By default these emails use Anypoint Platform addresses and
 branding. If you wish to configure them to use your own addresses and branding
 instead, use these steps.
 
