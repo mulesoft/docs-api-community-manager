@@ -9,6 +9,8 @@ is approved or revoked. By default these emails use Anypoint Platform addresses 
 branding. If you wish to configure them to use your own addresses and branding
 instead, use these steps.
 
+== Enable Custom Email Notifications
+
 . Navigate to *Setup* > *Home* > *Integrations* > *External Data Sources* and ensure *Eligible for External Data Change Capture* is enabled.
 . Set *Polling Interval for External Change Data Capture (seconds)*.
 +
@@ -25,9 +27,6 @@ The default is 1800 and the minimum is 300.
     }
 ----
 +
-. Grant the *Organization Administrator* role to the Anypoint user named *Automated Process*.
-+
-The impersonation configuration you performed created this Anypoint user automatically. It works with the Salesforce user named *Automated Process* to process triggers. The Anypoint user needs the *Organization Administrator* role to process the API contract events when API contracts are approved or revoked.
 . Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
 . Set *Display Name* to `EventEmailSender`.
 . Set *Email Address* to the email address at your organization that sends the API contract event notification emails.
@@ -61,6 +60,23 @@ Ensure you can read confirmation emails sent to this address.
 . Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/articleView?id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
 +
 If the relay is not configured, notification emails are sent from a Salesforce domain with a sender email address in your organization's domain. If the actual sender domain and sender email address domain do not match, many email providers mark the notification emails as spam.
-. Modify the headers of the external data source so the default notification emails with Anypoint branding are no longer sent.
+
+== Disable Default Anypoint Email Notifications
+
+The impersonation mechanism creates Anypoint user records with member email addresses. To prevent a community member from receiving the default Anypoint notification emails, alter these email addresses so the Anypoint user record email is not a valid address.
+
+. In Salesforce, navigate to *Setup* > *External Data Sources*.
+. Click the *Name* of the external data source `Exchange` to open it in view mode.
+. Under *Custom HTTP Headers*, find the *X-Email* header and click *Edit*.
+. In the *Header field value* field, add a suffix. Example: `$User.Email + ".donotsend"`
+
+== Anypoint Permissions Configuration
+
+. Log in to your API community as an administrative user.
+. In the public side of the community, request access to an API with manual approval.
+. Log in to Anypoint and approve the requested API contract.
 +
-Add a suffix to the email address, such as `.donotsend`, so that an email address such as `name@domain.com` becomes `name@domain.com.donotsend` and is not valid.
+This creates the Anypoint user named *Automated Process*, which works with the Salesforce user named *Automated Process* to process triggers.
+. Grant the Anypoint user named *Automated Process* the *Organization Administrator* role xref:access-management::roles.adoc[using Anypoint Access Management].
++
+This enables the Anypoint user to process API contract events when API contracts are approved or revoked.
