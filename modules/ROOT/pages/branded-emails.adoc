@@ -60,7 +60,7 @@ Ensure you can read confirmation emails sent to this address.
 . Customize the *API Community Manager: Contract Approved* and *API Community Manager: Contract Revoked* templates, or create your own templates and configure the *ACM Community Config Metadata* to use them.
 . Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/articleView?id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
 +
-If the relay is not configured, notification emails will be sent from a Salesforce domain with a sender email address in your organization's domain. The actual sender domain and sender email address domain will not match, and many email providers will mark the notification emails as spam.
+If the relay is not configured, notification emails are sent from a Salesforce domain with a sender email address in your organization's domain. The actual sender domain and sender email address domain do not match, and many email providers mark the notification emails as spam.
 . Modify the headers of the external data source so the default notification emails with Anypoint branding are no longer sent.
 +
 Add a suffix to the email address, such as `.donotsend`, so that an email address such as `name@domain.com` becomes `name@domain.com.donotsend` and is not valid.
