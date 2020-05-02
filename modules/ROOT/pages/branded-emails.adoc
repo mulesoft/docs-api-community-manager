@@ -25,7 +25,7 @@ The default is 1800 and the minimum is 300.
     }
 ----
 +
-. Grant the *Organization Admin* role to the Anypoint user named *Automated Process*.
+. Grant the *Organization Administrator* role to the Anypoint user named *Automated Process*.
 +
 The impersonation configuration you performed created this Anypoint user automatically. It works with the Salesforce user named *Automated Process* to process triggers. The Anypoint user needs the *Organization Admin* role to process the API contract events when API contracts are approved or revoked.
 . Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
