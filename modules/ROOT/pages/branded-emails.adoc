@@ -17,7 +17,7 @@ instead, use these steps.
 The default is 1800 and the minimum is 300.
 . Navigate to *Setup*, use *Quick Find* to go to *Change Data Capture*, navigate to *Entities* > *Change Manually* > *Available Entities*, and move *AnypointContracts* to the *Selected Entities* list.
 . Navigate to *Setup*, use *Quick Find* to go to *Apex Triggers*, and click the *Developer Console* button.
-. Click *File* > *New* > *Apex Trigger*, set *Name* to `AnypointEmailNotificationsTrigger`, and set *sObject* to `acm_pkg__AnypointContracts__ChangeEvent`.
+. Click *File* > *New* > *Apex Trigger*, set *Name* to `AnypointEmailNotificationsTrigger`, and set *sObject* to `acm_pkg\__AnypointContracts__ChangeEvent`.
 . Enter this code block:
 +
 ----
