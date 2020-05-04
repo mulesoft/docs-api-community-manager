@@ -17,7 +17,7 @@ instead, use these steps.
 The default is 1800 and the minimum is 300.
 . Navigate to *Setup*, use *Quick Find* to go to *Change Data Capture*, navigate to *Entities* > *Change Manually* > *Available Entities*, and move *AnypointContracts* to the *Selected Entities* list.
 . Navigate to *Setup*, use *Quick Find* to go to *Apex Triggers*, and click the *Developer Console* button.
-. Click *File* > *New* > *Apex Trigger*, set *Name* to `AnypointEmailNotificationsTrigger`, and set *sObject* to `acm_pkg__AnypointContracts__ChangeEvent`.
+. Click *File* > *New* > *Apex Trigger*, set *Name* to `AnypointEmailNotificationsTrigger`, and set *sObject* to `acm_pkg\__AnypointContracts__ChangeEvent`.
 . Enter this code block:
 +
 ----
@@ -44,9 +44,9 @@ Ensure you can read confirmation emails sent to this address.
 . In the list of IDs and communities, choose the row with *Name* equal to your community's name, double click the ID, and copy it.
 . In the *ACM Community Config Metadata* field *NetworkId*, paste the ID.
 . In the *Query Editor*, enter `SELECT Id, Name FROM EmailTemplate` and click *Execute*.
-. In the list of IDs and email templates, choose the row with *Name* equal to *API Community Manager: Contract Approved*, double click the ID, and copy it.
+. In the list of IDs and email templates, choose the row with *Name* equal to *Contract Approved*, double click the ID, and copy it.
 . In the *ACM Community Config Metadata* field *ContractApprovedEmailTemplateId*, paste the ID.
-. In the list of IDs and email templates, choose the row with *Name* equal to *API Community Manager: Contract Revoked*, double click the ID, and copy it.
+. In the list of IDs and email templates, choose the row with *Name* equal to *Contract Revoked*, double click the ID, and copy it.
 . In the *ACM Community Config Metadata* field *ContractRevokedEmailTemplateId*, paste the ID.
 . In the *Query Editor*, enter `SELECT Id, Address FROM OrgWideEmailAddress` and click *Execute*.
 . In the list of IDs and email addresses, choose the row with *Address* equal to the organization wide email address you set, double click the ID, and copy it.
@@ -56,7 +56,7 @@ Ensure you can read confirmation emails sent to this address.
 +
 *NetworkId* is different for each community. *ContractApprovedEmailTemplateId*, *ContractRevokedEmailTemplateId*, and *OrgWideEmailAddressId* may be the same for multiple communities.
 . Navigate to *Setup*, use *Quick Find* to go to *Classic Email Templates*, and navigate to *Folder* > *ACM*.
-. Customize the *API Community Manager: Contract Approved* and *API Community Manager: Contract Revoked* templates, or create your own templates and configure the *ACM Community Config Metadata* to use them.
+. Customize the *Contract Approved* and *Contract Revoked* templates, or create your own templates and configure the *ACM Community Config Metadata* to use them.
 . Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/articleView?id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
 +
 If the relay is not configured, notification emails are sent from a Salesforce domain with a sender email address in your organization's domain. If the actual sender domain and sender email address domain do not match, many email providers mark the notification emails as spam.
