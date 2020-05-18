@@ -2,7 +2,6 @@
 * xref:index.adoc[Overview]
 * xref:data-sheets.adoc[Data Sheets]
  ** xref:licensing-overview.adoc[Licensing Overview]
- ** xref:browser-support.adoc[Browser Support]
  ** xref:security.adoc[Security]
 * xref:install.adoc[Install]
  ** xref:installation-prerequisites.adoc[Installation Prerequisites]
