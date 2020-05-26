@@ -384,7 +384,7 @@ The available buttons are *Download Spec as RAML* and *Download Spec as OAS*. If
 You can specify values for the following parameters of the Spec Downloader component:
 
 Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the specification of the API selected on the current page.
-Layout:: Specifies the layout of the buttons. Default is `Horizontal`.
+Layout:: Specifies the layout of the buttons, `Horizontal` or `Vertical`. Default is `Horizontal`.
 
 == Filter Conditions [[filter-conditions]]
 
