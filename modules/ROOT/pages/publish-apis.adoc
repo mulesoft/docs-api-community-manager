@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-As an Anypoint API Community Manager community administrator, you can add and publish APIs and minor and major updates from Anypoint Exchange into your community. 
+As an Anypoint API Community Manager community administrator, you can add and publish APIs and API groups and minor and major updates from Anypoint Exchange into your community. 
 
 This information includes the API documentation stored with the APIs in Exchange.
 The API documentation is separate from the articles stored in the Salesforce
@@ -13,7 +13,7 @@ documentation updates, and the CMS article release process is usually separate.
 Often a development team will lead the API release process and a marketing team
 will lead the CMS article release process.
 
-== Add APIs from Exchange to Your Community
+== Add APIs or API Groups from Exchange to Your Community
 
 . Open the API Community Manager control panel and select *Manage APIs*.
 +
@@ -126,7 +126,7 @@ Consumer developers can no longer see the previous API version in the API carous
 
 If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
 
-== Searching APIs
+== Searching APIs and API Groups
 
 In the API Community Manager control panel, the *Manage APIs* tab shows a *Search APIs* field.
 
