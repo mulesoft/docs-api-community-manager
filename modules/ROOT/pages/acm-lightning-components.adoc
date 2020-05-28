@@ -379,12 +379,14 @@ The Spec Downloader component enables users to download an API specification.
 
 The API specification downloaded from API Community Manager is the same as the specification downloaded from Anypoint Exchange.
 
-The available buttons are *Download Spec as RAML* and *Download Spec as OAS*. If the API specification is uploaded as RAML and downloaded as OAS, or uploaded as OAS and downloaded as RAML, then the downloaded version is automatically generated and may have small inconsistencies with the uploaded version.
+The available buttons are *Download Spec as RAML* and *Download Spec as OAS*.
+
+Specifications may be uploaded as either RAML or OAS, and the other version is automatically generated. Due to small differences in the RAML and OAS formats, the automatically generated version might have small inconsistencies with the uploaded version.
 
 You can specify values for the following parameters of the Spec Downloader component:
 
 Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the specification of the API selected on the current page.
-Layout:: Specifies the layout of the buttons, `Horizontal` or `Vertical`. Default is `Horizontal`.
+Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
 
 == Filter Conditions [[filter-conditions]]
 
