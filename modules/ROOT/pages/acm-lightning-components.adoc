@@ -373,6 +373,21 @@ Extra Field Set:: Specifies extra fields.
 Registrations Require Approval:: Select whether registration requires approval.
 Approver ID:: Specifies the approver ID.
 
+== Spec Downloader
+
+The Spec Downloader component enables users to download an API specification.
+
+The API specification downloaded from API Community Manager is the same as the specification downloaded from Anypoint Exchange.
+
+The available buttons are *Download Spec as RAML* and *Download Spec as OAS*.
+
+Specifications may be uploaded as either RAML or OAS, and the other version is automatically generated. Due to small differences in the RAML and OAS formats, the automatically generated version might have small inconsistencies with the uploaded version.
+
+You can specify values for the following parameters of the Spec Downloader component:
+
+Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the specification of the API selected on the current page.
+Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
+
 == Filter Conditions [[filter-conditions]]
 
 The API Carousel component and the API Catalog component use the parameter *Filter Condition (Advanced)* to show only the APIs that meet the _condition_ (a standard search in Salesforce Object Query Language (SOQL)).
