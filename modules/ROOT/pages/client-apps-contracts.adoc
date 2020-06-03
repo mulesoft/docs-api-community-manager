@@ -4,27 +4,27 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-You can enable your consumer developers to request access to APIs in your community and to manage their client applications and contracts.
+You can enable your consumer developers to request access to APIs and API Groups in your community and to manage their client applications and contracts.
 
 == API Access
 
-Use the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component on an API details page to enable consumer developers to request a contract with the corresponding API.
+Use the xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] Lightning component on an API details page to enable consumer developers to request a contract with the corresponding API or API Group.
 
 The component allows a developer to select:
 
-* An instance of the API, from the available instances in Anypoint API Manager that have public visibility in Anypoint Exchange
-* A service-level agreement (SLA) tier, if the selected API instance has SLA tiers defined in API Manager
+* An instance of the API or API Group, from the available instances in Anypoint API Manager that have public visibility in Anypoint Exchange
+* A service-level agreement (SLA) tier, if the selected API or API Group instance has SLA tiers defined in API Manager
 * A client application, either existing or new
 
-The community displays only API instances with xref:exchange::to-configure-api-settings.adoc[visibility set to public in Exchange].
+The community displays only API and API Group instances with xref:exchange::to-configure-api-settings.adoc[visibility set to public in Exchange].
 
-When a consumer developer creates a new application, they can provide an additional description. If the API uses the OAuth 2.0 authentication mechanism, the consumer developer can provide an OAuth 2.0 redirect URI.
+When a consumer developer creates a new application, they can provide an additional description. If the API or API Group uses the OAuth 2.0 authentication mechanism, the consumer developer can provide an OAuth 2.0 redirect URI.
 
-If the Anypoint organization is configured to use external identity for client applications, then new client applications are created in the corresponding identity provider xref:api-manager::configure-multiple-credential-providers.adoc[according to the environment of the selected API instance]. When a consumer developer selects an existing client application for a contract, only client applications with the same identity provider as the selected API instance are available to select.
+If the Anypoint organization is configured to use external identity for client applications, then new client applications are created in the corresponding identity provider xref:api-manager::configure-multiple-credential-providers.adoc[according to the environment of the selected API or API Group instance]. When a consumer developer selects an existing client application for a contract, only client applications with the same identity provider as the selected API or API Group instance are available to select.
 
 When a consumer developer selects an existing client application, the consumer developer sees all the client applications that their user account has permissions to see in the Anypoint Platform. This includes the client applications created by this user, and also any other client applications that are visible to this user through roles, permissions, or client application ownership assignment in API Manager.
 
-Client applications and contracts requested through Anypoint API Community Manager are created in API Manager. Depending on the SLA tier configuration, they are approved automatically or they require approval by the API owner. To review and approve contracts, refer to xref:api-manager::manage-client-apps-latest-task.adoc[the API Manager documentation].
+Client applications and contracts requested through Anypoint API Community Manager are created in API Manager. Depending on the SLA tier configuration, they are approved automatically or they require approval by the API or API Group owner. To review and approve contracts, refer to xref:api-manager::manage-client-apps-latest-task.adoc[the API Manager documentation].
 
 You can define a custom process or workflow to create client applications and contracts with the Salesforce Approval Process, Salesforce Lightning Flow, or custom Lightning components and Apex code. These approaches use the API Community Manager external objects to interact with the Anypoint Platform through the data bridge, so the same principles and operation apply.
 
