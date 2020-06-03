@@ -79,7 +79,7 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 == API Carousel
 
-The API Carousel component shows a horizontally scrollable set of API cards.
+The API Carousel component shows a horizontally scrollable set of API cards. Each card shows an API or API Group.
 
 The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community].
 
@@ -97,6 +97,7 @@ Card Border:: Specifies the card border thickness.
 Card Border Radius:: Specifies the card border radius. A larger radius makes the cards look more rounded.
 Card Shadow:: Specifies the shadow beneath each card.
 Message If Empty:: Shows a message if the carousel has no APIs. Default is `There are no APIs available right now.`
+Show:: Specifies whether to show *APIs*, *Groups*, *APIs and Groups*, or *Children*. Default is *APIs and Groups*. *Children* shows the APIs in an API Group. Use the *Children* setting only on pages with *Page Variation* set to *API Group Detail* and not *API Detail*.
 Filter Condition (Advanced):: Causes the carousel to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
 Categories Filter (Advanced):: Causes the carousel to show only APIs that match the given categories, using the syntax described in <<categories-filter>>.
 API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
@@ -104,7 +105,7 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 == API Catalog
 
-The API Catalog component offers API consumers an interactive way to explore all the available APIs in an API community. It shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs by categories and search terms. The catalog is suitable for displaying and exploring large numbers of API versions.
+The API Catalog component offers API consumers an interactive way to explore all the available APIs and API Groups in an API community. It shows API cards in rows and columns, divided into pages, and controls to filter the displayed APIs and API Groups by categories and search terms. Each card shows an API or API Group. The catalog is suitable for displaying and exploring large numbers of API versions.
 
 In the template community, the link to the API Catalog component appears below the API Carousel component. If a community has multiple API Catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
 
@@ -133,6 +134,7 @@ Category Filter 1 through Category Filter 5:: Specifies the categories that comm
 Category Color 1 through Category Color 5:: Specifies the color for each category.
 Search Input Position:: Specifies whether the search box is next to the filters or below the filters and above the cards.
 Category Card Badge 1 through Category Card Badge 3:: Specifies the categories that appear at the top of the cards as badges, with colors matching the category colors.
+Show:: Specifies whether to show *APIs*, *Groups*, *APIs and Groups*, or *Children*. Default is *APIs and Groups*. *Children* shows the APIs in an API Group. Use the *Children* setting only on pages with *Page Variation* set to *API Group Detail* and not *API Detail*.
 Filter Condition (Advanced):: Causes the catalog to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
 Categories Filter (Advanced):: Causes the catalog to show only APIs that match the given categories, using the syntax described in <<categories-filter>>.
 
@@ -303,9 +305,9 @@ Application:: Specifies the application to show.
 
 == Application Details [[application-details]]
 
-The Application Details component displays details about an application.
+The Application Details component displays details about an application from xref:api-manager::index.adoc[Anypoint API Manager].
 
-The component shows the application description, application URL, redirect URIs, client ID, and client secret from xref:api-manager::index.adoc[Anypoint API Manager].
+The component shows the application description, application URL, redirect URIs, client ID, client secret, and contracts with APIs and API Groups.
 
 You can specify values for the following parameters of the Application Details:
 
