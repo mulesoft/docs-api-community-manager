@@ -60,9 +60,9 @@ Show Modal Title Line:: Shows the title line in the access request modal.
 
 == API Card
 
-The API Card component shows information about an API, including icon, name, and description.
+The API Card component shows information about an API or API Group, including icon, name, and description.
 
-The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community].
+The icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API or API Group version to your community].
 
 You can specify values for the following parameters of the API Card:
 
