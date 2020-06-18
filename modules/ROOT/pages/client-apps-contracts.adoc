@@ -18,13 +18,13 @@ The component allows a developer to select:
 
 The community displays only API and API Group instances with xref:exchange::to-configure-api-settings.adoc[visibility set to public in Exchange].
 
-When a consumer developer creates a new application, they can provide an additional description. If the API or API Group uses the OAuth 2.0 authentication mechanism, the consumer developer can provide an OAuth 2.0 redirect URI.
+When a consumer developer creates a new application, they can provide an additional description. If the API or API Group uses OAuth 2.0 authentication, the consumer developer can provide an OAuth 2.0 redirect URI.
 
 If the Anypoint organization is configured to use external identity for client applications, then new client applications are created in the corresponding identity provider xref:api-manager::configure-multiple-credential-providers.adoc[according to the environment of the selected API or API Group instance]. When a consumer developer selects an existing client application for a contract, only client applications with the same identity provider as the selected API or API Group instance are available to select.
 
 When a consumer developer selects an existing client application, the consumer developer sees all the client applications that their user account has permissions to see in the Anypoint Platform. This includes the client applications created by this user, and also any other client applications that are visible to this user through roles, permissions, or client application ownership assignment in API Manager.
 
-Client applications and contracts requested through Anypoint API Community Manager are created in API Manager. Depending on the SLA tier configuration, they are approved automatically or they require approval by the API or API Group owner. To review and approve contracts, refer to xref:api-manager::manage-client-apps-latest-task.adoc[the API Manager documentation].
+Client applications and contracts requested through Anypoint API Community Manager are created in API Manager. Depending on the SLA tier configuration, they are approved automatically or they require approval by the owner of the API or API Group. To review and approve contracts, refer to xref:api-manager::manage-client-apps-latest-task.adoc[the API Manager documentation].
 
 You can define a custom process or workflow to create client applications and contracts with the Salesforce Approval Process, Salesforce Lightning Flow, or custom Lightning components and Apex code. These approaches use the API Community Manager external objects to interact with the Anypoint Platform through the data bridge, so the same principles and operation apply.
 
