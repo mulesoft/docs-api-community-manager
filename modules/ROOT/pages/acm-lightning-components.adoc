@@ -20,7 +20,7 @@ You can specify values for the following parameters of the API Community Manager
 
 Component Title:: Specifies the title for the search input field.
 Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
-Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Pages, and Forums.
+Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Managed Content (CMS), Pages, and Forums.
 Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
 
 The Linked Result Page parameter specifies the URL of a search results page, and the search results page must include an ACM Search Results component to display the search results. If the page does not include an ACM Search Results component, members and guest users who enter a search will go to the page and see no results.
@@ -28,8 +28,6 @@ The Linked Result Page parameter specifies the URL of a search results page, and
 If a content type is not selected in the Search Areas parameter, then the linked ACM Search Results component omits results of that content type.
 
 Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
-
-IMPORTANT: The search does not include CMS articles in the search results.
 
 Search results are sorted by the date they were most recently modified, from newest to oldest.
 
