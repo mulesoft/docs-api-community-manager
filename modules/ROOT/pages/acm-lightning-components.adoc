@@ -383,7 +383,7 @@ The API specification downloaded from API Community Manager is the same as the s
 
 The available buttons are *Download Spec as RAML* and *Download Spec as OAS*.
 
-Specifications may be uploaded as RAML, OAS 2.0, or OAS 3.0. When a RAML version is uploaded, an OAS 2.0 version is automatically generated. When an OAS 2.0 or OAS 3.0 version is uploaded, a RAML version is automatically generated. Due to small differences in the RAML and OAS formats, the automatically generated version might have small inconsistencies with the uploaded version.
+Upload specifications as RAML, OAS 2.0, or OAS 3.0. Uploading a RAML version automatically generates an OAS 2.0 version. Uploading an OAS 2.0 or OAS 3.0 version automatically generates a RAML version. Due to small differences in the RAML and OAS formats, the automatically generated version might be slightly inconsistent with the uploaded version.
 
 You can specify values for the following parameters of the Spec Downloader component:
 
