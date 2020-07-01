@@ -294,17 +294,9 @@ These are the permissions for the guest users:
 |*Read*
 |All fields *Read Access*
 
-|AnypointApplications
-|*Read*, *Create*, *Edit*, *Delete*
-|All fields *Read Access*, *Edit Access*
-
 |AnypointCategories
 |*Read*
 |All fields *Read Access*
-
-|AnypointContracts
-|*Read*, *Create*, *Edit*, *Delete*
-|All fields *Read Access*, *Edit Access*
 
 |AnypointEnvironments
 |*Read*
