@@ -16,6 +16,7 @@
  ** xref:branded-emails.adoc[Optionally Configure Branded Emails]
 * xref:brand-intro.adoc[Brand and Customize Your API Community]
  ** xref:customize.adoc[API Community Look-and-Feel Customization]
+ ** xref:site-structure.adoc[API Community Site Structure]
  ** xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components]
  ** xref:preview-community.adoc[Preview Your API Community]
  ** xref:publish-community.adoc[Publish Your API Community]
