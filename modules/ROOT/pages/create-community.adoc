@@ -139,7 +139,35 @@ These are the permissions for the member users:
 |*Read*
 |All fields *Read Access*
 
+|AnypointApiFiles
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupInstances
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupInstancesApiInstances
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupTierLimits
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupTiers
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupVersions
+|*Read*
+|All fields *Read Access*
+
 |AnypointApiInstances
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiTierLimits
 |*Read*
 |All fields *Read Access*
 
@@ -222,7 +250,39 @@ These are the permissions for the guest users:
 |*Read*
 |All fields *Read Access*
 
+|AnypointApiFiles
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupInstances
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupInstancesApiInstances
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupTierLimits
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupTiers
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiGroupVersions
+|*Read*
+|All fields *Read Access*
+
 |AnypointApiInstances
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiTierLimits
+|*Read*
+|All fields *Read Access*
+
+|AnypointApiTiers
 |*Read*
 |All fields *Read Access*
 
