@@ -137,89 +137,91 @@ These are the permissions for the member users:
 
 |AnypointApiCategories
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiFiles
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupInstances
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupInstancesApiInstances
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupTierLimits
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupTiers
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupVersions
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiInstances
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiTierLimits
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiTiers
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiVersionQueries
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiVersions
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApplications
 |*Read*, *Create*, *Edit*, *Delete*
-|All fields *Read Access*, *Edit Access*
+|*Read Access*, *Edit Access*
 
 |AnypointCategories
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointContracts
 |*Read*, *Create*, *Edit*, *Delete*
-|All fields *Read Access*, *Edit Access*
+|*Read Access*, *Edit Access*
 
 |AnypointEnvironments
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointOrganizations
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |Cases
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |CommunityApis
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |Documents
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |SelfRegisterUserRequests
 |*Read*, *Create*, *Edit*, *Delete*
-|All fields *Read Access*, *Edit Access*
+|*Read Access*, *Edit Access*
 
 |======================
+
+All field-level permissions apply to all fields.
 
 To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
 
@@ -248,77 +250,79 @@ These are the permissions for the guest users:
 
 |AnypointApiCategories
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiFiles
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupInstances
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupInstancesApiInstances
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupTierLimits
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupTiers
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiGroupVersions
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiInstances
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiTierLimits
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiTiers
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiVersionQueries
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointApiVersions
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointCategories
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointEnvironments
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |AnypointOrganizations
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |CommunityApis
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |Documents
 |*Read*
-|All fields *Read Access*
+|*Read Access*
 
 |SelfRegisterUserRequests
 |*Read*, *Create*, *Edit*, *Delete*
-|All fields *Read Access*, *Edit Access*
+|*Read Access*, *Edit Access*
 
 |======================
+
+All field-level permissions apply to all fields.
 
 To configure permissions for the guest user profile:
 
