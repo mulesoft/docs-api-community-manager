@@ -5,7 +5,7 @@ endif::[]
 :imagesdir: ../assets/images/
 
 The structure of your API Community is defined by your xref:customize.adoc[community pages],
-the xref:acm-lightning-components.adoc[components] contained in each, and the links between them.
+the xref:acm-lightning-components.adoc[Lightning components] contained in each, and the links between them.
 You can define your own site structure and user journeys throughout your API community using these
 elements, tailored to your specific needs and desires.
 
@@ -13,27 +13,43 @@ A typical API Community will have the following site structure:
 
 image::site-structure.png[API Community Manager site structure]
 
-* Home page: Contains welcome information (Rich Text component or HTML component), highlighted APIs and API Groups (API Carousel component), and news and announcements (CMS Collection component). Also, it includes the main search bar (Search component)
-* Login page: Allows a member to log-in to your community, or go to the registration page if not a member already (Login Form component)
-** Registration page: Allows a guest user to register as a member in your community (Self Register component)
-* Search results: Shows results of searches in the community. Each result points the user to the appropriate page based on the type of the element, for example, a content article page, an API details page, etc. (Search results component)
-* News list page: Contains a list of the different content articles like news or announcements (CMS Collection component)
-** News detail page: Displays the full content of a specific content article (CMS Single Item component)
-* APIs and API Groups catalog page: Contains the full catalog of APIs and API Groups available in your community, for consumers to explore and discover (API Catalog component)
-** API and API Groups details page:  Displays the documentation and technical content of an API or API group, including the API Console and a way to request access to the API. The content of this page is tailored to the type of object being accessed using Page Variations [link to salesforce docs about variations]:
-*** Individual API page variation: This is the default page variation. It is used when an API object is opened from the API Card, the API Carousel, or API Catalog components. The API page variant includes the API name, icon, and description (API Header component), its markdown documentation from Exchange (Documentation viewer component), the API spec (API Console component), links to download the API spec (API Spec downloader component) and the button to request access (Access Requester component)
-*** API Group page variation: This page variation is used to display API Groups. It is used when an API Group object is opened from the API Card, the API Carousel, or API Catalog components. The API Group page variant includes the API Group name, icon, and description (API Header component), its markdown documentation from Exchange (Documentation viewer component), an API Carousel displaying the APIs part of this API Group (API Carousel component, configured for “Children” on the “show” setting LINK) and the button to request access (Access Requester component) to the API Group.
+* Home page: Contains welcome information (Rich Text component or HTML component), selected APIs and API Groups (API Carousel component), news and announcements (CMS Collection component), and the main search bar (Search component).
+* Login page: Allows a member to log in to your community, or go to the registration page if they are not already a member (Login Form component).
+* Registration page: Allows a guest user to register as a member in your community (Self Register component).
+* Search results page: Shows results of searches in the community (Search Results component).
++
+Each search result links to the appropriate page based on the type of the element, such as a content article page, an API details page, or others.
+* News list page: Contains a list of the different content articles, such as news or announcements (CMS Collection component).
+* News detail page: Displays the full content of a specific content article (CMS Single Item component).
+* APIs and API Groups catalog page: Contains the full catalog of APIs and API Groups available in your community, for consumers to explore and discover (API Catalog component).
+* API and API Groups details page: Displays the documentation and technical content of an API or API group, including the API Console and a way to request access to the API.
++
+The content of this page is tailored to the type of object being accessed using Page Variations [link to salesforce docs about variations]:
+** Individual API page variation: This default page variation is used when an API object is opened from the API Card, API Carousel, or API Catalog components.
++
+The API page variant includes the API name, icon, and description (API Header component), its markdown documentation from Exchange (Documentation viewer component), the API spec (API Console component), links to download the API spec (API Spec downloader component), and the button to request access (Access Requester component).
+*** API Group page variation: This page variation is used to display an API Group when an API Group object is opened from the API Card, API Carousel, or API Catalog components.
++
+The API Group page variant includes the API Group name, icon, and description (API Header component), its markdown documentation from Exchange (Documentation viewer component), an API Carousel displaying the APIs that are part of this API Group (API Carousel component, configured for "Children" on the "show" setting [LINK]), and the button to request access to the API Group (Access Requester component).
 +
 To configure this variation, you need to assign a new audience to this page variation for the API Group record type. To do this:
-. On the experience builder, open the CommunityAPI Details page by using the page selector on the top left.
-. Click on the gear icon next to the page name to open the page properties, and go to the "Page variations" tab.
-. Click on "New page variation", select the layout of your preference, click next and enter a name for the new variation, such as "API Group".
-. Once the new page variation is displayed, go again to the gear icon next to the page name to open the page properties, and go to the page variations tab.
-. Click on the context menu on the line item for your new page variation and select "assign" under the "Audience" section.
-. Select "New audience", enter an audience name like "API Group record type" and scroll down to open the "Advanced section". Select "CommunityApi" on the "record type" field, select Equals on the "operator" field, and select APIGroup on the "value" field. Click Save & assign.
-. After the new audience has been assigned, you can add the components you want to your page variation by using the components palette.
-** (optional) API marketing pages (one page for each API or API Group as required): each page displays content specific to an individual API or API Group (Rich Text component or HTML component) - each page is explicitly configured on the API or API Group details in the community control panel [link to publishing an api]
-* My applications page: Displays the member’s client applications (Applications Listing component)
-** Applications detail page: Displays details about one client application (Applications Details component)
-* Forums page: Displays components for discussion forums (Feed component)
-* Member profile page: Displays member profile information and allows the member to update his details (User Profile component)
+. In the Experience Builder, use the page selector at the top left to open the Community API Details page.
+. Click the gear icon next to the page name to open the page properties, and select the *Page variations* tab.
+. Click "New page variation", select your preferred layout, click Next, and enter a name for the new variation, such as "API Group".
++
+The new page variation is displayed.
+. Click the gear icon next to the page name to open the page properties, and select the *Page variations* tab.
+. On the line item for your new page variation, click the context menu, and under the *Audience* section, select *Assign*.
+. Select *New audience*, enter an audience name such as *API Group record type*, scroll down to open the *Advanced* section, and set these values:
+**** *Record type*: *CommunityApi*
+**** *Operator*: *equals*
+**** *Value*: *APIGroup*
+. Click *Save* and *Assign*.
+. After the new audience has been assigned, use the components palette to add the desired components to your page variation.
+* (optional) API marketing pages: Each page displays content specific to an individual API or API Group (Rich Text component or HTML component).
++
+Use one page for each API or API Group as required. Each page is explicitly configured on the API or API Group details in the community control panel [link to publishing an api].
+* My applications page: Displays the member's client applications (Applications Listing component).
+* Applications detail page: Displays details about one client application (Applications Details component).
+* Forums page: Displays components for discussion forums (Feed component).
+* Member profile page: Displays member profile information and allows the member to update their details (User Profile component).
