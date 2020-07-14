@@ -241,7 +241,7 @@ To configure permissions for the member user profile so your members can access 
 To set the required field-level permissions:
 
 . In *Setup*, open *Field Accessibility*.
-. Open each object in the table, and add the field-level permissions to the profile `ACM Member User`.
+. Open each object in the table, and add the field-level permissions to the profile *ACM Member User*.
 
 === Configure Guest User Profile Permissions
 
