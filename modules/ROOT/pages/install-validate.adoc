@@ -6,7 +6,14 @@ endif::[]
 
 To verify your installation and configuration:
 
-. Verify that the Exchange External Data Source status is *Authenticated*.
+. If you are using Java Web Tokens and not impersonation, verify the Exchange External Data Source.
+.. Open the Application Launcher.
+.. Enter *API Community Manager*.
+.. Open *Setup*.
+.. Search for *Named Credentials*.
+.. Locate *anypoint.mulesoft* and click *Edit*.
+.. Verify that the list *External Data User Authentications* shows your administrative Anypoint user.
+. If you are using impersonation and not Java Web Tokens, verify the Exchange External Data Source status is *Authenticated*.
 .. Open the Application Launcher.
 .. Enter *API Community Manager*.
 .. Open *Setup*.
