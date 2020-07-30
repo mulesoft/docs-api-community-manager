@@ -340,35 +340,16 @@ To configure permissions for the guest user profile:
 
 Configure sharing settings for guests:
 
-. In *Setup*, search for *Users* using the *Quick Find* box and click *Public Groups*.
-. Click *New*.
-. In the *Label* field, enter `[Community Name] Public Group`.
-. In the *Search* list, select *Users*.
-. Use the *Add* button to move `User: [Your Community Name] Site Guest User` from the *Available Members* box to the *Selected Members* box.
-. Click *Save*.
-
-In these steps, use the public group you just created.
-
 . In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
 . Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and click *New*.
 . In the *Rule Name* section, update *Label* with `[Community Name] Guest`.
-. In the *Select your rule type* section, select `Based on criteria`.
+. In the *Select your rule type* section, select `Guest user access, based on criteria`.
 . In the *Select which records to be shared* section, add these criteria.
 .. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
 .. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
-. In *Select the users to share with*, enter *Share with* `Public Groups` and `[Community Name] Public Group`.
+. In *Select the users to share with*, select `[Community Name] Site Guest User`.
 . In *Select the level of access for the users*, select *Read Only*.
-. In *Other Settings*, ensure that *Secure guest user record access* is disabled.
 . Click Save.
-. Switch to Salesforce Classic by clicking the user profile menu at top right and clicking *Switch to Salesforce Classic*.
-. Click the plus (`+`) button at the end of the navigation menu bar.
-. In the *View* list, select *Content* and then click *Libraries*.
-. In the *Manage Library* list on the right, select *Asset Library*.
-. In the *Members* section, select *Add Members*.
-. In the *Edit Library Membership Wizard*, in the *Search* list select `Public Groups` and add the
-public group previously created with the *Add* button. Click *Next*.
-. Assign the *Viewer* Permission and click *Save*.
-. Switch back to the Lightning Experience by clicking *Switch to Lightning Experience*.
 
 NOTE: If you ever change the name of your community, be sure to update this setting.
 

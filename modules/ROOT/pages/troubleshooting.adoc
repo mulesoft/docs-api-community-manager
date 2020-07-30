@@ -148,3 +148,7 @@ If changes made to APIs are not visible right after you make them, you can refre
 . Click the `ACMCache` partition.
 . If the caches are in use, then the *Clear Cache* button is displayed.
 . Click *Clear Cache*.
+
+== Duplicated External Objects
+
+Validating and synchronizing the external data source generates duplicate external objects that will not be used. Delete these new objects.
