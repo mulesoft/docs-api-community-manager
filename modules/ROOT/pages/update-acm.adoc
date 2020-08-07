@@ -54,7 +54,7 @@ This starts the installation process.
 
 When the upgrade finishes, you receive a notification email.
 
-After installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
+If you are upgrading from package version 1.62 or before, after installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
 
 . `Member` profile:
 .. Click *Setup* > *Profiles*.
