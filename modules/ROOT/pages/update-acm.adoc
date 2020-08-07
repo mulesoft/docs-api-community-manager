@@ -54,15 +54,15 @@ This starts the installation process.
 
 When the upgrade finishes, you receive a notification email.
 
-After installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object.
+After installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
 
-. For `Member` profiles:
+. `Member` profile:
 .. Click *Setup* > *Profiles*.
 .. Open the `Member` profile.
 .. Click *Object settings* > *CommunityAPI*.
 .. Ensure the `ParentId` field has `Read` access.
 .. Save.
-. For `Guest` profiles:
+. `Guest` profile:
 .. Click *Community builder* > *Settings* > *General*.
 .. Open the `Guest` profile.
 .. Click *Object settings* > *CommunityAPI*.
