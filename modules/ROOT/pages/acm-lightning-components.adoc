@@ -290,6 +290,11 @@ The API icon, name, and description shown are set in the API Community Manager c
 You can specify values for the following parameters of the API Header:
 
 API:: Specifies the API to show.
+Show "Learn More" Button:: Shows the "Learn More" button.
+API Learn More Button Label:: Specifies the button label for APIs. Default is *Learn More*.
+API Group Learn More Button Label:: Specifies the button label for API groups. Default is *Learn More about this API Group*.
+Show API Access Requester:: Shows the API access requester.
+Show API Version:: Shows the asset version from Exchange.
 
 == Application Analytics Graph [[application-analytics-graph]]
 
