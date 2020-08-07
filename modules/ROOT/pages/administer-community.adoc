@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Administering your API Community requires performing basic maintenance of your ACM Salesforce organization, monitoring important notifications about new ACM package releases and downtime, upgrading Anypoint API Community Manager, and if necessary, getting support from MuleSoft.
+Administering your API Community Manager community requires performing basic maintenance of your ACM Salesforce organization, monitoring important notifications about new ACM package releases and downtime, upgrading ACM, and if necessary, getting support from MuleSoft.
 
 These pages explain how to perform each action:
 
