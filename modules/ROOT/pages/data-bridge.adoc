@@ -40,19 +40,37 @@ You receive a client ID and a client secret. This configuration uses the certifi
 
 == Prepare Identity Provider Data
 
-If you already have Anypoint Identity Provider (IdP), get identity provider data from your current configuration:
+If you do not already have Anypoint Identity Provider (IdP), configure Salesforce as a SAML IdP:
 
-. Click *Access Management* > *Identity Providers*.
-. On *SAML 2.0* click *Edit*.
-. Copy the issuer and the audience so you can use them in the following steps.
+. In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
+. Click *New Connected App* in the top right.
+. Provide this information in the *Basic Information* section.
+.. *Connected App Name*: `Anypoint`.
+.. *Contact Email*: Enter your email address.
+. Provide this information in the *Web App Settings* section.
+.. Provide the *Start URL*: `+https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>+` or the location
+where you want users to be sent in Anypoint Platform.
++
+You can find your Anypoint organization domain name by clicking *Access Management* > *Organization* and then selecting the root organization.
+.. Select *Enable SAML*.
+.. Provide any string as *Entity Id*. This is also the *Audience* configuration in Anypoint Platform.
+.. Provide `+https://anypoint.mulesoft.com/accounts/login/receive-id+` in the *ACS URL*. SAML assertions are sent to this ACS URL.
+.. Select *Enable Single Logout*.
+.. Provide *Single Logout URL*: `+https://anypoint.mulesoft.com/accounts/logout/receive-id+`.
+.. Set *Single Logout Binding* to *HTTP Post*.
+.. Set *Subject Type* to *Username*.
+.. Set *Name ID* Format to *unspecified nameID format*.
+.. Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
+.. Set *IdP Certificate* to *Default IdP Certificate*.
+.. Click *Save*.
 
-If you do not already have Anypoint Identity Provider, configure external identity in your Anypoint organization:
+Configure external identity in your Anypoint organization:
 
 . In your connected app screen, click *Manage*.
 . Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
 . Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
 . Log in to your Anypoint organization.
-. Navigate to *Access Management* -> *External Identity* -> *Identity Management* -> *SAML 2.0*.
+. Navigate to *Access Management* > *External Identity* > *Identity Management* > *SAML 2.0*.
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
 . Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
@@ -60,6 +78,12 @@ If you do not already have Anypoint Identity Provider, configure external identi
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 . Select *Enable new non-SSO users*.
 . Click *Save*.
+
+If you already have Anypoint Identity Provider, get identity provider data from your current configuration:
+
+. Click *Access Management* > *Identity Providers*.
+. On *SAML 2.0* click *Edit*.
+. Copy the issuer and the audience so you can use them in the following steps.
 
 == Configure Named Credential
 
