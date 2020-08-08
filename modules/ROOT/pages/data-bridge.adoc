@@ -8,133 +8,122 @@ The data bridge is the secure connection from Anypoint API Community Manager to 
 
 API Community Manager components and data objects use Anypoint Platform as their external data source.
 
-== Create a Connected App
+== Create a Key Pair
 
-You can perform this step by using either the user interface or an API call.
+This key pair will be created in Salesforce and used for communication between Salesforce and Anypoint.
 
-Your account must have the Org Admin permission.
+. Click *Setup* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
+. Choose a *Label/Name* and remember the name you chose.
+. Disable *Exportable Private Key*.
+. Set *Key Size* to 2048 or larger.
+. Click *Save*.
+. Click *Download Certificate*.
 
-=== Create a Connected App by Using the User Interface [[create-a-connected-app-with-the-user-interface]]
+The public key is saved on your local machine, and you will use it in the following steps.
 
-To create a connected app through the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and follow these steps:
+== Create Connected App in Anypoint
 
-. Enter a value for *Name*.
-. Set *Type* to *App acts on behalf of a user*.
-. Set *Grant types* to *Authorization Code* and *Refresh Token*.
-. Set the mandatory *Website URL* to a URL of your choice.
-. Set *Redirect URIs* to `+https://<domain>.my.salesforce.com/services/authcallback/Anypoint+` and replace `<domain>` with your domain name.
-. Set *Who can use this application?* to *Members of this organization only*.
-. Click *Add Scopes*.
+. Click *Access Manager* > *Connected Apps* > *Create App*.
+. Choose a name.
+. Enable *App acts on behalf of a user*.
+. In the section *Grant types* enable *JWT Bearer*.
+. Copy the public key from the file downloaded in the previous steps and paste it into the public key text area.
+. Set *Website URL* to `+https://login.salesforce.com+`.
+. In the section *Redirect URIs* add `+http://localhost+`.
 +
-Select *Full Access* and *Background Access*.
-+
-. Click *Create Application*.
-. Take note of the client ID and client secret for future use.
-
-=== Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
-
-To create a connected app by using an API call, follow this example using the `cURL` command:
-
-. Get an authorization token from Anypoint Platform:
-+
-----
-    curl --silent https://anypoint.mulesoft.com/accounts/login -XPOST \
-      -d 'username=<anypoint username>&password=<anypoint password>'
-----
-+
-. The command returns a response like this:
-+
-----
-    {
-      "access_token": "5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7",
-      "token_type": "bearer",
-      "redirectUrl": "/home/"
-    }
-----
-+
-. Note the `access_token` value.
-+
-. Use the next `cURL` example to register an external client in Anypoint Platform for OpenID authentication.
-+
-Replace the access token in the authorization header with the `access_token` value.
-+
-Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find the domain name by logging in to your Salesforce organization, clicking *Setup*, and clicking the section *My Domain*.
-+
-----
-    curl -X POST \
-      https://anypoint.mulesoft.com/accounts/api/connectedApplications \
-      -H 'Content-Type: application/json' \
-      -H 'Accept: */*' \
-      -H 'Accept-Encoding: gzip, deflate' \
-      -H 'Authorization: Bearer 5242XXXX-XXXX-XXXX-XXXX-XXXXXXXXfec7' \
-      -H 'Host:anypoint.mulesoft.com' \
-      -d '{"client_name":"ACM Integration App","grant_types":["authorization_code","refresh_token"],"redirect_uris":["https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"],"scopes":["full","offline_access"],"public_keys":[]}'
-----
-+
-. The `cURL` command returns a response like this:
-+
-----
-    {
-      "client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
-      "client_secret": "9509XXXXXXXXXXXXXXXXXXXXXXXXC10E",
-      "client_name": "ACM Integration App",
-      "redirect_uris": [
-        "https://[YourOrgDomain].my.salesforce.com/services/authcallback/Anypoint"
-      ],
-      "grant_types": [
-        "authorization_code",
-        "refresh_token"
-      ],
-      "public_keys": [],
-      "scopes": [
-        "offline_access",
-        "full"
-      ],
-      "enabled": true,
-      "owner_org_id": "f377XXXX-XXXX-XXXX-XXXX-XXXXXXXX9d08",
-      "as_id": "anypoint"
-    }
-----
-+
-. Note the `client_id` and `client_secret` values.
-
-== Create an Authentication Provider in Your Salesforce Organization [[create-auth-provider]]
-
-In the following task steps, if your Anypoint Platform organization is hosted in the EU, replace all instances of `+https://anypoint.mulesoft.com+` with `+https://eu1.anypoint.mulesoft.com+`.
-
-. In *Setup*, search for *Auth. Providers* using the *Quick Find* box.
-. Click *Auth. Providers* -> *New*.
-. In *Provider type*, select *Open ID Connect*.
-. Set *Name* to `Anypoint`.
-. Set *Consumer Key* to the application ID of the connected app (which you took note of when you created the app in Anypoint Platform).
-+
-This ID was returned by the Anypoint UI at the end of the task <<create-a-connected-app-with-the-user-interface>> or returned by the Anypoint API call at the end of the task <<create-a-connected-app-with-an-api-call>>.
-+
-. Set *Consumer Secret* to the application secret of the connected app created in Anypoint Platform.
-+
-This secret was returned by the Anypoint UI at the end of the task <<create-a-connected-app-with-the-user-interface>> or returned by the Anypoint API call at the end of the task <<create-a-connected-app-with-an-api-call>>.
-+
-. Set *Authorize Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/authorize+` .
-. Set *Token Endpoint URL* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+` .
-. Set *Default Scopes* to `full offline_access`.
+Connected apps require redirect URIs but this configuration does not use them.
+. In the section *Who can use this application?* select *Members of this organization only*.
+. In the section *Scopes* add *Background Access* and *Full Access*.
 . Click *Save*.
 
-NOTE: Remember to associate the external data source with this authentication provider.
+You receive a client ID and a client secret. This configuration uses the certificate and does not use the client secret. Save the client ID so you can use it in the following steps.
 
-== Authenticate the Data Bridge [[authenticate-data-bridge]]
+== Prepare Identity Provider Data
 
-. Search for *External Data Source* in the *Quick Find* box and then click *External Data Sources*.
-. Locate *Exchange* and click *Edit*.
-. Update *Identity Type* to *Named Principal*.
-. Update *Authentication Protocol* to *OAuth 2.0*.
-. Update *Authentication Provider* to *Anypoint*.
+If you do not already have Anypoint Identity Provider (IdP), configure Salesforce as a SAML IdP:
+
+. In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
+. Click *New Connected App* in the top right.
+. Provide this information in the *Basic Information* section.
+.. *Connected App Name*: `Anypoint`.
+.. *Contact Email*: Enter your email address.
+. Provide this information in the *Web App Settings* section.
+.. Provide the *Start URL*: `+https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>+` or the location
+where you want users to be sent in Anypoint Platform.
++
+You can find your Anypoint organization domain name by clicking *Access Management* > *Organization* and then selecting the root organization.
+.. Select *Enable SAML*.
+.. Provide any string as *Entity Id*. This is also the *Audience* configuration in Anypoint Platform.
+.. Provide `+https://anypoint.mulesoft.com/accounts/login/receive-id+` in the *ACS URL*. SAML assertions are sent to this ACS URL.
+.. Select *Enable Single Logout*.
+.. Provide *Single Logout URL*: `+https://anypoint.mulesoft.com/accounts/logout/receive-id+`.
+.. Set *Single Logout Binding* to *HTTP Post*.
+.. Set *Subject Type* to *Username*.
+.. Set *Name ID* Format to *unspecified nameID format*.
+.. Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
+.. Set *IdP Certificate* to *Default IdP Certificate*.
+.. Click *Save*.
+
+Configure external identity in your Anypoint organization:
+
+. In your connected app screen, click *Manage*.
+. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
+. Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
+. Log in to your Anypoint organization.
+. Navigate to *Access Management* > *External Identity* > *Identity Management* > *SAML 2.0*.
+. Set *Sign On URL* to *IdP-Initiated Login URL*.
+. Set *Sign Off URL* to *Single Logout Endpoint*.
+. Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
+. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
+. Set *Audience* to match the *Entity Id* you set in the Salesforce account.
+. Select *Enable new non-SSO users*.
 . Click *Save*.
-. If you don't have an active session in your Anypoint Platform organization, log in.
-. Verify the Exchange *External Data Sources* *Authentication Status* is *Authenticated*.
-. Search for *Named Credentials* in the *Quick Find* box and then click *Named Credentials*.
-. Locate *anypoint.mulesoft* and click *Edit*.
-. Update *Identity Type* to *Named Principal*.
-. Update *Authentication Protocol* to *OAuth 2.0*.
-. For *Authentication Provider*, select your newly created *Anypoint* authentication provider.
-. Enable *Start Authentication Flow on Save*.
+
+If you already have Anypoint Identity Provider, get identity provider data from your current configuration:
+
+. Click *Access Management* > *Identity Providers*.
+. On *SAML 2.0* click *Edit*.
+. Copy the issuer and the audience so you can use them in the following steps.
+
+== Configure Named Credential
+
+. Click *Setup* > *Named Credentials*.
+. Modify the named credential *anypoint_mulesoft*.
+. Set *URL* to `+https://anypoint.mulesoft.com+`.
+. Go to the *Authentication* section.
+. Set *Identity Type* to *Per User*.
+. Set *Authentication Protocol* to *JWT Token Exchange*.
+. Set *Token Endpoint Url* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
+. Set *Issuer* to the client ID of the connected app you saved previously.
+. Set *Per User Subject* to the following formula.
++
+Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_AUDIENCE` with the audience from your IdP configuration.
++
+`"{IDP_ISSUER}:{IDP_AUDIENCE}|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
+. Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
+. Set *JWT Signing Certificate* to the certificate you downloaded when you created a key pair in the previous steps.
+. In the *Callout Options* section, enable *Generate Authorization Header*.
+
+== Modify External Data Source
+
+. Click *Setup* > *External Data Source* > *Exchange*.
+. Set *URL* to `callout:acm_pkg__anypoint_mulesoft/odatabridge/odata.svc/`.
+. Go to the *Authentication* section.
+. Set *Identity* to *Anonymous*.
+. Set *Authentication Protocol* to *No Authentication Protocol*.
+. In the section *Custom HTTP Headers*, for the *Header Field Name* *X-FirstName*, ensure *Active* is disabled.
 . Click *Save*.
+
+== User Configuration
+
+Give your user the *Exchange Contributor* role:
+
+. In your Anypoint Platform organization, click *Access Management* > *Users*.
+. Select your user.
+. Click *Role* > *Add role by name*.
+. Add the role *Exchange Contributor*.
+
+Map community user to Anypoint role:
+
+. In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
+. In *Exchange Viewers*, set a new External group called `Community User` and save it.
