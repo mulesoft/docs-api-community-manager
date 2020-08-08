@@ -6,7 +6,7 @@ endif::[]
 
 To verify your installation and configuration:
 
-. If you are using JSON Web Tokens and not impersonation, verify the Exchange External Data Source.
+. If you are using JSON Web Tokens and not impersonation, verify the Named Credentials.
 .. Open the Application Launcher.
 .. Enter *API Community Manager*.
 .. Open *Setup*.
@@ -14,8 +14,6 @@ To verify your installation and configuration:
 .. Locate *anypoint.mulesoft* and click *Edit*.
 .. Verify that the list *External Data User Authentications* shows your administrative Anypoint user.
 . If you are using impersonation and not JSON Web Tokens, verify the Exchange External Data Source status is *Authenticated*.
-.. Open the Application Launcher.
-.. Enter *API Community Manager*.
 .. Open *Setup*.
 .. Search for *External Data Sources*.
 .. In the list select *Exchange*.
