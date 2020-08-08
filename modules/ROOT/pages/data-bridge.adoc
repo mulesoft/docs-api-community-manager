@@ -8,13 +8,117 @@ The data bridge is the secure connection from Anypoint API Community Manager to 
 
 API Community Manager components and data objects use Anypoint Platform as their external data source.
 
-== Create a Connected App
+You can configure the data bridge with JSON Web Tokens (JWT), or with OAuth and impersonation. JWT provides simpler configuration, simpler maintenance, and improved security. JWT is preferred in most cases, and an OAuth and impersonation configuration is preferred in others.
+
+To set up the data bridge with OAuth and impersonation, skip the instructions to set up the data bridge with JSON Web Tokens, and go directly to <<set-up-the-data-bridge-with-oauth-and-impersonation>>.
+
+== Set Up the Data Bridge with JSON Web Tokens
+
+=== Create a Key Pair
+
+This key pair will be created in Salesforce and used for communication between Salesforce and Anypoint.
+
+. Click *Setup* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
+. Choose a *Label/Name* and remember the name you chose.
+. Disable *Exportable Private Key*.
+. Set *Key Size* to 2048 or larger.
+. Click *Save*.
+. Click *Download Certificate*.
+
+The public key is saved on your local machine, and you will use it in the following steps.
+
+=== Create Connected App in Anypoint
+
+. Click *Access Manager* > *Connected Apps* > *Create App*.
+. Choose a name.
+. Enable *App acts on behalf of a user*.
+. In the section *Grant types* enable *JWT Bearer*.
+. Copy the public key from the file downloaded in the previous steps and paste it into the public key text area.
+. Set *Website URL* to `+https://login.salesforce.com+`.
+. In the section *Redirect URIs* add `+http://localhost+`.
++
+Connected apps require redirect URIs but this configuration does not use them.
+. In the section *Who can use this application?* select *Members of this organization only*.
+. In the section *Scopes* add *Background Access* and *Full Access*.
+. Click *Save*.
+
+You receive a client ID and a client secret. This configuration uses the certificate and does not use the client secret. Save the client ID so you can use it in the following steps.
+
+=== Prepare Identity Provider Data
+
+If you already have Anypoint Identity Provider (IdP), get identity provider data from your current configuration:
+
+. Click *Access Management* > *Identity Providers*.
+. On *SAML 2.0* click *Edit*.
+. Copy the issuer and the audience so you can use them in the following steps.
+
+If you do not already have Anypoint Identity Provider, configure external identity in your Anypoint organization:
+
+. In your connected app screen, click *Manage*.
+. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
+. Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
+. Log in to your Anypoint organization.
+. Navigate to *Access Management* -> *External Identity* -> *Identity Management* -> *SAML 2.0*.
+. Set *Sign On URL* to *IdP-Initiated Login URL*.
+. Set *Sign Off URL* to *Single Logout Endpoint*.
+. Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
+. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
+. Set *Audience* to match the *Entity Id* you set in the Salesforce account.
+. Select *Enable new non-SSO users*.
+. Click *Save*.
+
+=== Configure Named Credential
+
+. Click *Setup* > *Named Credentials*.
+. Modify the named credential *anypoint_mulesoft*.
+. Set *URL* to `+https://anypoint.mulesoft.com+`.
+. Go to the *Authentication* section.
+. Set *Identity Type* to *Per User*.
+. Set *Authentication Protocol* to *JWT Token Exchange*.
+. Set *Token Endpoint Url* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
+. Set *Issuer* to the client ID of the connected app you saved previously.
+. Set *Per User Subject* to the following formula.
++
+Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_AUDIENCE` with the audience from your IdP configuration.
++
+`"{IDP_ISSUER}:{IDP_AUDIENCE}|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
+. Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
+. Set *JWT Signing Certificate* to the certificate you downloaded when you created a key pair in the previous steps.
+. In the *Callout Options* section, enable *Generate Authorization Header*.
+
+=== Modify External Data Source
+
+. Click *Setup* > *External Data Source* > *Exchange*.
+. Set *URL* to `callout:acm_pkg__{anypoint_mulesoft/odatabridge/odata.svc/`.
+. Go to the *Authentication* section.
+. Set *Identity* to *Anonymous*.
+. Set *Authentication Protocol* to *No Authentication Protocol*.
+
+=== User Configuration
+
+Give your user the *Organization Administrators* role:
+
+. In your Anypoint Platform organization, click *Access Management* > *Users*.
+. Select your user.
+. Click *Role* > *Add role by name*.
+. Add the role *Organization Administrators*.
+
+Map the community user to the correct Anypoint role:
+
+. In your Anypoint Platform organization, click *Access Management* > *Roles*.
+. In the *Exchange Viewers* section, add a new *External* group called *Community User* and save.
+
+Do not perform the instructions to set up the data bridge with OAuth and impersonation. Continue to xref:create-community.adoc[Create a Community].
+
+== Set Up the Data Bridge with OAuth and Impersonation [[set-up-the-data-bridge-with-oauth-and-impersonation]]
+
+=== Create a Connected App
 
 You can perform this step by using either the user interface or an API call.
 
 Your account must have the Org Admin permission.
 
-=== Create a Connected App by Using the User Interface [[create-a-connected-app-with-the-user-interface]]
+==== Create a Connected App by Using the User Interface [[create-a-connected-app-with-the-user-interface]]
 
 To create a connected app through the user interface, in Anypoint Platform, navigate to *Access Management* > *Connected Apps* > *Create app*, and follow these steps:
 
@@ -31,7 +135,7 @@ Select *Full Access* and *Background Access*.
 . Click *Create Application*.
 . Take note of the client ID and client secret for future use.
 
-=== Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
+==== Create a Connected App by Using an API Call [[create-a-connected-app-with-an-api-call]]
 
 To create a connected app by using an API call, follow this example using the `cURL` command:
 
@@ -98,7 +202,7 @@ Replace `[YourOrgDomain]` with your Salesforce organization domain name. Find th
 +
 . Note the `client_id` and `client_secret` values.
 
-== Create an Authentication Provider in Your Salesforce Organization [[create-auth-provider]]
+=== Create an Authentication Provider in Your Salesforce Organization [[create-auth-provider]]
 
 In the following task steps, if your Anypoint Platform organization is hosted in the EU, replace all instances of `+https://anypoint.mulesoft.com+` with `+https://eu1.anypoint.mulesoft.com+`.
 
@@ -121,7 +225,7 @@ This secret was returned by the Anypoint UI at the end of the task <<create-a-co
 
 NOTE: Remember to associate the external data source with this authentication provider.
 
-== Authenticate the Data Bridge [[authenticate-data-bridge]]
+=== Authenticate the Data Bridge [[authenticate-data-bridge]]
 
 . Search for *External Data Source* in the *Quick Find* box and then click *External Data Sources*.
 . Locate *Exchange* and click *Edit*.
@@ -139,7 +243,7 @@ NOTE: Remember to associate the external data source with this authentication pr
 . Enable *Start Authentication Flow on Save*.
 . Click *Save*.
 
-== Configure Impersonation
+=== Configure Impersonation
 
 Impersonation links each community member to an Anypoint user. This connects the
 Anypoint and community users and their client applications, so that applications are
@@ -239,7 +343,7 @@ Use the same certificate that Salesforce IdP uses.
 ... Click *Save*.
 .. Click *Secret Groups*, click *Finish* on the recently created secret group, and confirm the operation.
 
-For detailed information about creating secret groups and adding certificates, refer to xref:anypoint-security::asm-secret-group-creation-task.adoc#create-a-secret-group[Create a Secret Group (Anypoint Platform), role=external, window=_blank].
+For detailed information about creating secret groups and adding certificates, refer to https://docs.mulesoft.com/anypoint-security/asm-secret-group-creation-task#create-a-secret-group[Create a Secret Group (Anypoint Platform), role=external, window=_blank].
 
 Map community user to Anypoint role:
 
@@ -255,4 +359,4 @@ you must add this key in the External Identity configuration on Anypoint Platfor
 .. After the key displayed in the *Public Key* field, add a comma (`,`) and then paste in the new key.
 .. Click *Save*.
 
-Reauthenticate the data bridge as described previously.
+Authenticate the data bridge again, using the steps described previously.
