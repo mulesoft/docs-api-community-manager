@@ -87,6 +87,8 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 . Go to the *Authentication* section.
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
+. Click *Setup* > *External Data Source* > *Exchange* > *Custom HTTP Headers*.
+. For the *Header Field Name* *X-FirstName*, ensure *Active* is disabled.
 
 == User Configuration
 
