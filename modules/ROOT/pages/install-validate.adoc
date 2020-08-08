@@ -7,8 +7,6 @@ endif::[]
 To verify your installation and configuration:
 
 . If you are using JSON Web Tokens and not impersonation, verify the Named Credentials.
-.. Open the Application Launcher.
-.. Enter *API Community Manager*.
 .. Open *Setup*.
 .. Search for *Named Credentials*.
 .. Locate *anypoint.mulesoft* and click *Edit*.
