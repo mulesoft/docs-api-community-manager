@@ -103,10 +103,10 @@ Give your user the *Organization Administrators* role:
 . Click *Role* > *Add role by name*.
 . Add the role *Organization Administrators*.
 
-Map the community user to the correct Anypoint role:
+Map community user to Anypoint role:
 
-. In your Anypoint Platform organization, click *Access Management* > *Roles*.
-. In the *Exchange Viewers* section, add a new *External* group called *Community User* and save.
+. In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
+. In *Exchange Viewers*, set a new External group called `Community User` and save it.
 
 Do not perform the instructions to set up the data bridge with OAuth and impersonation. Continue to xref:create-community.adoc[Create a Community].
 
