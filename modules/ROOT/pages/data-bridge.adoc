@@ -107,7 +107,7 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 == Modify External Data Source
 
 . Click *Setup* > *External Data Source* > *Exchange*.
-. Set *URL* to `callout:acm_pkg__{anypoint_mulesoft/odatabridge/odata.svc/`.
+. Set *URL* to `callout:acm_pkg__anypoint_mulesoft/odatabridge/odata.svc/`.
 . Go to the *Authentication* section.
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
