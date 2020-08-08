@@ -111,12 +111,12 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 . Go to the *Authentication* section.
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
-. Click *Save*
-. For the *Header Field Name* *X-FirstName*, ensure *Active* is disabled.
+. In the section *Custom HTTP Headers*, for the *Header Field Name* *X-FirstName*, ensure *Active* is disabled.
+. Click *Save*.
 
 == User Configuration
 
-Give your user the *Organization Administrators* role:
+Give your user the *Exchange Contributor* role:
 
 . In your Anypoint Platform organization, click *Access Management* > *Users*.
 . Select your user.
