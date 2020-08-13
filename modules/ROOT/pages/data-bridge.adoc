@@ -66,6 +66,8 @@ You can find your Anypoint organization domain name by clicking *Access Manageme
 
 Configure external identity in your Anypoint organization:
 
+. In *Setup*, search for *Identity Provider* using the *Quick Find* box and click *Identity Provider*.
+. Click *Enable Identity Provider*.
 . In your connected app screen, click *Manage*.
 . Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
 . Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
