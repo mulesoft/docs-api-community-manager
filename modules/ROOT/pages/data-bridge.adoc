@@ -23,7 +23,7 @@ The public key is saved on your local machine, and you will use it in the follow
 
 == Create Connected App in Anypoint
 
-. Click *Access Manager* > *Connected Apps* > *Create App*.
+. Click *Access Management* > *Connected Apps* > *Create App*.
 . Choose a name.
 . Enable *App acts on behalf of a user*.
 . In the section *Grant types* enable *JWT Bearer*.
