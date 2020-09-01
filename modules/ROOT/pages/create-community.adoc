@@ -122,6 +122,7 @@ Enable Salesforce CRM Content:
 . Click *Save*.
 
 == Configure Profiles and Permissions
+
 After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, so that you can control access to and visibility of APIs and content.
 
 === Configure Member User Profile Permissions
