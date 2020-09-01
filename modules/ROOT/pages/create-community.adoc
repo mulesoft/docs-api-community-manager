@@ -215,10 +215,6 @@ These are the permissions for the member users:
 |*Read*
 |*Read Access*
 
-|SelfRegisterUserRequests
-|*Read*, *Create*, *Edit*, *Delete*
-|*Read Access*, *Edit Access*
-
 |======================
 
 All field-level permissions apply to all fields.
@@ -317,7 +313,7 @@ These are the permissions for the guest users:
 |*Read Access*
 
 |SelfRegisterUserRequests
-|*Read*, *Create*, *Edit*, *Delete*
+|*Read*, *Create*
 |*Read Access*, *Edit Access*
 
 |======================
