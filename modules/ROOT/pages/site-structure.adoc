@@ -25,6 +25,7 @@ Each search result links to the appropriate page based on the type of the elemen
 * API and API groups details page: Displays the documentation and technical content of an API or API group, including the API console and a way to request access to the API.
 +
 The content of this page is tailored to the type of object being accessed using page variations. You can find more information in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Experience Builder, role=external, window=_blank].
++
 ** Individual API page variation: This default page variation is used when an API object is opened from the *API Card*, *API Carousel*, or *API Catalog* components.
 +
 The API page variation includes the API name, icon, and description (xref:acm-lightning-components.adoc#api-header[API Header] component), its markdown documentation from Exchange (xref:acm-lightning-components.adoc#api-documentation-viewer[API Documentation Viewer] component), the API spec (xref:acm-lightning-components.adoc#api-console[API Console] component), links to download the API spec (xref:acm-lightning-components.adoc#spec-downloader[Spec Downloader] component), and the button to request access (xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] component).
@@ -33,6 +34,7 @@ The API page variation includes the API name, icon, and description (xref:acm-li
 The API group page variation includes the API group name, icon, and description (xref:acm-lightning-components.adoc#api-header[API Header] component), its markdown documentation from Exchange (xref:acm-lightning-components.adoc#api-documentation-viewer[API Documentation Viewer] component), an API carousel displaying the APIs that are part of this API group (xref:acm-lightning-components.adoc#api-carousel[API Carousel] component, with the *Show* setting configured for *Children*), and the button to request access to the API group (xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] component).
 +
 To configure this variation, assign a new audience to this page variation for the API group record type:
+
 . In Experience Builder, use the page selector at the top left to open the *Community API Details* page.
 . Click the gear icon next to the page name to open the page properties, and click the *Page variations* tab.
 . Click *New page variation*, select your preferred layout, click *Next*, and enter a name for the new variation, such as *API Group*.
