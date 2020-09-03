@@ -49,22 +49,34 @@ Attempting to upgrade the package without this feature enabled causes the proces
 .. Continue with normal package installation.
 . Select *Install for admins only*.
 . Select *Upgrade*.
-
++
 This starts the installation process.
-
++
 When the upgrade finishes, you receive a notification email.
-
-If you are upgrading from package version 1.62 or before, after installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
-
-. Configure the `Member` profile:
-.. Click *Setup* > *Profiles*.
-.. Open the `Member` profile.
-.. Click *Object settings* > *CommunityAPI*.
-.. Ensure the `ParentId` field has `Read` access.
-.. Save.
-. Configure the `Guest` profile:
-.. Click *Community builder* > *Settings* > *General*.
-.. Open the `Guest` profile.
-.. Click *Object settings* > *CommunityAPI*.
-.. Ensure the `ParentId` field has `Read` access.
-.. Save.
+. If you are upgrading from package version 1.62 or before, after installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
+.. Configure the `Member` profile:
+... Click *Setup* > *Profiles*.
+... Open the `Member` profile.
+... Click *Object settings* > *CommunityAPI*.
+... Ensure the `ParentId` field has `Read` access.
+... Save.
+.. Configure the `Guest` profile:
+... Click *Community builder* > *Settings* > *General*.
+... Open the `Guest` profile.
+... Click *Object settings* > *CommunityAPI*.
+... Ensure the `ParentId` field has `Read` access.
+... Save.
+. If you are upgrading to package version 1.68, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
+.. Configure the `Member` profile permissions:
+... Click *Setup* > *Profiles*.
+... Open the `Member` profile.
+... Click *Object settings* > *SelfRegisterUserRequests*.
+... Ensure there are no object level permissions and no field level permissions for this profile on this object.
+.. Configure the `Guest` profile permissions:
+... Open the community builder.
+... Click *Settings* > *General*.
+... Open the `Guest` profile.
+... Click *Object settings* > *SelfRegisterUserRequests*.
+... Ensure that object level permissions include only `Create` and `Read`.
+... Ensure that field level permissions for all fields include only `Read` and `Edit`.
+.. Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
