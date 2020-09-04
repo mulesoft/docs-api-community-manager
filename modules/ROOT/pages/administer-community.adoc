@@ -4,8 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Administering your Anypoint API Community Manager community requires monitoring important notifications about new releases and downtime, upgrading API Community Manager, and if necessary, getting support from MuleSoft.
+Administering your API Community Manager community requires performing basic maintenance on your ACM Salesforce organization, checking for important notifications about new ACM package releases and downtime, and updating ACM. Administering your community also includes getting support from MuleSoft if necessary.
 
-* xref:notifications.adoc[Important Notifications]
+These pages explain how to perform each action:
+
+* Salesforce documentation: https://help.salesforce.com/articleView?id=setup_overview.htm&type=5[Maintain an Organization, role=external, window=blank]
+* xref:notifications.adoc[Check for Important Notifications]
 * xref:update-acm.adoc[Update API Community Manager]
 * xref:mulesoft-support.adoc[Contact MuleSoft Support]
