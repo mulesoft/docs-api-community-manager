@@ -66,7 +66,7 @@ When the upgrade finishes, you receive a notification email.
 ... Click *Object settings* > *CommunityAPI*.
 ... Ensure the `ParentId` field has `Read` access.
 ... Save.
-. If you are upgrading to package version 1.68, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
+. If you are upgrading to package version 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
 .. Configure the `Member` profile permissions:
 ... Click *Setup* > *Profiles*.
 ... Open the `Member` profile.
