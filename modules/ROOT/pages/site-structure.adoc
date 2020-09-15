@@ -4,54 +4,104 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-The structure of your API community is defined by your xref:customize.adoc[community pages],
-the xref:acm-lightning-components.adoc[Lightning components] contained in each, and the links between them.
-You can define your own site structure and user journeys throughout your API community with these
-elements, tailored to your specific needs and desires.
+The structure of your API community is defined by your community pages, the Lightning components contained in each, and the links between them. You can define your own site structure and user journeys throughout your API community with these elements, tailored to your specific needs and desires.
 
-A typical API community has the following site structure:
+== Typical Site Structure
+
+To configure your API community according to the typical site structure, organize it into these pages:
 
 image::site-structure.png[API Community Manager site structure]
 
-* Home page: Contains welcome information (*Rich Text* component or *HTML* component), selected APIs and API groups (xref:acm-lightning-components.adoc#api-carousel[API Carousel] component), news and announcements (*CMS Collection* component), and the main search bar (xref:acm-lightning-components.adoc#acm-search-box[ACM Search Box] component).
-* Login page: Allows a member to log in to your community, or go to the registration page if they are not already a member (xref:acm-lightning-components.adoc#login-form[Login Form] component).
-* Registration page: Allows a guest user to register as a member in your community (xref:acm-lightning-components.adoc#self-register[Self Register] component).
-* Search results page: Shows results of searches in the community (xref:acm-lightning-components.adoc#acm-search-results[ACM Search Results] component).
+* Home page
 +
-Each search result links to the appropriate page based on the type of the element, such as a content article page, an API details page, or others.
-* News list page: Contains a list of the different content articles, such as news or announcements (*CMS Collection* component).
-* News detail page: Displays the full content of a specific content article (*CMS Single Item* component).
-* APIs and API groups catalog page: Contains the full catalog of APIs and API groups available in your community, for consumers to explore and discover (xref:acm-lightning-components.adoc#api-catalog[API Catalog] component).
-* API and API groups details page: Displays the documentation and technical content of an API or API group, including the API console and a way to request access to the API.
+Contains welcome information (*Rich Text* component or *HTML* component), selected APIs and API groups (*API Carousel* component), news and announcements (*CMS Collection* component), and the main search bar (*ACM Search Box* component).
+* Login page
 +
-The content of this page is tailored to the type of object being accessed using page variations. You can find more information in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Experience Builder, role=external, window=_blank].
+Allows a member to log in to your community, or go to the registration page if they are not already a member (*Login Form* component).
+* Registration page
 +
-** Individual API page variation: This default page variation is used when an API object is opened from the *API Card*, *API Carousel*, or *API Catalog* components.
+Allows a guest user to register as a member in your community (*Self Register* component).
+* Search results page
 +
-The API page variation includes the API name, icon, and description (xref:acm-lightning-components.adoc#api-header[API Header] component), its markdown documentation from Exchange (xref:acm-lightning-components.adoc#api-documentation-viewer[API Documentation Viewer] component), the API spec (xref:acm-lightning-components.adoc#api-console[API Console] component), links to download the API spec (xref:acm-lightning-components.adoc#spec-downloader[Spec Downloader] component), and the button to request access (xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] component).
-** API group page variation: This page variation displays an API group when an API group object is opened from the *API Card*, *API Carousel*, or *API Catalog* components.
+Shows results of searches in the community (*ACM Search Results* component). Each search result links to the appropriate page based on the type of the element, such as a content article page, an API details page, or others.
+* News list page
 +
-The API group page variation includes the API group name, icon, and description (xref:acm-lightning-components.adoc#api-header[API Header] component), its markdown documentation from Exchange (xref:acm-lightning-components.adoc#api-documentation-viewer[API Documentation Viewer] component), an API carousel displaying the APIs that are part of this API group (xref:acm-lightning-components.adoc#api-carousel[API Carousel] component, with the *Show* setting configured for *Children*), and the button to request access to the API group (xref:acm-lightning-components.adoc#api-access-requester[API Access Requester] component).
+Contains a list of the different content articles, such as news or announcements (*CMS Collection* component).
+* News detail page
 +
+Displays the full content of a specific content article (*CMS Single Item* component).
+* APIs and API groups catalog page
++
+Contains the full catalog of APIs and API groups available in your community, for consumers to explore and discover (*API Catalog* component).
+* API and API groups details page
++
+Displays the documentation and technical content of an API or API group, including the API console and a way to request access to the API. The content of this page is tailored to the type of object being accessed by using _page variations_. You can find more information about page variations in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Experience Builder, role=external, window=_blank].
++
+** Individual API page variation
++
+This default page variation is used when an API object is opened from the *API Card*, *API Carousel*, or *API Catalog* components.
++
+The API page variation includes:
++
+*** The API name, icon, and description (*API Header* component)
+*** The API's markdown documentation from Exchange (*API Documentation Viewer* component)
+*** The API spec (*API Console* component)
+*** Links to download the API spec (*Spec Downloader* component)
+*** The button to request access (*API Access Requester* component)
+** API group page variation
++
+This page variation displays an API group when an API group object is opened from the *API Card*, *API Carousel*, or *API Catalog* components.
++
+The API group page variation includes:
++
+*** The API group name, icon, and description (*API Header* component)
+*** The API group's markdown documentation from Exchange (*API Documentation Viewer* component)
+*** An API carousel displaying the APIs that are part of this API group (*API Carousel* component, with the *Show* setting configured for *Children*)
+*** The button to request access to the API group (*API Access Requester* component)
++
+To configure this variation, see the section <<configure-api-group-page-variation>>.
+* API marketing pages
++
+These pages are optional. Each page displays content specific to an individual API or API group (*Rich Text* component or *HTML* component). Use one page for each API or API group as required. Each page is explicitly configured on the API or API group details in the community control panel as described in the *Publish APIs* page of the API Community Manager documentation.
+* My applications page
++
+Displays the member's client applications (*Application Listing* component).
+* Applications detail page
++
+Displays details about one client application (*Application Details* component).
+* Forums page
++
+Displays components for discussion forums (*Feed* component).
+* Member profile page
++
+Displays member profile information and allows the member to update their details (*User Profile* component).
+
+== Configure the API Group Page Variation [[configure-api-group-page-variation]]
+
 To configure this variation, assign a new audience to this page variation for the API group record type:
 
 . In Experience Builder, use the page selector at the top left to open the *Community API Details* page.
-. Click the gear icon next to the page name to open the page properties, and click the *Page variations* tab.
-. Click *New page variation*, select your preferred layout, click *Next*, and enter a name for the new variation, such as *API Group*.
-+
-The new page variation displays.
-. Click the gear icon next to the page name to open the page properties, and click the *Page variations* tab.
-. On the line item for your new page variation, click the context menu, and under the *Audience* section, click *Assign*.
-. Select *New audience*, enter an audience name such as *API Group record type*, scroll down to open the *Advanced* section, and set these values:
+. Click the gear icon next to the page name to open the page properties.
+. Click the *Page variations* tab.
+. Click *New page variation*.
+. Select your preferred layout.
+. Click *Next*.
+. Enter a name for the new variation, such as *API Group*.
+. In the new page variation that displays, click the gear icon next to the page name to open the page properties.
+. Click the *Page variations* tab.
+. On the line item for your new page variation, click the context menu.
+. Under the *Audience* section, click *Assign*.
+. Select *New audience*.
+. Enter an audience name such as *API Group record type*.
+. Scroll down to open the *Advanced* section, and set these values:
 *** *Record type*: *CommunityApi*
 *** *Operator*: *Equals*
 *** *Value*: *APIGroup*
 . Click *Save* and *Assign*.
-. After the new audience has been assigned, use the components palette to add the desired components to your page variation.
-* (optional) API marketing pages: Each page displays content specific to an individual API or API group (*Rich Text* component or *HTML* component).
-+
-Use one page for each API or API group as required. Each page is explicitly configured on the API or API group details in the community control panel as described in the page xref:publish-apis.adoc[Publish APIs].
-* My applications page: Displays the member's client applications (xref:acm-lightning-components.adoc#application-listing[Application Listing] component).
-* Applications detail page: Displays details about one client application (xref:acm-lightning-components.adoc#application-details[Application Details] component).
-* Forums page: Displays components for discussion forums (*Feed* component).
-* Member profile page: Displays member profile information and allows the member to update their details (*User Profile* component).
+. After the new audience is assigned, use the components palette to add the desired components to your page variation.
+
+== See Also
+
+* xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components]
+* xref:customize.adoc[API Community Look-and-Feel Customization]
+* xref:publish-apis.adoc[Publish APIs]
