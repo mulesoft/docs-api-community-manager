@@ -12,7 +12,8 @@ Each API Community Manager Lightning component has different configuration optio
 
 Many API Community Manager Lightning components show data from Anypoint Platform. Community admins can change some of these data fields, such as API names, descriptions, and icons. API Community Manager saves these changes but does not push the changes back to Anypoint Platform.
 
-== ACM Search Box [[acm-search-box]]
+[[acm-search-box]]
+== ACM Search Box
 
 The Anypoint API Community Manager Search Box component enables users to search for both content that exists in Community Cloud (such as knowledge articles, support cases, and announcements) and content that exists in Anypoint Platform (such as APIs and client applications). Results from the search are presented in the <<acm-search-results>> component.
 
@@ -33,7 +34,8 @@ Search results are sorted by the date they were most recently modified, from new
 
 To test and preview the search configuration and the presentation of the results page, xref:preview-community.adoc[preview your API community] and run a search.
 
-== ACM Search Results [[acm-search-results]]
+[[acm-search-results]]
+== ACM Search Results
 
 The API Community Manager Search Results component shows results after a user enters a search in the <<acm-search-box>> component.
 
@@ -43,7 +45,8 @@ Component Title:: Specifies the title for the results.
 Border:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
 Show Search Input:: Shows the search input on the results page.
 
-== API Access Requester [[api-access-requester]]
+[[api-access-requester]]
+== API Access Requester
 
 The API Access Requester component enables community members to request access to an API for either a new or existing application.
 
@@ -75,7 +78,8 @@ Card Shadow:: Specifies the shadow beneath the card.
 API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
 Learn More Button Label:: Enables you to set the Learn More button label. Default is *Learn More*.
 
-== API Carousel [[api-carousel]]
+[[api-carousel]]
+== API Carousel
 
 The API Carousel component shows a horizontally scrollable set of API cards. Each card shows an API or API Group.
 
@@ -101,7 +105,8 @@ Categories Filter (Advanced):: Causes the carousel to show only APIs that match 
 API Details Button Label:: Enables you to set the API Details button label. Default is *API Details*.
 Learn More Button Label:: Enables you to set the Learn More button label. Default is *Learn More*.
 
-== API Catalog [[api-catalog]]
+[[api-catalog]]
+== API Catalog
 
 The API Catalog component offers API consumers an interactive way to explore all the available APIs and API Groups in an API community. The API Catalog shows API cards in rows and columns, divided into pages, and shows controls to filter the displayed APIs and API Groups by categories and search terms. Each card shows an API or API Group. With the catalog users can view and explore large numbers of API versions.
 
@@ -136,7 +141,8 @@ Show:: Specifies whether to show *APIs*, *Groups*, *APIs and Groups*, or *Childr
 Filter Condition (Advanced):: Causes the catalog to show only APIs that match the given search condition, which uses the syntax described in <<filter-conditions>>.
 Categories Filter (Advanced):: Causes the catalog to show only APIs that match the given categories, using the syntax described in <<categories-filter>>.
 
-== API Console [[api-console]]
+[[api-console]]
+== API Console
 
 The interactive API Console component shows information about your APIs and their methods, and enables users to test the methods by sending requests.
 
@@ -271,7 +277,8 @@ Button Align:: Specifies button alignment as left, right, or center of the UI fi
 API Name:: Adds the API name to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 API Version:: Adds the API version to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 
-== API Documentation Viewer [[api-documentation-viewer]]
+[[api-documentation-viewer]]
+== API Documentation Viewer
 
 The API Documentation Viewer component shows an API's documentation from xref:exchange::index.adoc[Anypoint Exchange]. The documentation can have multiple pages, and each page can have multiple sections.
 
@@ -281,7 +288,8 @@ API:: Specifies the API.
 Section (Optional):: Selects the section to open. If the *Selected page (optional)* setting is empty, the *Section (optional)* setting is ignored.
 Selected Page (Optional):: Selects the page to open.
 
-== API Header [[api-header]]
+[[api-header]]
+== API Header
 
 The API Header component displays the API header, including icon, name, and description.
 
@@ -291,7 +299,8 @@ You can specify values for the following parameters of the API Header:
 
 API:: Specifies the API to show.
 
-== Application Analytics Graph [[application-analytics-graph]]
+[[application-analytics-graph]]
+== Application Analytics Graph
 
 The Application Analytics Graph component displays statistics about the use of an application, such as traffic, response time, and application health.
 
@@ -301,7 +310,8 @@ You can specify values for the following parameters of the Application Analytics
 
 Application:: Specifies the application to show.
 
-== Application Details [[application-details]]
+[[application-details]]
+== Application Details
 
 The Application Details component displays details about an application from xref:api-manager::index.adoc[Anypoint API Manager].
 
@@ -311,7 +321,8 @@ You can specify values for the following parameters of the Application Details:
 
 Application:: Specifies the API to show.
 
-== Application Listing [[application-listing]]
+[[application-listing]]
+== Application Listing
 
 The Application Listing component shows applications that use an API.
 
@@ -339,7 +350,8 @@ Button Align:: Specifies button alignment as left, right, or center of the UI fi
 API Name:: Adds the API name to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 API Version:: Adds the API version to the button label. Values are *Append*, *Prepend*, or *None*. Default is *None*.
 
-== Login Form [[login-form]]
+[[login-form]]
+== Login Form
 
 The Login Form component enables community members to log in to the portal.
 
@@ -354,7 +366,8 @@ Forgot Password URL:: Specifies the forgotten password link URL. Default is `/Fo
 Self Register Label:: Specifies the self-registration link label. Default is `Not a member?`.
 Self Register URL:: Specifies the self-registration link URL. Default is `/SelfRegister`.
 
-== Self Register [[self-register]]
+[[self-register]]
+== Self Register
 
 The Self Register component enables users to register for portal accounts.
 
@@ -373,7 +386,8 @@ Extra Field Set:: Specifies extra fields.
 Registrations Require Approval:: Select whether registration requires approval.
 Approver ID:: Specifies the approver ID.
 
-== Spec Downloader [[spec-downloader]]
+[[spec-downloader]]
+== Spec Downloader
 
 The Spec Downloader component enables users to download an API specification.
 
@@ -389,7 +403,8 @@ Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the spe
 Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
 Buttons Color Picker:: Specifies the color of the buttons.
 
-== Filter Conditions [[filter-conditions]]
+[[filter-conditions]]
+== Filter Conditions
 
 The API Carousel component and the API Catalog component use the parameter *Filter Condition (Advanced)* to show only the APIs that meet the _condition_ (a standard search in Salesforce Object Query Language (SOQL)).
 
@@ -422,7 +437,8 @@ API Community Manager compares version groups using normal string comparison.
 
 You can learn more about SOQL from the Salesforce SOQL and SOSL Reference.
 
-== Categories Filter [[categories-filter]]
+[[categories-filter]]
+== Categories Filter
 
 The API Carousel component and the API Catalog component use the parameter *Categories Filter (Advanced)* to show only the APIs that have categories in Anypoint Exchange with the specified values.
 
