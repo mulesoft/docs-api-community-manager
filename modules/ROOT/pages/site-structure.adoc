@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:imagesdir: ../assets/images/
 
 The structure of your API community is defined by your community pages, the Lightning components contained in each, and the links between them. You can define your own site structure and user journeys throughout your API community with these elements, tailored to your specific needs and desires.
 
@@ -76,7 +75,8 @@ Displays components for discussion forums (*Feed* component).
 +
 Displays member profile information and allows the member to update their details (*User Profile* component).
 
-== Configure the API Group Page Variation [[configure-api-group-page-variation]]
+[[configure-api-group-page-variation]]
+== Configure the API Group Page Variation
 
 To configure this variation, assign a new audience to this page variation for the API group record type:
 
