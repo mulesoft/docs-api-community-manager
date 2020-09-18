@@ -66,9 +66,9 @@ You can find your Anypoint organization domain name by clicking *Access Manageme
 
 Configure external identity in your Anypoint organization:
 
-. In *Setup*, search for *Identity Provider* using the *Quick Find* box and click *Identity Provider*.
+. In the Salesforce Organization go to *Setup*, search for *Identity Provider* using the *Quick Find* box and click *Identity Provider*.
 . Click *Enable Identity Provider*.
-. In your connected app screen, click *Manage*.
+. Using the *Quick Find* box search for *App Manager*, search the App named *Anypoint* and in the last colum of the table, hit the arrow and click *Manage*.
 . Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
 . Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
 . Log in to your Anypoint organization.
@@ -76,7 +76,12 @@ Configure external identity in your Anypoint organization:
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
 . Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
-. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
+. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded. The certificated must have the correct format. i.e. 
+----  
+-----BEGIN CERTIFICATE-----   
+PUBLIC KEY
+-----END CERTIFICATE-----  
+----
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 . Select *Enable new non-SSO users*.
 . Click *Save*.
@@ -101,7 +106,7 @@ If you already have Anypoint Identity Provider, get identity provider data from 
 +
 Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_AUDIENCE` with the audience from your IdP configuration.
 +
-`"{IDP_ISSUER}:{IDP_AUDIENCE}|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
+`"IDP_ISSUER:IDP_AUDIENCE|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
 . Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
 . Set *JWT Signing Certificate* to the certificate you downloaded when you created a key pair in the previous steps.
 . In the *Callout Options* section, enable *Generate Authorization Header*.
