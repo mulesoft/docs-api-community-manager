@@ -76,12 +76,16 @@ Configure external identity in your Anypoint organization:
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
 . Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
-. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded. The certificated must have the correct format. i.e. 
+. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
++
+The certificate must have the correct format, such as this:
++
 ----  
 -----BEGIN CERTIFICATE-----   
 PUBLIC KEY
 -----END CERTIFICATE-----  
 ----
++
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 . Select *Enable new non-SSO users*.
 . Click *Save*.
