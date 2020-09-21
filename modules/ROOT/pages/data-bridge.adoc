@@ -104,6 +104,7 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 `"{IDP_ISSUER}:{IDP_AUDIENCE}|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
 . Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
 . Set *JWT Signing Certificate* to the certificate you downloaded when you created a key pair in the previous steps.
+. Set *Token Valid for* to 60 minutes or lower, for Anypoint the default timeout of the token is 60 minutes.
 . In the *Callout Options* section, enable *Generate Authorization Header*.
 
 == Modify External Data Source
