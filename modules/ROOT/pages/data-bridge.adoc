@@ -66,9 +66,9 @@ You can find your Anypoint organization domain name by clicking *Access Manageme
 
 Configure external identity in your Anypoint organization:
 
-. In the Salesforce Organization go to *Setup*, search for *Identity Provider* using the *Quick Find* box and click *Identity Provider*.
+. In the Salesforce Organization, click *Setup*, use the *Quick Find* box to search for *Identity Provider*, and click *Identity Provider*.
 . Click *Enable Identity Provider*.
-. Using the *Quick Find* box search for *App Manager*, search the App named *Anypoint* and in the last colum of the table, hit the arrow and click *Manage*.
+. Use the *Quick Find* box to search for *App Manager*, choose the app named *Anypoint*, and in the last column of the table, click the arrow and click *Manage*.
 . Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
 . Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
 . Log in to your Anypoint organization.
