@@ -191,10 +191,6 @@ These are the permissions for the member users:
 |*Read*
 |*Read Access*
 
-|AnypointApplicationOwners
-|*Read*
-|*Read Access*
-
 |AnypointApplications
 |*Read*, *Create*, *Edit*, *Delete*
 |*Read Access*, *Edit Access*
@@ -305,10 +301,6 @@ These are the permissions for the guest users:
 |*Read Access*
 
 |AnypointApiVersions
-|*Read*
-|*Read Access*
-
-|AnypointApplicationOwners
 |*Read*
 |*Read Access*
 
