@@ -167,6 +167,10 @@ These are the permissions for the member users:
 |*Read*
 |*Read Access*
 
+|AnypointApiPages
+|*Read*
+|*Read Access*
+
 |AnypointApiTierLimits
 |*Read*
 |*Read Access*
@@ -180,6 +184,14 @@ These are the permissions for the member users:
 |*Read Access*
 
 |AnypointApiVersions
+|*Read*
+|*Read Access*
+
+|AnypointApplicationOwners
+|*Read*
+|*Read Access*
+
+|AnypointApplicationOwners
 |*Read*
 |*Read Access*
 
@@ -276,6 +288,10 @@ These are the permissions for the guest users:
 |*Read*
 |*Read Access*
 
+|AnypointApiPages
+|*Read*
+|*Read Access*
+
 |AnypointApiTierLimits
 |*Read*
 |*Read Access*
@@ -292,7 +308,23 @@ These are the permissions for the guest users:
 |*Read*
 |*Read Access*
 
+|AnypointApplicationOwners
+|*Read*
+|*Read Access*
+
+|AnypointApplicationOwners
+|*Read*
+|*Read Access*
+
+|AnypointApplications
+|*Read*
+|*Read Access*
+
 |AnypointCategories
+|*Read*
+|*Read Access*
+
+|AnypointContracts
 |*Read*
 |*Read Access*
 
