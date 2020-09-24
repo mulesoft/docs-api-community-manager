@@ -140,6 +140,6 @@ Give your user the *Exchange Contributor* role:
 
 Map community user to Anypoint role:
 
-. Ensure you have Exchange Administrator permissions.
+. Ensure that you have Exchange Administrator permissions.
 . In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
 . In *Exchange Viewers*, set a new External group called `Community User` and save it.
