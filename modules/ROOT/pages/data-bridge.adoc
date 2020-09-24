@@ -114,7 +114,7 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 . Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
 . Set *JWT Signing Certificate* to the certificate you downloaded when you created a key pair in the previous steps.
 . Set *Token Valid for* to 60 minutes (the Anypoint default) or less.
-. Set *JWT Signing Certificate* to the key that you previously created in the  Create Key Pair section.
+. Set *JWT Signing Certificate* to the key that you created previously as described in the section Create a Key Pair.
 . In the *Callout Options* section, enable *Generate Authorization Header*.
 
 == Modify External Data Source
@@ -125,7 +125,7 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
 . Click Save.
-. Click on the Name of the External Data Source to enter to the detail.
+. Click on the name of the external data source to edit the source details.
 . In the section *Custom HTTP Headers*, for the *Header Field Name* *X-FirstName*, ensure *Active* is disabled.
 . Click *Save*.
 
@@ -140,5 +140,6 @@ Give your user the *Exchange Contributor* role:
 
 Map community user to Anypoint role:
 
+. Ensure you have Exchange Administrator permissions.
 . In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
-. In *Exchange Viewers*, set a new External group called `Community User` and save it (to perform this step it is necessary to have exchange administrator permissions).
+. In *Exchange Viewers*, set a new External group called `Community User` and save it.
