@@ -112,7 +112,6 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 +
 `"IDP_ISSUER:IDP_AUDIENCE|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
 . Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
-. Set *JWT Signing Certificate* to the certificate you downloaded when you created a key pair in the previous steps.
 . Set *Token Valid for* to 60 minutes (the Anypoint default) or less.
 . Set *JWT Signing Certificate* to the key that you created previously as described in the section Create a Key Pair.
 . In the *Callout Options* section, enable *Generate Authorization Header*.
@@ -125,9 +124,6 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
 . Click Save.
-. Click on the name of the external data source to edit the source details.
-. In the section *Custom HTTP Headers*, for the *Header Field Name* *X-FirstName*, ensure *Active* is disabled.
-. Click *Save*.
 
 == User Configuration
 
