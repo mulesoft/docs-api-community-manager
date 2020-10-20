@@ -93,10 +93,10 @@ To configure this variation, assign a new audience to this page variation for th
 . Under the *Audience* section, click *Assign*.
 . Select *New audience*.
 . Enter an audience name such as *API Group record type*.
-. Scroll down to open the *Advanced* section, and set these values:
-*** *Record type*: *CommunityApi*
-*** *Operator*: *Equals*
-*** *Value*: *APIGroup*
+. Complete the *Audience Criteria* section with these values:
+*** *Criteria type*: *Record > CommunityApi > Record Type > Name*
+*** *Operator*: *equals*
+*** *Value*: *ApiGroup*
 . Click *Save* and *Assign*.
 . After the new audience is assigned, use the components palette to add the desired components to your page variation.
 
