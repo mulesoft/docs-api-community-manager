@@ -47,6 +47,24 @@ Attempting to upgrade the package without this feature enabled causes the proces
 .. Click the Delete button.
 .. Click the Confirm delete button.
 .. Continue with normal package installation.
+. If you are upgrading from a package version before 1.74, follow these steps:
+.. Create a new named credential:
+... Click *Setup* > *Named Credentials*.
+... Copy the configuration information from the named credential `anypoint_mulesoft`.
+... Create a new named credential with the name `Anypoint` and matching configuration.
+.. Update the External Data Source:
+... Click *Setup* > *External Data Source* > *Exchange* > *Edit*.
+... Set *URL* to `callout:Anypoint/odatabridge/odata.svc/`.
+... Ensure *Eligible for External Change Data Capture* is enabled.
+... Click *Save*.
+.. Update the old named credential:
+... Click *Setup* > *Named Credentials*.
+... Modify the named credential `anypoint_mulesoft`.
+... Set *Identity Type* to *Named Principal*.
+... Set *Authentication Protocol* to *Password Authentication*.
+... Set *Username* to the placeholder value `user`.
+... Set *Password* to the placeholder value `pass`.
+... In the section *Callout Options*, enable *Generate Authorization Header*, *Allow Merge Fields in HTTP Header*, and *Allow Merge Fields in HTTP Body*.
 . Select *Install for admins only*.
 . Select *Upgrade*.
 +
@@ -66,7 +84,7 @@ When the upgrade finishes, you receive a notification email.
 ... Click *Object settings* > *CommunityAPI*.
 ... Ensure the `ParentId` field has `Read` access.
 ... Save.
-. If you are upgrading to package version 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
+. If you are upgrading from a package version before 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
 .. Configure the `Member` profile permissions:
 ... Click *Setup* > *Profiles*.
 ... Open the `Member` profile.
@@ -80,3 +98,7 @@ When the upgrade finishes, you receive a notification email.
 ... Ensure that object level permissions include only `Create` and `Read`.
 ... Ensure that field level permissions for all fields include only `Read` and `Edit`.
 .. Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+. If you are upgrading from a package version before 1.74, follow these steps:
+.. Click *Setup* > *External Data Source* > *Exchange*.
+.. In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
+.. Click *Save*.
