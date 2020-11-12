@@ -96,10 +96,10 @@ If you already have Anypoint Identity Provider, get identity provider data from 
 . On *SAML 2.0* click *Edit*.
 . Copy the issuer and the audience so you can use them in the following steps.
 
-== Configure Named Credential
+== Create Named Credential
 
 . Click *Setup* > *Named Credentials*.
-. Modify the named credential *anypoint_mulesoft*.
+. Create a named credential with the name *Anypoint*.
 . Set *URL* to `+https://anypoint.mulesoft.com+`.
 . Go to the *Authentication* section.
 . Set *Identity Type* to *Per User*.
@@ -119,7 +119,7 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 == Modify External Data Source
 
 . Click *Setup* > *External Data Source* > *Exchange*.
-. Set *URL* to `callout:acm_pkg__anypoint_mulesoft/odatabridge/odata.svc/`.
+. Set *URL* to `callout:Anypoint/odatabridge/odata.svc/`.
 . Go to the *Authentication* section.
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
