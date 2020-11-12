@@ -194,6 +194,8 @@ If an *API Console* navigation item such as an API endpoint or method has a long
 ----
 . Optionally, replace `api-navigation` with any selector that contains the component `api-navigation`.
 . Optionally, replace `keep-all` with any valid value for the `word-break` CSS property.
++
+The default behavior is `break-word`.
 
 == API Console Documentation
 
