@@ -371,6 +371,21 @@ Card Shadow:: Specifies the shadow beneath the card.
 Card Width:: Specifies the card width.
 Card Height:: Specifies the card height.
 
+== Instance Viewer
+
+The Instance Viewer component shows API instance environments, labels, and URLs.
+
+You can specify values for the following parameters of the Instance Viewer:
+
+Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
+Show Copy URL Icon:: Shows the *Copy URL* icon.
+Show content in a Box:: Shows a box around the instance information.
+Show Production-type environments:: Shows production-type environments.
+Show Sandbox-type environments:: Shows sandbox-type environments.
+Show Instance Label:: Shows the name of each instance.
+Show table header:: Shows the table header.
+Advanced Filter:: Shows only APIs that meet the SOQL condition. Conditions can use the fields `Name`, `Environment`, and `URL`. For example: `Name LIKE 'v1%'`
+
 == Learn More Button
 
 The Learn More Button component provides portal users with a custom page with additional information about the API.
