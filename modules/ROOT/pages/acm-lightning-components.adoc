@@ -309,6 +309,8 @@ API:: Specifies the API.
 Section (Optional):: Selects the section to open. If the *Selected page (optional)* setting is empty, the *Section (optional)* setting is ignored.
 Selected Page (Optional):: Selects the page to open.
 
+To link directly to a markdown page in this component, set the URL query paramter `selectedPage` to the exact name of the page. For example, if the page is named "Details", use a URL like this: `/communityapi/a003D000001pQpjQAE/basicapi?selectedPage=Details`. If `selectedPage` is defined in the Community Builder for this component and defined in the URL, then the value in Community Builder is used and the value in the URL is ignored.
+
 [[api-header]]
 == API Header
 
