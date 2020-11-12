@@ -123,7 +123,10 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 . Go to the *Authentication* section.
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
-. Click Save.
+. Click *Save*.
+. Click *Setup* > *External Data Source* > *Exchange*.
+. In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
+. Click *Save*.
 
 == User Configuration
 
