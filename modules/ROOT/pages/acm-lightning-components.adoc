@@ -155,6 +155,8 @@ You can specify values for the following parameters of the API Console:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
+Expand endpoints on start:: Expands the documentation of the API endpoints when the page loads.
+Enable resource filtering:: Shows a search bar in the left navigation so users can filter the API resources and show only the resources that match their search terms.
 Link Hover Color:: Specifies the hover link color.
 Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
