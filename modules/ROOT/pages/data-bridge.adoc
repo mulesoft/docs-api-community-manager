@@ -99,7 +99,7 @@ If you already have Anypoint Identity Provider, get identity provider data from 
 == Create Named Credential
 
 . Click *Setup* > *Named Credentials*.
-. Create a named credential with the name *Anypoint*.
+. Create a named credential with the name `Anypoint`.
 . Set *URL* to `+https://anypoint.mulesoft.com+`.
 . Go to the *Authentication* section.
 . Set *Identity Type* to *Per User*.
