@@ -130,7 +130,7 @@ If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh t
 
 In the API Community Manager control panel, the *Manage APIs* tab shows a *Search APIs* field.
 
-The tab shows a maximum of 100 results, and shows a message if additional results were omitted. Use the search field to filter the APIs so that no relevant API is omitted.
+The tab shows a maximum of 100 results, followed by a message if additional results were omitted. Use the search field to filter the APIs so that no relevant API is omitted.
 
 Enter one or more terms into the search field. Search results are listed in *APIs in This Community* and *APIs in Exchange*.
 
