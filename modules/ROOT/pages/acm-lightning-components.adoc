@@ -381,7 +381,7 @@ Show Production-type environments:: Shows production-type environments.
 Show Sandbox-type environments:: Shows sandbox-type environments.
 Show Instance Label:: Shows the name of each instance.
 Show table header:: Shows the table header.
-Advanced Filter:: Shows only APIs that meet the Salesforce Object Query Language (SOQL) condition. Conditions can use the fields `Name`, `Environment`, and `URL`, for example, `Name LIKE 'v1%'`
+Advanced Filter:: Shows only APIs that meet the Salesforce Object Query Language (SOQL) condition. Conditions can use the fields `Name`, `Environment`, and `URL`, for example, `Name LIKE 'v1%'`.
 
 == Learn More Button
 
