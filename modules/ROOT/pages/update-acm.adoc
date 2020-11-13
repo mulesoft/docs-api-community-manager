@@ -52,12 +52,12 @@ Attempting to upgrade the package without this feature enabled causes the proces
 ... Click *Setup* > *Named Credentials*.
 ... Copy the configuration information from the named credential `anypoint_mulesoft`.
 ... Create a new named credential with the name `Anypoint` and matching configuration.
-.. Update the External Data Source:
+.. Update the external data source:
 ... Click *Setup* > *External Data Source* > *Exchange* > *Edit*.
 ... Set *URL* to `callout:Anypoint/odatabridge/odata.svc/`.
-... Ensure *Eligible for External Change Data Capture* is enabled.
+... Ensure that *Eligible for External Change Data Capture* is enabled.
 ... Click *Save*.
-.. Update the old named credential:
+.. Update the previous named credential:
 ... Click *Setup* > *Named Credentials*.
 ... Modify the named credential `anypoint_mulesoft`.
 ... Set *Identity Type* to *Named Principal*.
