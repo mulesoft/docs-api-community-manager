@@ -450,7 +450,7 @@ You can specify values for the following parameters of the Spec Downloader compo
 Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the specification of the API selected on the current page.
 Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
 Buttons Color Picker:: Specifies the color of the buttons.
-Download Spec Options:: Specifies the download buttons to show, *Original Format* (default), *All*, *OAS3*, or *RAML*.
+Download Spec Options:: Specifies the download buttons to show, *Original Format*, *All* (default), *OAS3*, or *RAML*.
 
 [[filter-conditions]]
 == Filter Conditions
