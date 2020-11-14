@@ -155,6 +155,8 @@ You can specify values for the following parameters of the API Console:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
+Expand endpoints on start:: Expands the documentation of the API endpoints when the page loads.
+Enable resource filtering:: Shows a search bar in the left navigation so users can filter the API resources and show only the resources that match their search terms.
 Link Hover Color:: Specifies the hover link color.
 Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
@@ -174,6 +176,28 @@ Method Label Options Background Color:: Specifies the OPTIONS method label backg
 Method Label Options Color:: Specifies the OPTIONS method label color.
 Method Label Head Background Color:: Specifies the HEAD method label background color.
 Method Label Head Color:: Specifies the HEAD method label color.
+
+If an *API Console* navigation item such as an API endpoint or method has a long name, the name wraps around to a second line. By default, the line breaks at the end of a word, using the `word-break` CSS property set to the value `break-word`. If you wish to select different line break behavior:
+
+. In the API Community Manager control panel, click *Community Builder* > *Settings* > *Advanced*.
+. In the section *Head Markup*, click *Edit Head Markup*.
+. Insert this code:
++
+[source,css]
+----
+<style>
+    api-navigation {
+      --api-navigation-list-item-word-break: break-word !important;
+    }
+</style>
+----
+. Optionally, replace `api-navigation` with any selector that contains the component `api-navigation`.
+. Optionally, replace `break-word` with any valid value for the `word-break` CSS property.
+
+To link directly to an endpoint or type in this component, set the URL query paramters `method`, `path`, or `type`. `method` must be in lower case. `type` is case sensitive. If `method` and `path` are defined and exist in the API definition, then navigation will open there regardless of the `type` parameter. If `method` or `path` is not defined and `type` is defined and exists in the API definition, then navigation will open at the specified `type`. Examples:
+
+* `communityapi/a003D000001pQpjQAE/basicapi?method=get&path=/users/{id}`
+* `communityapi/a003D000001pQpjQAE/basicapi?type=Users`
 
 == API Console Documentation
 
@@ -287,6 +311,8 @@ API:: Specifies the API.
 Section (Optional):: Selects the section to open. If the *Selected page (optional)* setting is empty, the *Section (optional)* setting is ignored.
 Selected Page (Optional):: Selects the page to open.
 
+To link directly to a markdown page in this component, set the URL query paramter `selectedPage` to the exact name of the page. For example, if the page is named "Details", use a URL like this: `/communityapi/a003D000001pQpjQAE/basicapi?selectedPage=Details`. If `selectedPage` is defined both in the Community Builder for this component and in the URL, then the value in Community Builder is used and the value in the URL is ignored.
+
 [[api-header]]
 == API Header
 
@@ -341,6 +367,21 @@ Card Border Radius:: Specifies the card border radius. Cards with a larger radiu
 Card Shadow:: Specifies the shadow beneath the card.
 Card Width:: Specifies the card width.
 Card Height:: Specifies the card height.
+
+== Instance Viewer
+
+The Instance Viewer component shows API instance environments, labels, and URLs.
+
+You can specify values for the following parameters of the Instance Viewer:
+
+Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
+Show Copy URL Icon:: Shows the *Copy URL* icon.
+Show content in a Box:: Shows a box around the instance information.
+Show Production-type environments:: Shows production-type environments.
+Show Sandbox-type environments:: Shows sandbox-type environments.
+Show Instance Label:: Shows the name of each instance.
+Show table header:: Shows the table header.
+Advanced Filter:: Shows only APIs that meet the Salesforce Object Query Language (SOQL) condition. Conditions can use the fields `Name`, `Environment`, and `URL`, for example, `Name LIKE 'v1%'`.
 
 == Learn More Button
 
@@ -406,6 +447,7 @@ You can specify values for the following parameters of the Spec Downloader compo
 Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the specification of the API selected on the current page.
 Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
 Buttons Color Picker:: Specifies the color of the buttons.
+Download Spec Options:: Specifies the download buttons to show: *Original Format*, *All* (default), *OAS3*, or *RAML*.
 
 [[filter-conditions]]
 == Filter Conditions
