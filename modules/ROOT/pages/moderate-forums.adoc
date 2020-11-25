@@ -25,4 +25,3 @@ For full information about the Salesforce Community Cloud forums and their moder
 == See Also
 
 * Salesforce documentation: https://help.salesforce.com/articleView?id=networks_moderation_overview.htm&type=5[Community Moderation Strategies and Tools, role=external, window=blank]
-* Salesforce Trailhead training: https://trailhead.salesforce.com/content/learn/modules/community_rollout_impl/community_rollout_impl_cust_engagement[Maximize Community Member Engagement, role=external, window=blank]
