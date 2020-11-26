@@ -12,7 +12,7 @@ API Community Manager components and data objects use Anypoint Platform as their
 
 This key pair will be created in Salesforce and used for communication between Salesforce and Anypoint.
 
-. Click *Setup* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
+. Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
 . Choose a *Label/Name* and remember the name you chose.
 . Disable *Exportable Private Key*.
 . Set *Key Size* to 2048 or larger.
@@ -98,7 +98,7 @@ If you already have Anypoint Identity Provider, get identity provider data from 
 
 == Create Named Credential
 
-. Click *Setup* > *Named Credentials*.
+. Click *Setup* > *Security* > *Named Credentials*.
 . Create a named credential with the name `Anypoint`.
 . Set *URL* to `+https://anypoint.mulesoft.com+`.
 . Go to the *Authentication* section.
@@ -118,13 +118,13 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 
 == Modify External Data Source
 
-. Click *Setup* > *External Data Source* > *Exchange*.
+. Click *Setup* > *Integrations* > *External Data Source* > *Exchange*.
 . Set *URL* to `callout:Anypoint/odatabridge/odata.svc/`.
 . Go to the *Authentication* section.
 . Set *Identity* to *Anonymous*.
 . Set *Authentication Protocol* to *No Authentication Protocol*.
 . Click *Save*.
-. Click *Setup* > *External Data Source* > *Exchange*.
+. Click *Setup* > *Integrations* > *External Data Source* > *Exchange*.
 . In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
 . Click *Save*.
 
