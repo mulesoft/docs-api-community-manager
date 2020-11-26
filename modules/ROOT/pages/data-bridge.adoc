@@ -12,7 +12,7 @@ API Community Manager components and data objects use Anypoint Platform as their
 
 This key pair will be created in Salesforce and used for communication between Salesforce and Anypoint.
 
-. Click *Setup* > *Security* > *Create Self-Signed Certificate*.
+. Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
 . Choose a *Label/Name* and remember the name you chose.
 . Disable *Exportable Private Key*.
 . Set *Key Size* to 2048 or larger.
