@@ -39,7 +39,8 @@ This starts the installation process.
 When the upgrade finishes, you receive a notification email.
 . If you are upgrading from package version 1.62 or earlier, follow the <<post-162>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.69, follow the <<post-169>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.74, follow the <<post-174>>.
+. If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.76, follow the <<post-176>>.
 
 [[pre-126]]
 == Pre-Install Steps When Upgrading from a Version before 1.26
@@ -140,3 +141,35 @@ If you are upgrading from a package version before 1.74, follow these steps:
 . Click *Setup* > *External Data Source* > *Exchange*.
 . In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
 . Save.
+
+Return to the main list of update instructions and continue to follow them.
+
+[[post-176]]
+== Post-Install Steps When Upgrading from a Version before 1.76
+
+Upgrading from a package version before 1.76 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is suspended. When the configuration is complete, user access to asssets in the community is enabled.
+
+If you are upgrading from a package version before 1.76, follow these steps:
+
+Configure sharing settings for guests:
+
+. In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
+. Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and click *New*.
+. In the *Rule Name* section, update *Label* with `CommunityApi`.
+. In the *Select your rule type* section, select `Guest user access, based on criteria`.
+. In the *Select which records to be shared* section, add this criterion.
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
+. In *Select the users to share with*, select `[Community Name] Site Guest User`.
+. In *Select the level of access for the users*, select *Read Only*.
+. Save.
+. Scroll to the *CommunityAssetVersion Sharing Rules* section near the bottom of the page and click *New*.
+. In the *Rule Name* section, update *Label* with `CommunityAssetVersion`.
+. In the *Select your rule type* section, select `Guest user access, based on criteria`.
+. In the *Select which records to be shared* section, add these criteria.
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
+.. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
+. In *Select the users to share with*, select `[Community Name] Site Guest User`.
+. In *Select the level of access for the users*, select *Read Only*.
+. Save.
+
+NOTE: If you ever change the name of your community, be sure to update this setting.
