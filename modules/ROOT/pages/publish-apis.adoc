@@ -113,7 +113,9 @@ The API Community Manager community administrator must then review and publish t
 
 . In the API Community Manager control panel, select *Manage APIs*.
 +
-The API is still listed in *APIs in this Community*. The new version has visibility *Administrators Only*.
+The API is still listed in *APIs in this Community*. The new version has visibility *None*.
+. Next to the API, click *Edit*.
+. Change the visibility to *Administrators only*.
 . Preview the API.
 . In the API Community Manager control panel, select *Manage APIs*.
 . Next to the API, click *Edit*.
