@@ -154,14 +154,6 @@ If you are upgrading from a package version before 1.76, follow these steps:
 Configure sharing settings for guests:
 
 . In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
-. Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and click *New*.
-. In the *Rule Name* section, update *Label* with `CommunityApi`.
-. In the *Select your rule type* section, select `Guest user access, based on criteria`.
-. In the *Select which records to be shared* section, add this criterion.
-.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
-. In *Select the users to share with*, select `[Community Name] Site Guest User`.
-. In *Select the level of access for the users*, select *Read Only*.
-. Save.
 . Scroll to the *CommunityAssetVersion Sharing Rules* section near the bottom of the page and click *New*.
 . In the *Rule Name* section, update *Label* with `CommunityAssetVersion`.
 . In the *Select your rule type* section, select `Guest user access, based on criteria`.
