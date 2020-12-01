@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-As an Anypoint API Community Manager community administrator, you can add and publish APIs, API Groups, and minor and major updates from Anypoint Exchange into your community. 
+As an Anypoint API Community Manager community administrator, you can add and publish APIs, API Groups, and minor and major updates from Anypoint Exchange into your community.
 
 This information includes the API documentation stored with the APIs in Exchange.
 The API documentation is separate from the articles stored in the Salesforce
@@ -19,21 +19,24 @@ will lead the CMS article release process.
 +
 From this tab, you can manage the APIs and API Groups in your community, including their metadata and visibility.
 +
-* *APIs in this Community* shows the API and API Group versions that have been added to the community.
-* *APIs in Exchange* shows the API and API Group versions that exist in your Exchange organization but have not been added to the community.
-. Select a version of the API or API Group and click *Add to Community* next to the API or API Group name.
-+
-The API or API Group version is now listed in the *APIs in this Community* section. *Visibility* is set to *Admin Only*, the API or API Group version has no icon, and the *Description* is blank.
+* *APIs in this Community* shows the APIs and API Groups that have been added to the community.
+* *APIs in Exchange* shows the APIs and API Groups that exist in your Exchange organization but have not been added to the community.
+. Next to the API or API Group name, click *Add to Community*.
 . Set the API or API Group information, including visibility, icon, and description.
 
 == Set API or API Group Information
 
-. Select *Edit* next to the API or API Group version name.
+The API or API Group editing page opens when you add an API or API Group to the community.
+
+To open the editing page again, next to the API or API Group name, click *Edit*.
+
 . Optionally, edit the *API Name*.
-. Select *Replace Icon* to set the API or API Group version icon.
-. Enter a *Description* for the API or API Group version.
-. Leave the *Visibility* as *Admin Only* while you preview the API or API Group version as described in the next section.
-. When your API or API Group is displayed on the community site in the API Carousel component or in an API card, by default it has a single *API Details* button. It can also have an optional *Learn more* button that links to a business content page. In the *Associated "Learn-more" Page* section, select *None* to keep the default, or select *Custom page* and set the *Custom page URL* to a business content page created in Community Builder.
+. Select *Replace Icon* to set the API or API Group icon.
+. Enter a *Description* for the API or API Group.
+. Leave the *Visibility* of all versions as *Administrators only*, or set visibility for some versions to *None*, while you preview the API or API Group as described in the next section.
+. Optionally, add a link to more information on the API or API Group.
++
+When your API or API Group is displayed on the community site in the API Carousel component or in an API card, by default it has a single *API Details* button. It can also have an optional *Learn more* button that links to a business content page. In the *Associated "Learn-more" Page* section, select *None* to keep the default, or select *Custom page* and set the *Custom page URL* to a business content page created in Community Builder.
 . Select *Apply*.
 
 == Preview APIs
@@ -44,18 +47,22 @@ Community Builder displays a preview of your community's site and edit options.
 . Select *Preview*.
 . Scroll to the API carousel that displays a card for each API or API Group version in the community.
 
-The new API or API Group version shows the message *This is only visible for you*, indicating *Admin Only* visibility. Consumer developers cannot see this API or API Group version preview.
+The new API or API Group version shows the message *This is only visible for you*, indicating *Administrators only* visibility. Consumer developers cannot see this API or API Group version preview.
 
 If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
 
 == Make API Versions Visible
 
-. In the API Community Manager control panel, select *Manage APIs*.
-. Select *Edit* next to the API or API Group version name.
-. Set *Visibility* to *Everyone* if you want it to be publicly available, or *Members only* if you want it to be seen only by logged-in members.
+. In the API Community Manager control panel, click *Manage APIs*.
+. Click *Edit* next to the API or API Group name.
+. For each version, set *Visibility* to *Everyone* if you want it to be publicly available, *Members only* if you want it to be seen only by logged-in members, or *None* if you do not want that version to be visible.
++
+At least one version must be visible by having an option other than *None*.
 . Select *Apply*.
 
-Consumer developers can now see this API or API Group version in the API carousel on the community site.
+Consumer developers can now see this API or API Group in the API carousel on the community site.
+
+On the *Manage APIs* tab, the *Visibility* column shows the visibility of the most visible version of that API or API Group.
 
 == Minor API Updates
 
@@ -106,23 +113,13 @@ The API Community Manager community administrator must then review and publish t
 
 . In the API Community Manager control panel, select *Manage APIs*.
 +
-The previous API version remains unchanged in *APIs in this Community*. The new API version is listed in *APIs in Exchange*.
-. To add the new version to the community, select the version from the drop-down and select *Add to Community* next
-to the API name.
-+
-The new API version is now listed in *APIs in this Community*.
-. Select *Edit* next to the new API version name and set the *Icon*, *Description*, *Visibility*, and *Marketing Page*
-as you did for the previous version.
+The API is still listed in *APIs in this Community*. The new version has visibility *Administrators Only*.
 . Preview the API.
-. Set *Visibility* to *Registered users* or *Public*.
+. In the API Community Manager control panel, select *Manage APIs*.
+. Next to the API, click *Edit*.
+. Change the visibility of the new version from *Administrators only* to *Everyone* if you want it to be publicly available, *Members only* if you want it to be seen only by logged-in members, or *None* if you do not want that version to be visible.
 +
-Consumer developers can now see the new API version in the API carousel on the community site.
-. To mark the previous version as deprecated, select *Edit* next to the previous API version name.
-. Append `[DEPRECATED]` to the *API Name*, and select *Apply*.
-. To remove the previous version from your community, select *Remove* next to the previous API version name.
-. Select *Remove* again to confirm.
-+
-Consumer developers can no longer see the previous API version in the API carousel on the community site.
+If the visibility is *Everyone* or *Members only*, then consumer developers can now see the new API version in the API carousel on the community site.
 
 If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
 
