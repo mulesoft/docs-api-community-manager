@@ -165,3 +165,21 @@ Configure sharing settings for guests:
 . Save.
 
 NOTE: If you ever change the name of your community, be sure to update this setting.
+
+Configure sharing settings for members:
+
+. In *Setup*, search for *Communities* using the *Quick Find* box and click *Communities Settings*.
+. Scroll to *Sharing Sets* and click *New*.
+. In the *Sharing Set Edit* section, update *Label* with `[Community Name] Sharing Set`.
+. Save.
+. In the *Select Profiles* section, select *ACM Member User* from *Available Profiles* and add it to *Selected Profiles*.
+. In the *Select Objects* section, select *CommunityApi* and *CommunityAssetVersion* from *Available Objects* and add them to *Selected Objects*.
+. In the *Configure Access* section, select *Set Up* under the *Action* column.
+. In the *Access Mapping for CommunityApi* page enter these values.
+.. *Account* in the *User* list.
+.. *acm_pkg__Account_c* in the *Target CommunityApi* list.
+.. *Read Only* in the *Access Level* list.
+. Click *Update*.
+. Click *Save*.
+
+NOTE: If you ever change the name of your community, be sure to update this setting.
