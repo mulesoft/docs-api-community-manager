@@ -227,10 +227,6 @@ These are the permissions for the member users:
 |*Read*
 |*Read Access*
 
-|CommunityAssetVersions
-|*Read*, *Create*, *Edit*, *Delete*
-|*Read Access*
-
 |SelfRegisterUserRequests
 |*Read*, *Create*, *Edit*, *Delete*
 |*Read Access*
