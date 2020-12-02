@@ -154,8 +154,8 @@ If you are upgrading from a package version before 1.76, follow these steps:
 Configure sharing settings for guests:
 
 . In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
-. Scroll to the *CommunityAssetVersion Sharing Rules* section near the bottom of the page and click *New*.
-. In the *Rule Name* section, update *Label* with `CommunityAssetVersion`.
+. Scroll to the *CommunityAssetVersions Sharing Rules* section near the bottom of the page and click *New*.
+. In the *Rule Name* section, update *Label* with `[Community Name] Sharing Rule`.
 . In the *Select your rule type* section, select `Guest user access, based on criteria`.
 . In the *Select which records to be shared* section, add these criteria.
 .. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
@@ -168,11 +168,11 @@ Configure sharing settings for members:
 
 . In *Setup*, search for *Communities* using the *Quick Find* box and click *Communities Settings*.
 . Scroll to *Sharing Sets* and click *Edit* next to the set *[Community Name] Sharing Set*.
-. In the *Select Objects* section, select *CommunityAssetVersion* from *Available Objects* and add it to *Selected Objects*.
-. In the *Configure Access* section, select *Set Up* under the *Action* column next to *CommunityAssetVersion*.
-. In the *Access Mapping for *CommunityAssetVersion* page enter these values.
+. In the *Select Objects* section, select *CommunityAssetVersions* from *Available Objects* and add it to *Selected Objects*.
+. In the *Configure Access* section, select *Set Up* under the *Action* column next to *CommunityAssetVersions*.
+. In the *Access Mapping for *CommunityAssetVersions* page enter these values.
 .. *Account* in the *User* list.
-.. *acm_pkg__Account_c* in the *Target CommunityAssetVersion* list.
+.. *acm_pkg__Account_c* in the *Target CommunityAssetVersions* list.
 .. *Read Only* in the *Access Level* list.
 . Click *Update*.
 . Click *Save*.
