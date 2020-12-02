@@ -241,15 +241,15 @@ To configure permissions for the member user profile so your members can access 
 . Click the *Customer Community Plus Login User* profile.
 . Click *Clone*.
 . For *Profile Name* enter `[Community Name] Member User`.
-. Click *Save*.
+. Save.
 . In the *[Community Name] Member User* profile page, click *Edit*.
 . In Object Settings, edit the object permissions to match those shown in the previous table.
 . In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
-. Click *Save*.
+. Save.
 . Click the link for *Enabled Apex Class Access*.
 . Click *Edit*.
 . Select all classes in the list and click *Add* to make them accessible.
-. Click *Save*.
+. Save.
 
 === Configure Guest User Profile Permissions
 
@@ -341,6 +341,10 @@ These are the permissions for the guest users:
 |*Read*
 |*Read Access*
 
+|CommunityAssetVersions
+|*Read*
+|*Read Access*
+
 |Documents
 |*Read*
 |*Read Access*
@@ -359,28 +363,14 @@ To configure permissions for the guest user profile:
 . In the *Guest user profile* section, click *[Community Name] Profile*.
 . Click *Edit*.
 . In Object Settings, edit the object permissions to match those shown in the previous table.
-. Click *Save*.
+. In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
+. Save.
 . Click the link for *Enabled Apex Class Access*.
 . Click *Edit*.
 . Select all classes in the list and click *Add* to make them accessible.
-. Click *Save*.
+. Save.
 
 == Configure Sharing Settings
-
-Configure sharing settings for guests:
-
-. In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
-. Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and click *New*.
-. In the *Rule Name* section, update *Label* with `[Community Name] Guest`.
-. In the *Select your rule type* section, select `Guest user access, based on criteria`.
-. In the *Select which records to be shared* section, add these criteria.
-.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
-.. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
-. In *Select the users to share with*, select `[Community Name] Site Guest User`.
-. In *Select the level of access for the users*, select *Read Only*.
-. Click Save.
-
-NOTE: If you ever change the name of your community, be sure to update this setting.
 
 Configure sharing settings for members:
 
@@ -402,6 +392,30 @@ Configure sharing settings for members:
 .. *Read Only* in the *Access Level* list.
 . Click *Update*.
 . Click *Save*.
+
+Configure sharing settings for guests:
+
+. In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
+. Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and click *New*.
+. In the *Rule Name* section, update *Label* with `[Community Name] Guest`.
+. In the *Select your rule type* section, select `Guest user access, based on criteria`.
+. In the *Select which records to be shared* section, add these criteria.
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
+.. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
+. In *Select the users to share with*, select `[Community Name] Site Guest User`.
+. In *Select the level of access for the users*, select *Read Only*.
+. Save.
+. In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
+. Scroll to the *CommunityAssetVersions Sharing Rules* section near the bottom of the page and click *New*.
+. In the *Rule Name* section, update *Label* with `[Community Name] Guest`.
+. In the *Select your rule type* section, select `Guest user access, based on criteria`.
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
+.. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
+. In *Select the users to share with*, select `[Community Name] Site Guest User`.
+. In *Select the level of access for the users*, select *Read Only*.
+. Save.
+
+NOTE: If you ever change the name of your community, be sure to update this setting.
 
 == Enable Guest User Registration as Members
 
