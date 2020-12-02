@@ -18,6 +18,7 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 The following sections guide you through installing and configuring API Community Manager:
 
 * xref:installation-prerequisites.adoc[Installation Prerequisites]
+* xref:guided-setup.adoc[Guided Setup]
 * xref:set-up-domain.adoc[Set Up and Register a Domain and Enable Communities]
 * xref:deploy-domain.adoc[Deploy Your Domain]
 * xref:install-acm.adoc[Install API Community Manager Package]
