@@ -147,7 +147,7 @@ Return to the main list of update instructions and continue to follow them.
 [[post-176]]
 == Post-Install Steps When Upgrading from a Version before 1.76
 
-Upgrading from a package version before 1.76 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is suspended. When the configuration is complete, user access to asssets in the community is enabled.
+Upgrading from a package version before 1.76 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to asssets in the community is enabled.
 
 If you are upgrading from a package version before 1.76, follow these steps:
 
