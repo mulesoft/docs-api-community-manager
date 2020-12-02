@@ -1,0 +1,37 @@
+= Guided Setup
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
+
+== Configure a Custom Subdomain
+
+API Community Manager uses a custom subdomain to connect securely to your Anypoint organization.
+
+This section of the guided setup helps you configure your subdomain, or displays the subdomain you have already configured.
+
+== Connect with Your Anypoint Organization
+
+To connect your API Community Manager instance to your Anypoint organization:
+
+. Select your organization's Anypoint management plane.
++
+This may be the US plane, the EU plane, or another plane.
+. Create a connected app in your Anypoint organization for Salesforce to use as a consumer system.
++
+If your Anypoint account has the organization administrator role, the guided setup tool can create the connected app for you.
++
+Otherwise, create the connected app or ask an organization administrator to create it, then provide the app details so the guided setup can perform the authentication and authorization.
+. Authenticate and authorize the connected app to access your Anypoint organization.
++
+If your Anypoint account has the organization administrator role, provide your Anypoint Platform user and password, and the guided setup will create the app.
++
+Otherwise, provide the app details.
++
+The guided setup will authenticate and authorize the app to connect the API Community Manager organization with your Anypoint organization.
+
+== Next Steps
+
+After the connection with your Anypoint organization is established, click *Continue* to open the API Community Manager xref:diagnostics.adoc[diagnostics tool] to review your installation, then create your first community.
