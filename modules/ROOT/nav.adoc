@@ -5,6 +5,7 @@
  ** xref:security.adoc[Security]
 * xref:install.adoc[Install]
  ** xref:installation-prerequisites.adoc[Installation Prerequisites]
+ ** xref:guided-setup.adoc[Guided Setup]
  ** xref:set-up-domain.adoc[Set Up and Register a Domain and Enable Communities]
  ** xref:deploy-domain.adoc[Deploy Your Domain]
  ** xref:install-acm.adoc[Install API Community Manager Package]
