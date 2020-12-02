@@ -379,7 +379,7 @@ Configure sharing settings for members:
 . In *Setup*, search for *Communities* using the *Quick Find* box and click *Communities Settings*.
 . Scroll to *Sharing Sets* and click *New*.
 . In the *Sharing Set Edit* section, update *Label* with `[Community Name] Sharing Set`.
-. In the *Select Profiles* section, select *[Community Name] Profile* from *Available Profiles* and add it to *Selected Profiles*.
+. In the *Select Profiles* section, select *[Community Name] Member User* from *Available Profiles* and add it to *Selected Profiles*.
 . In the *Select Objects* section, select *CommunityApi* and *CommunityAssetVersion* from *Available Objects* and add them to *Selected Objects*.
 . In the *Configure Access* section, under the *Action* column, select *Set Up* next to *CommunityApi*.
 . In the *Access Mapping for CommunityApi* page enter these values.
