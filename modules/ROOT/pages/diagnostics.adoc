@@ -1,0 +1,27 @@
+= Diagnostics
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Diagnostics*.
+
+The *Organization* section shows this information about your Salesforce organization:
+
+. *Package version* shows the version of your currently installed API Community Manager package.
+. *Connectivity with Anypoint* shows the URL your API community uses to access Anypoint.
+. *Cache*:
+.. *Org cache enabled* shows if the organization cache is enabled and links to the platform cache metadata.
+.. *Org cache allocated* shows the size of the organization cache allocated and links to the platform cache configuration.
+.. *Session cache enabled* shows if the session cache is enabled and links to the platform cache metadata.
+.. *Session cache allocated* shows the size of the session cache allocated and links to the platform cache configuration.
+
+The *ACM Communities* section shows each of your ACM communities.
+
+Here you can choose to show all diagnostics (default) or only diagnostics to review, collapse all communities in the list, or create a new community.
+
+Each ACM community has options to open the community and to open the community builder, and shows three diagnostics:
+
+. *Community status* shows if the community is active.
+. *Public* shows if the community is public, and links to the builder where you can make the community public.
+. *Published assets status* shows if any assets in ACM incorrectly point to Exchange assets that no longer exist.
