@@ -21,6 +21,7 @@ The staging environment will have a partial or full copy of the data in the prod
 
 To update your API community:
 
+. Before performing any steps, read all the steps, including pre-install and post-install, which may require mandatory downtime during the update.
 . Ensure that your Salesforce organizations have the External Data Change Tracking for OData 4.0 Adapter feature enabled:
 .. Before upgrading the package in your production or sandbox organization, check that your organization has this feature enabled by going to *Setup* > *External Data Source* and editing the Exchange data source.
 .. If you don't see an *Eligible for External Change Data Capture* checkbox, raise a support case through the MuleSoft support portal and list the IDs of all your Salesforce API Community Manager organizations, including the IDs of all production and sandbox organizations.
@@ -147,7 +148,7 @@ Return to the main list of update instructions and continue to follow them.
 [[post-176]]
 == Post-Install Steps When Upgrading from a Version before 1.76
 
-Upgrading from a package version before 1.76 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to asssets in the community is enabled.
+*MANDATORY DOWNTIME*: Upgrading from a package version before 1.76 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to asssets in the community is enabled.
 
 If you are upgrading from a package version before 1.76, follow these steps:
 
@@ -163,7 +164,6 @@ Configure sharing settings for guests:
 . In *Select the users to share with*, select `[Community Name] Site Guest User`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Save.
-
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In the *Guest user profile* section, click *[Community Name] Profile*.
 . For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersions*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
