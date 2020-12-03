@@ -216,19 +216,15 @@ These are the permissions for the member users:
 |*Read Access*
 
 |CommunityApis
-|*Read*, *Create*, *Edit*, *Delete*
+|*Read*
 |*Read Access*
 
 |CommunityAssetVersions
-|*Read*, *Create*, *Edit*, *Delete*
+|*Read*
 |*Read Access*
 
 |Documents
 |*Read*
-|*Read Access*
-
-|SelfRegisterUserRequests
-|*Read*, *Create*, *Edit*, *Delete*
 |*Read Access*
 
 |======================
