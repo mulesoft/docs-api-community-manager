@@ -21,7 +21,9 @@ The staging environment will have a partial or full copy of the data in the prod
 
 To update your API community:
 
-. Before performing any steps, read all the steps, including pre-install and post-install, which may require mandatory downtime during the update.
+. Before performing any steps, read all the steps, including pre-install and post-install.
++
+Some steps may require mandatory downtime during the update.
 . Ensure that your Salesforce organizations have the External Data Change Tracking for OData 4.0 Adapter feature enabled:
 .. Before upgrading the package in your production or sandbox organization, check that your organization has this feature enabled by going to *Setup* > *External Data Source* and editing the Exchange data source.
 .. If you don't see an *Eligible for External Change Data Capture* checkbox, raise a support case through the MuleSoft support portal and list the IDs of all your Salesforce API Community Manager organizations, including the IDs of all production and sandbox organizations.
