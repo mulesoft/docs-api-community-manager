@@ -172,7 +172,7 @@ Configure sharing settings for guests:
 . For the object *CommunityAssetVersions*, in *Custom Object Permissions* ensure *Read* is enabled.
 . For the object *AnypointApiInstances*, in *Field Permissions* ensure that *Version* and *VersionGroup* have *Read Access* enabled.
 . In *External Object Permissions*, ensure each item has *Read* enabled.
-. Click *Save*.
+. Save.
 
 Configure sharing settings for members:
 
@@ -184,8 +184,8 @@ Configure sharing settings for members:
 .. *Account* in the *User* list.
 .. *acm_pkg__Account_c* in the *Target CommunityAssetVersions* list.
 .. *Read Only* in the *Access Level* list.
-. Click *Update*.
-. Click *Save*.
+. Update.
+. Save.
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
 . Click the *[Community Name] Member User* profile.
 . In the *[Community Name] Member User* profile page, click *Edit*.
@@ -193,6 +193,6 @@ Configure sharing settings for members:
 . For the object *CommunityAssetVersions*, in *Custom Object Permissions* ensure *Read* is enabled.
 . For the object *AnypointApiInstances*, in *Field Permissions* ensure that *Version* and *VersionGroup* have *Read Access* enabled.
 . In *External Object Permissions*, ensure each item has *Read* enabled.
-. Click *Save*.
+. Save.
 
 NOTE: If you ever change the name of your community, be sure to update this configuration.
