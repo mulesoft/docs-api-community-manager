@@ -1,4 +1,4 @@
-= Set Up the Data Bridge
+= Manual Setup: Set Up the Data Bridge
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
