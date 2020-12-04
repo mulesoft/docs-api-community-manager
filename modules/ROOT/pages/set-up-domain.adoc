@@ -1,4 +1,4 @@
-= Set Up and Register a Domain and Enable Communities
+= Manual Setup: Set Up and Register a Domain and Enable Communities
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
