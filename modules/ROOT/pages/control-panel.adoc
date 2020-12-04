@@ -1,4 +1,4 @@
-= Enable API Community Manager Control Panel
+= Manual Setup: Enable API Community Manager Control Panel
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
