@@ -33,6 +33,16 @@ To check the entitlement:
 
 == Prepare Identity Provider Data
 
+=== If You Already Have Anypoint Identity Provider
+
+If you already have Anypoint Identity Provider, get identity provider data from your current configuration:
+
+. Click *Access Management* > *Identity Providers*.
+. On *SAML 2.0* click *Edit*.
+. Copy the issuer and the audience so you can use them in the installation.
+
+=== If You Do Not Already Have Anypoint Identity Provider
+
 If you do not already have Anypoint Identity Provider (IdP), configure Salesforce as a SAML IdP:
 
 . In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
@@ -74,10 +84,6 @@ Configure external identity in your Anypoint organization:
 . Select *Enable new non-SSO users*.
 . Click *Save*.
 
-If you already have Anypoint Identity Provider, get identity provider data from your current configuration:
-
-. Click *Access Management* > *Identity Providers*.
-. On *SAML 2.0* click *Edit*.
-. Copy the issuer and the audience so you can use them in the installation.
+== Next Steps
 
 After you have confirmed that you have these prerequisites, continue to the installation steps.
