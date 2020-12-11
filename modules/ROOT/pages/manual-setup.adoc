@@ -100,6 +100,10 @@ Connected apps require redirect URIs but this configuration does not use them.
 
 You receive a client ID and a client secret. This configuration uses the certificate and does not use the client secret. Save the client ID so you can use it in the following steps.
 
+=== Identity Provider Data
+
+The following steps require the identity provider data you prepared in the xref:installation-prerequisites.adoc[Installation Prerequisites].
+
 === Create Named Credential
 
 . Click *Setup* > *Security* > *Named Credentials*.
@@ -131,10 +135,6 @@ Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_A
 . Click *Setup* > *Integrations* > *External Data Source* > *Exchange*.
 . In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
 . Click *Save*.
-
-=== Identity Provider Data
-
-The following steps require the identity provider data you prepared in the xref:installation-prerequisites.adoc[Installation Prerequisites].
 
 === User Configuration
 
