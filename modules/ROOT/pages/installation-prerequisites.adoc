@@ -30,4 +30,4 @@ To check the entitlement:
 .. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
 .. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
 
-After you have confirmed that you have these prerequisites, continue to the xref:set-up-domain.adoc[installation steps].
+After you have confirmed that you have these prerequisites, continue to the installation steps.
