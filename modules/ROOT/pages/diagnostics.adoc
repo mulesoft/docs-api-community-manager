@@ -25,3 +25,5 @@ Each ACM community has options to open the community and to open the community b
 . *Community status* shows if the community is active.
 . *Public* shows if the community is public, and links to the builder where you can make the community public.
 . *Published assets status* shows if any assets in ACM incorrectly point to Exchange assets that no longer exist.
+
+If your list of communities is empty, xref:create-community.adoc[Create a Community].

@@ -231,6 +231,8 @@ These are the permissions for the member users:
 
 All field-level permissions apply to all fields.
 
+These permissions reflect the current API Community Manager package version. If you are using an older version, your member user profile may have only some of these permissions objects. Set the objects in your member user profile to match the table, and ignore objects that are not in your member user profile.
+
 To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
 
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
