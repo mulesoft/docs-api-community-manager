@@ -6,6 +6,8 @@ endif::[]
 
 From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
 
+The following steps require a configured identity provider. For more information about configuring an identity provider, see xref:installation-prerequisites.adoc[Installation Prerequisites].
+
 == Configure a Custom Subdomain
 
 API Community Manager uses a custom subdomain to connect securely to your Anypoint organization.
