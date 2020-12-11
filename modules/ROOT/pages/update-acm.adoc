@@ -143,13 +143,16 @@ If you are upgrading from a package version before 1.74, follow these steps:
 . Click *Setup* > *External Data Source* > *Exchange*.
 . In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
 . Save.
+. Upgrading to version 1.74 removes the *Spec Downloader* component from the community API Details page.
++
+In the community builder, in *Pages* > *CommunityApi* > *API Detail*, add the *Spec Downloader* component.
 
 Return to the main list of update instructions and continue to follow them.
 
 [[post-177]]
 == Post-Install Steps When Upgrading from a Version before 1.77
 
-*MANDATORY DOWNTIME*: Upgrading from a package version before 1.77 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to assets in the community is enabled.
+*Potential degraded service of your community*: Upgrading from a package version before 1.77 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to assets in the community is enabled.
 
 If you are upgrading from a package version before 1.77, follow these steps:
 
