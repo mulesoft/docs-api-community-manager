@@ -379,6 +379,8 @@ These are the permissions for the guest users:
 
 All field-level permissions apply to all fields.
 
+These permissions reflect the current API Community Manager package version. If you are using an older version, your guest user profile may have only some of these permissions objects. Set the objects in your guest user profile to match the table, and ignore objects that are not in your guest user profile.
+
 To configure permissions for the guest user profile:
 
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
