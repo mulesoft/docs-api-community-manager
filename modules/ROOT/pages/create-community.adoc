@@ -195,6 +195,18 @@ These are the permissions for the member users:
 |*Read*, *Create*, *Edit*, *Delete*
 |*Read Access*, *Edit Access*
 
+|AnypointAssetCategories
+|*Read*
+|*Read Access*
+
+|AnypointAssets
+|*Read*
+|*Read Access*
+
+|AnypointAssetVersions
+|*Read*
+|*Read Access*
+
 |AnypointCategories
 |*Read*
 |*Read Access*
@@ -316,6 +328,18 @@ These are the permissions for the guest users:
 |*Read Access*
 
 |AnypointApplications
+|*Read*
+|*Read Access*
+
+|AnypointAssetCategories
+|*Read*
+|*Read Access*
+
+|AnypointAssets
+|*Read*
+|*Read Access*
+
+|AnypointAssetVersions
 |*Read*
 |*Read Access*
 
