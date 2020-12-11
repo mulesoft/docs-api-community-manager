@@ -329,7 +329,7 @@ API Group Learn More Button Label:: Specifies the button label for API groups. D
 Show API Access Requester:: Shows the API access requester.
 Show API Version:: Shows the asset version from Exchange when only one version is visible.
 
-When more than one version of the asset is visible, the API Header component displays a version selector and the Show API Version checkbox has no effect.
+When more than one version of the asset is visible, the API Header component displays a version selector and the *Show API Version* checkbox has no effect.
 
 [[application-analytics-graph]]
 == Application Analytics Graph
