@@ -21,6 +21,8 @@ The staging environment will have a partial or full copy of the data in the prod
 
 To update your API community:
 
+. Before performing any steps, read all the steps, including pre-install and post-install.
+. If necessary, notify your customers and stakeholders of the update, and that APIs, docs, and client app pages may not work during the update during the time after installing the new package and before completing the required configuration changes.
 . Ensure that your Salesforce organizations have the External Data Change Tracking for OData 4.0 Adapter feature enabled:
 .. Before upgrading the package in your production or sandbox organization, check that your organization has this feature enabled by going to *Setup* > *External Data Source* and editing the Exchange data source.
 .. If you don't see an *Eligible for External Change Data Capture* checkbox, raise a support case through the MuleSoft support portal and list the IDs of all your Salesforce API Community Manager organizations, including the IDs of all production and sandbox organizations.
@@ -29,76 +31,170 @@ Attempting to upgrade the package without this feature enabled causes the proces
 . Open the API Community Manager control panel.
 . In the same browser session, open the *package update installation link* provided by your MuleSoft representative.
 . Verify the version number and name of the release.
-. If you are upgrading from a package version before 1.26, follow these steps:
-.. Go to Salesforce Workbench: https://workbench.developerforce.com/
-.. Select Standard.
-.. Enter your username and password.
-.. Click the Login button.
-.. In the Queries menu, click SOQL Query.
-.. In the Object list, select *NavigationLinkSet*.
-.. In the Fields list, select *Id* and *MasterLabel*.
-.. Click the Query button.
-.. The query results are displayed as a list of records.
-.. Find the records with the *MasterLabel* field set to *NTO_Nav0* and *acm_template_Nav0*.
-.. Click the *Id* of the record with the *MasterLabel* field *NTO_Nav0*.
-.. Click the Delete button.
-.. Click the Confirm delete button.
-.. Click the *Id* of the record with the *MasterLabel* field *acm_template_Nav0*.
-.. Click the Delete button.
-.. Click the Confirm delete button.
-.. Continue with normal package installation.
-. If you are upgrading from a package version before 1.74, follow these steps:
-.. Create a new named credential:
-... Click *Setup* > *Named Credentials*.
-... Copy the configuration information from the named credential `anypoint_mulesoft`.
-... Create a new named credential with the name `Anypoint` and matching configuration.
-.. Update the external data source:
-... Click *Setup* > *External Data Source* > *Exchange* > *Edit*.
-... Set *URL* to `callout:Anypoint/odatabridge/odata.svc/`.
-... Ensure that *Eligible for External Change Data Capture* is enabled.
-... Click *Save*.
-.. Update the previous named credential:
-... Click *Setup* > *Named Credentials*.
-... Modify the named credential `anypoint_mulesoft`.
-... Set *Identity Type* to *Named Principal*.
-... Set *Authentication Protocol* to *Password Authentication*.
-... Set *Username* to the placeholder value `user`.
-... Set *Password* to the placeholder value `pass`.
-... In the section *Callout Options*, enable *Generate Authorization Header*, *Allow Merge Fields in HTTP Header*, and *Allow Merge Fields in HTTP Body*.
+. If you are upgrading from a package version before 1.26, follow the <<pre-126>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.74, follow the <<pre-174>> and then continue with these instructions.
 . Select *Install for admins only*.
 . Select *Upgrade*.
 +
 This starts the installation process.
 +
 When the upgrade finishes, you receive a notification email.
-. If you are upgrading from package version 1.62 or earlier, after installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
-.. Configure the `Member` profile:
-... Click *Setup* > *Profiles*.
-... Open the `Member` profile.
-... Click *Object settings* > *CommunityAPI*.
-... Ensure the `ParentId` field has `Read` access.
-... Save.
-.. Configure the `Guest` profile:
-... Click *Community builder* > *Settings* > *General*.
-... Open the `Guest` profile.
-... Click *Object settings* > *CommunityAPI*.
-... Ensure the `ParentId` field has `Read` access.
-... Save.
-. If you are upgrading from a package version before 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
-.. Configure the `Member` profile permissions:
-... Click *Setup* > *Profiles*.
-... Open the `Member` profile.
-... Click *Object settings* > *SelfRegisterUserRequests*.
-... Ensure there are no object level permissions and no field level permissions for this profile on this object.
-.. Configure the `Guest` profile permissions:
-... Open the community builder.
-... Click *Settings* > *General*.
-... Open the `Guest` profile.
-... Click *Object settings* > *SelfRegisterUserRequests*.
-... Ensure that object level permissions include only `Create` and `Read`.
-... Ensure that field level permissions for all fields include only `Read` and `Edit`.
-.. Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
-. If you are upgrading from a package version before 1.74, follow these steps:
-.. Click *Setup* > *External Data Source* > *Exchange*.
-.. In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
-.. Click *Save*.
+. If you are upgrading from package version 1.62 or earlier, follow the <<post-162>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.69, follow the <<post-169>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.77, follow the <<post-177>>.
+
+[[pre-126]]
+== Pre-Install Steps When Upgrading from a Version before 1.26
+
+If you are upgrading from a package version before 1.26, follow these steps:
+
+. Go to Salesforce Workbench: https://workbench.developerforce.com/
+. Select Standard.
+. Enter your username and password.
+. Click the Login button.
+. In the Queries menu, click SOQL Query.
+. In the Object list, select *NavigationLinkSet*.
+. In the Fields list, select *Id* and *MasterLabel*.
+. Click the Query button.
+. The query results are displayed as a list of records.
+. Find the records with the *MasterLabel* field set to *NTO_Nav0* and *acm_template_Nav0*.
+. Click the *Id* of the record with the *MasterLabel* field *NTO_Nav0*.
+. Click the Delete button.
+. Click the Confirm delete button.
+. Click the *Id* of the record with the *MasterLabel* field *acm_template_Nav0*.
+. Click the Delete button.
+. Click the Confirm delete button.
+. Continue with normal package installation.
+
+Return to the main list of update instructions and continue to follow them.
+
+[[pre-174]]
+== Pre-Install Steps When Upgrading from a Version before 1.74
+
+If you are upgrading from a package version before 1.74, follow these steps:
+
+. Create a new named credential:
+.. Click *Setup* > *Named Credentials*.
+.. Copy the configuration information from the named credential `anypoint_mulesoft`.
+.. Create a new named credential with the name `Anypoint` and matching configuration.
+. Update the external data source:
+.. Click *Setup* > *External Data Source* > *Exchange* > *Edit*.
+.. Set *URL* to `callout:Anypoint/odatabridge/odata.svc/`.
+.. Ensure that *Eligible for External Change Data Capture* is enabled.
+.. Save.
+. Update the previous named credential:
+.. Click *Setup* > *Named Credentials*.
+.. Modify the named credential `anypoint_mulesoft`.
+.. Set *Identity Type* to *Named Principal*.
+.. Set *Authentication Protocol* to *Password Authentication*.
+.. Set *Username* to the placeholder value `user`.
+.. Set *Password* to the placeholder value `pass`.
+.. In the section *Callout Options*, enable *Generate Authorization Header*, *Allow Merge Fields in HTTP Header*, and *Allow Merge Fields in HTTP Body*.
+
+Return to the main list of update instructions and continue to follow them.
+
+[[post-162]]
+== Post-Install Steps When Upgrading from Version 1.62 or Earlier
+
+If you are upgrading from package version 1.62 or earlier, after installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
+
+. Configure the `Member` profile:
+.. Click *Setup* > *Profiles*.
+.. Open the `Member` profile.
+.. Click *Object settings* > *CommunityAPI*.
+.. Ensure the `ParentId` field has `Read` access.
+.. Save.
+. Configure the `Guest` profile:
+.. Click *Community builder* > *Settings* > *General*.
+.. Open the `Guest` profile.
+.. Click *Object settings* > *CommunityAPI*.
+.. Ensure the `ParentId` field has `Read` access.
+.. Save.
+
+Return to the main list of update instructions and continue to follow them.
+
+[[post-169]]
+== Post-Install Steps When Upgrading from a Version before 1.69
+
+If you are upgrading from a package version before 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
+
+. Configure the `Member` profile permissions:
+.. Click *Setup* > *Profiles*.
+.. Open the `Member` profile.
+.. Click *Object settings* > *SelfRegisterUserRequests*.
+.. Ensure there are no object level permissions and no field level permissions for this profile on this object.
+. Configure the `Guest` profile permissions:
+.. Open the community builder.
+.. Click *Settings* > *General*.
+.. Open the `Guest` profile.
+.. Click *Object settings* > *SelfRegisterUserRequests*.
+.. Ensure that object level permissions include only `Create` and `Read`.
+.. Ensure that field level permissions for all fields include only `Read` and `Edit`.
+. Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of update instructions and continue to follow them.
+
+[[post-174]]
+== Post-Install Steps When Upgrading from a Version before 1.74
+
+If you are upgrading from a package version before 1.74, follow these steps:
+
+. Click *Setup* > *External Data Source* > *Exchange*.
+. In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
+. Save.
+. Upgrading to version 1.74 removes the *Spec Downloader* component from the community API Details page.
++
+In the community builder, in *Pages* > *CommunityApi* > *API Detail*, add the *Spec Downloader* component.
+
+Return to the main list of update instructions and continue to follow them.
+
+[[post-177]]
+== Post-Install Steps When Upgrading from a Version before 1.77
+
+*Potential degraded service of your community*: Upgrading from a package version before 1.77 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to assets in the community is enabled.
+
+If you are upgrading from a package version before 1.77, follow these steps:
+
+Configure sharing settings for guests:
+
+. In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
+. Scroll to the *CommunityAssetVersions Sharing Rules* section near the bottom of the page and click *New*.
+. In the *Rule Name* section, update *Label* with `[Community Name] Sharing Rule`.
+. In the *Select your rule type* section, select `Guest user access, based on criteria`.
+. In the *Select which records to be shared* section, add these criteria.
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
+.. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
+. In *Select the users to share with*, select `[Community Name] Site Guest User`.
+. In *Select the level of access for the users*, select *Read Only*.
+. Save.
+. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
+. In the *Guest user profile* section, click *[Community Name] Profile*.
+. For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersions*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. For the object *CommunityAssetVersions*, in *Custom Object Permissions* ensure *Read* is enabled.
+. For the object *AnypointApiInstances*, in *Field Permissions* ensure that *Version* and *VersionGroup* have *Read Access* enabled.
+. In *External Object Permissions*, ensure each item has *Read* enabled.
+. Save.
+
+Configure sharing settings for members:
+
+. In *Setup*, search for *Communities* using the *Quick Find* box and click *Communities Settings*.
+. Scroll to *Sharing Sets* and click *Edit* next to the set *[Community Name] Sharing Set*.
+. In the *Select Objects* section, select *CommunityAssetVersions* from *Available Objects* and add it to *Selected Objects*.
+. In the *Configure Access* section, select *Set Up* under the *Action* column next to *CommunityAssetVersions*.
+. In the *Access Mapping for *CommunityAssetVersions* page enter these values.
+.. *Account* in the *User* list.
+.. *acm_pkg__Account_c* in the *Target CommunityAssetVersions* list.
+.. *Read Only* in the *Access Level* list.
+. Update.
+. Save.
+. In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
+. Click the *[Community Name] Member User* profile.
+. In the *[Community Name] Member User* profile page, click *Edit*.
+. For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersions*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. For the object *CommunityAssetVersions*, in *Custom Object Permissions* ensure *Read* is enabled.
+. For the object *AnypointApiInstances*, in *Field Permissions* ensure that *Version* and *VersionGroup* have *Read Access* enabled.
+. In *External Object Permissions*, ensure each item has *Read* enabled.
+. Save.
+
+NOTE: If you ever change the name of your community, be sure to update this configuration.
