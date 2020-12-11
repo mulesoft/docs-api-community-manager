@@ -73,6 +73,8 @@ The impersonation mechanism creates Anypoint user records with member email addr
 == Anypoint Permissions Configuration
 
 . Log in to your API community as an administrative user.
+. Navigate to Access Management and select Users
+. Grant the impersonated Anypoint user (the user will be the email of the salesforce admin) the *Manage Contracts* permission for each environment under the Api Manager section.
 . In the public side of the community, request access to an API with manual approval.
 . Log in to Anypoint and approve the requested API contract.
 +
