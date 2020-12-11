@@ -21,6 +21,7 @@ The following sections guide you through installing and configuring API Communit
 * xref:install-acm.adoc[Install API Community Manager Package]
 * xref:guided-setup.adoc[Guided Setup]
 * xref:manual-setup.adoc[Manual Setup]
+* xref:cache.adoc[Configure the Platform Cache]
 * xref:create-community.adoc[Create a Community]
 * xref:install-validate.adoc[Verify the Installation]
 * xref:branded-emails.adoc[Optionally Configure Branded Emails]

@@ -34,6 +34,21 @@ Otherwise, provide the app details.
 +
 The guided setup will authenticate and authorize the app to connect the API Community Manager organization with your Anypoint organization.
 
+== User Configuration
+
+Give your user the *Exchange Contributor* role:
+
+. In your Anypoint Platform organization, click *Access Management* > *Users*.
+. Select your user.
+. Click *Role* > *Add role by name*.
+. Add the role *Exchange Contributor*.
+
+Map community user to Anypoint role:
+
+. Ensure that you have Exchange Administrator permissions.
+. In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
+. In *Exchange Viewers*, set a new External group called `Community User` and save it.
+
 == Next Steps
 
 After the connection with your Anypoint organization is established, click *Continue* to open the API Community Manager xref:diagnostics.adoc[diagnostics tool] to review your installation, then create your first community.
