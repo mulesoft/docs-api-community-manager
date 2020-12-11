@@ -47,7 +47,7 @@ Community Builder displays a preview of your community's site and edit options.
 . Select *Preview*.
 . Scroll to the API carousel that displays a card for each API or API Group version in the community.
 
-The new API or API Group version shows the message *This is only visible for you*, indicating *Administrators only* visibility. Consumer developers cannot see this API or API Group version preview.
+The new API version or API Group shows the message *This is only visible for you*, indicating *Administrators only* visibility. Consumer developers cannot see this API version or API Group preview.
 
 If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
 
