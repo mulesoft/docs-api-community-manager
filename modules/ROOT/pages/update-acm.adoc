@@ -42,7 +42,7 @@ When the upgrade finishes, you receive a notification email.
 . If you are upgrading from package version 1.62 or earlier, follow the <<post-162>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.69, follow the <<post-169>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.76, follow the <<post-176>>.
+. If you are upgrading from a package version before 1.77, follow the <<post-177>>.
 
 [[pre-126]]
 == Pre-Install Steps When Upgrading from a Version before 1.26
@@ -146,12 +146,12 @@ If you are upgrading from a package version before 1.74, follow these steps:
 
 Return to the main list of update instructions and continue to follow them.
 
-[[post-176]]
-== Post-Install Steps When Upgrading from a Version before 1.76
+[[post-177]]
+== Post-Install Steps When Upgrading from a Version before 1.77
 
-*MANDATORY DOWNTIME*: Upgrading from a package version before 1.76 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to asssets in the community is enabled.
+*MANDATORY DOWNTIME*: Upgrading from a package version before 1.77 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to assets in the community is enabled.
 
-If you are upgrading from a package version before 1.76, follow these steps:
+If you are upgrading from a package version before 1.77, follow these steps:
 
 Configure sharing settings for guests:
 
