@@ -71,6 +71,7 @@ Configure external identity in your Anypoint organization:
 
 . In the Salesforce organization, click *Setup*, use the *Quick Find* box to search for *Identity Provider*, and click *Identity Provider*.
 . Click *Enable Identity Provider*.
+. Save.
 . Use the *Quick Find* box to search for *App Manager*, choose the app named *Anypoint*, and in the last column of the table, click the arrow and click *Manage*.
 . Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
 . Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
