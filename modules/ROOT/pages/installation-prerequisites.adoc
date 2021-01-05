@@ -28,6 +28,8 @@ To check the entitlement:
 
 .. Log in to your Anypoint Platform organization.
 .. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
++
+If you are using MuleSoft Government Cloud, use the correct URL for your management plane.
 .. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
 . Identity provider data.
 
