@@ -27,9 +27,9 @@ If you don't see any roles in the list, refer to the Salesforce knowledge articl
 To check the entitlement:
 
 .. Log in to your Anypoint Platform organization.
-.. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
+.. If you are using the US cloud, avigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
 +
-If you are using MuleSoft Government Cloud, use the correct URL for your management plane.
+If you are using the EU cloud or MuleSoft Government Cloud, substitute the correct URL for your management plane.
 .. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
 . Identity provider data.
 
@@ -45,7 +45,9 @@ If you already have Anypoint Identity Provider, get identity provider data from 
 
 === If You Do Not Already Have Anypoint Identity Provider
 
-If you do not already have Anypoint Identity Provider (IdP), configure Salesforce as a SAML IdP:
+If you do not already have Anypoint Identity Provider (IdP), configure Salesforce as a SAML IdP.
+
+The following instructions use URLs for the US cloud that begin with `+https://anypoint.mulesoft.com/+`. If you are using the EU cloud or MuleSoft Government Cloud, substitute the correct URL for your management plane.
 
 . In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
 . Click *New Connected App* in the top right.
