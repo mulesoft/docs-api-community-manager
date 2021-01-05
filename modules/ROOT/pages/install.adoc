@@ -25,3 +25,4 @@ The following sections guide you through installing and configuring API Communit
 * xref:create-community.adoc[Create a Community]
 * xref:install-validate.adoc[Verify the Installation]
 * xref:branded-emails.adoc[Optionally Configure Branded Emails]
+* xref:govcloud-data-control.adoc[GovCloud Data Control]
