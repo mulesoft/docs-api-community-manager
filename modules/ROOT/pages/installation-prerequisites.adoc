@@ -27,7 +27,7 @@ If you don't see any roles in the list, refer to the Salesforce knowledge articl
 To check the entitlement:
 
 .. Log in to your Anypoint Platform organization.
-.. If you are using the US cloud, avigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
+.. If you are using the US cloud, navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
 +
 If you are using the EU cloud or MuleSoft Government Cloud, substitute the correct URL for your management plane.
 .. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
