@@ -10,8 +10,8 @@ Restrictions are defined on the Anypoint organization management plane and appli
 
 To define the restricted data entities and the operations allowed on each:
 
-* To get an authorization token, call the Anypoint identity services API with the username and password of a user with the `Organization Administrator` permission.
-* Use the token to make the API call to set a property in your Anypoint organization.
+. To get an authorization token, call the Anypoint identity services API with the username and password of a user with the `Organization Administrator` permission.
+. Use the token to make the API call to set a property in your Anypoint organization.
 
 Entities not listed in this configuration setting allow create, read, update, and delete operations.
 
