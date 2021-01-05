@@ -1,0 +1,104 @@
+= GovCloud Data Control
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+MuleSoft Government Cloud (GovCloud) organizations can restrict the data entities exposed to their Salesforce Community Cloud ACM instance.
+
+Restrictions are defined on the Anypoint organization management plane and applied at the data bridge level.
+
+To define the restricted data entities and the operations allowed on each:
+
+* To get an authorization token, call the Anypoint identity services API with the username and password of a user with the `Organization Administrator` permission.
+* Use the token to make the API call to set a property in your Anypoint organization.
+
+Entities not listed in this configuration setting allow create, read, update, and delete operations.
+
+For entities listed in this configuration setting, all operations not present in the permissions array are blocked.
+
+Attempting a blocked operation returns an HTTP 403 error.
+
+== Example Request
+
+This example request enables all operations on the `AnypointApplication` entity and enables only the read operation on the `AnypointCategory` entity.
+
+----
+curl --location --request PUT 'https://gov.anypoint.mulesoft.com/accounts/api/organizations/<ORG_ID>' \
+--header 'Authorization: Bearer <YOUR_BEARER_KEY>' \
+--header 'Content-Type: application/json' \
+--data-raw '{ "properties": {
+       "acm": {
+           "entities": {
+             "AnypointApplication": {
+                    "permissions": ["create", "read", "update", "delete"]
+             },
+             "AnypointCategory": {
+                    "permissions": ["read"]
+             }
+           }
+       }
+   }
+}'
+----
+
+== Available Entities
+
+* `AnypointApi`
+* `AnypointApis`
+* `AnypointApiProduct`
+* `AnypointApiProducts`
+* `AnypointApiVersion`
+* `AnypointApiVersions`
+* `AnypointAssets`
+* `AnypointAssetVersions`
+* `AnypointAssetCategories`
+* `AnypointApiGroupVersion`
+* `AnypointApiGroupVersions`
+* `AnypointApiGroupInstance`
+* `AnypointApiGroupInstances`
+* `AnypointApiGroupInstanceApiInstance`
+* `AnypointApiGroupInstancesApiInstances`
+* `AnypointApiGroupTier`
+* `AnypointApiGroupTiers`
+* `AnypointApiGroupTierLimit`
+* `AnypointApiGroupTierLimits`
+* `AnypointApiInstance`
+* `AnypointApiInstances`
+* `AnypointApiTier`
+* `AnypointApiTiers`
+* `AnypointApiTierLimit`
+* `AnypointApiTierLimits`
+* `AnypointApiPage`
+* `AnypointApiPages`
+* `AnypointApiFile`
+* `AnypointAssets`
+* `AnypointAssetVersions`
+* `AnypointAssetCategories`
+* `AnypointApiFile`
+* `AnypointApiStat`
+* `AnypointCategory`
+* `AnypointApiCategory`
+* `AnypointCategories`
+* `AnypointApiCategories`
+* `AnypointApiStats`
+* `AnypointOrganization`
+* `AnypointOrganizations`
+* `AnypointUser`
+* `AnypointUsers`
+* `AnypointEnvironment`
+* `AnypointEnvironments`
+* `AnypointApplication`
+* `AnypointApplications`
+* `AnypointApplicationOwner`
+* `AnypointApplicationOwners`
+* `AnypointContract`
+* `AnypointContractOperation`
+* `AnypointResetClientOperation`
+* `AnypointContracts`
+* `RevokeApiContract`
+* `RestoreApiContract`
+* `ResetApplicationSecret`
+* `CacheEvict`
+* `AnypointApiVersionQueries`
+* `AnypointApiVersionQuery`
