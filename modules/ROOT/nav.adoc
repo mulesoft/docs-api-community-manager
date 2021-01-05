@@ -12,6 +12,7 @@
  ** xref:create-community.adoc[Create a Community]
  ** xref:install-validate.adoc[Verify the Installation]
  ** xref:branded-emails.adoc[Optionally Configure Branded Emails]
+ ** xref:govcloud-data-control.adoc[GovCloud Data Control]
 * xref:brand-intro.adoc[Brand and Customize Your API Community]
  ** xref:customize.adoc[API Community Look-and-Feel Customization]
  ** xref:site-structure.adoc[API Community Site Structure]
