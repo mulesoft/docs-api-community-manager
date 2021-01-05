@@ -106,6 +106,8 @@ The following steps require the identity provider data you prepared in the xref:
 
 === Create Named Credential
 
+The following instructions use URLs for the US cloud that begin with `+https://anypoint.mulesoft.com/+`. If you are using the EU cloud or MuleSoft Government Cloud, substitute the correct URL for your management plane.
+
 . Click *Setup* > *Security* > *Named Credentials*.
 . Create a named credential with the name `Anypoint`.
 . Set *URL* to `+https://anypoint.mulesoft.com+`.
