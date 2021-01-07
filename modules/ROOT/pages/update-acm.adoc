@@ -170,7 +170,7 @@ Configure sharing settings for guests:
 . Save.
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In the *Guest user profile* section, click *[Community Name] Profile*.
-. For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersions*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersion*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
 . For the object *CommunityAssetVersions*, in *Custom Object Permissions* ensure *Read* is enabled.
 . For the object *AnypointApiInstances*, in *Field Permissions* ensure that *Version* and *VersionGroup* have *Read Access* enabled.
 . In *External Object Permissions*, ensure each item has *Read* enabled.
@@ -189,9 +189,12 @@ Configure sharing settings for members:
 . Update.
 . Save.
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
-. Click the *[Community Name] Member User* profile.
-. In the *[Community Name] Member User* profile page, click *Edit*.
-. For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersions*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. Repeat the following steps for each of the profiles for your users.
++
+There may be one or more user profiles to configure.
+. Click the profile.
+. In the profile page, click *Edit*.
+. For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersion*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
 . For the object *CommunityAssetVersions*, in *Custom Object Permissions* ensure *Read* is enabled.
 . For the object *AnypointApiInstances*, in *Field Permissions* ensure that *Version* and *VersionGroup* have *Read Access* enabled.
 . In *External Object Permissions*, ensure each item has *Read* enabled.
