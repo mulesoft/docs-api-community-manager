@@ -8,10 +8,9 @@ MuleSoft Government Cloud (GovCloud) organizations can restrict the data entitie
 
 Restrictions are defined on the Anypoint organization management plane and applied at the data bridge level.
 
-To define the restricted data entities and the operations allowed on each:
+Before defining the entities and restrictions, get an authorization token from the Anypoint identity services API endpoint `/accounts/login` by sending the username and password of a user with the `Organization Administrator` permission.
 
-. To get an authorization token, call the Anypoint identity services API with the username and password of a user with the `Organization Administrator` permission.
-. Use the token to make the API call to set a property in your Anypoint organization.
+To define the restricted data entities and the operations allowed on each, use the token to make the API call to set a property in your Anypoint organization.
 
 Entities not listed in this configuration setting allow create, read, update, and delete operations.
 
@@ -28,33 +27,26 @@ curl --location --request PUT 'https://gov.anypoint.mulesoft.com/accounts/api/or
 --header 'Authorization: Bearer <YOUR_BEARER_KEY>' \
 --header 'Content-Type: application/json' \
 --data-raw '{ "properties": {
-       "acm": {
-           "entities": {
-             "AnypointApplication": {
-                    "permissions": ["create", "read", "update", "delete"]
-             },
-             "AnypointCategory": {
-                    "permissions": ["read"]
-             }
-           }
-       }
-   }
-}'
+    "acm": {
+        "entities": {
+            "AnypointApplication": {
+                "permissions": ["create", "read", "update", "delete"]
+            },
+            "AnypointCategory": {
+                "permissions": ["read"]
+            }
+        }
+    }
+}}'
 ----
 
 == Available Entities
 
 * `AnypointApi`
 * `AnypointApis`
-* `AnypointApiProduct`
-* `AnypointApiProducts`
-* `AnypointApiVersion`
-* `AnypointApiVersions`
-* `AnypointAssets`
-* `AnypointAssetVersions`
-* `AnypointAssetCategories`
-* `AnypointApiGroupVersion`
-* `AnypointApiGroupVersions`
+* `AnypointApiCategory`
+* `AnypointApiCategories`
+* `AnypointApiFile`
 * `AnypointApiGroupInstance`
 * `AnypointApiGroupInstances`
 * `AnypointApiGroupInstanceApiInstance`
@@ -63,42 +55,44 @@ curl --location --request PUT 'https://gov.anypoint.mulesoft.com/accounts/api/or
 * `AnypointApiGroupTiers`
 * `AnypointApiGroupTierLimit`
 * `AnypointApiGroupTierLimits`
+* `AnypointApiGroupVersion`
+* `AnypointApiGroupVersions`
 * `AnypointApiInstance`
 * `AnypointApiInstances`
+* `AnypointApiPage`
+* `AnypointApiPages`
+* `AnypointApiProduct`
+* `AnypointApiProducts`
+* `AnypointApiStat`
+* `AnypointApiStats`
 * `AnypointApiTier`
 * `AnypointApiTiers`
 * `AnypointApiTierLimit`
 * `AnypointApiTierLimits`
-* `AnypointApiPage`
-* `AnypointApiPages`
-* `AnypointApiFile`
-* `AnypointAssets`
-* `AnypointAssetVersions`
-* `AnypointAssetCategories`
-* `AnypointApiFile`
-* `AnypointApiStat`
-* `AnypointCategory`
-* `AnypointApiCategory`
-* `AnypointCategories`
-* `AnypointApiCategories`
-* `AnypointApiStats`
-* `AnypointOrganization`
-* `AnypointOrganizations`
-* `AnypointUser`
-* `AnypointUsers`
-* `AnypointEnvironment`
-* `AnypointEnvironments`
+* `AnypointApiVersion`
+* `AnypointApiVersions`
+* `AnypointApiVersionQuery`
+* `AnypointApiVersionQueries`
 * `AnypointApplication`
 * `AnypointApplications`
 * `AnypointApplicationOwner`
 * `AnypointApplicationOwners`
+* `AnypointAssets`
+* `AnypointAssetCategories`
+* `AnypointAssetVersions`
+* `AnypointCategory`
+* `AnypointCategories`
 * `AnypointContract`
-* `AnypointContractOperation`
-* `AnypointResetClientOperation`
 * `AnypointContracts`
-* `RevokeApiContract`
-* `RestoreApiContract`
-* `ResetApplicationSecret`
+* `AnypointContractOperation`
+* `AnypointEnvironment`
+* `AnypointEnvironments`
+* `AnypointOrganization`
+* `AnypointOrganizations`
+* `AnypointResetClientOperation`
+* `AnypointUser`
+* `AnypointUsers`
 * `CacheEvict`
-* `AnypointApiVersionQueries`
-* `AnypointApiVersionQuery`
+* `ResetApplicationSecret`
+* `RestoreApiContract`
+* `RevokeApiContract`
