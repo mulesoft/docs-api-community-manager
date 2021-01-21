@@ -5,20 +5,20 @@ endif::[]
 :imagesdir: ../assets/images/
 
 API Community Manager can be used to create developer communities that surface APIs from Anypoint Platform
-organizations in the MuleSoft GovCloud environment. In this deployment model, your developer community runs
+organizations in the MuleSoft Government Cloud (GovCloud) environment. In this deployment model, your developer community runs
 on the standard API Community Manager product in the commercial cloud environment, and it connects to your
-Anypoint GovCloud org as an "external system" to retrieve the specific information you want to make available
-outside your FedRAMP "authorization boundary" for your public API community, such as API documentation.
+Anypoint GovCloud organization as an external system to retrieve the specific information you want to make available
+outside your FedRAMP authorization boundary for your public API community, such as API documentation.
 
-To ensure data security in this model, you have full control of what data in your Anypoint GovCloud org is
-accessible for the API Community Manager product in the commercial cloud environment. You can find the details
-on how these fine-grain data access controls can be configured in the GovCloud Data Control documentation page.
+To ensure data security in this model, you have full control of what data in your Anypoint GovCloud organization is
+accessible for the API Community Manager product in the commercial cloud environment. The GovCloud data control
+documentation page shows how to configure these fine-grain data access controls.
 
 Additionally, for compliance with FedRAMP regulations on handling support cases associated with API Community
-Manager when connected to your Anypoint GovCloud org, any support case that requires access or interaction
+Manager when connected to your Anypoint GovCloud organization, any support case that requires access or interaction
 with your Anypoint organization data is handled by the MuleSoft support team following FedRAMP requirements.
 Cases not requiring access to your Anypoint GovCloud data, such as look and feel, branding, CMS articles, and
-forums on your public developer community are handled through API Community Manager standard support processes.
+forums on your public developer community, are handled through API Community Manager standard support processes.
 
 == See Also
 
