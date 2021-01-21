@@ -8,7 +8,11 @@ Keep your Anypoint API Community Manager instance up to date to take advantage o
 
 For information about updates, see xref:notifications.adoc[Important Notifications].
 
-After you install an update with this process, it is not possible to undo the installation and return to a previous version. Follow this best-practice workflow:
+After you install an update with this process, it is not possible to undo the installation and return to a previous version. Follow the best-practice workflow by creating safe sandbox environments and using them to test each update before installing the update in your production environment.
+
+== Sandboxes
+
+Best-practice workflow:
 
 . Keep a partial copy sandbox or a full copy sandbox as a long-term staging environment.
 +
@@ -18,6 +22,27 @@ The staging environment will have a partial or full copy of the data in the prod
 . Discard the developer sandbox.
 . Install the update in the staging sandbox and test it.
 . Install the update in your production environment.
+
+To create a new sandbox:
+
+. In *Setup*, search for *Sandboxes* using the *Quick Find* box and click *New Sandbox*.
+. Enter a name and description and create a new developer sandbox.
+. After several minutes to a few hours, sandbox creation completes and sends you a notification email.
+. In *Setup*, search for *Sandboxes* using the *Quick Find* box and log in to your new sandbox.
+.. Note that the user name has the sandbox name as a suffix.
+.. Enter your administrator password.
+. Validate the sandbox:
+.. Open the application launcher.
+.. Open the *API Community Manager* application.
+.. Publish a few APIs.
+.. Open the builder.
+.. Publish your community.
+.. Open your community's live site.
+.. Validate the site is operational.
+
+After validating your sandbox, begin the update.
+
+== Update Steps
 
 To update your API community:
 
