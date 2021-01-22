@@ -201,3 +201,23 @@ There may be one or more user profiles to configure.
 . Save.
 
 NOTE: If you ever change the name of your community, be sure to update this configuration.
+
+[[post-179]]
+== Post-Install Steps When Upgrading from a Version before 1.79
+
+If you are upgrading from a package version before 1.74, update the permissions of the `Member` and `Guest` profiles on the *AnypointClientProviders* object:
+
+. Configure the `Member` profile permissions:
+.. Click *Setup* > *Profiles*.
+.. Open the `Member` profile.
+.. Click *Object settings* > *AnypointClientProviders*.
+.. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. Configure the `Guest` profile permissions:
+.. Open the community builder.
+.. Click *Settings* > *General*.
+.. Open the `Guest` profile.
+.. Click *Object settings* > *AnypointClientProviders*.
+.. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of update instructions and continue to follow them.
