@@ -1,25 +1,25 @@
-= Connectivity with Anypoint GovCloud
+= Connectivity with MuleSoft Government Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-API Community Manager can be used to create developer communities that surface APIs from Anypoint Platform
-organizations in the MuleSoft Government Cloud (GovCloud) environment. In this deployment model, your developer community runs
-on the standard API Community Manager product in the commercial cloud environment, and it connects to your
-Anypoint GovCloud organization as an external system to retrieve the specific information you want to make available
+Use Anypoint API Community Manager to create developer communities that surface APIs from Anypoint Platform
+organizations in the MuleSoft Government Cloud environment. In this deployment model, your developer community runs
+on the standard API Community Manager product in the commercial cloud environment. Your community connects to your
+MuleSoft Government Cloud organization as an external system to retrieve the specific information you want to make available
 outside your FedRAMP authorization boundary for your public API community, such as API documentation.
 
-To ensure data security in this model, you have full control of what data in your Anypoint GovCloud organization is
-accessible for the API Community Manager product in the commercial cloud environment. The GovCloud data control
-documentation page shows how to configure these fine-grain data access controls.
+In this model, you have full control of what data in your MuleSoft Government Cloud organization is
+accessible to the API Community Manager product in the commercial cloud environment. The MuleSoft Government Cloud data control
+documentation page shows how to configure these detailed data access controls.
 
-Additionally, for compliance with FedRAMP regulations on handling support cases associated with API Community
-Manager when connected to your Anypoint GovCloud organization, any support case that requires access or interaction
-with your Anypoint organization data is handled by the MuleSoft support team following FedRAMP requirements.
-Cases not requiring access to your Anypoint GovCloud data, such as look and feel, branding, CMS articles, and
-forums on your public developer community, are handled through API Community Manager standard support processes.
+For compliance with FedRAMP regulations on handling support cases associated with API Community
+Manager when connected to your MuleSoft Government Cloud organization, any support case that requires access or interaction
+with your MuleSoft Government Cloud organization data is handled by the MuleSoft support team following FedRAMP requirements.
+Support cases that do not require access to your MuleSoft Government Cloud data (such as those related to look and feel, branding, CMS articles, and
+forums on your public developer community) are handled through API Community Manager standard support processes.
 
 == See Also
 
-* xref:govcloud-data-control.adoc[GovCloud Data Control]
+* xref:govcloud-data-control.adoc[MuleSoft Government Cloud Data Control]
