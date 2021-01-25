@@ -20,7 +20,7 @@ To connect your API Community Manager instance to your Anypoint organization:
 
 . Select your organization's Anypoint management plane.
 +
-This may be the US plane, the EU plane, or another plane.
+This may be the US control plane, the EU control plane, the MuleSoft Government Cloud control plane, or another control plane.
 . Create a connected app in your Anypoint organization for Salesforce to use as a consumer system.
 +
 If your Anypoint account has the organization administrator role, the guided setup tool can create the connected app for you.
