@@ -8,7 +8,6 @@ endif::[]
 These data sheets offer further information about Anypoint API Community Manager.
 
 * xref:licensing-overview.adoc[Licensing Overview]
-* xref:connectivity-govcloud.adoc[Connectivity with MuleSoft Government Cloud]
 * xref:security.adoc[Security]
 
 For the list of supported browsers, please see xref:general::browser-support.adoc[Browser Support for Anypoint Platform].

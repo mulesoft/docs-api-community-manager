@@ -27,29 +27,23 @@ If you don't see any roles in the list, refer to the Salesforce knowledge articl
 To check the entitlement:
 
 .. Log in to your Anypoint Platform organization.
-.. If you are using the US cloud, navigate to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
-+
-If you are using the EU cloud, navigate to `+https://eu1.anypoint.mulesoft.com/accounts/api/profile+`.
-+
-If you are using MuleSoft Government Cloud, navigate to `+https://gov.anypoint.mulesoft.com/accounts/api/profile+`.
+.. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
 .. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
 . Identity provider data.
 
 == Prepare Identity Provider Data
 
-=== If You Already Have an Anypoint Platform Identity Provider
+=== If You Already Have Anypoint Identity Provider
 
-If you already have an Anypoint Platform identity provider, get identity provider data from your current configuration:
+If you already have Anypoint Identity Provider, get identity provider data from your current configuration:
 
 . Click *Access Management* > *Identity Providers*.
 . On *SAML 2.0* click *Edit*.
 . Copy the issuer and the audience so you can use them in the installation.
 
-=== If You Do Not Already Have an Anypoint Platform Identity Provider
+=== If You Do Not Already Have Anypoint Identity Provider
 
-If you do not already have an Anypoint Platform identity provider (IdP), configure Salesforce as a SAML IdP.
-
-The following instructions use URLs for the US cloud that begin with `+https://anypoint.mulesoft.com/+`. If you are using the EU cloud, substitute `+https://eu1.anypoint.mulesoft.com/+`. If you are using MuleSoft Government Cloud, substitute `+https://gov.anypoint.mulesoft.com/+`.
+If you do not already have Anypoint Identity Provider (IdP), configure Salesforce as a SAML IdP:
 
 . In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
 . Click *New Connected App* in the top right.
