@@ -51,4 +51,9 @@ Map community user to Anypoint role:
 
 == Next Steps
 
-After the connection with your Anypoint organization is established, click *Continue* to open the API Community Manager xref:diagnostics.adoc[diagnostics tool] to review your installation, then create your first community.
+After the connection with your Anypoint organization is established, click *Continue* to open the API Community Manager diagnostics tool to review your installation, then create your first community.
+
+== See Also
+
+* xref:diagnostics.adoc[Diagnostics]
+* xref:create-community.adoc[Create a Community]
