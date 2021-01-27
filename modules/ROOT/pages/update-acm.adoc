@@ -6,43 +6,9 @@ endif::[]
 
 Keep your Anypoint API Community Manager instance up to date to take advantage of new and improved functionality in your community.
 
-For information about updates, see xref:notifications.adoc[Important Notifications].
+For information about update notifications, see the documentation page on important notifications.
 
-After you install an update with this process, it is not possible to undo the installation and return to a previous version. Follow the best-practice workflow by creating safe sandbox environments and using them to test each update before installing the update in your production environment.
-
-== Sandboxes
-
-Best-practice workflow:
-
-. Keep a partial copy sandbox or a full copy sandbox as a long-term staging environment.
-+
-The staging environment will have a partial or full copy of the data in the production environment.
-. Create a short-term developer sandbox.
-. Install the update in the developer sandbox and test it.
-. Discard the developer sandbox.
-. Install the update in the staging sandbox and test it.
-. Install the update in your production environment.
-
-To create a new sandbox:
-
-. In *Setup*, search for *Sandboxes* using the *Quick Find* box and click *New Sandbox*.
-. Enter a name and description and create a new developer sandbox.
-. After several minutes to a few hours, sandbox creation completes and sends you a notification email.
-. In *Setup*, search for *Sandboxes* using the *Quick Find* box and log in to your new sandbox.
-.. Note that the user name has the sandbox name as a suffix.
-.. Enter your administrator password.
-. Validate the sandbox:
-.. Open the application launcher.
-.. Open the *API Community Manager* application.
-.. Publish a few APIs.
-.. Open the builder.
-.. Publish your community.
-.. Open your community's live site.
-.. Validate the site is operational.
-
-After validating your sandbox, begin the update.
-
-== Update Steps
+After you install an update with this process, it is not possible to undo the installation and return to a previous version. Follow the best-practice workflow by creating safe sandbox environments and using them to test each update before installing the update in your production environment. For more information, see the documentation page on sandboxes.
 
 To update your API community:
 
@@ -247,3 +213,8 @@ If you are upgrading from a package version before 1.79, update the permissions 
 .. Click *Object settings* > *AnypointClientProviders*.
 .. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
 . Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+== See Also
+
+* xref:notifications.adoc[Important Notifications]
+* xref:sandboxes.adoc[Sandboxes]
