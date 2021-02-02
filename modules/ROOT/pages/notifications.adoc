@@ -10,7 +10,7 @@ Use these sources to stay informed about new releases and downtime for Anypoint 
 
 Updating API Community Manager components is critical to keeping your API community operating smoothly and optimally.
 
-Watch for new releases at http://trust.mulesoft.com in the "Scheduled Maintenance" section and in xref:release-notes::api-community-manager/api-community-manager-release-notes.adoc[the API Community Manager release notes] and xref:update-acm.adoc[update your installation].
+Watch for new releases at http://trust.mulesoft.com in the "Scheduled Maintenance" section and in xref:release-notes::api-community-manager/api-community-manager-release-notes.adoc[the API Community Manager release notes] and xref:update-acm.adoc[upgrade your installation].
 
 For further information, contact your MuleSoft customer success representative.
 
