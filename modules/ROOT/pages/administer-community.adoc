@@ -12,5 +12,5 @@ These pages explain how to perform each action:
 * xref:notifications.adoc[Check for Important Notifications]
 * xref:salesforce-releases-and-upgrades.adoc[Salesforce releases and upgrades]
 * xref:diagnostics.adoc[Check API Community Manager Diagnostics]
-* xref:update-acm.adoc[Update API Community Manager]
+* xref:update-acm.adoc[Upgrade API Community Manager]
 * xref:mulesoft-support.adoc[Contact MuleSoft Support]

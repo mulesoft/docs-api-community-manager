@@ -1,0 +1,25 @@
+= Connectivity with MuleSoft Government Cloud
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Use Anypoint API Community Manager to create developer communities that surface APIs from Anypoint Platform
+organizations in the MuleSoft AWS Government Cloud environment. In this deployment model, your developer community runs
+on the standard API Community Manager product in the commercial cloud environment. Your community connects to your
+MuleSoft Government Cloud organization as an external system to retrieve the specific information you want to make available
+outside your FedRAMP authorization boundary for your public API community, such as API documentation.
+
+In this model, you have full control of what data in your MuleSoft Government Cloud organization is
+accessible to the API Community Manager product in the Salesforce commercial cloud environment. The MuleSoft Government Cloud data control
+documentation page shows how to configure these detailed data access controls.
+
+For compliance with FedRAMP regulations on handling support cases associated with API Community
+Manager when connected to your MuleSoft Government Cloud organization, any support case that requires access or interaction
+with your MuleSoft Government Cloud organization data is handled by the MuleSoft support team following FedRAMP requirements.
+Support cases that do not require access to your MuleSoft Government Cloud data (such as those related to look and feel, branding, CMS articles, and
+forums on your public developer community) are handled through API Community Manager standard support processes.
+
+== See Also
+
+* xref:govcloud-data-control.adoc[MuleSoft Government Cloud Data Control]
