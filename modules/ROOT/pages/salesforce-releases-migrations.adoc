@@ -14,7 +14,9 @@ The Salesforce organization dedicated to your API community may sometimes need t
 
 == Getting Help
 
-For help with the Salesforce release or migration process, contact your customer success representative. For outages or operational issues with your API community, contact MuleSoft support.
+For help with the Salesforce release or migration process, contact your customer success representative.
+
+For outages or operational issues with your API community, contact MuleSoft support.
 
 == See Also
 
