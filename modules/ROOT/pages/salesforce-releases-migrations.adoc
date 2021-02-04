@@ -19,3 +19,4 @@ For help with the Salesforce release or migration process, contact your customer
 == See Also
 
 * https://trailhead.salesforce.com/en/content/learn/modules/sf_releases/sf_releases_start[Salesforce release process]
+* https://status.mulesoft.com/[trust.mulesoft.com]
