@@ -6,8 +6,10 @@ endif::[]
 
 To install Anypoint API Community Manager you will need:
 
-== Salesforce API Community Manager organization admin user with a role.
-+
+== A Salesforce Admin User
+
+Installation requires a Salesforce API Community Manager organization admin user with a role.
+
 To update your user role and permissions:
 
 . Log in to your Salesforce organization.
@@ -18,15 +20,16 @@ To update your user role and permissions:
 This can be any role from the list, but cannot be none.
 +
 If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
+. Select *Salesforce CRM Content User*.
+. *Save*.
 
-Select *Salesforce CRM Content User*.
-Click *Save*.
+== API Community Manager Entitlement
 
-== Anypoint API Community Manager entitlement for your Anypoint organization.
-+
+Installation requires Anypoint API Community Manager entitlement for your Anypoint organization.
+
 To check the entitlement:
 
-Log in to your Anypoint Platform organization.
+. Log in to your Anypoint Platform organization.
 . If you are using the US cloud, navigate to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
 +
 If you are using the EU cloud, navigate to `+https://eu1.anypoint.mulesoft.com/accounts/api/profile+`.
@@ -34,15 +37,19 @@ If you are using the EU cloud, navigate to `+https://eu1.anypoint.mulesoft.com/a
 If you are using MuleSoft Government Cloud, navigate to `+https://gov.anypoint.mulesoft.com/accounts/api/profile+`.
 . Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
 
-== Set Up and Register a Domain and Enable Communities
+== A Domain with Enabled Communities
 
 To set up and register a domain:
 
 . Log in to your API Community Manager https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
 . Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
 . Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
-. Enter a domain name for your organization. The name can include up to 34 letters, numbers, and hyphens.
-. Select *Check Availability*. If the name is already taken, choose a different one.
+. Enter a domain name for your organization.
++
+The name can include up to 34 letters, numbers, and hyphens.
+. Select *Check Availability*.
++
+If the name is already taken, choose a different one.
 . Select *Register Domain*.
 
 You will receive a notification email when your domain is registered and your
@@ -56,8 +63,6 @@ https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Sale
 Using the domain name you selected in the previous step, follow the steps in
 https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank]
 to enable communities inside your Salesforce organization.
-
-== Deploy Your Domain
 
 Wait to receive the notification email that your domain is registered, and then deploy your domain:
 
