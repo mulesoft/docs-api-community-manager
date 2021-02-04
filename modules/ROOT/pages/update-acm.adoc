@@ -1,4 +1,4 @@
-= Update API Community Manager
+= Upgrade API Community Manager
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,30 +6,30 @@ endif::[]
 
 Keep your Anypoint API Community Manager instance up to date to take advantage of new and improved functionality in your community.
 
-For information about updates, see xref:notifications.adoc[Important Notifications].
+For information about upgrades, see xref:notifications.adoc[Important Notifications].
 
-After you install an update with this process, it is not possible to undo the installation and return to a previous version. Follow this best-practice workflow:
+After you upgrade using this process, you cannot undo the installation and return to a previous version. Follow this best-practice workflow:
 
 . Keep a partial copy sandbox or a full copy sandbox as a long-term staging environment.
 +
 The staging environment will have a partial or full copy of the data in the production environment.
 . Create a short-term developer sandbox.
-. Install the update in the developer sandbox and test it.
+. Install the new package in the developer sandbox and test it.
 . Discard the developer sandbox.
-. Install the update in the staging sandbox and test it.
-. Install the update in your production environment.
+. Install the new package in the staging sandbox and test it.
+. Install the new package in your production environment.
 
-To update your API community:
+To upgrade your API community:
 
 . Before performing any steps, read all the steps, including pre-install and post-install.
-. If necessary, notify your customers and stakeholders of the update, and that APIs, docs, and client app pages may not work during the update during the time after installing the new package and before completing the required configuration changes.
+. If necessary, notify your customers and stakeholders of the upgrade, and that APIs, docs, and client app pages may not work during the upgrade during the time after installing the new package and before completing the required configuration changes.
 . Ensure that your Salesforce organizations have the External Data Change Tracking for OData 4.0 Adapter feature enabled:
 .. Before upgrading the package in your production or sandbox organization, check that your organization has this feature enabled by going to *Setup* > *External Data Source* and editing the Exchange data source.
 .. If you don't see an *Eligible for External Change Data Capture* checkbox, raise a support case through the MuleSoft support portal and list the IDs of all your Salesforce API Community Manager organizations, including the IDs of all production and sandbox organizations.
 +
 Attempting to upgrade the package without this feature enabled causes the process to fail with errors due to missing objects and fields related to a missing ChangeEvent object.
 . Open the API Community Manager control panel.
-. In the same browser session, open the *package update installation link* provided by your MuleSoft representative.
+. In the same browser session, open the *package upgrade installation link* provided by your MuleSoft representative.
 . Verify the version number and name of the release.
 . If you are upgrading from a package version before 1.26, follow the <<pre-126>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.74, follow the <<pre-174>> and then continue with these instructions.
@@ -42,7 +42,8 @@ When the upgrade finishes, you receive a notification email.
 . If you are upgrading from package version 1.62 or earlier, follow the <<post-162>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.69, follow the <<post-169>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.77, follow the <<post-177>>.
+. If you are upgrading from a package version before 1.77, follow the <<post-177>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.79, follow the <<post-179>>.
 
 [[pre-126]]
 == Pre-Install Steps When Upgrading from a Version before 1.26
@@ -67,7 +68,7 @@ If you are upgrading from a package version before 1.26, follow these steps:
 . Click the Confirm delete button.
 . Continue with normal package installation.
 
-Return to the main list of update instructions and continue to follow them.
+Return to the main list of upgrade instructions and continue to follow them.
 
 [[pre-174]]
 == Pre-Install Steps When Upgrading from a Version before 1.74
@@ -92,7 +93,7 @@ If you are upgrading from a package version before 1.74, follow these steps:
 .. Set *Password* to the placeholder value `pass`.
 .. In the section *Callout Options*, enable *Generate Authorization Header*, *Allow Merge Fields in HTTP Header*, and *Allow Merge Fields in HTTP Body*.
 
-Return to the main list of update instructions and continue to follow them.
+Return to the main list of upgrade instructions and continue to follow them.
 
 [[post-162]]
 == Post-Install Steps When Upgrading from Version 1.62 or Earlier
@@ -112,7 +113,7 @@ If you are upgrading from package version 1.62 or earlier, after installing, ens
 .. Ensure the `ParentId` field has `Read` access.
 .. Save.
 
-Return to the main list of update instructions and continue to follow them.
+Return to the main list of upgrade instructions and continue to follow them.
 
 [[post-169]]
 == Post-Install Steps When Upgrading from a Version before 1.69
@@ -133,7 +134,7 @@ If you are upgrading from a package version before 1.69, update the permissions 
 .. Ensure that field level permissions for all fields include only `Read` and `Edit`.
 . Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 
-Return to the main list of update instructions and continue to follow them.
+Return to the main list of upgrade instructions and continue to follow them.
 
 [[post-174]]
 == Post-Install Steps When Upgrading from a Version before 1.74
@@ -147,7 +148,7 @@ If you are upgrading from a package version before 1.74, follow these steps:
 +
 In the community builder, in *Pages* > *CommunityApi* > *API Detail*, add the *Spec Downloader* component.
 
-Return to the main list of update instructions and continue to follow them.
+Return to the main list of upgrade instructions and continue to follow them.
 
 [[post-177]]
 == Post-Install Steps When Upgrading from a Version before 1.77
@@ -201,3 +202,23 @@ There may be one or more user profiles to configure.
 . Save.
 
 NOTE: If you ever change the name of your community, be sure to update this configuration.
+
+Return to the main list of upgrade instructions and continue to follow them.
+
+[[post-179]]
+== Post-Install Steps When Upgrading from a Version before 1.79
+
+If you are upgrading from a package version before 1.79, update the permissions of the `Member` and `Guest` profiles on the *AnypointClientProviders* object:
+
+. Configure the `Member` profile permissions:
+.. Click *Setup* > *Profiles*.
+.. Open the `Member` profile.
+.. Click *Object settings* > *AnypointClientProviders*.
+.. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. Configure the `Guest` profile permissions:
+.. Open the community builder.
+.. Click *Settings* > *General*.
+.. Open the `Guest` profile.
+.. Click *Object settings* > *AnypointClientProviders*.
+.. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
