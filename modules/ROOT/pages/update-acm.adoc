@@ -6,9 +6,11 @@ endif::[]
 
 Keep your Anypoint API Community Manager instance up to date to take advantage of new and improved functionality in your community.
 
-For information about upgrade notifications, see the documentation page on xref:notifications.adoc[important notifications].
+For information about upgrade notifications, see xref:notifications.adoc[important notifications].
 
-After you upgrade using this process, you cannot undo the installation and return to a previous version. Follow the best-practice workflow by creating safe sandbox environments and using them to test each upgrade before installing the new package in your production environment. For more information, see the documentation page on xref:sandboxes.adoc[sandboxes].
+After you install an Anypoint API Community Manager upgrade, it is not possible to undo the installation
+and revert to a previous version. Therefore, be sure to create safe sandbox environments in which you test each
+upgrade before installing it in your production environment. For more information, see xref:sandboxes.adoc[sandboxes].
 
 To upgrade your API community:
 
