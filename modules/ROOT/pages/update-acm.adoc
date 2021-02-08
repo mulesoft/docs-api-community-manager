@@ -6,18 +6,11 @@ endif::[]
 
 Keep your Anypoint API Community Manager instance up to date to take advantage of new and improved functionality in your community.
 
-For information about upgrades, see xref:notifications.adoc[Important Notifications].
+For information about upgrade notifications, see xref:notifications.adoc[important notifications].
 
-After you upgrade using this process, you cannot undo the installation and return to a previous version. Follow this best-practice workflow:
-
-. Keep a partial copy sandbox or a full copy sandbox as a long-term staging environment.
-+
-The staging environment will have a partial or full copy of the data in the production environment.
-. Create a short-term developer sandbox.
-. Install the new package in the developer sandbox and test it.
-. Discard the developer sandbox.
-. Install the new package in the staging sandbox and test it.
-. Install the new package in your production environment.
+After you install an Anypoint API Community Manager upgrade, it is not possible to undo the installation
+and revert to a previous version. Therefore, be sure to create safe sandbox environments in which you test each
+upgrade before installing it in your production environment. For more information, see xref:sandboxes.adoc[sandboxes].
 
 To upgrade your API community:
 
@@ -222,3 +215,8 @@ If you are upgrading from a package version before 1.79, update the permissions 
 .. Click *Object settings* > *AnypointClientProviders*.
 .. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
 . Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+== See Also
+
+* xref:notifications.adoc[Important Notifications]
+* xref:sandboxes.adoc[Sandboxes]
