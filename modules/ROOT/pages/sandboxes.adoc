@@ -4,36 +4,47 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-After you install an Anypoint API Community Manager update, it is not possible to undo the installation
-and return to a previous version. Follow the best-practice workflow by creating safe sandbox
-environments and using them to test each update before installing the update in your production environment.
+After you install an Anypoint API Community Manager upgrade, it is not possible to undo the installation
+and return to a previous version.
 
-Best-practice workflow:
+Follow the best-practice workflow by creating safe sandbox environments and using them to test each
+upgrade before installing the upgrade in your production environment.
 
-. Keep a partial copy sandbox or a full copy sandbox as a long-term staging environment.
-+
-The staging environment will have a partial or full copy of the data in the production environment.
-. Create a short-term developer sandbox.
-. Install the update in the developer sandbox and test it.
-. Discard the developer sandbox.
-. Install the update in the staging sandbox and test it.
-. Install the update in your production environment.
+== New Sandboxes
 
 To create a new sandbox:
 
 . In *Setup*, search for *Sandboxes* using the *Quick Find* box and click *New Sandbox*.
 . Enter a name and description and create a new developer sandbox.
-. After several minutes to a few hours, sandbox creation completes and sends you a notification email.
-. In *Setup*, search for *Sandboxes* using the *Quick Find* box and log in to your new sandbox.
-.. Note that the user name has the sandbox name as a suffix.
-.. Enter your administrator password.
-. Validate the sandbox:
-.. Open the application launcher.
-.. Open the *API Community Manager* application.
-.. Publish a few APIs.
-.. Open the builder.
-.. Publish your community.
-.. Open your community's live site.
-.. Validate the site is operational.
++
+After several minutes to a few hours, sandbox creation completes and sends you a notification email.
+. In *Setup*, search for *Sandboxes* using the *Quick Find* box and log in to your new sandbox with your administrator password.
++
+Note that the user name has the sandbox name as a suffix.
 
-After validating your sandbox, begin the update.
+To validate your new sandbox:
+
+. Open the application launcher.
+. Open the *API Community Manager* application.
+. Publish a few APIs.
+. Open the builder.
+. Publish your community.
+. Open your community's live site.
+. Validate the site is operational.
+
+After validating your new sandbox, begin the upgrade.
+
+== Upgrade Workflow
+
+To test and install each upgrade:
+
+. Keep a long-term staging environment sandbox with either a partial copy or a full copy of the data in the production environment.
+. Create a short-term developer sandbox.
+. Install the upgrade in the developer sandbox and test it.
+. Discard the developer sandbox.
+. Install the upgrade in the staging sandbox and test it.
+. Install the upgrade in your production environment.
+
+== See Also
+
+* xref:update-acm.adoc[Upgrade API Community Manager]
