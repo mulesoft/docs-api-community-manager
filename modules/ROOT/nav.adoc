@@ -30,6 +30,7 @@
 * xref:administer-community.adoc[Administer Your API Community]
  ** xref:notifications.adoc[Important Notifications]
  ** xref:diagnostics.adoc[Diagnostics]
+ ** xref:sandboxes.adoc[Sandboxes]
  ** xref:update-acm.adoc[Upgrade API Community Manager]
  ** xref:mulesoft-support.adoc[Contact MuleSoft Support]
 * xref:troubleshooting.adoc[Troubleshooting]
