@@ -87,6 +87,8 @@ If you are upgrading from a package version before 1.74, follow these steps:
 .. Set *Password* to the placeholder value `pass`.
 .. In the section *Callout Options*, enable *Generate Authorization Header*, *Allow Merge Fields in HTTP Header*, and *Allow Merge Fields in HTTP Body*.
 
+Return to the main list of upgrade instructions and continue to follow them.
+
 [[pre-177]]
 == Pre-Install Steps When Upgrading from a Version before 1.77
 
