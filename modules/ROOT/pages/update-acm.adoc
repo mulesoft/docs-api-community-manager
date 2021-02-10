@@ -86,6 +86,15 @@ If you are upgrading from a package version before 1.74, follow these steps:
 .. Set *Password* to the placeholder value `pass`.
 .. In the section *Callout Options*, enable *Generate Authorization Header*, *Allow Merge Fields in HTTP Header*, and *Allow Merge Fields in HTTP Body*.
 
+[[pre-177]]
+== Pre-Install Steps When Upgrading from a Version before 1.77
+
+If you are upgrading from a package version before 1.77 or higher, follow these steps:
+
+. Open the *Developer Console* and open the *Query Editor*.
+. Enter `SELECT Id, Name, Owner.Name, Owner.IsActive FROM acm_pkg__CommunityApi__c WHERE Owner.IsActive = false` and click *Execute*.
+. This query should not give results, in case there is any result, the installation of the package will fail, to solve this, the status of the users listed by the query should be changed to Active. To perform that action follow this https://help.salesforce.com/articleView?id=000336144&type=1&mode=1[document]. 
+
 Return to the main list of upgrade instructions and continue to follow them.
 
 [[post-162]]
