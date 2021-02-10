@@ -26,6 +26,7 @@ Attempting to upgrade the package without this feature enabled causes the proces
 . Verify the version number and name of the release.
 . If you are upgrading from a package version before 1.26, follow the <<pre-126>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.74, follow the <<pre-174>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.77, follow the <<pre-177>> and then continue with these instructions.
 . Select *Install for admins only*.
 . Select *Upgrade*.
 +
@@ -61,7 +62,7 @@ If you are upgrading from a package version before 1.26, follow these steps:
 . Click the Confirm delete button.
 . Continue with normal package installation.
 
-Return to the main list of upgrade instructions and continue to follow them.
+Return to the main list of upgrade instructions to continue.
 
 [[pre-174]]
 == Pre-Install Steps When Upgrading from a Version before 1.74
@@ -86,7 +87,18 @@ If you are upgrading from a package version before 1.74, follow these steps:
 .. Set *Password* to the placeholder value `pass`.
 .. In the section *Callout Options*, enable *Generate Authorization Header*, *Allow Merge Fields in HTTP Header*, and *Allow Merge Fields in HTTP Body*.
 
-Return to the main list of upgrade instructions and continue to follow them.
+Return to the main list of upgrade instructions to continue.
+
+[[pre-177]]
+== Pre-Install Steps When Upgrading from a Version before 1.77
+
+If you are upgrading from a package version before 1.77, follow these steps:
+
+. Open the *Developer Console* and open the *Query Editor*.
+. Enter `SELECT Id, Name, Owner.Name, Owner.IsActive FROM acm_pkg__CommunityApi__c WHERE Owner.IsActive = false` and click *Execute*.
+. If the query lists any users, change their status to active with the https://help.salesforce.com/articleView?id=000336144&type=1&mode=1[reactivate a user] instructions.
+
+Return to the main list of upgrade instructions to continue.
 
 [[post-162]]
 == Post-Install Steps When Upgrading from Version 1.62 or Earlier
@@ -106,7 +118,7 @@ If you are upgrading from package version 1.62 or earlier, after installing, ens
 .. Ensure the `ParentId` field has `Read` access.
 .. Save.
 
-Return to the main list of upgrade instructions and continue to follow them.
+Return to the main list of upgrade instructions to continue.
 
 [[post-169]]
 == Post-Install Steps When Upgrading from a Version before 1.69
@@ -127,7 +139,7 @@ If you are upgrading from a package version before 1.69, update the permissions 
 .. Ensure that field level permissions for all fields include only `Read` and `Edit`.
 . Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 
-Return to the main list of upgrade instructions and continue to follow them.
+Return to the main list of upgrade instructions to continue.
 
 [[post-174]]
 == Post-Install Steps When Upgrading from a Version before 1.74
@@ -141,7 +153,7 @@ If you are upgrading from a package version before 1.74, follow these steps:
 +
 In the community builder, in *Pages* > *CommunityApi* > *API Detail*, add the *Spec Downloader* component.
 
-Return to the main list of upgrade instructions and continue to follow them.
+Return to the main list of upgrade instructions to continue.
 
 [[post-177]]
 == Post-Install Steps When Upgrading from a Version before 1.77
@@ -196,7 +208,7 @@ There may be one or more user profiles to configure.
 
 NOTE: If you ever change the name of your community, be sure to update this configuration.
 
-Return to the main list of upgrade instructions and continue to follow them.
+Return to the main list of upgrade instructions to continue.
 
 [[post-179]]
 == Post-Install Steps When Upgrading from a Version before 1.79
