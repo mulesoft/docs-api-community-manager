@@ -10,6 +10,7 @@ These pages explain how to perform each action:
 
 * Salesforce documentation: https://help.salesforce.com/articleView?id=setup_overview.htm&type=5[Maintain an Organization, role=external, window=blank]
 * xref:notifications.adoc[Check for Important Notifications]
+* xref:salesforce-releases-migrations.adoc[Administer Salesforce Releases and Migrations]
 * xref:diagnostics.adoc[Check API Community Manager Diagnostics]
 * xref:sandboxes.adoc[Use API Community Manager Sandboxes]
 * xref:update-acm.adoc[Upgrade API Community Manager]

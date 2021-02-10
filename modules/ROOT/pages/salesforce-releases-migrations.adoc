@@ -1,0 +1,20 @@
+= Salesforce Releases and Migrations
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+The Salesforce organization dedicated to your API community follows the standard https://trailhead.salesforce.com/en/content/learn/modules/sf_releases/sf_releases_start[Salesforce release process]. This automatically upgrades your organization to the latest Salesforce release version three times each year. As an organization administrator, you receive email notifications about the changes at least three months in advance, including any guidance, required steps for you to follow, or other resources for the upgrade.
+
+Many Salesforce upgrades do not require any additional steps for Anypoint API Community Manager. If you must take steps to prepare API Community Manager for the upgrade, your MuleSoft customer success representative provides them and you can also view them on https://status.mulesoft.com/[trust.mulesoft.com].
+
+The Salesforce organization dedicated to your API community sometimes moves across instances within a region. These migrations usually have no impact on your API community. If there is any impact, your MuleSoft customer success representative notifies you and you can also view it on https://status.mulesoft.com/[trust.mulesoft.com].
+
+For help with the Salesforce release or migration process, contact your customer success representative.
+
+For outages or operational issues with your API community, contact MuleSoft support.
+
+== See Also
+
+* https://trailhead.salesforce.com/en/content/learn/modules/sf_releases/sf_releases_start[Salesforce release process]
+* https://status.mulesoft.com/[trust.mulesoft.com]
