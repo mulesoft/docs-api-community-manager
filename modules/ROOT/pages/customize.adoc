@@ -45,14 +45,14 @@ which are described in https://help.salesforce.com/articleView?id=community_buil
 == Components
 
 Clicking the *Components* lightning bolt icon displays the component palette,
-which includes Salesforce Community Cloud components, such as Headline or
+which includes Salesforce Experience Cloud components, such as Headline or
 Featured Topics, and components specific to API Community Manager, such as API Carousel or API
 Console. You can drag any component from the component palette to the current
 page. Select the component on the page to show the component's configuration
 options.
 
 Detailed component information is available from the page xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components] and
-the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Community Components, role=external, window=blank] documentation.
+the Salesforce Experience Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Components, role=external, window=blank] documentation.
 
 Components typically used in home pages include:
 
@@ -177,9 +177,9 @@ Refer to the https://help.salesforce.com/articleView?id=community_builder_genera
 
 == See Also
 
-You can find further information in the Salesforce Community Cloud documentation:
+You can find further information in the Salesforce Experience Cloud documentation:
 
-* https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Communities with Community Builder, role=external, window=blank]
-* https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Sites with Experience Builder, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Experience Cloud Overview, role=external, window=blank]
 * Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/set-up-a-community/brand-the-community[Community Branding, role=external, window=blank]
 * Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/communities_theme_layout[Build a Custom Theme Layout Component for Lightning Communities, role=external, window=blank]

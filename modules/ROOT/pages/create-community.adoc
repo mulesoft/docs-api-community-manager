@@ -76,7 +76,7 @@ image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-You can define much more advanced moderation and review rules. You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
+You can define much more advanced moderation and review rules. You can find more information in the Salesforce Experience Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
 
 Chatter tracking enables your community to create discussions about specific objects such as APIs. To enable Chatter tracking:
 

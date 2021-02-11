@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Your MuleSoft Government Cloud organization can restrict the data entities exposed to its Salesforce Community Cloud API Community Manager instance.
+Your MuleSoft Government Cloud organization can restrict the data entities exposed to its Salesforce Experience Cloud API Community Manager instance.
 
 Restrictions are defined on the Anypoint Platform organization management plane and applied at the data bridge level.
 
