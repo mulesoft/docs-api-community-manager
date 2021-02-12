@@ -53,7 +53,7 @@ You receive a notification email when your domain is registered and your
 subdomain name is ready for testing. This process can take a few minutes.
 You can continue with the next step while you wait for the email.
 . Using the domain name you selected in the previous step, follow the steps in
-https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank]
+https://help.salesforce.com/articleView?id=sf.networks_enable.htm&type=5[Enable Digital Experiences, role=external, window=blank]
 to enable communities inside your Salesforce organization.
 . Wait to receive the notification email that your domain is registered, and then deploy your domain:
 .. Log in to your API Community Manager https://login.salesforce.com/[Salesforce organization, role=external, window=blank].

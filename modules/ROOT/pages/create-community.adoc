@@ -4,30 +4,30 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Creating and configuring a community includes setting branding, forums and moderation rules, Salesforce CMS, Salesforce CRM content, Chatter tracking for APIs, profiles and permissions, sharing, member registration and approval, and user impersonation.
+Creating and configuring a Salesforce Experience Cloud site for your API community includes setting branding, forums and moderation rules, Salesforce CMS, Salesforce CRM content, Chatter tracking for APIs, profiles and permissions, sharing, member registration and approval, and user impersonation.
 
-You can create any number of communities. All communities are in the same Salesforce organization. The default Anypoint API Community Manager license covers up to 100 communities.
+You can create any number of sites. All sites are in the same Salesforce organization. The default Anypoint API Community Manager license covers up to 100 sites.
 
 Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
 
-If you are not familiar with Communities, refer to the https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=_blank].
+If you are not familiar with Experience Cloud, refer to the https://help.salesforce.com/articleView?id=sf.networks_resources.htm&type=5[Experience Cloud Overview, role=external, window=_blank].
 
 == Create a New Community
 
 . Navigate to *Setup*.
-. In the *Quick Find* box, enter *`All Communities`* and then click *All Communities*.
-. Click *New Community*.
+. In the *Quick Find* box, enter *`Digital Experiences`* and then click *All Sites*.
+. Click *New*.
 +
-All communities templates are listed.
+All site templates are listed.
 . If you want to get started from an example, choose any of the *API Community Manager Templates* or any of the other available templates.
-. If you want to design your community from scratch with full control of the structure and look and feel, choose *Build your own*.
+. If you want to design your site from scratch with full control of the structure and look and feel, choose *Build your own*.
 . Click *Get Started*.
-. Enter values for *Name* and *optional URL suffix* for your community.
+. Enter values for *Name* and *optional URL suffix* for your site.
 . Click *Create*.
 +
 The configuration process will take a few minutes.
 +
-. When the configuration process finishes and you see your new community workspace, click *Install AppExchange Package* in the top banner and follow the installation wizard instructions to install the pre-defined metrics and dashboards.
+. When the configuration process finishes and you see your new site workspace, click *Install AppExchange Package* in the top banner and follow the installation wizard instructions to install the pre-defined metrics and dashboards.
 +
 Be sure to install this package in your production organization when prompted by the wizard.
 . In *Application Launcher*, navigate to *ACM Administrator*, click *Community Administration*, go to the *Settings* section, and click *Activate Community*.
@@ -58,7 +58,6 @@ Your community's content configuration controls the forums, moderation rules, Ch
 . Click *Allow discussion threads*.
 . Click *Save*.
 . Return to the API Community Manager control panel, and click *Manage CMS Content*.
-``
 . Click the *Topics* tab.
 . Click *Navigational Topics*.
 . Create as many topics as you need for your community forums and click *Save*.
@@ -76,7 +75,7 @@ image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-You can define much more advanced moderation and review rules. You can find more information in the Salesforce Community Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
+You can define much more advanced moderation and review rules. You can find more information in the Salesforce Experience Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
 
 Chatter tracking enables your community to create discussions about specific objects such as APIs. To enable Chatter tracking:
 
@@ -254,9 +253,9 @@ To configure permissions for the member user profile so your members can access 
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
 . Click the *Customer Community Plus Login User* profile.
 . Click *Clone*.
-. For *Profile Name* enter `[Community Name] Member User`.
+. For *Profile Name* enter `[Site Name] Member User`.
 . Save.
-. In the *[Community Name] Member User* profile page, click *Edit*.
+. In the *[Site Name] Member User* profile page, click *Edit*.
 . In Object Settings, edit the object permissions to match those shown in the previous table.
 . In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
 . Save.
@@ -392,7 +391,7 @@ These permissions reflect the current API Community Manager package version. If 
 To configure permissions for the guest user profile:
 
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
-. In the *Guest user profile* section, click *[Community Name] Profile*.
+. In the *Guest user profile* section, click *[Site Name] Profile*.
 . Click *Edit*.
 . In Object Settings, edit the object permissions to match those shown in the previous table.
 . In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
@@ -406,10 +405,10 @@ To configure permissions for the guest user profile:
 
 Configure sharing settings for members:
 
-. In *Setup*, search for *Communities* using the *Quick Find* box and click *Communities Settings*.
+. In *Setup*, search for *`Digital Experiences`* using the *Quick Find* box and click *Settings*.
 . Scroll to *Sharing Sets* and click *New*.
-. In the *Sharing Set Edit* section, update *Label* with `[Community Name] Sharing Set`.
-. In the *Select Profiles* section, select *[Community Name] Member User* from *Available Profiles* and add it to *Selected Profiles*.
+. In the *Sharing Set Edit* section, update *Label* with `[Site Name] Sharing Set`.
+. In the *Select Profiles* section, select *[Site Name] Member User* from *Available Profiles* and add it to *Selected Profiles*.
 . In the *Select Objects* section, select *CommunityApi* and *CommunityAssetVersion* from *Available Objects* and add them to *Selected Objects*.
 . In the *Configure Access* section, under the *Action* column, select *Set Up* next to *CommunityApi*.
 . In the *Access Mapping for CommunityApi* page enter these values.
@@ -429,25 +428,25 @@ Configure sharing settings for guests:
 
 . In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
 . Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and click *New*.
-. In the *Rule Name* section, update *Label* with `[Community Name] Guest`.
+. In the *Rule Name* section, update *Label* with `[Site Name] Guest`.
 . In the *Select your rule type* section, select `Guest user access, based on criteria`.
 . In the *Select which records to be shared* section, add these criteria.
-.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Site Name]`
 .. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
-. In *Select the users to share with*, select `[Community Name] Site Guest User`.
+. In *Select the users to share with*, select `[Site Name] Site Guest User`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Save.
 . In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
 . Scroll to the *CommunityAssetVersions Sharing Rules* section near the bottom of the page and click *New*.
-. In the *Rule Name* section, update *Label* with `[Community Name] Guest`.
+. In the *Rule Name* section, update *Label* with `[Site Name] Guest`.
 . In the *Select your rule type* section, select `Guest user access, based on criteria`.
-.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Community Name]`
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Site Name]`
 .. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
-. In *Select the users to share with*, select `[Community Name] Site Guest User`.
+. In *Select the users to share with*, select `[Site Name] Site Guest User`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Save.
 
-NOTE: If you ever change the name of your community, be sure to update this setting.
+NOTE: If you ever change the name of your site, be sure to update this setting.
 
 == Enable Guest User Registration as Members
 

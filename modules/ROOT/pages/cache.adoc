@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Improve the performance of pages and components in your API community by using the https://help.salesforce.com/articleView?id=data_platform_cache.htm&type=5[platform cache, role=external, window=blank].
+Improve the performance of pages and components in your Salesforce Experience Cloud site by using the https://help.salesforce.com/articleView?id=data_platform_cache.htm&type=5[platform cache, role=external, window=blank].
 
 The platform cache has two parts: a session cache that holds data specific to one user and their session, and an organization cache that holds data accessed by multiple users in the organization.
 

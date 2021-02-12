@@ -1,10 +1,10 @@
-= Preview Your API Community
+= Preview Your Site
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-After you edit your community site, you can preview the new version to ensure that it meets your expectations:
+After you edit your Salesforce Experience Cloud site, you can preview the new version to ensure that it meets your expectations:
 
 . Open the Anypoint API Community Manager control panel.
 . Click *Community Builder*.

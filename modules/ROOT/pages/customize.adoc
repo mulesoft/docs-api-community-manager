@@ -1,12 +1,12 @@
-= API Community Look-and-Feel Customization
+= Site Look-and-Feel Customization
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank] enables
-you to create a community with your desired brand identity, look and feel, and
-site structure by providing control over the community's components, themes,
+https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Experience Builder, role=external, window=blank] enables
+you to create a Salesforce Experience Cloud site with your desired brand identity, look and feel, and
+site structure by providing control over the site's components, themes,
 and pages, and its settings for general properties, themes, and SEO.
 
 In the Anypoint API Community Manager control panel, the *Community Builder* link
@@ -40,19 +40,19 @@ as a Headline component in the page header, or an API Community Manager Lightnin
 such as an API Version Carousel.
 
 The *Pages* list shows the editable configuration properties for each page,
-which are described in https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community’s Pages and Their Properties in Community Builder, role=external, window=blank].
+which are described in https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Experience Builder, role=external, window=blank].
 
 == Components
 
 Clicking the *Components* lightning bolt icon displays the component palette,
-which includes Salesforce Community Cloud components, such as Headline or
+which includes Salesforce Experience Cloud components, such as Headline or
 Featured Topics, and components specific to API Community Manager, such as API Carousel or API
 Console. You can drag any component from the component palette to the current
 page. Select the component on the page to show the component's configuration
 options.
 
 Detailed component information is available from the page xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components] and
-the Salesforce Community Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Community Components, role=external, window=blank] documentation.
+the Salesforce Experience Cloud https://help.salesforce.com/articleView?id=rss_component_reference_table.htm&type=5[Components, role=external, window=blank] documentation.
 
 Components typically used in home pages include:
 
@@ -153,7 +153,7 @@ and specifies the site's text case.
 You can adjust community styling by editing the CSS rules. Next to the *Theme*
 title, click the *Theme* list, and click *Edit CSS*.
 
-Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme, role=external, window=blank].
+Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Experience Site Theme, role=external, window=blank].
 
 == Page Structure
 
@@ -173,13 +173,13 @@ Search Engine Optimization (SEO) features define what information can be indexed
 by external services and discovered through online searches, and can increase
 traffic to your public community.
 
-Refer to the https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[Community Builder Settings, role=external, window=blank] help topic for additional information.
+Refer to the https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[Experience Builder Settings, role=external, window=blank] help topic for additional information.
 
 == See Also
 
-You can find further information in the Salesforce Community Cloud documentation:
+You can find further information in the Salesforce Experience Cloud documentation:
 
-* https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Communities with Community Builder, role=external, window=blank]
-* https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Salesforce Communities Overview, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Sites with Experience Builder, role=external, window=blank]
+* https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Experience Cloud Overview, role=external, window=blank]
 * Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/set-up-a-community/brand-the-community[Community Branding, role=external, window=blank]
 * Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/communities_theme_layout[Build a Custom Theme Layout Component for Lightning Communities, role=external, window=blank]
