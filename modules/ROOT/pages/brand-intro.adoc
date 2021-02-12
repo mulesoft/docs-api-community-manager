@@ -8,9 +8,9 @@ Anypoint API Community Manager enables you to customize and adjust the exact det
 
 Advanced HTML and CSS editing is also available for precise web designs.
 
-* xref:customize.adoc[API Community Look-and-Feel Customization]
-* xref:site-structure.adoc[API Community Site Structure]
+* xref:customize.adoc[Site Look-and-Feel Customization]
+* xref:site-structure.adoc[Site Structure]
 * xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components]
-* xref:preview-community.adoc[Preview Your API Community]
-* xref:publish-community.adoc[Publish Your API Community]
+* xref:preview-community.adoc[Preview Your Site]
+* xref:publish-community.adoc[Publish Your Site]
 * xref:css-styling.adoc[Advanced Styling with CSS]

@@ -1,16 +1,16 @@
-= API Community Look-and-Feel Customization
+= Site Look-and-Feel Customization
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Community Builder, role=external, window=blank] enables
-you to create a community with your desired brand identity, look and feel, and
-site structure by providing control over the community's components, themes,
+https://help.salesforce.com/articleView?id=community_designer_overview.htm&type=5[Experience Builder, role=external, window=blank] enables
+you to create a Salesforce Experience Cloud site with your desired brand identity, look and feel, and
+site structure by providing control over the site's components, themes,
 and pages, and its settings for general properties, themes, and SEO.
 
 In the Anypoint API Community Manager control panel, the *Community Builder* link
-opens your site for editing. With Community Builder you can edit each page in
+opens your community site for editing. With Community Builder you can edit each page in
 your community, create new pages, and add and edit the components in each page.
 
 Community Builder's interface contains the pages list, component palette,
@@ -40,7 +40,7 @@ as a Headline component in the page header, or an API Community Manager Lightnin
 such as an API Version Carousel.
 
 The *Pages* list shows the editable configuration properties for each page,
-which are described in https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community’s Pages and Their Properties in Community Builder, role=external, window=blank].
+which are described in https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Experience Builder, role=external, window=blank].
 
 == Components
 
@@ -153,7 +153,7 @@ and specifies the site's text case.
 You can adjust community styling by editing the CSS rules. Next to the *Theme*
 title, click the *Theme* list, and click *Edit CSS*.
 
-Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Community Theme, role=external, window=blank].
+Refer to https://help.salesforce.com/articleView?id=community_builder_theme_customize.htm&type=5[Customize Your Experience Site Theme, role=external, window=blank].
 
 == Page Structure
 
@@ -173,7 +173,7 @@ Search Engine Optimization (SEO) features define what information can be indexed
 by external services and discovered through online searches, and can increase
 traffic to your public community.
 
-Refer to the https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[Community Builder Settings, role=external, window=blank] help topic for additional information.
+Refer to the https://help.salesforce.com/articleView?id=community_builder_general_settings.htm&type=5[Experience Builder Settings, role=external, window=blank] help topic for additional information.
 
 == See Also
 
