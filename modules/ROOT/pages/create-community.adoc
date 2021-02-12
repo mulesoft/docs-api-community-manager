@@ -253,9 +253,9 @@ To configure permissions for the member user profile so your members can access 
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
 . Click the *Customer Community Plus Login User* profile.
 . Click *Clone*.
-. For *Profile Name* enter `[Community Name] Member User`.
+. For *Profile Name* enter `[Site Name] Member User`.
 . Save.
-. In the *[Community Name] Member User* profile page, click *Edit*.
+. In the *[Site Name] Member User* profile page, click *Edit*.
 . In Object Settings, edit the object permissions to match those shown in the previous table.
 . In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
 . Save.
@@ -391,7 +391,7 @@ These permissions reflect the current API Community Manager package version. If 
 To configure permissions for the guest user profile:
 
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
-. In the *Guest user profile* section, click *[Community Name] Profile*.
+. In the *Guest user profile* section, click *[Site Name] Profile*.
 . Click *Edit*.
 . In Object Settings, edit the object permissions to match those shown in the previous table.
 . In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
