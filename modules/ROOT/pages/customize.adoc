@@ -10,7 +10,7 @@ site structure by providing control over the site's components, themes,
 and pages, and its settings for general properties, themes, and SEO.
 
 In the Anypoint API Community Manager control panel, the *Community Builder* link
-opens your community site for editing. With Community Builder you can edit each page in
+opens your site for editing. With Community Builder you can edit each page in
 your community, create new pages, and add and edit the components in each page.
 
 Community Builder's interface contains the pages list, component palette,
