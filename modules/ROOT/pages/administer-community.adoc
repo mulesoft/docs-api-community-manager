@@ -8,7 +8,7 @@ Administering your Anypoint API Community Manager site requires performing
 basic maintenance on your API Community Manager Salesforce organization,
 checking for important notifications about new API Community Manager package
 releases and downtime, and updating API Community Manager. Administering your
-site also includes getting support from MuleSoft if necessary.
+site also includes getting support from MuleSoft, if necessary.
 
 These pages explain how to perform each action:
 

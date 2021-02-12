@@ -20,7 +20,7 @@ If the community operator chooses *Delete*, the post is removed and not visible 
 
 A community operator can also reply to new discussions and questions, review audit trails, and create and manage forum rules. These rules can filter posts, other content, and members based on criteria defined by the operator. Members matching the criteria can be frozen, and posts and other content matching the criteria can be flagged, blocked, automatically edited to remove banned terms, or held for the operator to review them.
 
-For full information about the Salesforce Experience Cloud forums and their moderation options, see the Salesforce documentation.
+For more information about the Salesforce Experience Cloud forums and their moderation options, see the Salesforce documentation.
 
 == See Also
 

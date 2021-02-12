@@ -184,7 +184,7 @@ Configure sharing settings for guests:
 
 Configure sharing settings for members:
 
-. In *Setup*, search for *Digital Experiences* using the *Quick Find* box and click *Settings*.
+. In *Setup*, search for *Digital Experiences* using the *Quick Find* box, and click *Settings*.
 . Scroll to *Sharing Sets* and click *Edit* next to the set *[Site Name] Sharing Set*.
 . In the *Select Objects* section, select *CommunityAssetVersions* from *Available Objects* and add it to *Selected Objects*.
 . In the *Configure Access* section, select *Set Up* under the *Action* column next to *CommunityAssetVersions*.
