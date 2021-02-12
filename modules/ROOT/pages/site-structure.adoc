@@ -34,7 +34,7 @@ Displays the full content of a specific content article (*CMS Single Item* compo
 Contains the full catalog of APIs and API groups available in your community, for consumers to explore and discover (*API Catalog* component).
 * API and API groups details page
 +
-Displays the documentation and technical content of an API or API group, including the API console and a way to request access to the API. The content of this page is tailored to the type of object being accessed by using _page variations_. You can find more information about page variations in the Salesforce Experience Cloud documentation page https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Site’s Pages and Their Properties in Experience Builder, role=external, window=_blank].
+Displays the documentation and technical content of an API or API group, including the API console and a way to request access to the API. The content of this page is tailored to the type of object being accessed by using _page variations_. You can find more information about page variations in the Salesforce Experience Cloud documentation page https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Site's Pages and Their Properties in Experience Builder, role=external, window=_blank].
 +
 ** Individual API page variation
 +
