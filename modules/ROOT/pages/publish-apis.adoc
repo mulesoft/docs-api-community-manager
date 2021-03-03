@@ -24,7 +24,7 @@ From this tab, you can manage the APIs and API Groups in your site, including th
 * *APIs in this Community* shows the APIs and API Groups that have been added to the community.
 * *APIs in Exchange* shows the APIs and API Groups that exist in your Exchange organization but have not been added to the community.
 . Next to the API or API Group name, click *Add to Community*.
-. Set the API or API Group information, including visibility, icon, and description.
+. Set the API or API Group information, including visibility, name, icon, and description.
 
 == Set API or API Group Information
 
