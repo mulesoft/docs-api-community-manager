@@ -37,7 +37,8 @@ When the upgrade finishes, you receive a notification email.
 . If you are upgrading from a package version before 1.69, follow the <<post-169>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.77, follow the <<post-177>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.79, follow the <<post-179>>.
+. If you are upgrading from a package version before 1.79, follow the <<post-179>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.80, follow the <<post-180>>.
 
 [[pre-126]]
 == Pre-Install Steps When Upgrading from a Version before 1.26
@@ -226,6 +227,32 @@ If you are upgrading from a package version before 1.79, update the permissions 
 .. Open the `Guest` profile.
 .. Click *Object settings* > *AnypointClientProviders*.
 .. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+. Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of upgrade instructions to continue.
+
+[[post-180]]
+== Post-Install Steps When Upgrading from a Version before 1.80
+
+If you are upgrading from a package version before 1.80, update the permissions of the `Member` and `Guest` profiles on the *AnypointGrantTypes* object, and ensure both `Member` and `Guest` profiles have field-level `Read` access to the `GrantTypes` field in the *AnypointApplications* object:
+
+. Configure the `Member` profile permissions:
+.. Click *Setup* > *Profiles*.
+.. Open the `Member` profile.
+.. Click *Object settings* > *AnypointGrantTypes*.
+.. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointApplications*.
+.. Ensure the `GrantTypes` field has `Read` access.
+.. Save.
+. Configure the `Guest` profile permissions:
+.. Open the community builder.
+.. Click *Settings* > *General*.
+.. Open the `Guest` profile.
+.. Click *Object settings* > *AnypointGrantTypes*.
+.. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointApplications*.
+.. Ensure the `GrantTypes` field has `Read` access.
+.. Save.
 . Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 
 == See Also
