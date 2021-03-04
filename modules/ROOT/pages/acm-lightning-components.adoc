@@ -51,7 +51,7 @@ The API Access Requester component enables community members to request access t
 
 Community members can either request access for an existing client application and API instance, or request to create a new client application with access to the API by specifying the application name and description and choosing an API instance.
 
-When a consumer developer requests access for a new client application to an API instance that has an identity provider (IDP), the consumer developer must specify one or more of the OAuth 2.0 grant types *Authorization Code Grant*, *Implicit Grant*, *Refresh Token*, and *Resource Owner Grant*. Some IDPs do not support all grant types. Requesting access and specifying an unsupported grant type shows the error "Error creating application."
+When a consumer developer requests access for a new client application to an API instance that has an identity provider (IDP), the consumer developer must specify one or more of the OAuth 2.0 grant types Authorization Code Grant, Implicit Grant, Refresh Token, and Resource Owner Grant. Some IDPs do not support all grant types. Requesting access and specifying an unsupported grant type shows the error `Error creating application.`
 
 You can specify values for the following parameters of the API Access Requester:
 
