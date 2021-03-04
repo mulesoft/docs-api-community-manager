@@ -38,7 +38,7 @@ When the upgrade finishes, you receive a notification email.
 . If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.77, follow the <<post-177>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.79, follow the <<post-179>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.80, follow the <<post-180>>.
+. If you are upgrading from a package version before 1.80.1, follow the <<post-1801>>.
 
 [[pre-126]]
 == Pre-Install Steps When Upgrading from a Version before 1.26
@@ -231,10 +231,10 @@ If you are upgrading from a package version before 1.79, update the permissions 
 
 Return to the main list of upgrade instructions to continue.
 
-[[post-180]]
-== Post-Install Steps When Upgrading from a Version before 1.80
+[[post-1801]]
+== Post-Install Steps When Upgrading from a Version before 1.80.1
 
-If you are upgrading from a package version before 1.80, update the permissions of the `Member` and `Guest` profiles on the *AnypointGrantTypes* object, and ensure both `Member` and `Guest` profiles have field-level `Read` access to the `GrantTypes` field in the *AnypointApplications* object:
+If you are upgrading from a package version before 1.80.1, update the permissions of the `Member` and `Guest` profiles on the *AnypointGrantTypes* object, and ensure both `Member` and `Guest` profiles have field-level `Read` access to the `GrantTypes` field in the *AnypointApplications* object:
 
 . Configure the `Member` profile permissions:
 .. Click *Setup* > *Profiles*.
