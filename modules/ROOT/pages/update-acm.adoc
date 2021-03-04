@@ -14,7 +14,7 @@ upgrade before installing it in your production environment. For more informatio
 
 To upgrade your API community:
 
-. Before performing any steps, read all the steps, including pre-install and post-install.
+. Before performing any steps, read all the steps, including preinstallation and postinstallation.
 . If necessary, notify your customers and stakeholders of the upgrade, and that APIs, docs, and client app pages may not work during the upgrade during the time after installing the new package and before completing the required configuration changes.
 . Ensure that your Salesforce organizations have the External Data Change Tracking for OData 4.0 Adapter feature enabled:
 .. Before upgrading the package in your production or sandbox organization, check that your organization has this feature enabled by going to *Setup* > *External Data Source* and editing the Exchange data source.
@@ -37,10 +37,11 @@ When the upgrade finishes, you receive a notification email.
 . If you are upgrading from a package version before 1.69, follow the <<post-169>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.77, follow the <<post-177>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.79, follow the <<post-179>>.
+. If you are upgrading from a package version before 1.79, follow the <<post-179>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.80.1, follow the <<post-1801>>.
 
 [[pre-126]]
-== Pre-Install Steps When Upgrading from a Version before 1.26
+== Preinstallation Steps When Upgrading from a Version Before 1.26
 
 If you are upgrading from a package version before 1.26, follow these steps:
 
@@ -65,7 +66,7 @@ If you are upgrading from a package version before 1.26, follow these steps:
 Return to the main list of upgrade instructions to continue.
 
 [[pre-174]]
-== Pre-Install Steps When Upgrading from a Version before 1.74
+== Preinstallation Steps When Upgrading from a Version Before 1.74
 
 If you are upgrading from a package version before 1.74, follow these steps:
 
@@ -90,7 +91,7 @@ If you are upgrading from a package version before 1.74, follow these steps:
 Return to the main list of upgrade instructions to continue.
 
 [[pre-177]]
-== Pre-Install Steps When Upgrading from a Version before 1.77
+== Preinstallation Steps When Upgrading from a Version Before 1.77
 
 If you are upgrading from a package version before 1.77, follow these steps:
 
@@ -101,7 +102,7 @@ If you are upgrading from a package version before 1.77, follow these steps:
 Return to the main list of upgrade instructions to continue.
 
 [[post-162]]
-== Post-Install Steps When Upgrading from Version 1.62 or Earlier
+== Postinstallation Steps When Upgrading from Version 1.62 or Earlier
 
 If you are upgrading from package version 1.62 or earlier, after installing, ensure both `Member` and `Guest` profiles have field-level `Read` access to the `ParentId` field in the `CommunityAPI` object:
 
@@ -121,7 +122,7 @@ If you are upgrading from package version 1.62 or earlier, after installing, ens
 Return to the main list of upgrade instructions to continue.
 
 [[post-169]]
-== Post-Install Steps When Upgrading from a Version before 1.69
+== Postinstallation Steps When Upgrading from a Version Before 1.69
 
 If you are upgrading from a package version before 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
 
@@ -142,7 +143,7 @@ If you are upgrading from a package version before 1.69, update the permissions 
 Return to the main list of upgrade instructions to continue.
 
 [[post-174]]
-== Post-Install Steps When Upgrading from a Version before 1.74
+== Postinstallation Steps When Upgrading from a Version Before 1.74
 
 If you are upgrading from a package version before 1.74, follow these steps:
 
@@ -156,7 +157,7 @@ In the community builder, in *Pages* > *CommunityApi* > *API Detail*, add the *S
 Return to the main list of upgrade instructions to continue.
 
 [[post-177]]
-== Post-Install Steps When Upgrading from a Version before 1.77
+== Postinstallation Steps When Upgrading from a Version Before 1.77
 
 *Potential degraded service of your community*: Upgrading from a package version before 1.77 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to assets in the community is enabled.
 
@@ -211,7 +212,7 @@ NOTE: If you ever change the name of your community, be sure to update this conf
 Return to the main list of upgrade instructions to continue.
 
 [[post-179]]
-== Post-Install Steps When Upgrading from a Version before 1.79
+== Postinstallation Steps When Upgrading from a Version Before 1.79
 
 If you are upgrading from a package version before 1.79, update the permissions of the `Member` and `Guest` profiles on the *AnypointClientProviders* object:
 
@@ -227,6 +228,32 @@ If you are upgrading from a package version before 1.79, update the permissions 
 .. Click *Object settings* > *AnypointClientProviders*.
 .. Ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
 . Check that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of upgrade instructions to continue.
+
+[[post-1801]]
+== Postinstallation Steps When Upgrading from a Version Before 1.80.1
+
+If you are upgrading from a package version before 1.80.1, update the permissions of the `Member` and `Guest` profiles on the *AnypointGrantTypes* object, and ensure both `Member` and `Guest` profiles have field-level `Read` access to the `GrantTypes` field in the *AnypointApplications* object:
+
+. Configure the `Member` profile permissions:
+.. Click *Setup* > *Profiles*.
+.. Open the `Member` profile.
+.. Click *Object settings* > *AnypointGrantTypes*.
+.. Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointApplications*.
+.. Ensure that the `GrantTypes` field has `Read` access.
+.. Save.
+. Configure the `Guest` profile permissions:
+.. Open the community builder.
+.. Click *Settings* > *General*.
+.. Open the `Guest` profile.
+.. Click *Object settings* > *AnypointGrantTypes*.
+.. Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointApplications*.
+.. Ensure that the `GrantTypes` field has `Read` access.
+.. Save.
+. Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 
 == See Also
 

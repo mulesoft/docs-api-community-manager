@@ -5,7 +5,7 @@ endif::[]
 :imagesdir: ../assets/images/
 
 As an Anypoint API Community Manager community administrator, you can add and
-publish APIs, API Groups, and minor and major updates from Anypoint Exchange
+publish APIs, API groups, and minor and major updates from Anypoint Exchange
 into your Salesforce Experience Cloud site.
 
 This information includes the API documentation stored with the APIs in Exchange.
@@ -19,12 +19,12 @@ will lead the CMS article release process.
 
 . Open the API Community Manager control panel and select *Manage APIs*.
 +
-From this tab, you can manage the APIs and API Groups in your site, including their metadata and visibility.
+From this tab, you can manage the APIs and API groups in your site, including their metadata and visibility.
 +
-* *APIs in this Community* shows the APIs and API Groups that have been added to the community.
-* *APIs in Exchange* shows the APIs and API Groups that exist in your Exchange organization but have not been added to the community.
-. Next to the API or API Group name, click *Add to Community*.
-. Set the API or API Group information, including visibility, icon, and description.
+* *APIs in this Community* shows the APIs and API groups that have been added to the community.
+* *APIs in Exchange* shows the APIs and API groups that exist in your Exchange organization but have not been added to the community.
+. Next to the API or API group name, click *Add to Community*.
+. Set the API or API group information, including visibility, name, icon, and description.
 
 == Set API or API Group Information
 

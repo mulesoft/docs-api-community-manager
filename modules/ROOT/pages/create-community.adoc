@@ -222,6 +222,10 @@ These are the permissions for the member users:
 |*Read*
 |*Read Access*
 
+|AnypointGrantTypes
+|*Read*
+|*Read Access*
+
 |AnypointOrganizations
 |*Read*
 |*Read Access*
@@ -359,6 +363,10 @@ These are the permissions for the guest users:
 |*Read Access*
 
 |AnypointEnvironments
+|*Read*
+|*Read Access*
+
+|AnypointGrantTypes
 |*Read*
 |*Read Access*
 
