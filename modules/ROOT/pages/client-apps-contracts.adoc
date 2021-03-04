@@ -20,7 +20,7 @@ The community displays only API and API Group instances with xref:exchange::to-c
 
 When a consumer developer creates a new application, they can provide an additional description. If the API or API Group uses OAuth 2.0 authentication, the consumer developer can provide an OAuth 2.0 redirect URI.
 
-When a consumer developer requests access for a new client application to an API instance that has an identity provider (IDP), the consumer developer must specify one or more of the OAuth 2.0 grant types *Authorization Code Grant*, *Implicit Grant*, *Refresh Token*, and *Resource Owner Grant*. Some IDPs do not support all grant types. Requesting access and specifying an unsupported grant type shows the error "Error creating application."
+When a consumer developer requests access for a new client application to an API instance that has an identity provider (IDP), the consumer developer must specify one or more of the OAuth 2.0 grant types Authorization Code Grant, Implicit Grant, Refresh Token, and Resource Owner Grant. Some IDPs do not support all grant types. Requesting access and specifying an unsupported grant type shows the error `Error creating application.`
 
 If the Anypoint organization is configured to use external identity for client applications, then new client applications are created in the corresponding identity provider xref:api-manager::configure-multiple-credential-providers.adoc[according to the environment of the selected API or API Group instance]. When a consumer developer selects an existing client application for a contract, only client applications with the same identity provider as the selected API or API Group instance are available to select.
 
