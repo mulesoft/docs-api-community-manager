@@ -96,7 +96,7 @@ Return to the main list of upgrade instructions to continue.
 If you are upgrading from a package version before 1.77, follow these steps:
 
 . Open the *Developer Console* and open the *Query Editor*.
-. Enter `SELECT Id, Name, Owner.Name, Owner.IsActive FROM acm_pkg__CommunityApi__c WHERE Owner.IsActive = false` and click *Execute*.
+. Enter `SELECT Id, Name, Owner.Name, Owner.IsActive FROM acm_pkg\__CommunityApi__c WHERE Owner.IsActive = false` and click *Execute*.
 . If the query lists any users, change their status to active with the https://help.salesforce.com/articleView?id=000336144&type=1&mode=1[reactivate a user] instructions.
 
 Return to the main list of upgrade instructions to continue.
