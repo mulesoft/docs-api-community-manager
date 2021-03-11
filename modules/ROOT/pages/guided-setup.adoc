@@ -25,56 +25,54 @@ This may be the US control plane, the EU control plane, the MuleSoft Government 
 +
 If your Anypoint account has the organization administrator role, the guided setup tool can create the connected app for you.
 +
-Otherwise, create the connected app or ask an organization administrator to create it using the following steps:
+Otherwise, create the connected app or ask an organization administrator to create it with these steps:
 +
-.. *Create a Key Pair in Salesforce*
-+ 
-This key pair will be created in Salesforce and used for communication between Salesforce and Anypoint.
+.. Create a key pair in Salesforce.
 +
-... *Click Setup > Security > Certificate and Key Management > Create Self-Signed Certificate*.
+This key pair is created in Salesforce and used for communication between Salesforce and Anypoint Platform.
++
+... Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
 ... Choose a *Label/Name* and remember the name you chose.
-... Disable *Exportable Private* Key.
+... Disable *Exportable Private Key*.
 ... Set *Key Size* to 2048 or larger.
 ... Click *Save*.
 ... Click *Download Certificate*.
 + 
-The public key is saved on your local machine and will be required in the next step when creating the connecting app in Anypoint.
+The public key is saved on your local machine and is required in the next step to create the connected app in Anypoint Platform.
 +
-.. *Create a Connected App in Anypoint*
-... Click *Access Management > Connected Apps > Create App*.
+.. Create a connected app in Anypoint Platform.
+... Click *Access Management* > *Connected Apps* > *Create App*.
 ... Choose a name.
 ... Enable *App acts on behalf of a user*.
 ... In the section *Grant types* enable *JWT Bearer*.
-... Copy the public key from the file downloaded in the previous steps and paste it into the public key text area.
-+ 
-The certificate must have the correct format, such as this:
+... Copy the public key from the downloaded file and paste it into the public key text area.
 +
-----  
------BEGIN CERTIFICATE-----   
-PUBLIC KEY
------END CERTIFICATE-----  
+The certificate must have this format:
++
 ----
-... Set *Website URL* to https://login.salesforce.com.
-... In the section *Redirect URIs* add http://localhost.
+-----BEGIN CERTIFICATE-----
+PUBLIC KEY
+-----END CERTIFICATE-----
+----
+... Set *Website URL* to `+https://login.salesforce.com+`.
+... In the section *Redirect URIs* add `+http://localhost+`.
 +
-Connected apps require redirect URIs but this configuration does not use them.
+Connected apps require redirect URIs and this configuration does not use them.
 ... In the section *Who can use this application?* select *Members of this organization only*.
 ... In the section *Scopes* add *Background Access* and *Full Access*.
 ... Click *Save*.
-
 +
-You will receive a client ID and a client secret. This configuration uses the certificate and does not use the client secret. Save the client ID so you can use it in the following steps.
+This shows a client ID and a client secret. This configuration uses the certificate and does not use the client secret. Save the client ID for the following steps.
 . Authenticate and authorize the connected app to access your Anypoint organization.
 +
 If your Anypoint account has the organization administrator role, provide your Anypoint Platform user and password, and the guided setup will create the app.
 +
-Otherwise, provide the following app details:
+Otherwise, provide these app details:
 +
-.. *Client ID*: Copy the Client ID from the connected app that you have created in the previous steps
-.. *IDP Issuer*:  In your Anypoint Platform organization, navigate to *Access Management > Identity Providers > SAML 2.0 > Edit* and copy the the IDP Issuer string.
-.. *Audience*:  In your Anypoint Platform organization, navigate to *Access Management > Identity Providers > SAML 2.0 > Edit* and copy the the Audience string.
+.. *Client ID*: Copy the client ID from the connected app you created.
+.. *IDP Issuer*: In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the the *IDP Issuer* string.
+.. *Audience*: In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the the *Audience* string.
 .. Click *Connect*.
-
 +
 The guided setup will authenticate and authorize the app to connect the API Community Manager organization with your Anypoint organization.
 
