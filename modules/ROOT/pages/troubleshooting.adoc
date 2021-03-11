@@ -152,3 +152,20 @@ If changes made to APIs are not visible right after you make them, you can refre
 == Duplicated External Objects
 
 Validating and synchronizing the external data source generates duplicate external objects that will not be used. Delete these new objects.
+
+== Missing Feature Error
+
+If installation of Anypoint API Community Manager shows a `Missing feaure` error, ensure communities are enabled in your API Community Manager Salesforce organization.
+
+The error looks similar to this:
+
+```
+1. Lightning Community Themes(communityThemeDefinitions/acm_template.communityThemeDefinition) Missing feature
+Installing this package requires the following feature and its associated permissions: Lightning Community Themes
+2. Lightning Community Templates(communityTemplateDefinitions/NTO.communityTemplateDefinition) Missing feature
+Installing this package requires the following feature and its associated permissions: Lightning Community Templates
+3. Navigation Link Sets(navigationMenus/acm_template_Nav0.navigationMenu) Missing feature
+Installing this package requires the following feature and its associated permissions: Navigation Link Sets
+```
+
+To fix these errors, follow the installation prerequisite steps in the section xref:installation-prerequisites.adoc#set-up-a-domain-with-enabled-communities[set up a domain with enabled communities].
