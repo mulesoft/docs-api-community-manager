@@ -155,7 +155,7 @@ Validating and synchronizing the external data source generates duplicate extern
 
 == Missing Feature Error
 
-If installation of Anypoint API Community Manager shows a `Missing feaure` error, ensure communities are enabled in your API Community Manager Salesforce organization.
+If installation of Anypoint API Community Manager shows a `Missing feaure` error, ensure digital experiences (previously known as communities) are enabled in your API Community Manager Salesforce organization.
 
 Example:
 
