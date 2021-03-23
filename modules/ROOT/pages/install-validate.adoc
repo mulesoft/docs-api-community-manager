@@ -4,33 +4,29 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To verify your installation and configuration:
+To verify your installation and configuration, open the Salesforce App Launcher and search for *API Community Manager Diagnostics*.
 
-. If you are using JSON Web Tokens and not impersonation, verify the Named Credentials.
-.. Open *Setup*.
-.. Search for *Named Credentials*.
-.. Locate *anypoint.mulesoft* and click *Edit*.
-.. Verify that the list *External Data User Authentications* shows your administrative Anypoint user.
-. If you are using impersonation and not JSON Web Tokens, verify the Exchange External Data Source status is *Authenticated*.
-.. Open *Setup*.
-.. Search for *External Data Sources*.
-.. In the list select *Exchange*.
-.. Verify that the *Authentication Status* is *Authenticated*.
-+
-image::validate-exchange-auth.png[Exchange Authenticated]
-+
-. Verify that API versions are shown in the API Community Manager control panel. 
-.. Open the Application Launcher.
-.. Enter *API Community Manager*.
-.. Verify that the list *APIs in Exchange* is not empty and contains the APIs in your organization.
-+
-image::apis-in-exchange.png[APIs in Exchange]
-+
-. Verify that the API console is rendered correctly.
+The *Organization* section shows this information about your Salesforce organization:
+
+. *Package version* must shows the version of your currently installed API Community Manager package.
+. *Connectivity with Anypoint* shows the URL your API community uses to access Anypoint and it has to have a green check, if not, the xref:installation-prerequisites.adoc[prerequisite steps] must be followed and the installation must be performed again.
+. *Cache* indicates if the cache is configured, if not, go to the following xref:cache.adoc[url] and complete the configuration
+
+The *ACM Communities* section shows each of your API Community Manager communities. Each API Community Manager community has options to open the community and to open the community builder, and shows three diagnostics:
+
+. *Community status* 
+. *Public* 
+. *Published assets status* 
+
+These configurations may or may not be complete, it depends if you want the community to be public or if it is not yet implemented.
+
+If your list of communities is empty, xref:create-community.adoc[Create a Community].
+
+Verify that the API console is rendered correctly.
 .. Add any of your Exchange APIs to your community.
 .. Navigate to the console in the Community Builder preview mode.
 .. Verify that the console is rendered correctly for your API.
-+
+
 image::api-console.png[API console]
 
 If any of these checks is not successful, refer to the xref:troubleshooting.adoc[Troubleshooting] section.
