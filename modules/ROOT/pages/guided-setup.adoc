@@ -89,7 +89,9 @@ Map community user to Anypoint role:
 
 . Ensure that you have Exchange Administrator permissions.
 . In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
-. In *Exchange Viewers*, set a new External group called `Community User` and save it.
+. In *Exchange Viewers*, set a new external group called `Community User` and save it.
++
+If you work with different business groups, you must create a new external group for each business group in your organization.
 
 == Next Steps
 
