@@ -6,11 +6,11 @@ endif::[]
 
 To verify your installation and configuration:
 
-. Open the Salesforce Application Launcher.
-. Use the search bar to find and open the *API Community Manager Diagnostics*.
+. Open the Salesforce App Launcher.
+. Use the search bar to find and open *API Community Manager Diagnostics*.
 . Check the information about your Salesforce organization in the *Organization* section.
 .. Confirm that *Package Version* shows the version of your currently installed API Community Manager package.
-.. Confirm that *Connectivity with Anypoint* shows the URL your API community uses to access Anypoint and a green check.
+.. Confirm that *Connectivity with Anypoint* shows the URL your API community uses to access Anypoint Platform and a green check.
 +
 If *Connectivity with Anypoint* does not show the URL and a green check, perform the xref:installation-prerequisites.adoc[prerequisite steps] and then repeat the installation.
 .. Confirm that *Cache* shows that the cache is configured.
@@ -18,7 +18,7 @@ If *Connectivity with Anypoint* does not show the URL and a green check, perform
 If *Cache* shows that the cache is not configured, xref:cache.adoc[configure the platform cache].
 . Check the information about each of your communities in the *ACM Communities* section.
 +
-Each community shows *Community status*, whether the community is *Public*, and the *Published assets status*, and options to open the community or open the community builder. If some of your communities are not public, or some of your communities are not yet implemented, then this information is visible here.
+Each community shows *Community status*, whether the community is *Public*, the *Published assets status*, and options to open the community or open the community builder. If some of your communities are not public, or some of your communities are not yet implemented, then this information is visible here.
 +
 If your list of communities is empty, xref:create-community.adoc[create a community].
 . Open a community and verify that the API console is rendered correctly.
