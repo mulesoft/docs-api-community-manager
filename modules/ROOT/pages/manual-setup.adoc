@@ -84,14 +84,14 @@ The following instructions use URLs for the US cloud that begin with `+https://a
 . Set *Token Endpoint Url* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
 . Set *Issuer* to the client ID of the connected app you saved previously.
 . Set *Per User Subject* to the following formula.
-.. If you are using an IDP with SAML
+.. If you are using an identity provider with SAML:
 +
 Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_AUDIENCE` with the audience from your IdP configuration.
 +
 `"IDP_ISSUER:IDP_AUDIENCE|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
-.. If you are using an IDP with OpenID Connect
+.. If you are using an identity provider with OpenID Connect:
 +
-Replace `ORGANIZATION_ID` with the organization id from your Anypoint account.
+Replace `ORGANIZATION_ID` with the organization ID from your Anypoint account.
 +
 `"openid-ORGANIZATION_ID|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
 . Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
