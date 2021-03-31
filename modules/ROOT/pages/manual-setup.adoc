@@ -7,39 +7,6 @@ endif::[]
 
 To set up Anypoint API Community Manager manually, follow these steps.
 
-== Set Up and Register a Domain and Enable Communities
-
-To set up and register a domain:
-
-. Log in to your API Community Manager https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
-. Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
-. Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
-. Enter a domain name for your organization. The name can include up to 34 letters, numbers, and hyphens.
-. Select *Check Availability*. If the name is already taken, choose a different one.
-. Select *Register Domain*.
-
-You will receive a notification email when your domain is registered and your
-subdomain name is ready for testing. This process can take a few minutes.
-You can continue with the next steps while you wait for the email.
-
-NOTE: After you complete API Community Manager installation and configuration, you can configure a full custom domain
-name, also known as a vanity domain. When you're ready, refer to the Salesforce knowledge article
-https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=blank].
-
-Using the domain name you selected in the previous step, follow the steps in
-https://help.salesforce.com/articleView?id=networks_enable.htm&type=5[Enable Salesforce Communities, role=external, window=blank]
-to enable communities inside your Salesforce organization.
-
-== Deploy Your Domain
-
-Wait to receive the notification email that your domain is registered, and then deploy your domain:
-
-. Log in to your API Community Manager https://login.salesforce.com/[Salesforce Organization, role=external, window=blank].
-. Go to *Salesforce Set-up* by clicking the gear icon and selecting *Set-up*.
-. Search for *My Domain* using the *Quick Find* box and then select *My Domain*.
-. If the screen indicates your domain is ready, select *Log in*.
-. Select *Deploy to Users*.
-
 == Enable API Community Manager Control Panel
 
 The API Community Manager control panel is the interface your community administrators and operators use to operate your communities. It is available in the *App Launcher* page, where it is the first icon displayed in the main navigation bar. To ensure that the control panel is available for admin users:
@@ -117,10 +84,16 @@ The following instructions use URLs for the US cloud that begin with `+https://a
 . Set *Token Endpoint Url* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
 . Set *Issuer* to the client ID of the connected app you saved previously.
 . Set *Per User Subject* to the following formula.
+.. If you are using an identity provider with SAML:
 +
 Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_AUDIENCE` with the audience from your IdP configuration.
 +
 `"IDP_ISSUER:IDP_AUDIENCE|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
+.. If you are using an identity provider with OpenID Connect:
++
+Replace `ORGANIZATION_ID` with the organization ID from your Anypoint account.
++
+`"openid-ORGANIZATION_ID|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
 . Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
 . Set *Token Valid for* to 60 minutes (the Anypoint default) or less.
 . Set *JWT Signing Certificate* to the key that you created previously as described in the section Create a Key Pair.
@@ -151,4 +124,6 @@ Map community user to Anypoint role:
 
 . Ensure that you have Exchange Administrator permissions.
 . In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
-. In *Exchange Viewers*, set a new External group called `Community User` and save it.
+. In *Exchange Viewers*, set a new external group called `Community User` and save it.
++
+If you work with different business groups, you must create a new external group for each business group in your organization.

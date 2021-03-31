@@ -18,7 +18,7 @@ release process and a marketing team will lead the CMS article release process.
 NOTE: You can also author API Community Manager content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect, role=external, window=blank].
 
 . Open the API Community Manager control panel.
-. Select *Manage CMS Content*. The Salesforce Community Cloud *Content Management* interface is displayed.
+. Select *Manage CMS Content*. The Salesforce Experience Cloud *Content Management* interface is displayed.
 The *Content Management* interface is organized into these panels:
 
 * *Content*: Lists each article in your community.
@@ -37,7 +37,7 @@ that contains a list of the workspace's content articles.
 == Add the Article to a Collection
 
 . Open the API Community Manager control panel.
-. Select *Manage CMS Content*. The Salesforce Community Cloud *Content Management* interface is displayed. It shows a list of your community's articles.
+. Select *Manage CMS Content*. The Salesforce Experience Cloud *Content Management* interface is displayed. It shows a list of your community's articles.
 . Select *Collections*.
 . Select the appropriate collection for your article.
 . Select *Edit*. Articles selected to be part of the collection have green check marks to the left of their names.
@@ -46,7 +46,7 @@ that contains a list of the workspace's content articles.
 
 The collection now lists your new article.
 
-The https://help.salesforce.com/articleView?id=community_managed_content_collections.htm&type=5[Salesforce Community Cloud documentation, role=external, window=blank] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
+The https://help.salesforce.com/articleView?id=community_managed_content_collections.htm&type=5[Salesforce Experience Cloud documentation, role=external, window=blank] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
 
 == Display the Collection in Your Community
 

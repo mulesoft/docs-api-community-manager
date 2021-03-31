@@ -4,7 +4,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-As an Anypoint API Community Manager community administrator, you can add and publish APIs, API Groups, and minor and major updates from Anypoint Exchange into your community.
+As an Anypoint API Community Manager community administrator, you can add and
+publish APIs, API groups, and minor and major updates from Anypoint Exchange
+into your Salesforce Experience Cloud site.
 
 This information includes the API documentation stored with the APIs in Exchange.
 The API documentation is separate from the articles stored in the Salesforce
@@ -13,20 +15,20 @@ documentation updates, and the CMS article release process is usually separate.
 Often a development team will lead the API release process and a marketing team
 will lead the CMS article release process.
 
-== Add APIs or API Groups from Exchange to Your Community
+== Add APIs or API Groups from Exchange to Your Site
 
 . Open the API Community Manager control panel and select *Manage APIs*.
 +
-From this tab, you can manage the APIs and API Groups in your community, including their metadata and visibility.
+From this tab, you can manage the APIs and API groups in your site, including their metadata and visibility.
 +
-* *APIs in this Community* shows the APIs and API Groups that have been added to the community.
-* *APIs in Exchange* shows the APIs and API Groups that exist in your Exchange organization but have not been added to the community.
-. Next to the API or API Group name, click *Add to Community*.
-. Set the API or API Group information, including visibility, icon, and description.
+* *APIs in this Community* shows the APIs and API groups that have been added to the community.
+* *APIs in Exchange* shows the APIs and API groups that exist in your Exchange organization but have not been added to the community.
+. Next to the API or API group name, click *Add to Community*.
+. Set the API or API group information, including visibility, name, icon, and description.
 
 == Set API or API Group Information
 
-The API or API Group editing page opens when you add an API or API Group to the community.
+The API or API Group editing page opens when you add an API or API Group to the site.
 
 To open the editing page again, next to the API or API Group name, click *Edit*.
 
@@ -94,7 +96,7 @@ If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh t
 == Major API Updates
 
 When a new version of the API with breaking changes is created, the API Community Manager community administrator controls
-when and how to publish the new version in the community, mark the old version as deprecated, and remove the old version.
+when and how to publish the new version in the site, mark the old version as deprecated, and remove the old version.
 
 For example, suppose a developer on the API team adds a new resource to an API.
 

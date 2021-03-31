@@ -1,13 +1,13 @@
-= API Community Site Structure
+= Site Structure
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The structure of your API community is defined by your community pages, the Lightning components contained in each, and the links between them. You can define your own site structure and user journeys throughout your API community with these elements, tailored to your specific needs and desires.
+The structure of your Salesforce Experience Cloud site is defined by your site pages, the Lightning components contained in each, and the links between them. You can define your own site structure and user journeys throughout your site with these elements, tailored to your specific needs and desires.
 
 == Typical Site Structure
 
-To configure your API community according to the typical site structure, organize it into these pages:
+To configure your site according to the typical site structure, organize it into these pages:
 
 image::site-structure.png[API Community Manager site structure]
 
@@ -31,10 +31,10 @@ Contains a list of the different content articles, such as news or announcements
 Displays the full content of a specific content article (*CMS Single Item* component).
 * APIs and API groups catalog page
 +
-Contains the full catalog of APIs and API groups available in your community, for consumers to explore and discover (*API Catalog* component).
+Contains the full catalog of APIs and API groups available in your site, for consumers to explore and discover (*API Catalog* component).
 * API and API groups details page
 +
-Displays the documentation and technical content of an API or API group, including the API console and a way to request access to the API. The content of this page is tailored to the type of object being accessed by using _page variations_. You can find more information about page variations in the Salesforce Community Cloud documentation page https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Experience Builder, role=external, window=_blank].
+Displays the documentation and technical content of an API or API group, including the API console and a way to request access to the API. The content of this page is tailored to the type of object being accessed by using _page variations_. You can find more information about page variations in the Salesforce Experience Cloud documentation page https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Site's Pages and Their Properties in Experience Builder, role=external, window=_blank].
 +
 ** Individual API page variation
 +
@@ -103,5 +103,5 @@ To configure this variation, assign a new audience to this page variation for th
 == See Also
 
 * xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components]
-* xref:customize.adoc[API Community Look-and-Feel Customization]
+* xref:customize.adoc[Site Look-and-Feel Customization]
 * xref:publish-apis.adoc[Publish APIs]

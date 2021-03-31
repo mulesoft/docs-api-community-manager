@@ -11,6 +11,6 @@ These data sheets offer further information about Anypoint API Community Manager
 * xref:connectivity-govcloud.adoc[Connectivity with MuleSoft Government Cloud]
 * xref:security.adoc[Security]
 
-For the list of supported browsers, please see xref:general::browser-support.adoc[Browser Support for Anypoint Platform].
+For the list of supported browsers, see xref:general::browser-support.adoc[Browser Support for Anypoint Platform].
 
 Microsoft Internet Explorer 11 compatibility is limited to displaying content-only, non-interactive components, including API Carousel, API Catalog, and API Documentation Viewer. The components API Console, API Access Requester, and My Applications are not supported in Microsoft Internet Explorer 11, and render in a disabled state with a message to the user explaining the compatibility limitations.
