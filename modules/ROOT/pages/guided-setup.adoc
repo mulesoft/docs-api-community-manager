@@ -7,6 +7,7 @@ endif::[]
 From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
 
 The following steps require a configured identity provider. For more information about configuring an identity provider, see xref:installation-prerequisites.adoc[Installation Prerequisites].
+If you are using OpenID Connect as Identity Provider you must follow the xref:manual-setup.adoc[manual setup].
 
 == Configure a Custom Subdomain
 
