@@ -72,12 +72,12 @@ https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Sale
 
 If you already have an Anypoint Platform identity provider, get identity provider data from your current configuration:
 
-. If you are using SAML 
+. If you are using SAML:
 .. Click *Access Management* > *Identity Providers*.
 .. On *SAML 2.0* click *Edit*.
 .. Copy the issuer and the audience so you can use them in the installation.
-. If you are using OpenID Connect 
-.. Copy the Organization ID so you can use them in the installation.
+. If you are using OpenID Connect:
+.. Copy the organization ID so you can use it in the installation.
 
 === If You Do Not Already Have an Anypoint Platform Identity Provider
 
