@@ -32,7 +32,7 @@ Otherwise, create the connected app or ask an organization administrator to crea
 This key pair is created in Salesforce and used for communication between Salesforce and Anypoint Platform.
 +
 ... Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
-... Set *Label/Name* to `[Anypoint]`.
+... Set *Label/Name* to `Anypoint`.
 ... Disable *Exportable Private Key*.
 ... Set *Key Size* to 2048 or larger.
 ... Click *Save*.
