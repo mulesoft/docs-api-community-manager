@@ -182,4 +182,4 @@ You can find further information in the Salesforce Experience Cloud documentatio
 * https://help.salesforce.com/articleView?id=community_designer_customize_templates.htm&type=5[Customize Sites with Experience Builder, role=external, window=blank]
 * https://help.salesforce.com/articleView?id=networks_resources.htm&type=5[Experience Cloud Overview, role=external, window=blank]
 * Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/set-up-a-community/brand-the-community[Community Branding, role=external, window=blank]
-* Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/communities_theme_layout[Build a Custom Theme Layout Component for Lightning Communities, role=external, window=blank]
+* Salesforce Trailhead training: https://trailhead.salesforce.com/en/content/learn/projects/communities_theme_layout[Build a Custom Theme Layout Component for Experience Builder Sites, role=external, window=blank]
