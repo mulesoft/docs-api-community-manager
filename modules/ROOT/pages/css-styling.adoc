@@ -6,7 +6,7 @@ endif::[]
 
 Anypoint API Community Manager offers advanced styling functionality with editable community site Cascading Style Sheets (CSS).
 
-The following sections summarize the available options. For detailed information, refer to https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_css.htm[Override Template Elements with Custom CSS, role=external, window=blank] in the Lightning Communities Developer Guide.
+The following sections summarize the available options. For detailed information, refer to https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_css.htm[Override Template Elements with Custom CSS, role=external, window=blank] in the Experience Cloud Developer Guide.
 
 == Edit the CSS
 
