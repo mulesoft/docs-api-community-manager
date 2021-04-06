@@ -35,7 +35,7 @@ This key pair is created in Salesforce and used for communication between Salesf
 ... Set *Label/Name* to `Anypoint`.
 ... Disable *Exportable Private Key*.
 ... Set *Key Size* to 2048 or larger.
-... Click *Save*.
+... *Save*.
 ... Click *Download Certificate*.
 + 
 The public key is saved on your local machine and is required in the next step to create the connected app in Anypoint Platform.
@@ -60,7 +60,7 @@ PUBLIC KEY
 Connected apps require redirect URIs and this configuration does not use them.
 ... In the section *Who can use this application?* select *Members of this organization only*.
 ... In the section *Scopes* add *Background Access* and *Full Access*.
-... Click *Save*.
+... *Save*.
 +
 This shows a client ID and a client secret. This configuration uses the certificate and does not use the client secret. Save the client ID for the following steps.
 . Authenticate and authorize the connected app to access your Anypoint organization.
@@ -70,8 +70,8 @@ If your Anypoint account has the organization administrator role, provide your A
 Otherwise, provide these app details:
 +
 .. *Client ID*: Copy the client ID from the connected app you created.
-.. *IDP Issuer*: In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the the *IDP Issuer* string.
-.. *Audience*: In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the the *Audience* string.
+.. *IDP Issuer*: In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the *IDP Issuer* string.
+.. *Audience*: In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the *Audience* string.
 .. Click *Connect*.
 +
 The guided setup will authenticate and authorize the app to connect the API Community Manager organization with your Anypoint organization.
