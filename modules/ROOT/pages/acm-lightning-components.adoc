@@ -5,7 +5,7 @@ endif::[]
 
 You design the pages of your Anypoint API Community Manager portal by adding and configuring Lightning components in Community Builder.
 
-These Lightning components include both the Lightning components available in all Salesforce Communities, and the API Community Manager Lightning components available only in API Community Manager.
+These Lightning components include both the Lightning components available in all Salesforce Digital Experiences, and the API Community Manager Lightning components available only in API Community Manager.
 
 Each API Community Manager Lightning component has different configuration options and adds different functionality to the portal.
 

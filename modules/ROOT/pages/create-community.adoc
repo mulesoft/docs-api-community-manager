@@ -42,7 +42,7 @@ In a few minutes, your community is published.
 . Look for an email notification including your community's public URL.
 . You can also always find your community's live URL by opening the API Community Manager control panel and clicking *Open Community*.
 
-To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Community under a custom domain, role=external, window=_blank].
+To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Digital Experience under a custom domain, role=external, window=_blank].
 
 To customize the look, feel, and branding of your community, refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 

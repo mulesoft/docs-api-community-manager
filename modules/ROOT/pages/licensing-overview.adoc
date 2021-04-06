@@ -17,7 +17,7 @@ Anypoint API Community Manager licenses are procured and provisioned by MuleSoft
 . 40 gigabit network bandwidth in production environments for all communities and 1 gigabit network bandwidth for all sandbox environments
 . 100 Developer sandboxes, 5 Developer Pro sandboxes, 1 Partial Copy sandbox, and 1 Full Copy sandbox
 . 10 Custom Objects
-. 10 API calls per day to the Salesforce Community
+. 10 API calls per day to the Salesforce Digital Experience site
 
 Community login-based license is calculated by the number of *daily unique logins*: login actions that different members perform daily in your communities during a month. Members associated with your license consume one login each day they log into any of your communities. Logging in multiple times during the same day only consumes one login. Once logged in, switching between communities doesn’t consume extra logins.
 
