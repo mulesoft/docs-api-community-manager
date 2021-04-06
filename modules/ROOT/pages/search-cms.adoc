@@ -51,7 +51,7 @@ To enable Salesforce CMS for Anypoint API Community Manager:
 .. Save.
 . Verify that your user has the option Salesforce CMS Content User enabled.
 . Open the community builder, open the Lightning component ACM Search Box, and enable the option Search in Managed Content.
-. Open your community, use the site search, and verify that the `Managed Content` tab is visible.
+. Open your community, use the site search, and verify that the Managed Content tab is visible.
 
 == See Also
 
