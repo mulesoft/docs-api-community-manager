@@ -153,6 +153,8 @@ Console components include API Console, API Console Documentation, API Console I
 
 The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
+When users need a client ID and client secret to access an API, they can select an API instance in the *Credential source* list to populate the client ID and client secret from that instance automatically, or select *Custom credentials* in the list to enter the client ID and client secret manually.
+
 You can specify values for the following parameters of the API Console:
 
 API:: Specifies the API to display.
@@ -267,8 +269,6 @@ Method Label Head Color:: Specifies the HEAD method label color.
 The API Console Request Panel component shows a panel where users can test an API by making requests to it.
 
 The component shows the API instances from xref:api-manager::index.adoc[Anypoint API Manager].
-
-Users can select an API instance in the *Credential source* list to populate the client ID and client secret from that instance automatically, or select *Custom credentials* to enter the client ID and client secret manually.
 
 You can specify values for the following parameters of the API Console Request Panel:
 
