@@ -55,12 +55,14 @@ Each category lists its configuration items. Items that are not yet configured c
 * *Account owner role*
 * *Account visibility*
 
-The *Member User* item *Account assigned* has an *Assign* button and not a *Fix* button. If an attempt to assign the Salesforce account automatically does not work, assign manually:
+After the items from *Community profile* through *Account created* are correctly configured, assign the Salesforce account manually:
 
-. In the control panel click *Community Administration* > *Login & Registration*.
+. In the control panel, click *Community Administration* > *Login & Registration*.
 . Scroll to the section *Registration Page Configuration*.
 . Enable *Allow customers and partners to self-register*.
 . Set *Registration Page Type* to *Default Page*.
 . Select your community's member user as the *Profile*.
 . Enter your community's Salesforce account name as the *Account*.
 . Click *Save*.
+. In the diagnostics page next to the *Member User* item *Account assigned*, click the button *Assign* to verify that the account is assigned correctly.
+. Fix the remaining items in the list.
