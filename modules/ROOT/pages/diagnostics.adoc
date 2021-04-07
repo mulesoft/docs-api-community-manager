@@ -64,5 +64,5 @@ After the items from *Community profile* through *Account created* are correctly
 . Select your community's member user as the *Profile*.
 . Enter your community's Salesforce account name as the *Account*.
 . Click *Save*.
-. In the diagnostics page next to the *Member User* item *Account assigned*, click the button *Assign* to verify that the account is assigned correctly.
+. In the diagnostics page, next to the *Member User* item *Account assigned*, click the button *Assign* to verify that the account is assigned correctly.
 . Fix the remaining items in the list.
