@@ -159,6 +159,8 @@ API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
 Expand endpoints on start:: Expands the documentation of the API endpoints when the page loads.
 Enable resource filtering:: Shows a search bar in the left navigation so users can filter the API resources and show only the resources that match their search terms.
+Remove overview items from navigation:: Removes the overview links and shows the overview when the user clicks the endpoint name.
+Show menu action bar:: Shows the menu action bar with the Quick Find box and the button to expand or collapse all endpoints.
 Link Hover Color:: Specifies the hover link color.
 Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
@@ -265,6 +267,8 @@ Method Label Head Color:: Specifies the HEAD method label color.
 The API Console Request Panel component shows a panel where users can test an API by making requests to it.
 
 The component shows the API instances from xref:api-manager::index.adoc[Anypoint API Manager].
+
+Users can select an API instance in the *Credential source* list to populate the client ID and client secret from that instance automatically, or select *Custom credentials* to enter the client ID and client secret manually.
 
 You can specify values for the following parameters of the API Console Request Panel:
 
