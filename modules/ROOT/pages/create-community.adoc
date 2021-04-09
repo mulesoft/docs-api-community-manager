@@ -566,14 +566,4 @@ Activate the approval process:
 . On the *Approve Registration* page, click *Activate* and confirm.
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In Community Builder, navigate to the *Register* page in the *Pages* list and select the API Community Manager *Self Register* Lightning component.
-. Verify the *Approved Registration* and set the *Approver Id* with the *User Id* of the user you want to approve the registration requests.
-
-To get the *User Id*:
-
-. Navigate to Salesforce Setup.
-. Search for `Users` in the *Quick Find* box and click *Users*.
-. Select the user who you want to be the approver.
-. The ID is contained in the URL of the User detail page you are currently
-viewing. Remove the first 2 characters and paste the remaining information in
-the *Approver Id* field. For example, if the unique ID is `2F0052D000001QpG1`,
-paste `0052D000001QpG1` in the *Approver Id* field.
+. Verify the *Approved Registration* check box is active.
