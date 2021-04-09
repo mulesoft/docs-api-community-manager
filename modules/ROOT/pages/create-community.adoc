@@ -566,4 +566,4 @@ Activate the approval process:
 . On the *Approve Registration* page, click *Activate* and confirm.
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In Community Builder, navigate to the *Register* page in the *Pages* list and select the API Community Manager *Self Register* Lightning component.
-. Verify *Approved Registration* is enabled.
+. Ensure that *Approved Registration* is enabled.
