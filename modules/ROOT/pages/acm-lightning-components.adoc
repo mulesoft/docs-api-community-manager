@@ -293,6 +293,24 @@ Button Hover Text Color (Optional):: Specifies the color of button hover text. D
 Headline Font Family (Optional):: Specifies the headline font family.
 Error Color (Optional):: Specifies the color of error messages.
 
+== API Custom Field Table
+
+The API Custom Field Table component shows all of an API's custom fields and their values.
+
+You can specify values for the following parameters of the API Custom Field Table:
+
+Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
+Show Table Header:: Shows the table header.
+
+== API Custom Field Pills
+
+The API Custom Field Pills component shows up to 5 of an API's custom fields and their values, displayed as a sequence of field-value pairs.
+
+You can specify values for the following parameters of the API Custom Field Pills:
+
+Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
+...
+
 == API Details Button
 
 The API Details Button component provides portal users with details about an API.
