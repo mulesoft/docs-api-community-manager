@@ -309,7 +309,7 @@ The API Custom Field Pills component shows up to 5 of an API's custom fields and
 You can specify values for the following parameters of the API Custom Field Pills:
 
 Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
-...
+Custom Fields:: Specifies the 5 custom fields to show.
 
 == API Details Button
 
