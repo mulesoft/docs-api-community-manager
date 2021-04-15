@@ -18,14 +18,13 @@ The Anypoint API Community Manager Search Box component enables users to search 
 
 You can specify values for the following parameters of the API Community Manager Search Box:
 
-Component Title:: Specifies the title for the search input field.
-Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
-Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Managed Content (CMS), Pages, and Forums.
-Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
+Result Page URL:: Specifies the URL of the search results page shown after the user enters a search.
+Search Areas:: Selects which types of content to search: APIs, API Groups, Applications, Knowledge Articles, Cases, Discussions, Topics, Managed Content (CMS), API Specifications, Documentation Pages, and Custom Fields.
+Number of results to show:: Specifies the number of results shown as the user types a query.
 
-The Linked Result Page parameter specifies the URL of a search results page, and the search results page must include an ACM Search Results component to display the search results. If the page does not include an ACM Search Results component, members and guest users who enter a search will go to the page and see no results.
+The Result Page URL parameter specifies the URL of a search results page, and the search results page must include an ACM Search Results component to display the search results. If the page does not include an ACM Search Results component, members and guest users who enter a search will go to the page and see no results.
 
-If a content type is not selected in the Search Areas parameter, then the linked ACM Search Results component omits results of that content type.
+If a content type is not selected in the Search Areas parameter, then the linked ACM Search Results component omits results of that content type. MuleSoft Government Cloud does not support searching in API specifications or documentation pages, so if you are using MuleSoft Government Cloud, enabling those search areas has no effect.
 
 Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
 
