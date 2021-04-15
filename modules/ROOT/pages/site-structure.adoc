@@ -45,6 +45,7 @@ The API page variation includes:
 *** The API name, icon, and description (*API Header* component)
 *** The API's markdown documentation from Exchange (*API Documentation Viewer* component)
 *** The API spec (*API Console* component)
+*** The API's custom fields and their values (*API Custom Field Table* or *API Custom Field Pills* component)
 *** Links to download the API spec (*Spec Downloader* component)
 *** The button to request access (*API Access Requester* component)
 ** API group page variation
