@@ -17,7 +17,7 @@ Open your administrator profile and ensure that it has all the CMS application p
 
 == Enable Salesforce CMS
 
-To enable Salesforce CMS for Anypoint API Community Manager:
+To enable Salesforce CMS for API Community Manager:
 
 . In the administrative interface, open CMS Administrator.
 . If the interface shows a message that you have no content available yet:
