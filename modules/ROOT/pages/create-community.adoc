@@ -124,13 +124,35 @@ Enable Salesforce CRM Content:
 
 After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, so that you can control access to and visibility of APIs and content.
 
+Before configuring member and guest profiles and permissions, open *Setup* > *User Management Settings* and ensure *Enhanced Profile User Interface* is enabled.
+
 === Configure Member User Profile Permissions
 
-These are the permissions for the member users:
+To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
+
+. In *Setup*, search for *Users* using the *Quick Find* box and click *Users/Profiles*.
+. Click the *Customer Community Plus Login User* profile.
+. Click *Clone*.
+. For *Profile Name* enter `[Site Name] Member User`.
+. Save.
+. In the *[Site Name] Member User* profile page, click *Edit*.
+. In Object Settings, edit the object permissions to match those shown in the following table.
+. Save.
+. Return to the profile overview.
+. Click the link for *Apex Class Access*.
+. Click *Edit*.
+. Select all classes in the list and click *Add* to make them accessible.
+. Save.
+
+The following table shows the permissions for the member users.
+
+All field permissions apply to all fields.
+
+These permissions reflect the current API Community Manager package version. If you are using an older version, your member user profile may have only some of these permissions objects. Set the objects in your member user profile to match the table, and ignore objects that are not in your member user profile.
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |===
-|Object |Required Object Permissions |Required Field-Level Permissions
+|Object |Required Object Permissions |Required Field Permissions
 |AnypointApiCategories |*Read* |*Read Access*
 |AnypointApiFiles |*Read* |*Read Access*
 |AnypointApiGroupInstances |*Read* |*Read Access*
@@ -161,33 +183,30 @@ These are the permissions for the member users:
 |Documents |*Read* |*Read Access*
 |===
 
-All field-level permissions apply to all fields.
+=== Configure Guest User Profile Permissions
 
-These permissions reflect the current API Community Manager package version. If you are using an older version, your member user profile may have only some of these permissions objects. Set the objects in your member user profile to match the table, and ignore objects that are not in your member user profile.
+To configure permissions for the guest user profile:
 
-To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
-
-. In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
-. Click the *Customer Community Plus Login User* profile.
-. Click *Clone*.
-. For *Profile Name* enter `[Site Name] Member User`.
+. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
+. In the *Guest user profile* section, click *[Site Name] Profile*.
+. Click *Edit*.
+. In Object Settings, edit the object permissions to match those shown in the following table.
 . Save.
-. In the *[Site Name] Member User* profile page, click *Edit*.
-. In Object Settings, edit the object permissions to match those shown in the previous table.
-. In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
-. Save.
-. Click the link for *Enabled Apex Class Access*.
+. Return to the profile overview.
+. Click the link for *Apex Class Access*.
 . Click *Edit*.
 . Select all classes in the list and click *Add* to make them accessible.
 . Save.
 
-=== Configure Guest User Profile Permissions
+The following table shows the permissions for the guest users.
 
-These are the permissions for the guest users:
+All field permissions apply to all fields.
+
+These permissions reflect the current API Community Manager package version. If you are using an older version, your guest user profile may have only some of these permissions objects. Set the objects in your guest user profile to match the table, and ignore objects that are not in your guest user profile.
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |===
-|Object |Required Object Permissions |Required Field-Level Permissions
+|Object |Required Object Permissions |Required Field Permissions
 |AnypointApiCategories |*Read* |*Read Access*
 |AnypointApiFiles |*Read* |*Read Access*
 |AnypointApiGroupInstances |*Read* |*Read Access*
@@ -217,23 +236,6 @@ These are the permissions for the guest users:
 |Documents |*Read* |*Read Access*
 |SelfRegisterUserRequests |*Read*, *Create* |*Read Access*, *Edit Access*
 |===
-
-All field-level permissions apply to all fields.
-
-These permissions reflect the current API Community Manager package version. If you are using an older version, your guest user profile may have only some of these permissions objects. Set the objects in your guest user profile to match the table, and ignore objects that are not in your guest user profile.
-
-To configure permissions for the guest user profile:
-
-. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
-. In the *Guest user profile* section, click *[Site Name] Profile*.
-. Click *Edit*.
-. In Object Settings, edit the object permissions to match those shown in the previous table.
-. In the section *Custom Field-Level Security*, for each item, click *View* and ensure each field has *Read Access* enabled.
-. Save.
-. Click the link for *Enabled Apex Class Access*.
-. Click *Edit*.
-. Select all classes in the list and click *Add* to make them accessible.
-. Save.
 
 == Configure Sharing Settings
 
