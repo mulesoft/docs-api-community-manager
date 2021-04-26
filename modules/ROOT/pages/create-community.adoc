@@ -84,6 +84,21 @@ Chatter tracking enables your community to create discussions about specific obj
 . Without selecting any fields, click *Enable feed tracking*. 
 . Click *Save*.
 
+=== Organize CMS Content Using Topics
+
+If you want to organize CMS content using Topics, follow these steps:
+
+. Go to the API Community Manager control panel, click *Manage CMS Content*, and click *Topics*.
+. Select the topics you want to enable to organize CMS content and click *Enable for content* in the top right.
+
+=== Enable Salesforce CRM Content
+
+To verify Salesforce CRM Content is enabled:
+
+. In *Setup*, search for *Salesforce CRM* using the *Quick Find* box and click *Salesforce CRM Content*.
+. Ensure *Enable Salesforce CRM Content* is selected.
+. Click *Save*.
+
 == Configure Profiles and Permissions
 
 After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, so that you can control access to and visibility of APIs and content.
