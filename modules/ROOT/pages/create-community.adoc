@@ -129,124 +129,37 @@ After you create a community, you must create different user profiles for your c
 These are the permissions for the member users:
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
-|======================
-|Object
-|Required Object Permissions
-|Required Field-Level Permissions
-
-|AnypointApiCategories
-|*Read*
-|*Read Access*
-
-|AnypointApiFiles
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstancesApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupVersions
-|*Read*
-|*Read Access*
-
-|AnypointApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiPages
-|*Read*
-|*Read Access*
-
-|AnypointApiTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiVersionQueries
-|*Read*
-|*Read Access*
-
-|AnypointApiVersions
-|*Read*
-|*Read Access*
-
-|AnypointApplicationOwners
-|*Read*
-|*Read Access*
-
-|AnypointApplications
-|*Read*, *Create*, *Edit*, *Delete*
-|*Read Access*, *Edit Access*
-
-|AnypointAssetCategories
-|*Read*
-|*Read Access*
-
-|AnypointAssets
-|*Read*
-|*Read Access*
-
-|AnypointAssetVersions
-|*Read*
-|*Read Access*
-
-|AnypointCategories
-|*Read*
-|*Read Access*
-
-|AnypointClientProviders
-|*Read*
-|*Read Access*
-
-|AnypointContracts
-|*Read*, *Create*, *Edit*, *Delete*
-|*Read Access*, *Edit Access*
-
-|AnypointEnvironments
-|*Read*
-|*Read Access*
-
-|AnypointGrantTypes
-|*Read*
-|*Read Access*
-
-|AnypointOrganizations
-|*Read*
-|*Read Access*
-
-|Cases
-|*Read*
-|*Read Access*
-
-|CommunityApis
-|*Read*
-|*Read Access*
-
-|CommunityAssetVersions
-|*Read*
-|*Read Access*
-
-|Documents
-|*Read*
-|*Read Access*
-
-|======================
+|===
+|Object |Required Object Permissions |Required Field-Level Permissions
+|AnypointApiCategories |*Read* |*Read Access*
+|AnypointApiFiles |*Read* |*Read Access*
+|AnypointApiGroupInstances |*Read* |*Read Access*
+|AnypointApiGroupInstancesApiInstances |*Read* |*Read Access*
+|AnypointApiGroupTierLimits |*Read* |*Read Access*
+|AnypointApiGroupTiers |*Read* |*Read Access*
+|AnypointApiGroupVersions |*Read* |*Read Access*
+|AnypointApiInstances |*Read* |*Read Access*
+|AnypointApiPages |*Read* |*Read Access*
+|AnypointApiTierLimits |*Read* |*Read Access*
+|AnypointApiTiers |*Read* |*Read Access*
+|AnypointApiVersionQueries |*Read* |*Read Access*
+|AnypointApiVersions |*Read* |*Read Access*
+|AnypointApplicationOwners |*Read* |*Read Access*
+|AnypointApplications |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
+|AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssets |*Read* |*Read Access*
+|AnypointAssetVersions |*Read* |*Read Access*
+|AnypointCategories |*Read* |*Read Access*
+|AnypointClientProviders |*Read* |*Read Access*
+|AnypointContracts |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
+|AnypointEnvironments |*Read* |*Read Access*
+|AnypointGrantTypes |*Read* |*Read Access*
+|AnypointOrganizations |*Read* |*Read Access*
+|Cases |*Read* |*Read Access*
+|CommunityApis |*Read* |*Read Access*
+|CommunityAssetVersions |*Read* |*Read Access*
+|Documents |*Read* |*Read Access*
+|===
 
 All field-level permissions apply to all fields.
 
@@ -273,124 +186,37 @@ To configure permissions for the member user profile so your members can access 
 These are the permissions for the guest users:
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
-|======================
-|Object
-|Required Object Permissions
-|Required Field-Level Permissions
-
-|AnypointApiCategories
-|*Read*
-|*Read Access*
-
-|AnypointApiFiles
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstancesApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupVersions
-|*Read*
-|*Read Access*
-
-|AnypointApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiPages
-|*Read*
-|*Read Access*
-
-|AnypointApiTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiVersionQueries
-|*Read*
-|*Read Access*
-
-|AnypointApiVersions
-|*Read*
-|*Read Access*
-
-|AnypointApplicationOwners
-|*Read*
-|*Read Access*
-
-|AnypointApplications
-|*Read*
-|*Read Access*
-
-|AnypointAssetCategories
-|*Read*
-|*Read Access*
-
-|AnypointAssets
-|*Read*
-|*Read Access*
-
-|AnypointAssetVersions
-|*Read*
-|*Read Access*
-
-|AnypointCategories
-|*Read*
-|*Read Access*
-
-|AnypointClientProviders
-|*Read*
-|*Read Access*
-
-|AnypointContracts
-|*Read*
-|*Read Access*
-
-|AnypointEnvironments
-|*Read*
-|*Read Access*
-
-|AnypointGrantTypes
-|*Read*
-|*Read Access*
-
-|AnypointOrganizations
-|*Read*
-|*Read Access*
-
-|CommunityApis
-|*Read*
-|*Read Access*
-
-|CommunityAssetVersions
-|*Read*
-|*Read Access*
-
-|Documents
-|*Read*
-|*Read Access*
-
-|SelfRegisterUserRequests
-|*Read*, *Create*
-|*Read Access*, *Edit Access*
-
-|======================
+|===
+|Object |Required Object Permissions |Required Field-Level Permissions
+|AnypointApiCategories |*Read* |*Read Access*
+|AnypointApiFiles |*Read* |*Read Access*
+|AnypointApiGroupInstances |*Read* |*Read Access*
+|AnypointApiGroupInstancesApiInstances |*Read* |*Read Access*
+|AnypointApiGroupTierLimits |*Read* |*Read Access*
+|AnypointApiGroupTiers |*Read* |*Read Access*
+|AnypointApiGroupVersions |*Read* |*Read Access*
+|AnypointApiInstances |*Read* |*Read Access*
+|AnypointApiPages |*Read* |*Read Access*
+|AnypointApiTierLimits |*Read* |*Read Access*
+|AnypointApiTiers |*Read* |*Read Access*
+|AnypointApiVersionQueries |*Read* |*Read Access*
+|AnypointApiVersions |*Read* |*Read Access*
+|AnypointApplicationOwners |*Read* |*Read Access*
+|AnypointApplications |*Read* |*Read Access*
+|AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssets |*Read* |*Read Access*
+|AnypointAssetVersions |*Read* |*Read Access*
+|AnypointCategories |*Read* |*Read Access*
+|AnypointClientProviders |*Read* |*Read Access*
+|AnypointContracts |*Read* |*Read Access*
+|AnypointEnvironments |*Read* |*Read Access*
+|AnypointGrantTypes |*Read* |*Read Access*
+|AnypointOrganizations |*Read* |*Read Access*
+|CommunityApis |*Read* |*Read Access*
+|CommunityAssetVersions |*Read* |*Read Access*
+|Documents |*Read* |*Read Access*
+|SelfRegisterUserRequests |*Read*, *Create* |*Read Access*, *Edit Access*
+|===
 
 All field-level permissions apply to all fields.
 
