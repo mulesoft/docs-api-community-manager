@@ -19,10 +19,10 @@ Open your administrator profile and ensure that it has the following CMS applica
 
 To enable Salesforce CMS for API Community Manager:
 
-. In the administrative interface, open CMS Administrator.
+. In the administrative interface, open *CMS Administrator*.
 . If the interface shows a message that you have no content available yet, create content:
 .. Open the control panel.
-.. Click the apps icon in the top left and use the `Search apps and items...` box to find and open the Salesforce CMS app.
+.. Click the apps icon in the top left and use the *Search apps and items...* box to find and open the Salesforce CMS app.
 .. Select *CMS Workspaces*.
 .. Click *Add Workspace*.
 .. Enter the name and description of the workspace.
@@ -36,7 +36,7 @@ To enable Salesforce CMS for API Community Manager:
 .. Create a new collection and upload content.
 . Enable search in the community channel:
 .. Open the control panel.
-.. Click the apps icon in the top left and use the `Search apps and items...` box to find and open the Salesforce CMS app.
+.. Click the apps icon in the top left and use the *Search apps and items...* box to find and open the Salesforce CMS app.
 .. Open the *CMS Home* tab and use the drop-down menu to open *CMS Channels*.
 .. Find your site on the list and, in the *Search* column, open the drop-down menu and click *Edit*.
 .. In the *Channel Settings* menu, open the *Search* tab and click *Enable Search*.
@@ -44,7 +44,7 @@ To enable Salesforce CMS for API Community Manager:
 .. Click *Save*.
 . Add your community URL to remote site settings:
 .. Open *Setup*.
-.. Use the `Quick Find` box to find and open *Remote Site Settings*.
+.. Use the *Quick Find* box to find and open *Remote Site Settings*.
 .. Click *New Remote Site*.
 .. Choose a *Remote Site Name* for your site.
 .. Copy and paste your community's URL into the *Remote Site URL* field.
