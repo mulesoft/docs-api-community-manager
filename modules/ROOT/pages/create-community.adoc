@@ -142,15 +142,16 @@ To configure permissions for the member user profile so your members can access 
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
 . Select these classes in the list and click *Add* to make them accessible:
-.. `acm_pkg.AcmSearch`
 .. `acm_pkg.AnypointApiAnalyticsController`
 .. `acm_pkg.ApiAccessRequester`
 .. `acm_pkg.ApiPortalController`
+.. `acm_pkg.ApiVersionHeader`
+.. `acm_pkg.CustomFieldsViewerController`
 .. `acm_pkg.FineGrainVisibility`
+.. `acm_pkg.LightningForgotPasswordController`
+.. `acm_pkg.LightningLoginFormController`
+.. `acm_pkg.LightningSelfRegisterController`
 .. `acm_pkg.QueryApiController`
-.. `LightningForgotPasswordController`
-.. `LightningLoginFormController`
-.. `LightningSelfRegisterController`
 . Click *Save*.
 
 The following table shows the permissions for the member users.
@@ -205,15 +206,16 @@ To configure permissions for the guest user profile:
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
 . Select these classes in the list and click *Add* to make them accessible:
-.. `acm_pkg.AcmSearch`
 .. `acm_pkg.AnypointApiAnalyticsController`
 .. `acm_pkg.ApiAccessRequester`
 .. `acm_pkg.ApiPortalController`
+.. `acm_pkg.ApiVersionHeader`
+.. `acm_pkg.CustomFieldsViewerController`
 .. `acm_pkg.FineGrainVisibility`
+.. `acm_pkg.LightningForgotPasswordController`
+.. `acm_pkg.LightningLoginFormController`
+.. `acm_pkg.LightningSelfRegisterController`
 .. `acm_pkg.QueryApiController`
-.. `LightningForgotPasswordController`
-.. `LightningLoginFormController`
-.. `LightningSelfRegisterController`
 . Click *Save*.
 
 The following table shows the permissions for the guest users.
