@@ -124,7 +124,7 @@ Enable Salesforce CRM Content:
 
 After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, so that you can control access to and visibility of APIs and content.
 
-Before configuring member and guest profiles and permissions, open *Setup* > *User Management Settings* and ensure *Enhanced Profile User Interface* is enabled.
+Before configuring member and guest profiles and permissions, open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
 
 === Configure Member User Profile Permissions
 
@@ -134,15 +134,24 @@ To configure permissions for the member user profile so your members can access 
 . Click the *Customer Community Plus Login User* profile.
 . Click *Clone*.
 . For *Profile Name* enter `[Site Name] Member User`.
-. Save.
+. Click *Save*.
 . In the *[Site Name] Member User* profile page, click *Edit*.
-. In Object Settings, edit the object permissions to match those shown in the following table.
-. Save.
+. In *Object Settings*, edit the object permissions to match those shown in the following table.
+. Click *Save*.
 . Return to the profile overview.
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
-. Select all classes in the list and click *Add* to make them accessible.
-. Save.
+. Select these classes in the list and click *Add* to make them accessible:
+.. `acm_pkg.AcmSearch`
+.. `acm_pkg.AnypointApiAnalyticsController`
+.. `acm_pkg.ApiAccessRequester`
+.. `acm_pkg.ApiPortalController`
+.. `acm_pkg.FineGrainVisibility`
+.. `acm_pkg.QueryApiController`
+.. `LightningForgotPasswordController`
+.. `LightningLoginFormController`
+.. `LightningSelfRegisterController`
+. Click *Save*.
 
 The following table shows the permissions for the member users.
 
@@ -190,13 +199,22 @@ To configure permissions for the guest user profile:
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In the *Guest user profile* section, click *[Site Name] Profile*.
 . Click *Edit*.
-. In Object Settings, edit the object permissions to match those shown in the following table.
-. Save.
+. In *Object Settings*, edit the object permissions to match those shown in the following table.
+. Click *Save*.
 . Return to the profile overview.
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
-. Select all classes in the list and click *Add* to make them accessible.
-. Save.
+. Select these classes in the list and click *Add* to make them accessible:
+.. `acm_pkg.AcmSearch`
+.. `acm_pkg.AnypointApiAnalyticsController`
+.. `acm_pkg.ApiAccessRequester`
+.. `acm_pkg.ApiPortalController`
+.. `acm_pkg.FineGrainVisibility`
+.. `acm_pkg.QueryApiController`
+.. `LightningForgotPasswordController`
+.. `LightningLoginFormController`
+.. `LightningSelfRegisterController`
+. Click *Save*.
 
 The following table shows the permissions for the guest users.
 
