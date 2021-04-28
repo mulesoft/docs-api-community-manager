@@ -93,10 +93,10 @@ If you want to organize CMS content using Topics, follow these steps:
 
 === Enable Salesforce CRM Content
 
-To verify Salesforce CRM Content is enabled:
+To verify that Salesforce CRM Content is enabled:
 
 . In *Setup*, search for *Salesforce CRM* using the *Quick Find* box and click *Salesforce CRM Content*.
-. Ensure *Enable Salesforce CRM Content* is selected.
+. Ensure that *Enable Salesforce CRM Content* is selected.
 . Click *Save*.
 
 == Configure Profiles and Permissions
