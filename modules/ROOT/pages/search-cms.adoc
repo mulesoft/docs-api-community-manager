@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Anypoint API Community Manager stores some content such as news articles and blog posts in a content management system or CMS. To include this content in search results, enable the Salesforce CMS content manager.
+Anypoint API Community Manager stores some content, such as news articles and blog posts, in a content management system or _CMS_. To include this content in search results, enable the Salesforce CMS content manager.
 
 == CMS Application Permissions
 
