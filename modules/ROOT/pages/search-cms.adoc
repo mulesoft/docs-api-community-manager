@@ -8,50 +8,50 @@ Anypoint API Community Manager stores some content such as news articles and blo
 
 == CMS Application Permissions
 
-Open your administrator profile and ensure that it has all the CMS application permissions:
+Open your administrator profile and ensure that it has the following CMS application permissions:
 
-* Manage Content Permissions: Create, edit, and delete library permissions in Salesforce CRM content.
-* Manage Content Properties: Create, edit, and delete custom fields in Salesforce CRM content.
-* Manage Record Types and Layouts for Files: Create, edit, and delete content types in Salesforce CRM content.
-* Manage Salesforce CRM Content: Create, edit, and delete libraries and library memberships.
+* *Manage Content Permissions*: Create, edit, and delete library permissions in Salesforce CRM Content.
+* *Manage Content Properties*: Create, edit, and delete custom fields in Salesforce CRM Content.
+* *Manage Record Types and Layouts for Files*: Create, edit, and delete content types in Salesforce CRM Content.
+* *Manage Salesforce CRM Content*: Create, edit, and delete libraries and library memberships.
 
 == Enable Salesforce CMS
 
 To enable Salesforce CMS for API Community Manager:
 
 . In the administrative interface, open CMS Administrator.
-. If the interface shows a message that you have no content available yet:
+. If the interface shows a message that you have no content available yet, create content:
 .. Open the control panel.
 .. Click the apps icon in the top left and use the `Search apps and items...` box to find and open the Salesforce CMS app.
-.. Select CMS Workspaces.
-.. Click Add Workspace.
+.. Select *CMS Workspaces*.
+.. Click *Add Workspace*.
 .. Enter the name and description of the workspace.
-.. Click next.
+.. Click *Next*.
 .. Select the channel for each community that has CMS content to include in your community's search results.
 .. If you have contributors, add them.
 .. Choose the languages for your translated content.
-.. Click next.
+.. Click *Next*.
 .. Verify the information.
-.. Click done.
+.. Click *Done*.
 .. Create a new collection and upload content.
 . Enable search in the community channel:
 .. Open the control panel.
 .. Click the apps icon in the top left and use the `Search apps and items...` box to find and open the Salesforce CMS app.
-.. Open the CMS Home tab and use the drop-down menu to open CMS Channels.
-.. Find your site on the list, and in the Search column, open the drop-down menu and click Edit.
-.. In the Channel Settings menu, open the Search tab and click Enable Search.
-.. In the Search By Content Type menu, select which content types are enabled and disabled for search.
-.. Save.
+.. Open the *CMS Home* tab and use the drop-down menu to open *CMS Channels*.
+.. Find your site on the list and, in the *Search* column, open the drop-down menu and click *Edit*.
+.. In the *Channel Settings* menu, open the *Search* tab and click *Enable Search*.
+.. In the *Search By Content Type* menu, select which content types are enabled and disabled for search.
+.. Click *Save*.
 . Add your community URL to remote site settings:
-.. Open setup.
-.. Use the Quick Find box to find and open Remote Site Settings.
-.. Click New Remote Site.
-.. Choose a Remote Site Name for your site.
-.. Copy your community's URL into the Remote Site URL field.
-.. Save.
-. Verify that your user has the option Salesforce CMS Content User enabled.
-. Open the community builder, open the Lightning component ACM Search Box, and enable the option Search in Managed Content.
-. Open your community, use the site search, and verify that the Managed Content tab is visible.
+.. Open *Setup*.
+.. Use the `Quick Find` box to find and open *Remote Site Settings*.
+.. Click *New Remote Site*.
+.. Choose a *Remote Site Name* for your site.
+.. Copy and paste your community's URL into the *Remote Site URL* field.
+.. Click *Save*.
+. Verify that your user has the option *Salesforce CMS Content User* enabled.
+. Open the community builder, open the Lightning component *ACM Search Box*, and enable the option *Search in Managed Content*.
+. Open your community, use the site search, and verify that the *Managed Content* tab is visible.
 
 == See Also
 
