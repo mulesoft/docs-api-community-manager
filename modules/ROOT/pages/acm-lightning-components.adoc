@@ -162,7 +162,7 @@ Show Documentation Pages:: Shows the API's documentation pages.
 Expand endpoints on start:: Expands the documentation of the API endpoints when the page loads.
 Enable resource filtering:: Shows a search bar in the left navigation so users can filter the API resources and show only the resources that match their search terms.
 Remove overview items from navigation:: Removes the overview links and shows the overview when the user clicks the endpoint name.
-Show menu action bar:: Shows the menu action bar with the Quick Find box and the button to expand or collapse all endpoints.
+Show menu action bar:: Shows the menu action bar with the *Quick Find* box and the button to expand or collapse all endpoints.
 Link Hover Color:: Specifies the hover link color.
 Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
