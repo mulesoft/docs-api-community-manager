@@ -12,6 +12,7 @@
  ** xref:cache.adoc[Configure the Platform Cache]
  ** xref:create-community.adoc[Create a Community]
  ** xref:install-validate.adoc[Verify the Installation]
+ ** xref:search-cms.adoc[Optionally Configure Search in CMS Content]
  ** xref:branded-emails.adoc[Optionally Configure Branded Emails]
  ** xref:govcloud-data-control.adoc[MuleSoft Government Cloud Data Control]
 * xref:brand-intro.adoc[Brand and Customize Your Site]

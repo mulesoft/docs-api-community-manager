@@ -84,40 +84,19 @@ Chatter tracking enables your community to create discussions about specific obj
 . Without selecting any fields, click *Enable feed tracking*. 
 . Click *Save*.
 
-=== Enable CMS Content
-
-You can enable the Salesforce CMS content manager, provide topics to organize the content, and enable Salesforce CRM content.
-
-Enable Salesforce CMS:
-
-. In *Setup*, search for *Salesforce Files* using the *Quick Find* box and click *General Settings*.
-. Click *Edit*.
-. Click *Libraries in Salesforce Files*.
-. Click *Save*.
-. In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
-. Locate the *Salesforce CMS* item, open the list on the right end of the row and select *Edit*.
-. Click *User Profiles* on the left panel, highlight the *System Administrator* item under the *Available Profiles* box, and use the arrow buttons to move it to the *Selected Profiles* box.
-. Click *Save*.
-. Click *Back* at the top right.
-. Open the *App Launcher* and click *Salesforce CMS*.
-. Click *Create Your First Workspace*.
-. In the *Name and Describe Your Workspace* step enter a *Name* for your workspace and click *Next*.
-. In the *Add Destination* step, select your community in the list by clicking on the "+" sign. Click *Next*.
-. In the *Add Contributors* step click *Next*.
-. Confirm the information and click *Done*.
-. In *Setup*, click *Profiles*, open *System Administrator*, and click *Edit*.
-. In *Tab Settings*, set *CMS Workspaces* to *Default On*.
-. Click *Save*.
+=== Organize CMS Content Using Topics
 
 If you want to organize CMS content using Topics, follow these steps:
 
 . Go to the API Community Manager control panel, click *Manage CMS Content*, and click *Topics*.
 . Select the topics you want to enable to organize CMS content and click *Enable for content* in the top right.
 
-Enable Salesforce CRM Content:
+=== Enable Salesforce CRM Content
+
+To verify that Salesforce CRM Content is enabled:
 
 . In *Setup*, search for *Salesforce CRM* using the *Quick Find* box and click *Salesforce CRM Content*.
-. Click *Enable Salesforce CRM Content*.
+. Ensure that *Enable Salesforce CRM Content* is selected.
 . Click *Save*.
 
 == Configure Profiles and Permissions
