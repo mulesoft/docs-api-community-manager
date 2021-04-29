@@ -84,40 +84,19 @@ Chatter tracking enables your community to create discussions about specific obj
 . Without selecting any fields, click *Enable feed tracking*. 
 . Click *Save*.
 
-=== Enable CMS Content
-
-You can enable the Salesforce CMS content manager, provide topics to organize the content, and enable Salesforce CRM content.
-
-Enable Salesforce CMS:
-
-. In *Setup*, search for *Salesforce Files* using the *Quick Find* box and click *General Settings*.
-. Click *Edit*.
-. Click *Libraries in Salesforce Files*.
-. Click *Save*.
-. In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
-. Locate the *Salesforce CMS* item, open the list on the right end of the row and select *Edit*.
-. Click *User Profiles* on the left panel, highlight the *System Administrator* item under the *Available Profiles* box, and use the arrow buttons to move it to the *Selected Profiles* box.
-. Click *Save*.
-. Click *Back* at the top right.
-. Open the *App Launcher* and click *Salesforce CMS*.
-. Click *Create Your First Workspace*.
-. In the *Name and Describe Your Workspace* step enter a *Name* for your workspace and click *Next*.
-. In the *Add Destination* step, select your community in the list by clicking on the "+" sign. Click *Next*.
-. In the *Add Contributors* step click *Next*.
-. Confirm the information and click *Done*.
-. In *Setup*, click *Profiles*, open *System Administrator*, and click *Edit*.
-. In *Tab Settings*, set *CMS Workspaces* to *Default On*.
-. Click *Save*.
+=== Organize CMS Content Using Topics
 
 If you want to organize CMS content using Topics, follow these steps:
 
 . Go to the API Community Manager control panel, click *Manage CMS Content*, and click *Topics*.
 . Select the topics you want to enable to organize CMS content and click *Enable for content* in the top right.
 
-Enable Salesforce CRM Content:
+=== Enable Salesforce CRM Content
+
+To verify that Salesforce CRM Content is enabled:
 
 . In *Setup*, search for *Salesforce CRM* using the *Quick Find* box and click *Salesforce CRM Content*.
-. Click *Enable Salesforce CRM Content*.
+. Ensure that *Enable Salesforce CRM Content* is selected.
 . Click *Save*.
 
 == Configure Profiles and Permissions
@@ -129,124 +108,37 @@ After you create a community, you must create different user profiles for your c
 These are the permissions for the member users:
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
-|======================
-|Object
-|Required Object Permissions
-|Required Field-Level Permissions
-
-|AnypointApiCategories
-|*Read*
-|*Read Access*
-
-|AnypointApiFiles
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstancesApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupVersions
-|*Read*
-|*Read Access*
-
-|AnypointApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiPages
-|*Read*
-|*Read Access*
-
-|AnypointApiTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiVersionQueries
-|*Read*
-|*Read Access*
-
-|AnypointApiVersions
-|*Read*
-|*Read Access*
-
-|AnypointApplicationOwners
-|*Read*
-|*Read Access*
-
-|AnypointApplications
-|*Read*, *Create*, *Edit*, *Delete*
-|*Read Access*, *Edit Access*
-
-|AnypointAssetCategories
-|*Read*
-|*Read Access*
-
-|AnypointAssets
-|*Read*
-|*Read Access*
-
-|AnypointAssetVersions
-|*Read*
-|*Read Access*
-
-|AnypointCategories
-|*Read*
-|*Read Access*
-
-|AnypointClientProviders
-|*Read*
-|*Read Access*
-
-|AnypointContracts
-|*Read*, *Create*, *Edit*, *Delete*
-|*Read Access*, *Edit Access*
-
-|AnypointEnvironments
-|*Read*
-|*Read Access*
-
-|AnypointGrantTypes
-|*Read*
-|*Read Access*
-
-|AnypointOrganizations
-|*Read*
-|*Read Access*
-
-|Cases
-|*Read*
-|*Read Access*
-
-|CommunityApis
-|*Read*
-|*Read Access*
-
-|CommunityAssetVersions
-|*Read*
-|*Read Access*
-
-|Documents
-|*Read*
-|*Read Access*
-
-|======================
+|===
+|Object |Required Object Permissions |Required Field-Level Permissions
+|AnypointApiCategories |*Read* |*Read Access*
+|AnypointApiFiles |*Read* |*Read Access*
+|AnypointApiGroupInstances |*Read* |*Read Access*
+|AnypointApiGroupInstancesApiInstances |*Read* |*Read Access*
+|AnypointApiGroupTierLimits |*Read* |*Read Access*
+|AnypointApiGroupTiers |*Read* |*Read Access*
+|AnypointApiGroupVersions |*Read* |*Read Access*
+|AnypointApiInstances |*Read* |*Read Access*
+|AnypointApiPages |*Read* |*Read Access*
+|AnypointApiTierLimits |*Read* |*Read Access*
+|AnypointApiTiers |*Read* |*Read Access*
+|AnypointApiVersionQueries |*Read* |*Read Access*
+|AnypointApiVersions |*Read* |*Read Access*
+|AnypointApplicationOwners |*Read* |*Read Access*
+|AnypointApplications |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
+|AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssets |*Read* |*Read Access*
+|AnypointAssetVersions |*Read* |*Read Access*
+|AnypointCategories |*Read* |*Read Access*
+|AnypointClientProviders |*Read* |*Read Access*
+|AnypointContracts |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
+|AnypointEnvironments |*Read* |*Read Access*
+|AnypointGrantTypes |*Read* |*Read Access*
+|AnypointOrganizations |*Read* |*Read Access*
+|Cases |*Read* |*Read Access*
+|CommunityApis |*Read* |*Read Access*
+|CommunityAssetVersions |*Read* |*Read Access*
+|Documents |*Read* |*Read Access*
+|===
 
 All field-level permissions apply to all fields.
 
@@ -273,124 +165,37 @@ To configure permissions for the member user profile so your members can access 
 These are the permissions for the guest users:
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
-|======================
-|Object
-|Required Object Permissions
-|Required Field-Level Permissions
-
-|AnypointApiCategories
-|*Read*
-|*Read Access*
-
-|AnypointApiFiles
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupInstancesApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiGroupVersions
-|*Read*
-|*Read Access*
-
-|AnypointApiInstances
-|*Read*
-|*Read Access*
-
-|AnypointApiPages
-|*Read*
-|*Read Access*
-
-|AnypointApiTierLimits
-|*Read*
-|*Read Access*
-
-|AnypointApiTiers
-|*Read*
-|*Read Access*
-
-|AnypointApiVersionQueries
-|*Read*
-|*Read Access*
-
-|AnypointApiVersions
-|*Read*
-|*Read Access*
-
-|AnypointApplicationOwners
-|*Read*
-|*Read Access*
-
-|AnypointApplications
-|*Read*
-|*Read Access*
-
-|AnypointAssetCategories
-|*Read*
-|*Read Access*
-
-|AnypointAssets
-|*Read*
-|*Read Access*
-
-|AnypointAssetVersions
-|*Read*
-|*Read Access*
-
-|AnypointCategories
-|*Read*
-|*Read Access*
-
-|AnypointClientProviders
-|*Read*
-|*Read Access*
-
-|AnypointContracts
-|*Read*
-|*Read Access*
-
-|AnypointEnvironments
-|*Read*
-|*Read Access*
-
-|AnypointGrantTypes
-|*Read*
-|*Read Access*
-
-|AnypointOrganizations
-|*Read*
-|*Read Access*
-
-|CommunityApis
-|*Read*
-|*Read Access*
-
-|CommunityAssetVersions
-|*Read*
-|*Read Access*
-
-|Documents
-|*Read*
-|*Read Access*
-
-|SelfRegisterUserRequests
-|*Read*, *Create*
-|*Read Access*, *Edit Access*
-
-|======================
+|===
+|Object |Required Object Permissions |Required Field-Level Permissions
+|AnypointApiCategories |*Read* |*Read Access*
+|AnypointApiFiles |*Read* |*Read Access*
+|AnypointApiGroupInstances |*Read* |*Read Access*
+|AnypointApiGroupInstancesApiInstances |*Read* |*Read Access*
+|AnypointApiGroupTierLimits |*Read* |*Read Access*
+|AnypointApiGroupTiers |*Read* |*Read Access*
+|AnypointApiGroupVersions |*Read* |*Read Access*
+|AnypointApiInstances |*Read* |*Read Access*
+|AnypointApiPages |*Read* |*Read Access*
+|AnypointApiTierLimits |*Read* |*Read Access*
+|AnypointApiTiers |*Read* |*Read Access*
+|AnypointApiVersionQueries |*Read* |*Read Access*
+|AnypointApiVersions |*Read* |*Read Access*
+|AnypointApplicationOwners |*Read* |*Read Access*
+|AnypointApplications |*Read* |*Read Access*
+|AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssets |*Read* |*Read Access*
+|AnypointAssetVersions |*Read* |*Read Access*
+|AnypointCategories |*Read* |*Read Access*
+|AnypointClientProviders |*Read* |*Read Access*
+|AnypointContracts |*Read* |*Read Access*
+|AnypointEnvironments |*Read* |*Read Access*
+|AnypointGrantTypes |*Read* |*Read Access*
+|AnypointOrganizations |*Read* |*Read Access*
+|CommunityApis |*Read* |*Read Access*
+|CommunityAssetVersions |*Read* |*Read Access*
+|Documents |*Read* |*Read Access*
+|SelfRegisterUserRequests |*Read*, *Create* |*Read Access*, *Edit Access*
+|===
 
 All field-level permissions apply to all fields.
 
