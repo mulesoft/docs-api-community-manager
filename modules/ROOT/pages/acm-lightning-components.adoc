@@ -154,6 +154,8 @@ The component shows the API instances and documentation from xref:exchange::inde
 
 When users need a client ID and client secret to access an API, they can select a client application in the *Credential source* list to populate the client ID and client secret from that client application automatically, or select *Custom credentials* in the list to enter the client ID and client secret manually.
 
+By default the API console sends requests from the browser through Anypoint to an API. To send requests directly from the browser to an API instance, open *Setup* > *Custom Metadata Type* > *ACM API Console Configuration Metadata* > *Manage ACM API Console Configuration Metadata* > *ACM API Console Configuration* > *Edit* and select *Browser Requests Enabled*. The mocking service is part of Anypoint, so the browser must send requests through Anypoint to the mocking service, and this setting does not affect the mocking service.
+
 You can specify values for the following parameters of the API Console:
 
 API:: Specifies the API to display.
@@ -162,6 +164,7 @@ Expand endpoints on start:: Expands the documentation of the API endpoints when 
 Enable resource filtering:: Shows a search bar in the left navigation so users can filter the API resources and show only the resources that match their search terms.
 Remove overview items from navigation:: Removes the overview links and shows the overview when the user clicks the endpoint name.
 Show menu action bar:: Shows the menu action bar with the Quick Find box and the button to expand or collapse all endpoints.
+Enable expandable request panel:: Enables expanding and collapsing the request panel by clicking the arrows at the edge of the panel.
 Link Hover Color:: Specifies the hover link color.
 Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
