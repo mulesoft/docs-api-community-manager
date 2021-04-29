@@ -19,12 +19,12 @@ The Anypoint API Community Manager Search Box component enables users to search 
 You can specify values for the following parameters of the API Community Manager Search Box:
 
 Result Page URL:: Specifies the URL of the search results page shown after the user enters a search.
-Search Areas:: Selects which types of content to search: APIs, API Groups, Applications, Knowledge Articles, Cases, Discussions, Topics, Managed Content (CMS), API Specifications, Documentation Pages, and Custom Fields.
+Search Areas:: Selects which types of content to search: *APIs*, *API Groups*, *Applications*, *Knowledge Articles*, *Cases*, *Discussions*, *Topics*, *Managed Content (CMS)*, *API Specifications*, *Documentation Pages*, and *Custom Fields*.
 Number of results to show:: Specifies the number of results shown as the user types a query.
 
-The Result Page URL parameter specifies the URL of a search results page, and the search results page must include an ACM Search Results component to display the search results. If the page does not include an ACM Search Results component, members and guest users who enter a search will go to the page and see no results.
+The *Result Page URL* parameter specifies the URL of a search results page, and the search results page must include an *ACM Search Results* component to display the search results. If the page does not include an *ACM Search Results* component, members and guest users who enter a search will go to the page and see no results.
 
-If a content type is not selected in the Search Areas parameter, then the linked ACM Search Results component omits results of that content type. MuleSoft Government Cloud does not support searching in API specifications or documentation pages, so if you are using MuleSoft Government Cloud, enabling those search areas has no effect.
+If a content type is not selected in the *Search Areas* parameter, then the linked *ACM Search Results* component omits results of that content type. MuleSoft Government Cloud does not support searching in API specifications or documentation pages, so if you are using MuleSoft Government Cloud, enabling those search areas has no effect.
 
 Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
 
@@ -295,16 +295,16 @@ Error Color (Optional):: Specifies the color of error messages.
 
 == API Custom Field Table
 
-The API Custom Field Table component shows all of an API's custom fields and their values.
+The *API Custom Field Table* component shows all of an API's custom fields and their values.
 
-You can specify values for the following parameters of the API Custom Field Table:
+You can specify values for the following parameters of the *API Custom Field Table*:
 
 Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
 Show Table Header:: Shows the table header.
 
 == API Custom Field Pills
 
-The API Custom Field Pills component shows up to 5 of an API's custom fields and their values, displayed as a sequence of field-value pairs.
+The *API Custom Field Pills* component shows up to 5 of an API's custom fields and their values, displayed as a sequence of field-value pairs.
 
 You can specify values for the following parameters of the API Custom Field Pills:
 
