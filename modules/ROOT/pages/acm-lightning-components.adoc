@@ -153,7 +153,7 @@ Console components include API Console, API Console Documentation, API Console I
 
 The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
-When users need a client ID and client secret to access an API, they can select a client application in the *Credential source* list to populate the client ID and client secret from that client application automatically, or select *Custom credentials* in the list to enter the client ID and client secret manually.
+When users need a client ID and client secret to access an API, they either select a client application in the *Credential source* list to populate the client ID and client secret from that client application automatically, or select *Custom credentials* in the list to enter the client ID and client secret manually.
 
 You can specify values for the following parameters of the API Console:
 
