@@ -7,7 +7,7 @@ endif::[]
 
 Anypoint API Community Manager is composed of a Salesforce organization with Experience Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
 
-An instance of API Community Manager connects to only one Anypoint Platform organization. The Anypoint user connects to one or more instances of API Community Manager, possibly including sandbox instances and instances in other Salesforce organizations.
+An instance of API Community Manager connects to only one Anypoint Platform organization. The Anypoint user can connect to one or more instances of API Community Manager, possibly including sandbox instances and instances in other Salesforce organizations.
 
 The API Community Manager package is installed in a Salesforce organization that is independent of any other Salesforce organizations that your company might already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data.
 
