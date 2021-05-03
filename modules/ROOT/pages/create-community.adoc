@@ -112,32 +112,32 @@ To configure permissions for the member user profile so your members can access 
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Users/Profiles*.
 . Click the *Customer Community Plus Login User* profile.
 . Click *Clone*.
-. For *Profile Name* enter `[Site Name] Member User`.
+. For *Profile Name*, enter `_Site Name_ Member User`.
 . Click *Save*.
-. In the *[Site Name] Member User* profile page, click *Edit*.
+. In the *_Site Name_ Member User* profile page, click *Edit*.
 . In *Object Settings*, edit the object permissions to match those shown in the following table.
 . Click *Save*.
 . Return to the profile overview.
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
 . Select these classes in the list and click *Add* to make them accessible:
-.. `acm_pkg.AnypointApiAnalyticsController`
-.. `acm_pkg.ApiAccessRequester`
-.. `acm_pkg.ApiPortalController`
-.. `acm_pkg.ApiVersionHeader`
-.. `acm_pkg.CustomFieldsViewerController`
-.. `acm_pkg.FineGrainVisibility`
-.. `acm_pkg.LightningForgotPasswordController`
-.. `acm_pkg.LightningLoginFormController`
-.. `acm_pkg.LightningSelfRegisterController`
-.. `acm_pkg.QueryApiController`
+.. *acm_pkg.AnypointApiAnalyticsController*
+.. *acm_pkg.ApiAccessRequester*
+.. *acm_pkg.ApiPortalController*
+.. *acm_pkg.ApiVersionHeader*
+.. *acm_pkg.CustomFieldsViewerController*
+.. *acm_pkg.FineGrainVisibility*
+.. *acm_pkg.LightningForgotPasswordController*
+.. *acm_pkg.LightningLoginFormController*
+.. *acm_pkg.LightningSelfRegisterController*
+.. *acm_pkg.QueryApiController*
 . Click *Save*.
 
 The following table shows the permissions for the member users.
 
 All field permissions apply to all fields.
 
-These permissions reflect the current API Community Manager package version. If you are using an older version, your member user profile may have only some of these permissions objects. Set the objects in your member user profile to match the table, and ignore objects that are not in your member user profile.
+These permissions reflect the current API Community Manager package version. If you are using an older version, your member user profile might have only some of these permissions objects. Set the objects in your member user profile to match the table, and ignore objects that are not in your member user profile.
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |===
@@ -177,7 +177,7 @@ These permissions reflect the current API Community Manager package version. If 
 To configure permissions for the guest user profile:
 
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
-. In the *Guest user profile* section, click *[Site Name] Profile*.
+. In the *Guest user profile* section, click *_Site Name_ Profile*.
 . Click *Edit*.
 . In *Object Settings*, edit the object permissions to match those shown in the following table.
 . Click *Save*.
@@ -185,23 +185,23 @@ To configure permissions for the guest user profile:
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
 . Select these classes in the list and click *Add* to make them accessible:
-.. `acm_pkg.AnypointApiAnalyticsController`
-.. `acm_pkg.ApiAccessRequester`
-.. `acm_pkg.ApiPortalController`
-.. `acm_pkg.ApiVersionHeader`
-.. `acm_pkg.CustomFieldsViewerController`
-.. `acm_pkg.FineGrainVisibility`
-.. `acm_pkg.LightningForgotPasswordController`
-.. `acm_pkg.LightningLoginFormController`
-.. `acm_pkg.LightningSelfRegisterController`
-.. `acm_pkg.QueryApiController`
+.. *acm_pkg.AnypointApiAnalyticsController*
+.. *acm_pkg.ApiAccessRequester*
+.. *acm_pkg.ApiPortalController*
+.. *acm_pkg.ApiVersionHeader*
+.. *acm_pkg.CustomFieldsViewerController*
+.. *acm_pkg.FineGrainVisibility*
+.. *acm_pkg.LightningForgotPasswordController*
+.. *acm_pkg.LightningLoginFormController*
+.. *acm_pkg.LightningSelfRegisterController*
+.. *acm_pkg.QueryApiController*
 . Click *Save*.
 
 The following table shows the permissions for the guest users.
 
 All field permissions apply to all fields.
 
-These permissions reflect the current API Community Manager package version. If you are using an older version, your guest user profile may have only some of these permissions objects. Set the objects in your guest user profile to match the table, and ignore objects that are not in your guest user profile.
+These permissions reflect the current API Community Manager package version. If you are using an older version, your guest user profile might have only some of these permissions objects. Set the objects in your guest user profile to match the table, and ignore objects that are not in your guest user profile.
 
 [cols="2,3,3",options=header,width="100%",frame="topbot"]
 |===
@@ -242,8 +242,8 @@ Configure sharing settings for members:
 
 . In *Setup*, search for *`Digital Experiences`* using the *Quick Find* box and click *Settings*.
 . Scroll to *Sharing Sets* and click *New*.
-. In the *Sharing Set Edit* section, update *Label* with `[Site Name] Sharing Set`.
-. In the *Select Profiles* section, select *[Site Name] Member User* from *Available Profiles* and add it to *Selected Profiles*.
+. In the *Sharing Set Edit* section, update *Label* with `_Site Name_ Sharing Set`.
+. In the *Select Profiles* section, select *_Site Name_ Member User* from *Available Profiles* and add it to *Selected Profiles*.
 . In the *Select Objects* section, select *CommunityApi* and *CommunityAssetVersion* from *Available Objects* and add them to *Selected Objects*.
 . In the *Configure Access* section, under the *Action* column, select *Set Up* next to *CommunityApi*.
 . In the *Access Mapping for CommunityApi* page enter these values.
@@ -263,21 +263,21 @@ Configure sharing settings for guests:
 
 . In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
 . Scroll to the *CommunityApi Sharing Rules* section near the bottom of the page and click *New*.
-. In the *Rule Name* section, update *Label* with `[Site Name] Guest`.
+. In the *Rule Name* section, update *Label* with `_Site Name_ Guest`.
 . In the *Select your rule type* section, select `Guest user access, based on criteria`.
 . In the *Select which records to be shared* section, add these criteria.
-.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Site Name]`
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `_Site Name_`
 .. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
-. In *Select the users to share with*, select `[Site Name] Site Guest User`.
+. In *Select the users to share with*, select `_Site Name_ Site Guest User`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Save.
 . In *Setup*, search for *Security* using the *Quick Find* box and click *Sharing Settings*.
 . Scroll to the *CommunityAssetVersions Sharing Rules* section near the bottom of the page and click *New*.
-. In the *Rule Name* section, update *Label* with `[Site Name] Guest`.
+. In the *Rule Name* section, update *Label* with `_Site Name_ Guest`.
 . In the *Select your rule type* section, select `Guest user access, based on criteria`.
-.. *Field*: `Community Name` *Operator*: `equals` *Value*: `[Site Name]`
+.. *Field*: `Community Name` *Operator*: `equals` *Value*: `_Site Name_`
 .. *Field*: `Visibility` *Operator*: `equals` *Value*: `Public`
-. In *Select the users to share with*, select `[Site Name] Site Guest User`.
+. In *Select the users to share with*, select `_Site Name_ Site Guest User`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Save.
 
