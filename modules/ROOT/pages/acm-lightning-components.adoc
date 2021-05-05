@@ -305,7 +305,7 @@ You can specify values for the following parameters of the *API Custom Field Tab
 Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
 Show Table Header:: Shows the table header.
 
-By default, the table shows all custom fields listed in the Anypoint organization. To show only some fields, open *Setup* > *Custom Metadata Type* > *ACM General Configuration Metadata* > *Manage Records*, next to *ACM Configuration* click *Edit*, and in the *CustomFieldsFilter* box enter a custom fields key such as `email,rating,case`.
+By default, the table shows all custom fields listed in the Anypoint organization. To show only some fields, open *Setup* > *Custom Metadata Type* > *ACM General Configuration Metadata* > *Manage Records*, next to *ACM Configuration* click *Edit*, and in the *CustomFieldsFilter* box enter a series of custom field keys such as `email,rating,case`. To list all the custom field keys, open the developer console and run the query `SELECT acm_pkg\__TagKey__c FROM acm_pkg\__AnypointCustomFields__x`.
 
 == API Custom Field Pills
 
