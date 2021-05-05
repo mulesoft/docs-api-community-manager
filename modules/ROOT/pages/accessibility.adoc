@@ -12,5 +12,5 @@ The API Community Manager community template for the fictional company Northern 
 
 == See Also
 
-* Accessibility in Salesforce Experience Cloud: https://www.salesforce.com/company/legal/508_accessibility/[Salesforce Product Accessibility Status, role=external, window=blank
+* Accessibility in Salesforce Experience Cloud: https://www.salesforce.com/company/legal/508_accessibility/[Salesforce Product Accessibility Status, role=external, window=blank]
 * https://www.w3.org/TR/WCAG21/[Web Content Accessibility Guidelines (WCAG) 2.1, role=external, window=blank]
