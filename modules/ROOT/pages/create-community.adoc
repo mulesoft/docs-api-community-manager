@@ -316,7 +316,7 @@ Configure a login page:
 . Scroll down to the *Registration Page Configuration* section near the bottom of the page.
 .. Select *Allow external users to self-register*.
 .. Select *Experience Builder Page* for *Registration Page Type* and click *Register*.
-.. Select *_Site Name_ Member Users* in *Profile*.
+.. Select *_Site Name_ Member User* in *Profile*.
 .. Select *ACM Registered Users Account* in *Account*.
 . Click *Save*.
 
