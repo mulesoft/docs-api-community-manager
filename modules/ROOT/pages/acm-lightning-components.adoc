@@ -478,6 +478,7 @@ Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the spe
 Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
 Buttons Color Picker:: Specifies the color of the buttons.
 Download Spec Options:: Specifies the download buttons to show: *Original Format*, *All* (default), *OAS3*, or *RAML*.
+Show Export Message:: Shows an icon next to the export button that displays a warning about possible inconsistencies when exporting an API specification to a different version.
 
 [[filter-conditions]]
 == Filter Conditions
