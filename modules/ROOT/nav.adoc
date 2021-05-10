@@ -3,6 +3,7 @@
 * xref:data-sheets.adoc[Data Sheets]
  ** xref:licensing-overview.adoc[Licensing Overview]
  ** xref:connectivity-govcloud.adoc[Connectivity with MuleSoft Government Cloud]
+ ** xref:accessibility.adoc[Accessibility]
  ** xref:security.adoc[Security]
 * xref:install.adoc[Install]
  ** xref:installation-prerequisites.adoc[Installation Prerequisites]
