@@ -4,9 +4,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-All Anypoint API Community Manager components, including both components provided by MuleSoft and components in Salesforce Experience Cloud, comply with the Web Content Accessibility Guidelines (WCAG) 2.1 AA level accessibility standard, and enable the creation of sites compliant with this standard and level.
+All Anypoint API Community Manager components, including both components provided by MuleSoft and components in Salesforce Experience Cloud, comply with the Web Content Accessibility Guidelines (WCAG) 2.1 AA-level accessibility standard and enable the creation of sites compliant with this standard and level.
 
-Because MuleSoft customers design and brand their API communities, accessibility assessment for sites built with API Community Manager depends on the customer's choice of design, structure, look and feel, visual, user interface, and behavior elements. Customers are responsible for accessibility assessment of these aspects on their specific community.
+Because MuleSoft customers design and brand their API communities, accessibility assessment for sites built with API Community Manager depends on the customer's choice of design, structure, visual, user interface, and behavior elements. Customers are responsible for accessibility assessment of these aspects in their specific community.
 
 The API Community Manager community template for the fictional company Northern Trail Outfitters (NTO) is provided only as an example. It is not intended for customers to use as-is for their live communities. This template has not been assessed for accessibility.
 
