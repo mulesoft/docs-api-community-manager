@@ -83,7 +83,7 @@ If you work with different business groups, you must create a new external group
 
 == Next Steps
 
-After the connection with your Anypoint organization is established, click *Continue* to open the API Community Manager diagnostics tool to review your installation, then create your first community.
+After the connection with your Anypoint organization is established, click *Continue* to open the API Community Manager diagnostics tool, review your installation, and if necessary, update the guest user and member user permissions. After the installation and permissions are verified, create your first community.
 
 == See Also
 
