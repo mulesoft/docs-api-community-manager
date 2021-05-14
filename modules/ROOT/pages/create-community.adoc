@@ -158,11 +158,13 @@ These permissions reflect the current API Community Manager package version. If 
 |AnypointApplicationOwners |*Read* |*Read Access*
 |AnypointApplications |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
 |AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssetCustomFields |*Read* |*Read Access*
 |AnypointAssets |*Read* |*Read Access*
 |AnypointAssetVersions |*Read* |*Read Access*
 |AnypointCategories |*Read* |*Read Access*
 |AnypointClientProviders |*Read* |*Read Access*
 |AnypointContracts |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
+|AnypointCustomFields |*Read* |*Read Access*
 |AnypointEnvironments |*Read* |*Read Access*
 |AnypointGrantTypes |*Read* |*Read Access*
 |AnypointOrganizations |*Read* |*Read Access*
@@ -222,11 +224,13 @@ These permissions reflect the current API Community Manager package version. If 
 |AnypointApplicationOwners |*Read* |*Read Access*
 |AnypointApplications |*Read* |*Read Access*
 |AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssetCustomFields |*Read* |*Read Access*
 |AnypointAssets |*Read* |*Read Access*
 |AnypointAssetVersions |*Read* |*Read Access*
 |AnypointCategories |*Read* |*Read Access*
 |AnypointClientProviders |*Read* |*Read Access*
 |AnypointContracts |*Read* |*Read Access*
+|AnypointCustomFields |*Read* |*Read Access*
 |AnypointEnvironments |*Read* |*Read Access*
 |AnypointGrantTypes |*Read* |*Read Access*
 |AnypointOrganizations |*Read* |*Read Access*

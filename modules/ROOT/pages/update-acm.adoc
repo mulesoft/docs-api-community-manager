@@ -38,7 +38,8 @@ When the upgrade finishes, you receive a notification email.
 . If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.77, follow the <<post-177>> and then continue with these instructions.
 . If you are upgrading from a package version before 1.79, follow the <<post-179>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.80.1, follow the <<post-1801>>.
+. If you are upgrading from a package version before 1.80.1, follow the <<post-1801>> and then continue with these instructions.
+. If you are upgrading from a package version before 1.82, follow the <<post-182>>.
 
 [[pre-126]]
 == Preinstallation Steps When Upgrading from a Version Before 1.26
@@ -253,6 +254,41 @@ If you are upgrading from a package version before 1.80.1, update the permission
 .. Click *Object settings* > *AnypointApplications*.
 .. Ensure that the `GrantTypes` field has `Read` access.
 .. Save.
+. Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of upgrade instructions to continue.
+
+[[post-182]]
+== Postinstallation Steps When Upgrading from a Version Before 1.82
+
+If you are upgrading from a package version before 1.82, use either the automatic or manual configuration methods to update the permissions of the *Member* and *Guest* profiles on the *AnypointAssetCustomFields* and *AnypointCustomFields* objects, and ensure both *Member* and *Guest* profiles have field-level *Read* access to the *AssetVersionId* field in the *AnypointApiInstances* object:
+
+. Automatic configuration:
+.. From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Diagnostics*.
+.. In the *User Access* tab, in the section *Guest User*, click *Fix all*.
+.. In the *User Access* tab, in the section *Member User*, click *Fix all*.
+. Manual configuration:
+.. Configure the *Member* profile permissions:
+... Click *Setup* > *Profiles*.
+... Open the *Member* profile.
+... Click *Object settings* > *AnypointAssetCustomFields*.
+... Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+... Click *Object settings* > *AnypointCustomFields*.
+... Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+... Click *Object settings* > *AnypointApiInstances*.
+... Ensure that the *AssetVersionId* field has *Read* access.
+... Save.
+.. Configure the *Guest* profile permissions:
+... Open the community builder.
+... Click *Settings* > *General*.
+... Open the *Guest* profile.
+... Click *Object settings* > *AnypointAssetCustomFields*.
+... Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+... Click *Object settings* > *AnypointCustomFields*.
+... Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+... Click *Object settings* > *AnypointApiInstances*.
+... Ensure that the *AssetVersionId* field has *Read* access.
+... Save.
 . Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 
 == See Also
