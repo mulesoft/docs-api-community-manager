@@ -1,0 +1,41 @@
+= Configure API Visibility
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Anypoint API Community Manager uses visibility rules to make APIs visible to selected groups of users. For example, your community could have a Payment API and a Trade API visible to users Ann, John, and Tim, and have an Order Submission API visible to users Charles and Xiomara.
+
+API visibility rules use the Salesforce object *CommunityApi* to represent each API published in your community, and Salesforce https://help.salesforce.com/articleView?id=sf.user_groups.htm&type=5[Public Groups, role=external, window=blank] and https://help.salesforce.com/articleView?id=sf.security_about_sharing_rules.htm&type=5[Sharing Rules, role=external, window=blank] to provide a flexible permissions model.
+
+To set API visibility, link each public group of users to a sharing set, and grant each sharing set permission to see one or more APIs.
+
+== Visibility Setup
+
+Follow these steps to set up API visibility in your community.
+
+=== Configure Your Community
+
+Follow these steps to configure your community for API visibility:
+
+. Create a new *ACM Community User Plus* profile based on the *Customer Community User Plus* profile:
+.. Open *Salesforce Setup* > *Profiles*.
+.. Select the *Customer Community User Plus* profile.
+.. Click *Clone*.
+.. Enter a name for the new profile that represents the use case, such as `External Developer`.
+.. Assign permissions that match the member user profile permissions described in the API Community Manager documentation section xref:create-community.adoc#configure-member-user-profile-permissions[Configure Member User Profile Permissions].
+. Configure your community to use the new *ACM Community User Plus* profile:
+.. Open *Setup* > *All Communities*.
+.. In the API Community Manager control panel, open *Community Administration* and open the *Members* tab.
+.. In the *Select Profiles* section, use the search dropdown to select *Customer*.
+.. Add the new *ACM Community User Plus* profile to the selected profiles.
+.. _Do not_ remove the *System Administrator* profile, which would lock you out and remove all access to your community.
+.. Remove the existing *ACM Community User* profile.
+. Remove all profiles from your community sharing set:
+.. Open *Setup* > *Communities Settings*.
+.. In the *Sharing Sets* section, edit your community sharing set and remove all profiles from the *Selected Profiles*.
+.. If the *Selected Objects* in the sharing set include *CommunityApi*, remove *CommunityApi* from the *Selected Objects*.
+. If your community already has users, open *Setup* > *Users* and update each user to change the *User License* to *Customer Community Plus* and select the new *ACM Community User Plus* profile.
+. In the API Community Manager control panel, set the visibility of each of your APIs to *Members Only*.
+
+=== Define Member Groups (Public Groups)
