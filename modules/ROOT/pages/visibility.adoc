@@ -14,7 +14,7 @@ To set API visibility, link each public group of users to a sharing set, and gra
 
 Follow these steps to set up API visibility in your community.
 
-=== Configure Your Community
+=== Configure Your Community for Visibility
 
 Follow these steps to configure your community for API visibility:
 
@@ -39,3 +39,78 @@ Follow these steps to configure your community for API visibility:
 . In the API Community Manager control panel, set the visibility of each of your APIs to *Members Only*.
 
 === Define Member Groups (Public Groups)
+
+Use member groups, also known as public groups, to group members and then make individual APIs visible to the group. Visibility rules, also known as sharing settings, determine the APIs visible to a member group.
+
+To create a member group:
+
+. Open *Setup* > *Public Groups*.
+. Create a *Public Group*.
+. Enter a name, such as `External Developers`.
+. Click *Save*.
+
+To add members to a member group:
+
+. Open *Setup* > *Public Groups*.
+. Edit the group.
+. In the *Search* dropdown, select *Customer Portal Users*.
+. Add the members by moving them from *Available Members* to *Selected Members*.
++
+*Available Members* shows only users with the new *ACM Community User Plus* profile. If the user you want to add is not in *Available Members*, open the user record and verify the profile.
+. Click *Save*.
+
+=== Define Visibility Rules for APIs (Sharing Settings)
+
+Use visibility rules, also known as sharing settings, to define a set of conditions that determine if an API is visible to a specific member group.
+
+To create a new sharing set:
+
+. Open *Setup* > *Sharing Settings*.
+. In the dropdown *Manage sharing settings for*, scroll down and select *CommunityApi*.
+. In the *Sharing Rules* section, click *New*.
+. Enter a name for the rule.
+. In the *Select your rule type* section, select *Based on Criteria*.
+. Define your desired criteria using the available fields on the API, such as *Name* and *Visibility*.
++
+Use the *Add Filter Logic* option to define more complex rules with and/or conditions.
+. Select the member group that sees the APIs matching these conditions.
+
+In this example, an internal developer group sees publicly visible APIs and some internal APIs:
+
+image::sharing-settings.png[Sharing Settings]
+
+== Add Members to a Member Group
+
+To add members to a member group:
+
+. Open *Setup* > *Public Groups*.
+. Edit the group.
+. In the *Search* dropdown, select *Customer Portal Users*.
+. Add the members by moving them from *Available Members* to *Selected Members*.
++
+*Available Members* shows only users with the new *ACM Community User Plus* profile. If the user you want to add is not in *Available Members*, open the user record and verify the profile.
+. Click *Save*.
+
+== Make an API Visible to a Member Group
+
+. Open *Setup* > *Sharing Settings*.
+. In the dropdown *Manage sharing settings for*, scroll down and select *CommunityApi*.
+. In the *Sharing Rules* section, create a new rule or edit an existing rule.
+. Ensure the rule matches the API.
+. Ensure the rule specifies the member group.
+
+== Automation
+
+Assign users to member groups automatically with any of these options.
+
+=== Process Builder for Simple Scenarios
+
+Use Salesforce https://help.salesforce.com/articleView?id=sf.process_overview.htm&type=5[Process Builder, role=external, window=blank] for simple scenarios such as adding each new user to a default public group.
+
+=== APEX Triggers for Complex Scenarios
+
+Use https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers.htm[APEX triggers, role=external, window=blank] to write business rules for group assignment directly in APEX code.
+
+=== Flows for Complex Scenarios
+
+Use Salesforce https://help.salesforce.com/articleView?id=sf.flow.htm&type=5[Flows, role=external, window=blank] to perform group assignment declaratively.
