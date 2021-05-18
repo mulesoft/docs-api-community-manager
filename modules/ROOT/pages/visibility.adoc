@@ -97,6 +97,8 @@ To add members to a member group:
 
 == Make an API Visible to a Member Group
 
+To make an API visible to a member group:
+
 . Open *Setup* > *Sharing Settings*.
 . In the dropdown *Manage sharing settings for*, scroll down and select *CommunityApi*.
 . In the *Sharing Rules* section, create a new rule or edit an existing rule.
@@ -107,14 +109,14 @@ To add members to a member group:
 
 Assign users to member groups automatically with any of these options.
 
-=== Process Builder for Simple Scenarios
+=== Process Builder for Simple Automation
 
-Use Salesforce https://help.salesforce.com/articleView?id=sf.process_overview.htm&type=5[Process Builder, role=external, window=blank] for simple scenarios such as adding each new user to a default public group.
+Use Salesforce https://help.salesforce.com/articleView?id=sf.process_overview.htm&type=5[Process Builder, role=external, window=blank] for simple automation such as adding each new user to a default public group.
 
-=== APEX Triggers for Complex Scenarios
+=== APEX Triggers for Complex Automation
 
 Use https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers.htm[APEX triggers, role=external, window=blank] to write business rules for group assignment directly in APEX code.
 
-=== Flows for Complex Scenarios
+=== Flows for Complex Automation
 
 Use Salesforce https://help.salesforce.com/articleView?id=sf.flow.htm&type=5[Flows, role=external, window=blank] to perform group assignment declaratively.
