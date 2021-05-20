@@ -152,7 +152,7 @@ Console components include API Console, API Console Documentation, API Console I
 
 The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
-When users need a client ID and client secret to access an API, they either select a client application in the *Credential source* list to populate the client ID and client secret from that client application automatically, or select *Custom credentials* in the list to enter the client ID and client secret manually.
+If an API's specification includes OAuth 2.0 security, users either select a client application in the *Credential source* list to populate the client ID and client secret from that client application automatically, or select *Custom credentials* in the list to enter the client ID and client secret manually.
 
 By default the API console sends requests from the browser through Salesforce Experience Cloud to an API, and request size is limited to 2 megabytes or less. To send requests directly from the browser to an API instance, which allows requests with no size limit, open *Setup* > *Custom Metadata Type* > *ACM API Console Configuration Metadata* > *Manage ACM API Console Configuration Metadata* > *ACM API Console Configuration* > *Edit* and select *Browser Requests Enabled*. This setting applies to all API instances in the community and does not affect the mocking service.
 
