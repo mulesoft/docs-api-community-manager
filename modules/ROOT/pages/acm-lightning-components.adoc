@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:imagesdir: ../assets/images/
 
 You design the pages of your Anypoint API Community Manager portal by adding and configuring Lightning components in Community Builder.
 
