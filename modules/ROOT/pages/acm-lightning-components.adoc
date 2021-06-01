@@ -23,9 +23,9 @@ Result Page URL:: Specifies the URL of the search results page shown after the u
 Search Areas:: Selects which types of content to search: *APIs*, *API Groups*, *Applications*, *Knowledge Articles*, *Cases*, *Discussions*, *Topics*, *Managed Content (CMS)*, *API Specifications*, *Documentation Pages*, and *Custom Fields*.
 Number of results to show:: Specifies the number of results shown as the user types a query.
 
-The *Result Page URL* parameter specifies the URL of a search results page, and the search results page must include an *ACM Search Results* component to display the search results. If the page does not include an *ACM Search Results* component, members and guest users who enter a search will go to the page and see no results.
+The *Result Page URL* parameter specifies the URL of a search results page, and the search results page must include an *ACM Search Results* component to display the search results. If the page does not include an *ACM Search Results* component, members and guest users who enter a search and go to the page see no results.
 
-If a content type is not selected in the *Search Areas* parameter, then the linked *ACM Search Results* component omits results of that content type. MuleSoft Government Cloud does not support searching in API specifications or documentation pages, so if you are using MuleSoft Government Cloud, enabling those search areas has no effect.
+If a content type is not selected in the *Search Areas* parameter, then the linked *ACM Search Results* component omits results of that content type. MuleSoft Government Cloud does not support searching in API specifications or documentation pages.
 
 Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
 
@@ -155,13 +155,13 @@ Console components include API Console, API Console Documentation, API Console I
 
 The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
-If an API's specification includes OAuth 2.0 security, users either select a client application in the *Credentials source* list to populate the client ID and client secret from that client application automatically, or select *Custom credentials* in the list to enter the client ID and client secret manually.
+If an API's specification includes OAuth 2.0 security, users either select a client application in the *Credentials source* list to populate the client ID and client secret automatically, or they select *Custom credentials* in the list to enter the client ID and client secret manually.
 
 image::credentials-source.png[Credentials source]
 
-By default the API console sends requests from the browser through Salesforce Experience Cloud to an API, and request size is limited to 2 megabytes or less. To send requests directly from the browser to an API instance, which allows requests with no size limit, open *Setup* > *Custom Metadata Type* > *ACM API Console Configuration Metadata* > *Manage ACM API Console Configuration Metadata* > *ACM API Console Configuration* > *Edit* and select *Browser Requests Enabled*. This setting applies to all API instances in the community and does not affect the mocking service.
+By default, the API console sends requests of 2 megabytes or less from the browser through Salesforce Experience Cloud to an API. To send requests directly from the browser to an API instance, which allows requests with no size limit, open *Setup* > *Custom Metadata Type* > *ACM API Console Configuration Metadata* > *Manage ACM API Console Configuration Metadata* > *ACM API Console Configuration* > *Edit* and select *Browser Requests Enabled*. This setting applies to all API instances in the community and does not affect the mocking service.
 
-You can specify values for the following parameters of the API Console:
+You can specify values for the following parameters of the API console:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
@@ -310,16 +310,22 @@ You can specify values for the following parameters of the *API Custom Field Tab
 Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
 Show Table Header:: Shows the table header.
 
-By default, the table shows all custom fields listed in the Anypoint organization. To show only some fields, open *Setup* > *Custom Metadata Type* > *ACM General Configuration Metadata* > *Manage Records*, next to *ACM Configuration* click *Edit*, and in the *CustomFieldsFilter* box, enter a series of custom field keys as a comma-separated list, such as `email,rating,case`. To list all the custom field keys, open the developer console and run the query `SELECT acm_pkg\__TagKey__c FROM acm_pkg\__AnypointCustomFields__x`.
+By default, the table shows all custom fields listed in the Anypoint organization. To show only some fields:
+
+. Open *Setup* > *Custom Metadata Type* > *ACM General Configuration Metadata* > *Manage Records*.
+. Next to *ACM Configuration*, click *Edit*.
+. In the *CustomFieldsFilter* box, enter a series of custom field keys as a comma-separated list, such as `email,rating,case`.
++
+To list all the custom field keys, open the developer console and run the query `SELECT acm_pkg\__TagKey__c FROM acm_pkg\__AnypointCustomFields__x`.
 
 == API Custom Field Pills
 
-The *API Custom Field Pills* component shows up to 5 of an API's custom fields and their values, displayed as a sequence of field-value pairs.
+The *API Custom Field Pills* component shows up to five of an API's custom fields and their values, displayed as a sequence of field-value pairs.
 
 You can specify values for the following parameters of the *API Custom Field Pills*:
 
 Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
-Custom Fields:: Specifies the 5 custom fields to show.
+Custom Fields:: Specifies the five custom fields to show.
 
 == API Details Button
 
@@ -483,7 +489,7 @@ Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the spe
 Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
 Buttons Color Picker:: Specifies the color of the buttons.
 Download Spec Options:: Specifies the download buttons to show: *Original Format*, *All* (default), *OAS3*, or *RAML*.
-Show Export Message:: Shows an icon next to the export button that displays a warning about possible inconsistencies when exporting an API specification to a different version.
+Show Export Message:: Shows an icon next to the export button with a tooltip warning about possible inconsistencies when exporting an API specification to a different version.
 
 [[filter-conditions]]
 == Filter Conditions
