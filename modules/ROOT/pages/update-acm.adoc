@@ -24,9 +24,9 @@ Attempting to upgrade the package without this feature enabled causes the proces
 . Open the API Community Manager control panel.
 . In the same browser session, open the *package upgrade installation link* provided by your MuleSoft representative.
 . Verify the version number and name of the release.
-. If you are upgrading from a package version before 1.26, follow the <<pre-126>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.74, follow the <<pre-174>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.77, follow the <<pre-177>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.26, follow the <<pre-126>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.74, follow the <<pre-174>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.77, follow the <<pre-177>> and then continue with these instructions.
 . Select *Install for admins only*.
 . Select *Upgrade*.
 +
@@ -34,16 +34,17 @@ This starts the installation process.
 +
 When the upgrade finishes, you receive a notification email.
 . If you are upgrading from package version 1.62 or earlier, follow the <<post-162>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.69, follow the <<post-169>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.74, follow the <<post-174>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.77, follow the <<post-177>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.79, follow the <<post-179>> and then continue with these instructions.
-. If you are upgrading from a package version before 1.80.1, follow the <<post-1801>>.
+. If you are upgrading from a package version earlier than 1.69, follow the <<post-169>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.74, follow the <<post-174>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.77, follow the <<post-177>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.79, follow the <<post-179>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.80.1, follow the <<post-1801>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 1.82, follow the <<post-182>>.
 
 [[pre-126]]
-== Preinstallation Steps When Upgrading from a Version Before 1.26
+== Preinstallation Steps When Upgrading from a Version Earlier Than 1.26
 
-If you are upgrading from a package version before 1.26, follow these steps:
+If you are upgrading from a package version earlier than 1.26, follow these steps:
 
 . Go to Salesforce Workbench: https://workbench.developerforce.com/
 . Select Standard.
@@ -66,9 +67,9 @@ If you are upgrading from a package version before 1.26, follow these steps:
 Return to the main list of upgrade instructions to continue.
 
 [[pre-174]]
-== Preinstallation Steps When Upgrading from a Version Before 1.74
+== Preinstallation Steps When Upgrading from a Version Earlier Than 1.74
 
-If you are upgrading from a package version before 1.74, follow these steps:
+If you are upgrading from a package version earlier than 1.74, follow these steps:
 
 . Create a new named credential:
 .. Click *Setup* > *Named Credentials*.
@@ -91,9 +92,9 @@ If you are upgrading from a package version before 1.74, follow these steps:
 Return to the main list of upgrade instructions to continue.
 
 [[pre-177]]
-== Preinstallation Steps When Upgrading from a Version Before 1.77
+== Preinstallation Steps When Upgrading from a Version Earlier Than 1.77
 
-If you are upgrading from a package version before 1.77, follow these steps:
+If you are upgrading from a package version earlier than 1.77, follow these steps:
 
 . Open the *Developer Console* and open the *Query Editor*.
 . Enter `SELECT Id, Name, Owner.Name, Owner.IsActive FROM acm_pkg\__CommunityApi__c WHERE Owner.IsActive = false` and click *Execute*.
@@ -122,9 +123,9 @@ If you are upgrading from package version 1.62 or earlier, after installing, ens
 Return to the main list of upgrade instructions to continue.
 
 [[post-169]]
-== Postinstallation Steps When Upgrading from a Version Before 1.69
+== Postinstallation Steps When Upgrading from a Version Earlier Than 1.69
 
-If you are upgrading from a package version before 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
+If you are upgrading from a package version earlier than 1.69, update the permissions of the `Member` and `Guest` profiles on the *SelfRegisterUserRequests* object:
 
 . Configure the `Member` profile permissions:
 .. Click *Setup* > *Profiles*.
@@ -143,9 +144,9 @@ If you are upgrading from a package version before 1.69, update the permissions 
 Return to the main list of upgrade instructions to continue.
 
 [[post-174]]
-== Postinstallation Steps When Upgrading from a Version Before 1.74
+== Postinstallation Steps When Upgrading from a Version Earlier Than 1.74
 
-If you are upgrading from a package version before 1.74, follow these steps:
+If you are upgrading from a package version earlier than 1.74, follow these steps:
 
 . Click *Setup* > *External Data Source* > *Exchange*.
 . In the section *Custom HTTP Headers*, set *X-Auth-Proto* to the value `'JWT'`, including the single quotes.
@@ -157,11 +158,11 @@ In the community builder, in *Pages* > *CommunityApi* > *API Detail*, add the *S
 Return to the main list of upgrade instructions to continue.
 
 [[post-177]]
-== Postinstallation Steps When Upgrading from a Version Before 1.77
+== Postinstallation Steps When Upgrading from a Version Earlier Than 1.77
 
-*Potential degraded service of your community*: Upgrading from a package version before 1.77 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to assets in the community is enabled.
+*Potential degraded service of your community*: Upgrading from a package version earlier than 1.77 requires mandatory configuration updates. When the new package is installed, user access to assets in the community is disabled. When the configuration is complete, user access to assets in the community is enabled.
 
-If you are upgrading from a package version before 1.77, follow these steps:
+If you are upgrading from a package version earlier than 1.77, follow these steps:
 
 Configure sharing settings for guests:
 
@@ -212,9 +213,9 @@ NOTE: If you ever change the name of your community, be sure to update this conf
 Return to the main list of upgrade instructions to continue.
 
 [[post-179]]
-== Postinstallation Steps When Upgrading from a Version Before 1.79
+== Postinstallation Steps When Upgrading from a Version Earlier Than 1.79
 
-If you are upgrading from a package version before 1.79, update the permissions of the `Member` and `Guest` profiles on the *AnypointClientProviders* object:
+If you are upgrading from a package version earlier than 1.79, update the permissions of the `Member` and `Guest` profiles on the *AnypointClientProviders* object:
 
 . Configure the `Member` profile permissions:
 .. Click *Setup* > *Profiles*.
@@ -232,9 +233,9 @@ If you are upgrading from a package version before 1.79, update the permissions 
 Return to the main list of upgrade instructions to continue.
 
 [[post-1801]]
-== Postinstallation Steps When Upgrading from a Version Before 1.80.1
+== Postinstallation Steps When Upgrading from a Version Earlier Than 1.80.1
 
-If you are upgrading from a package version before 1.80.1, update the permissions of the `Member` and `Guest` profiles on the *AnypointGrantTypes* object, and ensure both `Member` and `Guest` profiles have field-level `Read` access to the `GrantTypes` field in the *AnypointApplications* object:
+If you are upgrading from a package version earlier than 1.80.1, update the permissions of the `Member` and `Guest` profiles on the *AnypointGrantTypes* object, and ensure both `Member` and `Guest` profiles have field-level `Read` access to the `GrantTypes` field in the *AnypointApplications* object:
 
 . Configure the `Member` profile permissions:
 .. Click *Setup* > *Profiles*.
@@ -252,6 +253,45 @@ If you are upgrading from a package version before 1.80.1, update the permission
 .. Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
 .. Click *Object settings* > *AnypointApplications*.
 .. Ensure that the `GrantTypes` field has `Read` access.
+.. Save.
+. Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of upgrade instructions to continue.
+
+[[post-182]]
+== Postinstallation Steps When Upgrading from a Version Earlier Than 1.82
+
+If you are upgrading from a package version earlier than 1.82, use either the automatic or manual configuration methods to update the permissions of the *Member* and *Guest* profiles on the *AnypointAssetCustomFields* and *AnypointCustomFields* objects, and ensure both *Member* and *Guest* profiles have field-level *Read* access to the *AssetVersionId* field in the *AnypointApiInstances* object.
+
+Automatic configuration:
+
+. From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for `API community manager diagnostics`.
+. In the *User Access* tab, in the section *Guest User*, click *Fix all*.
+. In the *User Access* tab, in the section *Member User*, click *Fix all*.
+. Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Manual configuration:
+
+. Configure the *Member* profile permissions:
+.. Click *Setup* > *Profiles*.
+.. Open the *Member* profile.
+.. Click *Object settings* > *AnypointAssetCustomFields*.
+.. Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointCustomFields*.
+.. Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointApiInstances*.
+.. Ensure that the *AssetVersionId* field has *Read* access.
+.. Save.
+. Configure the *Guest* profile permissions:
+.. Open the community builder.
+.. Click *Settings* > *General*.
+.. Open the *Guest* profile.
+.. Click *Object settings* > *AnypointAssetCustomFields*.
+.. Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointCustomFields*.
+.. Ensure that *Read* is enabled and, in *Field Permissions*, ensure that all fields have *Read Access* enabled.
+.. Click *Object settings* > *AnypointApiInstances*.
+.. Ensure that the *AssetVersionId* field has *Read* access.
 .. Save.
 . Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 

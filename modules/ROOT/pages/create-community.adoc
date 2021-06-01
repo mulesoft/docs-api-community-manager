@@ -158,11 +158,13 @@ These permissions reflect the current API Community Manager package version. If 
 |AnypointApplicationOwners |*Read* |*Read Access*
 |AnypointApplications |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
 |AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssetCustomFields |*Read* |*Read Access*
 |AnypointAssets |*Read* |*Read Access*
 |AnypointAssetVersions |*Read* |*Read Access*
 |AnypointCategories |*Read* |*Read Access*
 |AnypointClientProviders |*Read* |*Read Access*
 |AnypointContracts |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
+|AnypointCustomFields |*Read* |*Read Access*
 |AnypointEnvironments |*Read* |*Read Access*
 |AnypointGrantTypes |*Read* |*Read Access*
 |AnypointOrganizations |*Read* |*Read Access*
@@ -222,11 +224,13 @@ These permissions reflect the current API Community Manager package version. If 
 |AnypointApplicationOwners |*Read* |*Read Access*
 |AnypointApplications |*Read* |*Read Access*
 |AnypointAssetCategories |*Read* |*Read Access*
+|AnypointAssetCustomFields |*Read* |*Read Access*
 |AnypointAssets |*Read* |*Read Access*
 |AnypointAssetVersions |*Read* |*Read Access*
 |AnypointCategories |*Read* |*Read Access*
 |AnypointClientProviders |*Read* |*Read Access*
 |AnypointContracts |*Read* |*Read Access*
+|AnypointCustomFields |*Read* |*Read Access*
 |AnypointEnvironments |*Read* |*Read Access*
 |AnypointGrantTypes |*Read* |*Read Access*
 |AnypointOrganizations |*Read* |*Read Access*
@@ -291,7 +295,7 @@ Assign a profile for your community members:
 
 . In the API Community Manager control panel, open *Community Administration* and navigate to the *Members* section in the left panel.
 . In the *Select Profiles* section, in the *Search* list, click *All*.
-. Use the *Add* button to add *ACM Member User* to the *Selected Profiles* box.
+. Use the *Add* button to add *_Site Name_ Member User* to the *Selected Profiles* box.
 . Click *Save*.
 
 IMPORTANT: Do not *Remove* the *System Administrator* profile from the *Selected Profiles* section. If you remove the *System Administrator* profile you will lose all access to your community.
@@ -316,7 +320,7 @@ Configure a login page:
 . Scroll down to the *Registration Page Configuration* section near the bottom of the page.
 .. Select *Allow external users to self-register*.
 .. Select *Experience Builder Page* for *Registration Page Type* and click *Register*.
-.. Select *ACM Member Users* in *Profile*.
+.. Select *_Site Name_ Member User* in *Profile*.
 .. Select *ACM Registered Users Account* in *Account*.
 . Click *Save*.
 

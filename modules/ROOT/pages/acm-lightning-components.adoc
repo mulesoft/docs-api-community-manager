@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:imagesdir: ../assets/images/
 
 You design the pages of your Anypoint API Community Manager portal by adding and configuring Lightning components in Community Builder.
 
@@ -18,14 +19,13 @@ The Anypoint API Community Manager Search Box component enables users to search 
 
 You can specify values for the following parameters of the API Community Manager Search Box:
 
-Component Title:: Specifies the title for the search input field.
-Number of Results - Instant Incremental Response:: Specifies the number of results shown as the user types a query.
-Search Areas:: Selects which types of content to search. Choices include APIs, Applications, Knowledge Articles, Cases, Managed Content (CMS), Pages, and Forums.
-Linked Result Page:: Specifies the URL of the search results page shown after the user enters a search.
+Result Page URL:: Specifies the URL of the search results page shown after the user enters a search.
+Search Areas:: Selects which types of content to search: *APIs*, *API Groups*, *Applications*, *Knowledge Articles*, *Cases*, *Discussions*, *Topics*, *Managed Content (CMS)*, *API Specifications*, *Documentation Pages*, and *Custom Fields*.
+Number of results to show:: Specifies the number of results shown as the user types a query.
 
-The Linked Result Page parameter specifies the URL of a search results page, and the search results page must include an ACM Search Results component to display the search results. If the page does not include an ACM Search Results component, members and guest users who enter a search will go to the page and see no results.
+The *Result Page URL* parameter specifies the URL of a search results page, and the search results page must include an *ACM Search Results* component to display the search results. If the page does not include an *ACM Search Results* component, members and guest users who enter a search and go to the page see no results.
 
-If a content type is not selected in the Search Areas parameter, then the linked ACM Search Results component omits results of that content type.
+If a content type is not selected in the *Search Areas* parameter, then the linked *ACM Search Results* component omits results of that content type. MuleSoft Government Cloud does not support searching in API specifications or documentation pages.
 
 Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
 
@@ -155,12 +155,21 @@ Console components include API Console, API Console Documentation, API Console I
 
 The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
-You can specify values for the following parameters of the API Console:
+If an API's specification includes OAuth 2.0 security, users either select a client application in the *Credentials source* list to populate the client ID and client secret automatically, or they select *Custom credentials* in the list to enter the client ID and client secret manually.
+
+image::credentials-source.png[Credentials source]
+
+By default, the API console sends requests of 2 megabytes or less from the browser through Salesforce Experience Cloud to an API. To send requests directly from the browser to an API instance, which allows requests with no size limit, open *Setup* > *Custom Metadata Type* > *ACM API Console Configuration Metadata* > *Manage ACM API Console Configuration Metadata* > *ACM API Console Configuration* > *Edit* and select *Browser Requests Enabled*. This setting applies to all API instances in the community and does not affect the mocking service.
+
+You can specify values for the following parameters of the API console:
 
 API:: Specifies the API to display.
 Show Documentation Pages:: Shows the API's documentation pages.
 Expand endpoints on start:: Expands the documentation of the API endpoints when the page loads.
-Enable resource filtering:: Shows a search bar in the left navigation so users can filter the API resources and show only the resources that match their search terms.
+Enable resource filtering:: Shows a search bar on the navigation panel so users can filter the API resources and show only the resources that match their search terms.
+Show endpoints toggle button:: Shows a button on the navigation panel to expand or collapse all endpoints.
+Remove overview items from navigation:: Removes the overview links and shows the overview when the user clicks the endpoint name.
+Enable expandable request panel:: Enables expanding and collapsing the request panel by clicking the arrows at the edge of the panel.
 Link Hover Color:: Specifies the hover link color.
 Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
@@ -291,6 +300,32 @@ Button Text Color (Optional):: Specifies the color of button text.
 Button Hover Text Color (Optional):: Specifies the color of button hover text. Default is the button text color.
 Headline Font Family (Optional):: Specifies the headline font family.
 Error Color (Optional):: Specifies the color of error messages.
+
+== API Custom Field Table
+
+The *API Custom Field Table* component shows all of an API's custom fields and their values.
+
+You can specify values for the following parameters of the *API Custom Field Table*:
+
+Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
+Show Table Header:: Shows the table header.
+
+By default, the table shows all custom fields listed in the Anypoint organization. To show only some fields:
+
+. Open *Setup* > *Custom Metadata Type* > *ACM General Configuration Metadata* > *Manage Records*.
+. Next to *ACM Configuration*, click *Edit*.
+. In the *CustomFieldsFilter* box, enter a series of custom field keys as a comma-separated list, such as `email,rating,case`.
++
+To list all the custom field keys, open the developer console and run the query `SELECT acm_pkg\__TagKey__c FROM acm_pkg\__AnypointCustomFields__x`.
+
+== API Custom Field Pills
+
+The *API Custom Field Pills* component shows up to five of an API's custom fields and their values, displayed as a sequence of field-value pairs.
+
+You can specify values for the following parameters of the *API Custom Field Pills*:
+
+Record Id:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
+Custom Fields:: Specifies the five custom fields to show.
 
 == API Details Button
 
@@ -454,6 +489,7 @@ Record Id:: Specifies the API. Default is `{!recordId}`, which downloads the spe
 Layout:: Specifies the layout of the buttons, *Horizontal* (default) or *Vertical*.
 Buttons Color Picker:: Specifies the color of the buttons.
 Download Spec Options:: Specifies the download buttons to show: *Original Format*, *All* (default), *OAS3*, or *RAML*.
+Show Export Message:: Shows an icon next to the export button with a tooltip warning about possible inconsistencies when exporting an API specification to a different version.
 
 [[filter-conditions]]
 == Filter Conditions
