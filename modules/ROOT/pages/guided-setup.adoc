@@ -64,7 +64,7 @@ Otherwise, provide these app details:
 .. Set *Audience* to the *Audience* string.
 .. Click *Connect* to authenticate and authorize the app to connect the API Community Manager organization with your Anypoint organization.
 
-== User Configuration
+== Configure Users
 
 Give your user the *Exchange Contributor* role:
 
@@ -81,7 +81,7 @@ Map community user to Anypoint role:
 +
 If you work with different business groups, you must create a new external group for each business group in your organization.
 
-== Profile Permissions
+== Set Profile Permissions
 
 After the connection with your Anypoint organization is established, click *Continue* to open the API Community Manager diagnostics tool, review your installation, and update the guest user and member user permissions. After the installation and permissions are verified, create your first community.
 
