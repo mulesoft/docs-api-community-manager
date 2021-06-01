@@ -8,7 +8,7 @@ From the Anypoint API Community Manager control panel, open the Salesforce App L
 
 == Status Tab
 
-The *Status* tab shows the status of your Salesforce *Organization* and your *ACM Communities*.
+The status tab shows the status of your Salesforce organization and your communities.
 
 The *Organization* section shows this information about your Salesforce organization:
 
@@ -34,9 +34,9 @@ If your list of communities is empty, xref:create-community.adoc[Create a Commun
 
 == User Access Tab
 
-The *User Access* tab shows the status of your *Guest User* and *Member User* configurations, including their permissions.
+The user access tab shows the status of your guest user and member user configurations, including their permissions.
 
-Each category lists its configuration items. Items that are not yet configured correctly have an error and a *Fix* button, and their category has a *Fix All* button. Correctly configured items and categories have no button and a green circle with a white check mark.
+The guest user and member user categories list their configuration items. Items that are not yet configured correctly have an error and a *Fix* button, and their category has a *Fix All* button. Correctly configured items and categories have no button and a green circle with a white check mark.
 
 *Guest User* items:
 
@@ -61,8 +61,8 @@ After the items from *Community profile* through *Account created* are correctly
 . Scroll to the section *Registration Page Configuration*.
 . Enable *Allow customers and partners to self-register*.
 . Set *Registration Page Type* to *Default Page*.
-. Select your community's member user as the *Profile*.
-. Enter your community's Salesforce account name as the *Account*.
+. Select your community's member user as the value for *Profile*.
+. Enter your community's Salesforce account name as the value for *Account*.
 . Click *Save*.
-. In the diagnostics page, next to the *Member User* item *Account assigned*, click the button *Assign* to verify that the account is assigned correctly.
+. In the diagnostics page, next to the *Member User* item *Account assigned*, click *Assign* to verify that the account is assigned correctly.
 . Fix the remaining items in the list.
