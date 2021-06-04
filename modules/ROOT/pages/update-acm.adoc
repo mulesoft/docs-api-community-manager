@@ -282,10 +282,9 @@ Manual configuration:
 .. Click *Object settings* > *AnypointApiInstances*.
 .. Ensure that the *AssetVersionId* field has *Read* access.
 .. Save.
-.. Click the link for *Apex Class Access*.
+.. Click *Apex Class Access*.
 .. Click *Edit*.
-.. Select this class in the list and click *Add* to make them accessible:
-... *acm_pkg.ApiVersionHeader*
+.. Select the class *acm_pkg.ApiVersionHeader* in the list and click *Add* to make it accessible.
 .. Click *Save*.
 . Configure the *Guest* profile permissions:
 .. Open the community builder.
@@ -298,10 +297,9 @@ Manual configuration:
 .. Click *Object settings* > *AnypointApiInstances*.
 .. Ensure that the *AssetVersionId* field has *Read* access.
 .. Save.
-.. Click the link for *Apex Class Access*.
+.. Click *Apex Class Access*.
 .. Click *Edit*.
-.. Select this class in the list and click *Add* to make them accessible:
-... *acm_pkg.ApiVersionHeader*
+.. Select the class *acm_pkg.ApiVersionHeader* in the list and click *Add* to make it accessible.
 .. Click *Save*.
 . Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 
