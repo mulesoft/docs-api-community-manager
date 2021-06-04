@@ -121,6 +121,7 @@ To configure permissions for the member user profile so your members can access 
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
 . Select these classes in the list and click *Add* to make them accessible:
+.. *acm_pkg.AcmSearch*
 .. *acm_pkg.AnypointApiAnalyticsController*
 .. *acm_pkg.ApiAccessRequester*
 .. *acm_pkg.ApiPortalController*
@@ -187,6 +188,7 @@ To configure permissions for the guest user profile:
 . Click the link for *Apex Class Access*.
 . Click *Edit*.
 . Select these classes in the list and click *Add* to make them accessible:
+.. *acm_pkg.AcmSearch*
 .. *acm_pkg.AnypointApiAnalyticsController*
 .. *acm_pkg.ApiAccessRequester*
 .. *acm_pkg.ApiPortalController*
