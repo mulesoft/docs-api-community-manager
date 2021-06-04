@@ -132,7 +132,6 @@ To configure permissions for the member user profile so your members can access 
 .. *acm_pkg.LightningLoginFormController*
 .. *acm_pkg.LightningSelfRegisterController*
 .. *acm_pkg.QueryApiController*
-.. *acm_pkg.ApiVersionHeader*
 . Click *Save*.
 
 The following table shows the permissions for the member users.
@@ -200,7 +199,6 @@ To configure permissions for the guest user profile:
 .. *acm_pkg.LightningLoginFormController*
 .. *acm_pkg.LightningSelfRegisterController*
 .. *acm_pkg.QueryApiController*
-.. *acm_pkg.ApiVersionHeader*
 . Click *Save*.
 
 The following table shows the permissions for the guest users.
