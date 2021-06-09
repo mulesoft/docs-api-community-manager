@@ -47,7 +47,8 @@ When the upgrade finishes, you receive a notification email.
 . If you are upgrading from a package version earlier than 1.77, follow the <<post-177>> and then continue with these instructions.
 . If you are upgrading from a package version earlier than 1.79, follow the <<post-179>> and then continue with these instructions.
 . If you are upgrading from a package version earlier than 1.80.1, follow the <<post-1801>> and then continue with these instructions.
-. If you are upgrading from a package version earlier than 1.82, follow the <<post-182>>.
+. If you are upgrading from a package version earlier than 1.82, follow the <<post-182>> and then continue with these instructions.
+. If you are upgrading from a package version earlier than 2.0, follow the <<post-20>>.
 
 [[pre-126]]
 == Preinstallation Steps When Upgrading from a Version Earlier Than 1.26
@@ -310,6 +311,13 @@ Manual configuration:
 .. Select the class *acm_pkg.ApiVersionHeader* in the list and click *Add* to make it accessible.
 .. Click *Save*.
 . Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of upgrade instructions to continue.
+
+[[post-20]]
+== Postinstallation Steps When Upgrading from a Version Earlier Than 2.0
+
+If you are upgrading from a package version earlier than 2.0, follow these steps:
 
 == See Also
 
