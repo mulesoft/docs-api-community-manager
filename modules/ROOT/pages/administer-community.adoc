@@ -4,18 +4,18 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Administering your Anypoint API Community Manager site requires performing
+Administering your Anypoint API Community Manager site includes performing
 basic maintenance on your API Community Manager Salesforce organization,
-checking for important notifications about new API Community Manager package
-releases and downtime, and updating API Community Manager. Administering your
-site also includes getting support from MuleSoft, if necessary.
+checking for important notifications about new API Community Manager upgrades
+and downtime, performing diagnostics, and using sandboxes.
+Administering your site also includes getting support from MuleSoft, if necessary.
 
 These pages explain how to perform each action:
 
 * Salesforce documentation: https://help.salesforce.com/articleView?id=setup_overview.htm&type=5[Maintain an Organization, role=external, window=blank]
 * xref:notifications.adoc[Check for Important Notifications]
+* xref:update-acm.adoc[Upgrades]
 * xref:salesforce-releases-migrations.adoc[Administer Salesforce Releases and Migrations]
 * xref:diagnostics.adoc[Check API Community Manager Diagnostics]
 * xref:sandboxes.adoc[Use API Community Manager Sandboxes]
-* xref:update-acm.adoc[Upgrades]
 * xref:mulesoft-support.adoc[Contact MuleSoft Support]
