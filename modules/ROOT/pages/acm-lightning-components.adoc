@@ -391,6 +391,9 @@ The component shows the application description, application URL, redirect URIs,
 You can specify values for the following parameters of the Application Details:
 
 Application:: Specifies the API to show.
+Enable Application Editing:: Enables editing application details such as the name and description.
++
+When application editing is enabled, the component displays the *Reset Credentials* button. By default this button works on an application with the client provider type Anypoint, and displays an error on an application with a different client provider type such as OpenID. An administrator can customize the button to reset credentials successfully on an application with a client provider type other than Anypoint.
 
 [[application-listing]]
 == Application Listing
