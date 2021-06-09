@@ -1,12 +1,20 @@
-= Upgrade API Community Manager
+= Upgrades
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Keep your Anypoint API Community Manager instance up to date to take advantage of new and improved functionality in your community.
+Upgrades are applied automatically to Anypoint API Community Manager versions 2.0 and later.
+
+Upgrades with new features are applied to sandbox environments four weeks before they are applied to production environments. Upgrades with only bug fixes are applied to sandbox environments two weeks before they are applied to production environments.
+
+To ensure the community administrator controls how their audience receives community changes, new functionality in upgrades is typically disabled until the community administrator enables it.
+
+The end-of-life period for package version 1.x is from August 12, 2021 to August 12, 2022. During this period, no new 1.x versions or patches are released, and only end-of-life support is available. All support for version 1.x ends August 12, 2022.
 
 For information about upgrade notifications, see xref:notifications.adoc[important notifications].
+
+== Upgrading to Version 2.0
 
 After you install an Anypoint API Community Manager upgrade, it is not possible to undo the installation
 and revert to a previous version. Therefore, be sure to create safe sandbox environments in which you test each
