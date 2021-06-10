@@ -317,7 +317,33 @@ Return to the main list of upgrade instructions to continue.
 [[post-20]]
 == Postinstallation Steps When Upgrading from a Version Earlier Than 2.0
 
-If you are upgrading from a package version earlier than 2.0, follow these steps:
+If you are upgrading from a package version earlier than 2.0, use either the automatic or manual configuration methods to update the permissions of the *Member* and *Guest* profiles must have field-level *Read* access to the *AssetId* field in the *AnypointApiInstances* object.
+
+Automatic configuration:
+
+. From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for `API community manager diagnostics`.
+. In the *User Access* tab, in the section *Guest User*, click *Fix all*.
+. In the *User Access* tab, in the section *Member User*, click *Fix all*.
+. Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Manual configuration:
+
+. Configure the *Member* profile permissions:
+.. Click *Setup* > *Profiles*.
+.. Open the *Member* profile.
+.. Click *Object settings* > *AnypointApiInstances*.
+.. Ensure that the *AssetId* field has *Read* access.
+.. Save.
+. Configure the *Guest* profile permissions:
+.. Open the community builder.
+.. Click *Settings* > *General*.
+.. Open the *Guest* profile.
+.. Click *Object settings* > *AnypointApiInstances*.
+.. Ensure that the *AssetId* field has *Read* access.
+.. Save.
+. Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
+
+Return to the main list of upgrade instructions to continue.
 
 == See Also
 
