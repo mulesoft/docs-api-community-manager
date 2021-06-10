@@ -8,7 +8,7 @@ Upgrades are applied automatically to Anypoint API Community Manager versions 2.
 
 Upgrades with new features are applied to sandbox environments four weeks before they are applied to production environments. Upgrades with only bug fixes are applied to sandbox environments two weeks before they are applied to production environments.
 
-To ensure the community administrator controls how their audience receives community changes, new functionality in upgrades is typically disabled until the community administrator enables it.
+To ensure that the community administrator controls how their audience receives community changes, new functionality in upgrades is typically disabled until the community administrator enables it.
 
 The end-of-life period for package version 1.x is from August 12, 2021 to August 12, 2022. During this period, no new 1.x versions or patches are released, and only end-of-life support is available. All support for version 1.x ends August 12, 2022.
 
@@ -270,7 +270,7 @@ Return to the main list of upgrade instructions to continue.
 [[post-182]]
 == Postinstallation Steps When Upgrading from a Version Earlier Than 1.82
 
-If you are upgrading from a package version earlier than 1.82, use either the automatic or manual configuration methods to update the permissions of the *Member* and *Guest* profiles on the *AnypointAssetCustomFields* and *AnypointCustomFields* objects, and ensure both *Member* and *Guest* profiles have field-level *Read* access to the *AssetVersionId* field in the *AnypointApiInstances* object.
+If you are upgrading from a package version earlier than 1.82, use either the automatic or manual configuration method to update the permissions of the *Member* and *Guest* profiles on the *AnypointAssetCustomFields* and *AnypointCustomFields* objects, and ensure both *Member* and *Guest* profiles have field-level *Read* access to the *AssetVersionId* field in the *AnypointApiInstances* object.
 
 Automatic configuration:
 
@@ -317,13 +317,12 @@ Return to the main list of upgrade instructions to continue.
 [[post-20]]
 == Postinstallation Steps When Upgrading from a Version Earlier Than 2.0
 
-If you are upgrading from a package version earlier than 2.0, use either the automatic or manual configuration methods to update the permissions of the member and guest profiles. Both profiles require field-level read access to the *AssetId* field in the *AnypointApiInstances* object.
+If you are upgrading from a package version earlier than 2.0, use either the automatic or manual configuration method to update the permissions of the member and guest profiles. Both profiles require field-level read access to the *AssetId* field in the *AnypointApiInstances* object.
 
 Automatic configuration:
 
 . From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for `API community manager diagnostics`.
-. In the *User Access* tab, in the section *Guest User*, click *Fix all*.
-. In the *User Access* tab, in the section *Member User*, click *Fix all*.
+. In the *User Access* tab, in the sections *Guest User* and *Member User*, click *Fix all*.
 . Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 
 Manual configuration:
