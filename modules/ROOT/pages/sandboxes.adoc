@@ -4,11 +4,17 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+Upgrades are applied automatically to Anypoint API Community Manager versions 2.0 and later.
+
+Upgrades with new features are applied to sandbox environments four weeks before they are applied to production environments. Upgrades with only bug fixes are applied to sandbox environments two weeks before they are applied to production environments.
+
+== Sandboxes for Upgrading from Version 1.x
+
 After you install an Anypoint API Community Manager upgrade, it is not possible to undo the installation
 and revert to a previous version. Therefore, be sure to create safe sandbox environments in which you test each
 upgrade before installing it in your production environment.
 
-== New Sandboxes
+=== New Sandboxes
 
 To create a new sandbox:
 
@@ -32,7 +38,7 @@ To validate your new sandbox:
 
 After validating your new sandbox, begin the upgrade.
 
-== Upgrade Workflow
+=== Upgrade Workflow
 
 To test and install each upgrade:
 
