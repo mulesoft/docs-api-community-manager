@@ -104,7 +104,7 @@ To make an API visible to a member group:
 
 == Automation
 
-Assign users to member groups automatically with the automation option that best suits your needs:
+Assign users to member groups automatically with the option that best suits your needs:
 
 * For simple automation such as adding each new user to a default member group, use Salesforce https://help.salesforce.com/articleView?id=sf.process_overview.htm&type=5[Process Builder, role=external, window=blank].
 * For complex automation by writing business rules for group assignment directly in APEX code, use https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers.htm[APEX triggers, role=external, window=blank].
