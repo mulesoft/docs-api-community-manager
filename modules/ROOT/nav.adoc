@@ -25,6 +25,7 @@
  ** xref:css-styling.adoc[Advanced Styling with CSS]
 * xref:operate.adoc[Operate Your Site]
  ** xref:publish-apis.adoc[Publish APIs]
+ ** xref:visibility.adoc[Configure API Visibility]
  ** xref:publish-content.adoc[Publish Content and CMS Articles]
  ** xref:moderate-forums.adoc[Moderate Forums]
  ** xref:client-apps-contracts.adoc[Manage Client Applications and Contracts]

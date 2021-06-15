@@ -1,0 +1,111 @@
+= Configure API Visibility
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+Anypoint API Community Manager uses visibility rules to make APIs visible to selected groups of users.
+
+For example, your community could have a Payment API and a Trade API visible to the financial developers team of three users, and have an Order Submission API visible to the retail developers team of two other users.
+
+API visibility rules use the Salesforce object CommunityApi to represent each API published in your community, and Salesforce https://help.salesforce.com/articleView?id=sf.user_groups.htm&type=5[Public Groups, role=external, window=blank] and https://help.salesforce.com/articleView?id=sf.security_about_sharing_rules.htm&type=5[Sharing Rules, role=external, window=blank] to provide a flexible permissions model.
+
+== Visibility Setup
+
+To set up API visibility, configure your community to enable visibility, define your member groups, and define visibility rules to grant the groups permission to see APIs.
+
+=== Enable Visibility
+
+Follow these steps to configure your community for API visibility:
+
+. Create a new *ACM Community User Plus* profile based on the *Customer Community User Plus* profile:
+.. Click *Salesforce Setup* > *Profiles*.
+.. Select *Customer Community User Plus*.
+.. Click *Clone*.
+.. Enter a name for the new profile that represents the use case, such as `External Developer`.
+.. Assign permissions that match the member user profile permissions described in the API Community Manager documentation section xref:create-community.adoc#configure-member-user-profile-permissions[Configure Member User Profile Permissions].
+. Configure your community to use the new profile:
+.. Click *Setup* > *All Communities*.
+.. In the API Community Manager control panel, click *Community Administration* and click the *Members* tab.
+.. In *Select Profiles*, use the search menu to select *Customer*.
+.. Add the new *ACM Community User Plus* profile to the selected profiles.
+.. Remove the existing *ACM Community User* profile but _do not_ remove the *System Administrator* profile.
++
+If you remove the *System Administrator* profile, the system locks you out and removes all access to your community.
+. Remove all profiles from your community sharing set:
+.. Click *Setup* > *Communities Settings*.
+.. In *Sharing Sets*, edit your community sharing set and remove all profiles from *Selected Profiles*.
+.. If *Selected Objects* in the sharing set includes it, remove *CommunityApi*.
+. If your community already has users, click *Setup* > *Users*, update each user to change *User License* to *Customer Community Plus*, and select the new *ACM Community User Plus* profile.
+. In the API Community Manager control panel, set the visibility of each of your APIs to *Members Only*.
+
+=== Define Member Groups
+
+Use member groups, also known as _public groups_, to group members and then make individual APIs visible to the group. Visibility rules, also known as _sharing settings_, determine which APIs are visible to a member group.
+
+To create a member group:
+
+. Click *Setup* > *Public Groups*.
+. Create a public group.
+. Enter a name, such as `External Developers`.
+. Click *Save*.
+
+To add members to a member group:
+
+. Click *Setup* > *Public Groups*.
+. Edit the group.
+. In the *Search* menu, select *Customer Portal Users*.
+. Add the members by moving them from *Available Members* to *Selected Members*.
++
+*Available Members* shows only users with the new *ACM Community User Plus* profile. If the user you want to add is not in *Available Members*, open the user record and verify the profile.
+. Click *Save*.
+
+=== Define Visibility Rules for APIs
+
+Use visibility rules, also known as _sharing settings_, to define a set of conditions that determine which APIs are visible to a specific member group.
+
+To create a new sharing set:
+
+. Click *Setup* > *Sharing Settings*.
+. In *Manage sharing settings for*, select *CommunityApi*.
+. In *Sharing Rules*, click *New*.
+. Enter a name for the rule.
+. In *Select your rule type*, select *Based on Criteria*.
+. Customize criteria using the available fields in the API, such as *Name* and *Visibility*.
++
+Use *Add Filter Logic* to define and/or conditions.
+. Select a member group to enable it to view the APIs matching these conditions.
+
+In this example, an internal developer group sees publicly visible APIs and some internal APIs:
+
+image::sharing-settings.png[Sharing Settings]
+
+== Add Members to a Member Group
+
+To add members to a member group:
+
+. Click *Setup* > *Public Groups*.
+. Edit the group.
+. In *Search*, select *Customer Portal Users*.
+. Add members to the group by moving them from *Available Members* to *Selected Members*.
++
+*Available Members* shows only users with the new *ACM Community User Plus* profile. If the user you want to add is not in *Available Members*, open the user record and verify the profile.
+. Click *Save*.
+
+== Make an API Visible to a Member Group
+
+To make an API visible to a member group:
+
+. Click *Setup* > *Sharing Settings*.
+. In *Manage sharing settings for*, select *CommunityApi*.
+. In the *Sharing Rules* section, create a new rule or edit an existing rule.
+. Ensure that the rule matches the API.
+. Ensure that the rule specifies the member group.
+
+== Automation
+
+Assign users to member groups automatically with the option that best suits your needs:
+
+* For simple automation such as adding each new user to a default member group, use Salesforce https://help.salesforce.com/articleView?id=sf.process_overview.htm&type=5[Process Builder, role=external, window=blank].
+* For complex automation by writing business rules for group assignment directly in APEX code, use https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers.htm[APEX triggers, role=external, window=blank].
+* For complex automation by using declarative group assignment, use Salesforce https://help.salesforce.com/articleView?id=sf.flow.htm&type=5[Flows, role=external, window=blank].
