@@ -16,6 +16,8 @@ your community, create new pages, and add and edit the components in each page.
 Community Builder's interface contains the pages list, component palette,
 theme menu, page structure menu, and settings menu.
 
+API Community Manager is not certified for use on mobile devices. Some functionality works on mobile devices, but some functionality such as the API console does not.
+
 == Pages List
 
 The *Pages* list shows the pages included with API Community Manager and the pages you have added,
