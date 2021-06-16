@@ -19,9 +19,9 @@ The Anypoint API Community Manager Search Box component enables users to search 
 
 You can specify values for the following parameters of the API Community Manager Search Box:
 
-Result Page URL:: Specifies the URL of the search results page shown after the user enters a search.
-Search Areas:: Selects which types of content to search: *APIs*, *API Groups*, *Applications*, *Knowledge Articles*, *Cases*, *Discussions*, *Topics*, *Managed Content (CMS)*, *API Specifications*, *Documentation Pages*, and *Custom Fields*.
-Number of results to show:: Specifies the number of results shown as the user types a query.
+*Result Page URL*:: Specifies the URL of the search results page shown after the user enters a search.
+*Search Areas*:: Selects which types of content to search: *APIs*, *API Groups*, *Applications*, *Knowledge Articles*, *Cases*, *Discussions*, *Topics*, *Managed Content (CMS)*, *API Specifications*, *Documentation Pages*, and *Custom Fields*.
+*Number of results to show*:: Specifies the number of results shown as the user types a query.
 
 The *Result Page URL* parameter specifies the URL of a search results page, and the search results page must include an *ACM Search Results* component to display the search results. If the page does not include an *ACM Search Results* component, members and guest users who enter a search and go to the page see no results.
 
