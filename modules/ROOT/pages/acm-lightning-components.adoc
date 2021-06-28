@@ -113,7 +113,7 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 The API Catalog component offers API consumers an interactive way to explore all the available APIs and API Groups in an API community. The API Catalog shows API cards in rows and columns, divided into pages, and shows controls to filter the displayed APIs and API Groups by categories and search terms. Each card shows an API or API Group. With the catalog users can view and explore large numbers of API versions.
 
-The API Catalog search and the <<acm-search-box>> component are not the same searches. The ACM Search Box component offers advanced search features not available in the API Catalog search.
+The API Catalog search and the <<acm-search-box>> component are not the same searches. While the API Catalog searches inside your API catalog, the ACM Search Box component offers advanced search features to search your entire API Community.
 
 In the template community, the link to the API Catalog component appears below the API Carousel component. If a community has multiple API Catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
 
