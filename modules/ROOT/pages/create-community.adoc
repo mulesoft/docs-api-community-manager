@@ -105,7 +105,7 @@ After you create a community, you must create different user profiles for your c
 
 Before configuring member and guest profiles and permissions, open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
 
-Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc[API Community Manager diagnostics user access tab].
+Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
 
 === Configure Member User Profile Permissions
 
@@ -246,7 +246,7 @@ These permissions reflect the current API Community Manager package version. If 
 
 == Configure Sharing Settings
 
-Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc[API Community Manager diagnostics user access tab].
+Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
 
 Configure sharing settings for members:
 
@@ -297,7 +297,7 @@ NOTE: If you ever change the name of your site, be sure to update this setting.
 
 These steps enable guests to register as members in your API Community Manager portal.
 
-Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc[API Community Manager diagnostics user access tab].
+Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
 
 Assign a profile for your community members:
 
