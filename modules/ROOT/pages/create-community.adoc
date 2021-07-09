@@ -103,14 +103,16 @@ To verify that Salesforce CRM Content is enabled:
 
 After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, so that you can control access to and visibility of APIs and content.
 
-Before configuring member and guest profiles and permissions, open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
+Configure the settings with one of these options:
 
-Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
+. Configure the member and guest user settings automatically with default settings with the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
+. Configure the member and guest user settings manually with custom settings with these steps.
 
 === Configure Member User Profile Permissions
 
 To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
 
+. Open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
 . In *Setup*, search for *Users* using the *Quick Find* box and click *Users/Profiles*.
 . Click the *Customer Community Plus Login User* profile.
 . Click *Clone*.
@@ -181,6 +183,7 @@ These permissions reflect the current API Community Manager package version. If 
 
 To configure permissions for the guest user profile:
 
+. Open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In the *Guest user profile* section, click *_Site Name_ Profile*.
 . Click *Edit*.
@@ -246,7 +249,10 @@ These permissions reflect the current API Community Manager package version. If 
 
 == Configure Sharing Settings
 
-Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
+Configure the settings with one of these options:
+
+. Configure sharing settings for members and guests automatically with default settings with the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
+. Configure sharing settings for members and guests manually with custom settings with these steps.
 
 Configure sharing settings for members:
 
@@ -297,7 +303,10 @@ NOTE: If you ever change the name of your site, be sure to update this setting.
 
 These steps enable guests to register as members in your API Community Manager portal.
 
-Use the following steps to configure custom user settings. To configure users settings automatically with default settings, use the *FIX* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
+Configure the settings with one of these options:
+
+. Configure user registration automatically with default settings with the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
+. Configure user registration manually with custom settings with these steps.
 
 Assign a profile for your community members:
 
