@@ -400,7 +400,9 @@ When application editing is enabled, the component displays the *Reset Credentia
 [[application-listing]]
 == Application Listing
 
-The Application Listing component shows applications that use the selected version of an API.
+The Application Listing component shows applications that use an API.
+
+On a page with an API record ID in scope, such as an API details page, the component shows only the applications with access to the current version of that API.
 
 The component shows the application name, client ID, and client secret from xref:api-manager::index.adoc[Anypoint API Manager].
 
