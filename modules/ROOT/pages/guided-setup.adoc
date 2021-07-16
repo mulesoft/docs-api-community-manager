@@ -93,3 +93,4 @@ After the connection with your Anypoint organization is established, click *Cont
 
 * xref:diagnostics.adoc[Diagnostics]
 * xref:create-community.adoc[Create a Community]
+* xref:access-management::map-users-roles-teams#map-sso-users-to-teams[Map SSO Users to Teams]
