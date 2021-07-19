@@ -80,7 +80,7 @@ Give community users the Exchange viewer permission:
 . Create a new team named *Community Users*.
 . Click *Settings*.
 . Select the parent team.
-. In *External IdP Groups*, set *Group Name* to *Community Users* and set *Type* to *Member*.
+. In *External IdP Groups*, set *Group Name* to *Community User* and set *Type* to *Member*.
 . Click *Permissions* > *Add permissions* and add the permission *Exchange Viewer*.
 +
 When prompted, select all business groups with any assets that community users will view.
