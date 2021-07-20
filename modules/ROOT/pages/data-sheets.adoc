@@ -14,6 +14,4 @@ These data sheets offer further information about Anypoint API Community Manager
 
 For the list of supported browsers, see xref:general::browser-support.adoc[Browser Support for Anypoint Platform].
 
-Microsoft Internet Explorer 11 compatibility is limited to displaying content-only, non-interactive components, including API Carousel, API Catalog, and API Documentation Viewer. The components API Console, API Access Requester, and My Applications are not supported in Microsoft Internet Explorer 11, and render in a disabled state with a message to the user explaining the compatibility limitations.
-
 API Community Manager is not certified for use on mobile devices. Some functionality works on mobile devices, but some functionality such as the API console does not.

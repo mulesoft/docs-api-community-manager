@@ -113,6 +113,8 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 The API Catalog component offers API consumers an interactive way to explore all the available APIs and API Groups in an API community. The API Catalog shows API cards in rows and columns, divided into pages, and shows controls to filter the displayed APIs and API Groups by categories and search terms. Each card shows an API or API Group. With the catalog users can view and explore large numbers of API versions.
 
+The API catalog search and the search you perform by using the <<acm-search-box>> component are not the same searches. The API catalog search is a basic search of APIs and API Groups, and the ACM Search Box component offers advanced search features to search all assets in your API community.
+
 In the template community, the link to the API Catalog component appears below the API Carousel component. If a community has multiple API Catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
 
 To prevent confusion, the API Catalog component is designed to use a maximum of five managed categories, and not tags.
@@ -399,6 +401,8 @@ When application editing is enabled, the component displays the *Reset Credentia
 == Application Listing
 
 The Application Listing component shows applications that use an API.
+
+On a page with an API record ID in scope, such as an API details page, the component shows only the applications with access to the current version of that API.
 
 The component shows the application name, client ID, and client secret from xref:api-manager::index.adoc[Anypoint API Manager].
 
