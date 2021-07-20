@@ -113,17 +113,21 @@ Replace `ORGANIZATION_ID` with the organization ID from your Anypoint account.
 
 == User Configuration
 
-Give your user the *Exchange Contributor* role:
+Give your user the Exchange contributor permission:
 
 . In your Anypoint Platform organization, click *Access Management* > *Users*.
 . Select your user.
-. Click *Role* > *Add role by name*.
-. Add the role *Exchange Contributor*.
+. Click *Permissions* > *Add permissions*.
+. Ensure that your user has the permission *Exchange Contributor*.
 
-Map community user to Anypoint role:
+Give community users the Exchange viewer permission:
 
 . Ensure that you have Exchange Administrator permissions.
-. In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
-. In *Exchange Viewers*, set a new external group called `Community User` and save it.
+. In your Anypoint Platform organization, navigate to *Access Management* and click *Teams*.
+. Create a new team named *Community Users*.
+. Click *Settings*.
+. Set the parent team to everyone in the organization.
+. In *External IdP Groups*, set *Group Name* to *Community User* and set *Type* to *Member*.
+. Click *Permissions* > *Add permissions* and add the permission *Exchange Viewer*.
 +
-If you work with different business groups, you must create a new external group for each business group in your organization.
+When prompted, select all business groups with any assets that you want community users to be able to view.
