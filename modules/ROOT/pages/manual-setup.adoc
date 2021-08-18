@@ -121,7 +121,7 @@ Give your user the Exchange contributor permission:
 . In your Anypoint Platform organization, click *Access Management* > *Users*.
 . Select your user.
 . Click *Permissions* > *Add permissions*.
-. Ensure that your user has the permission *Exchange Contributor*.
+. Ensure that your user has the permission *Exchange Contributor* in each business group.
 
 Give community users the Exchange viewer permission:
 
