@@ -9,13 +9,24 @@ is approved or revoked. By default these emails use Anypoint Platform addresses 
 branding. If you wish to configure them to use your own addresses and branding
 instead, use these steps.
 
+== Disable Standard Email Security
+
+Branded emails require disabling Salesforce's standard configuration for Sender Policy Framework (SPF) for email. For more information about this feature, see the Salesforce Help article https://help.salesforce.com/s/articleView?id=sf.emailadmin_enable_email_security_compliance.htm&type=5[Enable Email Security Compliance, role=external, window=blank].
+
+To disable the standard configuration, open *Setup* > *Deliverability* > *Email Security Compliance* and ensure the option *Enable compliance with standard email security mechanisms* is not selected.
+
 == Enable Custom Email Notifications
+
+=== Configure Data Change Capture
 
 . Navigate to *Setup* > *Home* > *Integrations* > *External Data Sources* and ensure *Eligible for External Data Change Capture* is enabled.
 . Set *Polling Interval for External Change Data Capture (seconds)*.
 +
 The default is 1800 and the minimum is 300.
 . Navigate to *Setup*, use *Quick Find* to go to *Change Data Capture*, navigate to *Entities* > *Change Manually* > *Available Entities*, and move *AnypointContracts* to the *Selected Entities* list.
+
+=== Create Apex Trigger
+
 . Navigate to *Setup*, use *Quick Find* to go to *Apex Triggers*, and click the *Developer Console* button.
 . Click *File* > *New* > *Apex Trigger*, set *Name* to `AnypointEmailNotificationsTrigger`, and set *sObject* to `acm_pkg\__AnypointContracts__ChangeEvent`.
 . Enter this code block:
@@ -27,14 +38,20 @@ The default is 1800 and the minimum is 300.
     }
 ----
 +
+
+=== Configure Emails
+
 . Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
 . Set *Display Name* to `EventEmailSender`.
 . Set *Email Address* to the email address at your organization that sends the API contract event notification emails.
 +
 Ensure you can read confirmation emails sent to this address.
-. Set *Profiles* to `System Administrator`.
+. Select *Allow All Profiles to Use this From Address*.
 . Click *Save*.
 . Open the confirmation email sent to the notification sender email address and click the link to confirm the address.
+
+=== Configure Branded Email Metadata
+
 . Navigate to *Setup* and use *Quick Find* to go to *Custom Metadata Types*.
 . Click *ACM Community Config Metadata* to add a record.
 . Set *Label* to your API community's name.
@@ -55,6 +72,9 @@ Ensure you can read confirmation emails sent to this address.
 . Repeat this process for all additional communities, creating one record for each community.
 +
 *NetworkId* is different for each community. *ContractApprovedEmailTemplateId*, *ContractRevokedEmailTemplateId*, and *OrgWideEmailAddressId* may be the same for multiple communities.
+
+=== Configure Branded Email Templates
+
 . Navigate to *Setup*, use *Quick Find* to go to *Classic Email Templates*, and navigate to *Folder* > *ACM*.
 . Customize the *Contract Approved* and *Contract Revoked* templates, or create your own templates and configure the *ACM Community Config Metadata* to use them.
 . Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/articleView?id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
