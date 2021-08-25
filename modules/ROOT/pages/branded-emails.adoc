@@ -15,6 +15,17 @@ Branded emails require disabling Salesforce's standard configuration for Sender 
 
 To disable the standard configuration, open *Setup* > *Deliverability* > *Email Security Compliance* and ensure the option *Enable compliance with standard email security mechanisms* is not selected.
 
+== Configure Emails
+
+. Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
+. Set *Display Name* to `EventEmailSender`.
+. Set *Email Address* to the email address at your organization that sends the API contract event notification emails.
++
+Ensure you can read confirmation emails sent to this address.
+. Select *Allow All Profiles to Use this From Address*.
+. Click *Save*.
+. Open the confirmation email sent to the notification sender email address and click the link to confirm the address.
+
 == Enable Custom Email Notifications
 
 To enable custom email notifications, follow these steps.
@@ -40,17 +51,6 @@ The default is 1800 and the minimum is 300.
     }
 ----
 +
-
-=== Configure Emails
-
-. Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
-. Set *Display Name* to `EventEmailSender`.
-. Set *Email Address* to the email address at your organization that sends the API contract event notification emails.
-+
-Ensure you can read confirmation emails sent to this address.
-. Select *Allow All Profiles to Use this From Address*.
-. Click *Save*.
-. Open the confirmation email sent to the notification sender email address and click the link to confirm the address.
 
 === Configure Branded Email Metadata
 
