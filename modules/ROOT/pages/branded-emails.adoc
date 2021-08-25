@@ -15,7 +15,7 @@ Branded emails require disabling Salesforce's standard configuration for Sender 
 
 To disable the standard configuration, open *Setup* > *Deliverability* > *Email Security Compliance* and ensure the option *Enable compliance with standard email security mechanisms* is not selected.
 
-== Configure Emails
+== Configure Email Addresses
 
 . Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
 . Set *Display Name* to `EventEmailSender`.
