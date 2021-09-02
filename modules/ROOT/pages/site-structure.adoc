@@ -101,6 +101,7 @@ To configure this variation, assign a new audience to this page variation for th
 . Click *Save* and *Assign*.
 . After the new audience is assigned, use the components palette to add the desired components to your page variation.
 
+The page variation will only work in the published community or in preview as guest or authenticated user mode.
 == See Also
 
 * xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components]
