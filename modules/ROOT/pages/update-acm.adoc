@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-Upgrades are applied automatically to Anypoint API Community Manager versions 2.0 and later.
+Upgrades are applied automatically to Anypoint API Community Manager versions 2.2.0 and later.
 
 Upgrades with new features are applied to sandbox environments four weeks before they are applied to production environments. Upgrades with only bug fixes are applied to sandbox environments two weeks before they are applied to production environments.
 
