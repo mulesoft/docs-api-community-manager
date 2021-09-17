@@ -36,7 +36,7 @@ To enable custom email notifications, follow these steps.
 . Set *Polling Interval for External Change Data Capture (seconds)*.
 +
 The default is 1800 and the minimum is 300.
-. Navigate to *Setup*, use *Quick Find* to go to *Change Data Capture*, navigate to *Entities* > *Change Manually* > *Available Entities*, and move *AnypointContracts* to the *Selected Entities* list.
+. Navigate to *Setup*, use *Quick Find* to go to *Change Data Capture*, navigate to *Entities* > *Change Manually* > *Available Entities*, and move *AnypointContracts* to the *Selected Entities* list, this action will enable the polling for this particular object.
 
 === Create Apex Trigger
 
@@ -55,9 +55,9 @@ The default is 1800 and the minimum is 300.
 === Configure Branded Email Metadata
 
 . Navigate to *Setup* and use *Quick Find* to go to *Custom Metadata Types*.
-. Click *ACM Community Config Metadata* to add a record.
-. Set *Label* to your API community's name.
-. Set *ACM Community Config Metadata Name* to your API community's name.
+. Click *Manage Records* in the *ACM Community Configuration Metadata* to add a record.
+. Click *New*
+. Set *Label* to your API community's name and press tab to auto complete the *ACM Community Config Metadata Name*
 . Open the *Developer Console* and open the *Query Editor*.
 . Enter `SELECT Id, Name FROM Network` and click *Execute*.
 . In the list of IDs and communities, choose the row with *Name* equal to your community's name, double click the ID, and copy it.

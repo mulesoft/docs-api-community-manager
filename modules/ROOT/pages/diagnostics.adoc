@@ -37,6 +37,7 @@ If your list of communities is empty, xref:create-community.adoc[Create a Commun
 The user access tab shows the status of your guest user and member user configurations, including their permissions.
 
 The guest user and member user categories list their configuration items. Items that are not yet configured correctly have an error and a *Fix* button, and their category has a *Fix All* button. Correctly configured items and categories have no button and a green circle with a white check mark.
+This configuration only works for the default ACM configuration, if you have a different configuration using public groups and rules, you should not click this button or use this diagnostics tool for the Member user profile.
 
 *Guest User* items:
 
