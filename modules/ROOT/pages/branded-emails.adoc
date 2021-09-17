@@ -36,7 +36,10 @@ To enable custom email notifications, follow these steps.
 . Set *Polling Interval for External Change Data Capture (seconds)*.
 +
 The default is 1800 and the minimum is 300.
-. Navigate to *Setup*, use *Quick Find* to go to *Change Data Capture*, navigate to *Entities* > *Change Manually* > *Available Entities*, and move *AnypointContracts* to the *Selected Entities* list, which enables polling on this object.
+. Navigate to *Setup*.
+. Use *Quick Find* to navigate to *Change Data Capture*.
+. Navigate to *Entities* > *Change Manually* > *Available Entities*.
+. Move *AnypointContracts* to the *Selected Entities* list, which enables polling on this object.
 
 === Create Apex Trigger
 
