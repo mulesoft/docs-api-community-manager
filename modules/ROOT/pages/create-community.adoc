@@ -113,8 +113,8 @@ Configure the settings with one of these options:
 To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
 
 . Open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
-. In *Setup*, search for *Users* using the *Quick Find* box and click *Users/Profiles*.
-. Click the *Customer Community Plus Login User* profile.
+. In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
+. Click the *Customer Community Plus User* profile.
 . Click *Clone*.
 . For *Profile Name*, enter `_Site Name_ Member User`.
 . Click *Save*.
@@ -321,6 +321,7 @@ Create an account for your community members:
 
 . Navigate to *App Launcher* and click *Accounts*.
 . Click *New* to create a new account.
+. Select the record type *Company* and click *Next*.
 . Enter `ACM Registered Users` in *Account Name*.
 . Click *Save*.
 
