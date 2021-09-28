@@ -87,12 +87,14 @@ If the relay is not configured, notification emails are sent from a Salesforce d
 
 == Disable Default Anypoint Email Notifications
 
-The impersonation mechanism creates Anypoint user records with member email addresses. To prevent a community member from receiving the default Anypoint notification emails, alter these email addresses so the Anypoint user record email is not a valid address.
+The JSON Web Token (JWT) authentication mechanism creates Anypoint user records with member email addresses. To prevent a community member from receiving the default Anypoint notification emails, alter these email addresses so the Anypoint user record email is not a valid address.
 
-. In Salesforce, navigate to *Setup* > *External Data Sources*.
-. Click the *Name* of the external data source `Exchange` to open it in view mode.
-. Under *Custom HTTP Headers*, find the *X-Email* header and click *Edit*.
-. In the *Header field value* field, add a suffix. Example: `$User.Email + ".donotsend"`
+. In Salesforce, navigate to *Setup* > *Named Credentials*.
+. Click the *Name* of the named credential `Anypoint` to open it in view mode.
++
+`Anypoint` is the default named credential set in the external data source by the guided setup application. If the named credential has been changed manually, choose the named credential used in the Anypoint external data source.
+. Click *Edit*.
+. In the *Per User Subject* formula, add `& ".donotsend" ` after `$User.Email`. Example: `"v2|8745gh23-590d-4h80-b339-1637854e289f|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & ".donotsend" & "|[\"Community User\"]"`
 
 == Anypoint Permissions Configuration
 
