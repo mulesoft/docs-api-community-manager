@@ -83,7 +83,10 @@ The following instructions use URLs for the US cloud that begin with `+https://a
 . Set *Authentication Protocol* to *JWT Token Exchange*.
 . Set *Token Endpoint Url* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
 . Set *Issuer* to the client ID of the connected app you saved previously.
-. Set *Per User Subject* to the following formula.
+. Set *Per User Subject* to one of the following formulas.
++
+The guided setup uses a slightly different formula in the `IDP_ISSUER` field, but either formula works.
++
 .. If you are using an identity provider with SAML:
 +
 Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_AUDIENCE` with the audience from your IdP configuration.
@@ -113,17 +116,21 @@ Replace `ORGANIZATION_ID` with the organization ID from your Anypoint account.
 
 == User Configuration
 
-Give your user the *Exchange Contributor* role:
+Give your user the Exchange contributor permission:
 
 . In your Anypoint Platform organization, click *Access Management* > *Users*.
 . Select your user.
-. Click *Role* > *Add role by name*.
-. Add the role *Exchange Contributor*.
+. Click *Permissions* > *Add permissions*.
+. Ensure that your user has the permission *Exchange Contributor* in each business group.
 
-Map community user to Anypoint role:
+Give community users the Exchange viewer permission:
 
 . Ensure that you have Exchange Administrator permissions.
-. In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
-. In *Exchange Viewers*, set a new external group called `Community User` and save it.
+. In your Anypoint Platform organization, navigate to *Access Management* and click *Teams*.
+. Create a new team named *Community Users*.
+. Click *Settings*.
+. Set the parent team to everyone in the organization.
+. In *External IdP Groups*, set *Group Name* to *Community User* and set *Type* to *Member*.
+. Click *Permissions* > *Add permissions* and add the permission *Exchange Viewer*.
 +
-If you work with different business groups, you must create a new external group for each business group in your organization.
+When prompted, select all business groups with any assets that you want community users to be able to view.

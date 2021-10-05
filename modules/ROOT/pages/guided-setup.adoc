@@ -58,28 +58,44 @@ If your Anypoint account has the organization administrator role, provide your A
 Otherwise, provide these app details:
 +
 .. Set *Client ID* to the client ID from the connected app you created.
-.. In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the *IDP Issuer* string.
-.. Set *IDP Issuer* to the *IDP Issuer* string.
-.. In your Anypoint Platform organization, click *Access Management* > *Identity Providers* > *SAML 2.0* > *Edit* and copy the *Audience* string.
-.. Set *Audience* to the *Audience* string.
+.. To find the identity provider ID, run this request:
++
+----
+curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/provider/users' \
+--header 'Authorization: Bearer <TOKEN>'
+----
++
+Replace `<YOUR_ORG_ID>` with your organization ID and replace `<TOKEN>` with your token.
++
+In the response, find the line with the `provider_id`:
++
+----
+"provider_id": "01234567-89ab-cdef-0123-456789abcdef",
+----
++
+.. Set *IDP ID* to this identity provider ID.
 .. Click *Connect* to authenticate and authorize the app to connect the API Community Manager organization with your Anypoint organization.
 
 == Configure Users
 
-Give your user the *Exchange Contributor* role:
+Give your user the Exchange contributor permission:
 
 . In your Anypoint Platform organization, click *Access Management* > *Users*.
 . Select your user.
-. Click *Role* > *Add role by name*.
-. Add the role *Exchange Contributor*.
+. Click *Permissions* > *Add permissions*.
+. Ensure that your user has the permission *Exchange Contributor* in each business group.
 
-Map community user to Anypoint role:
+Give community users the Exchange viewer permission:
 
 . Ensure that you have Exchange Administrator permissions.
-. In your Anypoint Platform organization, navigate to *Access Management* and click *Roles*.
-. In *Exchange Viewers*, set a new external group called `Community User` and save it.
+. In your Anypoint Platform organization, navigate to *Access Management* and click *Teams*.
+. Create a new team named *Community Users*.
+. Click *Settings*.
+. Set the parent team to everyone in the organization.
+. In *External IdP Groups*, set *Group Name* to *Community User* and set *Type* to *Member*.
+. Click *Permissions* > *Add permissions* and add the permission *Exchange Viewer*.
 +
-If you work with different business groups, you must create a new external group for each business group in your organization.
+When prompted, select all business groups with any assets that you want community users to be able to view.
 
 == Set Profile Permissions
 
@@ -89,3 +105,4 @@ After the connection with your Anypoint organization is established, click *Cont
 
 * xref:diagnostics.adoc[Diagnostics]
 * xref:create-community.adoc[Create a Community]
+* xref:access-management::map-users-roles-teams#map-sso-users-to-teams[Map SSO Users to Teams]

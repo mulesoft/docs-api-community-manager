@@ -49,7 +49,7 @@ Show Search Input:: Shows the search input on the results page.
 
 The API Access Requester component enables community members to request access to an API for either a new or existing application.
 
-An API page displays the *API Access Request* button when at least one API instance has its xref:exchange::to-configure-api-settings.adoc[visibility set to public in Exchange].
+An API page displays the *API Access Request* button when at least one public managed API instance has its xref:exchange::to-configure-api-settings.adoc[visibility set to public in Exchange].
 
 Community members can either request access for an existing client application and API instance, or request to create a new client application with access to the API by specifying the application name and description and choosing an API instance.
 
@@ -113,6 +113,8 @@ Learn More Button Label:: Enables you to set the Learn More button label. Defaul
 
 The API Catalog component offers API consumers an interactive way to explore all the available APIs and API Groups in an API community. The API Catalog shows API cards in rows and columns, divided into pages, and shows controls to filter the displayed APIs and API Groups by categories and search terms. Each card shows an API or API Group. With the catalog users can view and explore large numbers of API versions.
 
+The API catalog search and the search you perform by using the <<acm-search-box>> component are not the same searches. The API catalog search is a basic search of APIs and API Groups, and the ACM Search Box component offers advanced search features to search all assets in your API community.
+
 In the template community, the link to the API Catalog component appears below the API Carousel component. If a community has multiple API Catalog instances on multiple pages, the best practice is to standardize the pages and place the instances as consistently as possible.
 
 To prevent confusion, the API Catalog component is designed to use a maximum of five managed categories, and not tags.
@@ -153,7 +155,7 @@ Endpoints are displayed in alphabetical order.
 
 Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
-The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
+The component shows the public API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
 If an API's specification includes OAuth 2.0 security, users either select a client application in the *Credentials source* list to populate the client ID and client secret automatically, or they select *Custom credentials* in the list to enter the client ID and client secret manually.
 
@@ -238,9 +240,9 @@ Headline Font Family (Optional):: Specifies the API console headline font family
 
 == API Console Instances
 
-The API Console Instances component shows the list of instances of an API, also known as endpoints.
+The API Console Instances component shows the list of public instances of an API, also known as endpoints.
 
-The component shows the API instances from xref:api-manager::index.adoc[Anypoint API Manager].
+The component shows the public API instances from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the API Console Instances:
 
@@ -250,7 +252,7 @@ API:: Specifies the API whose instances are displayed.
 
 The API Console Navigation component shows the API console component's navigation.
 
-The component shows the API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
+The component shows the public API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
 You can specify values for the following parameters of the API Console Navigation:
 
@@ -275,7 +277,7 @@ Method Label Head Color:: Specifies the HEAD method label color.
 
 The API Console Request Panel component shows a panel where users can test an API by making requests to it.
 
-The component shows the API instances from xref:api-manager::index.adoc[Anypoint API Manager].
+The component shows the public and managed API instances from xref:api-manager::index.adoc[Anypoint API Manager].
 
 You can specify values for the following parameters of the API Console Request Panel:
 
@@ -399,6 +401,8 @@ When application editing is enabled, the component displays the *Reset Credentia
 == Application Listing
 
 The Application Listing component shows applications that use an API.
+
+On a page with an API record ID in scope, such as an API details page, the component shows only the applications with access to the current version of that API.
 
 The component shows the application name, client ID, and client secret from xref:api-manager::index.adoc[Anypoint API Manager].
 
