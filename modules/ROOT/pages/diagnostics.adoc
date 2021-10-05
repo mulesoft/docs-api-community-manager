@@ -38,6 +38,8 @@ The user access tab shows the status of your guest user and member user configur
 
 The guest user and member user categories list their configuration items. Items that are not yet configured correctly have an error and a *Fix* button, and their category has a *Fix All* button. Correctly configured items and categories have no button and a green circle with a white check mark.
 
+These configuration options work only for the default API Community Manager configuration. If you have a different configuration that uses public groups and rules, do not click the *Fix* button, do not click the *Fix All* button, and do not use this diagnostic tool for the member user profile.
+
 *Guest User* items:
 
 * *Profile permission*
