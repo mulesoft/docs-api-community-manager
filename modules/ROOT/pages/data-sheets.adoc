@@ -13,3 +13,5 @@ These data sheets offer further information about Anypoint API Community Manager
 * xref:security.adoc[Security]
 
 For the list of supported browsers, see xref:general::browser-support.adoc[Browser Support for Anypoint Platform].
+
+API Community Manager is not certified for use on mobile devices. Some functionality works on mobile devices, but some functionality such as the API console does not.
