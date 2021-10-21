@@ -10,7 +10,7 @@ Upgrades with new features are applied to sandbox environments four weeks before
 
 To ensure that the community administrator controls how their audience receives community changes, new functionality in upgrades is typically disabled until the community administrator enables it.
 
-The end-of-life period for package version 1.x is from August 12, 2021 to August 12, 2022. During this period, no new 1.x versions or patches are released, and only end-of-life support is available. All support for version 1.x ends August 12, 2022.
+Because API Community Manager follows the standard support policy for MuleSoft cloud offerings, only the latest version of API Community Manager 2.x is supported. Additionally, API Community Manager 1.x reached End of Life (EOL) on August 14, 2021.
 
 For information about upgrade notifications, see xref:notifications.adoc[important notifications].
 
@@ -348,3 +348,4 @@ Manual configuration:
 
 * xref:notifications.adoc[Important Notifications]
 * xref:sandboxes.adoc[Sandboxes]
+* https://www.mulesoft.com/legal/versioning-back-support-policy[Product Versioning and Back Support Policy, role=external, window=blank]
