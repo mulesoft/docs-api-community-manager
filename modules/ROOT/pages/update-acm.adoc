@@ -10,7 +10,7 @@ Upgrades with new features are applied to sandbox environments four weeks before
 
 To ensure that the community administrator controls how their audience receives community changes, new functionality in upgrades is typically disabled until the community administrator enables it.
 
-API Community Manager follows the standard support policy for MuleSoft cloud offerings, and only the latest version of API Community Manager 2.x is supported. API Community Manager 1.x reached End of Life (EOL) on August 14, 2021 and is not supported.
+Because API Community Manager follows the standard support policy for MuleSoft cloud offerings, only the latest version of API Community Manager 2.x is supported. Additionally, API Community Manager 1.x reached End of Life (EOL) on August 14, 2021.
 
 For information about upgrade notifications, see xref:notifications.adoc[important notifications].
 
