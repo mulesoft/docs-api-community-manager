@@ -22,10 +22,20 @@ You can specify values for the following parameters of the API Community Manager
 *Result Page URL*:: Specifies the URL of the search results page shown after the user enters a search.
 *Search Areas*:: Selects which types of content to search: *APIs*, *API Groups*, *Applications*, *Knowledge Articles*, *Cases*, *Discussions*, *Topics*, *Managed Content (CMS)*, *API Specifications*, *Documentation Pages*, and *Custom Fields*.
 *Number of results to show*:: Specifies the number of results shown as the user types a query.
+*Enable advance links*:: Enables search results to link to specific tabs of an API details page identified by tab set IDs, such as the console, documentation, custom fields, and applications tabs.
 
 The *Result Page URL* parameter specifies the URL of a search results page, and the search results page must include an *ACM Search Results* component to display the search results. If the page does not include an *ACM Search Results* component, members and guest users who enter a search and go to the page see no results.
 
 If a content type is not selected in the *Search Areas* parameter, then the linked *ACM Search Results* component omits results of that content type. MuleSoft Government Cloud does not support searching in API specifications or documentation pages.
+
+When you select *Enable advance links*, configure the tab set ID fields that match your customization of the tabs of the API details page, such as `Console Tab Set Id`, `Documentation Tab Set Id`, `Custom fields Tab Set Id`, and `Applications Tab Set Id`:
+
+. Open the builder.
+. Preview the community as an authenticated user.
+. Open the API details page for an API.
+. Select a tab.
+. In the URL find a tab set ID such as `tabset-1a2b3c=2` or `tabset-1a2b3c=4d5e6f`.
+. Copy this tab set ID to a tab set ID field such as `Console Tab Set Id`.
 
 Your community's default pages have one ACM Search Box and one ACM Search Results component, and this is the best practice to minimize the chance of misconfigurations, although it is possible to use separate searches for separate audiences within your community's members.
 
@@ -43,6 +53,16 @@ You can specify values for the following parameters of the Search Results:
 *Component Title*:: Specifies the title for the results.
 *Border*:: Specifies border thickness. Values are *Thick*, *Medium*, *Thin*, or *None*. Default is *Thin*.
 *Show Search Input*:: Shows the search input on the results page.
+*Enable advance links*:: Enables search results to link to specific tabs of an API details page identified by tab set IDs, such as the console, documentation, custom fields, and applications tabs.
+
+When you select *Enable advance links*, configure the tab set ID fields that match your customization of the tabs of the API details page, such as `Console Tab Set Id`, `Documentation Tab Set Id`, `Custom fields Tab Set Id`, and `Applications Tab Set Id`:
+
+. Open the builder.
+. Preview the community as an authenticated user.
+. Open the API details page for an API.
+. Select a tab.
+. In the URL find a tab set ID such as `tabset-1a2b3c=2` or `tabset-1a2b3c=4d5e6f`.
+. Copy this tab set ID to a tab set ID field such as `Console Tab Set Id`.
 
 [[api-access-requester]]
 == API Access Requester
@@ -302,6 +322,30 @@ You can specify values for the following parameters of the API Console Request P
 *Button Hover Text Color (Optional)*:: Specifies the color of button hover text. Default is the button text color.
 *Headline Font Family (Optional)*:: Specifies the headline font family.
 *Error Color (Optional)*:: Specifies the color of error messages.
+
+To enable users to select an application to populate the `clientId` and `clientSecret` credentials, add credential annotations to the application specification:
+
+[source,text]
+----
+/all-query:
+  get:
+    queryParameters:
+      query_id:
+        type: string
+        (credentialType): id
+      query_secret:
+        type: string
+        (credentialType): secret
+/all-headers:
+  get:
+      headers:
+        header_id:
+          type: string
+          (credentialType): id
+        header_secret:
+          type: string
+          (credentialType): secret
+----
 
 == API Custom Field Table
 
