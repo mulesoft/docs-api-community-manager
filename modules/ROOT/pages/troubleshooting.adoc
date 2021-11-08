@@ -175,3 +175,7 @@ Installing this package requires the following feature and its associated permis
 ----
 
 To fix this error, follow the installation prerequisite steps in the section xref:installation-prerequisites.adoc#set-up-a-domain-with-enabled-communities[Set Up a Domain with Enabled Communities].
+
+== Empty login page
+
+If you can not see the fields in the login component, you must run the diagnostics tool for the guest user in that particular experience site.
