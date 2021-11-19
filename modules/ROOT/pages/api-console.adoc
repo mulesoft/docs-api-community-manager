@@ -92,3 +92,92 @@ You can specify values for the following parameters of the API Console Documenta
 *Method Label Head Background Color*:: Specifies the HEAD method label background color.
 *Method Label Head Color*:: Specifies the HEAD method label color.
 *Headline Font Family (Optional)*:: Specifies the API console headline font family.
+
+== API Console Instances
+
+The API Console Instances component shows the list of public instances of an API, also known as endpoints.
+
+The component shows the public API instances from xref:api-manager::index.adoc[Anypoint API Manager].
+
+You can specify values for the following parameters of the API Console Instances:
+
+*API*:: Specifies the API whose instances are displayed.
+
+== API Console Navigation
+
+The API Console Navigation component shows the API console component's navigation.
+
+The component shows the public API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
+
+You can specify values for the following parameters of the API Console Navigation:
+
+*API*:: Specifies the API to display.
+*Show Documentation Pages*:: Shows the API's documentation pages.
+*Method Label Get Background Color*:: Specifies the GET method label background color.
+*Method Label Get Color*:: Specifies the GET method label color.
+*Method Label Post Background Color*:: Specifies the POST method label background color.
+*Method Label Post Color*:: Specifies the POST method label color.
+*Method Label Put Background Color*:: Specifies the PUT method label background color.
+*Method Label Put Color*:: Specifies the PUT method label color.
+*Method Label Delete Background Color*:: Specifies the DELETE method label background color.
+*Method Label Delete Color*:: Specifies the DELETE method label color.
+*Method Label Patch Background Color*:: Specifies the PATCH method label background color.
+*Method Label Patch Color*:: Specifies the PATCH method label color.
+*Method Label Options Background Color*:: Specifies the OPTIONS method label background color.
+*Method Label Options Color*:: Specifies the OPTIONS method label color.
+*Method Label Head Background Color*:: Specifies the HEAD method label background color.
+*Method Label Head Color*:: Specifies the HEAD method label color.
+
+== API Console Request Panel
+
+The API Console Request Panel component shows a panel where users can test an API by making requests to it.
+
+The component shows the public and managed API instances from xref:api-manager::index.adoc[Anypoint API Manager].
+
+You can specify values for the following parameters of the API Console Request Panel:
+
+*API*:: Specifies the API to display.
+*Show Documentation Pages*:: Shows the API's documentation pages.
+*Method Label Get Background Color*:: Specifies the GET method label background color.
+*Method Label Get Color*:: Specifies the GET method label color.
+*Method Label Post Background Color*:: Specifies the POST method label background color.
+*Method Label Post Color*:: Specifies the POST method label color.
+*Method Label Put Background Color*:: Specifies the PUT method label background color.
+*Method Label Put Color*:: Specifies the PUT method label color.
+*Method Label Delete Background Color*:: Specifies the DELETE method label background color.
+*Method Label Delete Color*:: Specifies the DELETE method label color.
+*Method Label Patch Background Color*:: Specifies the PATCH method label background color.
+*Method Label Patch Color*:: Specifies the PATCH method label color.
+*Method Label Options Background Color*:: Specifies the OPTIONS method label background color.
+*Method Label Options Color*:: Specifies the OPTIONS method label color.
+*Method Label Head Background Color*:: Specifies the HEAD method label background color.
+*Method Label Head Color*:: Specifies the HEAD method label color.
+*Link Hover Color*:: Specifies the color of links when the cursor hovers over them.
+*Button Text Color (Optional)*:: Specifies the color of button text.
+*Button Hover Text Color (Optional)*:: Specifies the color of button hover text. Default is the button text color.
+*Headline Font Family (Optional)*:: Specifies the headline font family.
+*Error Color (Optional)*:: Specifies the color of error messages.
+
+To enable users to select an application to populate the `clientId` and `clientSecret` credential values, add credential annotations to the application specification:
+
+[source,text]
+----
+/all-query:
+  get:
+    queryParameters:
+      query_id:
+        type: string
+        (credentialType): id
+      query_secret:
+        type: string
+        (credentialType): secret
+/all-headers:
+  get:
+      headers:
+        header_id:
+          type: string
+          (credentialType): id
+        header_secret:
+          type: string
+          (credentialType): secret
+----
