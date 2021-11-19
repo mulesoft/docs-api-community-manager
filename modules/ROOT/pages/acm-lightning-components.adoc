@@ -75,6 +75,8 @@ Community members can either request access for an existing client application a
 
 When a consumer developer requests access for a new client application to an API instance that has an identity provider (IDP), the consumer developer must specify one or more of the OAuth 2.0 grant types Authorization Code Grant, Implicit Grant, Refresh Token, and Resource Owner Grant. Some IDPs do not support all grant types. Requesting access and specifying an unsupported grant type shows the error `Error creating application.`
 
+If your site has a custom request access flow, after you add an application, refresh the page to show the application in the *Application* menu.
+
 You can specify values for the following parameters of the API Access Requester:
 
 *API*:: Specifies the API.
