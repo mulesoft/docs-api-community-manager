@@ -11,6 +11,7 @@ Advanced HTML and CSS editing is also available for precise web designs.
 * xref:customize.adoc[Site Look-and-Feel Customization]
 * xref:site-structure.adoc[Site Structure]
 * xref:acm-lightning-components.adoc[Description of API Community Manager Lightning Components]
+* xref:api-console.adoc[API Console]
 * xref:preview-community.adoc[Preview Your Site]
 * xref:publish-community.adoc[Publish Your Site]
 * xref:css-styling.adoc[Advanced Styling with CSS]
