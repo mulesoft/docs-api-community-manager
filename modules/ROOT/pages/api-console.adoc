@@ -1,5 +1,8 @@
-[[api-console]]
-== API Console
+= API Console
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
 
 The interactive API Console component shows information about your APIs and their methods, and enables users to test the methods by sending requests.
 
