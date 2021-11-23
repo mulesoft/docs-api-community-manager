@@ -182,11 +182,9 @@ To enable users to select an application to populate the `clientId` and `clientS
           (credentialType): secret
 ----
 
-If your site has a custom request access implementation, to update the application selector, dispatch this event:
+If your site has a custom request access implementation, update the application selector by dispatching the following event. Without this event, each time a user adds an application, the user must refresh the page to show the application in the *Application* menu.
 
 [source,text]
 ----
 this.dispatchEvent(new Event('acm:application_created_success', {bubbles: true}))
 ----
-
-If your site has a custom request access implementation and does not dispatch the event, each time a user adds an application, the user must refresh the page to show the application in the *Application* menu.
