@@ -181,7 +181,10 @@ To enable users to select an application to populate the `clientId` and `clientS
           type: string
           (credentialType): secret
 ----
-If you have a custom request access implementation, you should dispatch the following event to update the application selector.
+
+If your site has a custom request access implementation, to update the application selector, dispatch this event:
+
+[source,text]
 ----
 this.dispatchEvent(new Event('acm:application_created_success', {bubbles: true}))
 ----
