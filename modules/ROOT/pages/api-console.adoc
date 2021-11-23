@@ -188,3 +188,5 @@ If your site has a custom request access implementation, to update the applicati
 ----
 this.dispatchEvent(new Event('acm:application_created_success', {bubbles: true}))
 ----
+
+If the site has a custom request access implementation and does not dispatch the event, after a user adds an application, showing the application in the *Application* menu requires refreshing the page.
