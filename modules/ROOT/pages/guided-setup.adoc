@@ -10,12 +10,6 @@ These steps require a configured identity provider. For more information about c
 
 The Anypoint administrative user who performs the guided setup must have multi-factor authentication disabled. To disable it, in *Access Management* > *Users* > the user's page > *Settings*, enable *Exempt from MFA requirement*.
 
-== Configure a Custom Subdomain
-
-API Community Manager uses a custom subdomain to connect securely to your Anypoint organization.
-
-This section of the guided setup helps you configure your subdomain, or displays the subdomain you have already configured.
-
 == Connect with Your Anypoint Organization
 
 To connect your API Community Manager instance to your Anypoint organization:
@@ -63,7 +57,7 @@ Otherwise, provide these app details:
 .. To find the identity provider ID, run this request:
 +
 ----
-curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/provider/users' \
+curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/identityProviders' \
 --header 'Authorization: Bearer <TOKEN>'
 ----
 +
