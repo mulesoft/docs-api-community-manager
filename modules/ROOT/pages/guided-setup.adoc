@@ -8,6 +8,8 @@ From the Anypoint API Community Manager control panel, open the Salesforce App L
 
 These steps require a configured identity provider. For more information about configuring an identity provider, see the xref:installation-prerequisites.adoc[installation prerequisites]. Using OpenID Connect as your identity provider requires using the xref:manual-setup.adoc[manual setup].
 
+The Anypoint administrative user who performs the guided setup must have multi-factor authentication disabled. To disable it, in *Access Management* > *Users* > the user's page > *Settings*, enable *Exempt from MFA requirement*.
+
 == Configure a Custom Subdomain
 
 API Community Manager uses a custom subdomain to connect securely to your Anypoint organization.
