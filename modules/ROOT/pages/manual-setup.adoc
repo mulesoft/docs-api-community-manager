@@ -5,7 +5,7 @@ endif::[]
 :imagesdir: ../assets/images/
 :page-aliases: set-up-domain.adoc, deploy-domain.adoc, control-panel.adoc, data-bridge.adoc
 
-To set up Anypoint API Community Manager manually, follow these steps.
+To set up the current version of Anypoint API Community Manager, use the xref:guided-setup.adoc[guided setup]. To set up previous versions manually, follow these steps.
 
 == Enable API Community Manager Control Panel
 
