@@ -18,34 +18,38 @@ To connect your API Community Manager instance to your Anypoint organization:
 .. Select *I have organization administrator credentials* and enter your Anypoint Platform user and password.
 .. The system creates a certificate in Salesforce named `Anypoint`, creates a connected app in Anypoint using the certificate, creates a named credential in Salesforce using the client ID from the Anypoint connected app and the identity provider information, configures the external data source, and grants Exchange contributor permissions to the impersonated user from the Salesforce administrator.
 . If your Anypoint user does not have organization administrator credentials:
-.. Ask your organization administrator to follow these steps and give you the *Client ID* and *IDP ID*:
-... Create a key pair in Salesforce for communication between Salesforce and Anypoint Platform:
-.... Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
-.... Set *Label/Name* to `Anypoint`.
-.... Disable *Exportable Private Key*.
-.... Set *Key Size* to 2048 or larger.
-.... Click *Save*.
-.... Click *Download Certificate* to save the public key on your local machine.
-... Click *Access Management* > *Connected Apps* > *Create App*.
-... Enter a name for the app.
-... Enable *App acts on behalf of a user*.
-... In the section *Grant types*, enable *JWT Bearer*.
-... Copy the public key from the downloaded file and paste it into the public key text area.
-... Verify that the public key certificate has this format:
+.. Ask your organization administrator to use the following steps to create a connected app and give you the *Client ID* and *IDP ID*.
+.. Select *I don't have organization administrator credentials* and enter the *Client ID* and *IDP ID* from your organization administrator.
+
+To create a connected app if you are an organization administrator:
+
+. Create a key pair in Salesforce for communication between Salesforce and Anypoint Platform:
+.. Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
+.. Set *Label/Name* to `Anypoint`.
+.. Disable *Exportable Private Key*.
+.. Set *Key Size* to 2048 or larger.
+.. Click *Save*.
+.. Click *Download Certificate* to save the public key on your local machine.
+. Click *Access Management* > *Connected Apps* > *Create App*.
+. Enter a name for the app.
+. Enable *App acts on behalf of a user*.
+. In the section *Grant types*, enable *JWT Bearer*.
+. Copy the public key from the downloaded file and paste it into the public key text area.
+. Verify that the public key certificate has this format:
 +
 ----
 -----BEGIN CERTIFICATE-----
 PUBLIC KEY
 -----END CERTIFICATE-----
 ----
-... Set *Website URL* to `+https://login.salesforce.com+`.
-... In the section *Redirect URIs*, add `+http://localhost+`, because connected apps require redirect URIs but this configuration does not use them.
-... In the section *Who can use this application?*, select *Members of this organization only*.
-... In the section *Scopes*, add *Background Access* and *Full Access*.
-... Click *Save*.
-... Copy the client ID.
-... Do not copy the client secret, because this configuration uses the certificate instead.
-... To find the identity provider ID, run this request:
+. Set *Website URL* to `+https://login.salesforce.com+`.
+. In the section *Redirect URIs*, add `+http://localhost+`, because connected apps require redirect URIs but this configuration does not use them.
+. In the section *Who can use this application?*, select *Members of this organization only*.
+. In the section *Scopes*, add *Background Access* and *Full Access*.
+. Click *Save*.
+. Copy the client ID.
+. Do not copy the client secret, because this configuration uses the certificate instead.
+. To find the identity provider ID, run this request:
 +
 ----
 curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/identityProviders' \
@@ -60,8 +64,7 @@ In the response, find the line with the `provider_id`:
 "provider_id": "01234567-89ab-cdef-0123-456789abcdef",
 ----
 +
-... Copy this identity provider ID as the *IDP ID*.
-.. Select *I don't have organization administrator credentials* and enter the *Client ID* and *IDP ID* from your organization administrator.
+. Copy this identity provider ID as the *IDP ID*.
 
 == Configure Users
 
