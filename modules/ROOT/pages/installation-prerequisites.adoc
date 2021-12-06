@@ -26,7 +26,7 @@ If you don't see any roles in the list, refer to the Salesforce knowledge articl
 Verify API Community Manager entitlement for your Anypoint organization:
 
 . Log in to your Anypoint Platform organization.
-. Navigate to the correct URL for your cloud:
+. Choose the correct URL for your cloud and open the URL in your browser:
 +
 * US cloud: `+https://anypoint.mulesoft.com/accounts/api/profile+`
 * EU cloud: `+https://eu1.anypoint.mulesoft.com/accounts/api/profile+`
