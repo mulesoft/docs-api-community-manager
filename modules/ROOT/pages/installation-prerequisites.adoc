@@ -17,7 +17,7 @@ Set permissions and a role for your Salesforce API Community Manager organizatio
 +
 This can be any role from the list, but cannot be none.
 +
-If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
+If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization. The role "Salesforce CRM Content User" can be added as a string.
 . Select *Salesforce CRM Content User*.
 . Click *Save*.
 
@@ -119,7 +119,7 @@ Configure external identity in your Anypoint organization:
 . Navigate to *Access Management* > *Identity Providers* > *SAML 2.0*.
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
-. Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
+. Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
 . Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
 . Select *Enable new non-SSO users*.
