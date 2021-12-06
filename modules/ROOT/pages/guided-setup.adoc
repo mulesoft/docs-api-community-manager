@@ -4,9 +4,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
+To set up Anypoint API Community Manager with guided setup, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps. The prerequisite steps include configuring an identity provider. Using OpenID Connect as your identity provider requires using the xref:manual-setup.adoc[manual setup] and not guided setup.
 
-These steps require a configured identity provider. For more information about configuring an identity provider, see the xref:installation-prerequisites.adoc[installation prerequisites]. Using OpenID Connect as your identity provider requires using the xref:manual-setup.adoc[manual setup].
+From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
 
 == Configure a Custom Subdomain
 
