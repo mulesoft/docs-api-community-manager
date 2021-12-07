@@ -124,7 +124,6 @@ Configure external identity in your Anypoint organization:
 . Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
 . Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
-. Select *Enable new non-SSO users*.
 . Click *Save*.
 
 == Next Steps
