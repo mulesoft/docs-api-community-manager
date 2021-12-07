@@ -17,8 +17,10 @@ Set permissions and a role for your Salesforce API Community Manager organizatio
 +
 This can be any role from the list, but cannot be none.
 +
-If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization by entering the name "Salesforce CRM Content User" as a string.
-. Select *Salesforce CRM Content User*.
+If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
++
+If you create a role, enter a role name such as `Salesforce_ACM_org_admin_user`.
+. Enable the option *Salesforce CRM Content User*.
 . Click *Save*.
 
 == Verify API Community Manager Entitlement
