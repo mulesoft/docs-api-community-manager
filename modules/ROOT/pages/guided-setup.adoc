@@ -6,7 +6,7 @@ endif::[]
 
 == Prerequisites
 
-To set up Anypoint API Community Manager with guided setup, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps. The prerequisite steps include configuring an identity provider. Using OpenID Connect as your identity provider requires using the xref:manual-setup.adoc[manual setup] and not guided setup.
+To set up Anypoint API Community Manager with guided setup, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
 
 From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
 
