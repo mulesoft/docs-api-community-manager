@@ -19,9 +19,7 @@ Anypoint Access Management configures xref:access-management::external-identity.
 
 Anypoint API Manager applies xref:api-manager::policies-mule4.adoc[policies] to APIs for security, and supports xref:api-manager::mule-oauth-provider-landing-page.adoc[OAuth 2.0] and other standards.
 
-// Add more discussion of the process when a consumer developer requests access to an API for an application?
-
-// Is OAuth token exchange used anywhere?
+If you discover a security vulnerability, send a report to security@salesforce.com with detailed steps to reproduce the vulnerability.
 
 == See Also
 
