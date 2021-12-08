@@ -19,9 +19,8 @@ Anypoint Access Management configures xref:access-management::external-identity.
 
 Anypoint API Manager applies xref:api-manager::policies-mule4.adoc[policies] to APIs for security, and supports xref:api-manager::mule-oauth-provider-landing-page.adoc[OAuth 2.0] and other standards.
 
-If you discover a security vulnerability, send a report to security@salesforce.com with detailed steps to reproduce the vulnerability.
+If you discover a security vulnerability, follow the steps in https://help.mulesoft.com/s/article/How-to-report-vulnerabilities-on-Mule-applications[How to Report Vulnerabilities on Mule Products, role=external, window=blank] to send a report to security@salesforce.com with detailed steps to reproduce the vulnerability.
 
 == See Also
 
-* https://help.mulesoft.com/s/article/How-to-report-vulnerabilities-on-Mule-applications[How to Report Vulnerabilities on Mule Products, role=external, window=blank]
 * https://trust.salesforce.com/en/security/[Salesforce Security, role=external, window=blank]
