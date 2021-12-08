@@ -8,6 +8,8 @@ endif::[]
 
 To set up Anypoint API Community Manager with guided setup, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
 
+== Open Guided Setup
+
 From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
 
 == Configure a Custom Subdomain
