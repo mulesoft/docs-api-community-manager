@@ -128,4 +128,4 @@ Configure external identity in your Anypoint organization:
 
 == Next Steps
 
-After these prerequisite steps, continue to the installation steps.
+After these prerequisite steps, continue to the xref:install-acm.adoc[installation steps].
