@@ -23,4 +23,5 @@ If you discover a security vulnerability, send a report to security@salesforce.c
 
 == See Also
 
+* https://help.mulesoft.com/s/article/How-to-report-vulnerabilities-on-Mule-applications[How to Report Vulnerabilities on Mule Products, role=external, window=blank]
 * https://trust.salesforce.com/en/security/[Salesforce Security, role=external, window=blank]
