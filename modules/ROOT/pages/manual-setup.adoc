@@ -136,3 +136,6 @@ Give community users the Exchange viewer permission:
 . Click *Permissions* > *Add permissions* and add the permission *Exchange Viewer*.
 +
 When prompted, select all business groups with any assets that you want community users to be able to view.
+. Manually add the permission *Exchange Viewer* to any users who were invited before you created the team.
+
+After each user logs in to the community, the user is visible in Anypoint.
