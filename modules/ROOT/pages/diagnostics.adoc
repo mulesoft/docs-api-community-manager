@@ -1,0 +1,70 @@
+= Diagnostics
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Diagnostics*.
+
+== Status Tab
+
+The status tab shows the status of your Salesforce organization and your communities.
+
+The *Organization* section shows this information about your Salesforce organization:
+
+. *Package version* shows the version of your currently installed API Community Manager package.
+. *Connectivity with Anypoint* shows the URL your API community uses to access Anypoint.
+. *Cache*:
+.. *Org cache enabled* shows if the organization cache is enabled and links to the platform cache metadata.
+.. *Org cache allocated* shows the size of the organization cache allocated and links to the platform cache configuration.
+.. *Session cache enabled* shows if the session cache is enabled and links to the platform cache metadata.
+.. *Session cache allocated* shows the size of the session cache allocated and links to the platform cache configuration.
+
+The *ACM Communities* section shows each of your API Community Manager communities.
+
+Here you can choose to show all diagnostics (default) or only diagnostics to review, collapse all communities in the list, or create a new community.
+
+Each API Community Manager community has options to open the community and to open the community builder, and shows three diagnostics:
+
+. *Community status* shows if the community is active.
+. *Public* shows if the community is public, and links to the builder where you can make the community public.
+. *Published assets status* shows if any assets in API Community Manager incorrectly point to Exchange assets that no longer exist.
+
+If your list of communities is empty, xref:create-community.adoc[Create a Community].
+
+== User Access Tab
+
+The user access tab shows the status of your guest user and member user configurations, including their permissions.
+
+The guest user and member user categories list their configuration items. Items that are not yet configured correctly have an error and a *Fix* button, and their category has a *Fix All* button. Correctly configured items and categories have no button and a green circle with a white check mark.
+
+These configuration options work only for the default API Community Manager configuration. If you have a different configuration that uses public groups and rules, do not click the *Fix* button, do not click the *Fix All* button, and do not use this diagnostic tool for the member user profile.
+
+*Guest User* items:
+
+* *Profile permission*
+* *Classes permission*
+* *Sharing rules*
+
+*Member User* items:
+
+* *Community profile*
+* *Profile permission*
+* *Classes permission*
+* *Sharing set*
+* *Account created*
+* *Account assigned*
+* *Account owner role*
+* *Account visibility*
+
+After the items from *Community profile* through *Account created* are correctly configured, assign the Salesforce account manually:
+
+. In the control panel, click *Community Administration* > *Login & Registration*.
+. Scroll to the section *Registration Page Configuration*.
+. Enable *Allow customers and partners to self-register*.
+. Set *Registration Page Type* to *Default Page*.
+. Select your community's member user as the value for *Profile*.
+. Enter your community's Salesforce account name as the value for *Account*.
+. Click *Save*.
+. In the diagnostics page, next to the *Member User* item *Account assigned*, click *Assign* to verify that the account is assigned correctly.
+. Fix the remaining items in the list.

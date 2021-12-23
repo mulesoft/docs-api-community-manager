@@ -1,10 +1,10 @@
-= Publish Your API Community
+= Publish Your Site
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-After you edit and preview your updated community site, you can publish the new version for your users:
+After you edit and preview your updated Salesforce Experience Cloud site, you can publish the new version for your users:
 
 . Open the Anypoint API Community Manager control panel.
 . Click *Community Builder*.

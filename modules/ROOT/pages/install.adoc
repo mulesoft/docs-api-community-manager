@@ -5,11 +5,13 @@ endif::[]
 :imagesdir: ../assets/images/
 :page-aliases: install-configure.adoc, configure-acm.adoc
 
-Anypoint API Community Manager is composed of a Salesforce organization with Community Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
+Anypoint API Community Manager is composed of a Salesforce organization with Experience Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
+
+An instance of API Community Manager connects to only one Anypoint Platform organization. The Anypoint user can connect to one or more instances of API Community Manager, possibly including sandbox instances and instances in other Salesforce organizations.
 
 The API Community Manager package is installed in a Salesforce organization that is independent of any other Salesforce organizations that your company might already have, so that the API community data is isolated from your company operational data, such as ERP or CRM data.
 
-The Salesforce organization with Community Cloud is provisioned through and included in the Anypoint API Community Manager license from MuleSoft. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for API Community Manager. Find more information about API Community Manager licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
+The Salesforce organization with Experience Cloud is provisioned through and included in the Anypoint API Community Manager license from MuleSoft. You don't need to procure this Salesforce organization separately, and you cannot reuse existing Salesforce licenses for API Community Manager. Find more information about API Community Manager licenses in the xref:licensing-overview.adoc[Licensing Overview] section.
 
 NOTE: Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
 
@@ -18,12 +20,12 @@ NOTE: If your Anypoint Platform organization is https://docs.mulesoft.com/eu-con
 The following sections guide you through installing and configuring API Community Manager:
 
 * xref:installation-prerequisites.adoc[Installation Prerequisites]
-* xref:set-up-domain.adoc[Set Up and Register a Domain and Enable Communities]
-* xref:deploy-domain.adoc[Deploy Your Domain]
 * xref:install-acm.adoc[Install API Community Manager Package]
-* xref:control-panel.adoc[Enable API Community Manager Control Panel]
-* xref:data-bridge.adoc[Set Up the Data Bridge]
+* xref:guided-setup.adoc[Guided Setup]
+* xref:manual-setup.adoc[Manual Setup]
+* xref:cache.adoc[Configure the Platform Cache]
 * xref:create-community.adoc[Create a Community]
 * xref:install-validate.adoc[Verify the Installation]
-* xref:cache.adoc[Configure the Platform Cache]
+* xref:search-cms.adoc[Optionally Configure Search in CMS Content]
 * xref:branded-emails.adoc[Optionally Configure Branded Emails]
+* xref:govcloud-data-control.adoc[MuleSoft Government Cloud Data Control]

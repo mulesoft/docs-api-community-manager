@@ -4,30 +4,128 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-To install Anypoint API Community Manager you will need:
+To install Anypoint API Community Manager, you must follow these prerequisite steps.
 
-. An Anypoint admin user account.
-. A Salesforce API Community Manager organization admin user with a role.
-+
-To update your user role and permissions:
+== Set Salesforce Admin Role
 
-.. Log in to your Salesforce organization.
-.. In *Setup*, search for *Users* using the *Quick Find* box and click *Users*.
-.. Locate your username and click *Edit*.
-.. Set the *Role* for your account.
+Set permissions and a role for your Salesforce API Community Manager organization administrator user:
+
+. Log in to your Salesforce organization.
+. In *Setup*, use the *Quick Find* box to find and click *Users*.
+. Locate your username and click *Edit*.
+. Set the role for your account by selecting from the *Role* list.
 +
 This can be any role from the list, but cannot be none.
 +
 If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
-
-.. Select *Salesforce CRM Content User*.
-.. Click *Save*.
-. The Anypoint API Community Manager entitlement for your Anypoint organization.
 +
-To check the entitlement:
+If you create a role, enter a role name such as `Salesforce_ACM_org_admin_user`.
+. Enable the option *Salesforce CRM Content User*.
+. Click *Save*.
 
-.. Log in to your Anypoint Platform organization.
-.. Navigate in your browser to `+https://anypoint.mulesoft.com/accounts/api/profile+`.
-.. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
+== Verify API Community Manager Entitlement
 
-After you have confirmed that you have these prerequisites, continue to the xref:set-up-domain.adoc[installation steps].
+Verify API Community Manager entitlement for your Anypoint organization:
+
+. Log in to your Anypoint Platform organization.
+. Choose the correct URL for your cloud and open the URL in your browser:
++
+* US cloud: `+https://anypoint.mulesoft.com/accounts/api/profile+`
+* EU cloud: `+https://eu1.anypoint.mulesoft.com/accounts/api/profile+`
+* MuleSoft Government Cloud: `+https://gov.anypoint.mulesoft.com/accounts/api/profile+`
++
+. Verify that under the *Entitlements* property, the `apiCommunityManager` value is `true`.
+
+== Set up a Domain with Enabled Communities
+
+Set up and register a domain:
+
+. Log in to your API Community Manager https://login.salesforce.com/[Salesforce organization, role=external, window=blank].
+. Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
+. Use the *Quick Find* box to find and select *My Domain*.
+. Enter a domain name for your organization.
++
+The name can include up to 34 letters, numbers, and hyphens.
+. Select *Check Availability*.
++
+If the name is already taken, choose a different one.
+. Select *Register Domain*.
++
+You receive a notification email when your domain is registered and your
+subdomain name is ready for testing. This process can take a few minutes.
+You can continue with the next step while you wait for the email.
+. Using the domain name you selected in the previous step, follow the steps in
+https://help.salesforce.com/articleView?id=sf.networks_enable.htm&type=5[Enable Digital Experiences, role=external, window=blank]
+to enable digital experiences inside your Salesforce organization.
+. Wait to receive the notification email that your domain is registered, and then deploy your domain:
+.. Log in to your API Community Manager https://login.salesforce.com/[Salesforce organization, role=external, window=blank].
+.. Go to *Salesforce Set-up* by selecting the gear icon and selecting *Set-up*.
+.. Use the *Quick Find* box to find and select *My Domain*.
+.. If the screen indicates that your domain is ready, select *Log in*.
+.. Select *Deploy to Users*.
+
+NOTE: After you complete API Community Manager installation and configuration, you can configure a full custom domain
+name, also known as a vanity domain. When you're ready, refer to the Salesforce knowledge article
+https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Digital Experience under a custom domain, role=external, window=blank].
+
+== Prepare Identity Provider Data
+
+=== If You Already Have an Anypoint Platform Identity Provider
+
+If you already have an Anypoint Platform identity provider, get identity provider data from your current configuration:
+
+. If you are using SAML:
+.. Click *Access Management* > *Identity Providers*.
+.. On *SAML 2.0* click *Edit*.
+.. Copy the issuer and the audience so you can use them in the installation.
+. If you are using OpenID Connect:
+.. Copy the organization ID so you can use it in the installation.
+
+=== If You Do Not Already Have an Anypoint Platform Identity Provider
+
+If you do not already have an Anypoint Platform identity provider (IdP), configure Salesforce as a SAML IdP.
+
+The following instructions use URLs for the US cloud that begin with `+https://anypoint.mulesoft.com/+`. If you are using the EU cloud, substitute `+https://eu1.anypoint.mulesoft.com/+`. If you are using MuleSoft Government Cloud, substitute `+https://gov.anypoint.mulesoft.com/+`.
+
+. In *Setup*, search for *App Manager* using the *Quick Find* box and click *App Manager*.
+. Click *New Connected App* in the top right.
+. Provide this information in the *Basic Information* section.
+.. *Connected App Name*: `Anypoint`.
+.. *Contact Email*: Enter your email address.
+. Provide this information in the *Web App Settings* section.
+.. Provide the *Start URL*: `+https://anypoint.mulesoft.com/accounts/login/<your_anypoint_domain_name>+` or the location
+where you want users to be sent in Anypoint Platform.
++
+You can find your Anypoint organization domain name by clicking *Access Management* > *Organization* and then selecting the root organization.
+.. Select *Enable SAML*.
+.. Provide any string as *Entity Id*. This is also the *Audience* configuration in Anypoint Platform.
+.. Provide `+https://anypoint.mulesoft.com/accounts/login/receive-id+` in the *ACS URL*. SAML assertions are sent to this ACS URL.
+.. Select *Enable Single Logout*.
+.. Provide *Single Logout URL*: `+https://anypoint.mulesoft.com/accounts/logout/receive-id+`.
+.. Set *Single Logout Binding* to *HTTP Post*.
+.. Set *Subject Type* to *Username*.
+.. Set *Name ID* Format to *unspecified nameID format*.
+.. Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
+.. Set *IdP Certificate* to *Default IdP Certificate*.
+.. Click *Save*.
+
+Configure external identity in your Anypoint organization:
+
+. In the Salesforce organization, click *Setup*, use the *Quick Find* box to search for *Identity Provider*, and click *Identity Provider*.
+. Click *Enable Identity Provider*.
+. Save.
+. Use the *Quick Find* box to search for *App Manager*, choose the app named *Anypoint*, and in the last column of the table, click the arrow and click *Manage*.
+. Make a note of the URIs under the *SAML Login Information* to use them in the Anypoint configuration in these steps.
+. Click *Download metadata* and retrieve the public key in the `<ds:X509Certificate>` tag inside the XML file.
+. Log in to your Anypoint organization.
+. Navigate to *Access Management* > *Identity Providers* > *SAML 2.0*.
+. Set *Sign On URL* to *IdP-Initiated Login URL*.
+. Set *Sign Off URL* to *Single Logout Endpoint*.
+. Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
+. Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
+. Set *Audience* to match the *Entity Id* you set in the Salesforce account.
+. Click *Save*.
+
+== Next Steps
+
+After these prerequisite steps, continue to the xref:install-acm.adoc[installation steps].

@@ -27,6 +27,7 @@ To open the API Community Manager control panel at any time, open the Salesforce
 == Community Operations
 
 * xref:publish-apis.adoc[Publish APIs]
+* xref:visibility.adoc[Configure API Visibility]
 * xref:publish-content.adoc[Publish Content and CMS Articles]
 * xref:moderate-forums.adoc[Moderate Forums]
 * xref:client-apps-contracts.adoc[Manage Client Applications and Contracts]
