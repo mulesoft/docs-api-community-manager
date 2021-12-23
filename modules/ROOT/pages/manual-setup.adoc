@@ -5,7 +5,11 @@ endif::[]
 :imagesdir: ../assets/images/
 :page-aliases: set-up-domain.adoc, deploy-domain.adoc, control-panel.adoc, data-bridge.adoc
 
-To set up the latest version of Anypoint API Community Manager, use the xref:guided-setup.adoc[guided setup]. To set up previous versions manually, follow these steps.
+== Prerequisites
+
+To set up the latest version of Anypoint API Community Manager, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then use the xref:guided-setup.adoc[guided setup].
+
+To set up previous versions manually, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
 
 == Enable API Community Manager Control Panel
 
@@ -134,3 +138,6 @@ Give community users the Exchange viewer permission:
 . Click *Permissions* > *Add permissions* and add the permission *Exchange Viewer*.
 +
 When prompted, select all business groups with any assets that you want community users to be able to view.
+. Manually add the permission *Exchange Viewer* to any users who were invited before you created the team.
+
+After each user logs in to the community, the user is visible in Anypoint Platform.

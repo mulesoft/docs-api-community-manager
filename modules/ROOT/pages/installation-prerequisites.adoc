@@ -18,7 +18,9 @@ Set permissions and a role for your Salesforce API Community Manager organizatio
 This can be any role from the list, but cannot be none.
 +
 If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
-. Select *Salesforce CRM Content User*.
++
+If you create a role, enter a role name such as `Salesforce_ACM_org_admin_user`.
+. Enable the option *Salesforce CRM Content User*.
 . Click *Save*.
 
 == Verify API Community Manager Entitlement
@@ -26,7 +28,7 @@ If you don't see any roles in the list, refer to the Salesforce knowledge articl
 Verify API Community Manager entitlement for your Anypoint organization:
 
 . Log in to your Anypoint Platform organization.
-. Navigate to the correct URL for your cloud:
+. Choose the correct URL for your cloud and open the URL in your browser:
 +
 * US cloud: `+https://anypoint.mulesoft.com/accounts/api/profile+`
 * EU cloud: `+https://eu1.anypoint.mulesoft.com/accounts/api/profile+`
@@ -87,12 +89,11 @@ Configure external identity in your Anypoint organization:
 . Navigate to *Access Management* > *Identity Providers* > *SAML 2.0*.
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
-. Set *Issuer* to match the Salesforce account: `salesforce_org_domainname`.
+. Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
 . Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
 . Set *Audience* to match the *Entity Id* you set in the Salesforce account.
-. Select *Enable new non-SSO users*.
 . Click *Save*.
 
 == Next Steps
 
-After these prerequisite steps, continue to the installation steps.
+After these prerequisite steps, continue to the xref:install-acm.adoc[installation steps].

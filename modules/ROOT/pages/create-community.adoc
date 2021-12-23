@@ -119,7 +119,7 @@ To configure permissions for the member user profile so your members can access 
 . For *Profile Name*, enter `_Site Name_ Member User`.
 . Click *Save*.
 . In the *_Site Name_ Member User* profile page, click *Edit*.
-. In *Object Settings*, edit the object permissions to match those shown in the following table.
+. In *Object Settings*, edit the object permissions to match those shown in the <<member-user-perms>> table.
 . Click *Save*.
 . Return to the profile overview.
 . Click the link for *Apex Class Access*.
@@ -137,6 +137,9 @@ To configure permissions for the member user profile so your members can access 
 .. *acm_pkg.LightningSelfRegisterController*
 .. *acm_pkg.QueryApiController*
 . Click *Save*.
+
+[[member-user-perms]]
+=== Member User Permissions
 
 The following table shows the permissions for the member users.
 
@@ -187,7 +190,7 @@ To configure permissions for the guest user profile:
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In the *Guest user profile* section, click *_Site Name_ Profile*.
 . Click *Edit*.
-. In *Object Settings*, edit the object permissions to match those shown in the following table.
+. In *Object Settings*, edit the object permissions to match those shown in the <<guest-user-perms>> table.
 . Click *Save*.
 . Return to the profile overview.
 . Click the link for *Apex Class Access*.
@@ -205,6 +208,9 @@ To configure permissions for the guest user profile:
 .. *acm_pkg.LightningSelfRegisterController*
 .. *acm_pkg.QueryApiController*
 . Click *Save*.
+
+[[guest-user-perms]]
+=== Guest User Permissions
 
 The following table shows the permissions for the guest users.
 
