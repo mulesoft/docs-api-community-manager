@@ -12,60 +12,57 @@ To set up Anypoint API Community Manager with guided setup, complete the xref:in
 
 From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for *API Community Manager Guided Setup*.
 
-== Configure a Custom Subdomain
-
-API Community Manager uses a custom subdomain to connect securely to your Anypoint organization.
-
-This section of the guided setup helps you configure your subdomain, or displays the subdomain you have already configured.
-
 == Connect with Your Anypoint Organization
 
 To connect your API Community Manager instance to your Anypoint organization:
 
 . Select your organization's Anypoint management plane, which may be the US control plane, the EU control plane, the MuleSoft Government Cloud control plane, or another control plane.
-. Create a connected app in your Anypoint organization for Salesforce to use as a consumer system.
+. If your Anypoint Platform user has organization administrator credentials:
+.. If your user has multi-factor authentication enabled, open *Access Management* > *Users* > your user's page > *Settings* and enable *Exempt from MFA requirement*.
+.. Select *I have organization administrator credentials* and enter your Anypoint Platform username and password.
 +
-If your Anypoint account has the organization administrator role, the guided setup tool can create the connected app for you.
-+
-Otherwise, ask an organization administrator to create the connected app for you, or perform these steps:
-+
-.. Create a key pair in Salesforce for communication between Salesforce and Anypoint Platform:
-... Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
-... Set *Label/Name* to `Anypoint`.
-... Disable *Exportable Private Key*.
-... Set *Key Size* to 2048 or larger.
-... Click *Save*.
-... Click *Download Certificate* to save the public key on your local machine.
-.. Click *Access Management* > *Connected Apps* > *Create App*.
-.. Enter a name for the app.
-.. Enable *App acts on behalf of a user*.
-.. In the section *Grant types*, enable *JWT Bearer*.
-.. Copy the public key from the downloaded file and paste it into the public key text area.
-.. Verify that the public key certificate has this format:
+The system creates a certificate named `Anypoint` in Salesforce, creates a connected app in Anypoint Platform using the certificate, creates a named credential in Salesforce using the client ID from the Anypoint Platform connected app and the identity provider information, configures the external data source, and grants Exchange contributor permissions to the impersonated user from the Salesforce administrator.
+. If your Anypoint Platform user account does not have organization administrator credentials:
+.. Ask your organization administrator to use the following steps to create a connected app and give you the *Client ID* and *IDP ID*.
+.. Select *I don't have organization administrator credentials* and enter the *Client ID* and *IDP ID* from your organization administrator.
+
+== Create a Connected App
+
+To create a connected app if you are an organization administrator:
+
+. In Salesforce, create a key pair for communication between Salesforce and Anypoint Platform:
+.. Click *Setup* > *Security* > *Certificate and Key Management* > *Create Self-Signed Certificate*.
+.. Set *Label/Name* to `Anypoint`.
+.. Disable *Exportable Private Key*.
+.. Set *Key Size* to 2048 or larger.
+.. Click *Save*.
+.. Click *Download Certificate* to save the public key from the key pair to your local machine.
+. Click *Access Management* > *Connected Apps* > *Create App*.
+. Enter a name for the app.
+. Enable *App acts on behalf of a user*.
+. In the section *Grant types*, enable *JWT Bearer*.
+. Copy the public key from the downloaded file and paste it into the public key text area.
+. Verify that the public key certificate has this format:
 +
 ----
 -----BEGIN CERTIFICATE-----
 PUBLIC KEY
 -----END CERTIFICATE-----
 ----
-.. Set *Website URL* to `+https://login.salesforce.com+`.
-.. In the section *Redirect URIs*, add `+http://localhost+`, because connected apps require redirect URIs but this configuration does not use them.
-.. In the section *Who can use this application?*, select *Members of this organization only*.
-.. In the section *Scopes*, add *Background Access* and *Full Access*.
-.. Click *Save*.
-.. Copy the client ID.
-.. Do not copy the client secret, because this configuration uses the certificate instead.
-. Authenticate and authorize the connected app to access your Anypoint organization.
+. Set *Website URL* to `+https://login.salesforce.com+`.
+. In the section *Redirect URIs*, add `+http://localhost+`.
 +
-If your Anypoint account has the organization administrator role, provide your Anypoint Platform user and password, and the guided setup will create the app.
+Each connected app requires one or more redirect URIs, but this configuration does not use them.
+. In the section *Who can use this application?*, select *Members of this organization only*.
+. In the section *Scopes*, add *Background Access* and *Full Access*.
+. Click *Save*.
+. Copy the client ID.
 +
-Otherwise, provide these app details:
-+
-.. Set *Client ID* to the client ID from the connected app you created.
-.. To find the identity provider ID, run this request:
+Do not copy the client secret, because this configuration uses the certificate instead.
+. To find the identity provider ID, run this request:
 +
 ----
-curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/provider/users' \
+curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/identityProviders' \
 --header 'Authorization: Bearer <TOKEN>'
 ----
 +
@@ -77,8 +74,7 @@ In the response, find the line with the `provider_id`:
 "provider_id": "01234567-89ab-cdef-0123-456789abcdef",
 ----
 +
-.. Set *IDP ID* to this identity provider ID.
-.. Click *Connect* to authenticate and authorize the app to connect the API Community Manager organization with your Anypoint organization.
+. Copy this identity provider ID to use as the *IDP ID*.
 
 == Configure Users
 
