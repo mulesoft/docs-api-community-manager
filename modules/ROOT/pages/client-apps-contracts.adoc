@@ -16,7 +16,7 @@ The component allows a developer to select:
 * A service-level agreement (SLA) tier, if the selected API or API Group instance has SLA tiers defined in API Manager
 * A client application, either existing or new
 
-The community displays only API and API Group instances with xref:exchange::to-configure-api-settings.adoc[visibility set to public in Exchange].
+To display an API or API group instance in your site, either xref:exchange::to-configure-api-settings.adoc[set its visibility to public in Exchange], or open the API Community Manager control panel, and in the API curator, set the API or API group's instances visibility to *All instances*.
 
 When a consumer developer creates a new application, they can provide an additional description. If the API or API Group uses OAuth 2.0 authentication, the consumer developer can provide an OAuth 2.0 redirect URI.
 
