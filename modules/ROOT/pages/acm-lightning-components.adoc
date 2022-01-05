@@ -235,7 +235,7 @@ You can specify values for the following parameters of the API Engagement compon
 
 The API Header component displays the API header, including icon, name, contact email, and description.
 
-The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community]. The contact email is set in Exchange.
+The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community]. The contact email is set in Anypoint Exchange.
 
 You can specify values for the following parameters of the API Header:
 
