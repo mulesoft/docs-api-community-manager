@@ -27,25 +27,26 @@ Consumer developers follow these steps to self-register:
 
 == Approve and Activate Members
 
-. After a registration request is sent by the member, you will receive a notification email. To review and
-approve the member registration, navigate to the API Community Manager control panel.
-. Select *Manage Members*. This section provides the status of all consumer developer registration requests.
-. To activate the member and trigger a welcome email, select *Approve* and confirm the change.
+. After the consumer developer sends a registration request, you receive a notification email.
+. To review and approve the request, open the API Community Manager control panel and click *Member Management*.
+. Open the *Members* tab to view a searchable list of current members, with the option to disable and enable their accounts.
+. To deactivate a member, disable the *Active* setting for that member and confirm the change.
+. Open the *Pending members registration* tab to view a searchable list of requests for access.
 . To reject a registration request, select *Reject* and confirm the change.
++
+A user whose request is rejected cannot request registration again for 30 days. To undo a rejection by retrieving the rejected request, enable *Show rejected users* and click *Retrieve*.
+. To approve a request, select *Approve* and confirm the change.
 . After you approve a registration request, a welcome email is sent to the consumer developer.
 . To complete registration, the member must click an email verification link in the email and specify a new
-password. The consumer developer can then log in to your community.
+password.
++
+The consumer developer can then log in to your community.
 When the member's status is *Active*, additional options become available to the developer, such as *Forums*
 and *My Applications*.
-. (Optional) To deactivate a member, disable the *Active* setting for that member and confirm the change.
-
-Select the options menu to specify the number of registration requests to display on each page, and to *Show rejected users* or *Hide rejected users*.
 
 == Searching Members
 
-In the API Community Manager control panel, the *Manage Members* tab shows a *Search Members* field.
-
-Enter one or more terms into the search field. Search results are listed in *Members* and *Pending Member Registration Requests*.
+In the API Community Manager control panel, the *Member Management* tab shows a search bar. Enter one or more terms into the search field.
 
 You can filter search results with the following filter attributes:
 
@@ -59,9 +60,3 @@ such as `jsmith@company.com` and `sue.jones@ironsmith.com`.
 Search terms without a filter attribute only apply to member fields that are not filtered. For example, the
 search `userName:com Jones` shows members that include "com" in the "Username" field and "Jones" in any field
 other than "Username".
-
-== Refresh Member List
-
-In the API Community Manager control panel, the *Manage Members* tab shows a *Refresh* button.
-
-Use the *Refresh* button to refresh the member list without navigating away from the *Manage Members* tab.
