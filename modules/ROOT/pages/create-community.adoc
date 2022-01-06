@@ -106,7 +106,7 @@ After you create a community, you must create different user profiles for your c
 Configure the settings with one of these options:
 
 * Configure the member and guest user settings automatically using the default settings specified by the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
-* Configure the member and guest user settings manually using custom settings applied in a series of steps.
+* Configure the member and guest user settings manually using custom settings applied in the following steps.
 
 === Configure Member User Profile Permissions
 
@@ -258,7 +258,7 @@ These permissions reflect the current API Community Manager package version. If 
 Configure the settings with one of these options:
 
 * Configure sharing settings for members and guests automatically using the default settings specified by the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
-* Configure sharing settings for members and guests manually using custom settings applied in a series of steps.
+* Configure sharing settings for members and guests manually using custom settings applied in the following steps.
 
 Configure sharing settings for members:
 
@@ -312,7 +312,7 @@ These steps enable guests to register as members in your API Community Manager p
 Configure the settings with one of these options:
 
 * Configure user registration automatically using the default settings specified by the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
-* Configure user registration manually using custom settings applied in a series of steps.
+* Configure user registration manually using custom settings applied in the following steps.
 
 Assign a profile for your community members:
 
