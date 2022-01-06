@@ -52,3 +52,4 @@ To test and install each upgrade:
 == See Also
 
 * xref:update-acm.adoc[Upgrade API Community Manager]
+* https://videos.mulesoft.com/watch/RjG1iwDhtGNMgyLKmUrPDC[Creating Community Sandboxes]
