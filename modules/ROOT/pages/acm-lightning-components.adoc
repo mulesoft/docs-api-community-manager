@@ -335,6 +335,11 @@ You can specify values for the following parameters of the Login Form:
 *Self Register Label*:: Specifies the self-registration link label. Default is `Not a member?`.
 *Self Register URL*:: Specifies the self-registration link URL. Default is `/SelfRegister`.
 
+[[login-requester]]
+== Login Requester
+
+The Login Requester component notifies guest users that they must log in to access feedback and discussions activity in an API's user forums.
+
 [[self-register]]
 == Self Register
 
