@@ -7,7 +7,9 @@ endif::[]
 
 == Prerequisites
 
-To set up Anypoint API Community Manager manually, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
+To set up the latest version of Anypoint API Community Manager, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then use the xref:guided-setup.adoc[guided setup].
+
+To set up previous versions manually, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
 
 == Enable API Community Manager Control Panel
 
