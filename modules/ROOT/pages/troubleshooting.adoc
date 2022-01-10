@@ -129,7 +129,7 @@ If calling a real endpoint from the console shows an *Unauthorized Endpoint* err
 
 The console works in the user's browser and can call only trusted endpoint sites.
 
-Wildcards are not allowed, so you must specify all sub-domains used for real API endpoints, not just the main domain.
+Wildcards are not allowed. Specify the main domain and specify all sub-domains used for real API endpoints.
 
 == Incorrect or Missing Data for One API Version
 
