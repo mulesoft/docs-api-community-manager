@@ -1,0 +1,7 @@
+= API Community Manager Logical Architecture Diagram
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+The API Community Manager Logical architecture diagram shows the communication between the Anypoint Platform and API Community Manager on the Salesforce org.
