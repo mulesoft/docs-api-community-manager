@@ -48,6 +48,7 @@ The API page variation includes:
 *** The API's custom fields and their values (*API Custom Field Table* or *API Custom Field Pills* component)
 *** Links to download the API spec (*Spec Downloader* component)
 *** The button to request access (*API Access Requester* component)
+*** The number of likes and subscriptions for an API and enables users to like and subscribe to the API (*API Engagement* component)
 ** API group page variation
 +
 This page variation displays an API group when an API group object is opened from the *API Card*, *API Carousel*, or *API Catalog* components.
@@ -58,8 +59,9 @@ The API group page variation includes:
 *** The API group's markdown documentation from Exchange (*API Documentation Viewer* component)
 *** An API carousel displaying the APIs that are part of this API group (*API Carousel* component, with the *Show* setting configured for *Children*)
 *** The button to request access to the API group (*API Access Requester* component)
+*** The number of likes and subscriptions for an API and enables users to like and subscribe to the API (*API Engagement* component)
 +
-To configure this variation, see the section <<configure-api-group-page-variation>>.
+To configure this variation, see the section <<configure-api-group-page-variation>>
 * API marketing pages
 +
 These pages are optional. Each page displays content specific to an individual API or API group (*Rich Text* component or *HTML* component). Use one page for each API or API group as required. Each page is explicitly configured on the API or API group details in the community control panel as described in the *Publish APIs* page of the API Community Manager documentation.
@@ -74,7 +76,7 @@ Displays details about one client application (*Application Details* component).
 Displays components for discussion forums (*Feed* component).
 * Member profile page
 +
-Displays member profile information and allows the member to update their details (*User Profile* component).
+Displays member profile information and allows the member to update their details (*User Profile* component). The page also shows users their API subscriptions and provides the option to unsubscribe from each API (*User Settings and User Subscriptions* component).
 
 [[configure-api-group-page-variation]]
 == Configure the API Group Page Variation
