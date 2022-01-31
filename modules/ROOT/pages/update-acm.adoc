@@ -14,6 +14,22 @@ Because API Community Manager follows the standard support policy for MuleSoft c
 
 For information about upgrade notifications, see xref:notifications.adoc[important notifications].
 
+== Upgrading to Version 2.5.0
+
+After installing the package for version 2.5.0, follow these steps:
+
+. In each community, run the xref:diagnostics.adoc[diagnostics] and click "Fix all" to set permissions on all new objects.
+. To use the new API discussion forum feeds, enable feed tracking.
+.. In each community, open *Setup*, in *Quick Find* search for "Feed Tracking" and select it, select the *CommunityApi* object, enable the option *Enable Feed Tracking*, and *Save*.
+.. In the builder, in the *Feed* component set *Feed Type* to *Group or Record*, and in the *Feed Publisher* component set *Feed Type* to *Record*.
+.. To configure which users are visible to other users in the API discussion forum feeds, optionally enable portal user visibility, site user visibility, or both.
+... Optionally open *Setup* > *Sharing Settings* > *Organization-Wide Defaults* > *Edit* and enable *Portal User Visibility*.
++
+Portal user availability enables portal users in the same customer or partner portal account to see each other, regardless of the organization-wide defaults.
+... Optionally open *Setup* > *Sharing Settings* > *Organization-Wide Defaults* > *Edit* and enable *Site User Visibility*.
++
+Site user availability enables site users in the same site to see each other, regardless of the organization-wide defaults.
+
 == Upgrading to Version 2
 
 After you install an Anypoint API Community Manager upgrade, it is not possible to undo the installation

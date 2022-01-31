@@ -22,6 +22,10 @@ A community operator can also reply to new discussions and questions, review aud
 
 For more information about the Salesforce Experience Cloud forums and their moderation options, see the Salesforce documentation.
 
+== Nicknames
+
+To set the API forums to display each user's name and not their nickname, open the API Community Manager control panel, open *Shortcuts to applications* > *Site Administration* > *Preferences*, and disable *Show nicknames*.
+
 == See Also
 
 * Salesforce documentation: https://help.salesforce.com/articleView?id=networks_moderation_overview.htm&type=5[Experience Cloud Site Moderation Strategies and Tools, role=external, window=blank]

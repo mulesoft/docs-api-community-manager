@@ -221,12 +221,21 @@ You can specify values for the following parameters of the API Documentation Vie
 
 To link directly to a markdown page in this component, set the URL query paramter `selectedPage` to the exact name of the page. For example, if the page is named "Details", use a URL like this: `/communityapi/a003D000001pQpjQAE/basicapi?selectedPage=Details`. If `selectedPage` is defined both in the Community Builder for this component and in the URL, then the value in Community Builder is used and the value in the URL is ignored.
 
+[[api-engagement]]
+== API Engagement
+
+The API Engagement component shows the number of likes and subscriptions for an API and enables users to like and subscribe to the API.
+
+You can specify values for the following parameters of the API Engagement component:
+
+*Record Id*:: Specifies the API. Default is `{!recordId}`, which shows the instances of the API selected on the current page.
+
 [[api-header]]
 == API Header
 
-The API Header component displays the API header, including icon, name, and description.
+The API Header component displays the API header, including icon, name, contact email, and description.
 
-The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community].
+The API icon, name, and description shown are set in the API Community Manager control panel when you xref:publish-apis.adoc[add an API version to your community]. The contact email is set in Anypoint Exchange.
 
 You can specify values for the following parameters of the API Header:
 
@@ -326,6 +335,11 @@ You can specify values for the following parameters of the Login Form:
 *Self Register Label*:: Specifies the self-registration link label. Default is `Not a member?`.
 *Self Register URL*:: Specifies the self-registration link URL. Default is `/SelfRegister`.
 
+[[login-requester]]
+== Login Requester
+
+The Login Requester component notifies guest users that they must log in to access feedback and discussions activity in an API's user forums.
+
 [[self-register]]
 == Self Register
 
@@ -364,6 +378,16 @@ You can specify values for the following parameters of the Spec Downloader compo
 *Buttons Color Picker*:: Specifies the color of the buttons.
 *Download Spec Options*:: Specifies the download buttons to show: *Original Format*, *All* (default), *OAS3*, or *RAML*.
 *Show Export Message*:: Shows an icon next to the export button with a tooltip warning about possible inconsistencies when exporting an API specification to a different version.
+
+[[user-settings]]
+== User Settings
+
+The User Settings component enables users to configure notification settings and control what emails they receive.
+
+[[user-subscriptions]]
+== User Subscriptions
+
+The User Subscriptions component shows users their API subscriptions and the option to unsubscribe from each API.
 
 [[filter-conditions]]
 == Filter Conditions

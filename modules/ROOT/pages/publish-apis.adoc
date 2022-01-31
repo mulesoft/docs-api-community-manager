@@ -15,30 +15,28 @@ documentation updates, and the CMS article release process is usually separate.
 Often a development team will lead the API release process and a marketing team
 will lead the CMS article release process.
 
-== Add APIs or API Groups from Exchange to Your Site
+== Add Assets from Exchange to Your Site
 
-. Open the API Community Manager control panel and select *Manage APIs*.
+. Open the API Community Manager control panel and select *API Curator*.
 +
-From this tab, you can manage the APIs and API groups in your site, including their metadata and visibility.
+From this tab, you can manage the assets in your site, including their metadata and visibility. Assets include APIs and API groups.
 +
-* *APIs in this Community* shows the APIs and API groups that have been added to the community.
-* *APIs in Exchange* shows the APIs and API groups that exist in your Exchange organization but have not been added to the community.
-. Next to the API or API group name, click *Add to Community*.
-. Set the API or API group information, including visibility, name, icon, and description.
-
-== Set API or API Group Information
-
-The API or API Group editing page opens when you add an API or API Group to the site.
-
-To open the editing page again, next to the API or API Group name, click *Edit*.
-
-. Optionally, edit the *API Name*.
-. Select *Replace Icon* to set the API or API Group icon.
-. Enter a *Description* for the API or API Group.
-. Leave the *Visibility* of all versions as *Administrators only*, or set visibility for some versions to *None*, while you preview the API or API Group as described in the next section.
-. Optionally, add a link to more information on the API or API Group.
+* *Assets in Your Site* shows the assets that have been added to your site.
+* *Assets in Anypoint Exchange* shows the assets that exist in your Exchange organization but have not been added to your site.
+. Next to the asset name, click *Add*.
 +
-When your API or API Group is displayed on the community site in the API Carousel component or in an API card, by default it has a single *API Details* button. It can also have an optional *Learn more* button that links to a business content page. In the *Associated "Learn-more" Page* section, select *None* to keep the default, or select *Custom page* and set the *Custom page URL* to a business content page created in Community Builder.
+Alternatively, select multiple assets and click *Add to your site*.
+. Set the asset information: name, icon, description, and visibility of APIs on your site, and the visibility of the instances in each API.
+
+== Set Asset Information
+
+The asset editing page opens when you add an asset to the site.
+
+To open the editing page again, next to the asset name, click the pencil shaped edit icon.
+
+. Optionally, edit the *Asset Name*, *Asset Icon*, and *Description*.
+. Set *Instances visibility* to *Only Public* so your site will show only public instances of the asset, or *All instances* to show public and private instances.
+. Use *Manage visibility* to set the visibility of all versions as *Administrators only*, or set visibility for some versions to *None*, while you preview the API or API Group as described in the next section.
 . Select *Apply*.
 
 == Preview APIs
@@ -55,16 +53,16 @@ If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh t
 
 == Make API Versions Visible
 
-. In the API Community Manager control panel, click *Manage APIs*.
-. Click *Edit* next to the API or API Group name.
-. For each version, set *Visibility* to *Everyone* if you want it to be publicly available, *Members only* if you want it to be seen only by logged-in members, or *None* if you do not want that version to be visible.
+. In the API Community Manager control panel, click *API Curator*.
+. Click the edit icon next to the asset name.
+. For each version, set *Manage visibility* to *Everyone* if you want it to be publicly available, *Members only* if you want it to be seen only by logged-in members, or *None* if you do not want that version to be visible.
 +
 At least one version must be visible by having an option other than *None*.
 . Select *Apply*.
 
-Consumer developers can now see this API or API Group in the API carousel on the community site.
+Consumer developers can now see this asset in the API carousel on the community site.
 
-On the *Manage APIs* tab, the *Visibility* column shows the visibility of the most visible version of that API or API Group.
+On the *API Curator* tab, the *Visibility* column shows the visibility of the most visible version of that asset.
 
 == Minor API Updates
 
@@ -113,14 +111,14 @@ The previous API version remains in all communities where it was published witho
 
 The API Community Manager community administrator must then review and publish the changes:
 
-. In the API Community Manager control panel, select *Manage APIs*.
+. In the API Community Manager control panel, select *API Curator*.
 +
-The API is still listed in *APIs in this Community*. The new version has visibility *None*.
-. Next to the API, click *Edit*.
+The API is still listed in *Assets in Your Site*. The new version has visibility *None*.
+. Next to the API name, click the edit icon.
 . Change the visibility to *Administrators only*.
 . Preview the API.
-. In the API Community Manager control panel, select *Manage APIs*.
-. Next to the API, click *Edit*.
+. In the API Community Manager control panel, select *API Curator*.
+. Next to the API name, click the edit icon.
 . Change the visibility of the new version from *Administrators only* to *Everyone* if you want it to be publicly available, *Members only* if you want it to be seen only by logged-in members, or *None* if you do not want that version to be visible.
 +
 If the visibility is *Everyone* or *Members only*, then consumer developers can now see the new API version in the API carousel on the community site.
@@ -129,13 +127,9 @@ If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh t
 
 == Searching for APIs and API Groups
 
-In the API Community Manager control panel, the *Manage APIs* tab shows a *Search APIs* field.
+In the API Community Manager control panel, the *API Curator* tab's *Assets in Your Site* tab shows a filter icon and a search bar. The filter icon opens a menu to filter assets by asset type, visibility, and category.
 
-The tab shows a maximum of 100 results, followed by a message if additional results were omitted. Use the search field to filter the APIs so that no relevant API is omitted.
-
-Enter one or more terms into the search field. Search results are listed in *APIs in This Community* and *APIs in Exchange*.
-
-You can filter search results with the following filter attributes:
+You can filter search results in the search bar with the following filter attributes:
 
 * `name`
 * `version`
@@ -150,3 +144,7 @@ as "Order Status API" or "Received Orders".
 Search terms without a filter attribute only apply to API fields that are not filtered. For example, the
 search `businessGroup:Sales banking` shows APIs that include "Sales" in the "Business Group" field and
 "banking" in any field other than "Business Group".
+
+The *API Curator* tab's *Assets in Anypoint Exchange* tab shows a search bar and filter options for asset type, category, business group, and status. The asset status filter shows only assets that were recently created or recently updated.
+
+The tabs show a maximum of 100 results, followed by a message if additional results were omitted. Use the search field to filter the APIs so that no relevant API is omitted.
