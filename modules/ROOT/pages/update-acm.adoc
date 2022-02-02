@@ -29,6 +29,12 @@ Portal user availability enables portal users in the same customer or partner po
 ... Optionally open *Setup* > *Sharing Settings* > *Organization-Wide Defaults* > *Edit* and enable *Site User Visibility*.
 +
 Site user availability enables site users in the same site to see each other, regardless of the organization-wide defaults.
+. Manually update the administrator profile.
+.. Click *Setup* > *Profiles* > *System Admin* > *Apex Class Access*, add *ApiCuratorController* to enable *Apex Classes*, and *Save*. 
+.. Add the new Member Management tab to Api Curator.
+.. Click *Interface Setup* > *User Management Settings* > *Disable Enhanced Profile User Interface*, change the *User Management Settings*, and disable the *Enhanced Profile User*.
+.. Click *Setup* > *Profiles* > *Edit*, scroll to *Custom Tab Settings* > *Member Management* > *Default On*, and *Save*.
+.. Click *Interface Setup* > *User Management Settings* > *Disable Enhanced Profile User Interface* and enable *Enhanced Profile User*.
 
 == Upgrading to Version 2
 
