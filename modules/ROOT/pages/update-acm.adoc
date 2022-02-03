@@ -18,7 +18,7 @@ For information about upgrade notifications, see xref:notifications.adoc[importa
 
 After installing the package for version 2.5.0, follow these steps:
 
-. Manuall update the administrator profile.
+. Manually update the administrator profile.
 .. Click *Setup* > *Profiles* > *System Admin* > *Apex Class Access*, add *ApiCuratorController* to enable *Apex Classes*, and *Save*. 
 .. Add the new Member Management tab to Api Curator.
 .. Click *Interface Setup* > *User Management Settings* > *Disable Enhanced Profile User Interface*, change the *User Management Settings*, and disable the *Enhanced Profile User*.
