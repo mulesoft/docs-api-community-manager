@@ -18,6 +18,12 @@ For information about upgrade notifications, see xref:notifications.adoc[importa
 
 After installing the package for version 2.5.0, follow these steps:
 
+. Manuall update the administrator profile.
+.. Click *Setup* > *Profiles* > *System Admin* > *Apex Class Access*, add *ApiCuratorController* to enable *Apex Classes*, and *Save*. 
+.. Add the new Member Management tab to Api Curator.
+.. Click *Interface Setup* > *User Management Settings* > *Disable Enhanced Profile User Interface*, change the *User Management Settings*, and disable the *Enhanced Profile User*.
+.. Click *Setup* > *Profiles* > *Edit*, scroll to *Custom Tab Settings* > *Member Management* > *Default On*, and *Save*.
+.. Click *Interface Setup* > *User Management Settings* > and enable *Enhanced Profile User Interface*.
 . In each community, run the xref:diagnostics.adoc[diagnostics] and click "Fix all" to set permissions on all new objects.
 . To use the new API discussion forum feeds, enable feed tracking.
 .. In each community, open *Setup*, in *Quick Find* search for "Feed Tracking" and select it, select the *CommunityApi* object, enable the option *Enable Feed Tracking*, and *Save*.
