@@ -16,7 +16,7 @@ For information about upgrade notifications, see xref:notifications.adoc[importa
 
 == Upgrading to Version 2.5.0
 
-after installing the package for version 2.5.0, follow these steps:
+After installing the package for version 2.5.0, follow these steps:
 
 . Manually update the administrator profile.
 .. Click *Setup* > *Profiles* > *System Admin* > *Apex Class Access*, add *ApiCuratorController* to enable *Apex Classes*, and *Save*. 
