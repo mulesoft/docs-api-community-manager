@@ -57,7 +57,7 @@ These configuration options work only for the default API Community Manager conf
 * *Account owner role*
 * *Account visibility*
 
-If a new community was created but not published, when diagnostics *Fix All* is run for the member user, the *Default Page* for the *Login and Registration* pages will display and not the *Experience Builder Page*.
+If a community was created but not published, when diagnostics *Fix All* is run for the member user, the *Default Page* for the *Login and Registration* pages will display and not the *Experience Builder Page*.
 
 After the items from *Community profile* through *Account created* are configured
 , fix the diagnostics for the *Account assigned*:
