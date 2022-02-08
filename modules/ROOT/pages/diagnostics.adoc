@@ -63,7 +63,7 @@ After the items from *Community profile* through *Account created* are configure
 
 . In the diagnostics page, next to the *Member User* item *Account assigned*, click *Assign*.
 . From *Administration Community* > *Accounts*, click the search icon, enter the name of the community, and click *GO!*.
-. From the search results, select the community name. The account name is the community name + account, for example, MyCommunityName Account.
+. From the search results, select the community name from the list of account names, which are displayed in the format MyCommunityName Account.
 . The *Login and Registration* page shows the community account in the *Accounts* field.
 . From the top, right of the community page, click the refresh icon. The *Experience Builder Page* is set for *Login Page Type* and *Registration Page Type* fields.
 . Fix the remaining items in the *Member User* list.
