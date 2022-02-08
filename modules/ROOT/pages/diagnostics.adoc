@@ -59,8 +59,7 @@ These configuration options work only for the default API Community Manager conf
 
 If a community is created but not published, when diagnostics *Fix All* is run for the member user, the *Default Page* for the *Login and Registration* pages displays instead of the *Experience Builder Page*.
 
-After the items from *Community profile* through *Account created* are configured
-, fix the diagnostics for the *Account assigned*:
+After the items from *Community profile* through *Account created* are configured, fix the diagnostics for the *Account assigned*:
 
 . In the diagnostics page, next to the *Member User* item *Account assigned*, click *Assign*.
 . From the *Administration Community* > *Accounts*, click the search icon, enter the name of the community, and click *GO!*.
