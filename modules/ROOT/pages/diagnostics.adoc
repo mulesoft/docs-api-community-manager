@@ -66,5 +66,5 @@ After the items from *Community profile* through *Account created* are configure
 . From the *Administration Community* > *Accounts*, click the search icon, enter the name of the community, and click *GO!*.
 . From the search results, select the community name 
 . The *Login and Registration* page shows the community account in the *Accounts* field.
-. From the top, right of the community page, click the refresh icon. The *Experience Builder Page* is set for *Login Page Type*, *Forgot Password*, and *Registration Page Type* fields.
+. From the top, right of the community page, click the refresh icon. The *Experience Builder Page* is set for *Login Page Type* and *Registration Page Type* fields.
 . Fix the remaining items in the *Member User* list.
