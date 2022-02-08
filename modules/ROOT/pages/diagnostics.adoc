@@ -57,14 +57,15 @@ These configuration options work only for the default API Community Manager conf
 * *Account owner role*
 * *Account visibility*
 
-After the items from *Community profile* through *Account created* are correctly configured, assign the Salesforce account manually:
+If a community is created but not published, when diagnostics *Fix All* is run for the member user, the *Default Page* for the *Login and Registration* pages displays instead of the *Experience Builder Page*.
 
-. In the control panel, click *Community Administration* > *Login & Registration*.
-. Scroll to the section *Registration Page Configuration*.
-. Enable *Allow customers and partners to self-register*.
-. Set *Registration Page Type* to *Default Page*.
-. Select your community's member user as the value for *Profile*.
-. Enter your community's Salesforce account name as the value for *Account*.
-. Click *Save*.
-. In the diagnostics page, next to the *Member User* item *Account assigned*, click *Assign* to verify that the account is assigned correctly.
-. Fix the remaining items in the list.
+After the items from *Community profile* through *Account created* are configured, fix the diagnostics for the *Account assigned*:
+
+. In the diagnostics page, next to the *Member User* item *Account assigned*, click *Assign*.
+. From *Administration Community* > *Accounts*, click the search icon, enter the name of the community, and click *GO!*.
+. From the search results, select the community name from the list of account names, which are displayed in the format MyCommunityName Account.
+. The *Login and Registration* page shows the community account in the *Accounts* field.
+. From the top right of the community page, click the refresh icon.
++
+The *Experience Builder Page* is set for *Login Page Type* and *Registration Page Type* fields.
+. Fix the remaining items in the *Member User* list.
