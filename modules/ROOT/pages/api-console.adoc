@@ -66,7 +66,7 @@ If an *API Console* navigation item such as an API endpoint or method has a long
 
 To link directly to an endpoint or type in this component, set the URL query paramters `method`, `path`, or `type`. `method` must be in lower case. `type` is case sensitive. If `method` and `path` are defined and exist in the API definition, then navigation will open there regardless of the `type` parameter. If `method` or `path` is not defined and `type` is defined and exists in the API definition, then navigation will open at the specified `type`. Examples:
 
-* `communityapi/a003D000001pQpjQAE/basicapi?method=get&path=/users/{id}`
+* `communityapi/a003D000001pQpjQAE/basicapi?method=get&path=/users/\{id}`
 * `communityapi/a003D000001pQpjQAE/basicapi?type=Users`
 
 == API Console Documentation
