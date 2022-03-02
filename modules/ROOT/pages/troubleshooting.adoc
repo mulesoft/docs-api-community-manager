@@ -161,7 +161,7 @@ Validating and synchronizing the external data source generates duplicate extern
 
 == Missing Feature Error
 
-If you receive a `Missing feaure` error when you install Anypoint API Community Manager, ensure that digital experiences (previously known as _communities_) are enabled in your API Community Manager Salesforce organization.
+If you receive a `Missing feature` error when you install Anypoint API Community Manager, ensure that digital experiences (previously known as _communities_) are enabled in your API Community Manager Salesforce organization.
 
 The error looks similar to this:
 
