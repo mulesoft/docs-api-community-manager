@@ -53,7 +53,7 @@ The default is 1800 and the minimum is 300.
         acm_pkg__.AnypointEmailNotifications.notifyOnContractUpdates(events);
     }
 ----
-. To promote the code from sandbox to production using change sets, follow the steps in https://help.mulesoft.com/s/article/Promoting-branded-emails-trigger-code-from-Sandbox-to-Production-copy[Promoting branded emails trigger code from sandbox to production]
+. To promote the code from sandbox to production using change sets, follow the steps in https://help.mulesoft.com/s/article/Promoting-branded-emails-trigger-code-from-Sandbox-to-Production-copy[Promoting branded emails trigger code from sandbox to production].
 
 === Configure Branded Email Metadata
 
