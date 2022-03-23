@@ -101,12 +101,12 @@ The JSON Web Token (JWT) authentication mechanism creates Anypoint user records 
 . Log in to your API community as an administrative user.
 . In *Access Management*, click *Users*.
 . Click the impersonated Anypoint user with the email address of the Salesforce administrator.
-. Add the Organization Administrator role to the user on each organization and suborganizations.
+. Add the Organization Administrator role to the user on each organization and suborganization.
 . Click *Permissions*, click *API Manager*, and for each environment, open the permissions list and enable the *Manage Contracts* permission.
 . In the public side of the community, request access to an API with manual approval.
 . Log in to Anypoint and approve the requested API contract.
 +
 This creates the Anypoint user named *Automated Process*, which works with the Salesforce user named *Automated Process* to process triggers.
-. Grant the Anypoint user named *Automated Process* the *Organization Administrator* role in the Main Organization xref:access-management::roles.adoc[using Anypoint Access Management].
+. Grant the Anypoint user named *Automated Process* the *Organization Administrator* role in the main Organization xref:access-management::roles.adoc[using Anypoint Access Management].
 +
 This enables the Anypoint user to process API contract events when API contracts are approved or revoked.
