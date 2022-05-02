@@ -53,7 +53,7 @@ If an *API Console* navigation item such as an API endpoint or method has a long
 . In the section *Head Markup*, click *Edit Head Markup*.
 . Insert this code:
 +
-[source,css]
+[source,html]
 ----
 <style>
     api-navigation {
