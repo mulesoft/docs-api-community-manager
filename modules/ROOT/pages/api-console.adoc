@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-The interactive API Console component shows information about your APIs and their methods, and enables users to test the methods by sending requests.
+The interactive API Console component shows information about your REST APIs and their methods, and enables users to test the methods by sending requests.
 
 Endpoints are displayed in alphabetical order.
 
