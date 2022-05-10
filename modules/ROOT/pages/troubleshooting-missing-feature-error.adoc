@@ -1,0 +1,20 @@
+= Missing Feature Error
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+If you receive a `Missing feature` error when you install Anypoint API Community Manager, ensure that digital experiences (previously known as _communities_) are enabled in your API Community Manager Salesforce organization.
+
+The error looks similar to the following issues:
+
+----
+1. Lightning Community Themes(communityThemeDefinitions/acm_template.communityThemeDefinition) Missing feature
+Installing this package requires the following feature and its associated permissions: Lightning Community Themes
+2. Lightning Community Templates(communityTemplateDefinitions/NTO.communityTemplateDefinition) Missing feature
+Installing this package requires the following feature and its associated permissions: Lightning Community Templates
+3. Navigation Link Sets(navigationMenus/acm_template_Nav0.navigationMenu) Missing feature
+Installing this package requires the following feature and its associated permissions: Navigation Link Sets
+----
+
+To fix this error, follow the installation prerequisite steps in the section xref:installation-prerequisites.adoc#set-up-a-domain-with-enabled-communities[Set Up a Domain with Enabled Communities].
