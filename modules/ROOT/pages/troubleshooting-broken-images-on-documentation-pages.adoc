@@ -1,0 +1,25 @@
+= Broken Images on Documentation Pages
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+
+If your community shows a broken image on an API documentation page, and the image displays correctly on the API documentation page in Exchange, follow these steps:
+
+. Images uploaded to Exchange with the markdown editor are stored in Exchange.
+. If the image is stored in Exchange, make the Exchange API version asset public so the image can be rendered in your community.
+. If the image is stored on a web location outside Exchange, such as S3 or Dropbox:
+.. Open Salesforce setup.
+.. Open your community's content security policy (CSP) trusted sites list.
+.. Ensure that the list includes the image site domain.
+.. Because some file-sharing services resolve URLs through multiple redirects, ensure that the list includes the domain of the final URL.
+
+To learn if any content in any component or page of the community is blocked by the content security policy:
+
+. Open the API Community Manager control panel.
+. Click *Community Builder*.
+. Click *Preview*.
+. Open the page that contains the content.
+
+To inspect the URLs the browser loads when rendering a community page, use the browser developer tools.

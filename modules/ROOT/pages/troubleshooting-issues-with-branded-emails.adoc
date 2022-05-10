@@ -1,11 +1,11 @@
-= Branded Emails 
+= Issues with Branded Emails 
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
 
-When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. The following information includes symptoms and troubleshooting steps for troubleshooting branded emails..
+When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. The following information includes symptoms and troubleshooting steps for troubleshooting branded emails.
 
 == Data Capture Process Fails
 

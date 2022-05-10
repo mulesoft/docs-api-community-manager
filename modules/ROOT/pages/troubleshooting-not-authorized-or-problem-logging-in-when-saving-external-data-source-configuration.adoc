@@ -1,0 +1,51 @@
+= Not Authorized or Problem Logging In Error When Saving External Data Source Configuration
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+If saving the external data source configuration shows one of the errors "Not authorized" or "Problem Logging In - No_Oauth_State: State was not sent back", follow these steps:
+
+. Ensure that the connected app domain is the right domain of the Salesforce organization.
+. Open Salesforce setup.
+. Open the authentication providers configuration.
+. Click the name of the Anypoint Platform authentication provider and ensure that it has these settings from the correct connected app in Anypoint Platform:
+.. Ensure that the consumer key and consumer secret match the connected app in Anypoint Platform.
+.. Ensure that the authorize endpoint URL, token endpoint URL, and default scopes are configured as described in xref:manual-setup.adoc[Manual Setup].
+.. Ensure that the test-only initialization URL, OAuth-only initialization URL, callback URL, and single logout URL match the correct domain of your Salesforce organization.
+.. Ensure that your connected app in Anypoint Platform has the same domain as your Salesforce organization in its `redirect_uri` setting, a client ID and client secret that match those in Salesforce, and correct scopes.
+
+To view details of the connected app, examine the UI or make this API call:
+
+----
+curl -X GET 'https://anypoint.mulesoft.com/accounts/api/connectedApplications/' \
+   -H "Content-Type: application/json" \
+   -H "authorization: bearer XXXXXXXXX"
+----
+
+This call returns a response like this:
+
+---- 
+{
+"client_id": "5fafXXXXXXXXXXXXXXXXXXXXXXXX29c9",
+"client_secret": "9509XXXXXXXXXXXXXXXXXXXXXXXXC10E",
+"client_name": "ACM Integration Client",
+"redirect_uris": [
+  "https://YourOrgDomain.my.salesforce.com/services/authcallback/Anypoint"
+],
+"grant_types": [
+  "authorization_code",
+  "refresh_token"
+],
+"public_keys": [],
+"scopes": [
+  "offline_access",
+  "full"
+],
+"enabled": true,
+"owner_org_id": "f377XXXX-XXXX-XXXX-XXXX-XXXXXXXX9d08",
+"as_id": "anypoint"
+}
+----
+
+"YourOrgDomain" is replaced by your organization domain.

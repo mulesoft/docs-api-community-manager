@@ -1,0 +1,8 @@
+= Duplicated External Objects
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+
+Validating and synchronizing the external data source generates duplicate external objects that will not be used. Delete these new objects.

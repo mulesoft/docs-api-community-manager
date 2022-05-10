@@ -1,0 +1,14 @@
+= Changes to APIs Are Not Displaying
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+
+If changes made to APIs are not visible right after you make them, you can refresh the cache to see them:
+
+. Log in to your Salesforce organization.
+. In *Setup*, click *Platform Cache*.
+. Click the `ACMCache` partition.
+. If the caches are in use, then the *Clear Cache* button is displayed.
+. Click *Clear Cache*.

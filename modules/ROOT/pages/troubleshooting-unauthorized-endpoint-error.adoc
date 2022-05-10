@@ -1,0 +1,13 @@
+= Unauthorized Endpoint Error
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+If calling a real endpoint from the console shows an *Unauthorized Endpoint* error:
+
+. Open Salesforce setup.
+. Open your community's content security policy (CSP) trusted sites list.
+. Ensure that the list includes the endpoint site domain.
+
+The console works in the user's browser and can call only trusted endpoint sites.

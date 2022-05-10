@@ -1,0 +1,12 @@
+= Console Mocking Service Not Loading
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+If the console shows a spinning icon and never loads the mocking service:
+
+. Open Salesforce setup.
+. Open the *Named Credentials* configuration.
+. Ensure that the Anypoint Platform credentials for the data bridge are configured as described in xref:manual-setup.adoc[Manual Setup].
+. Ensure that the mocking service uses HTTPS.
