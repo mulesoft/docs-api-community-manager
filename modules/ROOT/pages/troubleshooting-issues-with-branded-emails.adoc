@@ -5,11 +5,11 @@ endif::[]
 :imagesdir: ../assets/images/
 
 
-When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. The following information includes symptoms and troubleshooting steps for troubleshooting branded emails.
+ The following information includes symptoms and steps for troubleshooting branded emails.
 
 == Data Capture Process Fails
 
-If the data capture process job fails, Salesforce stops the polling. In some cases, the solution is for the administrator to resume the data capture process, but first check the status of the data capture process.
+When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. If the data capture process job fails, Salesforce stops the polling. In some cases, the solution is for the administrator to resume the data capture process, but first check the status of the data capture process.
 
 *Check the status of the data capture process*
 
