@@ -145,7 +145,7 @@ If guest users do not see published API versions that have been set to be visibl
 . Open the sharing rules.
 . Ensure that the sharing rule for the object `CommunityApi` matches your community name exactly, including spacing and letter case.
 
-== Refresh the Cache
+== Chanages to APIs Are Not Displaying
 
 If changes made to APIs are not visible right after you make them, you can refresh the cache to see them:
 
@@ -163,7 +163,7 @@ Validating and synchronizing the external data source generates duplicate extern
 
 If you receive a `Missing feature` error when you install Anypoint API Community Manager, ensure that digital experiences (previously known as _communities_) are enabled in your API Community Manager Salesforce organization.
 
-The error looks similar to this:
+The error looks similar to the following issues:
 
 ----
 1. Lightning Community Themes(communityThemeDefinitions/acm_template.communityThemeDefinition) Missing feature
@@ -182,15 +182,15 @@ If you cannot see the fields in the login component, xref:diagnostics.adoc[run t
 
 == Troubleshooting Branded Emails
 
-When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. The following information includes symptoms and troubleshooting steps for troubleshooting branded emails..
+ The following information includes symptoms and troubleshooting steps for branded emails.
 
 === Data Capture Process Fails
 
-If the data capture process job fails, Salesforce stops the polling. In some cases, the solution is for the administrator to resume the data capture process, but first check the status of the data capture process.
+When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. If the data capture process job fails, Salesforce stops the polling. In some cases, the solution is for the administrator to resume the data capture process, but first check the status of the data capture process.
 
 *Check the status of the data capture process*
 
-A symptom that the data capture process failed is the status of the job execution can be *Waiting*  To check the status of the data capture process, execute the following SOQL in the developer console:
+A symptom that the data capture process failed is the status of the job execution can be *Waiting*. To check the status of the data capture process, execute the following SOQL code in the developer console:
 
 ----
 SELECT Id, Name, SubmittedAt, StartedAt, FinishedAt, ProcessAfter, Status, Error
@@ -201,7 +201,7 @@ The following symptoms may occur when the status of data capture process is *Wai
 
 === Not Receiving Emails
 
-API Community Manager sends notification emails when an API contract is approved or revoked. If you are not receiving emails, follow the steps for reviewing user and automated process permissions.
+API Community Manager sends notification emails when an API contract is approved or revoked. If you are not receiving emails, follow the steps for reviewing the user and automated process permissions.
 
 *Review user permissions*
 
