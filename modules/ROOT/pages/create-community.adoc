@@ -134,7 +134,7 @@ To manually assign a new user to the permission set for access to the external o
 [[guest-user-perms]]
 === Configure Guest User Permission Set
 
-The permission for the guest user must be assigned to the *ACM Guest User* permission set so your guests can access APIs and manage their details. 
+The permission for the guest user must be assigned to the *ACM Guest User* permission set so your guests can access API information. 
 
 You can use the API Community Diagnostics or manually set the guest user profile to the *ACM Guest User* permission set.
 
