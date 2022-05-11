@@ -139,7 +139,7 @@ You can use the API Community Diagnostics or manually set the guest user profile
 
 To manually assign the guest user to the permission set for access to the external objects and Apex classes:
 . Go to the guest profile and search for the assigned user.
-. Assign the *ACM Guest User* to the *Community Guest User.
+. Assign the *ACM Guest User* to the *Community Guest User*.
 
 
 == Configure Sharing Settings
