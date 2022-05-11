@@ -114,7 +114,7 @@ API Community Manager uses the following permission sets to define the visibilit
 * ACM Guest User
 * ACM Member User
 
-The guest user can not create client applications. 
+The guest user cannot create client applications. 
 
 For more information about using permission sets, see https://help.salesforce.com/s/articleView?id=sf.perm_sets_overview.htm&type=5[Permission Sets].
 
