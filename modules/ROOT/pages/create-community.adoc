@@ -101,7 +101,7 @@ To verify that Salesforce CRM Content is enabled:
 
 == Configure Profiles and Permissions
 
-After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, must be created to control access to and visibility of APIs and content.
+After you create a community, you must create different user profiles for your community _members_ (signed in) and _guests_, so that you can control access to and visibility of APIs and content.
 
 Configure the settings with one of these options:
 
