@@ -108,7 +108,7 @@ Configure the settings with one of these options:
 * Configure the member and guest user settings automatically using the default settings specified by the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
 * Configure the member and guest user settings manually using custom settings applied in the following steps.
 
-API Community Manager uses the following permission sets to define the visibility and access to external objects and Apex classes. 
+API Community Manager uses the following permission sets to define the visibility of external objects and Apex classes and access to these entities. 
 
 * ACM Admin User
 * ACM Guest User
