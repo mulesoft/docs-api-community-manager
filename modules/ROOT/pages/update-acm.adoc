@@ -28,7 +28,7 @@ As part of the API Community Manager package, member user profiles are assigned 
 
 For custom profiles, you must update to the permission set after each release is installed. Mulesoft recommends that you assign the permission sets to those custom profiles to avoid manual updates. After the new package is installed, the custom profiles are assigned to the permission sets automatically.
 
-If you want to create an new user, you must use the API Community Diagnostics or manually set the user profile to the corresponding permission set. 
+To create a new user, you must use the API Community Diagnostics or manually set the user profile to the corresponding permission set. 
 
 == Upgrading to Version 2.5.0
 
