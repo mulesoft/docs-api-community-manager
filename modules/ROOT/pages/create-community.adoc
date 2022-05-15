@@ -108,150 +108,39 @@ Configure the settings with one of these options:
 * Configure the member and guest user settings automatically using the default settings specified by the *Fix* buttons in the xref:diagnostics.adoc#user-access-tab[API Community Manager diagnostics user access tab].
 * Configure the member and guest user settings manually using custom settings applied in the following steps.
 
-=== Configure Member User Profile Permissions
+API Community Manager uses the following permission sets to define the visibility of external objects and Apex classes and access to these entities. 
 
-To configure permissions for the member user profile so your members can access APIs, create client applications, and manage their details:
+* ACM Admin User
+* ACM Guest User
+* ACM Member User
 
-. Open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
-. In *Setup*, search for *Users* using the *Quick Find* box and click *Profiles*.
-. Click the *Customer Community Plus User* profile.
-. Click *Clone*.
-. For *Profile Name*, enter `_Site Name_ Member User`.
-. Click *Save*.
-. In the *_Site Name_ Member User* profile page, click *Edit*.
-. In *Object Settings*, edit the object permissions to match those shown in the <<member-user-perms>> table.
-. Click *Save*.
-. Return to the profile overview.
-. Click the link for *Apex Class Access*.
-. Click *Edit*.
-. Select these classes in the list and click *Add* to make them accessible:
-.. *acm_pkg.AcmSearch*
-.. *acm_pkg.AnypointApiAnalyticsController*
-.. *acm_pkg.ApiAccessRequester*
-.. *acm_pkg.ApiPortalController*
-.. *acm_pkg.ApiVersionHeader*
-.. *acm_pkg.CustomFieldsViewerController*
-.. *acm_pkg.FineGrainVisibility*
-.. *acm_pkg.LightningForgotPasswordController*
-.. *acm_pkg.LightningLoginFormController*
-.. *acm_pkg.LightningSelfRegisterController*
-.. *acm_pkg.QueryApiController*
-. Click *Save*.
 
-[[member-user-perms]]
-=== Member User Permissions
+For more information about using permission sets, see https://help.salesforce.com/s/articleView?id=sf.perm_sets_overview.htm&type=5[Permission Sets].
 
-The following table shows the permissions for the member users.
+=== Configure Member User Permission Set 
 
-All field permissions apply to all fields.
+The permission for the member user must be assigned to the *ACM Member User* permission set so your members can access APIs, create client applications, and manage their details. 
 
-These permissions reflect the current API Community Manager package version. If you are using an older version, your member user profile might have only some of these permissions objects. Set the objects in your member user profile to match the table, and ignore objects that are not in your member user profile.
+As part of the API Community Manager package, the member user is assigned automatically. After the package is installed, a trigger searches for users with a Customer Community Profile and assigns the member users to the *ACM Member User* permission set.  
 
-[cols="2,3,3",options=header,width="100%",frame="topbot"]
-|===
-|Object |Required Object Permissions |Required Field Permissions
-|AnypointApiCategories |*Read* |*Read Access*
-|AnypointApiFiles |*Read* |*Read Access*
-|AnypointApiGroupInstances |*Read* |*Read Access*
-|AnypointApiGroupInstancesApiInstances |*Read* |*Read Access*
-|AnypointApiGroupTierLimits |*Read* |*Read Access*
-|AnypointApiGroupTiers |*Read* |*Read Access*
-|AnypointApiGroupVersions |*Read* |*Read Access*
-|AnypointApiInstances |*Read* |*Read Access*
-|AnypointApiPages |*Read* |*Read Access*
-|AnypointApiTierLimits |*Read* |*Read Access*
-|AnypointApiTiers |*Read* |*Read Access*
-|AnypointApiVersionQueries |*Read* |*Read Access*
-|AnypointApiVersions |*Read* |*Read Access*
-|AnypointApplicationOwners |*Read* |*Read Access*
-|AnypointApplications |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
-|AnypointAssetCategories |*Read* |*Read Access*
-|AnypointAssetCustomFields |*Read* |*Read Access*
-|AnypointAssets |*Read* |*Read Access*
-|AnypointAssetVersions |*Read* |*Read Access*
-|AnypointCategories |*Read* |*Read Access*
-|AnypointClientProviders |*Read* |*Read Access*
-|AnypointContracts |*Read*, *Create*, *Edit*, *Delete* |*Read Access*, *Edit Access*
-|AnypointCustomFields |*Read* |*Read Access*
-|AnypointEnvironments |*Read* |*Read Access*
-|AnypointGrantTypes |*Read* |*Read Access*
-|AnypointOrganizations |*Read* |*Read Access*
-|Cases |*Read* |*Read Access*
-|CommunityApis |*Read* |*Read Access*
-|CommunityAssetVersions |*Read* |*Read Access*
-|Documents |*Read* |*Read Access*
-|===
+To create a new user, you must use the API Community Diagnostics or manually set the member user profile to the *ACM Member User* permission set.
 
-=== Configure Guest User Profile Permissions
+To manually assign a new user to the permission set for access to the external objects and Apex classes:
+. Go to the member profile and search for the assigned user.
+. Assign the *ACM Guest User* to the *Community Guest User*.
 
-To configure permissions for the guest user profile:
-
-. Open *Setup* > *User Management Settings* and ensure that *Enhanced Profile User Interface* is enabled.
-. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
-. In the *Guest user profile* section, click *_Site Name_ Profile*.
-. Click *Edit*.
-. In *Object Settings*, edit the object permissions to match those shown in the <<guest-user-perms>> table.
-. Click *Save*.
-. Return to the profile overview.
-. Click the link for *Apex Class Access*.
-. Click *Edit*.
-. Select these classes in the list and click *Add* to make them accessible:
-.. *acm_pkg.AcmSearch*
-.. *acm_pkg.AnypointApiAnalyticsController*
-.. *acm_pkg.ApiAccessRequester*
-.. *acm_pkg.ApiPortalController*
-.. *acm_pkg.ApiVersionHeader*
-.. *acm_pkg.CustomFieldsViewerController*
-.. *acm_pkg.FineGrainVisibility*
-.. *acm_pkg.LightningForgotPasswordController*
-.. *acm_pkg.LightningLoginFormController*
-.. *acm_pkg.LightningSelfRegisterController*
-.. *acm_pkg.QueryApiController*
-. Click *Save*.
 
 [[guest-user-perms]]
-=== Guest User Permissions
+=== Configure Guest User Permission Set
 
-The following table shows the permissions for the guest users.
+The permission for the guest user must be assigned to the *ACM Guest User* permission set so your guests can access API information. 
 
-All field permissions apply to all fields.
+You can use the API Community Diagnostics or manually set the guest user profile to the *ACM Guest User* permission set.
 
-These permissions reflect the current API Community Manager package version. If you are using an older version, your guest user profile might have only some of these permissions objects. Set the objects in your guest user profile to match the table, and ignore objects that are not in your guest user profile.
+To manually assign the guest user to the permission set for access to the external objects and Apex classes:
+. Go to the guest profile and search for the assigned user.
+. Assign the *ACM Guest User* to the *Community Guest User*.
 
-[cols="2,3,3",options=header,width="100%",frame="topbot"]
-|===
-|Object |Required Object Permissions |Required Field Permissions
-|AnypointApiCategories |*Read* |*Read Access*
-|AnypointApiFiles |*Read* |*Read Access*
-|AnypointApiGroupInstances |*Read* |*Read Access*
-|AnypointApiGroupInstancesApiInstances |*Read* |*Read Access*
-|AnypointApiGroupTierLimits |*Read* |*Read Access*
-|AnypointApiGroupTiers |*Read* |*Read Access*
-|AnypointApiGroupVersions |*Read* |*Read Access*
-|AnypointApiInstances |*Read* |*Read Access*
-|AnypointApiPages |*Read* |*Read Access*
-|AnypointApiTierLimits |*Read* |*Read Access*
-|AnypointApiTiers |*Read* |*Read Access*
-|AnypointApiVersionQueries |*Read* |*Read Access*
-|AnypointApiVersions |*Read* |*Read Access*
-|AnypointApplicationOwners |*Read* |*Read Access*
-|AnypointApplications |*Read* |*Read Access*
-|AnypointAssetCategories |*Read* |*Read Access*
-|AnypointAssetCustomFields |*Read* |*Read Access*
-|AnypointAssets |*Read* |*Read Access*
-|AnypointAssetVersions |*Read* |*Read Access*
-|AnypointCategories |*Read* |*Read Access*
-|AnypointClientProviders |*Read* |*Read Access*
-|AnypointContracts |*Read* |*Read Access*
-|AnypointCustomFields |*Read* |*Read Access*
-|AnypointEnvironments |*Read* |*Read Access*
-|AnypointGrantTypes |*Read* |*Read Access*
-|AnypointOrganizations |*Read* |*Read Access*
-|CommunityApis |*Read* |*Read Access*
-|CommunityAssetVersions |*Read* |*Read Access*
-|Documents |*Read* |*Read Access*
-|SelfRegisterUserRequests |*Read*, *Create* |*Read Access*, *Edit Access*
-|===
 
 == Configure Sharing Settings
 

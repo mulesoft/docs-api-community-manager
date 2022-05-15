@@ -14,6 +14,22 @@ Because API Community Manager follows the standard support policy for MuleSoft c
 
 For information about upgrade notifications, see xref:notifications.adoc[important notifications].
 
+== Upgrading to Version 2.7.0
+
+Instead of using user profiles, API Community Manager now uses the following permission sets to define the visibility and access to external objects and Apex classes. 
+
+* ACM Admin User
+* ACM Guest User
+* ACM Member User
+
+For more information about using permission sets, see https://help.salesforce.com/s/articleView?id=sf.perm_sets_overview.htm&type=5[Permission Sets].
+
+As part of the API Community Manager package, member user profiles are assigned to permission sets automatically. After the package is installed, a trigger searches for users with a Customer Community Profile and assigns the users to the *ACM Member User* permission set. For guest users, you must assign the *ACM Guest User* permission set using the API Community Manager Diagnostics or by manually adding the guest user profile to the permission set. 
+
+For custom profiles, you must update to the permission set after each release is installed. To avoid manual updates, assign the permission sets to custom profiles. After the new package is installed, the custom profiles are assigned to the permission sets automatically.
+
+To create a new user, you must use the API Community Diagnostics or manually set the user profile to the corresponding permission set. 
+
 == Upgrading to Version 2.5.0
 
 After installing the package for version 2.5.0, follow these steps:
