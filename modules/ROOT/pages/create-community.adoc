@@ -117,7 +117,7 @@ API Community Manager uses the following permission sets to define the visibilit
 
 For more information about using permission sets, see https://help.salesforce.com/s/articleView?id=sf.perm_sets_overview.htm&type=5[Permission Sets].
 
-=== Configure Member User Permission Set 
+=== Configure Member User Permission Sets 
 
 The permission for the member user must be assigned to the *ACM Member User* permission set so your members can access APIs, create client applications, and manage their details. 
 
@@ -126,18 +126,20 @@ As part of the API Community Manager package, the member user is assigned automa
 To create a new user, you must use the API Community Diagnostics or manually set the member user profile to the *ACM Member User* permission set.
 
 To manually assign a new user to the permission set for access to the external objects and Apex classes:
+
 . Go to the member profile and search for the assigned user.
 . Assign the *ACM Guest User* to the *Community Guest User*.
 
 
 [[guest-user-perms]]
-=== Configure Guest User Permission Set
+=== Configure Guest User Permission Sets
 
 The permission for the guest user must be assigned to the *ACM Guest User* permission set so your guests can access API information. 
 
 You can use the API Community Diagnostics or manually set the guest user profile to the *ACM Guest User* permission set.
 
 To manually assign the guest user to the permission set for access to the external objects and Apex classes:
+
 . Go to the guest profile and search for the assigned user.
 . Assign the *ACM Guest User* to the *Community Guest User*.
 
