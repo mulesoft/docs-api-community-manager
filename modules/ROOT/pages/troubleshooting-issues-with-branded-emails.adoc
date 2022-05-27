@@ -5,38 +5,50 @@ endif::[]
 :imagesdir: ../assets/images/
 
 
- The following information includes symptoms and steps for troubleshooting branded emails.
+ Anypoint API Community Manager sends notification emails when an API contract is approved or revoked. By default, these emails use Anypoint platform addresses and branding.
+ 
+ The following information includes symptoms and instructions for troubleshooting branded emails.
 
 == Data Capture Process Fails
 
-When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. If the data capture process job fails, Salesforce stops the polling. In some cases, the solution is for the administrator to resume the data capture process, but first check the status of the data capture process.
+When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. If the data capture process job fails, Salesforce stops the polling. 
 
-*Check the status of the data capture process*
+Check the status of the data capture process to confirm that the change data capture failed.
 
-A symptom that the data capture process failed is the status of the job execution can be *Waiting*  To check the status of the data capture process, execute the following SOQL in the developer console:
+To check the status, execute the following SOQL in the Developer Console:
 
 ----
 SELECT Id, Name, SubmittedAt, StartedAt, FinishedAt, ProcessAfter, Status, Error
 FROM BackgroundOperation WHERE Name = 'acm_pkg__AnypointContracts__x' ORDER by SubmittedAt DESC LIMIT 15
 ----
 
-The following symptoms may occur when the status of data capture process is *Waiting*.
+To resolve this error, the administrator should resume the data capture process.
 
 == Not Receiving Emails
 
-API Community Manager sends notification emails when an API contract is approved or revoked. If you are not receiving emails, follow the steps for reviewing the user and automated process permissions.
+API Community Manager sends notification emails when an API contract is approved or revoked. A common issue occurs when the user who set up the change data capture is not an organization administrator. The user must be an organizational administrator of the master organization to view all available applications and contracts in the organization. It is possible to receive no errors using SOQL since the job step could end successfully, but contract updates are not returned. 
 
-*Review user permissions*
+The first step of the change data capture job is to retrieve all available contracts with updates. The trigger that is set as part of the branded emails configuration runs if there are contract updates. If the trigger is not executed by the same user as the change data capture, Salesforce uses a user named Automated Process. This user is created in Anypoint the first time that the user tries to use the ACM Community Bridge. As result, you do not receive email notifications.
 
-Ensure that Anypoint user corresponds to the Salesforce administrator that set up the change data capture is an *organization administrator of the master organization*. A common issue is that the user who set up the change data capture is not an organization administrator. This user must be an *organization administrator* of the *master organization* to to view all of the available applications and contracts in the organization. See xref:branded-emails.adoc#configure-data-change-capture[Configure Data Change Capture].
+To resolve this issue, follow these steps:
 
-There are no errors using SOQL since the job step could end successfully but no contract updates are not returned.
+. To determine if the apex trigger is running, use the following code to add a log in the apex trigger from the Developer Console: 
++
+----
+trigger AnypointEmailNotificationsTrigger on acm_pkg__AnypointContracts__ChangeEvent (after insert) {
+    System.debug('AnypointEmailNotificationsTrigger is running :)');
+    List<acm_pkg__AnypointContracts__ChangeEvent> events = Trigger.new;
+    acm_pkg__.AnypointEmailNotifications.notifyOnContractUpdates(events);
+}
+----
 
-*Review automated process permissions*
+. In Anypoint, add the organization administrator role to the user that was used to set up the change data capture.
+. Create a test application and request API access to any available API instance in Exchange.
+. From *Access Management* search for the *Automated Process* user and assign the *organization administrator* role in the *master organization*.
+. From *API Manager*, revoke the test contract previously created to generate changes in the change data capture process. 
+. Wait for the next change data capture to occur.
 
-The first step in the change data capture job is to retrieve all of the available contracts with updates. Then, the trigger that is set as part of the branded emails configuration runs when there are contract updates. The trigger is not executed by the same user as the change data capture. In this case, Salesforce uses a user named *Automated Process* and this user is created in Anypoint the first time the user tries to use the ACM Community Bridge. 
-
-If the change data capture did not receive the contract associated with the request API access action after adding the Organization Administrator role in Anypoint for the user who set up the change data capture and you created a test applicationof previous step 3. The problem now is that the moment that the “Automated Process” tries to get the contract/application information from Anypoint inside the apex trigger, it will fail since it doesn’t have permission to see all contracts/applications of the organization. So go to Access Management in the Anypoint Platform again, search for the “Automated Process” user and assign the *organization administrator role in the master organization*.
+See the Optionally Configure Branded Emails topic for complete instructions to set up branded emails.
 
 == Change Data Capture Process Displays Errors
 
@@ -46,42 +58,32 @@ An unexpected error occurred while getting contracts in the ACM Community Bridge
 Problem querying for changes. An error occurred while connecting to the external system. Please try again, or contact your administrator.
 ----
  
-To resolve, restart the change data capture process by removing and adding again the AnypointContracts entity from *Setup > Integrations > Change Data Capture*. Ensure that you save before adding the entity again.
+To resolve this error:
+
+. Restart the change data capture process by removing the AnypointContracts entity from *Setup > Integrations > Change Data Capture*. 
+. Click *Save*.
+. Add the AnypointContracts entity from *Setup > Integrations > Change Data Capture* again.
+. Click *Save*. 
 
 == Timeout Error is Too Long or OData Query Result is Too Large
 
-If you receive any of the following errors, your organization might have too many client applications or contracts. This causes a timeout to occur because the amount of time that the ACM Community Bridge takes to get this information is greater than the Salesforce timeout of less than two minutes. 
+If you receive any of the following errors, your organization might have too many client applications or contracts. Having more than 2000 applications and contracts causes a timeout. The timeout occurs because the amount of time that the ACM Community Bridge takes to get this information is greater than the Salesforce timeout of less than two minutes. 
 
 ---- 
 Error is too long
+
 Problem querying for changes. The OData query result was too large, so the external data didn't load. If the error persists, contact Salesforce Customer Support.
+
 Problem querying for changes. The remote operation timed out. Try again later. If the error persists, contact Salesforce Customer Support.
 ----
 
-To resolve, check the number of applications that your organization contains using the following curl command with a token from an organization administrator of the master organization. Replace MASTER_ORGANIZATION_ID with your organization ID.
+To resolve these errors:
 
+. Use the following curl command with a token from an organization administrator of the master organization to check the number of applications that your organization contains.
++
 ----
 curl --location --request GET "https://anypoint.mulesoft.com/apiplatform/repository/v2/organizations/${MASTER_ORGANIZATION_ID}/applications?targetAdminSite=true" --header "Authorization: bearer ${TOKEN}"
 ----
 
-Check the number of applications that your organization has using the following curl command with a token from an organization administrator of the master organization. Replace MASTER_ORGANIZATION_ID with your organization ID. There is an issue if the amount of applications is greater than 2000.
-
-API Community Manager currently limits the amount of applications and contracts contracts because of the way API Manager serves this information. 
-
-To resolve the timeout error:
-
-. To view which contracts have changed in the last X number of minutes, do the following:
-
-.. To get ALL available applications of the master organization (one API call per page of 250 applications, use the following command:
-+
----- 
-GET https://anypoint.mulesoft.com/apiplatform/repository/v2/organizations/${MASTER_ORGANIZATION_ID}/applications?targetAdminSite=true
-----
-.. To get all the contracts associated with each application (one API call per application), use the following command:
-+
-----
-GET https://anypoint.mulesoft.com/apiplatform/repository/v2/organizations/${MASTER_ORGANIZATION_ID}/applications/${APP_ID}/contracts
-----
-. Filter contracts by memory according to the delta token windows (last  5 minutes).
-
-. Delete the unnecessary applications. 
+. Replace MASTER_ORGANIZATION_ID with your organization ID. 
+. If there are more than 2000 applications, delete any unnecessary applications. 
