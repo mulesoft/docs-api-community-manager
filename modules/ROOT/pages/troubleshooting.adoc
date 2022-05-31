@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-If you encounter errors while you are using Anypoint API Community Manager, refer to these explanations and instructions for recovery.
+If you encounter errors while you are using API Community Manager, refer to these explanations and instructions for recovery.
 
 * xref:troubleshooting-approved-members-not-created-or-emailed.adoc[Approved Members Not Created or Emailed]
 * xref:troubleshooting-broken-images-on-documentation-pages.adoc[Broken Images on Documentation Pages]
