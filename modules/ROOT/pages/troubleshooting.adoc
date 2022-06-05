@@ -13,7 +13,6 @@ If you encounter errors while you are using API Community Manager, refer to thes
 * xref:troubleshooting-duplicate-external-objects.adoc[Duplicate External Objects]
 * xref:troubleshooting-empty-login-page.adoc[Empty Login Page]
 * xref:troubleshooting-error-when-creating-new-community-from-template.adoc[Error When Creating New Community from Template]
-* xref:troubleshooting-guest-user-not-seeing-published-api-versions.adoc[Guest User Not Seeing Published API Versions]
 * xref:troubleshooting-incorrect-or-missing-data-for-one-api-version.adoc[Incorrect or Missing Data for One API Version]
 * xref:troubleshooting-issues-with-branded-emails.adoc[Issues with Branded Emails] 
 * xref:troubleshooting-missing-feature-error.adoc[Missing Feature Error]
