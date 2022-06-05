@@ -17,5 +17,4 @@ If you encounter errors while you are using API Community Manager, refer to thes
 * xref:troubleshooting-issues-with-branded-emails.adoc[Issues with Branded Emails] 
 * xref:troubleshooting-missing-feature-error.adoc[Missing Feature Error]
 * xref:troubleshooting-missing-request-access-button.adoc[Missing Request Access Button]
-* xref:troubleshooting-not-authorized-or-problem-logging-in-when-saving-external-data-source-configuration.adoc[Not Authorized or Problem Logging In When Saving External Data Source Configuration]
 * xref:troubleshooting-unauthorized-endpoint-error.adoc[Unauthorized Endpoint Error]
