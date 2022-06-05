@@ -5,4 +5,4 @@ endif::[]
 :imagesdir: ../assets/images/
 
 
-Validating and synchronizing the external data source generates duplicate external objects that will not be used. Delete these new objects.
+Validating and synchronizing the external data source generates duplicate external objects that will not be used because API Community Manager uses the objects inside the package. Delete these new objects.
