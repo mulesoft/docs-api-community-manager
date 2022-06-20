@@ -32,7 +32,7 @@ The first step of the change data capture job is to retrieve all available contr
 
 To resolve this issue, follow these steps:
 
-. To determine if the apex trigger is running, use the following code to add a log in the apex trigger from the Developer Console: 
+. To determine if the Apex trigger is running, use the following code to add a log in the Apex trigger from the Developer Console: 
 +
 ----
 trigger AnypointEmailNotificationsTrigger on acm_pkg__AnypointContracts__ChangeEvent (after insert) {
