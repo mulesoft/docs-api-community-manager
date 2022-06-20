@@ -44,7 +44,7 @@ trigger AnypointEmailNotificationsTrigger on acm_pkg__AnypointContracts__ChangeE
 
 . In Anypoint, add the organization administrator role to the user that was used to set up the change data capture.
 . Create a test application and request API access to any available API instance in Exchange.
-. From *Access Management* search for the *Automated Process* user and assign the *organization administrator* role in the *master organization*.
+. From *Access Management*, search for the *Automated Process* user and assign the *organization administrator* role in the *master organization*.
 . From *API Manager*, revoke the test contract previously created to generate changes in the change data capture process. 
 . Wait for the next change data capture to occur.
 
@@ -52,7 +52,7 @@ See the Optionally Configure Branded Emails topic for complete instructions to s
 
 == Change Data Capture Process Displays Errors
 
-An unexpected error occurred while getting contracts in the ACM Community Bridge. For example, an internal Anypoint service is unavailable due to an outage. 
+An unexpected error occurs when getting contracts in the ACM Community Bridge. For example, an internal Anypoint service is unavailable due to an outage. 
 
 ----
 Problem querying for changes. An error occurred while connecting to the external system. Please try again, or contact your administrator.
@@ -60,9 +60,9 @@ Problem querying for changes. An error occurred while connecting to the external
  
 To resolve this error:
 
-. Restart the change data capture process by removing the AnypointContracts entity from *Setup > Integrations > Change Data Capture*. 
+. Restart the change data capture process by removing the `AnypointContracts`` entity from *Setup > Integrations > Change Data Capture*. 
 . Click *Save*.
-. Add the AnypointContracts entity from *Setup > Integrations > Change Data Capture* again.
+. Add the `AnypointContracts` entity from *Setup > Integrations > Change Data Capture* again.
 . Click *Save*. 
 
 == Timeout Error is Too Long or OData Query Result is Too Large
@@ -85,5 +85,5 @@ To resolve these errors:
 curl --location --request GET "https://anypoint.mulesoft.com/apiplatform/repository/v2/organizations/${MASTER_ORGANIZATION_ID}/applications?targetAdminSite=true" --header "Authorization: bearer ${TOKEN}"
 ----
 
-. Replace MASTER_ORGANIZATION_ID with your organization ID. 
+. Replace `MASTER_ORGANIZATION_ID` with your organization ID. 
 . If there are more than 2000 applications, delete any unnecessary applications. 
