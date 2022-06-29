@@ -1,5 +1,5 @@
 name: api-community-manager
 title: API Community Manager
-version: master
+version: ~
 nav:
 - modules/ROOT/nav.adoc
