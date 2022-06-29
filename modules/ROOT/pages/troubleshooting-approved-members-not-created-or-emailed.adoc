@@ -7,7 +7,7 @@ endif::[]
 
 If your Winter '20 Salesforce organization has the member approval workflow active, and approving a member and refreshing the screen removes the member from the list without creating the new user or sending the new user email, either set the approver's language to `English` or add the approver's language.
 
-To set the approver's language to English, configure the approver user in the `SelfRegister` component and set the locale to `English``.
+To set the approver's language to English, configure the approver user in the `SelfRegister` component and set the locale to `English`.
 
 To add the approver's language:
 
