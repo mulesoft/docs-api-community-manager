@@ -11,7 +11,7 @@ endif::[]
 
 == Data Capture Process Fails
 
-When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. If the data capture process job fails, Salesforce stops the polling. 
+When the change data capture is enabled, Salesforce starts polling the ACM Community Bridge for contract updates. If the data capture process job fails, Salesforce stops polling. 
 
 Check the status of the data capture process to confirm that the change data capture failed.
 
@@ -28,7 +28,7 @@ To resolve this error, the administrator should resume the data capture process.
 
 API Community Manager sends notification emails when an API contract is approved or revoked. A common issue occurs when the user who set up the change data capture is not an organization administrator. The user must be an organizational administrator of the master organization to view all available applications and contracts in the organization. It is possible to receive no errors using SOQL since the job step could end successfully, but contract updates are not returned. 
 
-The first step of the change data capture job is to retrieve all available contracts with updates. The trigger that is set as part of the branded emails configuration runs if there are contract updates. If the trigger is not executed by the same user as the change data capture, Salesforce uses a user named Automated Process. This user is created in Anypoint the first time that the user tries to use the ACM Community Bridge. As result, you do not receive email notifications.
+The first step of the change data capture job is to retrieve all available contracts with updates. The trigger that is set as part of the branded emails configuration runs if there are contract updates. If the trigger is not executed by the same user as the change data capture, Salesforce uses a user named Automated Process. This user is created in Anypoint Platform the first time that the user tries to use the ACM Community Bridge. As result, no email notifications are received.
 
 To resolve this issue, follow these steps:
 
@@ -48,7 +48,7 @@ trigger AnypointEmailNotificationsTrigger on acm_pkg__AnypointContracts__ChangeE
 . From *API Manager*, revoke the test contract previously created to generate changes in the change data capture process. 
 . Wait for the next change data capture to occur.
 
-See the Optionally Configure Branded Emails topic for complete instructions to set up branded emails.
+See the xref:branded-emails.adoc[Optionally Configure Branded Emails] topic for complete instructions to set up branded emails.
 
 == Change Data Capture Process Displays Errors
 
