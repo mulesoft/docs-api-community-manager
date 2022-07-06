@@ -1,0 +1,12 @@
+= Guest Users Not Seeing Published API Versions
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+
+If guest users do not see published API versions that have been set to be visible for everyone:
+
+. Open Salesforce setup.
+. Open the sharing rules.
+. Ensure that the sharing rule for the object `CommunityApi` matches your community name exactly, including spacing and letter case.

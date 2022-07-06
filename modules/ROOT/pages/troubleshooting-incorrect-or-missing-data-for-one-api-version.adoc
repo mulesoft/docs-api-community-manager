@@ -1,0 +1,15 @@
+= Incorrect or Missing Data for One API Version
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+
+If a single API version has documentation or console components with incorrect or missing data:
+
+. Open the API Community Manager control panel.
+. Edit the API version.
+. Click *View asset in Exchange*.
+. Ensure that the API version in API Community Manager points to the correct API version in Exchange.
+. Ensure that the API version in Exchange is published and not in draft mode.
+

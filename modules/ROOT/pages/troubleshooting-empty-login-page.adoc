@@ -1,0 +1,8 @@
+= Empty Login Page
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+
+If you cannot see the fields in the login component, xref:diagnostics.adoc[run the diagnostics tool] for the guest user in that Salesforce digital experience site.
