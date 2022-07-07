@@ -5,9 +5,9 @@ endif::[]
 :imagesdir: ../assets/images/
 
 
- Anypoint API Community Manager sends notification emails when an API contract is approved or revoked. By default, these emails use Anypoint platform addresses and branding.
+Anypoint API Community Manager sends notification emails when an API contract is approved or revoked. By default, these emails use Anypoint platform addresses and branding.
  
- The following information includes symptoms and instructions for troubleshooting branded emails.
+	The following information includes symptoms and instructions for troubleshooting branded emails.
 
 == Data Capture Process Fails
 
