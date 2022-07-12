@@ -43,7 +43,7 @@
 ** xref:troubleshooting-broken-images-on-documentation-pages.adoc[Broken Images on Documentation Pages]
 ** xref:troubleshooting-changes-to-apis-are-not-displaying.adoc[Changes to APIs Are Not Displaying]
 ** xref:troubleshooting-console-mocking-service-not-loading.adoc[Console Mocking Service Not Loading]
-** xref:troubleshooting-duplicate-external-objects.adoc[Duplicate External Objects]
+** xref:troubleshooting-duplicated-external-objects.adoc[Duplicate External Objects]
 ** xref:troubleshooting-empty-login-page.adoc[Empty Login Page]
 ** xref:troubleshooting-error-when-creating-new-community-from-template.adoc[Error When Creating New Community from Template]
 ** xref:troubleshooting-incorrect-or-missing-data-for-one-api-version.adoc[Incorrect or Missing Data for One API Version]
