@@ -1,0 +1,7 @@
+= Cannot Create Applications When Application Limit is Reached
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+This issue can occur if the maximum number of 10,0000 client applications is reached. To resolve this issue, check for inactive client applications and revoke access. If you have a significant number of inactive client applications, contact your customer success partner.
