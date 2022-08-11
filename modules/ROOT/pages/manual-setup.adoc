@@ -5,11 +5,13 @@ endif::[]
 :imagesdir: ../assets/images/
 :page-aliases: set-up-domain.adoc, deploy-domain.adoc, control-panel.adoc, data-bridge.adoc
 
+If you have multiple identity providers in your organization, follow the manual setup instructions.
+
 == Prerequisites
 
 To set up the latest version of Anypoint API Community Manager, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then use the xref:guided-setup.adoc[guided setup].
 
-To set up previous versions manually, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
+To set up previous versions manually, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then perform the following steps.
 
 == Enable API Community Manager Control Panel
 
@@ -89,16 +91,29 @@ The following instructions use URLs for the US cloud that begin with `+https://a
 . Set *Issuer* to the client ID of the connected app you saved previously.
 . Set *Per User Subject* to one of the following formulas.
 +
-The guided setup uses a slightly different formula in the `IDP_ISSUER` field, but either formula works.
+The guided setup uses a slightly different formula in the `IDP_ID` field, but either formula works.
 +
-.. If you are using an identity provider with SAML:
+** If you are using an identity provider with SAML:
 +
-Replace `IDP_ISSUER` with the issuer from your IdP configuration. Replace `IDP_AUDIENCE` with the audience from your IdP configuration.
+.. To find the identity provider ID, run this request:
 +
-`"IDP_ISSUER:IDP_AUDIENCE|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
-.. If you are using an identity provider with OpenID Connect:
+`curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/identityProviders' \
+--header 'Authorization: Bearer <TOKEN>'`
++ 
+.. Replace `<YOUR_ORG_ID>` with your organization ID and replace `<TOKEN>` with your token.
+In the response, find the line with the provider_id:
 +
-Replace `ORGANIZATION_ID` with the organization ID from your Anypoint account.
+`"provider_id": "01234567-89ab-cdef-0123-456789abcdef",`
+
++
+.. Replace `IDP_ID` with the identity provider ID.
++
+`"v2|IDP_ID|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
++
+For example:
++
+`"v2|83685668-9e8a-49c2-9d9a-7a7c89391cce|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
+** If you are using an identity provider with OpenID Connect, replace `ORGANIZATION_ID` with the organization ID from your Anypoint account.
 +
 `"openid-ORGANIZATION_ID|" &  $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
 . Set *Audiences* to `+https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token+`.
