@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-This issue can occur when the guided setup fails to create the data bridge between Anypoint and API Community Manager when an organization has multiple identity providers. During setup, an API request is sent to obtain the identity provider ID and to check if it matches the ID that is entered. When there are more than one identity providers, only the first identity provider ID from the response is read, which might not match.
+If an organization has multiple identity providers, this issue can occur when the guided setup fails to create the data bridge between Anypoint and API Community Manager. During setup, an API request is sent to obtain the identity provider ID and to check if it matches the ID that is entered. When there are more than one identity providers, only the first identity provider ID from the response is read, which might not match.
 
 Resolve this issue by changing the identity provider ID:
 
