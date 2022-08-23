@@ -5,9 +5,9 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-This page provides instructions for setting up API Community Manager using the guided setup option.
+Use the guided setup to setup API Community Manager.
 
-If you have multiple identity providers in your organization, follow the instructions in xref:manual.setup.adoc[Manual Setup].
+If you have multiple identity providers in your organization, follow the instructions in xref:manual-setup.adoc[Manual Setup].
 
 == Prerequisites
 
