@@ -10,6 +10,7 @@ If you encounter errors while you are using API Community Manager, refer to thes
 * xref:troubleshooting-broken-images-on-documentation-pages.adoc[Broken Images on Documentation Pages]
 * xref:troubleshooting-cannot-create-applications-when-application-limit-is-reached.adoc[Cannot Create Applications When Application Limit is Reached]
 * xref:troubleshooting-changes-to-apis-are-not-displaying.adoc[Changes to APIs Are Not Displaying]
+* xref:troubleshooting-connection-not-established.adoc[Connection Not Established]
 * xref:troubleshooting-console-mocking-service-not-loading.adoc[Console Mocking Service Not Loading]
 * xref:troubleshooting-duplicated-external-objects.adoc[Duplicate External Objects]
 * xref:troubleshooting-empty-login-page.adoc[Empty Login Page]
