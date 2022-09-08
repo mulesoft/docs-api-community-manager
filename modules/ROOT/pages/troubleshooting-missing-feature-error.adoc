@@ -17,4 +17,4 @@ Installing this package requires the following feature and its associated permis
 Installing this package requires the following feature and its associated permissions: Navigation Link Sets
 ----
 
-To fix this error, follow the installation prerequisite steps in the section xref:installation-prerequisites.adoc#set-up-a-domain-with-enabled-communities[Set Up a Domain with Enabled Communities].   
+To fix this error, follow the installation prerequisite steps in xref:https://help.salesforce.com/s/articleView?id=sf.networks_enable.htm&type=5[Enable Digital Experience].   
