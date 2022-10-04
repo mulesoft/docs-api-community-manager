@@ -245,8 +245,15 @@ You can specify values for the following parameters of the API Header:
 *API Group Learn More Button Label*:: Specifies the button label for API groups. Default is *Learn More about this API Group*.
 *Show API Access Requester*:: Shows the API access requester.
 *Show API Version*:: Shows the asset version from Exchange when only one version is visible.
+*Show Contact Email*:: Shows the contact email from Exchange.
 
 When more than one version of the asset is visible, the API Header component displays a version selector and the *Show API Version* checkbox has no effect.
+
+To show the email contact:
+
+. Open *Setup* > *Custom Metadata Type* > *ACM General Configuration Metadata* > *Manage Records*.
+. Check *Show Contact Email*.
+. Click *Save*.
 
 [[application-analytics-graph]]
 == Application Analytics Graph
