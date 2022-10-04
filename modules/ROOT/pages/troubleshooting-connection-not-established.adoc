@@ -1,0 +1,32 @@
+= Connection Not Established
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+If an organization has multiple identity providers, the guided setup can fail to create the data bridge between Anypoint and API Community Manager. During setup, an API request is sent to obtain the identity provider ID and to check if it matches the ID that is entered. When there are more than one identity providers, only the first identity provider ID from the response is read, which might not match the ID that was entered.
+
+Resolve this issue by changing the identity provider ID:
+
+. To find the identity provider ID, run this request:
++
+`curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/<YOUR_ORG_ID>/identityProviders' \ --header 'Authorization: Bearer <TOKEN>'`
+
+. Replace `<YOUR_ORG_ID>` with your organization ID and replace `<TOKEN>` with your token. 
+
+. In the response, find the line with the provider_id:
++
+`"provider_id": "01234567-89ab-cdef-0123-456789abcdef",`  
+
+. In Salesforce, go to *Setup* > *Security* > *Named Credentials* and click *Anypoint*.
+. Change the formula to the following:
++
+`"v2|IDP_ID|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
++
+. Replace `IDP_ID`` with the identity provider ID.
++
+For example:
++
+`"v2|83685668-9e8a-49c2-9d9a-7a7c89391cce|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
+
+

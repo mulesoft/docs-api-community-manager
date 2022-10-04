@@ -1,0 +1,9 @@
+= Error When Creating a New Community from a Template
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+If creating a new community from a template shows the error `An unexpected error occurred,Try again or contact your Salesforce administrator for help`, compile all Apex classes: open *Setup* > *Custom Code* > *Apex Classes* and click *Compile all classes*. In a few minutes, the page displays the message `Compilation Complete: Compilation Successful`.
+
+Find more information about compiling Apex classes in the Salesforce help article https://help.salesforce.com/articleView?id=sf.code_manage_packages.htm&type=5[Manage Apex Classes, role=external, window=blank].

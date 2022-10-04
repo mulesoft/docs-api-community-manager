@@ -123,12 +123,10 @@ The permission for the member user must be assigned to the *ACM Member User* per
 
 As part of the API Community Manager package, the member user is assigned automatically. After the package is installed, a trigger searches for users with a Customer Community Profile and assigns the member users to the *ACM Member User* permission set.  
 
-To create a new user, you must use the API Community Diagnostics or manually set the member user profile to the *ACM Member User* permission set.
-
 To manually assign a new user to the permission set for access to the external objects and Apex classes:
 
 . Go to the member profile and search for the assigned user.
-. Assign the *ACM Guest User* to the *Community Guest User*.
+. Assign the *ACM Member User Permission Set* to the User.
 
 
 [[guest-user-perms]]

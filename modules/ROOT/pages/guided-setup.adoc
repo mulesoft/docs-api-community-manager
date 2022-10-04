@@ -1,12 +1,17 @@
+
 = Guided Setup
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+Use the guided setup to setup API Community Manager.
+
+If you have multiple identity providers in your organization, follow the instructions in xref:manual-setup.adoc[Manual Setup].
+
 == Prerequisites
 
-To set up Anypoint API Community Manager with guided setup, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
+To set up API Community Manager with guided setup, complete the xref:installation-prerequisites.adoc[prerequisite steps] and then follow these steps.
 
 == Open Guided Setup
 
