@@ -8,7 +8,7 @@ To install Anypoint API Community Manager, you must follow these prerequisite st
 
 == Enable Digital Experiences
 
-Follow the steps in xref:https://help.salesforce.com/s/articleView?id=sf.networks_enable.htm&type=5[Enable Digital Experiences] to enable digital experiences inside your Salesforce organization.
+Follow the steps in https://help.salesforce.com/s/articleView?id=sf.networks_enable.htm&type=5[Enable Digital Experiences, role=external, window=_blank] to enable digital experiences inside your Salesforce organization.
 
 == Set Salesforce Admin Role
 
