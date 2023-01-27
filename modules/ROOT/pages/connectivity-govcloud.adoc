@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+NOTE: Support for Mulesoft Government Cloud is only available in API Community Manager version 2.4.x and earlier.
+
 Use Anypoint API Community Manager to create developer communities that surface APIs from Anypoint Platform
 organizations in the MuleSoft AWS Government Cloud environment. In this deployment model, your developer community runs
 on the standard API Community Manager product in the commercial cloud environment. Your community connects to your
