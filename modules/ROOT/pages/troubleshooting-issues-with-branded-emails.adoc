@@ -4,6 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
+include::reuse::partial$non-inclusive-banner.adoc[]
 
 Anypoint API Community Manager sends notification emails when an API contract is approved or revoked. By default, these emails use Anypoint platform addresses and branding.
 
