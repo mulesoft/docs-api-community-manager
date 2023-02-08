@@ -4,7 +4,12 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-NOTE: Installing, updating, or configuring Anypoint API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
+[NOTE]
+--
+* Installing, updating, or configuring Anypoint API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization. This is a prerequisite step.
+
+* Support for Mulesoft Government Cloud is only available in API Community Manager version 2.4.x and earlier.
+-- 
 
 To perform a new install of the API Community Manager package in your API Community Manager Salesforce Organization, perform the following steps. To upgrade an existing API Community Manager installation, refer to xref:update-acm.adoc[Upgrade API Community Manager].
 
