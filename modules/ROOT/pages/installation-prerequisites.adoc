@@ -12,7 +12,7 @@ Follow the steps in https://help.salesforce.com/s/articleView?id=sf.networks_ena
 
 == Set Salesforce Admin Role
 
-Set permissions and a role for your Salesforce API Community Manager organization administrator user:
+Installing, updating, or configuring Anypoint API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization. You must set permissions and a role for your Salesforce API Community Manager organization administrator user:
 
 . Log in to your Salesforce organization.
 . In *Setup*, use the *Quick Find* box to find and click *Users*.
