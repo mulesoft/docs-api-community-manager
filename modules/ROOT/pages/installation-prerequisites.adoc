@@ -92,6 +92,7 @@ Configure external identity in your Anypoint organization:
 . Log in to your Anypoint organization.
 . Navigate to *Access Management* > *Identity Providers* > *SAML 2.0*.
 . Set *Sign On URL* to *IdP-Initiated Login URL*.
+. If you do not want external users to be able to log in directly to the Anypoint organization, set *Sign On URL* to a value of a nonfunctioning URL, for example, http://www.example.com/login.
 . Set *Sign Off URL* to *Single Logout Endpoint*.
 . Set *Issuer* to *salesforce_org_domainname* (such as `+https://[YourOrgDomain].my.salesforce.com+`).
 . Set the *Public Key* to the public key extracted from the `<ds:X509Certificate>` tag in the metadata XML you downloaded.
