@@ -39,6 +39,7 @@
  ** xref:update-acm.adoc[Upgrades]
  ** xref:mulesoft-support.adoc[Contact MuleSoft Support]
 * xref:troubleshooting.adoc[Troubleshooting]
+** xref:troubleshooting-api-documentation-not-displaying.adoc[API Documentation Not Displaying in the API Details Page]
 ** xref:troubleshooting-approved-members-not-created-or-emailed.adoc[Approved Members Not Created or Emailed]
 ** xref:troubleshooting-broken-images-on-documentation-pages.adoc[Broken Images on Documentation Pages]
 ** xref:troubleshooting-cannot-create-applications-when-application-limit-is-reached.adoc[Cannot Create Applications When Application Limit is Reached]

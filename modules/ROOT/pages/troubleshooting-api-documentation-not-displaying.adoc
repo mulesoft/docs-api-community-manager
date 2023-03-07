@@ -1,0 +1,10 @@
+= API Documentation is Not Displaying in the API Details Page
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../assets/images/
+
+If the API documentation is not displaying in the API Details page, follow these steps:
+
+. Go to *Setup* > *Session Settings*.
+. Scroll to *Lightning Web Security* and uncheck *Use Lightning Web Security for Lightning web components (GA) and Aura components (Beta)*.
