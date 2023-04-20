@@ -18,6 +18,7 @@ To disable the standard configuration, open *Setup* > *Deliverability* > *Email 
 == Configure Email Addresses
 
 . Navigate to *Setup* and use *Quick Find* to go to *Organization-Wide Addresses*.
+. Click *Add* from *User Selectable Organization-Wide Email*.
 . Set *Display Name* to `EventEmailSender`.
 . Set *Email Address* to the email address at your organization that sends the API contract event notification emails.
 +
@@ -25,6 +26,10 @@ Ensure you can read confirmation emails sent to this address.
 . Select *Allow All Profiles to Use this From Address*.
 . Click *Save*.
 . Open the confirmation email sent to the notification sender email address and click the link to confirm the address.
+. Click *Add* from *Special Purpose Organization-Wide Email*.
+. Set *Display Name* to `EventEmailSender`.
+. Set *Email Address* to the email address at your organization that sends the API contract event notification emails.
+. Click *Save*.
 
 == Enable Custom Email Notifications
 
@@ -32,19 +37,24 @@ To enable custom email notifications, follow these steps.
 
 === Configure Data Change Capture
 
-. Navigate to *Setup* > *Home* > *Integrations* > *External Data Sources* and ensure *Eligible for External Data Change Capture* is enabled.
+. Navigate to *Setup* > *Home* > *Integrations* > *External Data Sources*.
+. Click *Exchange* and ensure *Eligible for External Data Change Capture* is enabled.
 . Set *Polling Interval for External Change Data Capture (seconds)*.
 +
 The default is 1800 and the minimum is 300.
 . Navigate to *Setup*.
 . Use *Quick Find* to navigate to *Change Data Capture*.
-. Navigate to *Entities* > *Change Manually* > *Available Entities*.
+. Enter *AnypointContracts* in *Available Entities*.
 . Move *AnypointContracts* to the *Selected Entities* list, which enables polling on this object.
+. Click *Save*.
 
 === Create Apex Trigger
 
-. Navigate to *Setup*, use *Quick Find* to go to *Apex Triggers*, and click the *Developer Console* button.
-. Click *File* > *New* > *Apex Trigger*, set *Name* to `AnypointEmailNotificationsTrigger`, and set *sObject* to `acm_pkg\__AnypointContracts__ChangeEvent`.
+. Navigate to *Setup* and click *Developer Console*.
+. Click *File* > *New* > *Apex Trigger*.
+. Set *Name* to `AnypointEmailNotificationsTrigger`.
+. Set *sObject* to `acm_pkg\__AnypointContracts__ChangeEvent`.
+. Click *Save* to create the new trigger.
 . Enter this code block:
 +
 ----
@@ -58,20 +68,24 @@ The default is 1800 and the minimum is 300.
 === Configure Branded Email Metadata
 
 . Navigate to *Setup* and use *Quick Find* to go to *Custom Metadata Types*.
-. Click *ACM Community Configuration Metadata* > *Manage Records* > *New* to add a record.
+. Click *Manage Records* for *ACM Community Configuration Metadata*. 
+. Click *New* to add a record.
 . Set *Label* to your API community's name and press tab to automatically complete the *ACM Community Config Metadata Name*.
-. Open the *Developer Console* and open the *Query Editor*.
+. Go to *Setup* and click *Developer Console*.
+. Click *Query Editor* to open the editor.
 . Enter `SELECT Id, Name FROM Network` and click *Execute*.
-. In the list of IDs and communities, choose the row with *Name* equal to your community's name, double click the ID, and copy it.
-. In the *ACM Community Config Metadata* field *NetworkId*, paste the ID.
+. In the list of IDs and communities, select the row with *Name* with to your community's name, double-click the name, and copy it.
+. Go to *ACM Community Config Metadata* field and paste the name in *Label* and in *ACM Community Configuration Metadate Name*.
+. In to the Query Editor's list of IDs and communities, select the row with *ID* with to your community's ID, double-click the ID, and copy it.
+. Go to *ACM Community Configuration Metadata* and paste the name in *NetworkId*.  
 . In the *Query Editor*, enter `SELECT Id, Name FROM EmailTemplate` and click *Execute*.
 . In the list of IDs and email templates, choose the row with *Name* equal to *Contract Approved*, double click the ID, and copy it.
-. In the *ACM Community Config Metadata* field *ContractApprovedEmailTemplateId*, paste the ID.
+. In the *ACM Community Configuration Metadata* field *ContractApprovedEmailTemplateId*, paste the ID.
 . In the list of IDs and email templates, choose the row with *Name* equal to *Contract Revoked*, double click the ID, and copy it.
-. In the *ACM Community Config Metadata* field *ContractRevokedEmailTemplateId*, paste the ID.
+. In  *ACM Community Configuration Metadata*  *ContractRevokedEmailTemplateId*, paste the ID.
 . In the *Query Editor*, enter `SELECT Id, Address FROM OrgWideEmailAddress` and click *Execute*.
 . In the list of IDs and email addresses, choose the row with *Address* equal to the organization wide email address you set, double click the ID, and copy it.
-. In the *ACM Community Config Metadata* field *OrgWideEmailAddressId*, paste the ID.
+. In  *ACM Community Configuration Metadata* field *OrgWideEmailAddressId*, paste the ID.
 . Click *Save*.
 . Repeat this process for all additional communities, creating one record for each community.
 +
@@ -80,10 +94,32 @@ The default is 1800 and the minimum is 300.
 === Configure Branded Email Templates
 
 . Navigate to *Setup*, use *Quick Find* to go to *Classic Email Templates*, and navigate to *Folder* > *ACM*.
+. Click *Edit* for *Contracts Approved*.
 . Customize the *Contract Approved* and *Contract Revoked* templates, or create your own templates and configure the *ACM Community Config Metadata* to use them.
+. Click *Save*.
 . Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/articleView?id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
 +
 If the relay is not configured, notification emails are sent from a Salesforce domain with a sender email address in your organization's domain. If the actual sender domain and sender email address domain do not match, many email providers mark the notification emails as spam.
+
+== Anypoint Permissions Configuration
+
+The user who enables the external data capture must have permissions to read contracts in Anypoint. Follow these steps to configure the Anypoint permissions.
+
+. Log in to your API community as an administrative user.
+. In *Access Management*, click *Users*.
+. Click the username link of the impersonated Anypoint user with the email address of the Salesforce administrator.
+. Click *Roles*.
+. In *Add a role by name*, enter `Organization Administrators` and click *+*.
++
+Add the Organization Administrator role to the user on each organization and suborganization.
+. Click *Permissions*, click *API Manager*, and for each environment, open the permissions list and enable the *Manage Contracts* permission.
+. In the public side of the community, request access to an API with manual approval.
+. Log in to Anypoint and approve the requested API contract.
++
+This creates the Anypoint user named *Automated Process*, which works with the Salesforce user named *Automated Process* to process triggers.
+. Grant the Anypoint user named *Automated Process* the *Organization Administrator* role in the main organization xref:access-management::roles.adoc[using Anypoint Access Management].
++
+This enables the Anypoint user to process API contract events when API contracts are approved or revoked.
 
 == Disable Default Anypoint Email Notifications
 
@@ -94,19 +130,10 @@ The JSON Web Token (JWT) authentication mechanism creates Anypoint user records 
 +
 `Anypoint` is the default named credential set in the external data source by the guided setup application. If the named credential has been changed manually, choose the named credential used in the Anypoint external data source.
 . Click *Edit*.
-. In the *Per User Subject* formula, add `& ".donotsend" ` after `$User.Email`. Example: `"v2|8745gh23-590d-4h80-b339-1637854e289f|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & ".donotsend" & "|[\"Community User\"]"`
-
-== Anypoint Permissions Configuration
-
-. Log in to your API community as an administrative user.
-. In *Access Management*, click *Users*.
-. Click the impersonated Anypoint user with the email address of the Salesforce administrator.
-. Add the Organization Administrator role to the user on each organization and suborganization.
-. Click *Permissions*, click *API Manager*, and for each environment, open the permissions list and enable the *Manage Contracts* permission.
-. In the public side of the community, request access to an API with manual approval.
-. Log in to Anypoint and approve the requested API contract.
+. In the *Per User Subject* formula, add `& ".donotsend" ` after `$User.Email`. 
 +
-This creates the Anypoint user named *Automated Process*, which works with the Salesforce user named *Automated Process* to process triggers.
-. Grant the Anypoint user named *Automated Process* the *Organization Administrator* role in the main organization xref:access-management::roles.adoc[using Anypoint Access Management].
+Example: 
 +
-This enables the Anypoint user to process API contract events when API contracts are approved or revoked.
+`"v2|8745gh23-590d-4h80-b339-1637854e289f|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & ".donotsend" & "|[\"Community User\"]"`
+
+
