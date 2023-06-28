@@ -5,7 +5,7 @@ endif::[]
 :imagesdir: ../assets/images/
 :page-aliases: install-configure.adoc, configure-acm.adoc
 
-Anypoint API Community Manager is composed of a Salesforce organization with Experience Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization.
+Anypoint API Community Manager is composed of a Salesforce organization with Experience Cloud and a managed package that is installed in this organization. The managed package contains the components and data objects that interact with your Anypoint Platform organization. MuleSoft may change or deprecate the usage of data objects in the managed package without notice.
 
 An instance of API Community Manager connects to only one Anypoint Platform organization. The Anypoint user can connect to one or more instances of API Community Manager, possibly including sandbox instances and instances in other Salesforce organizations.
 
