@@ -7,7 +7,7 @@ endif::[]
 Anypoint API Community Manager uses the same secure hardware, backup, disaster recovery, and business continuity
 systems as Salesforce and Anypoint Platform.
 
-API Community Manager is part of Anypoint Platform, and each member has one Anypoint Platform account, which is also used as their API Community Manager account.
+API Community Manager is part of Anypoint Platform and each member user of the API Community Manager portal has an identity in Anypoint Platform, which is also used as their API Community Manager account.
 
 All connections between API Community Manager and related systems, such as Salesforce and Anypoint Exchange, are encrypted with
 Transport Layer Security (TLS).
