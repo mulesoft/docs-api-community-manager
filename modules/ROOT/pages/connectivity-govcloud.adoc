@@ -24,9 +24,9 @@ forums on your public developer community) are handled through API Community Man
 
 The following search options are visible but not functional for MuleSoft Government Cloud in the latest version of API Community Manager:
 
-* Search API Specifications in the API Console
-* Search API Documentation Pages
-* Search Custom Fields
+* API Specifications 
+* API Documentation Pages
+* Custom Fields
 * Enable advanced links for search results to link to specific tabs of an API details page, such as the API Console.
 
 == See Also
