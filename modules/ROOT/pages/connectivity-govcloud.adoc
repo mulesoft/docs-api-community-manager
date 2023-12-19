@@ -27,7 +27,7 @@ The following search options are visible but not functional for MuleSoft Governm
 * Search API specifications in the API Console
 * Search API documentation pages
 * Search Custom fields
-* Enable Advanced Links to be redirected in the results for API Console
+* Enable advanced links for search results to link to specific tabs of an API details page, such as the API Console.
 
 == See Also
 
