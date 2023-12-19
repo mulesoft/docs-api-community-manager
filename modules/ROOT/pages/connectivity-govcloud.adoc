@@ -22,6 +22,13 @@ with your MuleSoft Government Cloud organization data is handled by the MuleSoft
 Support cases that do not require access to your MuleSoft Government Cloud data (such as those related to look and feel, branding, CMS articles, and
 forums on your public developer community) are handled through API Community Manager standard support processes.
 
+The following search options are visible but not functional for MuleSoft Government Cloud in the latest version of API Community Manager:
+
+* Search API specifications in the API Console
+* Search API documentation pages
+* Search Custom fields
+* Enable Advanced Links to be redirected in the results for API Console
+
 == See Also
 
 * xref:govcloud-data-control.adoc[MuleSoft Government Cloud Data Control]
