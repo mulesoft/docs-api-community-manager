@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-NOTE: Support for Mulesoft Government Cloud is only available in API Community Manager version 2.4.x and earlier.
+NOTE: Support for Mulesoft Government Cloud is available in the latest version of API Community Manager, but with limitations. For more information, see xref:connectivity-govcloud.adoc#limitations[Limitations].
 
 Your MuleSoft Government Cloud organization can restrict the data entities exposed to its Salesforce Experience Cloud API Community Manager instance.
 
