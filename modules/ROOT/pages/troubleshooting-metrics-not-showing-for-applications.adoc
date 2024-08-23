@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-If the metrics aren't showing for client applications in the *My Applications* details page, ensure that you have the *Monitoring Viewer* permissions. 
+If the metrics aren't showing for client applications on the *My Applications* details page, ensure that you have the *Monitoring Viewer* permissions. 
 
 . Log in to Anypoint Platform and go to *Access Management*.
 . Select *Teams* and select *Community Users*.
