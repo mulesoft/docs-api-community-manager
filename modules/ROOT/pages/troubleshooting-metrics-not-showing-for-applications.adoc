@@ -12,5 +12,5 @@ If the metrics aren't showing for client applications on the *My Applications* d
 . If *Monitoring Viewer is not in the list, click *Done*
 . Click *Add permissions* and select *Anypoint Monitoring* > *Monitoring Viewer*.
 . Click *Next*.
-. Select a business group and click *Next*.
+. Select all business groups and click *Next*.
 . Click *Add Permissions*.

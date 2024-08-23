@@ -34,7 +34,7 @@ Add the Monitoring Viewer permission to view metrics for applications in the *My
 . Select *Teams* and select *Community Users*.
 . Select the *Permissions* tab and click *Add permissions*.
 . Select *Anypoint Monitoring* > *Monitoring Viewer* and click *Next*.
-. Select a business group and click *Next*.
+. Select all business groups and click *Next*.
 . Click *Add Permissions*.
 
 == Verify API Community Manager Entitlement
