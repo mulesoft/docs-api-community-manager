@@ -9,7 +9,7 @@ If the metrics aren't showing for client applications on the *My Applications* d
 . Log in to Anypoint Platform and go to *Access Management*.
 . Select *Teams* and select *Community Users*.
 . Select the *Permissions* tab, locate the business group, and click *Edit*.
-. If *Monitoring Viewer is not in the list, click *Done*
+. If *Monitoring Viewer* is not in the list, click *Done*.
 . Click *Add permissions* and select *Anypoint Monitoring* > *Monitoring Viewer*.
 . Click *Next*.
 . Select all business groups and click *Next*.
