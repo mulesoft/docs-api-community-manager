@@ -53,6 +53,7 @@
 ** xref:troubleshooting-error-when-creating-new-community-from-template.adoc[Error When Creating New Community from Template]
 ** xref:troubleshooting-incorrect-or-missing-data-for-one-api-version.adoc[Incorrect or Missing Data for One API Version]
 ** xref:troubleshooting-issues-with-branded-emails.adoc[Issues with Branded Emails] 
+** xref:troubleshooting-metrics-not-showing-for-applications.adoc[]
 ** xref:troubleshooting-missing-feature-error.adoc[Missing Feature Error]
 ** xref:troubleshooting-missing-request-access-button.adoc[Missing Request Access Button]
 ** xref:troubleshooting-unauthorized-endpoint-error.adoc[Unauthorized Endpoint Error]
