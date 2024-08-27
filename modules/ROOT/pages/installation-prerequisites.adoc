@@ -28,7 +28,7 @@ If you create a role, enter a role name such as `Salesforce_ACM_org_admin_user`.
 . Click *Save*.
 
 == Add the Monitoring Viewer Permission
-Add the Monitoring Viewer permission to view metrics for applications in the *My Applications* details page:
+Add the Monitoring Viewer permission to view metrics for applications on the *My Applications* details page:
 
 . Log in to Anypoint Platform and go to *Access Management*.
 . Select *Teams* and select *Community Users*.
