@@ -325,7 +325,7 @@ To require an admin's approval for guest registration:
 .. In the *Quick Find* box enter `All Sites` and select *All Sites*.
 .. From the *Digital Experience* page, click *Builder*.
 .. Select the *Settings* drop-down, enter `register`in the *Quick Find* box, and select *Register*.
-.. Select the *Self Register* component and select *Registrations Require Approval*.
+.. Select the *Self Register* component and select the *Registrations Require Approval* checkbox.
 . Add the metadata in Salesforce:
 .. Go to Salesforce.
 .. In the *Quick Find* box, enter `custom metadata types` and click *Custom Metadata Types*.
