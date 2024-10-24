@@ -311,3 +311,37 @@ Activate the approval process:
 . In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
 . In Community Builder, navigate to the *Register* page in the *Pages* list and select the API Community Manager *Self Register* Lightning component.
 . Ensure that *Approved Registration* is enabled.
+
+== Require Admin Approval for Guest Registration
+
+Configure guest registration to require an admin's approval.
+
+You must have API Community Manager package 2.24 or later installed to enable this approval process.
+
+To require an admin's approval for guest registration:
+
+. Configure the Builder:
+.. Go to Salesforce > *Setup*.
+.. In the *Quick Find* box enter `All Sites` and select *All Sites*.
+.. On the *Digital Experience* page, click *Builder*.
+.. Click the *Settings* drop-down, enter `register`in the *Quick Find* box, and select *Register*.
+.. Select the *Self Register* component and select the *Registrations Require Approval* checkbox.
+. Add the metadata in Salesforce:
+.. Go to Salesforce.
+.. In the *Quick Find* box, enter `custom metadata types` and click *Custom Metadata Types*.
+.. On the *All Custom Metadata Types* page, select *ACM Community Configuration Metadata*.
+.. On the *ACM Community Configuration Metadata* page, click *Manage ACM Configuration Metadata*.
+.. Select a metadata record from the list and click *Edit*.
+.. Select the *RegistrationRequireApproval* checkbox and click *Save*. 
+
+If there's no metadata record listed on the *Manage ACM Configuration Metadata* page:
+
+. Click *New* and enter these fields:
+* Label
+* ACM Community Configuration Metadata Name
+. To get the NetworkID:
+
+.. Go to the *Builder* > *Settings* and select *Developer* and click *</>Developer Console*.
+.. In the *Query Editor*, enter `Select Name, Id from Network` and click *Execute*.
+.. In *Query Results*, copy the number from the *Id* column and paste it into the *NetworkId* field on the *ACM Community Configuration Metadata* page. 
+. Select the *RegistrationRequireApproval* checkbox and click *Save*. 
