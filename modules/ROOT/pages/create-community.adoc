@@ -328,7 +328,7 @@ To require an admin's approval for guest registration:
 .. Select the *Self Register* component and select the *Registrations Require Approval* checkbox.
 . Add the metadata in Salesforce:
 .. Go to Salesforce.
-.. In the *Quick Find* box, enter `custom metadata types` and click *Custom Metadata Types*.
+.. In the *Quick Find* box, enter `custom metadata types` and select *Custom Metadata Types*.
 .. On the *All Custom Metadata Types* page, select *ACM Community Configuration Metadata*.
 .. On the *ACM Community Configuration Metadata* page, click *Manage ACM Configuration Metadata*.
 .. Select a metadata record from the list and click *Edit*.
