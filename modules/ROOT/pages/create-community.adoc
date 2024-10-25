@@ -314,7 +314,7 @@ Activate the approval process:
 
 == Require Admin Approval for Guest Registration
 
-To safeguard against self-registered users unintentionally approved automatically, configure guest registration to require an admin's approval.
+To safeguard against self-registered users unintentionally getting approved automatically, configure guest registration to require an admin's approval.
 
 You must have API Community Manager package 2.24 or later installed to enable this approval process.
 
