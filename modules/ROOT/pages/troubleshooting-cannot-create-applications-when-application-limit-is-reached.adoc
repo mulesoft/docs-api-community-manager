@@ -4,4 +4,4 @@ include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images/
 
-This issue can occur if the maximum number of 10,0000 client applications is reached. To resolve this issue, check for inactive client applications and revoke access. If you have a significant number of inactive client applications, contact your customer success partner.
+This issue can occur if the maximum number of 10,000 client applications is reached. To resolve this issue, check for inactive client applications and revoke access. If you have a significant number of inactive client applications, contact your customer success partner.
