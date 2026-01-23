@@ -11,7 +11,7 @@ instead, use these steps.
 
 == Disable Standard Email Security
 
-Branded emails require disabling Salesforce's standard configuration for Sender Policy Framework (SPF) for email. For more information about this feature, see the Salesforce Help article https://help.salesforce.com/s/articleView?id=sf.emailadmin_enable_email_security_compliance.htm&type=5[Enable Email Security Compliance, role=external, window=blank].
+Branded emails require disabling Salesforce's standard configuration for Sender Policy Framework (SPF) for email. For more information about this feature, see the Salesforce Help article https://help.salesforce.com/s/articleView?id=sales.emailadmin_enable_email_security_compliance.htm&type=5[Enable Email Security Compliance, role=external, window=blank].
 
 To disable the standard configuration, open *Setup* > *Deliverability* > *Email Security Compliance* and ensure the option *Enable compliance with standard email security mechanisms* is not selected.
 
