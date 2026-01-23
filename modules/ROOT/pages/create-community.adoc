@@ -10,7 +10,7 @@ You can create any number of sites. All sites are in the same Salesforce organiz
 
 Installing, updating, or configuring API Community Manager must be done by a user account with the *System Administrator* profile in the API Community Manager Salesforce organization.
 
-If you are not familiar with Experience Cloud, refer to the https://help.salesforce.com/articleView?id=sf.networks_resources.htm&type=5[Experience Cloud Overview, role=external, window=_blank].
+If you are not familiar with Experience Cloud, refer to the https://help.salesforce.com/s/articleView?id=experience.networks_resources.htm&type=5[Experience Cloud Overview, role=external, window=_blank].
 
 == Create a New Community
 
