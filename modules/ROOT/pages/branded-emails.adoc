@@ -81,7 +81,7 @@ The default is 1800 and the minimum is 300.
 
 . Navigate to *Setup*, use *Quick Find* to go to *Classic Email Templates*, and navigate to *Folder* > *ACM*.
 . Customize the *Contract Approved* and *Contract Revoked* templates, or create your own templates and configure the *ACM Community Config Metadata* to use them.
-. Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/articleView?id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
+. Configure an email relay as described in the Salesforce documentation page https://help.salesforce.com/s/articleView?language=en_US&id=emailadmin_email_relay_overview.htm&type=5[Send Email Through Email Relay, role=external, window=blank].
 +
 If the relay is not configured, notification emails are sent from a Salesforce domain with a sender email address in your organization's domain. If the actual sender domain and sender email address domain do not match, many email providers mark the notification emails as spam.
 

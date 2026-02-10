@@ -42,7 +42,7 @@ In a few minutes, your community is published.
 . Look for an email notification including your community's public URL.
 . You can also always find your community's live URL by opening the API Community Manager control panel and clicking *Open Community*.
 
-To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?id=000336819&type=1&mode=1[Run your Salesforce Digital Experience under a custom domain, role=external, window=_blank].
+To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/s/articleView?language=en_US&id=000336819&mode=1&type=1[Run your Salesforce Digital Experience under a custom domain, role=external, window=_blank].
 
 To customize the look, feel, and branding of your community, refer to xref:brand-intro.adoc[Brand and Customize Your API Community].
 
@@ -75,7 +75,7 @@ image::forum-moderation-rule.png[Forum Moderation Rule]
 
 IMPORTANT: Verify the *Activate Rule* check box is active when saving your changes.
 
-You can define much more advanced moderation and review rules. You can find more information in the Salesforce Experience Cloud documentation about https://help.salesforce.com/articleView?id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
+You can define much more advanced moderation and review rules. You can find more information in the Salesforce Experience Cloud documentation about https://help.salesforce.com/s/articleView?language=en_US&id=networks_moderator_manage_rules.htm&type=5[forum moderation rules, role=external, window=_blank].
 
 Chatter tracking enables your community to create discussions about specific objects such as APIs. To enable Chatter tracking:
 

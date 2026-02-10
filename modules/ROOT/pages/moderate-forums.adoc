@@ -28,4 +28,4 @@ To set the API forums to display each user's name and not their nickname, open t
 
 == See Also
 
-* Salesforce documentation: https://help.salesforce.com/articleView?id=networks_moderation_overview.htm&type=5[Experience Cloud Site Moderation Strategies and Tools, role=external, window=blank]
+* Salesforce documentation: https://help.salesforce.com/s/articleView?language=en_US&id=networks_moderation_overview.htm&type=5[Experience Cloud Site Moderation Strategies and Tools, role=external, window=blank]
