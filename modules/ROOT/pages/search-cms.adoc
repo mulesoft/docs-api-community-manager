@@ -55,5 +55,5 @@ To enable Salesforce CMS for API Community Manager:
 
 == See Also
 
-* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce CMS, role=external, window=blank]
+* https://help.salesforce.com/s/articleView?language=en_US&id=community_managed_content_overview.htm&type=5[Salesforce CMS, role=external, window=blank]
 * xref:publish-content.adoc[Publish Content and CMS Articles]
