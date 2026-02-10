@@ -23,4 +23,4 @@ If you discover a security vulnerability, follow the steps in https://help.mules
 
 == See Also
 
-* https://trust.salesforce.com/en/security/[Salesforce Security, role=external, window=blank]
+* https://security.salesforce.com/[Salesforce Security, role=external, window=blank]

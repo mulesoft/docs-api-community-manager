@@ -16,7 +16,7 @@ For further information, contact your MuleSoft customer success representative.
 
 == Downtime
 
-MuleSoft and Salesforce report and monitor platform downtime at http://trust.mulesoft.com and http://trust.salesforce.com.
+MuleSoft and Salesforce report and monitor platform downtime at https://status.salesforce.com/products/Mulesoft and https://trust.salesforce.com/.
 
 == See Also
 

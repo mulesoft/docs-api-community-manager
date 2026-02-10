@@ -7,7 +7,7 @@ endif::[]
 With Anypoint API Community Manager, you can create, organize, and publish content for your community, including news,
 tutorials, developer blog posts, and events.
 
-This content is stored in https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce content management system (CMS), role=external, window=blank] articles.
+This content is stored in https://help.salesforce.com/s/articleView?language=en_US&id=community_managed_content_overview.htm&type=5[Salesforce content management system (CMS), role=external, window=blank] articles.
 These articles are separate from the API documentation stored in Exchange.
 The API release process includes API documentation updates, and the CMS article
 release process is usually separate. Often a development team will lead the API
@@ -15,7 +15,7 @@ release process and a marketing team will lead the CMS article release process.
 
 == Create a New Article in Salesforce CMS
 
-NOTE: You can also author API Community Manager content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect, role=external, window=blank].
+NOTE: You can also author API Community Manager content in https://help.salesforce.com/s/articleView?language=en_US&id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect, role=external, window=blank].
 
 . Open the API Community Manager control panel.
 . Select *Manage CMS Content*. The Salesforce Experience Cloud *Content Management* interface is displayed.
@@ -46,7 +46,7 @@ that contains a list of the workspace's content articles.
 
 The collection now lists your new article.
 
-The https://help.salesforce.com/articleView?id=community_managed_content_collections.htm&type=5[Salesforce Experience Cloud documentation, role=external, window=blank] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
+The https://help.salesforce.com/s/articleView?language=en_US&id=community_managed_content_collections.htm&type=5[Salesforce Experience Cloud documentation, role=external, window=blank] describes additional ways to add articles to collections, and includes more advanced categorization capabilities using topics and rules.
 
 == Display the Collection in Your Community
 
@@ -72,13 +72,13 @@ The new collection of articles is now displayed on your community page.
 
 == External CMS Systems
 
-You can also author API Community Manager content in https://help.salesforce.com/articleView?id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect, role=external, window=blank].
+You can also author API Community Manager content in https://help.salesforce.com/s/articleView?language=en_US&id=communities_cms_connect.htm&type=5[an external CMS system through CMS Connect, role=external, window=blank].
 
 External CMS systems can include Adobe Experience Manager, Drupal, Wordpress, and others.
 
-You can learn more about CMS Connect on Trailhead with the trail https://trailhead.salesforce.com/en/content/learn/modules/partner-relationship-management/deploy-fast-and-personalize-the-experience[Deploy Fast and Personalize the Experience, role=external, window=blank].
+You can learn more about CMS Connect on Trailhead with the trail https://trailhead.salesforce.com/content/learn/modules/partner-relationship-management/deploy-fast-and-personalize-the-experience[Deploy Fast and Personalize the Experience, role=external, window=blank].
 
 == See Also
 
-* https://help.salesforce.com/articleView?id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder, role=external, window=blank]
-* https://help.salesforce.com/articleView?id=community_managed_content_overview.htm&type=5[Salesforce Content Management System (CMS) (Beta), role=external, window=blank]
+* https://help.salesforce.com/s/articleView?language=en_US&id=community_builder_manage_pages_overview.htm&type=5[Manage Your Community's Pages and Their Properties in Community Builder, role=external, window=blank]
+* https://help.salesforce.com/s/articleView?language=en_US&id=community_managed_content_overview.htm&type=5[Salesforce Content Management System (CMS) (Beta), role=external, window=blank]

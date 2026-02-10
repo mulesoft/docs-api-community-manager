@@ -21,7 +21,7 @@ Installing, updating, or configuring Anypoint API Community Manager must be done
 +
 This can be any role from the list, but cannot be none.
 +
-If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/articleView?language=en_US&type=1&mode=1&id=000322715[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
+If you don't see any roles in the list, refer to the Salesforce knowledge article https://help.salesforce.com/s/articleView?id=000322715&language=en_US&mode=1&type=1[Add roles to the role hierarchy, role=external, window=_blank] for instructions to create a role in your organization.
 +
 If you create a role, enter a role name such as `Salesforce_ACM_org_admin_user`.
 . Enable the option *Salesforce CRM Content User*.

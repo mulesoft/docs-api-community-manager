@@ -149,7 +149,7 @@ If you are upgrading from a package version earlier than 1.77, follow these step
 
 . Open the *Developer Console* and open the *Query Editor*.
 . Enter `SELECT Id, Name, Owner.Name, Owner.IsActive FROM acm_pkg\__CommunityApi__c WHERE Owner.IsActive = false` and click *Execute*.
-. If the query lists any users, change their status to active with the https://help.salesforce.com/articleView?id=000336144&type=1&mode=1[reactivate a user] instructions.
+. If the query lists any users, change their status to active with the https://help.salesforce.com/s/articleView?language=en_US&id=000336144&mode=1&type=1[reactivate a user] instructions.
 
 Return to the main list of upgrade instructions to continue.
 
@@ -388,4 +388,4 @@ Manual configuration:
 
 * xref:notifications.adoc[Important Notifications]
 * xref:sandboxes.adoc[Sandboxes]
-* https://www.mulesoft.com/legal/versioning-back-support-policy[Product Versioning and Back Support Policy, role=external, window=blank]
+* https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Agreements/versioning-back-support-policy.pdf[Product Versioning and Back Support Policy, role=external, window=blank]
