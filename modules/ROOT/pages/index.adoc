@@ -48,5 +48,5 @@ All features of API Community Manager are supported on Japan and Canada control 
 == See Also
 
 * xref:release-notes::api-community-manager/api-community-manager-release-notes.adoc[API Community Manager Release Notes]
-* https://help.mulesoft.com/s/forum[MuleSoft Forum, role=external, window=blank]
-* https://help.mulesoft.com/s/knowledge[Knowledge Base Articles, role=external, window=blank]
+* https://trailhead.salesforce.com/trailblazer-community/neighborhoods/mulesoft[MuleSoft Trailblazer Community]
+* https://help.salesforce.com[Salesforce Help]
