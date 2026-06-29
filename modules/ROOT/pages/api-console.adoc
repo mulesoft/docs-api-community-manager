@@ -8,7 +8,7 @@ The interactive API Console component shows information about your REST APIs and
 
 Endpoints are displayed in alphabetical order.
 
-Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Community Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
+Console components include API Console, API Console Documentation, API Console Instances, API Console Navigation, and API Console Request Panel. In Site Builder, you can add multiple console components to the same page. Changes to a console component are visible in all other console components on that page that display the same API. For example, selecting the *Summary* tab in an API Console results in *Summary* tab selection in all API Consoles on the same page that display the same API.
 
 The component shows the public API instances and documentation from xref:exchange::index.adoc[Anypoint Exchange].
 
@@ -49,7 +49,7 @@ You can specify values for the following parameters of the API console:
 
 If an *API Console* navigation item such as an API endpoint or method has a long name, the name wraps around to a second line. By default, the line breaks at the end of a word, using the `word-break` CSS property set to the value `break-word`. If you wish to select different line break behavior:
 
-. In the API Community Manager control panel, click *Community Builder* > *Settings* > *Advanced*.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*. Click *Settings* > *Advanced*.
 . In the section *Head Markup*, click *Edit Head Markup*.
 . Insert this code:
 +

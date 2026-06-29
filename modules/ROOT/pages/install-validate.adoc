@@ -18,12 +18,12 @@ If *Connectivity with Anypoint* does not show the URL and a green check, perform
 If *Cache* shows that the cache is not configured, xref:cache.adoc[configure the platform cache].
 . Check the information about each of your communities in the *ACM Communities* section.
 +
-Each community shows *Community status*, whether the community is *Public*, the *Published assets status*, and options to open the community or open the community builder. If some of your communities are not public, or some of your communities are not yet implemented, then this information is visible here.
+Each community shows *Community status*, whether the community is *Public*, the *Published assets status*, and options to open the community or open Site Builder. If some of your communities are not public, or some of your communities are not yet implemented, then this information is visible here.
 +
 If your list of communities is empty, xref:create-community.adoc[create a community].
 . Open a community and verify that the API console is rendered correctly.
 .. Add any of your Exchange APIs to your community.
-.. In the Community Builder preview mode, navigate to the console.
+.. In the Site Builder preview mode, navigate to the console.
 .. Verify that the console is rendered correctly for your API.
 
 image::api-console.png[API console]

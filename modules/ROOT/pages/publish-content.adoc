@@ -51,7 +51,7 @@ The https://help.salesforce.com/s/articleView?language=en_US&id=community_manage
 == Display the Collection in Your Community
 
 . Open the API Community Manager control panel.
-. Click *Community Builder*. A preview of your community's site is displayed.
+. Click *Shortcuts to applications* and select *Site Builder*. A preview of your community's site is displayed.
 . If the collection containing your new article is already displayed in a *CMS Collection* component, then your new article will be visible there.
 . Your article will be visible in any new *CMS Collection* components displaying the collection containing the article.
 
@@ -64,7 +64,7 @@ The https://help.salesforce.com/s/articleView?language=en_US&id=community_manage
 . Enter a name for your collection, select the source *CMS Content*, and choose to curate the collection *Manually*.
 . From the list of community articles, select the ones you want to include in the collection by selecting the plus sign (`+`) next to each article.
 . Select *Finish*.
-. To use your new collection on your community site, open the API Community Manager control panel and click *Community Builder*.
+. To use your new collection on your community site, open the API Community Manager control panel, click *Shortcuts to applications*, and select *Site Builder*.
 . Add a *CMS Collection* component to a page in your community.
 . Select the component to open its configuration menu, and select *Change Collection* to select your new collection.
 
