@@ -18,7 +18,7 @@ If your community shows a broken image on an API documentation page, and the ima
 To learn if any content in any component or page of the community is blocked by the content security policy:
 
 . Open the API Community Manager control panel.
-. Click *Community Builder*.
+. Click *Shortcuts to applications* and select *Site Builder*.
 . Click *Preview*.
 . Open the page that contains the content.
 

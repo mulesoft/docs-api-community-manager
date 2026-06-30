@@ -26,7 +26,7 @@ Follow these steps to configure your community for API visibility:
 .. Assign permissions that match the member user profile permissions described in the API Community Manager documentation section xref:create-community.adoc#configure-member-user-profile-permissions[Configure Member User Profile Permissions].
 . Configure your community to use the new profile:
 .. Click *Setup* > *All Communities*.
-.. In the API Community Manager control panel, click *Community Administration* and click the *Members* tab.
+.. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Administration*. Click the *Members* tab.
 .. In *Select Profiles*, use the search menu to select *Customer*.
 .. Add the new *ACM Community User Plus* profile to the selected profiles.
 .. Remove the existing *ACM Community User* profile but _do not_ remove the *System Administrator* profile.

@@ -30,17 +30,19 @@ The configuration process will take a few minutes.
 . When the configuration process finishes and you see your new site workspace, click *Install AppExchange Package* in the top banner and follow the installation wizard instructions to install the pre-defined metrics and dashboards.
 +
 Be sure to install this package in your production organization when prompted by the wizard.
-. In *Application Launcher*, navigate to *ACM Administrator*, click *Community Administration*, go to the *Settings* section, and click *Activate Community*.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Administration*.
+. Click *Settings*.
+. Click *Activate*.
 
 To enable the admin panels, publish your community for the first time:
 
-. In the API Community Manager control panel, click *Community Builder*.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*.
 . Click *Publish* in the top right corner.
 . In the *Publish Your Community* dialog, click *Publish*.
 +
 In a few minutes, your community is published.
 . Look for an email notification including your community's public URL.
-. You can also always find your community's live URL by opening the API Community Manager control panel and clicking *Open Community*.
+. You can also always find your community's live URL by opening the API Community Manager control panel, clicking *Shortcuts to applications*, and selecting *Open Site*.
 
 To use a custom domain name, also known as a vanity domain, refer to the Salesforce knowledge article https://help.salesforce.com/s/articleView?language=en_US&id=000336819&mode=1&type=1[Run your Salesforce Digital Experience under a custom domain, role=external, window=_blank].
 
@@ -52,7 +54,8 @@ Your community's content configuration controls the forums, moderation rules, Ch
 
 === Configure Forums
 
-. In the *Application Launcher* navigate to *ACM Administrator*, click *Community Administration*, and click *Preferences* in the left panel.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Administration*.
+. Click *Preferences* in the left panel.
 . Click *Show all settings in Workspaces*.
 . Click *Save* so this setting is reflected.
 . Click *Allow discussion threads*.
@@ -205,7 +208,7 @@ Configure the settings with one of these options:
 
 Assign a profile for your community members:
 
-. In the API Community Manager control panel, open *Community Administration* and navigate to the *Members* section in the left panel.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Administration*. Navigate to the *Members* section in the left panel.
 . In the *Select Profiles* section, in the *Search* list, click *All*.
 . Use the *Add* button to add *_Site Name_ Member User* to the *Selected Profiles* box.
 . Click *Save*.
@@ -222,14 +225,14 @@ Create an account for your community members:
 
 Configure a registration page for your community members. The self-registration Lightning component enables guest users to register themselves as members of your community. If you're not using any of the templates supplied with API Community Manager, use these steps to add the self-registration Lightning component specific to API Community Manager:
 
-. In the API Community Manager control panel, open *Community Builder*.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*.
 . In the *Pages* list in the top left, navigate to the *Register* page.
 . Remove the standard *Self Registration* Lightning component by clicking the delete icon next to it.
 . Navigate to *Components*, search for *Self Register* and add the Lightning component to the page.
 
 Configure a login page:
 
-. In the API Community Manager control panel, open *Community Administration* and navigate to the *Login & Registration* section in the left panel.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Administration*. Navigate to the *Login & Registration* section in the left panel.
 . Scroll down to the *Registration Page Configuration* section near the bottom of the page.
 .. Select *Allow customers and partners to self-register*.
 .. Select *Experience Builder Page* for *Registration Page Type* and click *Register*.
@@ -308,8 +311,8 @@ Create a final approval action:
 Activate the approval process:
 
 . On the *Approve Registration* page, click *Activate* and confirm.
-. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
-. In Community Builder, navigate to the *Register* page in the *Pages* list and select the API Community Manager *Self Register* Lightning component.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*. Click *Settings* > *General*.
+. In Site Builder, navigate to the *Register* page in the *Pages* list and select the API Community Manager *Self Register* Lightning component.
 . Ensure that *Approved Registration* is enabled.
 
 == Require Admin Approval for Guest Registration

@@ -24,7 +24,7 @@ For more information about the Salesforce Experience Cloud forums and their mode
 
 == Nicknames
 
-To set the API forums to display each user's name and not their nickname, open the API Community Manager control panel, open *Shortcuts to applications* > *Site Administration* > *Preferences*, and disable *Show nicknames*.
+To set the API forums to display each user's name and not their nickname, open the API Community Manager control panel, click *Shortcuts to applications* and select *Site Administration*. Click *Preferences* and disable *Show nicknames*.
 
 == See Also
 

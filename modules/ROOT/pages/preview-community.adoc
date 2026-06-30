@@ -7,7 +7,7 @@ endif::[]
 After you edit your Salesforce Experience Cloud site, you can preview the new version to ensure that it meets your expectations:
 
 . Open the Anypoint API Community Manager control panel.
-. Click *Community Builder*.
+. Click *Shortcuts to applications* and select *Site Builder*.
 . Click *Preview*.
 . Verify that your changes are applied and display correctly. APIs that are visible only to administrators appear in this preview.
 . Click *Back to Builder*.

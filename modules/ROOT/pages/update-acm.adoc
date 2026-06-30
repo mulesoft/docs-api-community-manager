@@ -227,7 +227,7 @@ Configure sharing settings for guests:
 . In *Select the users to share with*, select `[Site Name] Site Guest User`.
 . In *Select the level of access for the users*, select *Read Only*.
 . Save.
-. In the API Community Manager control panel, open *Community Builder* and click *Settings* > *General*.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*. Click *Settings* > *General*.
 . In the *Guest user profile* section, click *[Site Name] Profile*.
 . For each of the four objects *CommunityAssetVersions*, *AnypointAssetCategories*, *AnypointAssets*, and *AnypointAssetVersion*, in *Object Permissions* ensure *Read* is enabled, and in *Field Permissions* ensure all fields have *Read Access* enabled.
 . For the object *CommunityAssetVersions*, in *Custom Object Permissions* ensure *Read* is enabled.

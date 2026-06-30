@@ -9,11 +9,11 @@ you to create a Salesforce Experience Cloud site with your desired brand identit
 site structure by providing control over the site's components, themes,
 and pages, and its settings for general properties, themes, and SEO.
 
-In the Anypoint API Community Manager control panel, the *Community Builder* link
-opens your site for editing. With Community Builder you can edit each page in
+In the Anypoint API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder* to
+open your site for editing. With Site Builder you can edit each page in
 your community, create new pages, and add and edit the components in each page.
 
-Community Builder's interface contains the pages list, component palette,
+Site Builder's interface contains the pages list, component palette,
 theme menu, page structure menu, and settings menu.
 
 API Community Manager is not certified for use on mobile devices. Some functionality works on mobile devices, but some functionality such as the API console does not.

@@ -41,9 +41,9 @@ To open the editing page again, next to the asset name, click the pencil shaped 
 
 == Preview APIs
 
-. In the API Community Manager control panel, click *Community Builder*.
+. In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*.
 +
-Community Builder displays a preview of your community's site and edit options.
+Site Builder displays a preview of your community's site and edit options.
 . Select *Preview*.
 . Scroll to the API carousel that displays a card for each API or API Group version in the community.
 

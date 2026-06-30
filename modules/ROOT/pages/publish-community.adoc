@@ -7,20 +7,20 @@ endif::[]
 After you edit and preview your updated Salesforce Experience Cloud site, you can publish the new version for your users:
 
 . Open the Anypoint API Community Manager control panel.
-. Click *Community Builder*.
+. Click *Shortcuts to applications* and select *Site Builder*.
 . Click *Settings* > *General*.
 . Select the *Public can access the community* check box.
-. Return to *Community Builder*.
+. Return to *Site Builder*.
 . Click *Publish*.
 
 If your community is not already active, activate it:
 
 . Open the API Community Manager control panel.
-. Click *Community Administration*.
+. Click *Shortcuts to applications* and select *Site Administration*.
 . Click *Settings*.
 . Click *Activate*.
 
 After your community is published and active, view the live site:
 
 . Open the API Community Manager control panel.
-. Click *Open Community*.
+. Click *Shortcuts to applications* and select *Open Site*.
