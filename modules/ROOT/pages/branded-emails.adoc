@@ -22,7 +22,7 @@ To disable the standard configuration, open *Setup* > *Deliverability* > *Email 
 . Set *Email Address* to the email address at your organization that sends the API contract event notification emails.
 +
 Ensure you can read confirmation emails sent to this address.
-. Select *Allow All Profiles to Use this From Address*.
+. Enable *Allow All Profiles to Use this From Address*.
 . Click *Save*.
 . Open the confirmation email sent to the notification sender email address and click the link to confirm the address.
 
@@ -53,25 +53,79 @@ The default is 1800 and the minimum is 300.
         acm_pkg__.AnypointEmailNotifications.notifyOnContractUpdates(events);
     }
 ----
-// this KA has been archived.
-. To promote the code from sandbox to production using change sets, follow the steps in https://help.mulesoft.com/s/article/Promoting-branded-emails-trigger-code-from-Sandbox-to-Production-copy[Promoting branded emails trigger code from sandbox to production].
+
+==== Promote Apex Trigger to Production
+
+. In the sandbox organization, open *Setup* and use *Quick Find* to go to *Outbound Change Sets*.
+. Click *Continue*.
+. Click *New*, enter a name and description, and click *Save*.
+. Click *Add* under *Change Set Components*, set *Component Type* to *Apex Trigger*, and add `AnypointEmailNotificationsTrigger`.
+. Click *Upload*, set the target organization to the production organization, and click *Upload*.
+. In the production organization, open *Setup* and use *Quick Find* to go to *Inbound Change Sets*.
+. Click *Continue*.
+. If no change sets appear, do the following:
+.. Open *Setup* and use *Quick Find* to go to *Deployment Settings*. Click *Edit* next to your sandbox organization, enable *Allow Inbound Changes*, and click *Save*.
+.. Return to *Outbound Change Sets* in the sandbox organization, click *Upload*, set the target organization to the production organization, and click *Upload*.
+.. Wait for the confirmation banner, then return to *Inbound Change Sets* in the production organization.
+. Click *Validate* on the change set, set *Test Option* to *Default Test Option*, and click *Validate*.
++
+NOTE: The change set validation might fail with this coverage error: `AnypointEmailNotificationsTrigger has 0% coverage. Each trigger must have at least 1% code coverage.` This error occurs because the trigger has no test coverage. To resolve it, create a test class as described in the next steps.
+
+. In the sandbox organization, open the *Developer Console*, click *File* > *New* > *Apex Class*, set *Name* to `AnypointEmailNotificationsTriggerTest`, and click *OK*.
+. Enter the following code and save:
++
+----
+@IsTest
+public class AnypointEmailNotificationsTriggerTest {
+    @IsTest static void testEvent() {
+        acm_pkg__AnypointContracts__ChangeEvent event = new acm_pkg__AnypointContracts__ChangeEvent();
+        EventBus.ChangeEventHeader header = new EventBus.ChangeEventHeader();
+        header.changeType='CREATE';
+        header.entityName='AnypointContracts__x';
+        header.changeOrigin='here';
+        header.transactionKey = 'some';
+        header.commitUser = 'me';
+        event.changeEventHeader = header;
+        event.put('ExternalId', '476111:1094813');
+        event.put('acm_pkg__ApiVersionId__c', '66c1049c-ed5c-4f46-9751-33061eb2ce2b:productinformation:v1');
+        event.put('acm_pkg__ApiId__c', '15764979');
+        event.put('acm_pkg__InstanceId__c', '15764979');
+        event.put('acm_pkg__ApplicationId__c', '476111');
+        event.put('acm_pkg__Status__c', 'REVOKED');
+        event.put('acm_pkg__TierId__c', '218623');
+        event.put('acm_pkg__ContractType__c', 'Api');
+        Test.startTest();
+        Database.SaveResult sr = EventBus.publish(event);
+        Test.getEventBus().deliver();
+        Test.stopTest();
+        System.assertEquals(true, sr.isSuccess());
+    }
+}
+----
+. Create a new outbound change set and click *Add* under *Change Set Components*. Add both:
+.. `AnypointEmailNotificationsTrigger` under *Apex Trigger*
+.. `AnypointEmailNotificationsTriggerTest` under *Apex Class*
+. Upload the change set to the production organization.
+. In the production organization, open *Inbound Change Sets*, click *Validate* on the new change set, set *Test Option* to *Run specified tests*, enter `AnypointEmailNotificationsTriggerTest`, and click *Validate*.
+. After successful validation, click *Deploy*.
+. To verify the deployment, navigate to *Setup* > *Custom Code* > *Apex Triggers* and confirm that `AnypointEmailNotificationsTrigger` appears in the list.
 
 === Configure Branded Email Metadata
 
 . Navigate to *Setup* and use *Quick Find* to go to *Custom Metadata Types*.
 . Click *ACM Community Configuration Metadata* > *Manage Records* > *New* to add a record.
-. Set *Label* to your API community's name and press tab to automatically complete the *ACM Community Config Metadata Name*.
+. Set *Label* to your API community's name and press *Tab* to automatically complete the *ACM Community Config Metadata Name*.
 . Open the *Developer Console* and open the *Query Editor*.
 . Enter `SELECT Id, Name FROM Network` and click *Execute*.
-. In the list of IDs and communities, choose the row with *Name* equal to your community's name, double click the ID, and copy it.
+. In the list of IDs and communities, find the row with *Name* equal to your community's name, double-click the ID, and copy it.
 . In the *ACM Community Config Metadata* field *NetworkId*, paste the ID.
 . In the *Query Editor*, enter `SELECT Id, Name FROM EmailTemplate` and click *Execute*.
-. In the list of IDs and email templates, choose the row with *Name* equal to *Contract Approved*, double click the ID, and copy it.
+. In the list of IDs and email templates, find the row with *Name* equal to *Contract Approved*, double-click the ID, and copy it.
 . In the *ACM Community Config Metadata* field *ContractApprovedEmailTemplateId*, paste the ID.
-. In the list of IDs and email templates, choose the row with *Name* equal to *Contract Revoked*, double click the ID, and copy it.
+. In the list of IDs and email templates, find the row with *Name* equal to *Contract Revoked*, double-click the ID, and copy it.
 . In the *ACM Community Config Metadata* field *ContractRevokedEmailTemplateId*, paste the ID.
 . In the *Query Editor*, enter `SELECT Id, Address FROM OrgWideEmailAddress` and click *Execute*.
-. In the list of IDs and email addresses, choose the row with *Address* equal to the organization wide email address you set, double click the ID, and copy it.
+. In the list of IDs and email addresses, find the row with *Address* equal to the organization-wide email address you set, double-click the ID, and copy it.
 . In the *ACM Community Config Metadata* field *OrgWideEmailAddressId*, paste the ID.
 . Click *Save*.
 . Repeat this process for all additional communities, creating one record for each community.
@@ -93,7 +147,7 @@ The JSON Web Token (JWT) authentication mechanism creates Anypoint user records 
 . In Salesforce, navigate to *Setup* > *Named Credentials*.
 . Click the *Name* of the named credential `Anypoint` to open it in view mode.
 +
-`Anypoint` is the default named credential set in the external data source by the guided setup application. If the named credential has been changed manually, choose the named credential used in the Anypoint external data source.
+`Anypoint` is the default named credential set in the external data source by the guided setup application. If the named credential has been changed manually, use the named credential configured in the Anypoint external data source.
 . Click *Edit*.
 . In the *Per User Subject* formula, add `& ".donotsend" ` after `$User.Email`. Example: `"v2|8745gh23-590d-4h80-b339-1637854e289f|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & ".donotsend" & "|[\"Community User\"]"`
 
