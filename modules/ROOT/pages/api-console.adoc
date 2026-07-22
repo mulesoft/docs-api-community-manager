@@ -50,6 +50,8 @@ You can specify values for the following parameters of the API console:
 If an *API Console* navigation item such as an API endpoint or method has a long name, the name wraps around to a second line. By default, the line breaks at the end of a word, using the `word-break` CSS property set to the value `break-word`. If you wish to select different line break behavior:
 
 . In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*. Click *Settings* > *Advanced*.
++
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
 . In the section *Head Markup*, click *Edit Head Markup*.
 . Insert this code:
 +

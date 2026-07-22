@@ -13,6 +13,8 @@ In the Anypoint API Community Manager control panel, click *Shortcuts to applica
 open your site for editing. With Site Builder you can edit each page in
 your community, create new pages, and add and edit the components in each page.
 
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
+
 Site Builder's interface contains the pages list, component palette,
 theme menu, page structure menu, and settings menu.
 

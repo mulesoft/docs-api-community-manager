@@ -29,6 +29,8 @@ Consumer developers follow these steps to self-register:
 
 . After the consumer developer sends a registration request, you receive a notification email.
 . To review and approve the request, open the API Community Manager control panel and click *Member Management*.
++
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
 . Open the *Members* tab to view a searchable list of current members, with the option to disable and enable their accounts.
 . To deactivate a member, disable the *Active* setting for that member and confirm the change.
 . Open the *Pending members registration* tab to view a searchable list of requests for access.
