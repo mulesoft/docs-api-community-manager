@@ -30,7 +30,7 @@ As part of the API Community Manager package, member user profiles are assigned 
 
 For custom profiles, you must update to the permission set after each release is installed. To avoid manual updates, assign the permission sets to custom profiles. After the new package is installed, the custom profiles are assigned to the permission sets automatically.
 
-To create a new user, you must use the API Community Diagnostics or manually set the user profile to the corresponding permission set. 
+To create a new user, you must use API Community Manager Diagnostics or manually set the user profile to the corresponding permission set. 
 
 == Upgrading to Version 2.5.0
 
@@ -72,6 +72,8 @@ To upgrade your API community:
 +
 Attempting to upgrade the package without this feature enabled causes the process to fail with errors due to missing objects and fields related to a missing ChangeEvent object.
 . Open the API Community Manager control panel.
++
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
 . In the same browser session, open the *package upgrade installation link* provided by your MuleSoft representative.
 . Verify the version number and name of the release.
 . If you are upgrading from a package version earlier than 1.26, follow the <<pre-126>> and then continue with these instructions.
@@ -316,7 +318,7 @@ If you are upgrading from a package version earlier than 1.82, use either the au
 
 Automatic configuration:
 
-. From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for `API community manager diagnostics`.
+. From the Anypoint API Community Manager control panel, open the Salesforce *App Launcher* and search for *API Community Manager Diagnostics*.
 . In the *User Access* tab, in the section *Guest User*, click *Fix all*.
 . In the *User Access* tab, in the section *Member User*, click *Fix all*.
 . Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
@@ -363,7 +365,7 @@ If you are upgrading from a package version earlier than 2.0, use either the aut
 
 Automatic configuration:
 
-. From the Anypoint API Community Manager control panel, open the Salesforce App Launcher and search for `API community manager diagnostics`.
+. From the Anypoint API Community Manager control panel, open the Salesforce *App Launcher* and search for *API Community Manager Diagnostics*.
 . In the *User Access* tab, in the sections *Guest User* and *Member User*, click *Fix all*.
 . Verify that your permissions match those in the xref:create-community.adoc#configure-profiles-and-permissions[Configure Profiles and Permissions] documentation.
 

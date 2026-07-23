@@ -7,6 +7,8 @@ endif::[]
 After you edit and preview your updated Salesforce Experience Cloud site, you can publish the new version for your users:
 
 . Open the Anypoint API Community Manager control panel.
++
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
 . Click *Shortcuts to applications* and select *Site Builder*.
 . Click *Settings* > *General*.
 . Select the *Public can access the community* check box.

@@ -19,6 +19,8 @@ will lead the CMS article release process.
 
 . Open the API Community Manager control panel and select *API Curator*.
 +
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
+
 From this tab, you can manage the assets in your site, including their metadata and visibility. Assets include APIs and API groups.
 +
 * *Assets in Your Site* shows the assets that have been added to your site.

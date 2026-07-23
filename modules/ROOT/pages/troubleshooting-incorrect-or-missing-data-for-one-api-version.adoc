@@ -8,6 +8,8 @@ endif::[]
 If a single API version has documentation or console components with incorrect or missing data:
 
 . Open the API Community Manager control panel.
++
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
 . Edit the API version.
 . Click *View asset in Exchange*.
 . Ensure that the API version in API Community Manager points to the correct API version in Exchange.

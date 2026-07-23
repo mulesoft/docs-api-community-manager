@@ -11,6 +11,8 @@ The following sections summarize the available options. For detailed information
 == Edit the CSS
 
 . In the API Community Manager control panel, click *Shortcuts to applications* and select *Site Builder*.
++
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
 . Select the paintbrush icon in the sidebar navigation to open the *Theme* menu.
 . Select the drop-down arrow in the corner of the menu and select *Edit CSS*.
 . Edit the CSS file in the *Edit CSS* dialog box.
