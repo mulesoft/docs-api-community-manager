@@ -16,3 +16,7 @@ To add the approver's language:
 . Open language settings.
 . Enable the appropriate languages and locales by enabling end-user languages, enabling platform-only languages, or enabling both.
 . Add the language matching the approver user profile to the list of displayed languages.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

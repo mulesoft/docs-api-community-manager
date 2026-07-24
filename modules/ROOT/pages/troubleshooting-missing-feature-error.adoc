@@ -18,3 +18,7 @@ Installing this package requires the following feature and its associated permis
 ----
 
 To fix this error, follow the installation prerequisite steps in https://help.salesforce.com/s/articleView?id=sf.networks_enable.htm&type=5[Enable Digital Experience, role=external, window=_blank].
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

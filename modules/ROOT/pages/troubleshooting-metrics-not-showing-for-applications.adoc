@@ -14,3 +14,7 @@ If the metrics aren't showing for client applications on the *My Applications* d
 . Click *Next*.
 . Select all business groups that apply and click *Next*.
 . Click *Add Permissions*.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

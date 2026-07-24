@@ -8,3 +8,7 @@ If the API documentation is not displaying in the API Details page, follow these
 
 . Go to *Setup* > *Session Settings*.
 . Scroll to *Lightning Web Security* and uncheck *Use Lightning Web Security for Lightning web components (GA) and Aura components (Beta)*.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

@@ -23,3 +23,7 @@ To learn if any content in any component or page of the community is blocked by 
 . Open the page that contains the content.
 
 To inspect the URLs the browser loads when rendering a community page, use the browser developer tools.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

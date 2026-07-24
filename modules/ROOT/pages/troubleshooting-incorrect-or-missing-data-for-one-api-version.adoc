@@ -13,3 +13,7 @@ If a single API version has documentation or console components with incorrect o
 . Ensure that the API version in API Community Manager points to the correct API version in Exchange.
 . Ensure that the API version in Exchange is published and not in draft mode.
 
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
