@@ -25,3 +25,7 @@ If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-s
 . Open the page that contains the content.
 
 To inspect the URLs the browser loads when rendering a community page, use the browser developer tools.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

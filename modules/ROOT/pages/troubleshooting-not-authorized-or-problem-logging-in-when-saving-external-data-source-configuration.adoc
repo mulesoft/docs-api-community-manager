@@ -49,3 +49,7 @@ This call returns a response like this:
 ----
 
 "YourOrgDomain" is replaced by your organization domain.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

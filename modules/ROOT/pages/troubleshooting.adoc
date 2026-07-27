@@ -22,3 +22,7 @@ If you encounter errors while you are using API Community Manager, refer to thes
 * xref:troubleshooting-missing-feature-error.adoc[Missing Feature Error]
 * xref:troubleshooting-missing-request-access-button.adoc[Missing Request Access Button]
 * xref:troubleshooting-unauthorized-endpoint-error.adoc[Unauthorized Endpoint Error]
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

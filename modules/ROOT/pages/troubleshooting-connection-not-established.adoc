@@ -30,3 +30,7 @@ For example:
 `"v2|83685668-9e8a-49c2-9d9a-7a7c89391cce|" & $User.Username & "|" & $User.FirstName & "|" & $User.LastName & "|" & $User.Email & "|[\"Community User\"]"`
 
 
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

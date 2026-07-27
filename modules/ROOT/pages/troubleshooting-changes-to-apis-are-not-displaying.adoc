@@ -12,3 +12,7 @@ If changes made to APIs are not visible right after you make them, you can refre
 . Click the `ACMCache` partition.
 . If the caches are in use, then the *Clear Cache* button is displayed.
 . Click *Clear Cache*.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
