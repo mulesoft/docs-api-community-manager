@@ -63,7 +63,7 @@ The default is 1800 and the minimum is 300.
 . Click *Upload*, set the target organization to the production organization, and click *Upload*.
 . In the production organization, open *Setup* and use *Quick Find* to go to *Inbound Change Sets*.
 . Click *Continue*.
-. If no change sets appear, do the following:
+. If no change sets appear, do these steps:
 .. Open *Setup* and use *Quick Find* to go to *Deployment Settings*. Click *Edit* next to your sandbox organization, enable *Allow Inbound Changes*, and click *Save*.
 .. Return to *Outbound Change Sets* in the sandbox organization, click *Upload*, set the target organization to the production organization, and click *Upload*.
 .. Wait for the confirmation banner, then return to *Inbound Change Sets* in the production organization.
