@@ -72,7 +72,7 @@ The default is 1800 and the minimum is 300.
 NOTE: The change set validation might fail with this coverage error: `AnypointEmailNotificationsTrigger has 0% coverage. Each trigger must have at least 1% code coverage.` This error occurs because the trigger has no test coverage. To resolve it, create a test class as described in the next steps.
 
 . In the sandbox organization, open the *Developer Console*, click *File* > *New* > *Apex Class*, set *Name* to `AnypointEmailNotificationsTriggerTest`, and click *OK*.
-. Enter the following code and save:
+. Enter these code and save:
 +
 ----
 @IsTest
