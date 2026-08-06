@@ -88,3 +88,7 @@ curl --location --request GET "https://anypoint.mulesoft.com/apiplatform/reposit
 
 . Replace `MASTER_ORGANIZATION_ID` with your organization ID. 
 . If there are more than 2000 applications, delete any unnecessary applications. 
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

@@ -11,3 +11,7 @@ If calling a real endpoint from the console shows an *Unauthorized Endpoint* err
 . Ensure that the list includes the endpoint site domain.
 
 The console works in the user's browser and can call only trusted endpoint sites.
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

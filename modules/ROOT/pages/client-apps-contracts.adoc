@@ -18,6 +18,8 @@ The component allows a developer to select:
 
 To display an API or API group instance in your site, either xref:exchange::to-configure-api-settings.adoc[set its visibility to public in Exchange], or open the API Community Manager control panel, and in the API curator, set the API or API group's instances visibility to *All instances*.
 
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
+
 When a consumer developer creates a new application, they can provide an additional description. If the API or API Group uses OAuth 2.0 authentication, the consumer developer can provide an OAuth 2.0 redirect URI.
 
 When a consumer developer requests access for a new client application to an API instance that has an identity provider (IDP), the consumer developer must specify one or more of the OAuth 2.0 grant types Authorization Code Grant, Implicit Grant, Refresh Token, and Resource Owner Grant. Some IDPs do not support all grant types. Requesting access and specifying an unsupported grant type shows the error `Error creating application.`

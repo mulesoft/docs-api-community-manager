@@ -10,6 +10,8 @@ When a developer posts a question or answer that's not visible automatically, a 
 
 To approve or delete pending forum posts, open the API Community Manager control panel and select *Manage Forums*.
 
+If you don't see *API Community Manager* in *App Launcher*, follow xref:manual-setup.adoc#enable-api-community-manager-control-panel[Enable API Community Manager Control Panel].
+
 Select *Pending Discussions*.
 
 The list of posts shows their authors and the options to *View Author Details*, *View Discussion*, *Approve*, and *Delete*.
